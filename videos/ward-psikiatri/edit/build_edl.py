@@ -24,21 +24,24 @@ TAIL_OUT, LEAD_IN = 0.06, 0.04   # extra air kept after offset / before onset
 MAX_SNAP = 0.35      # never move more than this from the aligned word edge
 TIGHT = 0.16
 MAX_PAUSE = 0.45     # gaps between kept words longer than this get shrunk
-PUNCH = 1.08         # alternate 1.0 / PUNCH zoom at jump cuts (disguises them)
+ZOOMS = [1.0, 1.06, 1.02, 1.07, 1.035]  # punch-in levels cycled across jump cuts (varied, not ping-pong;
+                                        # max 1.07 keeps the hair clear of the caption line)
 PUNCH_MIN = 0.8      # ranges shorter than this keep the previous zoom (no flicker)
+MICRO = 0.7          # a pause-shrink cut that leaves a range shorter than this is undone (no stutter)
+TAIL_HOLD = 1.2      # freeze the last frame so the end card / CTA can land
 FACE = [0.54, 0.60]  # zoom focus: face centre as a fraction of the frame
 
-# (island_a, word_a, island_b, word_b, beat, note[, start_override])
+# (island_a, word_a, island_b, word_b, beat, note[, {"start"/"end": override s, "gain_db": dB}])
 SEGMENTS = [
     ("I00", 1, "I00", 4, "HOOK", "Saya pernah ada pesakit, — 'aa' cut"),
     ("I01", 1, "I01", 3, "HOOK", "tanya dekat saya, — false start 'Doktor, macam mana saya, masa' cut"),
     ("I02", 0, "I02", 11, "HOOK", "Doktor, macam mana keadaan dalam wad psikiatri, ya? Saya takutlah, saya tengok — 'aa' cut"),
     ("I02", 13, "I02", 21, "HOOK", "macam dalam filem-filem barat tu, nampak seram sangat. — first 'Okay, sebenarnya, tidak' take dropped"),
-    ("I04", 1, "I04", 2, "ANSWER", "Sebenarnya, tidak."),
+    ("I04", 1, "I04", 2, "ANSWER", "Sebenarnya, tidak. — delivered ~3dB softer than its neighbours", {"gain_db": 2.5}),
     ("I04", 3, "I04", 12, "ANSWER", "Wad psikiatri Malaysia jauh berbeza dengan apa yang anda bayangkan. — clinic plug moved to end"),
     ("I08", 5, "I09", 14, "MYTH", "Ramai orang bayangkan ... Tapi tidak sebenarnya. — 'Okey balik kepada topik tadi' dropped"),
     ("I13", 1, "I14", 2, "TEAM", "Di Malaysia wad psikiatri ... ahli psikologi, kaunselor — take 2 (take 1 at 57.3s dropped)"),
-    ("I14", 4, "I18", 1, "ROUTINE", "terapi jurupulih kerja ... keselamatan akan dipantau. — hesitation sound at 88.3s cut", 89.08),
+    ("I14", 4, "I18", 1, "ROUTINE", "terapi jurupulih kerja ... keselamatan akan dipantau. — hesitation sound at 88.3s cut", {"start": 89.08}),
     ("I19", 0, "I21", 13, "ROUTINE", "Aktiviti terapi ... Bukan untuk menghukum pesakit."),
     ("I22", 0, "I22", 10, "Q2", "Datang pula soalan kedua. Adakah semua pesakit dalam wad ni agresif? — false-start 'Adakah,' cut"),
     ("I24", 0, "I24", 6, "Q2", "Jawapannya tidak. Pesakit dalam wad psikiatri ini,"),
@@ -46,10 +49,12 @@ SEGMENTS = [
     ("I31", 1, "I31", 98, "Q3", "Ada juga yang tanya saya ... gila ke apa. — false start 'Lepas itu ada juga lagi soalan' dropped"),
     ("I33", 0, "I33", 31, "RECOVERY", "Tidak. Ramai pesakit ... bukan tempat hukum ke apa."),
     ("I34", 0, "I35", 14, "RECOVERY", "Ia adalah tempat yang selamat ... kesihatan mental, — repeated 'Ia adalah tempat' cut"),
-    ("I36", 0, "I36", 4, "CTA", "Jangan takut untuk mendapatkan bantuan. — cleaner second take"),
-    ("I05", 0, "I05", 9, "CTA", "Boleh datang buat saringan konsultasi kesihatan mental di klinik saya. — moved from 0:31"),
+    # "bantuan" really ends at 229.45 (spectrogram: formants stop there; the aligner said 229.34)
+    ("I36", 0, "I36", 4, "CTA", "Jangan takut untuk mendapatkan bantuan. — cleaner second take", {"end": 229.45}),
+    # "saya" ends 33.53; an "eee…" hesitation follows until 34.0
+    ("I05", 0, "I05", 9, "CTA", "Boleh datang buat saringan konsultasi kesihatan mental di klinik saya. — moved from 0:31", {"end": 33.54}),
     ("I07", 0, "I07", 9, "CTA", "Kita bincang dahulu pilihan rawatan yang paling sesuai untuk anda. — clean retake (first take's 'aa' runs into 'diagnosis')"),
-    ("I36", 5, "I36", 11, "CTA", "Apa-apa soalan, minta anda komen. Take care."),
+    ("I36", 5, "I36", 11, "CTA", "Apa-apa soalan, minta anda komen. Take care. — runs to the end of the take", {"start": 229.45, "end": 231.45}),
 ]
 
 
@@ -111,26 +116,47 @@ def main() -> None:
         return snap_out(w["end"], nxt["start"] - 0.02 if nxt else dur)
 
     ranges = []
-    for ia, wa, ib, wb, beat, note, *override in SEGMENTS:
+    for ia, wa, ib, wb, beat, note, *opt in SEGMENTS:
+        opt = opt[0] if opt else {}
         ka, kb = pos[(ia, wa)], pos[(ib, wb)]
-        start, end = (override[0] if override else cut_in(ka)), cut_out(kb)
-        cur = start
+        start, end = opt.get("start", cut_in(ka)), opt.get("end", cut_out(kb))
+        seg, cur = [], start
         for k in range(ka, kb):  # shrink long gaps between consecutive kept words (breaths, hesitations)
             a, b = flat[k], flat[k + 1]
             if b["start"] - a["end"] > MAX_PAUSE:
-                ranges.append({"source": SRC, "start": round(cur, 3), "end": round(cut_out(k), 3), "beat": beat})
+                seg.append([cur, cut_out(k)])
                 cur = cut_in(k + 1)
-        ranges.append({"source": SRC, "start": round(cur, 3), "end": round(end, 3), "beat": beat, "reason": note})
+        seg.append([cur, end])
+        # undo shrink-cuts that leave a micro range (a lone "dan" between two cuts reads as a stutter):
+        # merge it into the neighbour it is closer to in the source, keeping that pause instead
+        while len(seg) > 1:
+            i = min(range(len(seg)), key=lambda j: seg[j][1] - seg[j][0])
+            if seg[i][1] - seg[i][0] >= MICRO:
+                break
+            left = seg[i][0] - seg[i - 1][1] if i > 0 else float("inf")
+            right = seg[i + 1][0] - seg[i][1] if i + 1 < len(seg) else float("inf")
+            j = i - 1 if left <= right else i + 1
+            a, b = sorted((i, j))
+            seg[a:b + 1] = [[seg[a][0], seg[b][1]]]
+        for n, (s0, e0) in enumerate(seg):
+            r = {"source": SRC, "start": round(s0, 3), "end": round(e0, 3), "beat": beat}
+            if "gain_db" in opt:
+                r["gain_db"] = opt["gain_db"]
+            if n == len(seg) - 1:
+                r["reason"] = note
+            ranges.append(r)
 
-    z = 1.0
+    z, zi = ZOOMS[0], 0
     for i, r in enumerate(ranges):
         assert r["end"] - r["start"] > 0.15, r
         if i and r["end"] - r["start"] >= PUNCH_MIN:
-            z = PUNCH if z == 1.0 else 1.0
+            zi = (zi + 1) % len(ZOOMS)
+            z = ZOOMS[zi]
         r["zoom"] = z
     total = sum(r["end"] - r["start"] for r in ranges)
     edl = {"version": 1, "sources": {SRC: SRC_PATH}, "ranges": ranges, "grade": "subtle",
-           "zoom_focus": FACE, "overlays": [], "total_duration_s": round(total, 2)}
+           "zoom_focus": FACE, "tail_hold": TAIL_HOLD, "overlays": [],
+           "total_duration_s": round(total + TAIL_HOLD, 2)}
     (E / "edl.json").write_text(json.dumps(edl, indent=2, ensure_ascii=False))
     print(f"{len(SEGMENTS)} segments -> {len(ranges)} ranges, total {total:.1f}s ({int(total // 60)}:{total % 60:04.1f})")
 

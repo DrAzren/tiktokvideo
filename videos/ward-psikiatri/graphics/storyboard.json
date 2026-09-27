@@ -4,7 +4,7 @@
     "fps": 30,
     "width": 1080,
     "height": 1920,
-    "durationSeconds": 149.233,
+    "durationSeconds": 150.933,
     "layout": "portrait",
     "themeId": "custom-teal",
     "seed": 7
@@ -12,7 +12,7 @@
   "videoTrack": {
     "sourcePath": "input-video.mp4",
     "startSec": 0,
-    "endSec": 149.233,
+    "endSec": 150.933,
     "bounds": {
       "x": 0,
       "y": 0,
@@ -38,8 +38,8 @@
     {
       "id": "c02-mitos",
       "intent": "Myths from films, struck out on 'tapi tidak sebenarnya'",
-      "startSec": 13.3,
-      "endSec": 22.35,
+      "startSec": 15.95,
+      "endSec": 23.3,
       "accentIndex": 1,
       "zone": "video-overlay",
       "contentHints": {
@@ -54,13 +54,13 @@
       "accentIndex": 2,
       "zone": "video-overlay",
       "contentHints": {
-        "pages": 1
+        "pages": 2
       }
     },
     {
       "id": "c04-rutin",
       "intent": "Daily routine checklist, one tick per spoken item",
-      "startSec": 35.0,
+      "startSec": 35.92,
       "endSec": 57.05,
       "accentIndex": 3,
       "zone": "video-overlay",
@@ -71,7 +71,7 @@
     {
       "id": "c05-tujuan",
       "intent": "Pull-quote: to stabilise, not to punish",
-      "startSec": 57.05,
+      "startSec": 58.23,
       "endSec": 61.75,
       "accentIndex": 4,
       "zone": "video-overlay",
@@ -82,7 +82,7 @@
     {
       "id": "c06-soalan2",
       "intent": "Q2 — are all patients aggressive? No; the conditions they have",
-      "startSec": 61.75,
+      "startSec": 62.33,
       "endSec": 82.45,
       "accentIndex": 0,
       "zone": "video-overlay",
@@ -93,7 +93,7 @@
     {
       "id": "c07-soalan3",
       "intent": "Q3 — why are some patients restrained? Last resort, 3 conditions",
-      "startSec": 82.45,
+      "startSec": 83.12,
       "endSec": 110.45,
       "accentIndex": 1,
       "zone": "video-overlay",
@@ -104,7 +104,7 @@
     {
       "id": "c08-pulih",
       "intent": "Admission is not the end — patients go home and back to life",
-      "startSec": 111.55,
+      "startSec": 112.39,
       "endSec": 125.7,
       "accentIndex": 2,
       "zone": "video-overlay",
@@ -127,7 +127,7 @@
       "id": "c10-cta",
       "intent": "CTA — don't be afraid to get help; screening at the clinic; comment",
       "startSec": 136.45,
-      "endSec": 149.233,
+      "endSec": 150.933,
       "accentIndex": 4,
       "zone": "video-overlay",
       "contentHints": {

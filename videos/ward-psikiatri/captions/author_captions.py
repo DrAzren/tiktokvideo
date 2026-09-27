@@ -18,6 +18,9 @@ P = C / "project"
 words = json.loads((P / "transcript.json").read_text())["words"]
 
 MAX_WORDS, MAX_CHARS, PAUSE, MIN_ON = 3, 19, 0.28, 0.62
+FIT = 19   # characters that fit one Anton line at 0.05h across the plane — merges never exceed it
+# forced breaks (prev, word): the patient's quoted question starts at "doktor"
+FORCE_BREAK = {("saya", "doktor")}
 # fixed phrases that must never be split across two caption lines
 GLUE = {("wad", "psikiatri"), ("salah", "faham"), ("ke", "apa"), ("physical", "restraint"),
         ("kesihatan", "mental"), ("jurupulih", "kerja"), ("cara", "kerja"), ("lain-lain", "lagi"),
@@ -59,7 +62,7 @@ def punct_break(prev, w, strong_only=False):
 BODY_CSS = ("font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; "
             "-webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; "
             "text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);")
-HERO_CSS = "font-size: calc(0.16*var(--h)); text-transform: uppercase; color: #0F766E !important;"
+HERO_CSS = "font-size: calc(0.16*var(--h)); text-transform: uppercase; color: #0E5E6F !important;"
 HERO_WORD_T = 8.84          # "tidak" in "sebenarnya tidak" (cut timeline)
 HERO_BLOCK_END = 10.3       # lockup = kicker + hero + one tail line; a longer tail runs over the mouth / TikTok UI
 
@@ -70,6 +73,10 @@ def group(ws):
         if cur:
             gap = w["start"] - cur[-1]["end"]
             chars = len(" ".join(x["text"] for x in cur + [w]))
+            if (cur[-1]["text"], w["text"]) in FORCE_BREAK:
+                lines.append(cur)
+                cur = [w]
+                continue
             glued = (cur[-1]["text"], w["text"]) in GLUE and gap < 0.45
             if glued and (len(cur) >= MAX_WORDS or chars > MAX_CHARS) and len(cur) >= 2:
                 lines.append(cur[:-1])     # move the phrase's first word down to join its partner
@@ -96,11 +103,13 @@ def group(ws):
         for i in range(len(lines)):
             if on_time(i, lines) >= MIN_ON:
                 continue
-            if i + 1 < len(lines) and len(text(lines[i] + lines[i + 1])) <= 22 \
-                    and not punct_break(lines[i][-1], lines[i + 1][0], strong_only=True):
+            if i + 1 < len(lines) and len(text(lines[i] + lines[i + 1])) <= FIT \
+                    and not punct_break(lines[i][-1], lines[i + 1][0], strong_only=True) \
+                    and (lines[i][-1]["text"], lines[i + 1][0]["text"]) not in FORCE_BREAK:
                 lines[i:i + 2] = [lines[i] + lines[i + 1]]
-            elif i > 0 and len(text(lines[i - 1] + lines[i])) <= 25 \
-                    and not punct_break(lines[i - 1][-1], lines[i][0], strong_only=True):
+            elif i > 0 and len(text(lines[i - 1] + lines[i])) <= FIT \
+                    and not punct_break(lines[i - 1][-1], lines[i][0], strong_only=True) \
+                    and (lines[i - 1][-1]["text"], lines[i][0]["text"]) not in FORCE_BREAK:
                 lines[i - 1:i + 1] = [lines[i - 1] + lines[i]]
             else:
                 continue
@@ -114,8 +123,16 @@ hero_i = min(range(len(words)), key=lambda i: abs(words[i]["start"] - HERO_WORD_
 assert words[hero_i]["text"] == "tidak" and words[hero_i - 1]["text"] == "sebenarnya", words[hero_i]
 end_i = max(i for i, w in enumerate(words) if w["start"] < HERO_BLOCK_END)
 
+# hook lines hand-broken (<=19 chars, each on screen >= 0.5s, the patient's quote starts a line)
+HOOK = ["saya pernah ada", "pesakit tanya", "dekat saya", "doktor macam mana", "keadaan dalam",
+        "wad psikiatri ya", "saya takutlah", "saya tengok macam", "dalam filem-filem", "barat tu nampak",
+        "seram sangat"]
+hook_words = [w["text"] for w in words[:hero_i - 1]]
+assert " ".join(HOOK).split() == hook_words, (" ".join(HOOK), hook_words)
 blocks = []
-for ln in group(words[:hero_i - 1]):
+for ln in HOOK:
+    blocks.append({"plane": "narr", "flip": True, "lines": [{"words": ln.split(), "css": BODY_CSS}]})
+for ln in []:
     blocks.append({"plane": "narr", "flip": True, "lines": [{"words": [w["text"] for w in ln], "css": BODY_CSS}]})
 
 hero_block = {"plane": "narr", "flip": True, "lines": [

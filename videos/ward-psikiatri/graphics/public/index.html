@@ -14,24 +14,24 @@ html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; back
 .page { opacity:0; }
 
 .card-host .card { position:relative; width:100%; height:100%; }
-.panel { position:absolute; left:60px; top:160px; width:960px; display:grid; background:#FFF8EE; border-radius:34px;
+.panel { position:absolute; left:60px; top:150px; width:960px; display:grid; background:#FFF8EE; border-radius:34px;
   box-shadow:0 22px 60px rgba(8,22,30,.30), 0 2px 0 rgba(255,255,255,.6) inset; padding:30px 38px 34px;
   font-family:'Plus Jakarta Sans', sans-serif; color:#0B1F2A; overflow:hidden; }
 .panel::before { content:""; position:absolute; left:0; top:0; bottom:0; width:12px; background:#0E5E6F; }
-.page { grid-area:1/1; position:relative; }  /* pages share one cell: panel sizes to the tallest page */
-.page > * + * { margin-top:16px; }
-.chip { display:inline-block; color:#fff; font-weight:800; font-size:24px; letter-spacing:.07em; text-transform:uppercase;
+.page { grid-area:1/1; position:relative; align-self:start; }  /* pages share one cell; panel height set per page */
+.page > * + * { margin-top:14px; }
+.chip { display:inline-block; color:#fff; font-weight:800; font-size:30px; letter-spacing:.07em; text-transform:uppercase;
   padding:9px 20px 8px; border-radius:999px; }
 .title { font-weight:800; font-size:58px; line-height:1.08; letter-spacing:-.015em; }
 .title.sm { font-size:44px; font-weight:700; }
 .title.xl { font-size:88px; letter-spacing:-.02em; line-height:1.0; }
 .title.muted { color:#6B7C85; font-size:50px; }
-.sub { font-weight:700; font-size:38px; color:#6B7C85; }
+.sub { font-weight:700; font-size:38px; color:#44525A; }
 .sub.strong { color:#0B1F2A; display:flex; align-items:center; gap:14px; }
-.label { font-weight:700; font-size:28px; color:#6B7C85; text-transform:uppercase; letter-spacing:.06em; }
+.label { font-weight:700; font-size:32px; color:#44525A; text-transform:uppercase; letter-spacing:.06em; }
 .row { display:flex; align-items:center; gap:18px; font-weight:700; font-size:38px; line-height:1.15; }
 .row.big { font-size:44px; }
-.row + .row { margin-top:14px; }
+.row + .row { margin-top:11px; }
 .ico { width:40px; height:40px; flex:none; }
 .arr { width:44px; height:44px; }
 .num { width:44px; height:44px; flex:none; border-radius:50%; background:#E5484D; color:#fff; font-size:26px; font-weight:800;
@@ -53,41 +53,43 @@ html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; back
 </style>
 </head>
 <body>
-<div id="stage" data-composition-id="talking-head-recut" data-start="0" data-duration="149.233" data-fps="30" data-width="1080" data-height="1920">
+<div id="stage" data-composition-id="talking-head-recut" data-start="0" data-duration="150.933" data-fps="30" data-width="1080" data-height="1920">
   <div class="video-wrapper" id="video-wrap">
-    <video id="bg-video" src="input-video.mp4" muted playsinline data-start="0" data-duration="149.233" data-track-index="1"></video>
+    <video id="bg-video" src="input-video.mp4" muted playsinline data-start="0" data-duration="150.933" data-track-index="1"></video>
   </div>
-  <audio id="source-audio" src="input-video.mp4" data-start="0" data-duration="149.233" data-track-index="10" data-volume="1"></audio>
-  <div id="card-c01-hook" class="card-host clip" data-card-id="c01-hook" data-start="0.0" data-duration="8.3333" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c01-hook"><div class="root"><div class="panel" id="c01-hook-panel"><div class="page" id="c01-hook-page0"><div id="c01-hook-kicker" data-anim="pop" data-anim-at="0.1333"><span class="chip" style="background:#0E5E6F">Soalan #1</span></div><div id="c01-hook-t1" data-anim="slide" data-anim-at="0.3"><div class="title sm">Macam mana keadaan dalam</div></div><div id="c01-hook-t2" data-anim="pop" data-anim-at="3.7333"><div class="title xl" style="color:#0E5E6F">WAD PSIKIATRI?</div></div><div id="c01-hook-s1" data-anim="slide" data-anim-at="5.6667"><div class="sub">Seram macam dalam filem?</div></div></div></div></div></div></div>
-<div id="card-c02-mitos" class="card-host clip" data-card-id="c02-mitos" data-start="13.3" data-duration="9.0333" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c02-mitos"><div class="root"><div class="panel" id="c02-mitos-panel"><div class="page" id="c02-mitos-page0"><div id="c02-mitos-kicker" data-anim="pop" data-anim-at="0.1"><span class="chip" style="background:#E5484D">Mitos · macam dalam filem</span></div><div id="c02-mitos-lb" data-anim="fade" data-anim-at="0.5667"><div class="label">Apa orang bayangkan</div></div><div id="c02-mitos-m1" data-anim="slide" data-anim-at="3.0333"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="6" fill="#6B7C85"/></svg><span><span class="strikeword">Gelap &amp; menakutkan</span></span></div></div><div id="c02-mitos-m2" data-anim="slide" data-anim-at="4.5"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="6" fill="#6B7C85"/></svg><span><span class="strikeword">Pesakit meracau-racau</span></span></div></div><div id="c02-mitos-m3" data-anim="slide" data-anim-at="6.4333"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="6" fill="#6B7C85"/></svg><span><span class="strikeword">Diikat sepanjang masa</span></span></div></div><div id="c02-mitos-st" class="stampwrap" data-anim="stamp" data-anim-at="8.4333"><div class="stamp">TIDAK BENAR</div></div></div></div></div></div></div>
-<div id="card-c03-realiti" class="card-host clip" data-card-id="c03-realiti" data-start="24.3333" data-duration="10.6334" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c03-realiti"><div class="root"><div class="panel" id="c03-realiti-panel"><div class="page" id="c03-realiti-page0"><div id="c03-realiti-kicker" data-anim="pop" data-anim-at="0.0667"><span class="chip" style="background:#0E5E6F">Realiti di Malaysia</span></div><div id="c03-realiti-t" data-anim="slide" data-anim-at="0.3334"><div class="title">Salah satu wad di hospital</div></div><div id="c03-realiti-s" data-anim="fade" data-anim-at="2.0"><div class="label">Dikendalikan oleh</div></div><div id="c03-realiti-g1" data-anim="none" data-anim-at="2.1334"><div class="grid"><span id="c03-p1" class="pill">Doktor psikiatri</span><span id="c03-p2" class="pill">Jururawat terlatih</span><span id="c03-p3" class="pill">Ahli psikologi</span><span id="c03-p4" class="pill">Kaunselor</span><span id="c03-p5" class="pill wide">Jurupulih cara kerja</span></div></div></div></div></div></div></div>
-<div id="card-c04-rutin" class="card-host clip" data-card-id="c04-rutin" data-start="34.9667" data-duration="22.0666" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c04-rutin"><div class="root"><div class="panel" id="c04-rutin-panel"><div class="page" id="c04-rutin-page0"><div id="c04-rutin-kicker" data-anim="pop" data-anim-at="0.1"><span class="chip" style="background:#0E5E6F">Apa pesakit buat dalam wad?</span></div><div id="c04-rutin-r1" data-anim="slide" data-anim-at="1.3"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Jumpa doktor setiap hari</span></div></div><div id="c04-rutin-r2" data-anim="slide" data-anim-at="5.8333"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Ambil ubat ikut jadual</span></div></div><div id="c04-rutin-r3" data-anim="slide" data-anim-at="7.5333"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Pemerhatian &amp; keselamatan dipantau</span></div></div><div id="c04-rutin-r4" data-anim="slide" data-anim-at="11.0333"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Terapi: cara kerja · senaman · kaunseling</span></div></div><div id="c04-rutin-r5" data-anim="slide" data-anim-at="19.3666"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Makan &amp; rehat ikut jadual</span></div></div></div></div></div></div></div>
-<div id="card-c05-tujuan" class="card-host clip" data-card-id="c05-tujuan" data-start="57.0333" data-duration="4.7" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c05-tujuan"><div class="root"><div class="panel" id="c05-tujuan-panel"><div class="page" id="c05-tujuan-page0"><div id="c05-tujuan-kicker" data-anim="pop" data-anim-at="0.1"><span class="chip" style="background:#0E5E6F">Tujuan utama</span></div><div id="c05-tujuan-a" data-anim="pop" data-anim-at="1.5667"><div class="title xl" style="color:#0E5E6F">MENSTABILKAN</div></div><div id="c05-tujuan-b" data-anim="slide" data-anim-at="3.0"><div class="title muted"><span class="strikeword">bukan menghukum</span></div></div></div></div></div></div></div>
-<div id="card-c06-soalan2" class="card-host clip" data-card-id="c06-soalan2" data-start="61.7333" data-duration="20.7" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c06-soalan2"><div class="root"><div class="panel" id="c06-soalan2-panel"><div class="page" id="c06-soalan2-page0"><div id="c06-soalan2-kicker" data-anim="pop" data-anim-at="0.0667"><span class="chip" style="background:#0E5E6F">Soalan #2</span></div><div id="c06-soalan2-t" data-anim="slide" data-anim-at="0.9667"><div class="title">Semua pesakit dalam wad agresif?</div></div><div id="c06-soalan2-st" class="stampflow" data-anim="stampflow" data-anim-at="3.7667"><div class="stamp teal">TIDAK</div></div></div><div class="page" id="c06-soalan2-page1"><div id="c06-soalan2-kicker2" data-anim="pop" data-anim-at="6.0667"><span class="chip" style="background:#0E5E6F">Mereka mungkin mengalami</span></div><div id="c06-soalan2-g" data-anim="none" data-anim-at="5.9667"><div class="grid"><span id="c06-p1" class="pill">Kemurungan teruk</span><span id="c06-p2" class="pill">Anxiety melampau</span><span id="c06-p3" class="pill">Bipolar tidak stabil</span><span id="c06-p4" class="pill">Skizofrenia tidak stabil</span><span id="c06-p5" class="pill wide">Krisis emosi</span></div></div></div><div class="page" id="c06-soalan2-page2"><div id="c06-soalan2-q" data-anim="slide" data-anim-at="16.6"><div class="title">Ramai yang <span style="color:#0E5E6F">pendiam</span> &amp; <span style="color:#0E5E6F">takut</span></div></div><div id="c06-soalan2-s" data-anim="slide" data-anim-at="18.5"><div class="sub">— sedang berjuang dengan penyakit mereka</div></div></div></div></div></div></div>
-<div id="card-c07-soalan3" class="card-host clip" data-card-id="c07-soalan3" data-start="82.4333" data-duration="28.0" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c07-soalan3"><div class="root"><div class="panel" id="c07-soalan3-panel"><div class="page" id="c07-soalan3-page0"><div id="c07-soalan3-kicker" data-anim="pop" data-anim-at="0.1"><span class="chip" style="background:#0E5E6F">Soalan #3</span></div><div id="c07-soalan3-t" data-anim="slide" data-anim-at="1.0667"><div class="title">Kenapa ada pesakit kena ikat?</div></div><div id="c07-soalan3-st" class="stampflow" data-anim="stampflow" data-anim-at="5.5334"><div class="stamp">SALAH FAHAM</div></div></div><div class="page" id="c07-soalan3-page1"><div id="c07-soalan3-kicker2" data-anim="pop" data-anim-at="7.6"><span class="chip" style="background:#0E5E6F">Physical restraint</span></div><div id="c07-soalan3-t2" data-anim="none" data-anim-at="8.9"><div class="title"><span id="c07-t2a">Bukan rutin</span> <span id="c07-t2b" style="color:#E5484D">— langkah terakhir</span></div></div><div id="c07-soalan3-n1" data-anim="slide" data-anim-at="14.3"><div class="row"><span class="num">1</span><span>Berisiko cederakan diri sendiri</span></div></div><div id="c07-soalan3-n2" data-anim="slide" data-anim-at="16.4667"><div class="row"><span class="num">2</span><span>Berisiko cederakan orang lain</span></div></div><div id="c07-soalan3-n3" data-anim="slide" data-anim-at="18.6667"><div class="row"><span class="num">3</span><span>Cara lain tidak berjaya menenangkan</span></div></div></div><div class="page" id="c07-soalan3-page2"><div id="c07-soalan3-kicker3" data-anim="pop" data-anim-at="21.9334"><span class="chip" style="background:#0E5E6F">Bila pesakit stabil</span></div><div id="c07-soalan3-t3" data-anim="slide" data-anim-at="24.3"><div class="title">Dihentikan <span style="color:#0E5E6F">secepat mungkin</span></div></div><div id="c07-soalan3-s3" data-anim="slide" data-anim-at="25.7"><div class="sub">Ikut prosedur &amp; pemantauan yang ketat</div></div></div></div></div></div></div>
-<div id="card-c08-pulih" class="card-host clip" data-card-id="c08-pulih" data-start="111.5" data-duration="14.1667" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c08-pulih"><div class="root"><div class="panel" id="c08-pulih-panel"><div class="page" id="c08-pulih-page0"><div id="c08-pulih-kicker" data-anim="pop" data-anim-at="0.1667"><span class="chip" style="background:#0E5E6F">Masuk wad psikiatri</span></div><div id="c08-pulih-a" data-anim="slide" data-anim-at="1.2667"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#E5484D"/><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg><span>Bukan bermaksud hidup berakhir</span></div></div><div id="c08-pulih-b" data-anim="slide" data-anim-at="3.1667"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#E5484D"/><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg><span>Bukan bermaksud anda gila</span></div></div></div><div class="page" id="c08-pulih-page1"><div id="c08-pulih-kicker2" data-anim="pop" data-anim-at="5.1"><span class="chip" style="background:#0E5E6F">Realiti</span></div><div id="c08-pulih-tl" data-anim="none" data-anim-at="5.0"><div class="steps"><span id="c08-s1" class="step">Beberapa hari</span><span id="c08-a1" class="sep">→</span><span id="c08-s2" class="step">minggu</span><span id="c08-a2" class="sep">→</span><span id="c08-s3" class="step hi">Keluar</span></div></div><div id="c08-pulih-k1" data-anim="slide" data-anim-at="10.7"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Kembali bekerja</span></div></div><div id="c08-pulih-k2" data-anim="slide" data-anim-at="11.5"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Kembali belajar</span></div></div><div id="c08-pulih-k3" data-anim="slide" data-anim-at="12.3"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Kembali hidup seperti biasa</span></div></div></div></div></div></div></div>
-<div id="card-c09-selamat" class="card-host clip" data-card-id="c09-selamat" data-start="125.6667" data-duration="10.7333" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c09-selamat"><div class="root"><div class="panel" id="c09-selamat-panel"><div class="page" id="c09-selamat-page0"><div id="c09-selamat-kicker" data-anim="pop" data-anim-at="0.1"><span class="chip" style="background:#0E5E6F">Wad psikiatri</span></div><div id="c09-selamat-a" data-anim="slide" data-anim-at="0.6"><div class="title muted"><span class="strikeword">Tempat hukuman</span></div></div><div id="c09-selamat-b" data-anim="pop" data-anim-at="3.0"><div class="title xl" style="color:#0E5E6F">TEMPAT SELAMAT</div></div><div id="c09-selamat-g" data-anim="none" data-anim-at="0.0"><div class="steps"><span id="c09-s1" class="step">Berehat</span><span id="c09-a1" class="sep">·</span><span id="c09-s2" class="step">Distabilkan</span><span id="c09-a2" class="sep">·</span><span id="c09-s3" class="step hi">Mula sembuh</span></div></div></div></div></div></div></div>
-<div id="card-c10-cta" class="card-host clip" data-card-id="c10-cta" data-start="136.4" data-duration="12.8" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c10-cta"><div class="root"><div class="panel" id="c10-cta-panel"><div class="page" id="c10-cta-page0"><div id="c10-cta-kicker" data-anim="pop" data-anim-at="0.1"><span class="chip" style="background:#0E5E6F">Kesihatan mental</span></div><div id="c10-cta-t0" data-anim="slide" data-anim-at="0.4333"><div class="title sm">Anda / orang tersayang sedang bergelut?</div></div><div id="c10-cta-t" data-anim="slide" data-anim-at="3.7667"><div class="title">Jangan takut <span style="color:#0E5E6F">dapatkan bantuan</span></div></div></div><div class="page" id="c10-cta-page1"><div id="c10-cta-kicker2" data-anim="pop" data-anim-at="5.5667"><span class="chip" style="background:#0E5E6F">Di klinik saya</span></div><div id="c10-cta-t2" data-anim="slide" data-anim-at="6.0333"><div class="title">Saringan kesihatan mental</div></div><div id="c10-cta-s2" data-anim="slide" data-anim-at="9.0667"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Bincang pilihan rawatan paling sesuai</span></div></div></div><div class="page" id="c10-cta-page2"><div id="c10-cta-t3" data-anim="pop" data-anim-at="10.9"><div class="title xl" style="color:#0E5E6F">Ada soalan?</div></div><div id="c10-cta-s3" data-anim="slide" data-anim-at="11.8333"><div class="sub strong">Komen di bawah <svg viewBox="0 0 24 24" class="arr"><path d="M12 4v15M5.5 12.5L12 19l6.5-6.5" stroke="#0E5E6F" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div></div></div></div></div></div>
+  <audio id="source-audio" src="input-video.mp4" data-start="0" data-duration="150.933" data-track-index="10" data-volume="1"></audio>
+  <div id="card-c01-hook" class="card-host clip" data-card-id="c01-hook" data-start="0.0" data-duration="8.3333" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c01-hook"><div class="root"><div class="panel" id="c01-hook-panel"><div class="page" id="c01-hook-page0"><div id="c01-hook-kicker" data-anim="pop" data-anim-at="0.0"><span class="chip" style="background:#0E5E6F">Soalan #1</span></div><div id="c01-hook-t1" data-anim="slide" data-anim-at="0.0"><div class="title sm">Macam mana keadaan dalam</div></div><div id="c01-hook-t2" data-anim="pop" data-anim-at="0.0"><div class="title xl" style="color:#0E5E6F">WAD PSIKIATRI?</div></div><div id="c01-hook-s1" data-anim="slide" data-anim-at="5.6667"><div class="sub">Seram macam dalam filem?</div></div></div></div></div></div></div>
+<div id="card-c02-mitos" class="card-host clip" data-card-id="c02-mitos" data-start="15.9333" data-duration="7.3667" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c02-mitos"><div class="root"><div class="panel" id="c02-mitos-panel"><div class="page" id="c02-mitos-page0"><div id="c02-mitos-kicker" data-anim="pop" data-anim-at="0.1334"><span class="chip" style="background:#E5484D">Mitos</span></div><div id="c02-mitos-lb" data-anim="fade" data-anim-at="-2.0666"><div class="label">Apa orang bayangkan</div></div><div id="c02-mitos-m1" data-anim="slide" data-anim-at="0.4"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="6" fill="#6B7C85"/></svg><span><span class="strikeword">Gelap &amp; menakutkan</span></span></div></div><div id="c02-mitos-m2" data-anim="slide" data-anim-at="1.8667"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="6" fill="#6B7C85"/></svg><span><span class="strikeword">Pesakit meracau-racau</span></span></div></div><div id="c02-mitos-m3" data-anim="slide" data-anim-at="3.8"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="6" fill="#6B7C85"/></svg><span><span class="strikeword">Diikat sepanjang masa</span></span></div></div><div id="c02-mitos-st" class="stampwrap" data-anim="stamp" data-anim-at="5.8"><div class="stamp">TIDAK BENAR</div></div></div></div></div></div></div>
+<div id="card-c03-realiti" class="card-host clip" data-card-id="c03-realiti" data-start="24.3333" data-duration="10.6334" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c03-realiti"><div class="root"><div class="panel" id="c03-realiti-panel"><div class="page" id="c03-realiti-page0"><div id="c03-realiti-kicker" data-anim="pop" data-anim-at="0.0667"><span class="chip" style="background:#0E5E6F">Realiti di Malaysia</span></div><div id="c03-realiti-t" data-anim="slide" data-anim-at="0.3334"><div class="title">Salah satu wad di hospital</div></div><div id="c03-realiti-s" data-anim="fade" data-anim-at="2.0"><div class="sub">Dikendalikan oleh satu pasukan pakar</div></div></div><div class="page" id="c03-realiti-page1"><div id="c03-realiti-kicker2" data-anim="pop" data-anim-at="3.1667"><span class="chip" style="background:#0E5E6F">Dikendalikan oleh</span></div><div id="c03-realiti-g1" data-anim="none" data-anim-at="3.0667"><div class="grid"><span id="c03-p1" class="pill">Doktor psikiatri</span><span id="c03-p2" class="pill">Jururawat terlatih</span><span id="c03-p3" class="pill">Ahli psikologi</span><span id="c03-p4" class="pill">Kaunselor</span><span id="c03-p5" class="pill wide">Jurupulih cara kerja</span></div></div></div></div></div></div></div>
+<div id="card-c04-rutin" class="card-host clip" data-card-id="c04-rutin" data-start="35.8667" data-duration="21.1666" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c04-rutin"><div class="root"><div class="panel" id="c04-rutin-panel"><div class="page" id="c04-rutin-page0"><div id="c04-rutin-kicker" data-anim="pop" data-anim-at="0.1333"><span class="chip" style="background:#0E5E6F">Apa pesakit buat dalam wad?</span></div><div id="c04-rutin-r1" data-anim="slide" data-anim-at="0.4"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Jumpa doktor setiap hari</span></div></div><div id="c04-rutin-r2" data-anim="slide" data-anim-at="4.9333"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Ambil ubat ikut jadual</span></div></div><div id="c04-rutin-r3" data-anim="slide" data-anim-at="6.6333"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Pemerhatian &amp; keselamatan dipantau</span></div></div><div id="c04-rutin-r4" data-anim="slide" data-anim-at="10.1333"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Terapi: cara kerja · senaman · kaunseling</span></div></div><div id="c04-rutin-r5" data-anim="slide" data-anim-at="18.4666"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Makan &amp; rehat ikut jadual</span></div></div></div></div></div></div></div>
+<div id="card-c05-tujuan" class="card-host clip" data-card-id="c05-tujuan" data-start="58.2" data-duration="3.5333" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c05-tujuan"><div class="root"><div class="panel" id="c05-tujuan-panel"><div class="page" id="c05-tujuan-page0"><div id="c05-tujuan-kicker" data-anim="pop" data-anim-at="0.1"><span class="chip" style="background:#0E5E6F">Tujuan utama</span></div><div id="c05-tujuan-a" data-anim="pop" data-anim-at="0.4"><div class="title xl" style="color:#0E5E6F">MENSTABILKAN</div></div><div id="c05-tujuan-b" data-anim="slide" data-anim-at="1.8333"><div class="title muted"><span class="strikeword">bukan menghukum</span></div></div></div></div></div></div></div>
+<div id="card-c06-soalan2" class="card-host clip" data-card-id="c06-soalan2" data-start="62.3" data-duration="20.1333" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c06-soalan2"><div class="root"><div class="panel" id="c06-soalan2-panel"><div class="page" id="c06-soalan2-page0"><div id="c06-soalan2-kicker" data-anim="pop" data-anim-at="0.1"><span class="chip" style="background:#0E5E6F">Soalan #2</span></div><div id="c06-soalan2-t" data-anim="slide" data-anim-at="0.4"><div class="title">Semua pesakit dalam wad agresif?</div></div><div id="c06-soalan2-st" class="stampflow" data-anim="stampflow" data-anim-at="3.2"><div class="stamp teal">TIDAK</div></div></div><div class="page" id="c06-soalan2-page1"><div id="c06-soalan2-kicker2" data-anim="pop" data-anim-at="6.2333"><span class="chip" style="background:#0E5E6F">Mereka mungkin mengalami</span></div><div id="c06-soalan2-g" data-anim="none" data-anim-at="5.4"><div class="grid"><span id="c06-p1" class="pill">Kemurungan teruk</span><span id="c06-p2" class="pill">Anxiety melampau</span><span id="c06-p3" class="pill">Bipolar tidak stabil</span><span id="c06-p4" class="pill">Skizofrenia tidak stabil</span><span id="c06-p5" class="pill wide">Krisis emosi</span></div></div></div><div class="page" id="c06-soalan2-page2"><div id="c06-soalan2-q" data-anim="slide" data-anim-at="16.0333"><div class="title">Ramai yang <span style="color:#0E5E6F">pendiam</span> &amp; <span style="color:#0E5E6F">takut</span></div></div><div id="c06-soalan2-s" data-anim="slide" data-anim-at="17.9333"><div class="sub">— sedang berjuang dengan penyakit mereka</div></div></div></div></div></div></div>
+<div id="card-c07-soalan3" class="card-host clip" data-card-id="c07-soalan3" data-start="83.1" data-duration="27.3333" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c07-soalan3"><div class="root"><div class="panel" id="c07-soalan3-panel"><div class="page" id="c07-soalan3-page0"><div id="c07-soalan3-kicker" data-anim="pop" data-anim-at="0.1"><span class="chip" style="background:#0E5E6F">Soalan #3</span></div><div id="c07-soalan3-t" data-anim="slide" data-anim-at="0.4"><div class="title">Kenapa ada pesakit kena ikat?</div></div><div id="c07-soalan3-st" class="stampflow" data-anim="stampflow" data-anim-at="4.8667"><div class="stamp">SALAH FAHAM</div></div></div><div class="page" id="c07-soalan3-page1"><div id="c07-soalan3-kicker2" data-anim="pop" data-anim-at="7.9333"><span class="chip" style="background:#0E5E6F">Physical restraint</span></div><div id="c07-soalan3-t2" data-anim="none" data-anim-at="8.2333"><div class="title"><span id="c07-t2a">Bukan rutin</span> <span id="c07-t2b" style="color:#E5484D">— langkah terakhir</span></div></div><div id="c07-soalan3-n1" data-anim="slide" data-anim-at="13.6333"><div class="row"><span class="num">1</span><span>Berisiko cederakan diri sendiri</span></div></div><div id="c07-soalan3-n2" data-anim="slide" data-anim-at="15.8"><div class="row"><span class="num">2</span><span>Berisiko cederakan orang lain</span></div></div><div id="c07-soalan3-n3" data-anim="slide" data-anim-at="18.0"><div class="row"><span class="num">3</span><span>Cara lain tidak berjaya menenangkan</span></div></div></div><div class="page" id="c07-soalan3-page2"><div id="c07-soalan3-kicker3" data-anim="pop" data-anim-at="23.3333"><span class="chip" style="background:#0E5E6F">Bila pesakit stabil</span></div><div id="c07-soalan3-t3" data-anim="slide" data-anim-at="23.6333"><div class="title">Dihentikan <span style="color:#0E5E6F">secepat mungkin</span></div></div><div id="c07-soalan3-s3" data-anim="slide" data-anim-at="25.0333"><div class="sub">Ikut prosedur &amp; pemantauan yang ketat</div></div></div></div></div></div></div>
+<div id="card-c08-pulih" class="card-host clip" data-card-id="c08-pulih" data-start="112.3667" data-duration="13.3" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c08-pulih"><div class="root"><div class="panel" id="c08-pulih-panel"><div class="page" id="c08-pulih-page0"><div id="c08-pulih-kicker" data-anim="pop" data-anim-at="0.1"><span class="chip" style="background:#0E5E6F">Masuk wad psikiatri</span></div><div id="c08-pulih-a" data-anim="slide" data-anim-at="0.4"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#E5484D"/><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg><span>Bukan bermaksud hidup berakhir</span></div></div><div id="c08-pulih-b" data-anim="slide" data-anim-at="2.3"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#E5484D"/><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg><span>Bukan bermaksud anda gila</span></div></div></div><div class="page" id="c08-pulih-page1"><div id="c08-pulih-kicker2" data-anim="pop" data-anim-at="5.8"><span class="chip" style="background:#0E5E6F">Realiti</span></div><div id="c08-pulih-tl" data-anim="none" data-anim-at="4.1333"><div class="steps"><span id="c08-s1" class="step">Beberapa hari</span><span id="c08-a1" class="sep">→</span><span id="c08-s2" class="step">minggu</span><span id="c08-a2" class="sep">→</span><span id="c08-s3" class="step hi">Keluar</span></div></div><div id="c08-pulih-k1" data-anim="slide" data-anim-at="9.8333"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Kembali bekerja</span></div></div><div id="c08-pulih-k2" data-anim="slide" data-anim-at="10.6333"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Kembali belajar</span></div></div><div id="c08-pulih-k3" data-anim="slide" data-anim-at="11.4333"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Kembali hidup seperti biasa</span></div></div></div></div></div></div></div>
+<div id="card-c09-selamat" class="card-host clip" data-card-id="c09-selamat" data-start="125.6667" data-duration="11.0" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c09-selamat"><div class="root"><div class="panel" id="c09-selamat-panel"><div class="page" id="c09-selamat-page0"><div id="c09-selamat-kicker" data-anim="pop" data-anim-at="0.1"><span class="chip" style="background:#0E5E6F">Wad psikiatri</span></div><div id="c09-selamat-a" data-anim="slide" data-anim-at="0.6"><div class="title muted"><span class="strikeword">Tempat hukuman</span></div></div><div id="c09-selamat-b" data-anim="pop" data-anim-at="3.0"><div class="title xl" style="color:#0E5E6F">TEMPAT SELAMAT</div></div><div id="c09-selamat-g" data-anim="none" data-anim-at="0.0"><div class="steps"><span id="c09-s1" class="step">Berehat</span><span id="c09-a1" class="sep">·</span><span id="c09-s2" class="step">Distabilkan</span><span id="c09-a2" class="sep">·</span><span id="c09-s3" class="step hi">Mula sembuh</span></div></div></div></div></div></div></div>
+<div id="card-c10-cta" class="card-host clip" data-card-id="c10-cta" data-start="136.6667" data-duration="14.2666" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c10-cta"><div class="root"><div class="panel" id="c10-cta-panel"><div class="page" id="c10-cta-page0"><div id="c10-cta-kicker" data-anim="pop" data-anim-at="0.1"><span class="chip" style="background:#0E5E6F">Kesihatan mental</span></div><div id="c10-cta-t0" data-anim="slide" data-anim-at="0.4"><div class="title sm">Anda / orang tersayang sedang bergelut?</div></div><div id="c10-cta-t" data-anim="slide" data-anim-at="3.7333"><div class="title">Jangan takut <span style="color:#0E5E6F">dapatkan bantuan</span></div></div></div><div class="page" id="c10-cta-page1"><div id="c10-cta-kicker2" data-anim="pop" data-anim-at="5.5333"><span class="chip" style="background:#0E5E6F">Di klinik saya</span></div><div id="c10-cta-t2" data-anim="slide" data-anim-at="6.1333"><div class="title">Saringan kesihatan mental</div></div><div id="c10-cta-s2" data-anim="slide" data-anim-at="9.1333"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Bincang pilihan rawatan paling sesuai</span></div></div></div><div class="page" id="c10-cta-page2"><div id="c10-cta-t3" data-anim="pop" data-anim-at="11.0"><div class="title xl" style="color:#0E5E6F">Ada soalan?</div></div><div id="c10-cta-s3" data-anim="slide" data-anim-at="11.7666"><div class="sub strong">Komen di bawah <svg viewBox="0 0 24 24" class="arr"><path d="M12 4v15M5.5 12.5L12 19l6.5-6.5" stroke="#0E5E6F" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div></div></div></div></div></div>
   <script src="vendor/gsap.min.js"></script>
   <script>
   (function () {
     const tl = window.gsap.timeline({ paused: true });
     // c01-hook: Hook — the patient's question
     tl.set('.card-host[data-card-id="c01-hook"]', {visibility:"visible", opacity:1}, 0.0);
-    tl.fromTo('#c01-hook-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 0.0);
+    tl.set('#c01-hook-panel', {opacity:1, y:0, scale:1}, 0);
+    tl.set('#c01-hook-panel', {height:344}, 0.0);
     tl.set('#c01-hook-page0', {opacity:1}, 0.0);
-    tl.fromTo('#c01-hook-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 0.1333);
-    tl.fromTo('#c01-hook-t1', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 0.3);
-    tl.fromTo('#c01-hook-t2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 3.7333);
+    tl.set('#c01-hook-kicker', {opacity:1}, 0);
+    tl.set('#c01-hook-t1', {opacity:1}, 0);
+    tl.set('#c01-hook-t2', {opacity:1}, 0);
     tl.fromTo('#c01-hook-s1', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 5.6667);
     tl.to('#c01-hook-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 8.0333);
     tl.set('.card-host[data-card-id="c01-hook"]', {visibility:"hidden"}, 8.3333);
     // c02-mitos: Myths from films, struck out on 'tapi tidak sebenarnya'
-    tl.set('.card-host[data-card-id="c02-mitos"]', {visibility:"visible", opacity:1}, 13.3);
-    tl.fromTo('#c02-mitos-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 13.3);
-    tl.set('#c02-mitos-page0', {opacity:1}, 13.3);
-    tl.fromTo('#c02-mitos-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 13.4);
-    tl.fromTo('#c02-mitos-lb', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 13.8667);
+    tl.set('.card-host[data-card-id="c02-mitos"]', {visibility:"visible", opacity:1}, 15.9333);
+    tl.fromTo('#c02-mitos-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 15.9333);
+    tl.set('#c02-mitos-panel', {height:358}, 15.9333);
+    tl.set('#c02-mitos-page0', {opacity:1}, 15.9333);
+    tl.fromTo('#c02-mitos-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 16.0667);
+    tl.fromTo('#c02-mitos-lb', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 16.0);
     tl.fromTo('#c02-mitos-m1', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 16.3333);
     tl.fromTo('#c02-mitos-m2', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 17.8);
     tl.fromTo('#c02-mitos-m3', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 19.7333);
@@ -96,15 +98,20 @@ html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; back
     tl.fromTo('#c02-mitos-m3 .strikeword', {backgroundSize:'0% 6px'}, {backgroundSize:'100% 6px', duration:0.35, ease:'power2.inOut'}, 21.7333);
     tl.fromTo('#c02-mitos-st', {opacity:0, scale:1.9}, {opacity:1, scale:1, duration:0.26, ease:'power4.out'}, 21.7333);
     tl.to('#c02-mitos-m1, #c02-mitos-m2, #c02-mitos-m3', {opacity:0.45, duration:0.3, ease:'power2.out'}, 21.9);
-    tl.to('#c02-mitos-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 22.0667);
-    tl.set('.card-host[data-card-id="c02-mitos"]', {visibility:"hidden"}, 22.3333);
+    tl.to('#c02-mitos-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 23.0);
+    tl.set('.card-host[data-card-id="c02-mitos"]', {visibility:"hidden"}, 23.3);
     // c03-realiti: Reality: a normal hospital ward, run by a team
     tl.set('.card-host[data-card-id="c03-realiti"]', {visibility:"visible", opacity:1}, 24.3333);
     tl.fromTo('#c03-realiti-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 24.3333);
+    tl.set('#c03-realiti-panel', {height:251}, 24.3333);
     tl.set('#c03-realiti-page0', {opacity:1}, 24.3333);
     tl.fromTo('#c03-realiti-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 24.4);
     tl.fromTo('#c03-realiti-t', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 24.6667);
     tl.fromTo('#c03-realiti-s', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 26.3333);
+    tl.to('#c03-realiti-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 27.1333);
+    tl.fromTo('#c03-realiti-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 27.4);
+    tl.to('#c03-realiti-panel', {height:365, duration:0.4, ease:'power2.inOut'}, 27.2);
+    tl.fromTo('#c03-realiti-kicker2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 27.5);
     tl.fromTo('#c03-p1', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 27.7);
     tl.fromTo('#c03-p2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 28.9333);
     tl.fromTo('#c03-p3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 30.5);
@@ -113,10 +120,11 @@ html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; back
     tl.to('#c03-realiti-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 34.6667);
     tl.set('.card-host[data-card-id="c03-realiti"]', {visibility:"hidden"}, 34.9667);
     // c04-rutin: Daily routine checklist, one tick per spoken item
-    tl.set('.card-host[data-card-id="c04-rutin"]', {visibility:"visible", opacity:1}, 34.9667);
-    tl.fromTo('#c04-rutin-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 34.9667);
-    tl.set('#c04-rutin-page0', {opacity:1}, 34.9667);
-    tl.fromTo('#c04-rutin-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 35.0667);
+    tl.set('.card-host[data-card-id="c04-rutin"]', {visibility:"visible", opacity:1}, 35.8667);
+    tl.fromTo('#c04-rutin-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 35.8667);
+    tl.set('#c04-rutin-panel', {height:398}, 35.8667);
+    tl.set('#c04-rutin-page0', {opacity:1}, 35.8667);
+    tl.fromTo('#c04-rutin-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 36.0);
     tl.fromTo('#c04-rutin-r1', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 36.2667);
     tl.fromTo('#c04-rutin-r2', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 40.8);
     tl.fromTo('#c04-rutin-r3', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 42.5);
@@ -125,25 +133,28 @@ html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; back
     tl.to('#c04-rutin-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 56.7333);
     tl.set('.card-host[data-card-id="c04-rutin"]', {visibility:"hidden"}, 57.0333);
     // c05-tujuan: Pull-quote: to stabilise, not to punish
-    tl.set('.card-host[data-card-id="c05-tujuan"]', {visibility:"visible", opacity:1}, 57.0333);
-    tl.fromTo('#c05-tujuan-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 57.0333);
-    tl.set('#c05-tujuan-page0', {opacity:1}, 57.0333);
-    tl.fromTo('#c05-tujuan-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 57.1333);
+    tl.set('.card-host[data-card-id="c05-tujuan"]', {visibility:"visible", opacity:1}, 58.2);
+    tl.fromTo('#c05-tujuan-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 58.2);
+    tl.set('#c05-tujuan-panel', {height:283}, 58.2);
+    tl.set('#c05-tujuan-page0', {opacity:1}, 58.2);
+    tl.fromTo('#c05-tujuan-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 58.3);
     tl.fromTo('#c05-tujuan-a', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 58.6);
     tl.fromTo('#c05-tujuan-b', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 60.0333);
     tl.fromTo('#c05-tujuan-b .strikeword', {backgroundSize:'0% 6px'}, {backgroundSize:'100% 6px', duration:0.35, ease:'power2.inOut'}, 61.1333);
     tl.to('#c05-tujuan-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 61.4333);
     tl.set('.card-host[data-card-id="c05-tujuan"]', {visibility:"hidden"}, 61.7333);
     // c06-soalan2: Q2 — are all patients aggressive? No; the conditions they have
-    tl.set('.card-host[data-card-id="c06-soalan2"]', {visibility:"visible", opacity:1}, 61.7333);
-    tl.fromTo('#c06-soalan2-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 61.7333);
-    tl.set('#c06-soalan2-page0', {opacity:1}, 61.7333);
-    tl.fromTo('#c06-soalan2-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 61.8);
+    tl.set('.card-host[data-card-id="c06-soalan2"]', {visibility:"visible", opacity:1}, 62.3);
+    tl.fromTo('#c06-soalan2-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 62.3);
+    tl.set('#c06-soalan2-panel', {height:380}, 62.3);
+    tl.set('#c06-soalan2-page0', {opacity:1}, 62.3);
+    tl.fromTo('#c06-soalan2-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 62.4);
     tl.fromTo('#c06-soalan2-t', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 62.7);
     tl.fromTo('#c06-soalan2-st', {opacity:0, scale:1.9}, {opacity:1, scale:1, duration:0.26, ease:'power4.out'}, 65.5);
-    tl.to('#c06-soalan2-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 67.4333);
-    tl.fromTo('#c06-soalan2-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 67.7);
-    tl.fromTo('#c06-soalan2-kicker2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 67.8);
+    tl.to('#c06-soalan2-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 68.1333);
+    tl.fromTo('#c06-soalan2-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 68.4333);
+    tl.to('#c06-soalan2-panel', {height:365, duration:0.4, ease:'power2.inOut'}, 68.2333);
+    tl.fromTo('#c06-soalan2-kicker2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 68.5333);
     tl.fromTo('#c06-p1', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 68.8333);
     tl.fromTo('#c06-p2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 70.1667);
     tl.fromTo('#c06-p3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 71.6);
@@ -151,42 +162,48 @@ html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; back
     tl.fromTo('#c06-p5', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 75.3333);
     tl.to('#c06-soalan2-page1', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 78.0);
     tl.fromTo('#c06-soalan2-page2', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 78.2667);
+    tl.to('#c06-soalan2-panel', {height:184, duration:0.4, ease:'power2.inOut'}, 78.0667);
     tl.fromTo('#c06-soalan2-q', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 78.3333);
     tl.fromTo('#c06-soalan2-s', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 80.2333);
     tl.to('#c06-soalan2-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 82.1333);
     tl.set('.card-host[data-card-id="c06-soalan2"]', {visibility:"hidden"}, 82.4333);
     // c07-soalan3: Q3 — why are some patients restrained? Last resort, 3 conditions
-    tl.set('.card-host[data-card-id="c07-soalan3"]', {visibility:"visible", opacity:1}, 82.4333);
-    tl.fromTo('#c07-soalan3-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 82.4333);
-    tl.set('#c07-soalan3-page0', {opacity:1}, 82.4333);
-    tl.fromTo('#c07-soalan3-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 82.5333);
+    tl.set('.card-host[data-card-id="c07-soalan3"]', {visibility:"visible", opacity:1}, 83.1);
+    tl.fromTo('#c07-soalan3-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 83.1);
+    tl.set('#c07-soalan3-panel', {height:287}, 83.1);
+    tl.set('#c07-soalan3-page0', {opacity:1}, 83.1);
+    tl.fromTo('#c07-soalan3-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 83.2);
     tl.fromTo('#c07-soalan3-t', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 83.5);
     tl.fromTo('#c07-soalan3-st', {opacity:0, scale:1.9}, {opacity:1, scale:1, duration:0.26, ease:'power4.out'}, 87.9667);
-    tl.to('#c07-soalan3-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 89.6333);
-    tl.fromTo('#c07-soalan3-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 89.9333);
-    tl.fromTo('#c07-soalan3-kicker2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 90.0333);
+    tl.to('#c07-soalan3-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 90.6333);
+    tl.fromTo('#c07-soalan3-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 90.9333);
+    tl.to('#c07-soalan3-panel', {height:361, duration:0.4, ease:'power2.inOut'}, 90.7333);
+    tl.fromTo('#c07-soalan3-kicker2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 91.0333);
     tl.fromTo('#c07-t2a', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 91.3333);
     tl.fromTo('#c07-t2b', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 94.5667);
     tl.fromTo('#c07-soalan3-n1', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 96.7333);
     tl.fromTo('#c07-soalan3-n2', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 98.9);
     tl.fromTo('#c07-soalan3-n3', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 101.1);
-    tl.to('#c07-soalan3-page1', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 104.0);
-    tl.fromTo('#c07-soalan3-page2', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 104.2667);
-    tl.fromTo('#c07-soalan3-kicker3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 104.3667);
+    tl.to('#c07-soalan3-page1', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 106.0667);
+    tl.fromTo('#c07-soalan3-page2', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 106.3333);
+    tl.to('#c07-soalan3-panel', {height:251, duration:0.4, ease:'power2.inOut'}, 106.1333);
+    tl.fromTo('#c07-soalan3-kicker3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 106.4333);
     tl.fromTo('#c07-soalan3-t3', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 106.7333);
     tl.fromTo('#c07-soalan3-s3', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 108.1333);
     tl.to('#c07-soalan3-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 110.1333);
     tl.set('.card-host[data-card-id="c07-soalan3"]', {visibility:"hidden"}, 110.4333);
     // c08-pulih: Admission is not the end — patients go home and back to life
-    tl.set('.card-host[data-card-id="c08-pulih"]', {visibility:"visible", opacity:1}, 111.5);
-    tl.fromTo('#c08-pulih-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 111.5);
-    tl.set('#c08-pulih-page0', {opacity:1}, 111.5);
-    tl.fromTo('#c08-pulih-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 111.6667);
+    tl.set('.card-host[data-card-id="c08-pulih"]', {visibility:"visible", opacity:1}, 112.3667);
+    tl.fromTo('#c08-pulih-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 112.3667);
+    tl.set('#c08-pulih-panel', {height:243}, 112.3667);
+    tl.set('#c08-pulih-page0', {opacity:1}, 112.3667);
+    tl.fromTo('#c08-pulih-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 112.4667);
     tl.fromTo('#c08-pulih-a', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 112.7667);
     tl.fromTo('#c08-pulih-b', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 114.6667);
-    tl.to('#c08-pulih-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 116.2333);
-    tl.fromTo('#c08-pulih-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 116.5);
-    tl.fromTo('#c08-pulih-kicker2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 116.6);
+    tl.to('#c08-pulih-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 117.8);
+    tl.fromTo('#c08-pulih-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 118.0667);
+    tl.to('#c08-pulih-panel', {height:368, duration:0.4, ease:'power2.inOut'}, 117.8667);
+    tl.fromTo('#c08-pulih-kicker2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 118.1667);
     tl.fromTo('#c08-s1', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 118.4667);
     tl.fromTo('#c08-a1', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 119.3667);
     tl.fromTo('#c08-s2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 119.4333);
@@ -200,6 +217,7 @@ html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; back
     // c09-selamat: Not a place of punishment — a safe place to rest, stabilise, begin healing
     tl.set('.card-host[data-card-id="c09-selamat"]', {visibility:"visible", opacity:1}, 125.6667);
     tl.fromTo('#c09-selamat-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 125.6667);
+    tl.set('#c09-selamat-panel', {height:365}, 125.6667);
     tl.set('#c09-selamat-page0', {opacity:1}, 125.6667);
     tl.fromTo('#c09-selamat-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 125.7667);
     tl.fromTo('#c09-selamat-a', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 126.2667);
@@ -208,28 +226,31 @@ html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; back
     tl.fromTo('#c09-s1', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 130.4667);
     tl.fromTo('#c09-a1', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 131.0667);
     tl.fromTo('#c09-s2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 131.1667);
-    tl.fromTo('#c09-a2', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 133.8667);
-    tl.fromTo('#c09-s3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 134.2);
-    tl.to('#c09-selamat-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 136.1);
-    tl.set('.card-host[data-card-id="c09-selamat"]', {visibility:"hidden"}, 136.4);
+    tl.fromTo('#c09-a2', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 134.1);
+    tl.fromTo('#c09-s3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 134.4333);
+    tl.to('#c09-selamat-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 136.3333);
+    tl.set('.card-host[data-card-id="c09-selamat"]', {visibility:"hidden"}, 136.6667);
     // c10-cta: CTA — don't be afraid to get help; screening at the clinic; comment
-    tl.set('.card-host[data-card-id="c10-cta"]', {visibility:"visible", opacity:1}, 136.4);
-    tl.fromTo('#c10-cta-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 136.4);
-    tl.set('#c10-cta-page0', {opacity:1}, 136.4);
-    tl.fromTo('#c10-cta-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 136.5);
-    tl.fromTo('#c10-cta-t0', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 136.8333);
-    tl.fromTo('#c10-cta-t', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 140.1667);
-    tl.to('#c10-cta-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 141.6);
-    tl.fromTo('#c10-cta-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 141.8667);
-    tl.fromTo('#c10-cta-kicker2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 141.9667);
-    tl.fromTo('#c10-cta-t2', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 142.4333);
-    tl.fromTo('#c10-cta-s2', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 145.4667);
-    tl.to('#c10-cta-page1', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 147.0333);
-    tl.fromTo('#c10-cta-page2', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 147.3);
-    tl.fromTo('#c10-cta-t3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 147.3);
-    tl.fromTo('#c10-cta-s3', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 148.2333);
-    tl.to('#c10-cta-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 148.9);
-    tl.set('.card-host[data-card-id="c10-cta"]', {visibility:"hidden"}, 149.2);
+    tl.set('.card-host[data-card-id="c10-cta"]', {visibility:"visible", opacity:1}, 136.6667);
+    tl.fromTo('#c10-cta-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 136.6667);
+    tl.set('#c10-cta-panel', {height:252}, 136.6667);
+    tl.set('#c10-cta-page0', {opacity:1}, 136.6667);
+    tl.fromTo('#c10-cta-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 136.7667);
+    tl.fromTo('#c10-cta-t0', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 137.0667);
+    tl.fromTo('#c10-cta-t', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 140.4);
+    tl.to('#c10-cta-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 141.8333);
+    tl.fromTo('#c10-cta-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 142.1);
+    tl.to('#c10-cta-panel', {height:248, duration:0.4, ease:'power2.inOut'}, 141.9);
+    tl.fromTo('#c10-cta-kicker2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 142.2);
+    tl.fromTo('#c10-cta-t2', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 142.8);
+    tl.fromTo('#c10-cta-s2', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 145.8);
+    tl.to('#c10-cta-page1', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 147.3667);
+    tl.fromTo('#c10-cta-page2', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 147.6667);
+    tl.to('#c10-cta-panel', {height:209, duration:0.4, ease:'power2.inOut'}, 147.4667);
+    tl.fromTo('#c10-cta-t3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 147.6667);
+    tl.fromTo('#c10-cta-s3', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 148.4333);
+    tl.to('#c10-cta-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 150.8);
+    tl.set('.card-host[data-card-id="c10-cta"]', {visibility:"hidden"}, 150.9333);
     window.__timelines = window.__timelines || {};
     window.__timelines["talking-head-recut"] = tl;
   })();

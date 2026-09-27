@@ -2097,302 +2097,308 @@
   },
   {
    "text": "diberi",
-   "start": 132.891,
-   "end": 133.131,
+   "start": 133.125,
+   "end": 133.365,
    "type": "word"
   },
   {
    "text": "peluang",
-   "start": 133.191,
-   "end": 133.672,
+   "start": 133.425,
+   "end": 133.906,
    "type": "word"
   },
   {
    "text": "untuk",
-   "start": 133.792,
-   "end": 134.153,
+   "start": 134.026,
+   "end": 134.387,
    "type": "word"
   },
   {
    "text": "memulakan",
-   "start": 134.323,
-   "end": 134.824,
+   "start": 134.557,
+   "end": 135.058,
    "type": "word"
   },
   {
    "text": "proses",
-   "start": 134.884,
-   "end": 135.344,
+   "start": 135.118,
+   "end": 135.578,
    "type": "word"
   },
   {
    "text": "sembuh",
-   "start": 135.625,
-   "end": 135.985,
+   "start": 135.859,
+   "end": 136.219,
    "type": "word"
   },
   {
    "text": "itu",
-   "start": 136.065,
-   "end": 136.165,
+   "start": 136.299,
+   "end": 136.399,
    "type": "word"
   },
   {
    "text": "jadi",
-   "start": 136.52,
-   "end": 136.66,
+   "start": 136.753,
+   "end": 136.893,
    "type": "word"
   },
   {
    "text": "kalau",
-   "start": 136.7,
-   "end": 136.901,
+   "start": 136.933,
+   "end": 137.134,
    "type": "word"
   },
   {
    "text": "anda",
-   "start": 136.961,
-   "end": 137.221,
+   "start": 137.194,
+   "end": 137.454,
    "type": "word"
   },
   {
    "text": "ataupun",
-   "start": 137.421,
-   "end": 137.702,
+   "start": 137.654,
+   "end": 137.935,
    "type": "word"
   },
   {
    "text": "orang",
-   "start": 137.762,
-   "end": 137.922,
+   "start": 137.995,
+   "end": 138.155,
    "type": "word"
   },
   {
    "text": "tersayang",
-   "start": 137.922,
-   "end": 138.202,
+   "start": 138.155,
+   "end": 138.435,
    "type": "word"
   },
   {
    "text": "sedang",
-   "start": 138.222,
-   "end": 138.382,
+   "start": 138.455,
+   "end": 138.615,
    "type": "word"
   },
   {
    "text": "bergelut",
-   "start": 138.402,
-   "end": 138.783,
+   "start": 138.635,
+   "end": 139.016,
    "type": "word"
   },
   {
    "text": "dengan",
-   "start": 138.843,
-   "end": 139.203,
+   "start": 139.076,
+   "end": 139.436,
    "type": "word"
   },
   {
    "text": "kesihatan",
-   "start": 139.464,
-   "end": 139.764,
+   "start": 139.697,
+   "end": 139.997,
    "type": "word"
   },
   {
    "text": "mental",
-   "start": 139.784,
-   "end": 140.044,
+   "start": 140.017,
+   "end": 140.277,
    "type": "word"
   },
   {
    "text": "jangan",
-   "start": 140.298,
-   "end": 140.498,
+   "start": 140.531,
+   "end": 140.731,
    "type": "word"
   },
   {
    "text": "takut",
-   "start": 140.538,
-   "end": 141.0,
+   "start": 140.771,
+   "end": 141.233,
    "type": "word"
   },
   {
    "text": "untuk",
-   "start": 141.12,
-   "end": 141.28,
+   "start": 141.353,
+   "end": 141.513,
    "type": "word"
   },
   {
    "text": "mendapatkan",
-   "start": 141.28,
-   "end": 141.581,
+   "start": 141.513,
+   "end": 141.814,
    "type": "word"
   },
   {
    "text": "bantuan",
-   "start": 141.601,
-   "end": 141.9,
+   "start": 141.834,
+   "end": 142.135,
+   "type": "word"
+  },
+  {
+   "text": "apa",
+   "start": 142.175,
+   "end": 142.267,
    "type": "word"
   },
   {
    "text": "boleh",
-   "start": 141.96,
-   "end": 142.121,
+   "start": 142.327,
+   "end": 142.488,
    "type": "word"
   },
   {
    "text": "datang",
-   "start": 142.141,
-   "end": 142.402,
+   "start": 142.508,
+   "end": 142.769,
    "type": "word"
   },
   {
    "text": "buat",
-   "start": 142.422,
-   "end": 142.522,
+   "start": 142.789,
+   "end": 142.889,
    "type": "word"
   },
   {
    "text": "saringan",
-   "start": 142.542,
-   "end": 142.843,
+   "start": 142.909,
+   "end": 143.21,
    "type": "word"
   },
   {
    "text": "konsultasi",
-   "start": 142.923,
-   "end": 143.284,
+   "start": 143.29,
+   "end": 143.651,
    "type": "word"
   },
   {
    "text": "kesihatan",
-   "start": 143.344,
-   "end": 143.605,
+   "start": 143.711,
+   "end": 143.972,
    "type": "word"
   },
   {
    "text": "mental",
-   "start": 143.645,
-   "end": 143.905,
+   "start": 144.012,
+   "end": 144.272,
    "type": "word"
   },
   {
    "text": "di",
-   "start": 143.946,
-   "end": 144.006,
+   "start": 144.313,
+   "end": 144.373,
    "type": "word"
   },
   {
    "text": "klinik",
-   "start": 144.026,
-   "end": 144.206,
+   "start": 144.393,
+   "end": 144.573,
    "type": "word"
   },
   {
    "text": "saya",
-   "start": 144.226,
-   "end": 144.467,
+   "start": 144.593,
+   "end": 144.834,
    "type": "word"
   },
   {
    "text": "kita",
-   "start": 144.704,
-   "end": 144.865,
+   "start": 145.038,
+   "end": 145.199,
    "type": "word"
   },
   {
    "text": "bincang",
-   "start": 144.905,
-   "end": 145.207,
+   "start": 145.239,
+   "end": 145.541,
    "type": "word"
   },
   {
    "text": "dahulu",
-   "start": 145.227,
-   "end": 145.53,
+   "start": 145.561,
+   "end": 145.864,
    "type": "word"
   },
   {
    "text": "pilihan",
-   "start": 145.59,
-   "end": 145.832,
+   "start": 145.924,
+   "end": 146.166,
    "type": "word"
   },
   {
    "text": "rawatan",
-   "start": 145.832,
-   "end": 146.214,
+   "start": 146.166,
+   "end": 146.548,
    "type": "word"
   },
   {
    "text": "yang",
-   "start": 146.255,
-   "end": 146.375,
+   "start": 146.589,
+   "end": 146.709,
    "type": "word"
   },
   {
    "text": "paling",
-   "start": 146.396,
-   "end": 146.677,
+   "start": 146.73,
+   "end": 147.011,
    "type": "word"
   },
   {
    "text": "sesuai",
-   "start": 146.698,
-   "end": 146.939,
+   "start": 147.032,
+   "end": 147.273,
    "type": "word"
   },
   {
    "text": "untuk",
-   "start": 146.939,
-   "end": 147.1,
+   "start": 147.273,
+   "end": 147.434,
    "type": "word"
   },
   {
    "text": "anda",
-   "start": 147.1,
-   "end": 147.261,
+   "start": 147.434,
+   "end": 147.595,
    "type": "word"
   },
   {
-   "text": "apa-apa",
-   "start": 147.442,
-   "end": 147.622,
+   "text": "apa",
+   "start": 147.762,
+   "end": 147.822,
    "type": "word"
   },
   {
    "text": "soalan",
-   "start": 147.642,
-   "end": 147.923,
+   "start": 147.842,
+   "end": 148.123,
    "type": "word"
   },
   {
    "text": "minta",
-   "start": 147.923,
-   "end": 148.063,
+   "start": 148.123,
+   "end": 148.263,
    "type": "word"
   },
   {
    "text": "anda",
-   "start": 148.124,
-   "end": 148.284,
+   "start": 148.324,
+   "end": 148.484,
    "type": "word"
   },
   {
    "text": "komen",
-   "start": 148.364,
-   "end": 148.625,
+   "start": 148.564,
+   "end": 148.825,
    "type": "word"
   },
   {
    "text": "take",
-   "start": 148.685,
-   "end": 148.916,
+   "start": 148.885,
+   "end": 149.115,
    "type": "word"
   },
   {
    "text": "care",
-   "start": 148.916,
-   "end": 149.146,
+   "start": 149.115,
+   "end": 149.346,
    "type": "word"
   }
  ]

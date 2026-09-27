@@ -72,15 +72,15 @@ def row(icon, text, cls="row"):
 CARDS = [
     {"id": "c01-hook", "start": 0.0, "end": 8.35, "intent": "Hook — the patient's question", "pages": [
         (0.0, [
-            ("kicker", chip("Soalan #1"), 0.15, "pop"),
-            ("t1", '<div class="title sm">Macam mana keadaan dalam</div>', 0.3, "slide"),
-            ("t2", f'<div class="title xl" style="color:{TEAL}">WAD PSIKIATRI?</div>', 3.85 - LEAD, "pop"),
+            ("kicker", chip("Soalan #1"), 0.0, "pop"),
+            ("t1", '<div class="title sm">Macam mana keadaan dalam</div>', 0.0, "slide"),
+            ("t2", f'<div class="title xl" style="color:{TEAL}">WAD PSIKIATRI?</div>', 0.0, "pop"),
             ("s1", '<div class="sub">Seram macam dalam filem?</div>', 5.8 - LEAD, "slide"),
         ]),
     ]},
-    {"id": "c02-mitos", "start": 13.3, "end": 22.35, "intent": "Myths from films, struck out on 'tapi tidak sebenarnya'", "pages": [
+    {"id": "c02-mitos", "start": 13.3, "end": 23.3, "intent": "Myths from films, struck out on 'tapi tidak sebenarnya'", "pages": [
         (13.3, [
-            ("kicker", chip("Mitos · macam dalam filem", RED), 13.4, "pop"),
+            ("kicker", chip("Mitos", RED), 13.4, "pop"),
             ("lb", '<div class="label">Apa orang bayangkan</div>', 13.98 - LEAD, "fade"),
             ("m1", row(DOT, '<span class="strikeword">Gelap &amp; menakutkan</span>', "row big"), 16.47 - LEAD, "slide"),
             ("m2", row(DOT, '<span class="strikeword">Pesakit meracau-racau</span>', "row big"), 17.91 - LEAD, "slide"),
@@ -95,13 +95,16 @@ CARDS = [
         (24.35, [
             ("kicker", chip("Realiti di Malaysia"), 24.4, "pop"),
             ("t", '<div class="title">Salah satu wad di hospital</div>', 24.77 - LEAD, "slide"),
-            ("s", '<div class="label">Dikendalikan oleh</div>', 26.45 - LEAD, "fade"),
+            ("s", '<div class="sub">Dikendalikan oleh satu pasukan pakar</div>', 26.45 - LEAD, "fade"),
+        ]),
+        (27.4, [
+            ("kicker2", chip("Dikendalikan oleh"), 27.5, "pop"),
             ("g1", '<div class="grid">'
                    '<span id="c03-p1" class="pill">Doktor psikiatri</span>'
                    '<span id="c03-p2" class="pill">Jururawat terlatih</span>'
                    '<span id="c03-p3" class="pill">Ahli psikologi</span>'
                    '<span id="c03-p4" class="pill">Kaunselor</span>'
-                   '<span id="c03-p5" class="pill wide">Jurupulih cara kerja</span></div>', 26.45, "none"),
+                   '<span id="c03-p5" class="pill wide">Jurupulih cara kerja</span></div>', 27.4, "none"),
             ("#c03-p1", None, 27.81 - LEAD, "pop"),
             ("#c03-p2", None, 29.04 - LEAD, "pop"),
             ("#c03-p3", None, 30.61 - LEAD, "pop"),
@@ -230,26 +233,60 @@ CARDS = [
     ]},
 ]
 
+def tighten(cards, min_gap=0.6, lead=0.3):
+    """No empty shells: a chip may not sit alone. If a page's kicker comes > min_gap before its
+    first content, move the kicker (and the page / card entrance) to just before that content."""
+    for c in cards:
+        for p, (t_in, els) in enumerate(c["pages"]):
+            kick = [i for i, e in enumerate(els) if e[0].startswith("kicker")]
+            # a small label is not content: a chip + label alone still reads as an empty card
+            content = [e[2] for e in els if not e[0].startswith(("kicker", "lb")) and e[3] != "none"]
+            if not kick or not content:
+                continue
+            first = min(content)
+            k = kick[0]
+            if els[k][2] < first - min_gap:
+                nk = round(first - lead, 3)
+                els[k] = (els[k][0], els[k][1], nk, els[k][3])
+                new_in = round(nk - 0.1, 3)
+                if p == 0:
+                    c["start"] = new_in
+                c["pages"][p] = (new_in, els)
+
+
+tighten(CARDS)
+
+HEIGHTS_FILE = W / "page_heights.json"      # written by measure_pages.cjs (real browser layout)
+HEIGHTS = json.loads(HEIGHTS_FILE.read_text()) if HEIGHTS_FILE.exists() else {}
+PANEL_PAD = 64                              # panel padding top+bottom
+PANEL_TOP, PANEL_MAX_BOTTOM = 150, 548      # keep clear of the caption line (~y565)
+
+
+def page_h(cid, p):
+    h = HEIGHTS.get(f"{cid}-page{p}")
+    return None if h is None else h + PANEL_PAD
+
+
 CARD_CSS = f"""
 .card-host .card {{ position:relative; width:100%; height:100%; }}
-.panel {{ position:absolute; left:60px; top:160px; width:960px; display:grid; background:{CREAM}; border-radius:34px;
+.panel {{ position:absolute; left:60px; top:150px; width:960px; display:grid; background:{CREAM}; border-radius:34px;
   box-shadow:0 22px 60px rgba(8,22,30,.30), 0 2px 0 rgba(255,255,255,.6) inset; padding:30px 38px 34px;
   font-family:'Plus Jakarta Sans', sans-serif; color:{INK}; overflow:hidden; }}
 .panel::before {{ content:""; position:absolute; left:0; top:0; bottom:0; width:12px; background:{TEAL}; }}
-.page {{ grid-area:1/1; position:relative; }}  /* pages share one cell: panel sizes to the tallest page */
-.page > * + * {{ margin-top:16px; }}
-.chip {{ display:inline-block; color:#fff; font-weight:800; font-size:24px; letter-spacing:.07em; text-transform:uppercase;
+.page {{ grid-area:1/1; position:relative; align-self:start; }}  /* pages share one cell; panel height set per page */
+.page > * + * {{ margin-top:14px; }}
+.chip {{ display:inline-block; color:#fff; font-weight:800; font-size:30px; letter-spacing:.07em; text-transform:uppercase;
   padding:9px 20px 8px; border-radius:999px; }}
 .title {{ font-weight:800; font-size:58px; line-height:1.08; letter-spacing:-.015em; }}
 .title.sm {{ font-size:44px; font-weight:700; }}
 .title.xl {{ font-size:88px; letter-spacing:-.02em; line-height:1.0; }}
 .title.muted {{ color:{MUTED}; font-size:50px; }}
-.sub {{ font-weight:700; font-size:38px; color:{MUTED}; }}
+.sub {{ font-weight:700; font-size:38px; color:#44525A; }}
 .sub.strong {{ color:{INK}; display:flex; align-items:center; gap:14px; }}
-.label {{ font-weight:700; font-size:28px; color:{MUTED}; text-transform:uppercase; letter-spacing:.06em; }}
+.label {{ font-weight:700; font-size:32px; color:#44525A; text-transform:uppercase; letter-spacing:.06em; }}
 .row {{ display:flex; align-items:center; gap:18px; font-weight:700; font-size:38px; line-height:1.15; }}
 .row.big {{ font-size:44px; }}
-.row + .row {{ margin-top:14px; }}
+.row + .row {{ margin-top:11px; }}
 .ico {{ width:40px; height:40px; flex:none; }}
 .arr {{ width:44px; height:44px; }}
 .num {{ width:44px; height:44px; flex:none; border-radius:50%; background:{RED}; color:#fff; font-size:26px; font-weight:800;
@@ -292,8 +329,13 @@ def timeline_js(card) -> list[str]:
     host = f'.card-host[data-card-id="{cid}"]'
     panel = f"#{cid}-panel"
     js = [f"// {cid}: {card['intent']}",
-          f'tl.set(\'{host}\', {{visibility:"visible", opacity:1}}, {q(s)});',
-          f"tl.fromTo('{panel}', {{opacity:0, y:-36, scale:0.97}}, {{opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}}, {q(s)});"]
+          f'tl.set(\'{host}\', {{visibility:"visible", opacity:1}}, {q(s)});']
+    if s <= 0.001:   # the hook is fully on screen at frame 0 (first frame = thumbnail/first impression)
+        js.append(f"tl.set('{panel}', {{opacity:1, y:0, scale:1}}, 0);")
+    else:
+        js.append(f"tl.fromTo('{panel}', {{opacity:0, y:-36, scale:0.97}}, {{opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}}, {q(s)});")
+    if page_h(cid, 0):
+        js.append(f"tl.set('{panel}', {{height:{page_h(cid, 0)}}}, {q(s)});")
     pages = card["pages"]
     for p, (t_in, els) in enumerate(pages):
         pg = f"#{cid}-page{p}"
@@ -303,10 +345,14 @@ def timeline_js(card) -> list[str]:
             prev = f"#{cid}-page{p - 1}"
             js.append(f"tl.to('{prev}', {{opacity:0, y:-14, duration:0.28, ease:'power2.in'}}, {q(t_in - 0.28)});")
             js.append(f"tl.fromTo('{pg}', {{opacity:0, y:14}}, {{opacity:1, y:0, duration:0.32, ease:'power3.out'}}, {q(t_in)});")
+            if page_h(cid, p):
+                js.append(f"tl.to('{panel}', {{height:{page_h(cid, p)}, duration:0.4, ease:'power2.inOut'}}, {q(t_in - 0.2)});")
         for key, frag, t, anim in els:
             sel = f"#{cid}-{key}" if not key.startswith("#") else key
             T = q(max(t, s + 0.05))
-            if anim == "pop":
+            if t <= 0.001:
+                js.append(f"tl.set('{sel}', {{opacity:1}}, 0);")
+            elif anim == "pop":
                 js.append(f"tl.fromTo('{sel}', {{opacity:0, scale:0.6}}, {{opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}}, {T});")
             elif anim == "slide":
                 js.append(f"tl.fromTo('{sel}', {{opacity:0, x:-44}}, {{opacity:1, x:0, duration:0.38, ease:'power3.out'}}, {T});")

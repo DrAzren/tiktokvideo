@@ -1,6 +1,6 @@
 """Mix a music bed under a video's dialogue, then master the result.
 
-  music: high-pass 140 Hz + 4 dB dip at 320 Hz (out of the voice's way), set to
+  music: high-pass 120 Hz + 4 dB dip at 320 Hz (out of the voice's way), set to
          --bed-lufs, then sidechain-ducked by the dialogue (fast attack, slow release)
   mix:   dialogue + ducked music → two-pass loudnorm to -14 LUFS / -1 dBTP
   video: stream-copied (no re-encode)
@@ -9,7 +9,7 @@ Also reports how far the music sits below the voice during speech vs. pauses, so
 the balance is measured, not guessed.
 
 Usage:
-    python tools/mix_music.py <video.mp4> <bed.wav> -o <out.mp4> [--bed-lufs -24] [--fade-out 2.5]
+    python tools/mix_music.py <video.mp4> <bed.wav> -o <out.mp4> [--bed-lufs -20] [--fade-out 2.5]
 """
 
 from __future__ import annotations
@@ -23,7 +23,7 @@ from pathlib import Path
 import numpy as np
 import soundfile as sf
 
-MUSIC_EQ = "highpass=f=140:poles=2,equalizer=f=320:t=q:w=1.2:g=-4"
+MUSIC_EQ = "highpass=f=120:poles=2,equalizer=f=320:t=q:w=1.2:g=-4"  # phone speakers lose <300Hz anyway
 DUCK = "sidechaincompress=threshold=0.05:ratio=4:attack=30:release=600:knee=6:makeup=1"
 TARGET = "I=-14:TP=-1:LRA=11"
 
@@ -42,7 +42,7 @@ def main() -> None:
     ap.add_argument("video")
     ap.add_argument("bed")
     ap.add_argument("-o", "--output", required=True)
-    ap.add_argument("--bed-lufs", type=float, default=-24.0, help="undocked bed loudness")
+    ap.add_argument("--bed-lufs", type=float, default=-20.0, help="undocked bed loudness")
     ap.add_argument("--fade-out", type=float, default=2.5)
     args = ap.parse_args()
 

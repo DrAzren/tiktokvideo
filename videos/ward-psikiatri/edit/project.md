@@ -40,3 +40,28 @@ voice; −14 LUFS master.
 - User review of the cut, cards, captions and music; swap the bed for a TikTok-library
   track in-app if preferred.
 - Source audio has ~1.6k clipped samples (peak 1.0) from the original export — not recoverable.
+
+### Session 1, round 2 — critic review fixes
+
+A fresh-eyes critic pass (sub-agent) found; all verified before fixing:
+- **Apex broken** — the front caption layer was fully opaque (HyperFrames composites the
+  `<video>` itself; CSS-hiding it does nothing), so from 9.3s it pasted plain footage over the
+  "TIDAK" hero. Fix: remove the video/audio elements from the front composition (now ~97%
+  transparent). Apex re-laid out: plane raised to 13% so the head covers only the lower part
+  of "TIDAK" (occlusion 19%), tail "WAD PSIKIATRI MALAYSIA" takes the kicker's slot above the
+  hero instead of crossing the face (`captions/patch_apex.py`), hero in the cards' teal,
+  "Sebenarnya, tidak" +2.5 dB (it was delivered ~3 dB softer).
+- **Blank cards** — cards/pages now enter with their first content (`tighten()` in
+  build_graphics.py); panel height measured per page in a real browser (`measure_pages.cjs`)
+  and animated between pages; REALITI split into two pages; hook question on screen from frame 0;
+  chip/label/sub text bigger and darker; MITOS holds to 23.3s so "TIDAK BENAR" lands.
+- **Captions** — strictly one line (<=19 chars), hook hand-broken so the patient's quote
+  starts on "Doktor…".
+- **CTA seams** — spectrograms showed "bantuan" ends at 229.45 (not 229.34) and an "eee…"
+  hesitation follows "saya" at 33.55-34.0; both edges moved. Last range runs to the end of
+  the take + 1.2s end hold so "Komen di bawah" lands.
+- **Jump cuts** — pause-shrink cuts that leave < 0.7s fragments are undone (the "dan" stutter);
+  punch-ins cycle 1.0/1.06/1.02/1.07/1.035 instead of ping-ponging.
+- **Music** — bed raised to -20 LUFS undocked, high-pass 120 Hz (was inaudible on phones).
+- Not changed: TV background changes at the relocated CTA cuts (it is a slideshow TV; visible
+  seam), list-heavy middle (content), clinic name/booking info (needs the user).
