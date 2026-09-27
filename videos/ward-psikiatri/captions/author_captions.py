@@ -17,7 +17,7 @@ C = Path(__file__).parent
 P = C / "project"
 words = json.loads((P / "transcript.json").read_text())["words"]
 
-MAX_WORDS, MAX_CHARS, PAUSE, MIN_ON = 3, 19, 0.28, 0.5
+MAX_WORDS, MAX_CHARS, PAUSE, MIN_ON = 3, 19, 0.28, 0.62
 # fixed phrases that must never be split across two caption lines
 GLUE = {("wad", "psikiatri"), ("salah", "faham"), ("ke", "apa"), ("physical", "restraint"),
         ("kesihatan", "mental"), ("jurupulih", "kerja"), ("cara", "kerja"), ("lain-lain", "lagi"),
@@ -56,12 +56,12 @@ def punct_break(prev, w, strong_only=False):
     return m == "." if strong_only else m is not None
 
 
-BODY_CSS = ("font-size: calc(0.041*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; "
+BODY_CSS = ("font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; "
             "-webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; "
             "text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);")
-HERO_CSS = "font-size: calc(0.30*var(--h)); text-transform: uppercase;"
+HERO_CSS = "font-size: calc(0.16*var(--h)); text-transform: uppercase; color: #0F766E !important;"
 HERO_WORD_T = 8.84          # "tidak" in "sebenarnya tidak" (cut timeline)
-HERO_BLOCK_END = 13.2       # the block holds until "ramai orang bayangkan…" (card c02 enters 13.3)
+HERO_BLOCK_END = 10.3       # lockup = kicker + hero + one tail line; a longer tail runs over the mouth / TikTok UI
 
 
 def group(ws):
@@ -81,18 +81,32 @@ def group(ws):
         cur.append(w)
     if cur:
         lines.append(cur)
-    # merge lines that would flash (< MIN_ON) into the next when it fits
-    out = []
-    for ln in lines:
-        if out:
-            prev = out[-1]
-            on = ln[0]["start"] - prev[0]["start"]
-            merged = " ".join(x["text"] for x in prev + ln)
-            if (on < MIN_ON and len(merged) <= MAX_CHARS + 5 and len(prev) + len(ln) <= 4
-                    and not punct_break(prev[-1], ln[0], strong_only=True)):
-                out[-1] = prev + ln
+    # merge lines that would flash. The compiler shows a line from its first word -0.18s
+    # until the next line's first word -0.28s, so start-to-start must be >= MIN_ON + 0.10.
+    def on_time(i, ls):
+        nxt = ls[i + 1][0]["start"] if i + 1 < len(ls) else ls[i][-1]["end"] + 0.9
+        return nxt - ls[i][0]["start"] - 0.10
+
+    def text(ln):
+        return " ".join(x["text"] for x in ln)
+
+    changed = True
+    while changed:
+        changed = False
+        for i in range(len(lines)):
+            if on_time(i, lines) >= MIN_ON:
                 continue
-        out.append(ln)
+            if i + 1 < len(lines) and len(text(lines[i] + lines[i + 1])) <= 22 \
+                    and not punct_break(lines[i][-1], lines[i + 1][0], strong_only=True):
+                lines[i:i + 2] = [lines[i] + lines[i + 1]]
+            elif i > 0 and len(text(lines[i - 1] + lines[i])) <= 25 \
+                    and not punct_break(lines[i - 1][-1], lines[i][0], strong_only=True):
+                lines[i - 1:i + 1] = [lines[i - 1] + lines[i]]
+            else:
+                continue
+            changed = True
+            break
+    out = lines
     return out
 
 
@@ -108,8 +122,9 @@ hero_block = {"plane": "narr", "flip": True, "lines": [
     {"words": ["sebenarnya"], "css": BODY_CSS},
     {"words": ["tidak"], "hero": True, "css": HERO_CSS},
 ]}
-for ln in group(words[hero_i + 1:end_i + 1]):
-    hero_block["lines"].append({"words": [w["text"] for w in ln], "css": BODY_CSS})
+tail = [w["text"] for w in words[hero_i + 1:end_i + 1]]
+assert tail == ["wad", "psikiatri", "malaysia"], tail
+hero_block["lines"].append({"words": tail, "css": BODY_CSS})
 blocks.append(hero_block)
 
 for ln in group(words[end_i + 1:]):

@@ -81,6 +81,7 @@ CARDS = [
     {"id": "c02-mitos", "start": 13.3, "end": 22.35, "intent": "Myths from films, struck out on 'tapi tidak sebenarnya'", "pages": [
         (13.3, [
             ("kicker", chip("Mitos · macam dalam filem", RED), 13.4, "pop"),
+            ("lb", '<div class="label">Apa orang bayangkan</div>', 13.98 - LEAD, "fade"),
             ("m1", row(DOT, '<span class="strikeword">Gelap &amp; menakutkan</span>', "row big"), 16.47 - LEAD, "slide"),
             ("m2", row(DOT, '<span class="strikeword">Pesakit meracau-racau</span>', "row big"), 17.91 - LEAD, "slide"),
             ("m3", row(DOT, '<span class="strikeword">Diikat sepanjang masa</span>', "row big"), 19.86 - LEAD, "slide"),
@@ -90,9 +91,9 @@ CARDS = [
             ("st", '<div class="stamp">TIDAK BENAR</div>', 21.74, "stamp"),
         ]),
     ]},
-    {"id": "c03-realiti", "start": 22.35, "end": 35.0, "intent": "Reality: a normal hospital ward, run by a team", "pages": [
-        (22.35, [
-            ("kicker", chip("Realiti di Malaysia"), 22.45, "pop"),
+    {"id": "c03-realiti", "start": 24.35, "end": 35.0, "intent": "Reality: a normal hospital ward, run by a team", "pages": [
+        (24.35, [
+            ("kicker", chip("Realiti di Malaysia"), 24.4, "pop"),
             ("t", '<div class="title">Salah satu wad di hospital</div>', 24.77 - LEAD, "slide"),
             ("s", '<div class="label">Dikendalikan oleh</div>', 26.45 - LEAD, "fade"),
             ("g1", '<div class="grid">'
@@ -159,7 +160,9 @@ CARDS = [
         ]),
         (89.95, [
             ("kicker2", chip("Physical restraint"), 90.05, "pop"),
-            ("t2", '<div class="title">Bukan rutin — <span style="color:%s">langkah terakhir</span></div>' % RED, 94.71 - LEAD, "slide"),
+            ("t2", '<div class="title"><span id="c07-t2a">Bukan rutin</span> <span id="c07-t2b" style="color:%s">— langkah terakhir</span></div>' % RED, 91.47 - LEAD, "none"),
+            ("#c07-t2a", None, 91.47 - LEAD, "slide"),
+            ("#c07-t2b", None, 94.71 - LEAD, "fade"),
             ("n1", row('<span class="num">1</span>', "Berisiko cederakan diri sendiri"), 96.88 - LEAD, "slide"),
             ("n2", row('<span class="num">2</span>', "Berisiko cederakan orang lain"), 99.06 - LEAD, "slide"),
             ("n3", row('<span class="num">3</span>', "Cara lain tidak berjaya menenangkan"), 101.26 - LEAD, "slide"),
@@ -170,9 +173,9 @@ CARDS = [
             ("s3", '<div class="sub">Ikut prosedur &amp; pemantauan yang ketat</div>', 108.27 - LEAD, "slide"),
         ]),
     ]},
-    {"id": "c08-pulih", "start": 110.45, "end": 125.7, "intent": "Admission is not the end — patients go home and back to life", "pages": [
-        (110.45, [
-            ("kicker", chip("Masuk wad psikiatri"), 110.6, "pop"),
+    {"id": "c08-pulih", "start": 111.55, "end": 125.7, "intent": "Admission is not the end — patients go home and back to life", "pages": [
+        (111.55, [
+            ("kicker", chip("Masuk wad psikiatri"), 111.81 - LEAD, "pop"),
             ("a", row(CROSS, "Bukan bermaksud hidup berakhir", "row big"), 112.91 - LEAD, "slide"),
             ("b", row(CROSS, "Bukan bermaksud anda gila", "row big"), 114.81 - LEAD, "slide"),
         ]),
@@ -212,6 +215,7 @@ CARDS = [
     {"id": "c10-cta", "start": 136.45, "end": DUR, "intent": "CTA — don't be afraid to get help; screening at the clinic; comment", "pages": [
         (136.45, [
             ("kicker", chip("Kesihatan mental"), 136.55, "pop"),
+            ("t0", '<div class="title sm">Anda / orang tersayang sedang bergelut?</div>', 136.99 - LEAD, "slide"),
             ("t", '<div class="title">Jangan takut <span style="color:%s">dapatkan bantuan</span></div>' % TEAL, 140.33 - LEAD, "slide"),
         ]),
         (141.9, [

@@ -35,7 +35,7 @@ scripts/setup.sh          # ffmpeg, .venv with video-use deps, hyperframes CLI c
   ```bash
   export HYPERFRAMES_ROOT=~/hyperframes
   export HYPERFRAMES_BROWSER_PATH=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell  # cloud container
-  export PUPPETEER_EXECUTABLE_PATH=$HYPERFRAMES_BROWSER_PATH
+  export PUPPETEER_EXECUTABLE_PATH=~/bin/headless_shell_nosandbox   # root needs --no-sandbox
   ```
 - `ELEVENLABS_API_KEY` in `.env` (repo root) enables Scribe transcription. If it's
   missing, ask the user once for it; if they decline, use the Whisper fallback below.
@@ -123,8 +123,21 @@ if the user hasn't given a brand.
 - Input: `graphics/output.mp4` (or `edit/cut.mp4` if no graphics). Work dir: `videos/<p>/captions/`.
 - `hyperframes init --video` runs English whisper `small` and writes its own transcript.json —
   replace it with the verified word-level transcript (`{language_code, words:[{text,start,end}]}`).
-- Matting is CPU-bound (~2 fps). When cards never overlap the subject, run `prepare.sh` on
-  `edit/cut.mp4` in parallel with the graphics render; the matte stays valid for the composite.
+- Matting is CPU-bound (~0.5–2 fps here, i.e. 1h+ for a 2.5-min clip). Only captions drawn
+  BEHIND the subject need it. Matte just those windows (`remove-background` on a trimmed clip),
+  fill the rest of `frames_fg/` with transparent PNGs, and run `safe-zones.cjs` on a temp
+  project holding only the real frames. Worked example: `videos/ward-psikiatri/captions/`.
+- The stock `render-and-composite.sh` screen-blends front captions over black, which strips
+  dark strokes/shadows (white text washes out on light walls). Its bg render (`index.html`)
+  already draws every caption with normal blending, so composite yourself: bg render →
+  matte overlay → a transparent WebM of `index_fg.html` (background/cover made transparent,
+  `--format webm`) enabled only where a front caption crosses the subject. See
+  `videos/ward-psikiatri/assemble.sh`. Still run the gates: `inject-fonts`, `check-timing
+  --strict`, `check-occlusion --strict`, and `preview-frames.cjs` before rendering.
+- Chromium in the cloud container runs as root: point `PUPPETEER_EXECUTABLE_PATH` at a wrapper
+  that adds `--no-sandbox` (`~/bin/headless_shell_nosandbox`, created by `setup.sh --captions`).
+- Never pass `-shortest` when the streams are already equal length — with encoder buffering
+  it silently drops the last frames.
 - For TikTok, keep captions inside the safe zone: clear of the bottom ~20% (caption/UI bar) and the right ~15% (action buttons). Captions go on top of everything else (video-use Hard Rule 1).
 - If the user prefers simple burned subtitles instead, use video-use's `render.py --build-subtitles` in stage 3 and skip this stage.
 

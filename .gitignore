@@ -20,3 +20,4 @@ videos/**
 !videos/*/captions/project/cinematic.json
 !videos/*/graphics/authored_words.json
 !videos/*/captions_src/large_v3.json
+!videos/*/assemble.sh

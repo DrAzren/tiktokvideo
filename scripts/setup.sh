@@ -34,6 +34,14 @@ if [ "$CAPTIONS" = 1 ]; then
     (cd ~/hyperframes && PUPPETEER_SKIP_DOWNLOAD=1 bun install && bun run build)
   fi
   echo "hyperframes checkout OK: export HYPERFRAMES_ROOT=~/hyperframes"
+  # root in the cloud container: Chromium needs --no-sandbox (caption scripts launch puppeteer)
+  HS="$(ls -d /opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell 2>/dev/null | head -1)"
+  if [ -n "$HS" ]; then
+    mkdir -p ~/bin
+    printf '#!/bin/sh\nexec %s --no-sandbox "$@"\n' "$HS" > ~/bin/headless_shell_nosandbox
+    chmod +x ~/bin/headless_shell_nosandbox
+    echo "export PUPPETEER_EXECUTABLE_PATH=~/bin/headless_shell_nosandbox HYPERFRAMES_BROWSER_PATH=$HS"
+  fi
 fi
 
 node_major="$(node -p 'process.versions.node.split(".")[0]' 2>/dev/null || echo 0)"
