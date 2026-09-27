@@ -1,0 +1,14 @@
+.env
+.venv/
+__pycache__/
+node_modules/
+.DS_Store
+
+# Footage and renders stay local — only project notes are committed.
+videos/**
+!videos/.gitkeep
+!videos/README.md
+!videos/*/
+!videos/*/edit/
+!videos/*/edit/project.md
+!videos/*/edit/edl.json

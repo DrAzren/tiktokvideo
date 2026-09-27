@@ -1,0 +1,6 @@
+# Mirrors .claude/skills/video-use/pyproject.toml
+requests
+librosa
+matplotlib
+pillow
+numpy
