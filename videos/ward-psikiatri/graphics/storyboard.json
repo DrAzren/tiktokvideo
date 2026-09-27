@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 3,
+  "composition": {
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "durationSeconds": 149.233,
+    "layout": "portrait",
+    "themeId": "custom-teal",
+    "seed": 7
+  },
+  "videoTrack": {
+    "sourcePath": "input-video.mp4",
+    "startSec": 0,
+    "endSec": 149.233,
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920
+    }
+  },
+  "subtitles": {
+    "enabled": false
+  },
+  "cards": [
+    {
+      "id": "c01-hook",
+      "intent": "Hook — the patient's question",
+      "startSec": 0.0,
+      "endSec": 8.35,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c02-mitos",
+      "intent": "Myths from films, struck out on 'tapi tidak sebenarnya'",
+      "startSec": 13.3,
+      "endSec": 22.35,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c03-realiti",
+      "intent": "Reality: a normal hospital ward, run by a team",
+      "startSec": 22.35,
+      "endSec": 35.0,
+      "accentIndex": 2,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c04-rutin",
+      "intent": "Daily routine checklist, one tick per spoken item",
+      "startSec": 35.0,
+      "endSec": 57.05,
+      "accentIndex": 3,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c05-tujuan",
+      "intent": "Pull-quote: to stabilise, not to punish",
+      "startSec": 57.05,
+      "endSec": 61.75,
+      "accentIndex": 4,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c06-soalan2",
+      "intent": "Q2 — are all patients aggressive? No; the conditions they have",
+      "startSec": 61.75,
+      "endSec": 82.45,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 3
+      }
+    },
+    {
+      "id": "c07-soalan3",
+      "intent": "Q3 — why are some patients restrained? Last resort, 3 conditions",
+      "startSec": 82.45,
+      "endSec": 110.45,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 3
+      }
+    },
+    {
+      "id": "c08-pulih",
+      "intent": "Admission is not the end — patients go home and back to life",
+      "startSec": 110.45,
+      "endSec": 125.7,
+      "accentIndex": 2,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 2
+      }
+    },
+    {
+      "id": "c09-selamat",
+      "intent": "Not a place of punishment — a safe place to rest, stabilise, begin healing",
+      "startSec": 125.7,
+      "endSec": 136.45,
+      "accentIndex": 3,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c10-cta",
+      "intent": "CTA — don't be afraid to get help; screening at the clinic; comment",
+      "startSec": 136.45,
+      "endSec": 149.233,
+      "accentIndex": 4,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 3
+      }
+    }
+  ]
+}

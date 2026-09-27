@@ -1,0 +1,2604 @@
+[
+ {
+  "start": 0.0,
+  "end": 8.16,
+  "text": "Saya pernah ada pesakit tanya dekat saya, doktor macam mana keadaan anda dalam wad psikiatri? Saya takutlah, saya tengok macam dalam filem-filem barat tu, nampak seram sangat.",
+  "words": [
+   {
+    "text": "Saya",
+    "start": 0.0,
+    "end": 0.12,
+    "p": 0.9785672426223755
+   },
+   {
+    "text": "pernah",
+    "start": 0.12,
+    "end": 0.34,
+    "p": 0.9997304081916809
+   },
+   {
+    "text": "ada",
+    "start": 0.34,
+    "end": 0.68,
+    "p": 0.9994533658027649
+   },
+   {
+    "text": "pesakit",
+    "start": 0.68,
+    "end": 1.26,
+    "p": 0.9804335037867228
+   },
+   {
+    "text": "tanya",
+    "start": 1.26,
+    "end": 1.72,
+    "p": 0.9993307888507843
+   },
+   {
+    "text": "dekat",
+    "start": 1.72,
+    "end": 1.9,
+    "p": 0.9916580617427826
+   },
+   {
+    "text": "saya,",
+    "start": 1.9,
+    "end": 2.08,
+    "p": 0.999966025352478
+   },
+   {
+    "text": "doktor",
+    "start": 2.3,
+    "end": 2.6,
+    "p": 0.5750040784478188
+   },
+   {
+    "text": "macam",
+    "start": 2.6,
+    "end": 2.86,
+    "p": 0.9909680485725403
+   },
+   {
+    "text": "mana",
+    "start": 2.86,
+    "end": 3.16,
+    "p": 0.9998774528503418
+   },
+   {
+    "text": "keadaan",
+    "start": 3.16,
+    "end": 3.54,
+    "p": 0.991119384765625
+   },
+   {
+    "text": "anda",
+    "start": 3.54,
+    "end": 3.7,
+    "p": 0.73195880651474
+   },
+   {
+    "text": "dalam",
+    "start": 3.7,
+    "end": 3.8,
+    "p": 0.8205679655075073
+   },
+   {
+    "text": "wad",
+    "start": 3.8,
+    "end": 3.9,
+    "p": 0.8305094540119171
+   },
+   {
+    "text": "psikiatri?",
+    "start": 3.9,
+    "end": 4.3,
+    "p": 0.9689691215753555
+   },
+   {
+    "text": "Saya",
+    "start": 4.4,
+    "end": 4.58,
+    "p": 0.9955711960792542
+   },
+   {
+    "text": "takutlah,",
+    "start": 4.58,
+    "end": 5.08,
+    "p": 0.9899870753288269
+   },
+   {
+    "text": "saya",
+    "start": 5.12,
+    "end": 5.22,
+    "p": 0.999980092048645
+   },
+   {
+    "text": "tengok",
+    "start": 5.22,
+    "end": 5.64,
+    "p": 0.9999598264694214
+   },
+   {
+    "text": "macam",
+    "start": 5.64,
+    "end": 5.94,
+    "p": 0.9997653365135193
+   },
+   {
+    "text": "dalam",
+    "start": 5.94,
+    "end": 6.26,
+    "p": 0.9999916553497314
+   },
+   {
+    "text": "filem",
+    "start": 6.26,
+    "end": 6.66,
+    "p": 0.7679782211780548
+   },
+   {
+    "text": "-filem",
+    "start": 6.66,
+    "end": 6.86,
+    "p": 0.9961638152599335
+   },
+   {
+    "text": "barat",
+    "start": 6.86,
+    "end": 7.18,
+    "p": 0.9763482809066772
+   },
+   {
+    "text": "tu,",
+    "start": 7.18,
+    "end": 7.32,
+    "p": 0.9506584405899048
+   },
+   {
+    "text": "nampak",
+    "start": 7.36,
+    "end": 7.68,
+    "p": 0.9999721050262451
+   },
+   {
+    "text": "seram",
+    "start": 7.68,
+    "end": 8.0,
+    "p": 0.997389167547226
+   },
+   {
+    "text": "sangat.",
+    "start": 8.0,
+    "end": 8.16,
+    "p": 0.9999421834945679
+   }
+  ]
+ },
+ {
+  "start": 8.34,
+  "end": 13.12,
+  "text": "Sebenarnya tidak, wad psikiatri di Malaysia jauh berbeza dengan apa yang anda bayangkan.",
+  "words": [
+   {
+    "text": "Sebenarnya",
+    "start": 8.34,
+    "end": 8.66,
+    "p": 0.999801516532898
+   },
+   {
+    "text": "tidak,",
+    "start": 8.66,
+    "end": 8.9,
+    "p": 0.9614390730857849
+   },
+   {
+    "text": "wad",
+    "start": 9.24,
+    "end": 9.62,
+    "p": 0.9999476075172424
+   },
+   {
+    "text": "psikiatri",
+    "start": 9.62,
+    "end": 9.98,
+    "p": 0.9998818039894104
+   },
+   {
+    "text": "di",
+    "start": 9.98,
+    "end": 10.08,
+    "p": 0.7681856751441956
+   },
+   {
+    "text": "Malaysia",
+    "start": 10.08,
+    "end": 10.2,
+    "p": 0.999930739402771
+   },
+   {
+    "text": "jauh",
+    "start": 10.2,
+    "end": 10.74,
+    "p": 0.9999595880508423
+   },
+   {
+    "text": "berbeza",
+    "start": 10.74,
+    "end": 11.2,
+    "p": 0.999907930692037
+   },
+   {
+    "text": "dengan",
+    "start": 11.2,
+    "end": 11.44,
+    "p": 0.9999253749847412
+   },
+   {
+    "text": "apa",
+    "start": 11.44,
+    "end": 11.8,
+    "p": 0.9999825954437256
+   },
+   {
+    "text": "yang",
+    "start": 11.8,
+    "end": 12.18,
+    "p": 0.9999722242355347
+   },
+   {
+    "text": "anda",
+    "start": 12.18,
+    "end": 12.62,
+    "p": 0.9998787641525269
+   },
+   {
+    "text": "bayangkan.",
+    "start": 12.62,
+    "end": 13.12,
+    "p": 0.9999504089355469
+   }
+  ]
+ },
+ {
+  "start": 13.28,
+  "end": 20.96,
+  "text": "Ramai orang bayangkan wad psikiatri ni macam dalam filem, gelap, semua pesakit meracau-racau dekat dalam wad, kena ikat sepanjang masa.",
+  "words": [
+   {
+    "text": "Ramai",
+    "start": 13.28,
+    "end": 13.68,
+    "p": 0.999376118183136
+   },
+   {
+    "text": "orang",
+    "start": 13.68,
+    "end": 13.78,
+    "p": 0.9999804496765137
+   },
+   {
+    "text": "bayangkan",
+    "start": 13.78,
+    "end": 14.34,
+    "p": 0.9999719858169556
+   },
+   {
+    "text": "wad",
+    "start": 14.34,
+    "end": 14.6,
+    "p": 0.9998478293418884
+   },
+   {
+    "text": "psikiatri",
+    "start": 14.6,
+    "end": 15.04,
+    "p": 0.9998167157173157
+   },
+   {
+    "text": "ni",
+    "start": 15.04,
+    "end": 15.26,
+    "p": 0.9879170060157776
+   },
+   {
+    "text": "macam",
+    "start": 15.26,
+    "end": 15.48,
+    "p": 0.9999276399612427
+   },
+   {
+    "text": "dalam",
+    "start": 15.48,
+    "end": 15.72,
+    "p": 0.9999843835830688
+   },
+   {
+    "text": "filem,",
+    "start": 15.72,
+    "end": 16.24,
+    "p": 0.9955709278583527
+   },
+   {
+    "text": "gelap,",
+    "start": 16.26,
+    "end": 16.86,
+    "p": 0.8150056004524231
+   },
+   {
+    "text": "semua",
+    "start": 16.86,
+    "end": 17.4,
+    "p": 0.9998880624771118
+   },
+   {
+    "text": "pesakit",
+    "start": 17.4,
+    "end": 17.86,
+    "p": 0.9997493028640747
+   },
+   {
+    "text": "meracau",
+    "start": 17.86,
+    "end": 18.08,
+    "p": 0.9695645570755005
+   },
+   {
+    "text": "-racau",
+    "start": 18.08,
+    "end": 18.64,
+    "p": 0.9992788036664327
+   },
+   {
+    "text": "dekat",
+    "start": 18.64,
+    "end": 18.86,
+    "p": 0.9991013705730438
+   },
+   {
+    "text": "dalam",
+    "start": 18.86,
+    "end": 19.02,
+    "p": 0.9999778270721436
+   },
+   {
+    "text": "wad,",
+    "start": 19.02,
+    "end": 19.56,
+    "p": 0.9999592900276184
+   },
+   {
+    "text": "kena",
+    "start": 19.58,
+    "end": 19.94,
+    "p": 0.9812340438365936
+   },
+   {
+    "text": "ikat",
+    "start": 19.94,
+    "end": 20.34,
+    "p": 0.9996699094772339
+   },
+   {
+    "text": "sepanjang",
+    "start": 20.34,
+    "end": 20.7,
+    "p": 0.9996898372968038
+   },
+   {
+    "text": "masa.",
+    "start": 20.7,
+    "end": 20.96,
+    "p": 0.9999840259552002
+   }
+  ]
+ },
+ {
+  "start": 20.96,
+  "end": 34.6,
+  "text": "Tapi tidak sebenarnya. Di Malaysia, wad psikiatri adalah salah satu wad di hospital yang dikendalikan oleh doktor psikiatri, jururawat terlatih, ahli psikologi, terapi jurupulih kerja dan lain-lain lagi.",
+  "words": [
+   {
+    "text": "Tapi",
+    "start": 20.96,
+    "end": 21.54,
+    "p": 0.43661075830459595
+   },
+   {
+    "text": "tidak",
+    "start": 21.54,
+    "end": 21.86,
+    "p": 0.9737557768821716
+   },
+   {
+    "text": "sebenarnya.",
+    "start": 21.86,
+    "end": 22.24,
+    "p": 0.9996852278709412
+   },
+   {
+    "text": "Di",
+    "start": 22.34,
+    "end": 22.44,
+    "p": 0.9966247081756592
+   },
+   {
+    "text": "Malaysia,",
+    "start": 22.44,
+    "end": 22.82,
+    "p": 0.9999535083770752
+   },
+   {
+    "text": "wad",
+    "start": 22.96,
+    "end": 23.18,
+    "p": 0.7748430073261261
+   },
+   {
+    "text": "psikiatri",
+    "start": 23.18,
+    "end": 23.72,
+    "p": 0.9858960807323456
+   },
+   {
+    "text": "adalah",
+    "start": 23.72,
+    "end": 24.08,
+    "p": 0.9987760186195374
+   },
+   {
+    "text": "salah",
+    "start": 24.08,
+    "end": 24.84,
+    "p": 0.9844723343849182
+   },
+   {
+    "text": "satu",
+    "start": 24.84,
+    "end": 25.08,
+    "p": 0.9999479055404663
+   },
+   {
+    "text": "wad",
+    "start": 25.08,
+    "end": 25.42,
+    "p": 0.9998681843280792
+   },
+   {
+    "text": "di",
+    "start": 25.42,
+    "end": 25.62,
+    "p": 0.9991455078125
+   },
+   {
+    "text": "hospital",
+    "start": 25.62,
+    "end": 25.94,
+    "p": 0.9996258020401001
+   },
+   {
+    "text": "yang",
+    "start": 25.94,
+    "end": 26.34,
+    "p": 0.9879265427589417
+   },
+   {
+    "text": "dikendalikan",
+    "start": 26.34,
+    "end": 26.82,
+    "p": 0.9967902660369873
+   },
+   {
+    "text": "oleh",
+    "start": 26.82,
+    "end": 27.18,
+    "p": 0.9999206066131592
+   },
+   {
+    "text": "doktor",
+    "start": 27.18,
+    "end": 28.02,
+    "p": 0.9863787293434143
+   },
+   {
+    "text": "psikiatri,",
+    "start": 28.02,
+    "end": 28.5,
+    "p": 0.9995959401130676
+   },
+   {
+    "text": "jururawat",
+    "start": 28.6,
+    "end": 29.4,
+    "p": 0.9960156480471293
+   },
+   {
+    "text": "terlatih,",
+    "start": 29.4,
+    "end": 30.0,
+    "p": 0.7520008683204651
+   },
+   {
+    "text": "ahli",
+    "start": 30.06,
+    "end": 30.7,
+    "p": 0.9995279610157013
+   },
+   {
+    "text": "psikologi,",
+    "start": 30.7,
+    "end": 31.48,
+    "p": 0.9995875060558319
+   },
+   {
+    "text": "terapi",
+    "start": 31.48,
+    "end": 33.2,
+    "p": 0.9988174140453339
+   },
+   {
+    "text": "jurupulih",
+    "start": 33.2,
+    "end": 33.54,
+    "p": 0.6977347806096077
+   },
+   {
+    "text": "kerja",
+    "start": 33.54,
+    "end": 33.88,
+    "p": 0.9994446933269501
+   },
+   {
+    "text": "dan",
+    "start": 33.88,
+    "end": 34.06,
+    "p": 0.9675443768501282
+   },
+   {
+    "text": "lain",
+    "start": 34.06,
+    "end": 34.3,
+    "p": 0.9986735582351685
+   },
+   {
+    "text": "-lain",
+    "start": 34.3,
+    "end": 34.4,
+    "p": 0.9958423376083374
+   },
+   {
+    "text": "lagi.",
+    "start": 34.4,
+    "end": 34.6,
+    "p": 0.9993390440940857
+   }
+  ]
+ },
+ {
+  "start": 34.9,
+  "end": 45.72,
+  "text": "Apa pesakit buat dalam wad? Pesakit akan jumpa dengan doktor setiap hari ataupun mengikut keperluan dan pesakit perlulah mengambil ubat mengikut jadual dan pemerhatian rapi dan keselamatan akan dipantau.",
+  "words": [
+   {
+    "text": "Apa",
+    "start": 34.9,
+    "end": 35.16,
+    "p": 0.9971131086349487
+   },
+   {
+    "text": "pesakit",
+    "start": 35.16,
+    "end": 35.64,
+    "p": 0.9987810452779134
+   },
+   {
+    "text": "buat",
+    "start": 35.64,
+    "end": 35.8,
+    "p": 0.9997971653938293
+   },
+   {
+    "text": "dalam",
+    "start": 35.8,
+    "end": 36.0,
+    "p": 0.9999910593032837
+   },
+   {
+    "text": "wad?",
+    "start": 36.0,
+    "end": 36.32,
+    "p": 0.9999504089355469
+   },
+   {
+    "text": "Pesakit",
+    "start": 36.38,
+    "end": 36.76,
+    "p": 0.9935507029294968
+   },
+   {
+    "text": "akan",
+    "start": 36.76,
+    "end": 36.9,
+    "p": 0.9999946355819702
+   },
+   {
+    "text": "jumpa",
+    "start": 36.9,
+    "end": 37.38,
+    "p": 0.9992384910583496
+   },
+   {
+    "text": "dengan",
+    "start": 37.38,
+    "end": 37.5,
+    "p": 0.9907649755477905
+   },
+   {
+    "text": "doktor",
+    "start": 37.5,
+    "end": 37.84,
+    "p": 0.9979134202003479
+   },
+   {
+    "text": "setiap",
+    "start": 37.84,
+    "end": 38.32,
+    "p": 0.9998878439267477
+   },
+   {
+    "text": "hari",
+    "start": 38.32,
+    "end": 38.64,
+    "p": 0.9999936819076538
+   },
+   {
+    "text": "ataupun",
+    "start": 38.64,
+    "end": 39.0,
+    "p": 0.9842242896556854
+   },
+   {
+    "text": "mengikut",
+    "start": 39.0,
+    "end": 39.32,
+    "p": 0.9877433180809021
+   },
+   {
+    "text": "keperluan",
+    "start": 39.32,
+    "end": 39.84,
+    "p": 0.9998411238193512
+   },
+   {
+    "text": "dan",
+    "start": 39.84,
+    "end": 40.04,
+    "p": 0.49340012669563293
+   },
+   {
+    "text": "pesakit",
+    "start": 40.04,
+    "end": 40.58,
+    "p": 0.9999699195226034
+   },
+   {
+    "text": "perlulah",
+    "start": 40.58,
+    "end": 40.9,
+    "p": 0.9985733330249786
+   },
+   {
+    "text": "mengambil",
+    "start": 40.9,
+    "end": 41.36,
+    "p": 0.9999626477559408
+   },
+   {
+    "text": "ubat",
+    "start": 41.36,
+    "end": 41.62,
+    "p": 0.9984984993934631
+   },
+   {
+    "text": "mengikut",
+    "start": 41.62,
+    "end": 41.94,
+    "p": 0.9966399967670441
+   },
+   {
+    "text": "jadual",
+    "start": 41.94,
+    "end": 42.3,
+    "p": 0.9975366393725077
+   },
+   {
+    "text": "dan",
+    "start": 42.3,
+    "end": 42.42,
+    "p": 0.9997366070747375
+   },
+   {
+    "text": "pemerhatian",
+    "start": 42.42,
+    "end": 43.14,
+    "p": 0.9470374286174774
+   },
+   {
+    "text": "rapi",
+    "start": 43.14,
+    "end": 43.54,
+    "p": 0.9984504878520966
+   },
+   {
+    "text": "dan",
+    "start": 43.54,
+    "end": 43.78,
+    "p": 0.9998834133148193
+   },
+   {
+    "text": "keselamatan",
+    "start": 43.78,
+    "end": 44.44,
+    "p": 0.9999390244483948
+   },
+   {
+    "text": "akan",
+    "start": 44.44,
+    "end": 45.08,
+    "p": 0.9997227787971497
+   },
+   {
+    "text": "dipantau.",
+    "start": 45.08,
+    "end": 45.72,
+    "p": 0.9994973540306091
+   }
+  ]
+ },
+ {
+  "start": 45.72,
+  "end": 53.34,
+  "text": "Aktiviti terapi seperti terapi cara kerja, senaman ringan, sesi kaunseling, ini bergantung pada hospital dan keadaan pesakitlah akan dijalankan juga.",
+  "words": [
+   {
+    "text": "Aktiviti",
+    "start": 45.72,
+    "end": 46.5,
+    "p": 0.8291187882423401
+   },
+   {
+    "text": "terapi",
+    "start": 46.5,
+    "end": 46.9,
+    "p": 0.9990120530128479
+   },
+   {
+    "text": "seperti",
+    "start": 46.9,
+    "end": 47.22,
+    "p": 0.9377133250236511
+   },
+   {
+    "text": "terapi",
+    "start": 47.22,
+    "end": 47.82,
+    "p": 0.9976236522197723
+   },
+   {
+    "text": "cara",
+    "start": 47.82,
+    "end": 48.02,
+    "p": 0.9891123175621033
+   },
+   {
+    "text": "kerja,",
+    "start": 48.02,
+    "end": 48.46,
+    "p": 0.9946913421154022
+   },
+   {
+    "text": "senaman",
+    "start": 48.52,
+    "end": 48.86,
+    "p": 0.8677718639373779
+   },
+   {
+    "text": "ringan,",
+    "start": 48.86,
+    "end": 49.4,
+    "p": 0.9999269843101501
+   },
+   {
+    "text": "sesi",
+    "start": 49.56,
+    "end": 49.72,
+    "p": 0.5303540825843811
+   },
+   {
+    "text": "kaunseling,",
+    "start": 49.72,
+    "end": 50.6,
+    "p": 0.9871848821640015
+   },
+   {
+    "text": "ini",
+    "start": 50.62,
+    "end": 50.9,
+    "p": 0.9208840131759644
+   },
+   {
+    "text": "bergantung",
+    "start": 50.9,
+    "end": 51.2,
+    "p": 0.9992779940366745
+   },
+   {
+    "text": "pada",
+    "start": 51.2,
+    "end": 51.34,
+    "p": 0.6473012566566467
+   },
+   {
+    "text": "hospital",
+    "start": 51.34,
+    "end": 51.62,
+    "p": 0.9974269270896912
+   },
+   {
+    "text": "dan",
+    "start": 51.62,
+    "end": 51.94,
+    "p": 0.9995180368423462
+   },
+   {
+    "text": "keadaan",
+    "start": 51.94,
+    "end": 52.14,
+    "p": 0.953691323598226
+   },
+   {
+    "text": "pesakitlah",
+    "start": 52.14,
+    "end": 52.54,
+    "p": 0.7974577024579048
+   },
+   {
+    "text": "akan",
+    "start": 52.54,
+    "end": 52.72,
+    "p": 0.8156542778015137
+   },
+   {
+    "text": "dijalankan",
+    "start": 52.72,
+    "end": 53.18,
+    "p": 0.9939952194690704
+   },
+   {
+    "text": "juga.",
+    "start": 53.18,
+    "end": 53.34,
+    "p": 0.9996496438980103
+   }
+  ]
+ },
+ {
+  "start": 53.54,
+  "end": 61.52,
+  "text": "Dan makan dan rehat adalah ikut jadual. Tujuan utama dia adalah untuk menstabilkan pesakit, bukan untuk menghukum pesakit.",
+  "words": [
+   {
+    "text": "Dan",
+    "start": 53.54,
+    "end": 53.9,
+    "p": 0.9807320237159729
+   },
+   {
+    "text": "makan",
+    "start": 53.9,
+    "end": 54.74,
+    "p": 0.9981999397277832
+   },
+   {
+    "text": "dan",
+    "start": 54.74,
+    "end": 54.94,
+    "p": 0.9998948574066162
+   },
+   {
+    "text": "rehat",
+    "start": 54.94,
+    "end": 55.34,
+    "p": 0.9996422529220581
+   },
+   {
+    "text": "adalah",
+    "start": 55.34,
+    "end": 55.86,
+    "p": 0.9935712814331055
+   },
+   {
+    "text": "ikut",
+    "start": 55.86,
+    "end": 56.62,
+    "p": 0.9995582699775696
+   },
+   {
+    "text": "jadual.",
+    "start": 56.62,
+    "end": 56.94,
+    "p": 0.999023973941803
+   },
+   {
+    "text": "Tujuan",
+    "start": 56.96,
+    "end": 57.42,
+    "p": 0.9972461859385172
+   },
+   {
+    "text": "utama",
+    "start": 57.42,
+    "end": 57.88,
+    "p": 0.9997970759868622
+   },
+   {
+    "text": "dia",
+    "start": 57.88,
+    "end": 57.98,
+    "p": 0.953458309173584
+   },
+   {
+    "text": "adalah",
+    "start": 57.98,
+    "end": 58.18,
+    "p": 0.9999650716781616
+   },
+   {
+    "text": "untuk",
+    "start": 58.18,
+    "end": 58.58,
+    "p": 0.9999755620956421
+   },
+   {
+    "text": "menstabilkan",
+    "start": 58.58,
+    "end": 59.62,
+    "p": 0.9720684140920639
+   },
+   {
+    "text": "pesakit,",
+    "start": 59.62,
+    "end": 60.08,
+    "p": 0.9974759221076965
+   },
+   {
+    "text": "bukan",
+    "start": 60.08,
+    "end": 60.24,
+    "p": 0.9999362230300903
+   },
+   {
+    "text": "untuk",
+    "start": 60.24,
+    "end": 60.66,
+    "p": 0.999992847442627
+   },
+   {
+    "text": "menghukum",
+    "start": 60.66,
+    "end": 61.2,
+    "p": 0.9962126314640045
+   },
+   {
+    "text": "pesakit.",
+    "start": 61.2,
+    "end": 61.52,
+    "p": 0.9775616526603699
+   }
+  ]
+ },
+ {
+  "start": 61.64,
+  "end": 65.78,
+  "text": "Datang pula soalan kedua, adakah semua pesakit dalam wad ni agresif? Jawapannya tidak.",
+  "words": [
+   {
+    "text": "Datang",
+    "start": 61.64,
+    "end": 62.08,
+    "p": 0.9989370405673981
+   },
+   {
+    "text": "pula",
+    "start": 62.08,
+    "end": 62.18,
+    "p": 0.9965769648551941
+   },
+   {
+    "text": "soalan",
+    "start": 62.18,
+    "end": 62.42,
+    "p": 0.9993459582328796
+   },
+   {
+    "text": "kedua,",
+    "start": 62.42,
+    "end": 62.68,
+    "p": 0.9988232254981995
+   },
+   {
+    "text": "adakah",
+    "start": 62.78,
+    "end": 62.98,
+    "p": 0.9994930326938629
+   },
+   {
+    "text": "semua",
+    "start": 62.98,
+    "end": 63.3,
+    "p": 0.9999306201934814
+   },
+   {
+    "text": "pesakit",
+    "start": 63.3,
+    "end": 63.9,
+    "p": 0.9997223615646362
+   },
+   {
+    "text": "dalam",
+    "start": 63.9,
+    "end": 64.0,
+    "p": 0.9544021487236023
+   },
+   {
+    "text": "wad",
+    "start": 64.0,
+    "end": 64.22,
+    "p": 0.8211280107498169
+   },
+   {
+    "text": "ni",
+    "start": 64.22,
+    "end": 64.34,
+    "p": 0.24910950660705566
+   },
+   {
+    "text": "agresif?",
+    "start": 64.34,
+    "end": 64.86,
+    "p": 0.9990607301394144
+   },
+   {
+    "text": "Jawapannya",
+    "start": 65.0,
+    "end": 65.5,
+    "p": 0.9992573857307434
+   },
+   {
+    "text": "tidak.",
+    "start": 65.5,
+    "end": 65.78,
+    "p": 0.9897747039794922
+   }
+  ]
+ },
+ {
+  "start": 65.98,
+  "end": 74.7,
+  "text": "Sakit dalam wad psikiatri ni, mereka mungkin mengalami kemurungan yang teruk, anxiety yang melampau, bipolar yang tidak stabil, skizofrenia yang tidak stabil,",
+  "words": [
+   {
+    "text": "Sakit",
+    "start": 65.98,
+    "end": 66.5,
+    "p": 0.8894957602024078
+   },
+   {
+    "text": "dalam",
+    "start": 66.5,
+    "end": 66.64,
+    "p": 0.9996122717857361
+   },
+   {
+    "text": "wad",
+    "start": 66.64,
+    "end": 66.9,
+    "p": 0.9998929798603058
+   },
+   {
+    "text": "psikiatri",
+    "start": 66.9,
+    "end": 67.3,
+    "p": 0.9498305767774582
+   },
+   {
+    "text": "ni,",
+    "start": 67.3,
+    "end": 67.5,
+    "p": 0.815081775188446
+   },
+   {
+    "text": "mereka",
+    "start": 67.58,
+    "end": 68.0,
+    "p": 0.9998425245285034
+   },
+   {
+    "text": "mungkin",
+    "start": 68.0,
+    "end": 68.32,
+    "p": 0.9999581575393677
+   },
+   {
+    "text": "mengalami",
+    "start": 68.32,
+    "end": 68.88,
+    "p": 0.9999552567799886
+   },
+   {
+    "text": "kemurungan",
+    "start": 68.88,
+    "end": 69.32,
+    "p": 0.9896815538406372
+   },
+   {
+    "text": "yang",
+    "start": 69.32,
+    "end": 69.42,
+    "p": 0.9999243021011353
+   },
+   {
+    "text": "teruk,",
+    "start": 69.42,
+    "end": 69.84,
+    "p": 0.9997812509536743
+   },
+   {
+    "text": "anxiety",
+    "start": 70.06,
+    "end": 70.46,
+    "p": 0.8733975887298584
+   },
+   {
+    "text": "yang",
+    "start": 70.46,
+    "end": 70.82,
+    "p": 0.999920129776001
+   },
+   {
+    "text": "melampau,",
+    "start": 70.82,
+    "end": 71.56,
+    "p": 0.9985602696736654
+   },
+   {
+    "text": "bipolar",
+    "start": 71.66,
+    "end": 71.88,
+    "p": 0.9432222247123718
+   },
+   {
+    "text": "yang",
+    "start": 71.88,
+    "end": 72.36,
+    "p": 0.999828577041626
+   },
+   {
+    "text": "tidak",
+    "start": 72.36,
+    "end": 72.66,
+    "p": 0.9996328353881836
+   },
+   {
+    "text": "stabil,",
+    "start": 72.66,
+    "end": 73.08,
+    "p": 0.9986799359321594
+   },
+   {
+    "text": "skizofrenia",
+    "start": 73.34,
+    "end": 73.9,
+    "p": 0.916741919517517
+   },
+   {
+    "text": "yang",
+    "start": 73.9,
+    "end": 74.06,
+    "p": 0.9998936653137207
+   },
+   {
+    "text": "tidak",
+    "start": 74.06,
+    "end": 74.24,
+    "p": 0.999771773815155
+   },
+   {
+    "text": "stabil,",
+    "start": 74.24,
+    "end": 74.7,
+    "p": 0.999477207660675
+   }
+  ]
+ },
+ {
+  "start": 74.7,
+  "end": 82.16,
+  "text": "ataupun krisis emosi yang memerlukan pemantauan. Ramai yang pendiam, takut sebab mereka sedang berjuang dengan pesakit mereka.",
+  "words": [
+   {
+    "text": "ataupun",
+    "start": 74.7,
+    "end": 75.14,
+    "p": 0.8480144143104553
+   },
+   {
+    "text": "krisis",
+    "start": 75.14,
+    "end": 75.98,
+    "p": 0.9958012898763021
+   },
+   {
+    "text": "emosi",
+    "start": 75.98,
+    "end": 76.38,
+    "p": 0.999146431684494
+   },
+   {
+    "text": "yang",
+    "start": 76.38,
+    "end": 76.74,
+    "p": 0.9991523027420044
+   },
+   {
+    "text": "memerlukan",
+    "start": 76.74,
+    "end": 77.44,
+    "p": 0.9998319000005722
+   },
+   {
+    "text": "pemantauan.",
+    "start": 77.44,
+    "end": 78.1,
+    "p": 0.9491817355155945
+   },
+   {
+    "text": "Ramai",
+    "start": 78.2,
+    "end": 78.76,
+    "p": 0.9934298992156982
+   },
+   {
+    "text": "yang",
+    "start": 78.76,
+    "end": 78.88,
+    "p": 0.9997407793998718
+   },
+   {
+    "text": "pendiam,",
+    "start": 78.88,
+    "end": 79.38,
+    "p": 0.9992980360984802
+   },
+   {
+    "text": "takut",
+    "start": 79.38,
+    "end": 80.04,
+    "p": 0.999888151884079
+   },
+   {
+    "text": "sebab",
+    "start": 80.04,
+    "end": 80.48,
+    "p": 0.9796451032161713
+   },
+   {
+    "text": "mereka",
+    "start": 80.48,
+    "end": 80.74,
+    "p": 0.9997938275337219
+   },
+   {
+    "text": "sedang",
+    "start": 80.74,
+    "end": 81.08,
+    "p": 0.9998951852321625
+   },
+   {
+    "text": "berjuang",
+    "start": 81.08,
+    "end": 81.46,
+    "p": 0.9994807839393616
+   },
+   {
+    "text": "dengan",
+    "start": 81.46,
+    "end": 81.66,
+    "p": 0.999582827091217
+   },
+   {
+    "text": "pesakit",
+    "start": 81.66,
+    "end": 82.02,
+    "p": 0.9989124139149984
+   },
+   {
+    "text": "mereka.",
+    "start": 82.02,
+    "end": 82.16,
+    "p": 0.9991651773452759
+   }
+  ]
+ },
+ {
+  "start": 82.44,
+  "end": 87.32,
+  "text": "Ada juga yang tanya saya, kenapa ada pesakit yang sampai kena ikat doktor? Betul ke ni? Mereka pernah kena ikat?",
+  "words": [
+   {
+    "text": "Ada",
+    "start": 82.44,
+    "end": 82.66,
+    "p": 0.9995200634002686
+   },
+   {
+    "text": "juga",
+    "start": 82.66,
+    "end": 82.82,
+    "p": 0.9994261264801025
+   },
+   {
+    "text": "yang",
+    "start": 82.82,
+    "end": 82.94,
+    "p": 0.9985278844833374
+   },
+   {
+    "text": "tanya",
+    "start": 82.94,
+    "end": 83.12,
+    "p": 0.9994756281375885
+   },
+   {
+    "text": "saya,",
+    "start": 83.12,
+    "end": 83.28,
+    "p": 0.9999291896820068
+   },
+   {
+    "text": "kenapa",
+    "start": 83.46,
+    "end": 83.86,
+    "p": 0.9984182715415955
+   },
+   {
+    "text": "ada",
+    "start": 83.86,
+    "end": 84.1,
+    "p": 0.999841570854187
+   },
+   {
+    "text": "pesakit",
+    "start": 84.1,
+    "end": 84.54,
+    "p": 0.9999108711878458
+   },
+   {
+    "text": "yang",
+    "start": 84.54,
+    "end": 84.58,
+    "p": 0.9485860466957092
+   },
+   {
+    "text": "sampai",
+    "start": 84.58,
+    "end": 84.8,
+    "p": 0.9995736479759216
+   },
+   {
+    "text": "kena",
+    "start": 84.8,
+    "end": 85.0,
+    "p": 0.9653041660785675
+   },
+   {
+    "text": "ikat",
+    "start": 85.0,
+    "end": 85.28,
+    "p": 0.9920415282249451
+   },
+   {
+    "text": "doktor?",
+    "start": 85.28,
+    "end": 85.5,
+    "p": 0.7752271890640259
+   },
+   {
+    "text": "Betul",
+    "start": 85.58,
+    "end": 85.92,
+    "p": 0.6502337455749512
+   },
+   {
+    "text": "ke",
+    "start": 85.92,
+    "end": 86.02,
+    "p": 0.9948132038116455
+   },
+   {
+    "text": "ni?",
+    "start": 86.02,
+    "end": 86.2,
+    "p": 0.9789354205131531
+   },
+   {
+    "text": "Mereka",
+    "start": 86.24,
+    "end": 86.7,
+    "p": 0.9986820618311564
+   },
+   {
+    "text": "pernah",
+    "start": 86.7,
+    "end": 86.9,
+    "p": 0.9996393918991089
+   },
+   {
+    "text": "kena",
+    "start": 86.9,
+    "end": 87.08,
+    "p": 0.9996985495090485
+   },
+   {
+    "text": "ikat?",
+    "start": 87.08,
+    "end": 87.32,
+    "p": 0.9998808205127716
+   }
+  ]
+ },
+ {
+  "start": 87.44,
+  "end": 92.8,
+  "text": "Ini adalah salah faham yang paling biasalah. Physical restraint bukanlah rutin yang dijalankan.",
+  "words": [
+   {
+    "text": "Ini",
+    "start": 87.44,
+    "end": 87.72,
+    "p": 0.8292537927627563
+   },
+   {
+    "text": "adalah",
+    "start": 87.72,
+    "end": 87.94,
+    "p": 0.9999935626983643
+   },
+   {
+    "text": "salah",
+    "start": 87.94,
+    "end": 88.18,
+    "p": 0.9991820454597473
+   },
+   {
+    "text": "faham",
+    "start": 88.18,
+    "end": 88.56,
+    "p": 0.9998150070508321
+   },
+   {
+    "text": "yang",
+    "start": 88.56,
+    "end": 88.74,
+    "p": 0.9998986721038818
+   },
+   {
+    "text": "paling",
+    "start": 88.74,
+    "end": 89.0,
+    "p": 0.9999165534973145
+   },
+   {
+    "text": "biasalah.",
+    "start": 89.0,
+    "end": 89.64,
+    "p": 0.8611558675765991
+   },
+   {
+    "text": "Physical",
+    "start": 89.8,
+    "end": 90.22,
+    "p": 0.9786686897277832
+   },
+   {
+    "text": "restraint",
+    "start": 90.22,
+    "end": 90.74,
+    "p": 0.8114734292030334
+   },
+   {
+    "text": "bukanlah",
+    "start": 90.74,
+    "end": 91.8,
+    "p": 0.9932404160499573
+   },
+   {
+    "text": "rutin",
+    "start": 91.8,
+    "end": 92.2,
+    "p": 0.9997251331806183
+   },
+   {
+    "text": "yang",
+    "start": 92.2,
+    "end": 92.32,
+    "p": 0.9998565912246704
+   },
+   {
+    "text": "dijalankan.",
+    "start": 92.32,
+    "end": 92.8,
+    "p": 0.979470282793045
+   }
+  ]
+ },
+ {
+  "start": 92.92,
+  "end": 98.56,
+  "text": "Ia hanyalah digunakan sebagai langkah terakhir apabila seseorang itu pertama berisiko mencederakan diri sendiri,",
+  "words": [
+   {
+    "text": "Ia",
+    "start": 92.92,
+    "end": 92.96,
+    "p": 0.9038983285427094
+   },
+   {
+    "text": "hanyalah",
+    "start": 92.96,
+    "end": 93.24,
+    "p": 0.9995230237642924
+   },
+   {
+    "text": "digunakan",
+    "start": 93.24,
+    "end": 94.14,
+    "p": 0.9999465147654215
+   },
+   {
+    "text": "sebagai",
+    "start": 94.14,
+    "end": 94.4,
+    "p": 0.9999371767044067
+   },
+   {
+    "text": "langkah",
+    "start": 94.4,
+    "end": 95.06,
+    "p": 0.9999459385871887
+   },
+   {
+    "text": "terakhir",
+    "start": 95.06,
+    "end": 95.58,
+    "p": 0.9996148546536764
+   },
+   {
+    "text": "apabila",
+    "start": 95.58,
+    "end": 96.0,
+    "p": 0.9998098214467367
+   },
+   {
+    "text": "seseorang",
+    "start": 96.0,
+    "end": 96.34,
+    "p": 0.9928886691729227
+   },
+   {
+    "text": "itu",
+    "start": 96.34,
+    "end": 96.6,
+    "p": 0.9999274015426636
+   },
+   {
+    "text": "pertama",
+    "start": 96.6,
+    "end": 96.96,
+    "p": 0.8117778897285461
+   },
+   {
+    "text": "berisiko",
+    "start": 96.96,
+    "end": 97.6,
+    "p": 0.8678916295369467
+   },
+   {
+    "text": "mencederakan",
+    "start": 97.6,
+    "end": 98.12,
+    "p": 0.9966937303543091
+   },
+   {
+    "text": "diri",
+    "start": 98.12,
+    "end": 98.3,
+    "p": 0.9786868393421173
+   },
+   {
+    "text": "sendiri,",
+    "start": 98.3,
+    "end": 98.56,
+    "p": 0.9998186230659485
+   }
+  ]
+ },
+ {
+  "start": 98.68,
+  "end": 104.16,
+  "text": "yang kedua berisiko mencederakan orang lain dan semua cara lain untuk menenangkan pesakit tidak berjaya.",
+  "words": [
+   {
+    "text": "yang",
+    "start": 98.68,
+    "end": 98.96,
+    "p": 0.9994288086891174
+   },
+   {
+    "text": "kedua",
+    "start": 98.96,
+    "end": 99.26,
+    "p": 0.9996614754199982
+   },
+   {
+    "text": "berisiko",
+    "start": 99.26,
+    "end": 99.68,
+    "p": 0.9996256828308105
+   },
+   {
+    "text": "mencederakan",
+    "start": 99.68,
+    "end": 100.34,
+    "p": 0.9997587651014328
+   },
+   {
+    "text": "orang",
+    "start": 100.34,
+    "end": 100.54,
+    "p": 0.9998615980148315
+   },
+   {
+    "text": "lain",
+    "start": 100.54,
+    "end": 100.8,
+    "p": 0.9998812675476074
+   },
+   {
+    "text": "dan",
+    "start": 100.8,
+    "end": 101.02,
+    "p": 0.9908779263496399
+   },
+   {
+    "text": "semua",
+    "start": 101.02,
+    "end": 101.4,
+    "p": 0.9996531009674072
+   },
+   {
+    "text": "cara",
+    "start": 101.4,
+    "end": 101.7,
+    "p": 0.9979503750801086
+   },
+   {
+    "text": "lain",
+    "start": 101.7,
+    "end": 102.02,
+    "p": 0.9994984865188599
+   },
+   {
+    "text": "untuk",
+    "start": 102.02,
+    "end": 102.54,
+    "p": 0.9998382329940796
+   },
+   {
+    "text": "menenangkan",
+    "start": 102.54,
+    "end": 103.04,
+    "p": 0.999047264456749
+   },
+   {
+    "text": "pesakit",
+    "start": 103.04,
+    "end": 103.44,
+    "p": 0.9980557163556417
+   },
+   {
+    "text": "tidak",
+    "start": 103.44,
+    "end": 103.68,
+    "p": 0.9970921277999878
+   },
+   {
+    "text": "berjaya.",
+    "start": 103.68,
+    "end": 104.16,
+    "p": 0.9998466372489929
+   }
+  ]
+ },
+ {
+  "start": 104.7,
+  "end": 110.08,
+  "text": "Apabila pesakit sudah stabil, restraint tersebut akan dihentikan secepat mungkin ikut prosedur dan pemantauan yang ketat.",
+  "words": [
+   {
+    "text": "Apabila",
+    "start": 104.7,
+    "end": 104.78,
+    "p": 0.6549381435324904
+   },
+   {
+    "text": "pesakit",
+    "start": 104.78,
+    "end": 105.06,
+    "p": 0.9878656268119812
+   },
+   {
+    "text": "sudah",
+    "start": 105.06,
+    "end": 105.2,
+    "p": 0.8861681818962097
+   },
+   {
+    "text": "stabil,",
+    "start": 105.2,
+    "end": 105.52,
+    "p": 0.9979562759399414
+   },
+   {
+    "text": "restraint",
+    "start": 105.68,
+    "end": 105.92,
+    "p": 0.45552223920822144
+   },
+   {
+    "text": "tersebut",
+    "start": 105.92,
+    "end": 106.52,
+    "p": 0.998051385084788
+   },
+   {
+    "text": "akan",
+    "start": 106.52,
+    "end": 106.74,
+    "p": 0.9840758442878723
+   },
+   {
+    "text": "dihentikan",
+    "start": 106.74,
+    "end": 107.34,
+    "p": 0.9998060017824173
+   },
+   {
+    "text": "secepat",
+    "start": 107.34,
+    "end": 107.66,
+    "p": 0.9981404344240824
+   },
+   {
+    "text": "mungkin",
+    "start": 107.66,
+    "end": 108.0,
+    "p": 0.9998656511306763
+   },
+   {
+    "text": "ikut",
+    "start": 108.0,
+    "end": 108.48,
+    "p": 0.7973834872245789
+   },
+   {
+    "text": "prosedur",
+    "start": 108.48,
+    "end": 108.82,
+    "p": 0.9899499615033468
+   },
+   {
+    "text": "dan",
+    "start": 108.82,
+    "end": 109.04,
+    "p": 0.9991278052330017
+   },
+   {
+    "text": "pemantauan",
+    "start": 109.04,
+    "end": 109.66,
+    "p": 0.9242198765277863
+   },
+   {
+    "text": "yang",
+    "start": 109.66,
+    "end": 109.76,
+    "p": 0.9999089241027832
+   },
+   {
+    "text": "ketat.",
+    "start": 109.76,
+    "end": 110.08,
+    "p": 0.9740973711013794
+   }
+  ]
+ },
+ {
+  "start": 110.14,
+  "end": 116.06,
+  "text": "Yang penting kat sini adalah masuk wad psikiatri ni bukan bermaksud hidup dah berakhir dah, bukan bermaksud anda gila ke apa.",
+  "words": [
+   {
+    "text": "Yang",
+    "start": 110.14,
+    "end": 110.62,
+    "p": 0.9959021210670471
+   },
+   {
+    "text": "penting",
+    "start": 110.62,
+    "end": 111.1,
+    "p": 0.9999678730964661
+   },
+   {
+    "text": "kat",
+    "start": 111.1,
+    "end": 111.2,
+    "p": 0.7805384397506714
+   },
+   {
+    "text": "sini",
+    "start": 111.2,
+    "end": 111.34,
+    "p": 0.9999051094055176
+   },
+   {
+    "text": "adalah",
+    "start": 111.34,
+    "end": 111.56,
+    "p": 0.9998087286949158
+   },
+   {
+    "text": "masuk",
+    "start": 111.56,
+    "end": 112.0,
+    "p": 0.986350953578949
+   },
+   {
+    "text": "wad",
+    "start": 112.0,
+    "end": 112.2,
+    "p": 0.7377096712589264
+   },
+   {
+    "text": "psikiatri",
+    "start": 112.2,
+    "end": 112.58,
+    "p": 0.7738886401057243
+   },
+   {
+    "text": "ni",
+    "start": 112.58,
+    "end": 112.76,
+    "p": 0.537136435508728
+   },
+   {
+    "text": "bukan",
+    "start": 112.76,
+    "end": 113.02,
+    "p": 0.9996494054794312
+   },
+   {
+    "text": "bermaksud",
+    "start": 113.02,
+    "end": 113.68,
+    "p": 0.9993646740913391
+   },
+   {
+    "text": "hidup",
+    "start": 113.68,
+    "end": 114.06,
+    "p": 0.9997661411762238
+   },
+   {
+    "text": "dah",
+    "start": 114.06,
+    "end": 114.18,
+    "p": 0.9996305704116821
+   },
+   {
+    "text": "berakhir",
+    "start": 114.18,
+    "end": 114.58,
+    "p": 0.9998430013656616
+   },
+   {
+    "text": "dah,",
+    "start": 114.58,
+    "end": 114.7,
+    "p": 0.726122260093689
+   },
+   {
+    "text": "bukan",
+    "start": 114.72,
+    "end": 114.9,
+    "p": 0.9995496869087219
+   },
+   {
+    "text": "bermaksud",
+    "start": 114.9,
+    "end": 115.2,
+    "p": 0.9793855945269266
+   },
+   {
+    "text": "anda",
+    "start": 115.2,
+    "end": 115.36,
+    "p": 0.9982765913009644
+   },
+   {
+    "text": "gila",
+    "start": 115.36,
+    "end": 115.84,
+    "p": 0.9990704953670502
+   },
+   {
+    "text": "ke",
+    "start": 115.84,
+    "end": 115.9,
+    "p": 0.9973509311676025
+   },
+   {
+    "text": "apa.",
+    "start": 115.9,
+    "end": 116.06,
+    "p": 0.999687910079956
+   }
+  ]
+ },
+ {
+  "start": 116.18,
+  "end": 121.82,
+  "text": "Tidak. Ramai pesakit masuk wad psikiatri selepas beberapa hari, beberapa minggu keluar semula, sambung rawatan,",
+  "words": [
+   {
+    "text": "Tidak.",
+    "start": 116.18,
+    "end": 116.34,
+    "p": 0.9692686001459757
+   },
+   {
+    "text": "Ramai",
+    "start": 116.44,
+    "end": 117.0,
+    "p": 0.9993206262588501
+   },
+   {
+    "text": "pesakit",
+    "start": 117.0,
+    "end": 117.4,
+    "p": 0.9998716910680135
+   },
+   {
+    "text": "masuk",
+    "start": 117.4,
+    "end": 117.54,
+    "p": 0.9999797344207764
+   },
+   {
+    "text": "wad",
+    "start": 117.54,
+    "end": 117.76,
+    "p": 0.9999755024909973
+   },
+   {
+    "text": "psikiatri",
+    "start": 117.76,
+    "end": 118.12,
+    "p": 0.9997708797454834
+   },
+   {
+    "text": "selepas",
+    "start": 118.12,
+    "end": 118.54,
+    "p": 0.9987915456295013
+   },
+   {
+    "text": "beberapa",
+    "start": 118.54,
+    "end": 118.86,
+    "p": 0.9999397397041321
+   },
+   {
+    "text": "hari,",
+    "start": 118.86,
+    "end": 119.38,
+    "p": 0.9998378753662109
+   },
+   {
+    "text": "beberapa",
+    "start": 119.48,
+    "end": 119.74,
+    "p": 0.9997850954532623
+   },
+   {
+    "text": "minggu",
+    "start": 119.74,
+    "end": 120.1,
+    "p": 0.9999715089797974
+   },
+   {
+    "text": "keluar",
+    "start": 120.1,
+    "end": 120.38,
+    "p": 0.7974721789360046
+   },
+   {
+    "text": "semula,",
+    "start": 120.38,
+    "end": 121.0,
+    "p": 0.9996552169322968
+   },
+   {
+    "text": "sambung",
+    "start": 121.02,
+    "end": 121.36,
+    "p": 0.9976599812507629
+   },
+   {
+    "text": "rawatan,",
+    "start": 121.36,
+    "end": 121.82,
+    "p": 0.9991030991077423
+   }
+  ]
+ },
+ {
+  "start": 121.92,
+  "end": 125.12,
+  "text": "mereka kembali bekerja, kembali belajar, kembali hidup seperti biasa.",
+  "words": [
+   {
+    "text": "mereka",
+    "start": 121.92,
+    "end": 122.14,
+    "p": 0.9549186825752258
+   },
+   {
+    "text": "kembali",
+    "start": 122.14,
+    "end": 122.56,
+    "p": 0.9999129374821981
+   },
+   {
+    "text": "bekerja,",
+    "start": 122.56,
+    "end": 123.0,
+    "p": 0.9997480312983195
+   },
+   {
+    "text": "kembali",
+    "start": 123.04,
+    "end": 123.32,
+    "p": 0.9999579191207886
+   },
+   {
+    "text": "belajar,",
+    "start": 123.32,
+    "end": 123.74,
+    "p": 0.999935507774353
+   },
+   {
+    "text": "kembali",
+    "start": 123.82,
+    "end": 124.26,
+    "p": 0.9999708334604899
+   },
+   {
+    "text": "hidup",
+    "start": 124.26,
+    "end": 124.62,
+    "p": 0.9999561309814453
+   },
+   {
+    "text": "seperti",
+    "start": 124.62,
+    "end": 124.76,
+    "p": 0.999337375164032
+   },
+   {
+    "text": "biasa.",
+    "start": 124.76,
+    "end": 125.12,
+    "p": 0.9999632239341736
+   }
+  ]
+ },
+ {
+  "start": 125.42,
+  "end": 133.9,
+  "text": "Wad psikiatri ni bukan tempat hukum ke apa. Ia adalah tempat yang selamat sebenarnya untuk seseorang itu berehat, distabilkan dan diberi peluang untuk",
+  "words": [
+   {
+    "text": "Wad",
+    "start": 125.42,
+    "end": 125.88,
+    "p": 0.979384571313858
+   },
+   {
+    "text": "psikiatri",
+    "start": 125.88,
+    "end": 126.22,
+    "p": 0.9997415542602539
+   },
+   {
+    "text": "ni",
+    "start": 126.22,
+    "end": 126.34,
+    "p": 0.9993200302124023
+   },
+   {
+    "text": "bukan",
+    "start": 126.34,
+    "end": 126.46,
+    "p": 0.99994957447052
+   },
+   {
+    "text": "tempat",
+    "start": 126.46,
+    "end": 126.72,
+    "p": 0.9997730553150177
+   },
+   {
+    "text": "hukum",
+    "start": 126.72,
+    "end": 127.2,
+    "p": 0.9999848206837972
+   },
+   {
+    "text": "ke",
+    "start": 127.2,
+    "end": 127.3,
+    "p": 0.9991384744644165
+   },
+   {
+    "text": "apa.",
+    "start": 127.3,
+    "end": 127.44,
+    "p": 0.9999477863311768
+   },
+   {
+    "text": "Ia",
+    "start": 127.62,
+    "end": 127.88,
+    "p": 0.9942550361156464
+   },
+   {
+    "text": "adalah",
+    "start": 127.88,
+    "end": 128.02,
+    "p": 0.9999523162841797
+   },
+   {
+    "text": "tempat",
+    "start": 128.02,
+    "end": 128.5,
+    "p": 0.9999861121177673
+   },
+   {
+    "text": "yang",
+    "start": 128.5,
+    "end": 128.66,
+    "p": 0.9999725818634033
+   },
+   {
+    "text": "selamat",
+    "start": 128.66,
+    "end": 129.14,
+    "p": 0.999900758266449
+   },
+   {
+    "text": "sebenarnya",
+    "start": 129.14,
+    "end": 129.4,
+    "p": 0.9996224343776703
+   },
+   {
+    "text": "untuk",
+    "start": 129.4,
+    "end": 129.66,
+    "p": 0.9996490478515625
+   },
+   {
+    "text": "seseorang",
+    "start": 129.66,
+    "end": 130.06,
+    "p": 0.9986597696940104
+   },
+   {
+    "text": "itu",
+    "start": 130.06,
+    "end": 130.3,
+    "p": 0.9988824725151062
+   },
+   {
+    "text": "berehat,",
+    "start": 130.3,
+    "end": 131.02,
+    "p": 0.9937720000743866
+   },
+   {
+    "text": "distabilkan",
+    "start": 131.06,
+    "end": 131.98,
+    "p": 0.8988770047823588
+   },
+   {
+    "text": "dan",
+    "start": 131.98,
+    "end": 132.44,
+    "p": 0.8331250548362732
+   },
+   {
+    "text": "diberi",
+    "start": 132.44,
+    "end": 133.14,
+    "p": 0.9988468289375305
+   },
+   {
+    "text": "peluang",
+    "start": 133.14,
+    "end": 133.64,
+    "p": 0.999338706334432
+   },
+   {
+    "text": "untuk",
+    "start": 133.64,
+    "end": 133.9,
+    "p": 0.9986580610275269
+   }
+  ]
+ },
+ {
+  "start": 133.9,
+  "end": 141.84,
+  "text": "memulakan proses sembuh itu. Jadi kalau anda ataupun orang tersayang sedang bergelut dengan kesihatan mental, jangan takut untuk mendapatkan bantuan.",
+  "words": [
+   {
+    "text": "memulakan",
+    "start": 133.9,
+    "end": 134.72,
+    "p": 0.6670228697670003
+   },
+   {
+    "text": "proses",
+    "start": 134.72,
+    "end": 135.3,
+    "p": 0.9975611567497253
+   },
+   {
+    "text": "sembuh",
+    "start": 135.3,
+    "end": 136.0,
+    "p": 0.9966916143894196
+   },
+   {
+    "text": "itu.",
+    "start": 136.0,
+    "end": 136.12,
+    "p": 0.5313125252723694
+   },
+   {
+    "text": "Jadi",
+    "start": 136.22,
+    "end": 136.56,
+    "p": 0.9539727568626404
+   },
+   {
+    "text": "kalau",
+    "start": 136.56,
+    "end": 136.8,
+    "p": 0.7410832643508911
+   },
+   {
+    "text": "anda",
+    "start": 136.8,
+    "end": 137.12,
+    "p": 0.994358479976654
+   },
+   {
+    "text": "ataupun",
+    "start": 137.12,
+    "end": 137.68,
+    "p": 0.9484879374504089
+   },
+   {
+    "text": "orang",
+    "start": 137.68,
+    "end": 137.84,
+    "p": 0.9935160875320435
+   },
+   {
+    "text": "tersayang",
+    "start": 137.84,
+    "end": 138.18,
+    "p": 0.8669556826353073
+   },
+   {
+    "text": "sedang",
+    "start": 138.18,
+    "end": 138.36,
+    "p": 0.9954392910003662
+   },
+   {
+    "text": "bergelut",
+    "start": 138.36,
+    "end": 138.8,
+    "p": 0.9962603251139323
+   },
+   {
+    "text": "dengan",
+    "start": 138.8,
+    "end": 138.98,
+    "p": 0.9967541098594666
+   },
+   {
+    "text": "kesihatan",
+    "start": 138.98,
+    "end": 139.7,
+    "p": 0.9495672583580017
+   },
+   {
+    "text": "mental,",
+    "start": 139.7,
+    "end": 139.92,
+    "p": 0.9930000305175781
+   },
+   {
+    "text": "jangan",
+    "start": 140.1,
+    "end": 140.4,
+    "p": 0.996807336807251
+   },
+   {
+    "text": "takut",
+    "start": 140.4,
+    "end": 140.74,
+    "p": 0.999378502368927
+   },
+   {
+    "text": "untuk",
+    "start": 140.74,
+    "end": 140.82,
+    "p": 0.9070639610290527
+   },
+   {
+    "text": "mendapatkan",
+    "start": 140.82,
+    "end": 141.56,
+    "p": 0.975590984026591
+   },
+   {
+    "text": "bantuan.",
+    "start": 141.56,
+    "end": 141.84,
+    "p": 0.9992770155270895
+   }
+  ]
+ },
+ {
+  "start": 141.9,
+  "end": 147.18,
+  "text": "Boleh datang buat saringan dan konsultasi kesihatan mental di klinik saya. Kita bincang dahulu pilihan rawatan yang paling sesuai untuk anda.",
+  "words": [
+   {
+    "text": "Boleh",
+    "start": 141.9,
+    "end": 142.1,
+    "p": 0.9968637526035309
+   },
+   {
+    "text": "datang",
+    "start": 142.1,
+    "end": 142.38,
+    "p": 0.9988846480846405
+   },
+   {
+    "text": "buat",
+    "start": 142.38,
+    "end": 142.48,
+    "p": 0.9844772815704346
+   },
+   {
+    "text": "saringan",
+    "start": 142.48,
+    "end": 142.84,
+    "p": 0.9779905478159586
+   },
+   {
+    "text": "dan",
+    "start": 142.84,
+    "end": 142.88,
+    "p": 0.8706272840499878
+   },
+   {
+    "text": "konsultasi",
+    "start": 142.88,
+    "end": 143.28,
+    "p": 0.9985536336898804
+   },
+   {
+    "text": "kesihatan",
+    "start": 143.28,
+    "end": 143.54,
+    "p": 0.9962334036827087
+   },
+   {
+    "text": "mental",
+    "start": 143.54,
+    "end": 143.82,
+    "p": 0.9996360540390015
+   },
+   {
+    "text": "di",
+    "start": 143.82,
+    "end": 144.0,
+    "p": 0.8809654712677002
+   },
+   {
+    "text": "klinik",
+    "start": 144.0,
+    "end": 144.22,
+    "p": 0.6792063117027283
+   },
+   {
+    "text": "saya.",
+    "start": 144.22,
+    "end": 144.32,
+    "p": 0.9971519708633423
+   },
+   {
+    "text": "Kita",
+    "start": 144.56,
+    "end": 144.82,
+    "p": 0.9954909682273865
+   },
+   {
+    "text": "bincang",
+    "start": 144.82,
+    "end": 145.2,
+    "p": 0.9990164041519165
+   },
+   {
+    "text": "dahulu",
+    "start": 145.2,
+    "end": 145.5,
+    "p": 0.9988784790039062
+   },
+   {
+    "text": "pilihan",
+    "start": 145.5,
+    "end": 145.76,
+    "p": 0.9236716429392496
+   },
+   {
+    "text": "rawatan",
+    "start": 145.76,
+    "end": 146.12,
+    "p": 0.9966782629489899
+   },
+   {
+    "text": "yang",
+    "start": 146.12,
+    "end": 146.28,
+    "p": 0.9993817806243896
+   },
+   {
+    "text": "paling",
+    "start": 146.28,
+    "end": 146.56,
+    "p": 0.9993671774864197
+   },
+   {
+    "text": "sesuai",
+    "start": 146.56,
+    "end": 146.92,
+    "p": 0.9960553447405497
+   },
+   {
+    "text": "untuk",
+    "start": 146.92,
+    "end": 147.02,
+    "p": 0.9989616870880127
+   },
+   {
+    "text": "anda.",
+    "start": 147.02,
+    "end": 147.18,
+    "p": 0.999572217464447
+   }
+  ]
+ },
+ {
+  "start": 147.32,
+  "end": 148.98,
+  "text": "Ada apa-apa soalan, minta tanya di dalam komen. Take care.",
+  "words": [
+   {
+    "text": "Ada",
+    "start": 147.32,
+    "end": 147.44,
+    "p": 0.31608378887176514
+   },
+   {
+    "text": "apa",
+    "start": 147.44,
+    "end": 147.56,
+    "p": 0.8891840577125549
+   },
+   {
+    "text": "-apa",
+    "start": 147.56,
+    "end": 147.64,
+    "p": 0.856250137090683
+   },
+   {
+    "text": "soalan,",
+    "start": 147.64,
+    "end": 147.88,
+    "p": 0.9992769956588745
+   },
+   {
+    "text": "minta",
+    "start": 147.92,
+    "end": 148.04,
+    "p": 0.6622719913721085
+   },
+   {
+    "text": "tanya",
+    "start": 148.04,
+    "end": 148.16,
+    "p": 0.5219797287136316
+   },
+   {
+    "text": "di",
+    "start": 148.16,
+    "end": 148.16,
+    "p": 0.5583311915397644
+   },
+   {
+    "text": "dalam",
+    "start": 148.16,
+    "end": 148.26,
+    "p": 0.3054327070713043
+   },
+   {
+    "text": "komen.",
+    "start": 148.26,
+    "end": 148.46,
+    "p": 0.9755621552467346
+   },
+   {
+    "text": "Take",
+    "start": 148.62,
+    "end": 148.74,
+    "p": 0.9525925517082214
+   },
+   {
+    "text": "care.",
+    "start": 148.74,
+    "end": 148.98,
+    "p": 0.9985607266426086
+   }
+  ]
+ }
+]

@@ -29,7 +29,14 @@ scripts/setup.sh          # ffmpeg, .venv with video-use deps, hyperframes CLI c
 ```
 
 - Use `.venv/bin/python` for every video-use helper.
-- HyperFrames runs via `npx --yes hyperframes …` (needs Node 22+).
+- HyperFrames runs via `npx --yes hyperframes …` (needs Node 22+). `embedded-captions` additionally
+  needs a **built checkout**: `scripts/setup.sh --captions` clones + builds it at `~/hyperframes`.
+  Export before any HyperFrames render/snapshot/caption script:
+  ```bash
+  export HYPERFRAMES_ROOT=~/hyperframes
+  export HYPERFRAMES_BROWSER_PATH=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell  # cloud container
+  export PUPPETEER_EXECUTABLE_PATH=$HYPERFRAMES_BROWSER_PATH
+  ```
 - `ELEVENLABS_API_KEY` in `.env` (repo root) enables Scribe transcription. If it's
   missing, ask the user once for it; if they decline, use the Whisper fallback below.
   Never echo or commit the key.
@@ -69,10 +76,19 @@ Default target is **1080×1920 @ 30fps vertical** unless the source or the user 
 - Whisper fallback (no key; weaker on "um/uh" because Whisper normalizes fillers):
   ```bash
   ffmpeg -i videos/<p>/raw/<file> -vn -ac 1 -ar 16000 videos/<p>/edit/audio.wav
-  npx --yes hyperframes transcribe videos/<p>/edit/audio.wav -d videos/<p>/edit/whisper --json --model small.en
-  .venv/bin/python tools/whisper_to_scribe.py videos/<p>/edit/whisper/transcript.json --edit-dir videos/<p>/edit --name <file-stem>
+  # any language (detect first); prompts fillers so Whisper keeps them:
+  .venv/bin/python tools/transcribe_fw.py videos/<p>/edit/audio.wav --edit-dir videos/<p>/edit --name <file-stem> --language ms --model medium
+  # English-only alternative: npx hyperframes transcribe … --model small.en, then tools/whisper_to_scribe.py
   ```
+  `hyperframes transcribe` only ships English models + large-v3 — never use `*.en` on non-English speech.
   Tell the user filler detection is reduced, and lean harder on `timeline_view` + silence gaps.
+- **Whisper word times drift 0.1–0.9s** (they swallow pauses). Before cutting, forced-align the
+  corrected text with torchaudio MMS_FA (multilingual, ~20ms edges) per speech island, testing
+  alternative wordings and keeping the best-scoring one — see `videos/ward-psikiatri/edit/align.py`
+  + `build_edl.py` for the worked pattern (edges snapped to the energy envelope, tight pairs cut at
+  the energy minimum, '*' for unknown sounds). Check every edge with an envelope plot before rendering.
+- **Short sound bursts between words are not always breaths.** Ask large-v3 about any ambiguous
+  burst *without* an initial prompt (a vocabulary prompt biases it) before cutting it.
 - Then `pack_transcripts.py --edit-dir videos/<p>/edit` → read `takes_packed.md`.
 
 ### 2. Strategy (stop and confirm)
@@ -85,21 +101,38 @@ if the user hasn't given a brand.
 ### 3. Cut + grade (video-use)
 - Write `edit/edl.json`: cut every filler/false start/dead gap, snap to word boundaries, pad 30–200ms (tighter for TikTok pace).
 - Leave `overlays` empty and omit `subtitles` — graphics and captions happen in HyperFrames.
-- `render.py edit/edl.json -o edit/cut.mp4` (use `--preview` while iterating).
+- Render with **`tools/render_edl.py edit/edl.json -o edit/cut.mp4`**, not video-use's `render.py`:
+  render.py's per-segment AAC + `-c copy` concat drifts the audio ~21ms later per cut (measured
+  ~0.6s by 2 min). render_edl.py joins A/V in one concat filter, supports per-range `"zoom"`
+  punch-ins (alternate 1.0/1.08 around `"zoom_focus"` to disguise jump cuts), writes a dense GOP.
+- **Always** run `tools/check_sync.py edit/edl.json edit/cut.mp4` (fails if any range lags >25ms).
 - Self-eval with `timeline_view.py` on `cut.mp4` at every cut boundary (max 3 passes), per video-use step 7.
 
 ### 4. Motion graphics (talking-head-recut, optionally motion-graphics)
-- Input: `edit/cut.mp4`. Work dir: `videos/<p>/graphics/`. It re-transcribes the *cut* file, so card timings match the edited timeline.
+- Input: `edit/cut.mp4`. Work dir: `videos/<p>/graphics/`. Don't re-transcribe: map the aligned
+  source words through the EDL (exact output times) and time cards from those — see
+  `videos/ward-psikiatri/edit/map_words.py` and `graphics/build_graphics.py` (cards authored against
+  a word list re-map themselves when the cut changes).
+- **Layout for vertical talking heads:** measure where the face sits first. Text goes in the headroom
+  above the head (cards) and in a one-line band just above the hair (captions); the bottom ~20% is
+  TikTok UI. Snapshot every card at its fully-built moment and fix overlap/clipping before rendering.
 - For standalone pieces (intro hook card, stat count-up, CTA end card), build each with `motion-graphics` in its own folder under `graphics/`. When there are several, spawn them as parallel sub-agents (video-use Hard Rule 10).
 - Output: `graphics/output.mp4`.
 
 ### 5. Captions (embedded-captions)
 - Input: `graphics/output.mp4` (or `edit/cut.mp4` if no graphics). Work dir: `videos/<p>/captions/`.
+- `hyperframes init --video` runs English whisper `small` and writes its own transcript.json —
+  replace it with the verified word-level transcript (`{language_code, words:[{text,start,end}]}`).
+- Matting is CPU-bound (~2 fps). When cards never overlap the subject, run `prepare.sh` on
+  `edit/cut.mp4` in parallel with the graphics render; the matte stays valid for the composite.
 - For TikTok, keep captions inside the safe zone: clear of the bottom ~20% (caption/UI bar) and the right ~15% (action buttons). Captions go on top of everything else (video-use Hard Rule 1).
 - If the user prefers simple burned subtitles instead, use video-use's `render.py --build-subtitles` in stage 3 and skip this stage.
 
 ### 6. Audio + final
-- Optional music/SFX via `media-use`; duck music −12 to −15 dB under speech.
+- Music: `media-use` BGM needs a signed-in HeyGen account. Without one, synthesize an original,
+  licence-free bed with `tools/ambient_bed.py`, then `tools/mix_music.py <video> <bed.wav> -o <out>`
+  (EQ out of the voice band, sidechain-duck, two-pass loudnorm, reports measured music-vs-voice dB).
+  Also tell the user they can add a licensed track in the TikTok app instead.
 - Loudness target −14 LUFS, true peak ≤ −1 dBTP; measure with `ffmpeg -i final.mp4 -af ebur128=peak=true -f null -` and report numbers (you can't listen).
 - Copy the result to `videos/<p>/final.mp4`, ffprobe it, sample first/last 2s and a few midpoints with `timeline_view`, then show the user.
 - Append a session entry to `edit/project.md` (strategy, decisions, outstanding).

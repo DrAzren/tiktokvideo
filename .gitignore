@@ -4,11 +4,19 @@ __pycache__/
 node_modules/
 .DS_Store
 
-# Footage and renders stay local — only project notes are committed.
+# Footage, renders and intermediates stay local. Commit only the small, human-readable
+# decisions that reproduce an edit: scripts, EDL, alignment, storyboard, caption plan, notes.
 videos/**
+!videos/**/
 !videos/.gitkeep
-!videos/README.md
-!videos/*/
-!videos/*/edit/
-!videos/*/edit/project.md
+!videos/**/*.py
+!videos/**/project.md
 !videos/*/edit/edl.json
+!videos/*/edit/aligned.json
+!videos/*/graphics/storyboard.json
+!videos/*/graphics/public/index.html
+!videos/*/graphics/public/cards/*.html
+!videos/*/captions/transcript.json
+!videos/*/captions/project/cinematic.json
+!videos/*/graphics/authored_words.json
+!videos/*/captions_src/large_v3.json

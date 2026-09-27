@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 # One-time (or per-container) setup for the editing studio.
 # Installs ffmpeg, Python deps for video-use helpers, and warms the hyperframes CLI.
+#   scripts/setup.sh              core pipeline (cut, graphics)
+#   scripts/setup.sh --captions   + CPU torch/torchaudio (MMS forced alignment) and a built
+#                                 hyperframes checkout at ~/hyperframes (embedded-captions needs it)
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+CAPTIONS=0; [ "${1:-}" = "--captions" ] && CAPTIONS=1
 
 if ! command -v ffmpeg >/dev/null; then
   if command -v brew >/dev/null; then brew install ffmpeg
@@ -20,6 +24,16 @@ if command -v uv >/dev/null; then
   uv pip install -q --python .venv/bin/python -r requirements.txt
 else
   python3 -m venv .venv && .venv/bin/pip install -q -r requirements.txt
+fi
+
+if [ "$CAPTIONS" = 1 ]; then
+  uv pip install -q --python .venv/bin/python torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+  if [ ! -f ~/hyperframes/packages/cli/dist/cli.js ]; then
+    command -v bun >/dev/null || { echo "bun is required to build hyperframes (https://bun.sh)" >&2; exit 1; }
+    [ -d ~/hyperframes ] || git clone --depth 1 https://github.com/heygen-com/hyperframes ~/hyperframes
+    (cd ~/hyperframes && PUPPETEER_SKIP_DOWNLOAD=1 bun install && bun run build)
+  fi
+  echo "hyperframes checkout OK: export HYPERFRAMES_ROOT=~/hyperframes"
 fi
 
 node_major="$(node -p 'process.versions.node.split(".")[0]' 2>/dev/null || echo 0)"

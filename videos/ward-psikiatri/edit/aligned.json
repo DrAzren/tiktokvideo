@@ -1,0 +1,3002 @@
+{
+  "I00": {
+    "hyp": "* saya pernah ada pesakit",
+    "score": 0.629,
+    "words": [
+      {
+        "text": "*",
+        "start": 0.8,
+        "end": 1.021,
+        "score": 1.0
+      },
+      {
+        "text": "saya",
+        "start": 1.021,
+        "end": 1.202,
+        "score": 0.494
+      },
+      {
+        "text": "pernah",
+        "start": 1.202,
+        "end": 1.504,
+        "score": 0.724
+      },
+      {
+        "text": "ada",
+        "start": 1.504,
+        "end": 1.705,
+        "score": 0.69
+      },
+      {
+        "text": "pesakit",
+        "start": 1.766,
+        "end": 2.249,
+        "score": 0.546
+      }
+    ]
+  },
+  "I01": {
+    "hyp": "aa tanya dekat saya doktor macam mana saya mas",
+    "score": 0.58,
+    "words": [
+      {
+        "text": "aa",
+        "start": 2.721,
+        "end": 2.922,
+        "score": 0.262
+      },
+      {
+        "text": "tanya",
+        "start": 3.224,
+        "end": 3.506,
+        "score": 0.578
+      },
+      {
+        "text": "dekat",
+        "start": 3.586,
+        "end": 3.767,
+        "score": 0.256
+      },
+      {
+        "text": "saya",
+        "start": 3.788,
+        "end": 4.029,
+        "score": 0.743
+      },
+      {
+        "text": "doktor",
+        "start": 4.13,
+        "end": 4.431,
+        "score": 0.499
+      },
+      {
+        "text": "macam",
+        "start": 4.451,
+        "end": 4.633,
+        "score": 0.512
+      },
+      {
+        "text": "mana",
+        "start": 4.653,
+        "end": 4.834,
+        "score": 0.773
+      },
+      {
+        "text": "saya",
+        "start": 4.914,
+        "end": 5.115,
+        "score": 0.691
+      },
+      {
+        "text": "mas",
+        "start": 5.337,
+        "end": 5.538,
+        "score": 0.993
+      }
+    ]
+  },
+  "I02": {
+    "hyp": "doktor macam mana keadaan dalam wad psikiatri ya saya takutlah saya tengok aa macam dalam filem filem barat tu nampak seram sangat okay sebenarnya",
+    "score": 0.723,
+    "words": [
+      {
+        "text": "doktor",
+        "start": 6.16,
+        "end": 6.441,
+        "score": 0.498
+      },
+      {
+        "text": "macam",
+        "start": 6.481,
+        "end": 6.702,
+        "score": 0.718
+      },
+      {
+        "text": "mana",
+        "start": 6.722,
+        "end": 6.962,
+        "score": 0.685
+      },
+      {
+        "text": "keadaan",
+        "start": 7.103,
+        "end": 7.403,
+        "score": 0.742
+      },
+      {
+        "text": "dalam",
+        "start": 7.403,
+        "end": 7.564,
+        "score": 0.729
+      },
+      {
+        "text": "wad",
+        "start": 7.584,
+        "end": 7.684,
+        "score": 0.542
+      },
+      {
+        "text": "psikiatri",
+        "start": 7.704,
+        "end": 8.125,
+        "score": 0.641
+      },
+      {
+        "text": "ya",
+        "start": 8.165,
+        "end": 8.225,
+        "score": 0.124
+      },
+      {
+        "text": "saya",
+        "start": 8.326,
+        "end": 8.406,
+        "score": 0.381
+      },
+      {
+        "text": "takutlah",
+        "start": 8.466,
+        "end": 8.887,
+        "score": 0.667
+      },
+      {
+        "text": "saya",
+        "start": 8.927,
+        "end": 9.007,
+        "score": 0.328
+      },
+      {
+        "text": "tengok",
+        "start": 9.067,
+        "end": 9.448,
+        "score": 0.925
+      },
+      {
+        "text": "aa",
+        "start": 10.07,
+        "end": 10.27,
+        "score": 0.053
+      },
+      {
+        "text": "macam",
+        "start": 10.27,
+        "end": 10.631,
+        "score": 0.997
+      },
+      {
+        "text": "dalam",
+        "start": 10.691,
+        "end": 10.952,
+        "score": 0.998
+      },
+      {
+        "text": "filem",
+        "start": 10.992,
+        "end": 11.193,
+        "score": 0.936
+      },
+      {
+        "text": "filem",
+        "start": 11.213,
+        "end": 11.413,
+        "score": 0.956
+      },
+      {
+        "text": "barat",
+        "start": 11.433,
+        "end": 11.714,
+        "score": 0.802
+      },
+      {
+        "text": "tu",
+        "start": 11.754,
+        "end": 11.834,
+        "score": 0.975
+      },
+      {
+        "text": "nampak",
+        "start": 11.954,
+        "end": 12.215,
+        "score": 0.923
+      },
+      {
+        "text": "seram",
+        "start": 12.255,
+        "end": 12.516,
+        "score": 0.994
+      },
+      {
+        "text": "sangat",
+        "start": 12.576,
+        "end": 12.816,
+        "score": 0.929
+      },
+      {
+        "text": "okay",
+        "start": 13.358,
+        "end": 13.518,
+        "score": 0.395
+      },
+      {
+        "text": "sebenarnya",
+        "start": 13.578,
+        "end": 13.879,
+        "score": 0.62
+      }
+    ]
+  },
+  "I03": {
+    "hyp": "tidak",
+    "score": 0.576,
+    "words": [
+      {
+        "text": "tidak",
+        "start": 14.452,
+        "end": 14.736,
+        "score": 0.576
+      }
+    ]
+  },
+  "I04": {
+    "hyp": "* sebenarnya tidak wad psikiatri malaysia jauh berbeza dengan apa yang anda bayangkan kalau anda * kalau anda ahli keluarga sedang bergelut dengan masalah kesihatan mental boleh datang buat saringan * *",
+    "score": 0.76,
+    "words": [
+      {
+        "text": "*",
+        "start": 16.2,
+        "end": 17.141,
+        "score": 1.0
+      },
+      {
+        "text": "sebenarnya",
+        "start": 17.141,
+        "end": 17.441,
+        "score": 0.723
+      },
+      {
+        "text": "tidak",
+        "start": 17.541,
+        "end": 17.841,
+        "score": 0.998
+      },
+      {
+        "text": "wad",
+        "start": 18.682,
+        "end": 18.782,
+        "score": 0.659
+      },
+      {
+        "text": "psikiatri",
+        "start": 18.802,
+        "end": 19.182,
+        "score": 0.642
+      },
+      {
+        "text": "malaysia",
+        "start": 19.242,
+        "end": 19.482,
+        "score": 0.607
+      },
+      {
+        "text": "jauh",
+        "start": 19.603,
+        "end": 19.903,
+        "score": 0.79
+      },
+      {
+        "text": "berbeza",
+        "start": 19.963,
+        "end": 20.363,
+        "score": 0.852
+      },
+      {
+        "text": "dengan",
+        "start": 20.523,
+        "end": 20.743,
+        "score": 0.992
+      },
+      {
+        "text": "apa",
+        "start": 20.863,
+        "end": 21.164,
+        "score": 0.942
+      },
+      {
+        "text": "yang",
+        "start": 21.304,
+        "end": 21.544,
+        "score": 0.949
+      },
+      {
+        "text": "anda",
+        "start": 21.684,
+        "end": 21.864,
+        "score": 0.996
+      },
+      {
+        "text": "bayangkan",
+        "start": 21.924,
+        "end": 22.365,
+        "score": 0.887
+      },
+      {
+        "text": "kalau",
+        "start": 22.445,
+        "end": 22.805,
+        "score": 0.845
+      },
+      {
+        "text": "anda",
+        "start": 23.025,
+        "end": 23.325,
+        "score": 0.983
+      },
+      {
+        "text": "*",
+        "start": 23.325,
+        "end": 24.826,
+        "score": 1.0
+      },
+      {
+        "text": "kalau",
+        "start": 24.826,
+        "end": 25.047,
+        "score": 0.9
+      },
+      {
+        "text": "anda",
+        "start": 25.087,
+        "end": 25.307,
+        "score": 0.996
+      },
+      {
+        "text": "ahli",
+        "start": 25.487,
+        "end": 25.627,
+        "score": 0.637
+      },
+      {
+        "text": "keluarga",
+        "start": 25.667,
+        "end": 25.927,
+        "score": 0.411
+      },
+      {
+        "text": "sedang",
+        "start": 26.007,
+        "end": 26.167,
+        "score": 0.922
+      },
+      {
+        "text": "bergelut",
+        "start": 26.187,
+        "end": 26.408,
+        "score": 0.585
+      },
+      {
+        "text": "dengan",
+        "start": 26.408,
+        "end": 26.548,
+        "score": 0.645
+      },
+      {
+        "text": "masalah",
+        "start": 26.548,
+        "end": 26.768,
+        "score": 0.637
+      },
+      {
+        "text": "kesihatan",
+        "start": 26.808,
+        "end": 27.048,
+        "score": 0.39
+      },
+      {
+        "text": "mental",
+        "start": 27.068,
+        "end": 27.408,
+        "score": 0.673
+      },
+      {
+        "text": "boleh",
+        "start": 27.889,
+        "end": 28.069,
+        "score": 0.999
+      },
+      {
+        "text": "datang",
+        "start": 28.089,
+        "end": 28.309,
+        "score": 0.789
+      },
+      {
+        "text": "buat",
+        "start": 28.329,
+        "end": 28.429,
+        "score": 0.445
+      },
+      {
+        "text": "saringan",
+        "start": 28.449,
+        "end": 28.769,
+        "score": 0.935
+      },
+      {
+        "text": "*",
+        "start": 28.769,
+        "end": 29.71,
+        "score": 1.0
+      },
+      {
+        "text": "*",
+        "start": 29.73,
+        "end": 29.75,
+        "score": 1.0
+      }
+    ]
+  },
+  "I05": {
+    "hyp": "boleh datang buat saringan konsultasi kesihatan mental di klinik saya untuk kita bincang dulu aa diagnosis dan pilihan rawatan apa yang sesuai untuk anda",
+    "score": 0.721,
+    "words": [
+      {
+        "text": "boleh",
+        "start": 30.86,
+        "end": 31.021,
+        "score": 0.817
+      },
+      {
+        "text": "datang",
+        "start": 31.041,
+        "end": 31.302,
+        "score": 0.956
+      },
+      {
+        "text": "buat",
+        "start": 31.322,
+        "end": 31.422,
+        "score": 0.716
+      },
+      {
+        "text": "saringan",
+        "start": 31.442,
+        "end": 31.743,
+        "score": 0.822
+      },
+      {
+        "text": "konsultasi",
+        "start": 31.823,
+        "end": 32.184,
+        "score": 0.722
+      },
+      {
+        "text": "kesihatan",
+        "start": 32.244,
+        "end": 32.505,
+        "score": 0.542
+      },
+      {
+        "text": "mental",
+        "start": 32.545,
+        "end": 32.805,
+        "score": 0.634
+      },
+      {
+        "text": "di",
+        "start": 32.846,
+        "end": 32.906,
+        "score": 0.983
+      },
+      {
+        "text": "klinik",
+        "start": 32.926,
+        "end": 33.106,
+        "score": 0.546
+      },
+      {
+        "text": "saya",
+        "start": 33.126,
+        "end": 33.367,
+        "score": 0.558
+      },
+      {
+        "text": "untuk",
+        "start": 34.189,
+        "end": 34.45,
+        "score": 0.992
+      },
+      {
+        "text": "kita",
+        "start": 34.49,
+        "end": 34.63,
+        "score": 0.995
+      },
+      {
+        "text": "bincang",
+        "start": 34.67,
+        "end": 34.971,
+        "score": 0.994
+      },
+      {
+        "text": "dulu",
+        "start": 34.991,
+        "end": 35.192,
+        "score": 0.68
+      },
+      {
+        "text": "aa",
+        "start": 35.553,
+        "end": 35.994,
+        "score": 0.04
+      },
+      {
+        "text": "diagnosis",
+        "start": 36.034,
+        "end": 36.495,
+        "score": 0.652
+      },
+      {
+        "text": "dan",
+        "start": 36.535,
+        "end": 36.676,
+        "score": 0.448
+      },
+      {
+        "text": "pilihan",
+        "start": 36.796,
+        "end": 36.996,
+        "score": 0.613
+      },
+      {
+        "text": "rawatan",
+        "start": 37.016,
+        "end": 37.277,
+        "score": 0.583
+      },
+      {
+        "text": "apa",
+        "start": 37.317,
+        "end": 37.438,
+        "score": 0.875
+      },
+      {
+        "text": "yang",
+        "start": 37.478,
+        "end": 37.558,
+        "score": 0.353
+      },
+      {
+        "text": "sesuai",
+        "start": 37.558,
+        "end": 37.798,
+        "score": 0.636
+      },
+      {
+        "text": "untuk",
+        "start": 37.818,
+        "end": 37.959,
+        "score": 0.994
+      },
+      {
+        "text": "anda",
+        "start": 37.979,
+        "end": 38.139,
+        "score": 0.995
+      }
+    ]
+  },
+  "I07": {
+    "hyp": "kita bincang dahulu pilihan rawatan yang paling sesuai untuk anda",
+    "score": 0.855,
+    "words": [
+      {
+        "text": "kita",
+        "start": 43.071,
+        "end": 43.232,
+        "score": 0.844
+      },
+      {
+        "text": "bincang",
+        "start": 43.272,
+        "end": 43.574,
+        "score": 0.973
+      },
+      {
+        "text": "dahulu",
+        "start": 43.594,
+        "end": 43.897,
+        "score": 0.961
+      },
+      {
+        "text": "pilihan",
+        "start": 43.957,
+        "end": 44.199,
+        "score": 0.612
+      },
+      {
+        "text": "rawatan",
+        "start": 44.199,
+        "end": 44.581,
+        "score": 0.948
+      },
+      {
+        "text": "yang",
+        "start": 44.622,
+        "end": 44.742,
+        "score": 0.974
+      },
+      {
+        "text": "paling",
+        "start": 44.763,
+        "end": 45.044,
+        "score": 0.981
+      },
+      {
+        "text": "sesuai",
+        "start": 45.065,
+        "end": 45.306,
+        "score": 0.741
+      },
+      {
+        "text": "untuk",
+        "start": 45.306,
+        "end": 45.467,
+        "score": 0.572
+      },
+      {
+        "text": "anda",
+        "start": 45.467,
+        "end": 45.628,
+        "score": 0.973
+      }
+    ]
+  },
+  "I08": {
+    "hyp": "okey balik kepada topik tadi ramai orang bayangkan wad psikiatri ini macam dalam filem",
+    "score": 0.774,
+    "words": [
+      {
+        "text": "okey",
+        "start": 46.311,
+        "end": 46.451,
+        "score": 0.074
+      },
+      {
+        "text": "balik",
+        "start": 46.491,
+        "end": 46.672,
+        "score": 0.998
+      },
+      {
+        "text": "kepada",
+        "start": 46.692,
+        "end": 46.853,
+        "score": 0.682
+      },
+      {
+        "text": "topik",
+        "start": 46.893,
+        "end": 47.134,
+        "score": 0.8
+      },
+      {
+        "text": "tadi",
+        "start": 47.154,
+        "end": 47.355,
+        "score": 0.99
+      },
+      {
+        "text": "ramai",
+        "start": 47.797,
+        "end": 48.138,
+        "score": 0.956
+      },
+      {
+        "text": "orang",
+        "start": 48.219,
+        "end": 48.379,
+        "score": 0.991
+      },
+      {
+        "text": "bayangkan",
+        "start": 48.379,
+        "end": 48.841,
+        "score": 0.982
+      },
+      {
+        "text": "wad",
+        "start": 48.922,
+        "end": 49.062,
+        "score": 0.628
+      },
+      {
+        "text": "psikiatri",
+        "start": 49.062,
+        "end": 49.524,
+        "score": 0.494
+      },
+      {
+        "text": "ini",
+        "start": 49.544,
+        "end": 49.745,
+        "score": 0.992
+      },
+      {
+        "text": "macam",
+        "start": 49.825,
+        "end": 50.066,
+        "score": 0.761
+      },
+      {
+        "text": "dalam",
+        "start": 50.086,
+        "end": 50.267,
+        "score": 0.74
+      },
+      {
+        "text": "filem",
+        "start": 50.287,
+        "end": 50.669,
+        "score": 0.758
+      }
+    ]
+  },
+  "I09": {
+    "hyp": "gelap semua pesakit meracau racau dekat dalam wad kena ikat sepanjang masa tapi tidak sebenarnya di malaysia wad adalah wad hospital yang",
+    "score": 0.788,
+    "words": [
+      {
+        "text": "gelap",
+        "start": 51.17,
+        "end": 51.711,
+        "score": 0.885
+      },
+      {
+        "text": "semua",
+        "start": 52.031,
+        "end": 52.231,
+        "score": 0.791
+      },
+      {
+        "text": "pesakit",
+        "start": 52.271,
+        "end": 52.612,
+        "score": 0.932
+      },
+      {
+        "text": "meracau",
+        "start": 52.612,
+        "end": 52.892,
+        "score": 0.74
+      },
+      {
+        "text": "racau",
+        "start": 52.932,
+        "end": 53.412,
+        "score": 0.99
+      },
+      {
+        "text": "dekat",
+        "start": 53.473,
+        "end": 53.653,
+        "score": 0.969
+      },
+      {
+        "text": "dalam",
+        "start": 53.673,
+        "end": 53.873,
+        "score": 0.949
+      },
+      {
+        "text": "wad",
+        "start": 53.973,
+        "end": 54.273,
+        "score": 0.671
+      },
+      {
+        "text": "kena",
+        "start": 54.794,
+        "end": 54.954,
+        "score": 0.506
+      },
+      {
+        "text": "ikat",
+        "start": 55.034,
+        "end": 55.314,
+        "score": 0.99
+      },
+      {
+        "text": "sepanjang",
+        "start": 55.354,
+        "end": 55.735,
+        "score": 0.872
+      },
+      {
+        "text": "masa",
+        "start": 55.755,
+        "end": 56.095,
+        "score": 0.984
+      },
+      {
+        "text": "tapi",
+        "start": 56.436,
+        "end": 56.636,
+        "score": 0.998
+      },
+      {
+        "text": "tidak",
+        "start": 56.676,
+        "end": 56.916,
+        "score": 0.999
+      },
+      {
+        "text": "sebenarnya",
+        "start": 56.936,
+        "end": 57.236,
+        "score": 0.666
+      },
+      {
+        "text": "di",
+        "start": 57.316,
+        "end": 57.377,
+        "score": 0.497
+      },
+      {
+        "text": "malaysia",
+        "start": 57.417,
+        "end": 57.877,
+        "score": 0.41
+      },
+      {
+        "text": "wad",
+        "start": 57.997,
+        "end": 58.117,
+        "score": 0.645
+      },
+      {
+        "text": "adalah",
+        "start": 58.338,
+        "end": 59.038,
+        "score": 0.909
+      },
+      {
+        "text": "wad",
+        "start": 59.339,
+        "end": 59.519,
+        "score": 0.656
+      },
+      {
+        "text": "hospital",
+        "start": 59.739,
+        "end": 60.36,
+        "score": 0.959
+      },
+      {
+        "text": "yang",
+        "start": 60.36,
+        "end": 60.5,
+        "score": 0.0
+      }
+    ]
+  },
+  "I13": {
+    "hyp": "* di malaysia wad psikiatri adalah salah satu wad di hospital yang dikendalikan oleh doktor psikiatri jururawat terlatih",
+    "score": 0.834,
+    "words": [
+      {
+        "text": "*",
+        "start": 74.9,
+        "end": 76.343,
+        "score": 1.0
+      },
+      {
+        "text": "di",
+        "start": 76.343,
+        "end": 76.403,
+        "score": 0.994
+      },
+      {
+        "text": "malaysia",
+        "start": 76.443,
+        "end": 76.824,
+        "score": 0.617
+      },
+      {
+        "text": "wad",
+        "start": 76.984,
+        "end": 77.124,
+        "score": 0.664
+      },
+      {
+        "text": "psikiatri",
+        "start": 77.164,
+        "end": 77.726,
+        "score": 0.693
+      },
+      {
+        "text": "adalah",
+        "start": 77.906,
+        "end": 78.307,
+        "score": 0.984
+      },
+      {
+        "text": "salah",
+        "start": 79.168,
+        "end": 79.349,
+        "score": 0.989
+      },
+      {
+        "text": "satu",
+        "start": 79.369,
+        "end": 79.569,
+        "score": 0.997
+      },
+      {
+        "text": "wad",
+        "start": 79.669,
+        "end": 79.83,
+        "score": 0.667
+      },
+      {
+        "text": "di",
+        "start": 80.03,
+        "end": 80.11,
+        "score": 0.995
+      },
+      {
+        "text": "hospital",
+        "start": 80.19,
+        "end": 80.691,
+        "score": 0.98
+      },
+      {
+        "text": "yang",
+        "start": 80.731,
+        "end": 80.832,
+        "score": 0.994
+      },
+      {
+        "text": "dikendalikan",
+        "start": 80.852,
+        "end": 81.393,
+        "score": 0.881
+      },
+      {
+        "text": "oleh",
+        "start": 81.453,
+        "end": 81.773,
+        "score": 0.997
+      },
+      {
+        "text": "doktor",
+        "start": 82.214,
+        "end": 82.495,
+        "score": 0.757
+      },
+      {
+        "text": "psikiatri",
+        "start": 82.515,
+        "end": 82.956,
+        "score": 0.694
+      },
+      {
+        "text": "jururawat",
+        "start": 83.777,
+        "end": 84.238,
+        "score": 0.84
+      },
+      {
+        "text": "terlatih",
+        "start": 84.278,
+        "end": 84.779,
+        "score": 0.779
+      }
+    ]
+  },
+  "I14": {
+    "hyp": "ahli psikologi kaunselor * terapi jurupulih kerja dan lain lain lagi apa pesakit buat dalam wad pesakit akan jumpa dengan doktor setiap hari ataupun mengikut keperluan dan pesakit perlulah mengambil ubat mengikut jadual dan pemerhatian rapi dan keselamatan",
+    "score": 0.84,
+    "words": [
+      {
+        "text": "ahli",
+        "start": 85.57,
+        "end": 85.75,
+        "score": 0.841
+      },
+      {
+        "text": "psikologi",
+        "start": 85.77,
+        "end": 86.311,
+        "score": 0.691
+      },
+      {
+        "text": "kaunselor",
+        "start": 87.071,
+        "end": 87.631,
+        "score": 0.532
+      },
+      {
+        "text": "*",
+        "start": 87.631,
+        "end": 89.493,
+        "score": 1.0
+      },
+      {
+        "text": "terapi",
+        "start": 89.493,
+        "end": 89.753,
+        "score": 0.627
+      },
+      {
+        "text": "jurupulih",
+        "start": 89.793,
+        "end": 90.093,
+        "score": 0.152
+      },
+      {
+        "text": "kerja",
+        "start": 90.113,
+        "end": 90.333,
+        "score": 0.234
+      },
+      {
+        "text": "dan",
+        "start": 90.513,
+        "end": 90.633,
+        "score": 0.972
+      },
+      {
+        "text": "lain",
+        "start": 90.693,
+        "end": 90.833,
+        "score": 0.7
+      },
+      {
+        "text": "lain",
+        "start": 90.833,
+        "end": 90.933,
+        "score": 0.282
+      },
+      {
+        "text": "lagi",
+        "start": 90.933,
+        "end": 91.154,
+        "score": 0.985
+      },
+      {
+        "text": "apa",
+        "start": 91.574,
+        "end": 91.734,
+        "score": 0.99
+      },
+      {
+        "text": "pesakit",
+        "start": 91.794,
+        "end": 92.154,
+        "score": 0.996
+      },
+      {
+        "text": "buat",
+        "start": 92.234,
+        "end": 92.394,
+        "score": 0.948
+      },
+      {
+        "text": "dalam",
+        "start": 92.414,
+        "end": 92.614,
+        "score": 0.935
+      },
+      {
+        "text": "wad",
+        "start": 92.694,
+        "end": 92.835,
+        "score": 0.661
+      },
+      {
+        "text": "pesakit",
+        "start": 92.895,
+        "end": 93.295,
+        "score": 0.98
+      },
+      {
+        "text": "akan",
+        "start": 93.355,
+        "end": 93.535,
+        "score": 0.996
+      },
+      {
+        "text": "jumpa",
+        "start": 93.575,
+        "end": 93.835,
+        "score": 0.801
+      },
+      {
+        "text": "dengan",
+        "start": 93.895,
+        "end": 94.075,
+        "score": 0.875
+      },
+      {
+        "text": "doktor",
+        "start": 94.115,
+        "end": 94.395,
+        "score": 0.72
+      },
+      {
+        "text": "setiap",
+        "start": 94.435,
+        "end": 94.856,
+        "score": 0.994
+      },
+      {
+        "text": "hari",
+        "start": 94.916,
+        "end": 95.156,
+        "score": 0.998
+      },
+      {
+        "text": "ataupun",
+        "start": 95.296,
+        "end": 95.596,
+        "score": 0.905
+      },
+      {
+        "text": "mengikut",
+        "start": 95.616,
+        "end": 95.876,
+        "score": 0.971
+      },
+      {
+        "text": "keperluan",
+        "start": 95.916,
+        "end": 96.337,
+        "score": 0.995
+      },
+      {
+        "text": "dan",
+        "start": 96.837,
+        "end": 96.937,
+        "score": 0.981
+      },
+      {
+        "text": "pesakit",
+        "start": 96.977,
+        "end": 97.357,
+        "score": 0.995
+      },
+      {
+        "text": "perlulah",
+        "start": 97.397,
+        "end": 97.677,
+        "score": 0.989
+      },
+      {
+        "text": "mengambil",
+        "start": 97.717,
+        "end": 98.138,
+        "score": 0.976
+      },
+      {
+        "text": "ubat",
+        "start": 98.218,
+        "end": 98.458,
+        "score": 0.994
+      },
+      {
+        "text": "mengikut",
+        "start": 98.498,
+        "end": 98.778,
+        "score": 0.967
+      },
+      {
+        "text": "jadual",
+        "start": 98.798,
+        "end": 99.098,
+        "score": 0.859
+      },
+      {
+        "text": "dan",
+        "start": 99.118,
+        "end": 99.218,
+        "score": 0.994
+      },
+      {
+        "text": "pemerhatian",
+        "start": 99.398,
+        "end": 99.939,
+        "score": 0.888
+      },
+      {
+        "text": "rapi",
+        "start": 99.979,
+        "end": 100.319,
+        "score": 0.98
+      },
+      {
+        "text": "dan",
+        "start": 100.499,
+        "end": 100.619,
+        "score": 0.992
+      },
+      {
+        "text": "keselamatan",
+        "start": 100.659,
+        "end": 101.36,
+        "score": 0.968
+      }
+    ]
+  },
+  "I18": {
+    "hyp": "akan dipantau",
+    "score": 0.812,
+    "words": [
+      {
+        "text": "akan",
+        "start": 102.546,
+        "end": 102.789,
+        "score": 0.982
+      },
+      {
+        "text": "dipantau",
+        "start": 102.789,
+        "end": 103.296,
+        "score": 0.727
+      }
+    ]
+  },
+  "I19": {
+    "hyp": "aktiviti terapi seperti terapi cara kerja senaman ringan sesi kaunseling ini bergantung pada hospital dan keadaan pesakitlah akan dijalankan juga",
+    "score": 0.845,
+    "words": [
+      {
+        "text": "aktiviti",
+        "start": 105.842,
+        "end": 106.303,
+        "score": 0.781
+      },
+      {
+        "text": "terapi",
+        "start": 106.344,
+        "end": 106.684,
+        "score": 0.992
+      },
+      {
+        "text": "seperti",
+        "start": 106.825,
+        "end": 107.266,
+        "score": 0.999
+      },
+      {
+        "text": "terapi",
+        "start": 107.346,
+        "end": 107.607,
+        "score": 0.943
+      },
+      {
+        "text": "cara",
+        "start": 107.647,
+        "end": 107.827,
+        "score": 0.997
+      },
+      {
+        "text": "kerja",
+        "start": 107.867,
+        "end": 108.108,
+        "score": 0.605
+      },
+      {
+        "text": "senaman",
+        "start": 108.388,
+        "end": 108.709,
+        "score": 0.646
+      },
+      {
+        "text": "ringan",
+        "start": 108.729,
+        "end": 109.25,
+        "score": 0.951
+      },
+      {
+        "text": "sesi",
+        "start": 109.371,
+        "end": 109.591,
+        "score": 0.901
+      },
+      {
+        "text": "kaunseling",
+        "start": 109.651,
+        "end": 110.353,
+        "score": 0.903
+      },
+      {
+        "text": "ini",
+        "start": 110.533,
+        "end": 110.674,
+        "score": 0.607
+      },
+      {
+        "text": "bergantung",
+        "start": 110.694,
+        "end": 110.994,
+        "score": 0.821
+      },
+      {
+        "text": "pada",
+        "start": 111.014,
+        "end": 111.175,
+        "score": 0.984
+      },
+      {
+        "text": "hospital",
+        "start": 111.215,
+        "end": 111.596,
+        "score": 0.966
+      },
+      {
+        "text": "dan",
+        "start": 111.616,
+        "end": 111.696,
+        "score": 0.938
+      },
+      {
+        "text": "keadaan",
+        "start": 111.736,
+        "end": 111.957,
+        "score": 0.336
+      },
+      {
+        "text": "pesakitlah",
+        "start": 111.957,
+        "end": 112.338,
+        "score": 0.747
+      },
+      {
+        "text": "akan",
+        "start": 112.378,
+        "end": 112.558,
+        "score": 0.938
+      },
+      {
+        "text": "dijalankan",
+        "start": 112.578,
+        "end": 112.959,
+        "score": 0.962
+      },
+      {
+        "text": "juga",
+        "start": 112.999,
+        "end": 113.179,
+        "score": 1.0
+      }
+    ]
+  },
+  "I20": {
+    "hyp": "dan makan dan rehat adalah",
+    "score": 0.844,
+    "words": [
+      {
+        "text": "dan",
+        "start": 113.561,
+        "end": 113.763,
+        "score": 0.986
+      },
+      {
+        "text": "makan",
+        "start": 114.186,
+        "end": 114.589,
+        "score": 0.99
+      },
+      {
+        "text": "dan",
+        "start": 114.65,
+        "end": 114.73,
+        "score": 0.663
+      },
+      {
+        "text": "rehat",
+        "start": 114.77,
+        "end": 115.073,
+        "score": 0.795
+      },
+      {
+        "text": "adalah",
+        "start": 115.516,
+        "end": 115.859,
+        "score": 0.785
+      }
+    ]
+  },
+  "I21": {
+    "hyp": "ikut jadual * tujuan utama dia adalah untuk menstabilkan pesakit bukan untuk menghukum pesakit adakah",
+    "score": 0.942,
+    "words": [
+      {
+        "text": "ikut",
+        "start": 116.21,
+        "end": 116.391,
+        "score": 0.892
+      },
+      {
+        "text": "jadual",
+        "start": 116.411,
+        "end": 116.731,
+        "score": 0.945
+      },
+      {
+        "text": "*",
+        "start": 116.731,
+        "end": 116.931,
+        "score": 1.0
+      },
+      {
+        "text": "tujuan",
+        "start": 116.931,
+        "end": 117.212,
+        "score": 0.986
+      },
+      {
+        "text": "utama",
+        "start": 117.272,
+        "end": 117.592,
+        "score": 0.999
+      },
+      {
+        "text": "dia",
+        "start": 117.652,
+        "end": 117.733,
+        "score": 0.717
+      },
+      {
+        "text": "adalah",
+        "start": 117.793,
+        "end": 118.053,
+        "score": 0.997
+      },
+      {
+        "text": "untuk",
+        "start": 118.133,
+        "end": 118.414,
+        "score": 0.995
+      },
+      {
+        "text": "menstabilkan",
+        "start": 118.454,
+        "end": 119.395,
+        "score": 0.984
+      },
+      {
+        "text": "pesakit",
+        "start": 119.435,
+        "end": 119.816,
+        "score": 0.868
+      },
+      {
+        "text": "bukan",
+        "start": 119.876,
+        "end": 120.156,
+        "score": 0.997
+      },
+      {
+        "text": "untuk",
+        "start": 120.256,
+        "end": 120.497,
+        "score": 0.999
+      },
+      {
+        "text": "menghukum",
+        "start": 120.517,
+        "end": 120.937,
+        "score": 0.987
+      },
+      {
+        "text": "pesakit",
+        "start": 120.937,
+        "end": 121.298,
+        "score": 0.715
+      },
+      {
+        "text": "adakah",
+        "start": 121.979,
+        "end": 122.36,
+        "score": 0.998
+      }
+    ]
+  },
+  "I22": {
+    "hyp": "datang pula soalan kedua adakah semua pesakit dalam wad ni agresif",
+    "score": 0.946,
+    "words": [
+      {
+        "text": "datang",
+        "start": 123.381,
+        "end": 123.641,
+        "score": 0.978
+      },
+      {
+        "text": "pula",
+        "start": 123.661,
+        "end": 123.782,
+        "score": 0.803
+      },
+      {
+        "text": "soalan",
+        "start": 123.842,
+        "end": 124.062,
+        "score": 0.88
+      },
+      {
+        "text": "kedua",
+        "start": 124.082,
+        "end": 124.283,
+        "score": 0.994
+      },
+      {
+        "text": "adakah",
+        "start": 124.383,
+        "end": 124.704,
+        "score": 0.999
+      },
+      {
+        "text": "semua",
+        "start": 124.764,
+        "end": 125.005,
+        "score": 0.997
+      },
+      {
+        "text": "pesakit",
+        "start": 125.065,
+        "end": 125.466,
+        "score": 0.993
+      },
+      {
+        "text": "dalam",
+        "start": 125.486,
+        "end": 125.666,
+        "score": 0.987
+      },
+      {
+        "text": "wad",
+        "start": 125.707,
+        "end": 125.827,
+        "score": 0.654
+      },
+      {
+        "text": "ni",
+        "start": 125.847,
+        "end": 125.927,
+        "score": 0.956
+      },
+      {
+        "text": "agresif",
+        "start": 125.967,
+        "end": 126.448,
+        "score": 0.989
+      }
+    ]
+  },
+  "I24": {
+    "hyp": "jawapannya tidak pesakit dalam wad psikiatri ini mereka mengalami mereka mungkin mengalami kemurungan yang teruk anxiety yang melampau bipolar yang tidak stabil skizofrenia yang tidak stabil ataupun krisis emosi yang",
+    "score": 0.885,
+    "words": [
+      {
+        "text": "jawapannya",
+        "start": 129.33,
+        "end": 129.73,
+        "score": 0.859
+      },
+      {
+        "text": "tidak",
+        "start": 129.79,
+        "end": 130.071,
+        "score": 0.999
+      },
+      {
+        "text": "pesakit",
+        "start": 130.231,
+        "end": 130.651,
+        "score": 0.71
+      },
+      {
+        "text": "dalam",
+        "start": 130.711,
+        "end": 130.911,
+        "score": 0.992
+      },
+      {
+        "text": "wad",
+        "start": 130.971,
+        "end": 131.091,
+        "score": 0.665
+      },
+      {
+        "text": "psikiatri",
+        "start": 131.091,
+        "end": 131.512,
+        "score": 0.598
+      },
+      {
+        "text": "ini",
+        "start": 131.572,
+        "end": 131.732,
+        "score": 0.676
+      },
+      {
+        "text": "mereka",
+        "start": 132.012,
+        "end": 132.352,
+        "score": 0.994
+      },
+      {
+        "text": "mengalami",
+        "start": 132.452,
+        "end": 132.973,
+        "score": 0.986
+      },
+      {
+        "text": "mereka",
+        "start": 133.453,
+        "end": 133.713,
+        "score": 0.999
+      },
+      {
+        "text": "mungkin",
+        "start": 133.773,
+        "end": 134.074,
+        "score": 0.966
+      },
+      {
+        "text": "mengalami",
+        "start": 134.114,
+        "end": 134.454,
+        "score": 0.99
+      },
+      {
+        "text": "kemurungan",
+        "start": 134.534,
+        "end": 134.934,
+        "score": 0.966
+      },
+      {
+        "text": "yang",
+        "start": 134.954,
+        "end": 135.054,
+        "score": 0.997
+      },
+      {
+        "text": "teruk",
+        "start": 135.074,
+        "end": 135.595,
+        "score": 0.948
+      },
+      {
+        "text": "anxiety",
+        "start": 135.895,
+        "end": 136.335,
+        "score": 0.425
+      },
+      {
+        "text": "yang",
+        "start": 136.375,
+        "end": 136.475,
+        "score": 0.668
+      },
+      {
+        "text": "melampau",
+        "start": 136.475,
+        "end": 137.216,
+        "score": 0.992
+      },
+      {
+        "text": "bipolar",
+        "start": 137.316,
+        "end": 137.856,
+        "score": 0.844
+      },
+      {
+        "text": "yang",
+        "start": 137.916,
+        "end": 138.057,
+        "score": 0.966
+      },
+      {
+        "text": "tidak",
+        "start": 138.137,
+        "end": 138.337,
+        "score": 0.999
+      },
+      {
+        "text": "stabil",
+        "start": 138.377,
+        "end": 138.897,
+        "score": 0.996
+      },
+      {
+        "text": "skizofrenia",
+        "start": 138.957,
+        "end": 139.538,
+        "score": 0.735
+      },
+      {
+        "text": "yang",
+        "start": 139.598,
+        "end": 139.718,
+        "score": 0.916
+      },
+      {
+        "text": "tidak",
+        "start": 139.738,
+        "end": 139.918,
+        "score": 0.999
+      },
+      {
+        "text": "stabil",
+        "start": 139.978,
+        "end": 140.438,
+        "score": 0.998
+      },
+      {
+        "text": "ataupun",
+        "start": 140.538,
+        "end": 140.879,
+        "score": 0.849
+      },
+      {
+        "text": "krisis",
+        "start": 141.059,
+        "end": 141.579,
+        "score": 0.968
+      },
+      {
+        "text": "emosi",
+        "start": 141.739,
+        "end": 142.12,
+        "score": 0.962
+      },
+      {
+        "text": "yang",
+        "start": 142.24,
+        "end": 142.42,
+        "score": 0.998
+      }
+    ]
+  },
+  "I25": {
+    "hyp": "memerlukan pemantauan",
+    "score": 0.807,
+    "words": [
+      {
+        "text": "memerlukan",
+        "start": 143.251,
+        "end": 143.715,
+        "score": 0.818
+      },
+      {
+        "text": "pemantauan",
+        "start": 143.735,
+        "end": 144.278,
+        "score": 0.796
+      }
+    ]
+  },
+  "I26": {
+    "hyp": "ramai yang pendiam takut",
+    "score": 0.965,
+    "words": [
+      {
+        "text": "ramai",
+        "start": 144.921,
+        "end": 145.243,
+        "score": 0.898
+      },
+      {
+        "text": "yang",
+        "start": 145.283,
+        "end": 145.404,
+        "score": 0.967
+      },
+      {
+        "text": "pendiam",
+        "start": 145.424,
+        "end": 145.926,
+        "score": 0.999
+      },
+      {
+        "text": "takut",
+        "start": 146.047,
+        "end": 146.549,
+        "score": 0.984
+      }
+    ]
+  },
+  "I27": {
+    "hyp": "sebab mereka sedang berjuang dengan penyakit mereka",
+    "score": 0.737,
+    "words": [
+      {
+        "text": "sebab",
+        "start": 147.091,
+        "end": 147.231,
+        "score": 0.399
+      },
+      {
+        "text": "mereka",
+        "start": 147.352,
+        "end": 147.553,
+        "score": 0.995
+      },
+      {
+        "text": "sedang",
+        "start": 147.613,
+        "end": 147.834,
+        "score": 0.829
+      },
+      {
+        "text": "berjuang",
+        "start": 147.854,
+        "end": 148.256,
+        "score": 0.669
+      },
+      {
+        "text": "dengan",
+        "start": 148.256,
+        "end": 148.436,
+        "score": 0.578
+      },
+      {
+        "text": "penyakit",
+        "start": 148.456,
+        "end": 148.778,
+        "score": 0.682
+      },
+      {
+        "text": "mereka",
+        "start": 148.798,
+        "end": 149.079,
+        "score": 0.994
+      }
+    ]
+  },
+  "I31": {
+    "hyp": "* ada juga yang tanya saya kenapa ada pesakit sampai kena ikat doktor betul ke ni mereka pernah kena ikat ini adalah salah faham yang paling biasalah physical restraint bukanlah rutin yang dijalankan ia hanyalah digunakan sebagai langkah terakhir apabila seseorang itu pertama berisiko mencederakan diri sendiri yang kedua berisiko mencederakan orang lain dan semua cara lain untuk menenangkan pesakit tidak berjaya apabila pesakit sudah stabil restrain tersebut akan dihentikan secepat mungkin ikut prosedur dan pemantauan yang ketatlah yang penting kat sini adalah masuk wad psikiatri ni bukan bermaksud hidup dah berakhir dah bukan bermaksud anda gila ke apa",
+    "score": 0.884,
+    "words": [
+      {
+        "text": "*",
+        "start": 156.65,
+        "end": 157.99,
+        "score": 1.0
+      },
+      {
+        "text": "ada",
+        "start": 157.99,
+        "end": 158.11,
+        "score": 0.996
+      },
+      {
+        "text": "juga",
+        "start": 158.13,
+        "end": 158.25,
+        "score": 0.994
+      },
+      {
+        "text": "yang",
+        "start": 158.29,
+        "end": 158.39,
+        "score": 0.251
+      },
+      {
+        "text": "tanya",
+        "start": 158.39,
+        "end": 158.571,
+        "score": 0.955
+      },
+      {
+        "text": "saya",
+        "start": 158.611,
+        "end": 158.811,
+        "score": 0.93
+      },
+      {
+        "text": "kenapa",
+        "start": 159.011,
+        "end": 159.371,
+        "score": 0.893
+      },
+      {
+        "text": "ada",
+        "start": 159.431,
+        "end": 159.551,
+        "score": 0.884
+      },
+      {
+        "text": "pesakit",
+        "start": 159.591,
+        "end": 159.931,
+        "score": 0.987
+      },
+      {
+        "text": "sampai",
+        "start": 160.011,
+        "end": 160.251,
+        "score": 0.739
+      },
+      {
+        "text": "kena",
+        "start": 160.291,
+        "end": 160.391,
+        "score": 0.724
+      },
+      {
+        "text": "ikat",
+        "start": 160.471,
+        "end": 160.691,
+        "score": 0.934
+      },
+      {
+        "text": "doktor",
+        "start": 160.711,
+        "end": 160.971,
+        "score": 0.522
+      },
+      {
+        "text": "betul",
+        "start": 161.031,
+        "end": 161.351,
+        "score": 0.96
+      },
+      {
+        "text": "ke",
+        "start": 161.411,
+        "end": 161.471,
+        "score": 0.975
+      },
+      {
+        "text": "ni",
+        "start": 161.511,
+        "end": 161.591,
+        "score": 0.978
+      },
+      {
+        "text": "mereka",
+        "start": 161.931,
+        "end": 162.151,
+        "score": 0.984
+      },
+      {
+        "text": "pernah",
+        "start": 162.191,
+        "end": 162.352,
+        "score": 0.716
+      },
+      {
+        "text": "kena",
+        "start": 162.392,
+        "end": 162.492,
+        "score": 0.673
+      },
+      {
+        "text": "ikat",
+        "start": 162.512,
+        "end": 162.772,
+        "score": 0.944
+      },
+      {
+        "text": "ini",
+        "start": 162.952,
+        "end": 163.172,
+        "score": 0.635
+      },
+      {
+        "text": "adalah",
+        "start": 163.252,
+        "end": 163.472,
+        "score": 0.995
+      },
+      {
+        "text": "salah",
+        "start": 163.492,
+        "end": 163.692,
+        "score": 0.757
+      },
+      {
+        "text": "faham",
+        "start": 163.712,
+        "end": 163.992,
+        "score": 0.988
+      },
+      {
+        "text": "yang",
+        "start": 164.052,
+        "end": 164.192,
+        "score": 0.973
+      },
+      {
+        "text": "paling",
+        "start": 164.232,
+        "end": 164.632,
+        "score": 0.976
+      },
+      {
+        "text": "biasalah",
+        "start": 164.672,
+        "end": 165.152,
+        "score": 0.972
+      },
+      {
+        "text": "physical",
+        "start": 165.412,
+        "end": 165.852,
+        "score": 0.434
+      },
+      {
+        "text": "restraint",
+        "start": 165.932,
+        "end": 166.433,
+        "score": 0.626
+      },
+      {
+        "text": "bukanlah",
+        "start": 166.833,
+        "end": 167.253,
+        "score": 0.986
+      },
+      {
+        "text": "rutin",
+        "start": 167.293,
+        "end": 167.613,
+        "score": 0.968
+      },
+      {
+        "text": "yang",
+        "start": 167.673,
+        "end": 167.793,
+        "score": 0.942
+      },
+      {
+        "text": "dijalankan",
+        "start": 167.793,
+        "end": 168.193,
+        "score": 0.869
+      },
+      {
+        "text": "ia",
+        "start": 168.253,
+        "end": 168.373,
+        "score": 0.611
+      },
+      {
+        "text": "hanyalah",
+        "start": 168.393,
+        "end": 168.793,
+        "score": 0.879
+      },
+      {
+        "text": "digunakan",
+        "start": 169.173,
+        "end": 169.653,
+        "score": 0.997
+      },
+      {
+        "text": "sebagai",
+        "start": 169.693,
+        "end": 170.014,
+        "score": 0.997
+      },
+      {
+        "text": "langkah",
+        "start": 170.074,
+        "end": 170.474,
+        "score": 0.972
+      },
+      {
+        "text": "terakhir",
+        "start": 170.554,
+        "end": 170.994,
+        "score": 0.734
+      },
+      {
+        "text": "apabila",
+        "start": 171.054,
+        "end": 171.374,
+        "score": 0.997
+      },
+      {
+        "text": "seseorang",
+        "start": 171.454,
+        "end": 171.814,
+        "score": 0.765
+      },
+      {
+        "text": "itu",
+        "start": 171.854,
+        "end": 172.034,
+        "score": 0.995
+      },
+      {
+        "text": "pertama",
+        "start": 172.814,
+        "end": 173.154,
+        "score": 0.974
+      },
+      {
+        "text": "berisiko",
+        "start": 173.234,
+        "end": 173.655,
+        "score": 0.966
+      },
+      {
+        "text": "mencederakan",
+        "start": 173.715,
+        "end": 174.155,
+        "score": 0.906
+      },
+      {
+        "text": "diri",
+        "start": 174.175,
+        "end": 174.295,
+        "score": 0.48
+      },
+      {
+        "text": "sendiri",
+        "start": 174.295,
+        "end": 174.555,
+        "score": 0.833
+      },
+      {
+        "text": "yang",
+        "start": 174.855,
+        "end": 174.975,
+        "score": 0.986
+      },
+      {
+        "text": "kedua",
+        "start": 174.995,
+        "end": 175.255,
+        "score": 0.994
+      },
+      {
+        "text": "berisiko",
+        "start": 175.315,
+        "end": 175.755,
+        "score": 0.966
+      },
+      {
+        "text": "mencederakan",
+        "start": 175.855,
+        "end": 176.415,
+        "score": 0.942
+      },
+      {
+        "text": "orang",
+        "start": 176.455,
+        "end": 176.615,
+        "score": 0.989
+      },
+      {
+        "text": "lain",
+        "start": 176.635,
+        "end": 176.855,
+        "score": 0.999
+      },
+      {
+        "text": "dan",
+        "start": 176.915,
+        "end": 177.055,
+        "score": 0.997
+      },
+      {
+        "text": "semua",
+        "start": 177.196,
+        "end": 177.556,
+        "score": 0.874
+      },
+      {
+        "text": "cara",
+        "start": 177.596,
+        "end": 177.776,
+        "score": 0.968
+      },
+      {
+        "text": "lain",
+        "start": 177.816,
+        "end": 178.096,
+        "score": 0.962
+      },
+      {
+        "text": "untuk",
+        "start": 178.396,
+        "end": 178.576,
+        "score": 0.967
+      },
+      {
+        "text": "menenangkan",
+        "start": 178.596,
+        "end": 179.056,
+        "score": 0.964
+      },
+      {
+        "text": "pesakit",
+        "start": 179.076,
+        "end": 179.436,
+        "score": 0.942
+      },
+      {
+        "text": "tidak",
+        "start": 179.496,
+        "end": 179.736,
+        "score": 0.998
+      },
+      {
+        "text": "berjaya",
+        "start": 179.756,
+        "end": 180.096,
+        "score": 0.946
+      },
+      {
+        "text": "apabila",
+        "start": 180.576,
+        "end": 180.896,
+        "score": 0.997
+      },
+      {
+        "text": "pesakit",
+        "start": 180.957,
+        "end": 181.297,
+        "score": 0.994
+      },
+      {
+        "text": "sudah",
+        "start": 181.317,
+        "end": 181.497,
+        "score": 0.947
+      },
+      {
+        "text": "stabil",
+        "start": 181.517,
+        "end": 181.857,
+        "score": 0.985
+      },
+      {
+        "text": "restrain",
+        "start": 181.977,
+        "end": 182.437,
+        "score": 0.688
+      },
+      {
+        "text": "tersebut",
+        "start": 182.477,
+        "end": 182.797,
+        "score": 0.995
+      },
+      {
+        "text": "akan",
+        "start": 182.837,
+        "end": 183.037,
+        "score": 0.889
+      },
+      {
+        "text": "dihentikan",
+        "start": 183.057,
+        "end": 183.637,
+        "score": 0.988
+      },
+      {
+        "text": "secepat",
+        "start": 183.677,
+        "end": 183.957,
+        "score": 0.884
+      },
+      {
+        "text": "mungkin",
+        "start": 183.977,
+        "end": 184.317,
+        "score": 0.997
+      },
+      {
+        "text": "ikut",
+        "start": 184.437,
+        "end": 184.698,
+        "score": 0.832
+      },
+      {
+        "text": "prosedur",
+        "start": 184.718,
+        "end": 185.158,
+        "score": 0.763
+      },
+      {
+        "text": "dan",
+        "start": 185.178,
+        "end": 185.278,
+        "score": 0.99
+      },
+      {
+        "text": "pemantauan",
+        "start": 185.318,
+        "end": 185.858,
+        "score": 0.923
+      },
+      {
+        "text": "yang",
+        "start": 185.898,
+        "end": 186.018,
+        "score": 0.98
+      },
+      {
+        "text": "ketatlah",
+        "start": 186.038,
+        "end": 186.458,
+        "score": 0.778
+      },
+      {
+        "text": "yang",
+        "start": 187.178,
+        "end": 187.318,
+        "score": 0.974
+      },
+      {
+        "text": "penting",
+        "start": 187.338,
+        "end": 187.678,
+        "score": 0.979
+      },
+      {
+        "text": "kat",
+        "start": 187.718,
+        "end": 187.798,
+        "score": 0.737
+      },
+      {
+        "text": "sini",
+        "start": 187.818,
+        "end": 187.978,
+        "score": 0.932
+      },
+      {
+        "text": "adalah",
+        "start": 188.038,
+        "end": 188.278,
+        "score": 0.992
+      },
+      {
+        "text": "masuk",
+        "start": 188.338,
+        "end": 188.659,
+        "score": 0.992
+      },
+      {
+        "text": "wad",
+        "start": 188.699,
+        "end": 188.799,
+        "score": 0.665
+      },
+      {
+        "text": "psikiatri",
+        "start": 188.819,
+        "end": 189.219,
+        "score": 0.653
+      },
+      {
+        "text": "ni",
+        "start": 189.279,
+        "end": 189.339,
+        "score": 0.989
+      },
+      {
+        "text": "bukan",
+        "start": 189.439,
+        "end": 189.739,
+        "score": 0.99
+      },
+      {
+        "text": "bermaksud",
+        "start": 189.859,
+        "end": 190.299,
+        "score": 0.858
+      },
+      {
+        "text": "hidup",
+        "start": 190.339,
+        "end": 190.619,
+        "score": 0.977
+      },
+      {
+        "text": "dah",
+        "start": 190.679,
+        "end": 190.779,
+        "score": 0.917
+      },
+      {
+        "text": "berakhir",
+        "start": 190.799,
+        "end": 191.159,
+        "score": 0.855
+      },
+      {
+        "text": "dah",
+        "start": 191.179,
+        "end": 191.279,
+        "score": 0.689
+      },
+      {
+        "text": "bukan",
+        "start": 191.339,
+        "end": 191.519,
+        "score": 0.976
+      },
+      {
+        "text": "bermaksud",
+        "start": 191.519,
+        "end": 191.819,
+        "score": 0.526
+      },
+      {
+        "text": "anda",
+        "start": 191.859,
+        "end": 192.019,
+        "score": 0.975
+      },
+      {
+        "text": "gila",
+        "start": 192.119,
+        "end": 192.36,
+        "score": 0.987
+      },
+      {
+        "text": "ke",
+        "start": 192.46,
+        "end": 192.5,
+        "score": 0.538
+      },
+      {
+        "text": "apa",
+        "start": 192.52,
+        "end": 192.98,
+        "score": 0.988
+      }
+    ]
+  },
+  "I33": {
+    "hyp": "tidak ramai pesakit masuk wad psikiatri selepas beberapa hari beberapa minggu keluar semula sambung rawatan mereka kembali bekerja kembali belajar kembali hidup seperti biasa wad psikiatri ni bukan tempat hukum ke apa ia adalah tempat",
+    "score": 0.88,
+    "words": [
+      {
+        "text": "tidak",
+        "start": 196.94,
+        "end": 197.1,
+        "score": 0.2
+      },
+      {
+        "text": "ramai",
+        "start": 197.1,
+        "end": 197.301,
+        "score": 0.538
+      },
+      {
+        "text": "pesakit",
+        "start": 197.341,
+        "end": 197.701,
+        "score": 0.96
+      },
+      {
+        "text": "masuk",
+        "start": 197.721,
+        "end": 197.962,
+        "score": 0.928
+      },
+      {
+        "text": "wad",
+        "start": 198.002,
+        "end": 198.102,
+        "score": 0.648
+      },
+      {
+        "text": "psikiatri",
+        "start": 198.102,
+        "end": 198.483,
+        "score": 0.686
+      },
+      {
+        "text": "selepas",
+        "start": 198.523,
+        "end": 198.843,
+        "score": 0.997
+      },
+      {
+        "text": "beberapa",
+        "start": 198.883,
+        "end": 199.464,
+        "score": 0.875
+      },
+      {
+        "text": "hari",
+        "start": 199.544,
+        "end": 199.765,
+        "score": 0.994
+      },
+      {
+        "text": "beberapa",
+        "start": 199.845,
+        "end": 200.105,
+        "score": 0.987
+      },
+      {
+        "text": "minggu",
+        "start": 200.165,
+        "end": 200.406,
+        "score": 0.998
+      },
+      {
+        "text": "keluar",
+        "start": 200.526,
+        "end": 200.886,
+        "score": 0.977
+      },
+      {
+        "text": "semula",
+        "start": 200.926,
+        "end": 201.267,
+        "score": 0.997
+      },
+      {
+        "text": "sambung",
+        "start": 201.407,
+        "end": 201.728,
+        "score": 0.573
+      },
+      {
+        "text": "rawatan",
+        "start": 201.748,
+        "end": 202.208,
+        "score": 0.983
+      },
+      {
+        "text": "mereka",
+        "start": 202.369,
+        "end": 202.569,
+        "score": 0.996
+      },
+      {
+        "text": "kembali",
+        "start": 202.629,
+        "end": 202.869,
+        "score": 0.998
+      },
+      {
+        "text": "bekerja",
+        "start": 202.91,
+        "end": 203.25,
+        "score": 0.851
+      },
+      {
+        "text": "kembali",
+        "start": 203.43,
+        "end": 203.711,
+        "score": 0.999
+      },
+      {
+        "text": "belajar",
+        "start": 203.751,
+        "end": 204.131,
+        "score": 0.94
+      },
+      {
+        "text": "kembali",
+        "start": 204.212,
+        "end": 204.652,
+        "score": 0.998
+      },
+      {
+        "text": "hidup",
+        "start": 204.712,
+        "end": 204.933,
+        "score": 0.873
+      },
+      {
+        "text": "seperti",
+        "start": 204.953,
+        "end": 205.193,
+        "score": 0.977
+      },
+      {
+        "text": "biasa",
+        "start": 205.233,
+        "end": 205.554,
+        "score": 0.991
+      },
+      {
+        "text": "wad",
+        "start": 206.375,
+        "end": 206.515,
+        "score": 0.664
+      },
+      {
+        "text": "psikiatri",
+        "start": 206.515,
+        "end": 206.876,
+        "score": 0.69
+      },
+      {
+        "text": "ni",
+        "start": 206.916,
+        "end": 206.976,
+        "score": 0.983
+      },
+      {
+        "text": "bukan",
+        "start": 206.996,
+        "end": 207.156,
+        "score": 0.993
+      },
+      {
+        "text": "tempat",
+        "start": 207.176,
+        "end": 207.377,
+        "score": 0.898
+      },
+      {
+        "text": "hukum",
+        "start": 207.417,
+        "end": 207.797,
+        "score": 0.976
+      },
+      {
+        "text": "ke",
+        "start": 207.897,
+        "end": 207.937,
+        "score": 0.94
+      },
+      {
+        "text": "apa",
+        "start": 207.977,
+        "end": 208.158,
+        "score": 0.782
+      },
+      {
+        "text": "ia",
+        "start": 208.679,
+        "end": 208.739,
+        "score": 0.495
+      },
+      {
+        "text": "adalah",
+        "start": 208.779,
+        "end": 208.979,
+        "score": 0.997
+      },
+      {
+        "text": "tempat",
+        "start": 208.999,
+        "end": 209.46,
+        "score": 0.997
+      }
+    ]
+  },
+  "I34": {
+    "hyp": "ia adalah tempat yang selamat sebenarnya untuk seseorang itu berehat distabilkan dan diberi peluang untuk",
+    "score": 0.923,
+    "words": [
+      {
+        "text": "ia",
+        "start": 210.61,
+        "end": 210.69,
+        "score": 0.723
+      },
+      {
+        "text": "adalah",
+        "start": 210.73,
+        "end": 210.911,
+        "score": 0.493
+      },
+      {
+        "text": "tempat",
+        "start": 210.951,
+        "end": 211.331,
+        "score": 0.992
+      },
+      {
+        "text": "yang",
+        "start": 211.371,
+        "end": 211.532,
+        "score": 0.98
+      },
+      {
+        "text": "selamat",
+        "start": 211.592,
+        "end": 211.932,
+        "score": 0.999
+      },
+      {
+        "text": "sebenarnya",
+        "start": 211.972,
+        "end": 212.273,
+        "score": 0.759
+      },
+      {
+        "text": "untuk",
+        "start": 212.353,
+        "end": 212.533,
+        "score": 0.996
+      },
+      {
+        "text": "seseorang",
+        "start": 212.573,
+        "end": 212.954,
+        "score": 0.996
+      },
+      {
+        "text": "itu",
+        "start": 213.014,
+        "end": 213.194,
+        "score": 0.999
+      },
+      {
+        "text": "berehat",
+        "start": 213.374,
+        "end": 213.815,
+        "score": 0.953
+      },
+      {
+        "text": "distabilkan",
+        "start": 214.075,
+        "end": 214.896,
+        "score": 0.997
+      },
+      {
+        "text": "dan",
+        "start": 215.437,
+        "end": 215.537,
+        "score": 0.986
+      },
+      {
+        "text": "diberi",
+        "start": 216.158,
+        "end": 216.398,
+        "score": 0.949
+      },
+      {
+        "text": "peluang",
+        "start": 216.458,
+        "end": 216.939,
+        "score": 0.981
+      },
+      {
+        "text": "untuk",
+        "start": 217.059,
+        "end": 217.42,
+        "score": 0.998
+      }
+    ]
+  },
+  "I35": {
+    "hyp": "memulakan proses sembuh itu jadi kalau anda ataupun orang tersayang sedang bergelut dengan kesihatan mental jangan takut untuk mendapatkan bantuan rawatan",
+    "score": 0.875,
+    "words": [
+      {
+        "text": "memulakan",
+        "start": 218.39,
+        "end": 218.891,
+        "score": 0.997
+      },
+      {
+        "text": "proses",
+        "start": 218.951,
+        "end": 219.411,
+        "score": 0.999
+      },
+      {
+        "text": "sembuh",
+        "start": 219.692,
+        "end": 220.052,
+        "score": 0.923
+      },
+      {
+        "text": "itu",
+        "start": 220.132,
+        "end": 220.232,
+        "score": 0.663
+      },
+      {
+        "text": "jadi",
+        "start": 221.053,
+        "end": 221.193,
+        "score": 0.99
+      },
+      {
+        "text": "kalau",
+        "start": 221.233,
+        "end": 221.434,
+        "score": 0.946
+      },
+      {
+        "text": "anda",
+        "start": 221.494,
+        "end": 221.754,
+        "score": 0.999
+      },
+      {
+        "text": "ataupun",
+        "start": 221.954,
+        "end": 222.235,
+        "score": 0.711
+      },
+      {
+        "text": "orang",
+        "start": 222.295,
+        "end": 222.455,
+        "score": 0.945
+      },
+      {
+        "text": "tersayang",
+        "start": 222.455,
+        "end": 222.735,
+        "score": 0.891
+      },
+      {
+        "text": "sedang",
+        "start": 222.755,
+        "end": 222.915,
+        "score": 0.984
+      },
+      {
+        "text": "bergelut",
+        "start": 222.935,
+        "end": 223.316,
+        "score": 0.971
+      },
+      {
+        "text": "dengan",
+        "start": 223.376,
+        "end": 223.736,
+        "score": 0.999
+      },
+      {
+        "text": "kesihatan",
+        "start": 223.997,
+        "end": 224.297,
+        "score": 0.576
+      },
+      {
+        "text": "mental",
+        "start": 224.317,
+        "end": 224.577,
+        "score": 0.684
+      },
+      {
+        "text": "jangan",
+        "start": 224.918,
+        "end": 225.198,
+        "score": 0.967
+      },
+      {
+        "text": "takut",
+        "start": 225.238,
+        "end": 225.498,
+        "score": 0.975
+      },
+      {
+        "text": "untuk",
+        "start": 225.498,
+        "end": 225.618,
+        "score": 0.78
+      },
+      {
+        "text": "mendapatkan",
+        "start": 225.638,
+        "end": 225.959,
+        "score": 0.661
+      },
+      {
+        "text": "bantuan",
+        "start": 225.979,
+        "end": 226.279,
+        "score": 0.948
+      },
+      {
+        "text": "rawatan",
+        "start": 226.299,
+        "end": 226.78,
+        "score": 0.993
+      }
+    ]
+  },
+  "I36": {
+    "hyp": "jangan takut untuk mendapatkan bantuan apa apa soalan minta anda komen tekeh",
+    "score": 0.618,
+    "words": [
+      {
+        "text": "jangan",
+        "start": 227.731,
+        "end": 227.931,
+        "score": 0.563
+      },
+      {
+        "text": "takut",
+        "start": 227.971,
+        "end": 228.433,
+        "score": 0.674
+      },
+      {
+        "text": "untuk",
+        "start": 228.553,
+        "end": 228.713,
+        "score": 0.592
+      },
+      {
+        "text": "mendapatkan",
+        "start": 228.713,
+        "end": 229.014,
+        "score": 0.484
+      },
+      {
+        "text": "bantuan",
+        "start": 229.034,
+        "end": 229.335,
+        "score": 0.805
+      },
+      {
+        "text": "apa",
+        "start": 229.375,
+        "end": 229.475,
+        "score": 0.907
+      },
+      {
+        "text": "apa",
+        "start": 229.495,
+        "end": 229.555,
+        "score": 0.256
+      },
+      {
+        "text": "soalan",
+        "start": 229.575,
+        "end": 229.856,
+        "score": 0.655
+      },
+      {
+        "text": "minta",
+        "start": 229.856,
+        "end": 229.996,
+        "score": 0.614
+      },
+      {
+        "text": "anda",
+        "start": 230.057,
+        "end": 230.217,
+        "score": 0.281
+      },
+      {
+        "text": "komen",
+        "start": 230.297,
+        "end": 230.558,
+        "score": 0.897
+      },
+      {
+        "text": "tekeh",
+        "start": 230.618,
+        "end": 231.079,
+        "score": 0.678
+      }
+    ]
+  }
+}

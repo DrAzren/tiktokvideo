@@ -4,3 +4,5 @@ librosa
 matplotlib
 pillow
 numpy
+soundfile
+faster-whisper      # multilingual Whisper fallback (tools/transcribe_fw.py)
