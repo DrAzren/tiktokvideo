@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Final assembly for "Keadaan Dalam Wad Psikiatri".
 #
-#   graphics/output.mp4          cut + punch-ins + graphic cards (talking-head-recut)
+#   graphics/output.mp4          cut + punch-ins + graphic cards + full-screen B-roll / MG inserts
 #   captions/bg_plus_caps.mp4    ^ + the "TIDAK" hero caption drawn BEHIND the subject
-#   captions/project/frames_fg   subject matte — real only for the hero window (frames
-#                                211-435), transparent elsewhere (overlay = no-op there)
+#   captions/project/frames_fg   subject matte — real only for the hero window (frames 238-328 of
+#                                the cut), transparent elsewhere (overlay = no-op there)
 #   captions/fg_alpha.webm       front captions with real alpha, first 11s only. The bg layer
 #                                already carries every caption (normal blend, stroke/shadow
 #                                intact); the front copy is needed only inside the matte window
