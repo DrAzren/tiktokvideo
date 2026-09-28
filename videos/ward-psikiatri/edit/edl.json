@@ -70,38 +70,52 @@
     {
       "source": "ward",
       "start": 54.64,
+      "end": 56.135,
+      "beat": "MYTH",
+      "zoom": 1.07
+    },
+    {
+      "source": "ward",
+      "start": 56.435,
       "end": 57.315,
       "beat": "MYTH",
       "reason": "Ramai orang bayangkan ... Tapi tidak sebenarnya. — 'Okey balik kepada topik tadi' dropped",
-      "zoom": 1.07
+      "zoom": 1.035
     },
     {
       "source": "ward",
       "start": 76.275,
       "end": 78.635,
       "beat": "TEAM",
-      "zoom": 1.035
+      "zoom": 1.0
     },
     {
       "source": "ward",
       "start": 79.125,
+      "end": 81.825,
+      "beat": "TEAM",
+      "zoom": 1.06
+    },
+    {
+      "source": "ward",
+      "start": 82.145,
       "end": 83.17,
       "beat": "TEAM",
-      "zoom": 1.0
+      "zoom": 1.02
     },
     {
       "source": "ward",
       "start": 83.51,
       "end": 85.0,
       "beat": "TEAM",
-      "zoom": 1.06
+      "zoom": 1.07
     },
     {
       "source": "ward",
       "start": 85.22,
       "end": 86.655,
       "beat": "TEAM",
-      "zoom": 1.02
+      "zoom": 1.035
     },
     {
       "source": "ward",
@@ -109,21 +123,21 @@
       "end": 87.91,
       "beat": "TEAM",
       "reason": "Di Malaysia wad psikiatri ... ahli psikologi, kaunselor — take 2 (take 1 at 57.3s dropped)",
-      "zoom": 1.07
+      "zoom": 1.0
     },
     {
       "source": "ward",
       "start": 89.08,
       "end": 96.43,
       "beat": "ROUTINE",
-      "zoom": 1.035
+      "zoom": 1.06
     },
     {
       "source": "ward",
       "start": 96.71,
       "end": 101.49,
       "beat": "ROUTINE",
-      "zoom": 1.0
+      "zoom": 1.02
     },
     {
       "source": "ward",
@@ -131,11 +145,39 @@
       "end": 103.52,
       "beat": "ROUTINE",
       "reason": "terapi jurupulih kerja ... keselamatan akan dipantau. — hesitation sound at 88.3s cut",
-      "zoom": 1.06
+      "zoom": 1.07
     },
     {
       "source": "ward",
       "start": 105.78,
+      "end": 108.145,
+      "beat": "ROUTINE",
+      "zoom": 1.035
+    },
+    {
+      "source": "ward",
+      "start": 108.395,
+      "end": 113.235,
+      "beat": "ROUTINE",
+      "zoom": 1.0
+    },
+    {
+      "source": "ward",
+      "start": 114.195,
+      "end": 116.795,
+      "beat": "ROUTINE",
+      "zoom": 1.06
+    },
+    {
+      "source": "ward",
+      "start": 116.945,
+      "end": 117.655,
+      "beat": "ROUTINE",
+      "zoom": 1.06
+    },
+    {
+      "source": "ward",
+      "start": 117.775,
       "end": 121.36,
       "beat": "ROUTINE",
       "reason": "Aktiviti terapi ... Bukan untuk menghukum pesakit.",
@@ -189,75 +231,131 @@
     {
       "source": "ward",
       "start": 157.925,
-      "end": 172.195,
+      "end": 161.015,
       "beat": "Q3",
       "zoom": 1.035
     },
     {
       "source": "ward",
-      "start": 172.77,
-      "end": 180.25,
+      "start": 162.885,
+      "end": 166.495,
       "beat": "Q3",
       "zoom": 1.0
+    },
+    {
+      "source": "ward",
+      "start": 166.775,
+      "end": 168.855,
+      "beat": "Q3",
+      "zoom": 1.06
+    },
+    {
+      "source": "ward",
+      "start": 169.135,
+      "end": 172.195,
+      "beat": "Q3",
+      "zoom": 1.02
+    },
+    {
+      "source": "ward",
+      "start": 172.77,
+      "end": 174.545,
+      "beat": "Q3",
+      "zoom": 1.07
+    },
+    {
+      "source": "ward",
+      "start": 174.825,
+      "end": 180.25,
+      "beat": "Q3",
+      "zoom": 1.035
     },
     {
       "source": "ward",
       "start": 180.5,
       "end": 186.55,
       "beat": "Q3",
-      "zoom": 1.06
+      "zoom": 1.0
     },
     {
       "source": "ward",
       "start": 186.9,
-      "end": 193.165,
+      "end": 187.715,
+      "beat": "Q3",
+      "zoom": 1.06
+    },
+    {
+      "source": "ward",
+      "start": 188.295,
+      "end": 190.605,
+      "beat": "Q3",
+      "zoom": 1.02
+    },
+    {
+      "source": "ward",
+      "start": 190.745,
+      "end": 191.165,
+      "beat": "Q3",
+      "zoom": 1.02
+    },
+    {
+      "source": "ward",
+      "start": 191.325,
+      "end": 192.475,
       "beat": "Q3",
       "reason": "Ada juga yang tanya saya ... gila ke apa. — false start 'Lepas itu ada juga lagi soalan' dropped",
-      "zoom": 1.02
+      "zoom": 1.07
     },
     {
       "source": "ward",
       "start": 196.9,
       "end": 205.77,
       "beat": "RECOVERY",
-      "zoom": 1.07
-    },
-    {
-      "source": "ward",
-      "start": 206.06,
-      "end": 208.33,
-      "beat": "RECOVERY",
-      "reason": "Tidak. Ramai pesakit ... bukan tempat hukum ke apa.",
       "zoom": 1.035
     },
     {
       "source": "ward",
-      "start": 210.55,
-      "end": 215.05,
+      "start": 206.06,
+      "end": 207.895,
       "beat": "RECOVERY",
+      "reason": "Tidak. Ramai pesakit ... bukan tempat hukum ke apa.",
       "zoom": 1.0
     },
     {
       "source": "ward",
-      "start": 215.31,
-      "end": 217.53,
+      "start": 210.55,
+      "end": 211.935,
       "beat": "RECOVERY",
       "zoom": 1.06
     },
     {
       "source": "ward",
-      "start": 218.35,
-      "end": 220.4,
+      "start": 212.365,
+      "end": 215.525,
       "beat": "RECOVERY",
       "zoom": 1.02
     },
     {
       "source": "ward",
-      "start": 220.87,
+      "start": 216.165,
+      "end": 217.53,
+      "beat": "RECOVERY",
+      "zoom": 1.07
+    },
+    {
+      "source": "ward",
+      "start": 218.35,
+      "end": 220.115,
+      "beat": "RECOVERY",
+      "zoom": 1.035
+    },
+    {
+      "source": "ward",
+      "start": 220.995,
       "end": 224.79,
       "beat": "RECOVERY",
       "reason": "Ia adalah tempat yang selamat ... kesihatan mental, — repeated 'Ia adalah tempat' cut",
-      "zoom": 1.07
+      "zoom": 1.0
     },
     {
       "source": "ward",
@@ -265,7 +363,7 @@
       "end": 229.45,
       "beat": "CTA",
       "reason": "Jangan takut untuk mendapatkan bantuan. — cleaner second take",
-      "zoom": 1.035
+      "zoom": 1.06
     },
     {
       "source": "ward",
@@ -273,7 +371,7 @@
       "end": 33.54,
       "beat": "CTA",
       "reason": "Boleh datang buat saringan konsultasi kesihatan mental di klinik saya. — moved from 0:31",
-      "zoom": 1.0
+      "zoom": 1.02
     },
     {
       "source": "ward",
@@ -281,7 +379,7 @@
       "end": 45.76,
       "beat": "CTA",
       "reason": "Kita bincang dahulu pilihan rawatan yang paling sesuai untuk anda. — clean retake (first take's 'aa' runs into 'diagnosis')",
-      "zoom": 1.06
+      "zoom": 1.07
     },
     {
       "source": "ward",
@@ -289,7 +387,7 @@
       "end": 231.45,
       "beat": "CTA",
       "reason": "Apa-apa soalan, minta anda komen. Take care. — runs to the end of the take",
-      "zoom": 1.02
+      "zoom": 1.035
     }
   ],
   "grade": "subtle",
@@ -299,5 +397,5 @@
   ],
   "tail_hold": 1.2,
   "overlays": [],
-  "total_duration_s": 150.82
+  "total_duration_s": 142.79
 }

@@ -34,7 +34,7 @@ GLUE = {("wad", "psikiatri"), ("salah", "faham"), ("ke", "apa"), ("physical", "r
 def _punct_marks():
     import difflib
     import re
-    lv3 = [w["text"] for seg in json.loads((C.parent / "captions_src" / "large_v3.json").read_text())
+    lv3 = [w["text"] for seg in json.loads((C.parent / "captions_src" / "large_v3_v4.json").read_text())
            for w in seg["words"]]
     norm = lambda t: re.sub(r"[^a-z0-9]", "", t.lower())
     sm = difflib.SequenceMatcher(a=[norm(w["text"]) for w in words], b=[norm(t) for t in lv3], autojunk=False)

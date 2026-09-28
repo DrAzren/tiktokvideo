@@ -92,6 +92,11 @@ Default target is **1080×1920 @ 30fps vertical** unless the source or the user 
 - Then `pack_transcripts.py --edit-dir videos/<p>/edit` → read `takes_packed.md`.
 
 ### 2. Strategy (stop and confirm)
+Malay/Manglish speakers also pad with words, not just sounds: "dia", "dah", "ke apa", "kat sini",
+"sebenarnya", "itu", "lah", repeated questions. Voiced "mmm"/drawn vowels also hide in gaps under
+0.45s, which a pause-shrink never catches. List both to the user, then drop them word by word and
+force-cut them (`DROP`/`HESITATE` in `videos/ward-psikiatri/edit/build_edl.py`) rather than trusting
+silence detection. The first pass of this project missed them and the user heard it.
 Pre-scan for fillers ("um", "uh", "like", "you know", false starts, repeated phrases,
 retakes) and dead air. Propose in 4–8 sentences: what gets cut, target length, hook,
 grade, the motion-graphics plan (which cards at which lines), caption style, music/SFX.
@@ -117,6 +122,16 @@ if the user hasn't given a brand.
   above the head (cards) and in a one-line band just above the hair (captions); the bottom ~20% is
   TikTok UI. Snapshot every card at its fully-built moment and fix overlap/clipping before rendering.
 - For standalone pieces (intro hook card, stat count-up, CTA end card), build each with `motion-graphics` in its own folder under `graphics/`. When there are several, spawn them as parallel sub-agents (video-use Hard Rule 10).
+- **Full-screen inserts (B-roll / motion-graphic cutaways)** go in the same composition as a top layer
+  (picture only; the voice keeps running, and captions still land on top in stage 5). Anchor them to phrases
+  in `cut_words.json` and keep them out of any matted behind-the-subject caption window. See
+  `videos/ward-psikiatri/graphics/inserts.py`. Animate an inner wrapper, never the `.clip` element
+  itself (lint `gsap_animates_clip_element`: the framework owns clip visibility). Drop card pages
+  that an insert repeats.
+- **AI B-roll without a video-model key:** Canva `generate-image` (9:16) returns only a thumbnail. For full
+  resolution, `create-design` → `read-design open_transaction` → `edit-design` `add_page` 1080×1920 +
+  `insert_fill` per image → commit → `export-design` png 1080×1920. Animate stills with a cubic Ken Burns,
+  tag them "Ilustrasi AI"/"AI illustration", and tell the user to switch on TikTok's AI-generated label.
 - Output: `graphics/output.mp4`.
 
 ### 5. Captions (embedded-captions)

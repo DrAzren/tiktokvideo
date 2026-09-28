@@ -46,8 +46,8 @@ SEGMENTS = [
     ("I22", 0, "I22", 10, "Q2", "Datang pula soalan kedua. Adakah semua pesakit dalam wad ni agresif? — false-start 'Adakah,' cut"),
     ("I24", 0, "I24", 6, "Q2", "Jawapannya tidak. Pesakit dalam wad psikiatri ini,"),
     ("I24", 9, "I27", 6, "Q2", "mereka mungkin mengalami ... penyakit mereka. — repeated 'mereka mengalami' cut"),
-    ("I31", 1, "I31", 98, "Q3", "Ada juga yang tanya saya ... gila ke apa. — false start 'Lepas itu ada juga lagi soalan' dropped"),
-    ("I33", 0, "I33", 31, "RECOVERY", "Tidak. Ramai pesakit ... bukan tempat hukum ke apa."),
+    ("I31", 1, "I31", 96, "Q3", "Ada juga yang tanya saya ... gila ke apa. — false start 'Lepas itu ada juga lagi soalan' dropped"),
+    ("I33", 0, "I33", 29, "RECOVERY", "Tidak. Ramai pesakit ... bukan tempat hukum ke apa."),
     ("I34", 0, "I35", 14, "RECOVERY", "Ia adalah tempat yang selamat ... kesihatan mental, — repeated 'Ia adalah tempat' cut"),
     # "bantuan" really ends at 229.45 (spectrogram: formants stop there; the aligner said 229.34)
     ("I36", 0, "I36", 4, "CTA", "Jangan takut untuk mendapatkan bantuan. — cleaner second take", {"end": 229.45}),
@@ -56,6 +56,21 @@ SEGMENTS = [
     ("I07", 0, "I07", 9, "CTA", "Kita bincang dahulu pilihan rawatan yang paling sesuai untuk anda. — clean retake (first take's 'aa' runs into 'diagnosis')"),
     ("I36", 5, "I36", 11, "CTA", "Apa-apa soalan, minta anda komen. Take care. — runs to the end of the take", {"start": 229.45, "end": 231.45}),
 ]
+
+# round 3 — filler words dropped from inside kept segments (user-approved list)
+DROP = {
+    ("I20", 0),                                   # "dan makan dan rehat" -> first "dan" (with its hesitation)
+    ("I21", 2),                                   # hesitation sound after "jadual"
+    ("I21", 5),                                   # "tujuan utama dia adalah"
+    *[("I31", i) for i in range(13, 20)],        # repeated "Betul ke ni? Mereka pernah kena ikat?"
+    ("I31", 80), ("I31", 81), ("I31", 82),        # "yang penting kat sini adalah masuk wad"
+    ("I31", 90), ("I31", 92),                     # "hidup dah berakhir dah"
+    ("I34", 5),                                   # "tempat yang selamat sebenarnya untuk"
+    ("I35", 3),                                   # "proses sembuh itu"
+}
+# voiced hesitations ("mmm", drawn-out vowels) filling short gaps: always cut, whatever the gap length.
+# Given as the word BEFORE the gap.
+HESITATE = {("I09", 11), ("I13", 13), ("I19", 5), ("I31", 28), ("I31", 34), ("I31", 46), ("I34", 11)}
 
 
 def main() -> None:
@@ -121,23 +136,38 @@ def main() -> None:
         ka, kb = pos[(ia, wa)], pos[(ib, wb)]
         start, end = opt.get("start", cut_in(ka)), opt.get("end", cut_out(kb))
         seg, cur = [], start
-        for k in range(ka, kb):  # shrink long gaps between consecutive kept words (breaths, hesitations)
-            a, b = flat[k], flat[k + 1]
-            if b["start"] - a["end"] > MAX_PAUSE:
+        forced = []   # forced[i]: boundary between seg[i] and seg[i+1] is a filler cut (never merged back)
+        keep = [k for k in range(ka, kb + 1) if (flat[k]["iid"], flat[k]["i"]) not in DROP]
+        for k, k2 in zip(keep, keep[1:]):  # shrink long gaps (breaths); cut dropped words and hesitations
+            a, b = flat[k], flat[k2]
+            dropped = k2 != k + 1
+            hes = (a["iid"], a["i"]) in HESITATE
+            if dropped or hes:
+                # the neighbour is a filler/voiced hesitation, so energy never goes quiet: cut at the
+                # deepest dip right at each word's own edge
+                seg.append([cur, emin(a["end"] - 0.02, a["end"] + 0.07)])
+                cur = emin(b["start"] - 0.07, b["start"] + 0.02)
+                forced.append(True)
+            elif b["start"] - a["end"] > MAX_PAUSE:
                 seg.append([cur, cut_out(k)])
-                cur = cut_in(k + 1)
+                cur = cut_in(k2)
+                forced.append(False)
         seg.append([cur, end])
         # undo shrink-cuts that leave a micro range (a lone "dan" between two cuts reads as a stutter):
         # merge it into the neighbour it is closer to in the source, keeping that pause instead
+        # (filler cuts are never undone; a micro range is only merged across a pause-shrink boundary)
         while len(seg) > 1:
-            i = min(range(len(seg)), key=lambda j: seg[j][1] - seg[j][0])
-            if seg[i][1] - seg[i][0] >= MICRO:
+            cand = [j for j in range(len(seg)) if seg[j][1] - seg[j][0] < MICRO
+                    and ((j > 0 and not forced[j - 1]) or (j + 1 < len(seg) and not forced[j]))]
+            if not cand:
                 break
-            left = seg[i][0] - seg[i - 1][1] if i > 0 else float("inf")
-            right = seg[i + 1][0] - seg[i][1] if i + 1 < len(seg) else float("inf")
+            i = min(cand, key=lambda j: seg[j][1] - seg[j][0])
+            left = seg[i][0] - seg[i - 1][1] if i > 0 and not forced[i - 1] else float("inf")
+            right = seg[i + 1][0] - seg[i][1] if i + 1 < len(seg) and not forced[i] else float("inf")
             j = i - 1 if left <= right else i + 1
             a, b = sorted((i, j))
             seg[a:b + 1] = [[seg[a][0], seg[b][1]]]
+            del forced[a]
         for n, (s0, e0) in enumerate(seg):
             r = {"source": SRC, "start": round(s0, 3), "end": round(e0, 3), "beat": beat}
             if "gain_db" in opt:

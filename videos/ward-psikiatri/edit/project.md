@@ -65,3 +65,35 @@ A fresh-eyes critic pass (sub-agent) found; all verified before fixing:
 - **Music** — bed raised to -20 LUFS undocked, high-pass 120 Hz (was inaudible on phones).
 - Not changed: TV background changes at the relocated CTA cuts (it is a slideshow TV; visible
   seam), list-heavy middle (content), clinic name/booking info (needs the user).
+
+## Session 1, round 3 — 2026-09-28: fillers, B-roll, full-screen motion graphics
+
+**Ask:** "still hear a lot of filler words; add motion graphics and AI b-roll in between."
+User picked: all listed fillers; AI stills, animated (no AI-video provider key here).
+
+**Fillers** (`build_edl.py` `DROP` + `HESITATE`; 2:31 → 2:22):
+- Words dropped inside kept sentences: "tujuan utama *dia*", "hidup *dah* berakhir *dah*", "gila *ke apa*",
+  "hukum *ke apa*", "yang penting *kat sini adalah*", "selamat *sebenarnya*", "proses sembuh *itu*",
+  "*dan* makan dan rehat", and the repeated "*Betul ke ni? Mereka pernah kena ikat?*".
+- Voiced hesitations filling short gaps (< MAX_PAUSE, so the pause-shrink never saw them) always cut:
+  masa_tapi, oleh_doktor, kerja_senaman, restraint_bukanlah, hanyalah_digunakan, sendiri_yang,
+  dan_diberi, and the '*' sound after "jadual". Cuts at the energy dip at each word's own edge.
+- Filler cuts are never undone by the MICRO merge (it only merges across pause-shrink boundaries).
+- Verified: large-v3 on the new cut hears none of the removed words; sync worst 0.2 ms.
+
+**Inserts** (`graphics/inserts.py`, anchored to phrases in cut_words.json; voice runs on underneath,
+captions stay on top, a card that would exit during an insert exits behind it):
+- B-roll (Canva AI stills, design DAHWeI2JIZY, exported 1080×1920 → `broll/`), cubic Ken Burns,
+  "Ilustrasi AI" tag: asylum (myth, with tube flicker), ward, consult, therapy, return to study, safe room.
+  No patient faces; nothing about restraint shown as imagery.
+- Motion graphics (deep teal / cream / mint, Plus Jakarta Sans): FILEM vs REALITI split with the
+  "TIDAK BENAR" stamp, 5 conditions with icons, 3-rung restraint ladder → "Langkah terakhir",
+  recovery path hari → minggu → keluar → sambung rawatan.
+- Card pages that duplicated an insert were removed (c06 pills, c07 numbered rows).
+- Inserts stay clear of the matted "TIDAK" apex window (7.9–10.95 s) — asserted in inserts.py.
+
+**Captions:** transcript rebuilt from the new cut; stray aligner "apa" after "bantuan" dropped and
+"apa-apa soalan" restored; punctuation from large-v3 on the new cut.
+
+**Outstanding:** tell viewers/TikTok the stills are AI (toggle TikTok's "AI-generated content" label);
+clinic name/booking info for the CTA still needs the user.

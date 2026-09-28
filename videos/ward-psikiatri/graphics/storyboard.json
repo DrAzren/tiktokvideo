@@ -4,7 +4,7 @@
     "fps": 30,
     "width": 1080,
     "height": 1920,
-    "durationSeconds": 150.933,
+    "durationSeconds": 142.833,
     "layout": "portrait",
     "themeId": "custom-teal",
     "seed": 7
@@ -12,7 +12,7 @@
   "videoTrack": {
     "sourcePath": "input-video.mp4",
     "startSec": 0,
-    "endSec": 150.933,
+    "endSec": 142.833,
     "bounds": {
       "x": 0,
       "y": 0,
@@ -87,7 +87,7 @@
       "accentIndex": 0,
       "zone": "video-overlay",
       "contentHints": {
-        "pages": 3
+        "pages": 2
       }
     },
     {
@@ -127,7 +127,7 @@
       "id": "c10-cta",
       "intent": "CTA — don't be afraid to get help; screening at the clinic; comment",
       "startSec": 136.45,
-      "endSec": 150.933,
+      "endSec": 142.833,
       "accentIndex": 4,
       "zone": "video-overlay",
       "contentHints": {

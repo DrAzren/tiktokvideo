@@ -822,7 +822,6 @@
    "lines": [
     {
      "words": [
-      "dan",
       "makan",
       "dan",
       "rehat"
@@ -853,7 +852,7 @@
      "words": [
       "tujuan",
       "utama",
-      "dia"
+      "adalah"
      ],
      "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
@@ -865,19 +864,7 @@
    "lines": [
     {
      "words": [
-      "adalah",
-      "untuk"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
+      "untuk",
       "menstabilkan"
      ],
      "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
@@ -890,7 +877,18 @@
    "lines": [
     {
      "words": [
-      "pesakit",
+      "pesakit"
+     ],
+     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
       "bukan",
       "untuk"
      ],
@@ -931,7 +929,18 @@
    "lines": [
     {
      "words": [
-      "kedua",
+      "kedua"
+     ],
+     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
       "adakah",
       "semua"
      ],
@@ -1192,9 +1201,21 @@
    "lines": [
     {
      "words": [
-      "takut",
+      "takut"
+     ],
+     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
       "sebab",
-      "mereka"
+      "mereka",
+      "sedang"
      ],
      "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
@@ -1206,8 +1227,8 @@
    "lines": [
     {
      "words": [
-      "sedang",
-      "berjuang"
+      "berjuang",
+      "dengan"
      ],
      "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
@@ -1219,19 +1240,7 @@
    "lines": [
     {
      "words": [
-      "dengan",
-      "penyakit"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
+      "penyakit",
       "mereka"
      ],
      "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
@@ -1311,46 +1320,6 @@
    "lines": [
     {
      "words": [
-      "betul",
-      "ke",
-      "ni"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
-      "mereka",
-      "pernah",
-      "kena"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
-      "ikat"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
       "ini",
       "adalah"
      ],
@@ -1405,8 +1374,7 @@
     {
      "words": [
       "bukanlah",
-      "rutin",
-      "yang"
+      "rutin"
      ],
      "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
@@ -1418,6 +1386,7 @@
    "lines": [
     {
      "words": [
+      "yang",
       "dijalankan"
      ],
      "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
@@ -1729,8 +1698,7 @@
     {
      "words": [
       "yang",
-      "penting",
-      "kat"
+      "penting"
      ],
      "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
@@ -1742,23 +1710,9 @@
    "lines": [
     {
      "words": [
-      "sini",
-      "adalah",
-      "masuk"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
+      "masuk",
       "wad",
-      "psikiatri",
-      "ni"
+      "psikiatri"
      ],
      "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
@@ -1770,6 +1724,7 @@
    "lines": [
     {
      "words": [
+      "ni",
       "bukan",
       "bermaksud"
      ],
@@ -1784,7 +1739,6 @@
     {
      "words": [
       "hidup",
-      "dah",
       "berakhir"
      ],
      "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
@@ -1797,7 +1751,6 @@
    "lines": [
     {
      "words": [
-      "dah",
       "bukan",
       "bermaksud"
      ],
@@ -1812,9 +1765,7 @@
     {
      "words": [
       "anda",
-      "gila",
-      "ke",
-      "apa"
+      "gila"
      ],
      "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
@@ -1826,21 +1777,9 @@
    "lines": [
     {
      "words": [
-      "tidak"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
+      "tidak",
       "ramai",
-      "pesakit",
-      "masuk"
+      "pesakit"
      ],
      "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
@@ -1852,6 +1791,7 @@
    "lines": [
     {
      "words": [
+      "masuk",
       "wad",
       "psikiatri"
      ],
@@ -2021,19 +1961,6 @@
    "lines": [
     {
      "words": [
-      "ke",
-      "apa"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
       "ia",
       "adalah",
       "tempat"
@@ -2049,19 +1976,7 @@
     {
      "words": [
       "yang",
-      "selamat"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
-      "sebenarnya",
+      "selamat",
       "untuk"
      ],
      "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
@@ -2100,18 +2015,7 @@
    "lines": [
     {
      "words": [
-      "dan"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
+      "dan",
       "diberi",
       "peluang"
      ],
@@ -2139,8 +2043,7 @@
     {
      "words": [
       "proses",
-      "sembuh",
-      "itu"
+      "sembuh"
      ],
      "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
@@ -2256,9 +2159,9 @@
    "lines": [
     {
      "words": [
-      "apa",
       "boleh",
-      "datang"
+      "datang",
+      "buat"
      ],
      "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
@@ -2270,19 +2173,7 @@
    "lines": [
     {
      "words": [
-      "buat",
-      "saringan"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
+      "saringan",
       "konsultasi"
      ],
      "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
@@ -2376,7 +2267,7 @@
    "lines": [
     {
      "words": [
-      "apa",
+      "apa-apa",
       "soalan"
      ],
      "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"

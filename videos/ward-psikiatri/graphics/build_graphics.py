@@ -13,6 +13,8 @@ import html
 import json
 from pathlib import Path
 
+from inserts import build as build_inserts
+
 W = Path(__file__).parent
 PUB = W / "public"
 FPS = 30
@@ -48,6 +50,8 @@ REMAP = _build_remap()
 
 def q(t: float) -> float:
     """Absolute authored time -> frame-quantized time on the current cut."""
+    if t == DUR:   # "until the end" is not an authored word time: never remap it
+        return DUR
     return round(round(min(REMAP(t), DUR) * FPS) / FPS, 4)
 
 
@@ -75,7 +79,6 @@ CARDS = [
             ("kicker", chip("Soalan #1"), 0.0, "pop"),
             ("t1", '<div class="title sm">Macam mana keadaan dalam</div>', 0.0, "slide"),
             ("t2", f'<div class="title xl" style="color:{TEAL}">WAD PSIKIATRI?</div>', 0.0, "pop"),
-            ("s1", '<div class="sub">Seram macam dalam filem?</div>', 5.8 - LEAD, "slide"),
         ]),
     ]},
     {"id": "c02-mitos", "start": 13.3, "end": 23.3, "intent": "Myths from films, struck out on 'tapi tidak sebenarnya'", "pages": [
@@ -136,20 +139,7 @@ CARDS = [
             ("t", '<div class="title">Semua pesakit dalam wad agresif?</div>', 62.85 - LEAD, "slide"),
             ("st", '<div class="stamp teal">TIDAK</div>', 65.66 - LEAD, "stampflow"),
         ]),
-        (67.75, [
-            ("kicker2", chip("Mereka mungkin mengalami"), 67.85, "pop"),
-            ("g", '<div class="grid">'
-                  '<span id="c06-p1" class="pill">Kemurungan teruk</span>'
-                  '<span id="c06-p2" class="pill">Anxiety melampau</span>'
-                  '<span id="c06-p3" class="pill">Bipolar tidak stabil</span>'
-                  '<span id="c06-p4" class="pill">Skizofrenia tidak stabil</span>'
-                  '<span id="c06-p5" class="pill wide">Krisis emosi</span></div>', 67.75, "none"),
-            ("#c06-p1", None, 68.97 - LEAD, "pop"),
-            ("#c06-p2", None, 70.33 - LEAD, "pop"),
-            ("#c06-p3", None, 71.75 - LEAD, "pop"),
-            ("#c06-p4", None, 73.39 - LEAD, "pop"),
-            ("#c06-p5", None, 75.49 - LEAD, "pop"),
-        ]),
+        # (67.75) conditions pill page removed: the full-screen m2-keadaan insert shows them
         (78.3, [
             ("q", '<div class="title">Ramai yang <span style="color:%s">pendiam</span> &amp; <span style="color:%s">takut</span></div>' % (TEAL, TEAL), 78.49 - LEAD, "slide"),
             ("s", '<div class="sub">— sedang berjuang dengan penyakit mereka</div>', 80.39 - LEAD, "slide"),
@@ -166,9 +156,7 @@ CARDS = [
             ("t2", '<div class="title"><span id="c07-t2a">Bukan rutin</span> <span id="c07-t2b" style="color:%s">— langkah terakhir</span></div>' % RED, 91.47 - LEAD, "none"),
             ("#c07-t2a", None, 91.47 - LEAD, "slide"),
             ("#c07-t2b", None, 94.71 - LEAD, "fade"),
-            ("n1", row('<span class="num">1</span>', "Berisiko cederakan diri sendiri"), 96.88 - LEAD, "slide"),
-            ("n2", row('<span class="num">2</span>', "Berisiko cederakan orang lain"), 99.06 - LEAD, "slide"),
-            ("n3", row('<span class="num">3</span>', "Cara lain tidak berjaya menenangkan"), 101.26 - LEAD, "slide"),
+            # the three conditions are the full-screen m3-restraint insert
         ]),
         (104.3, [
             ("kicker3", chip("Bila pesakit stabil"), 104.4, "pop"),
@@ -324,6 +312,19 @@ def card_fragment(card) -> str:
             f'</div></div>')
 
 
+INSERTS, INS_HOSTS, INS_JS, INS_CSS = build_inserts()
+
+
+def card_end(card) -> float:
+    """A card that would exit during (or just after) a full-screen insert leaves behind it instead,
+    so it never flashes back for a moment once the insert clears."""
+    e = q(card["end"])
+    for x in INSERTS:
+        if x["start"] + 0.3 < e <= x["end"] + 1.0:
+            return round(x["start"] + 0.35, 4)
+    return e
+
+
 def timeline_js(card) -> list[str]:
     cid, s, e = card["id"], card["start"], card["end"]
     host = f'.card-host[data-card-id="{cid}"]'
@@ -365,8 +366,9 @@ def timeline_js(card) -> list[str]:
         # rows / pills that were struck in c02 dim after the strike
     if cid == "c02-mitos":
         js.append(f"tl.to('#{cid}-m1, #{cid}-m2, #{cid}-m3', {{opacity:0.45, duration:0.3, ease:'power2.out'}}, {q(21.9)});")
-    js.append(f"tl.to('{panel}', {{opacity:0, y:-24, duration:0.3, ease:'power2.in'}}, {q(e - 0.3)});")
-    js.append(f'tl.set(\'{host}\', {{visibility:"hidden"}}, {q(e)});')
+    E = card_end(card)
+    js.append(f"tl.to('{panel}', {{opacity:0, y:-24, duration:0.3, ease:'power2.in'}}, {round(E - 0.3, 4)});")
+    js.append(f'tl.set(\'{host}\', {{visibility:"hidden"}}, {E});')
     return js
 
 
@@ -390,7 +392,7 @@ def main() -> None:
         frag = card_fragment(c)
         (PUB / "cards" / f"{c['id']}.html").write_text(frag)
         hosts.append(f'<div id="card-{c["id"]}" class="card-host clip" data-card-id="{c["id"]}" data-start="{q(c["start"])}" '
-                     f'data-duration="{qd(c["start"], c["end"])}" data-track-index="2" '
+                     f'data-duration="{round(card_end(c) - q(c["start"]), 4)}" data-track-index="2" '
                      f'style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;">{frag}</div>')
         js += timeline_js(c)
 
@@ -412,6 +414,7 @@ html, body {{ margin:0; padding:0; width:100%; height:100%; overflow:hidden; bac
 .card-host {{ position:absolute; pointer-events:none; overflow:hidden; }}
 .page {{ opacity:0; }}
 {CARD_CSS}
+{INS_CSS}
 </style>
 </head>
 <body>
@@ -421,11 +424,12 @@ html, body {{ margin:0; padding:0; width:100%; height:100%; overflow:hidden; bac
   </div>
   <audio id="source-audio" src="input-video.mp4" data-start="0" data-duration="{DUR}" data-track-index="10" data-volume="1"></audio>
   {chr(10).join(hosts)}
+  {chr(10).join(INS_HOSTS)}
   <script src="vendor/gsap.min.js"></script>
   <script>
   (function () {{
     const tl = window.gsap.timeline({{ paused: true }});
-    {(chr(10) + '    ').join(js)}
+    {(chr(10) + '    ').join(js + INS_JS)}
     window.__timelines = window.__timelines || {{}};
     window.__timelines["talking-head-recut"] = tl;
   }})();

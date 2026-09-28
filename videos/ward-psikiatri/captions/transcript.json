@@ -357,2048 +357,1922 @@
   },
   {
    "text": "tapi",
-   "start": 21.503,
-   "end": 21.703,
+   "start": 21.203,
+   "end": 21.403,
    "type": "word"
   },
   {
    "text": "tidak",
-   "start": 21.743,
-   "end": 21.983,
+   "start": 21.443,
+   "end": 21.683,
    "type": "word"
   },
   {
    "text": "sebenarnya",
-   "start": 22.003,
-   "end": 22.303,
+   "start": 21.703,
+   "end": 22.003,
    "type": "word"
   },
   {
    "text": "di",
-   "start": 22.443,
-   "end": 22.503,
+   "start": 22.143,
+   "end": 22.203,
    "type": "word"
   },
   {
    "text": "malaysia",
-   "start": 22.543,
+   "start": 22.243,
+   "end": 22.624,
+   "type": "word"
+  },
+  {
+   "text": "wad",
+   "start": 22.784,
    "end": 22.924,
    "type": "word"
   },
   {
-   "text": "wad",
-   "start": 23.084,
-   "end": 23.224,
-   "type": "word"
-  },
-  {
    "text": "psikiatri",
-   "start": 23.264,
-   "end": 23.826,
+   "start": 22.964,
+   "end": 23.526,
    "type": "word"
   },
   {
    "text": "adalah",
-   "start": 24.006,
-   "end": 24.407,
+   "start": 23.706,
+   "end": 24.107,
    "type": "word"
   },
   {
    "text": "salah",
-   "start": 24.768,
-   "end": 24.949,
+   "start": 24.468,
+   "end": 24.649,
    "type": "word"
   },
   {
    "text": "satu",
-   "start": 24.969,
-   "end": 25.169,
+   "start": 24.669,
+   "end": 24.869,
    "type": "word"
   },
   {
    "text": "wad",
-   "start": 25.269,
-   "end": 25.43,
+   "start": 24.969,
+   "end": 25.13,
    "type": "word"
   },
   {
    "text": "di",
-   "start": 25.63,
-   "end": 25.71,
+   "start": 25.33,
+   "end": 25.41,
    "type": "word"
   },
   {
    "text": "hospital",
-   "start": 25.79,
-   "end": 26.291,
+   "start": 25.49,
+   "end": 25.991,
    "type": "word"
   },
   {
    "text": "yang",
-   "start": 26.331,
-   "end": 26.432,
+   "start": 26.031,
+   "end": 26.132,
    "type": "word"
   },
   {
    "text": "dikendalikan",
-   "start": 26.452,
-   "end": 26.993,
+   "start": 26.152,
+   "end": 26.693,
    "type": "word"
   },
   {
    "text": "oleh",
-   "start": 27.053,
-   "end": 27.373,
+   "start": 26.753,
+   "end": 27.073,
    "type": "word"
   },
   {
    "text": "doktor",
-   "start": 27.814,
-   "end": 28.095,
+   "start": 27.214,
+   "end": 27.495,
    "type": "word"
   },
   {
    "text": "psikiatri",
-   "start": 28.115,
-   "end": 28.556,
+   "start": 27.515,
+   "end": 27.956,
    "type": "word"
   },
   {
    "text": "jururawat",
-   "start": 29.044,
-   "end": 29.505,
+   "start": 28.444,
+   "end": 28.905,
    "type": "word"
   },
   {
    "text": "terlatih",
-   "start": 29.545,
-   "end": 30.046,
+   "start": 28.945,
+   "end": 29.446,
    "type": "word"
   },
   {
    "text": "ahli",
-   "start": 30.603,
-   "end": 30.783,
+   "start": 30.003,
+   "end": 30.183,
    "type": "word"
   },
   {
    "text": "psikologi",
-   "start": 30.803,
-   "end": 31.344,
+   "start": 30.203,
+   "end": 30.744,
    "type": "word"
   },
   {
    "text": "kaunselor",
-   "start": 31.738,
-   "end": 32.298,
+   "start": 31.138,
+   "end": 31.698,
    "type": "word"
   },
   {
    "text": "terapi",
-   "start": 32.993,
-   "end": 33.253,
+   "start": 32.393,
+   "end": 32.653,
    "type": "word"
   },
   {
    "text": "jurupulih",
-   "start": 33.293,
-   "end": 33.593,
+   "start": 32.693,
+   "end": 32.993,
    "type": "word"
   },
   {
    "text": "kerja",
-   "start": 33.613,
-   "end": 33.833,
+   "start": 33.013,
+   "end": 33.233,
    "type": "word"
   },
   {
    "text": "dan",
-   "start": 34.013,
-   "end": 34.133,
+   "start": 33.413,
+   "end": 33.533,
    "type": "word"
   },
   {
    "text": "lain-lain",
-   "start": 34.193,
-   "end": 34.433,
+   "start": 33.593,
+   "end": 33.833,
    "type": "word"
   },
   {
    "text": "lagi",
-   "start": 34.433,
-   "end": 34.654,
+   "start": 33.833,
+   "end": 34.054,
    "type": "word"
   },
   {
    "text": "apa",
-   "start": 35.074,
-   "end": 35.234,
+   "start": 34.474,
+   "end": 34.634,
    "type": "word"
   },
   {
    "text": "pesakit",
-   "start": 35.294,
-   "end": 35.654,
+   "start": 34.694,
+   "end": 35.054,
    "type": "word"
   },
   {
    "text": "buat",
-   "start": 35.734,
-   "end": 35.894,
+   "start": 35.134,
+   "end": 35.294,
    "type": "word"
   },
   {
    "text": "dalam",
-   "start": 35.914,
-   "end": 36.114,
+   "start": 35.314,
+   "end": 35.514,
    "type": "word"
   },
   {
    "text": "wad",
-   "start": 36.194,
-   "end": 36.335,
+   "start": 35.594,
+   "end": 35.735,
    "type": "word"
   },
   {
    "text": "pesakit",
-   "start": 36.395,
-   "end": 36.795,
+   "start": 35.795,
+   "end": 36.195,
    "type": "word"
   },
   {
    "text": "akan",
-   "start": 36.855,
-   "end": 37.035,
+   "start": 36.255,
+   "end": 36.435,
    "type": "word"
   },
   {
    "text": "jumpa",
-   "start": 37.075,
-   "end": 37.335,
+   "start": 36.475,
+   "end": 36.735,
    "type": "word"
   },
   {
    "text": "dengan",
-   "start": 37.395,
-   "end": 37.575,
+   "start": 36.795,
+   "end": 36.975,
    "type": "word"
   },
   {
    "text": "doktor",
-   "start": 37.615,
-   "end": 37.895,
+   "start": 37.015,
+   "end": 37.295,
    "type": "word"
   },
   {
    "text": "setiap",
-   "start": 37.935,
-   "end": 38.356,
+   "start": 37.335,
+   "end": 37.756,
    "type": "word"
   },
   {
    "text": "hari",
-   "start": 38.416,
-   "end": 38.656,
+   "start": 37.816,
+   "end": 38.056,
    "type": "word"
   },
   {
    "text": "ataupun",
-   "start": 38.796,
-   "end": 39.096,
+   "start": 38.196,
+   "end": 38.496,
    "type": "word"
   },
   {
    "text": "mengikut",
-   "start": 39.116,
-   "end": 39.376,
+   "start": 38.516,
+   "end": 38.776,
    "type": "word"
   },
   {
    "text": "keperluan",
-   "start": 39.416,
-   "end": 39.837,
+   "start": 38.816,
+   "end": 39.237,
    "type": "word"
   },
   {
    "text": "dan",
-   "start": 40.07,
-   "end": 40.17,
+   "start": 39.47,
+   "end": 39.57,
    "type": "word"
   },
   {
    "text": "pesakit",
-   "start": 40.21,
-   "end": 40.59,
+   "start": 39.61,
+   "end": 39.99,
    "type": "word"
   },
   {
    "text": "perlulah",
-   "start": 40.63,
-   "end": 40.91,
+   "start": 40.03,
+   "end": 40.31,
    "type": "word"
   },
   {
    "text": "mengambil",
-   "start": 40.95,
-   "end": 41.371,
+   "start": 40.35,
+   "end": 40.771,
    "type": "word"
   },
   {
    "text": "ubat",
-   "start": 41.451,
-   "end": 41.691,
+   "start": 40.851,
+   "end": 41.091,
    "type": "word"
   },
   {
    "text": "mengikut",
-   "start": 41.731,
-   "end": 42.011,
+   "start": 41.131,
+   "end": 41.411,
    "type": "word"
   },
   {
    "text": "jadual",
-   "start": 42.031,
-   "end": 42.331,
+   "start": 41.431,
+   "end": 41.731,
    "type": "word"
   },
   {
    "text": "dan",
-   "start": 42.351,
-   "end": 42.451,
+   "start": 41.751,
+   "end": 41.851,
    "type": "word"
   },
   {
    "text": "pemerhatian",
-   "start": 42.631,
-   "end": 43.172,
+   "start": 42.031,
+   "end": 42.572,
    "type": "word"
   },
   {
    "text": "rapi",
-   "start": 43.212,
-   "end": 43.552,
+   "start": 42.612,
+   "end": 42.952,
    "type": "word"
   },
   {
    "text": "dan",
-   "start": 43.732,
-   "end": 43.852,
+   "start": 43.132,
+   "end": 43.252,
    "type": "word"
   },
   {
    "text": "keselamatan",
-   "start": 43.892,
-   "end": 44.593,
+   "start": 43.292,
+   "end": 43.993,
    "type": "word"
   },
   {
    "text": "akan",
-   "start": 45.046,
-   "end": 45.289,
+   "start": 44.446,
+   "end": 44.689,
    "type": "word"
   },
   {
    "text": "dipantau",
-   "start": 45.289,
-   "end": 45.796,
+   "start": 44.689,
+   "end": 45.196,
    "type": "word"
   },
   {
    "text": "aktiviti",
-   "start": 46.109,
-   "end": 46.57,
+   "start": 45.509,
+   "end": 45.97,
    "type": "word"
   },
   {
    "text": "terapi",
-   "start": 46.611,
-   "end": 46.951,
+   "start": 46.011,
+   "end": 46.351,
    "type": "word"
   },
   {
    "text": "seperti",
-   "start": 47.092,
-   "end": 47.533,
+   "start": 46.492,
+   "end": 46.933,
    "type": "word"
   },
   {
    "text": "terapi",
-   "start": 47.613,
-   "end": 47.874,
+   "start": 47.013,
+   "end": 47.274,
    "type": "word"
   },
   {
    "text": "cara",
-   "start": 47.914,
-   "end": 48.094,
+   "start": 47.314,
+   "end": 47.494,
    "type": "word"
   },
   {
    "text": "kerja",
-   "start": 48.134,
-   "end": 48.375,
+   "start": 47.534,
+   "end": 47.775,
    "type": "word"
   },
   {
    "text": "senaman",
-   "start": 48.655,
-   "end": 48.976,
+   "start": 47.8,
+   "end": 48.109,
    "type": "word"
   },
   {
    "text": "ringan",
-   "start": 48.996,
-   "end": 49.517,
+   "start": 48.129,
+   "end": 48.65,
    "type": "word"
   },
   {
    "text": "sesi",
-   "start": 49.638,
-   "end": 49.858,
+   "start": 48.771,
+   "end": 48.991,
    "type": "word"
   },
   {
    "text": "kaunseling",
-   "start": 49.918,
-   "end": 50.62,
+   "start": 49.051,
+   "end": 49.753,
    "type": "word"
   },
   {
    "text": "ini",
-   "start": 50.8,
-   "end": 50.941,
+   "start": 49.933,
+   "end": 50.074,
    "type": "word"
   },
   {
    "text": "bergantung",
-   "start": 50.961,
-   "end": 51.261,
+   "start": 50.094,
+   "end": 50.394,
    "type": "word"
   },
   {
    "text": "pada",
-   "start": 51.281,
-   "end": 51.442,
+   "start": 50.414,
+   "end": 50.575,
    "type": "word"
   },
   {
    "text": "hospital",
-   "start": 51.482,
-   "end": 51.863,
+   "start": 50.615,
+   "end": 50.996,
    "type": "word"
   },
   {
    "text": "dan",
-   "start": 51.883,
-   "end": 51.963,
+   "start": 51.016,
+   "end": 51.096,
    "type": "word"
   },
   {
    "text": "keadaan",
-   "start": 52.003,
-   "end": 52.224,
+   "start": 51.136,
+   "end": 51.357,
    "type": "word"
   },
   {
    "text": "pesakitlah",
-   "start": 52.224,
-   "end": 52.605,
+   "start": 51.357,
+   "end": 51.738,
    "type": "word"
   },
   {
    "text": "akan",
-   "start": 52.645,
-   "end": 52.825,
+   "start": 51.778,
+   "end": 51.958,
    "type": "word"
   },
   {
    "text": "dijalankan",
-   "start": 52.845,
-   "end": 53.226,
+   "start": 51.978,
+   "end": 52.359,
    "type": "word"
   },
   {
    "text": "juga",
-   "start": 53.266,
-   "end": 53.446,
-   "type": "word"
-  },
-  {
-   "text": "dan",
-   "start": 53.828,
-   "end": 54.03,
+   "start": 52.399,
+   "end": 52.579,
    "type": "word"
   },
   {
    "text": "makan",
-   "start": 54.453,
-   "end": 54.856,
+   "start": 52.633,
+   "end": 53.022,
    "type": "word"
   },
   {
    "text": "dan",
-   "start": 54.917,
-   "end": 54.997,
+   "start": 53.083,
+   "end": 53.163,
    "type": "word"
   },
   {
    "text": "rehat",
-   "start": 55.037,
-   "end": 55.34,
+   "start": 53.203,
+   "end": 53.506,
    "type": "word"
   },
   {
    "text": "adalah",
-   "start": 55.783,
-   "end": 56.126,
+   "start": 53.949,
+   "end": 54.292,
    "type": "word"
   },
   {
    "text": "ikut",
-   "start": 56.477,
-   "end": 56.658,
+   "start": 54.643,
+   "end": 54.824,
    "type": "word"
   },
   {
    "text": "jadual",
-   "start": 56.678,
-   "end": 56.998,
+   "start": 54.844,
+   "end": 55.164,
    "type": "word"
   },
   {
    "text": "tujuan",
-   "start": 57.198,
-   "end": 57.479,
+   "start": 55.233,
+   "end": 55.512,
    "type": "word"
   },
   {
    "text": "utama",
-   "start": 57.539,
-   "end": 57.859,
-   "type": "word"
-  },
-  {
-   "text": "dia",
-   "start": 57.919,
-   "end": 58.0,
+   "start": 55.572,
+   "end": 55.892,
    "type": "word"
   },
   {
    "text": "adalah",
-   "start": 58.06,
-   "end": 58.32,
+   "start": 55.993,
+   "end": 56.253,
    "type": "word"
   },
   {
    "text": "untuk",
-   "start": 58.4,
-   "end": 58.681,
+   "start": 56.333,
+   "end": 56.614,
    "type": "word"
   },
   {
    "text": "menstabilkan",
-   "start": 58.721,
-   "end": 59.662,
+   "start": 56.654,
+   "end": 57.595,
    "type": "word"
   },
   {
    "text": "pesakit",
-   "start": 59.702,
-   "end": 60.083,
+   "start": 57.635,
+   "end": 58.016,
    "type": "word"
   },
   {
    "text": "bukan",
-   "start": 60.143,
-   "end": 60.423,
+   "start": 58.076,
+   "end": 58.356,
    "type": "word"
   },
   {
    "text": "untuk",
-   "start": 60.523,
-   "end": 60.764,
+   "start": 58.456,
+   "end": 58.697,
    "type": "word"
   },
   {
    "text": "menghukum",
-   "start": 60.784,
-   "end": 61.204,
+   "start": 58.717,
+   "end": 59.137,
    "type": "word"
   },
   {
    "text": "pesakit",
-   "start": 61.204,
-   "end": 61.565,
+   "start": 59.137,
+   "end": 59.498,
    "type": "word"
   },
   {
    "text": "datang",
-   "start": 61.814,
-   "end": 62.074,
+   "start": 59.748,
+   "end": 60.008,
    "type": "word"
   },
   {
    "text": "pula",
-   "start": 62.094,
-   "end": 62.215,
+   "start": 60.028,
+   "end": 60.149,
    "type": "word"
   },
   {
    "text": "soalan",
-   "start": 62.275,
-   "end": 62.495,
+   "start": 60.209,
+   "end": 60.429,
    "type": "word"
   },
   {
    "text": "kedua",
-   "start": 62.515,
-   "end": 62.716,
+   "start": 60.449,
+   "end": 60.65,
    "type": "word"
   },
   {
    "text": "adakah",
-   "start": 62.816,
-   "end": 63.137,
+   "start": 60.75,
+   "end": 61.071,
    "type": "word"
   },
   {
    "text": "semua",
-   "start": 63.197,
-   "end": 63.438,
+   "start": 61.131,
+   "end": 61.372,
    "type": "word"
   },
   {
    "text": "pesakit",
-   "start": 63.498,
-   "end": 63.899,
+   "start": 61.432,
+   "end": 61.833,
    "type": "word"
   },
   {
    "text": "dalam",
-   "start": 63.919,
-   "end": 64.099,
+   "start": 61.853,
+   "end": 62.033,
    "type": "word"
   },
   {
    "text": "wad",
-   "start": 64.14,
-   "end": 64.26,
+   "start": 62.074,
+   "end": 62.194,
    "type": "word"
   },
   {
    "text": "ni",
-   "start": 64.28,
-   "end": 64.36,
+   "start": 62.214,
+   "end": 62.294,
    "type": "word"
   },
   {
    "text": "agresif",
-   "start": 64.4,
-   "end": 64.881,
+   "start": 62.334,
+   "end": 62.815,
    "type": "word"
   },
   {
    "text": "jawapannya",
-   "start": 65.163,
-   "end": 65.563,
+   "start": 63.097,
+   "end": 63.497,
    "type": "word"
   },
   {
    "text": "tidak",
-   "start": 65.623,
-   "end": 65.904,
+   "start": 63.557,
+   "end": 63.838,
    "type": "word"
   },
   {
    "text": "pesakit",
-   "start": 66.064,
-   "end": 66.484,
+   "start": 63.998,
+   "end": 64.418,
    "type": "word"
   },
   {
    "text": "dalam",
-   "start": 66.544,
-   "end": 66.744,
+   "start": 64.478,
+   "end": 64.678,
    "type": "word"
   },
   {
    "text": "wad",
-   "start": 66.804,
-   "end": 66.924,
+   "start": 64.738,
+   "end": 64.858,
    "type": "word"
   },
   {
    "text": "psikiatri",
-   "start": 66.924,
-   "end": 67.345,
+   "start": 64.858,
+   "end": 65.279,
    "type": "word"
   },
   {
    "text": "ni",
-   "start": 67.405,
-   "end": 67.565,
+   "start": 65.339,
+   "end": 65.499,
    "type": "word"
   },
   {
    "text": "mereka",
-   "start": 67.853,
-   "end": 68.113,
+   "start": 65.786,
+   "end": 66.046,
    "type": "word"
   },
   {
    "text": "mungkin",
-   "start": 68.173,
-   "end": 68.474,
+   "start": 66.106,
+   "end": 66.407,
    "type": "word"
   },
   {
    "text": "mengalami",
-   "start": 68.514,
-   "end": 68.854,
+   "start": 66.447,
+   "end": 66.787,
    "type": "word"
   },
   {
    "text": "kemurungan",
-   "start": 68.934,
-   "end": 69.334,
+   "start": 66.867,
+   "end": 67.267,
    "type": "word"
   },
   {
    "text": "yang",
-   "start": 69.354,
-   "end": 69.454,
+   "start": 67.287,
+   "end": 67.387,
    "type": "word"
   },
   {
    "text": "teruk",
-   "start": 69.474,
-   "end": 69.995,
+   "start": 67.407,
+   "end": 67.928,
    "type": "word"
   },
   {
    "text": "anxiety",
-   "start": 70.295,
-   "end": 70.735,
+   "start": 68.228,
+   "end": 68.668,
    "type": "word"
   },
   {
    "text": "yang",
-   "start": 70.775,
-   "end": 70.875,
+   "start": 68.708,
+   "end": 68.808,
    "type": "word"
   },
   {
    "text": "melampau",
-   "start": 70.875,
-   "end": 71.616,
+   "start": 68.808,
+   "end": 69.549,
    "type": "word"
   },
   {
    "text": "bipolar",
-   "start": 71.716,
-   "end": 72.256,
+   "start": 69.649,
+   "end": 70.189,
    "type": "word"
   },
   {
    "text": "yang",
-   "start": 72.316,
-   "end": 72.457,
+   "start": 70.249,
+   "end": 70.39,
    "type": "word"
   },
   {
    "text": "tidak",
-   "start": 72.537,
-   "end": 72.737,
+   "start": 70.47,
+   "end": 70.67,
    "type": "word"
   },
   {
    "text": "stabil",
-   "start": 72.777,
-   "end": 73.297,
+   "start": 70.71,
+   "end": 71.23,
    "type": "word"
   },
   {
    "text": "skizofrenia",
-   "start": 73.357,
-   "end": 73.938,
+   "start": 71.29,
+   "end": 71.871,
    "type": "word"
   },
   {
    "text": "yang",
-   "start": 73.998,
-   "end": 74.118,
+   "start": 71.931,
+   "end": 72.051,
    "type": "word"
   },
   {
    "text": "tidak",
-   "start": 74.138,
-   "end": 74.318,
+   "start": 72.071,
+   "end": 72.251,
    "type": "word"
   },
   {
    "text": "stabil",
-   "start": 74.378,
-   "end": 74.838,
+   "start": 72.311,
+   "end": 72.771,
    "type": "word"
   },
   {
    "text": "ataupun",
-   "start": 74.938,
-   "end": 75.279,
+   "start": 72.871,
+   "end": 73.212,
    "type": "word"
   },
   {
    "text": "krisis",
-   "start": 75.459,
-   "end": 75.979,
+   "start": 73.392,
+   "end": 73.912,
    "type": "word"
   },
   {
    "text": "emosi",
-   "start": 76.139,
-   "end": 76.52,
+   "start": 74.072,
+   "end": 74.453,
    "type": "word"
   },
   {
    "text": "yang",
-   "start": 76.64,
-   "end": 76.82,
+   "start": 74.573,
+   "end": 74.753,
    "type": "word"
   },
   {
    "text": "memerlukan",
-   "start": 77.084,
-   "end": 77.548,
+   "start": 75.018,
+   "end": 75.482,
    "type": "word"
   },
   {
    "text": "pemantauan",
-   "start": 77.568,
-   "end": 78.111,
+   "start": 75.502,
+   "end": 76.045,
    "type": "word"
   },
   {
    "text": "ramai",
-   "start": 78.454,
-   "end": 78.776,
+   "start": 76.388,
+   "end": 76.71,
    "type": "word"
   },
   {
    "text": "yang",
-   "start": 78.816,
-   "end": 78.937,
+   "start": 76.75,
+   "end": 76.871,
    "type": "word"
   },
   {
    "text": "pendiam",
-   "start": 78.957,
-   "end": 79.459,
+   "start": 76.891,
+   "end": 77.393,
    "type": "word"
   },
   {
    "text": "takut",
-   "start": 79.58,
-   "end": 80.082,
+   "start": 77.514,
+   "end": 78.016,
    "type": "word"
   },
   {
    "text": "sebab",
-   "start": 80.358,
-   "end": 80.498,
+   "start": 78.291,
+   "end": 78.431,
    "type": "word"
   },
   {
    "text": "mereka",
-   "start": 80.619,
-   "end": 80.82,
+   "start": 78.552,
+   "end": 78.753,
    "type": "word"
   },
   {
    "text": "sedang",
-   "start": 80.88,
-   "end": 81.101,
+   "start": 78.813,
+   "end": 79.034,
    "type": "word"
   },
   {
    "text": "berjuang",
-   "start": 81.121,
-   "end": 81.523,
+   "start": 79.054,
+   "end": 79.456,
    "type": "word"
   },
   {
    "text": "dengan",
-   "start": 81.523,
-   "end": 81.703,
+   "start": 79.456,
+   "end": 79.636,
    "type": "word"
   },
   {
    "text": "penyakit",
-   "start": 81.723,
-   "end": 82.045,
+   "start": 79.656,
+   "end": 79.978,
    "type": "word"
   },
   {
    "text": "mereka",
-   "start": 82.065,
-   "end": 82.346,
+   "start": 79.998,
+   "end": 80.279,
    "type": "word"
   },
   {
    "text": "ada",
-   "start": 82.59,
-   "end": 82.71,
+   "start": 80.523,
+   "end": 80.643,
    "type": "word"
   },
   {
    "text": "juga",
-   "start": 82.73,
-   "end": 82.85,
+   "start": 80.663,
+   "end": 80.783,
    "type": "word"
   },
   {
    "text": "yang",
-   "start": 82.89,
-   "end": 82.99,
+   "start": 80.823,
+   "end": 80.923,
    "type": "word"
   },
   {
    "text": "tanya",
-   "start": 82.99,
-   "end": 83.171,
+   "start": 80.923,
+   "end": 81.104,
    "type": "word"
   },
   {
    "text": "saya",
-   "start": 83.211,
-   "end": 83.411,
+   "start": 81.144,
+   "end": 81.344,
    "type": "word"
   },
   {
    "text": "kenapa",
-   "start": 83.611,
-   "end": 83.971,
+   "start": 81.544,
+   "end": 81.904,
    "type": "word"
   },
   {
    "text": "ada",
-   "start": 84.031,
-   "end": 84.151,
+   "start": 81.964,
+   "end": 82.084,
    "type": "word"
   },
   {
    "text": "pesakit",
-   "start": 84.191,
-   "end": 84.531,
+   "start": 82.124,
+   "end": 82.464,
    "type": "word"
   },
   {
    "text": "sampai",
-   "start": 84.611,
-   "end": 84.851,
+   "start": 82.544,
+   "end": 82.784,
    "type": "word"
   },
   {
    "text": "kena",
-   "start": 84.891,
-   "end": 84.991,
+   "start": 82.824,
+   "end": 82.924,
    "type": "word"
   },
   {
    "text": "ikat",
-   "start": 85.071,
-   "end": 85.291,
+   "start": 83.004,
+   "end": 83.224,
    "type": "word"
   },
   {
    "text": "doktor",
-   "start": 85.311,
-   "end": 85.571,
-   "type": "word"
-  },
-  {
-   "text": "betul",
-   "start": 85.631,
-   "end": 85.951,
-   "type": "word"
-  },
-  {
-   "text": "ke",
-   "start": 86.011,
-   "end": 86.071,
-   "type": "word"
-  },
-  {
-   "text": "ni",
-   "start": 86.111,
-   "end": 86.191,
-   "type": "word"
-  },
-  {
-   "text": "mereka",
-   "start": 86.531,
-   "end": 86.751,
-   "type": "word"
-  },
-  {
-   "text": "pernah",
-   "start": 86.791,
-   "end": 86.952,
-   "type": "word"
-  },
-  {
-   "text": "kena",
-   "start": 86.992,
-   "end": 87.092,
-   "type": "word"
-  },
-  {
-   "text": "ikat",
-   "start": 87.112,
-   "end": 87.372,
+   "start": 83.244,
+   "end": 83.504,
    "type": "word"
   },
   {
    "text": "ini",
-   "start": 87.552,
-   "end": 87.772,
+   "start": 83.585,
+   "end": 83.805,
    "type": "word"
   },
   {
    "text": "adalah",
-   "start": 87.852,
-   "end": 88.072,
+   "start": 83.885,
+   "end": 84.105,
    "type": "word"
   },
   {
    "text": "salah",
-   "start": 88.092,
-   "end": 88.292,
+   "start": 84.125,
+   "end": 84.325,
    "type": "word"
   },
   {
    "text": "faham",
-   "start": 88.312,
-   "end": 88.592,
+   "start": 84.345,
+   "end": 84.625,
    "type": "word"
   },
   {
    "text": "yang",
-   "start": 88.652,
-   "end": 88.792,
+   "start": 84.685,
+   "end": 84.825,
    "type": "word"
   },
   {
    "text": "paling",
-   "start": 88.832,
-   "end": 89.232,
+   "start": 84.865,
+   "end": 85.265,
    "type": "word"
   },
   {
    "text": "biasalah",
-   "start": 89.272,
-   "end": 89.752,
+   "start": 85.305,
+   "end": 85.785,
    "type": "word"
   },
   {
    "text": "physical",
-   "start": 90.012,
-   "end": 90.452,
+   "start": 86.045,
+   "end": 86.485,
    "type": "word"
   },
   {
    "text": "restraint",
-   "start": 90.532,
-   "end": 91.033,
+   "start": 86.565,
+   "end": 87.066,
    "type": "word"
   },
   {
    "text": "bukanlah",
-   "start": 91.433,
-   "end": 91.853,
+   "start": 87.2,
+   "end": 87.62,
    "type": "word"
   },
   {
    "text": "rutin",
-   "start": 91.893,
-   "end": 92.213,
+   "start": 87.66,
+   "end": 87.98,
    "type": "word"
   },
   {
    "text": "yang",
-   "start": 92.273,
-   "end": 92.393,
+   "start": 88.04,
+   "end": 88.16,
    "type": "word"
   },
   {
    "text": "dijalankan",
-   "start": 92.393,
-   "end": 92.793,
+   "start": 88.16,
+   "end": 88.56,
    "type": "word"
   },
   {
    "text": "ia",
-   "start": 92.853,
-   "end": 92.973,
+   "start": 88.62,
+   "end": 88.74,
    "type": "word"
   },
   {
    "text": "hanyalah",
-   "start": 92.993,
-   "end": 93.393,
+   "start": 88.76,
+   "end": 89.16,
    "type": "word"
   },
   {
    "text": "digunakan",
-   "start": 93.773,
-   "end": 94.253,
+   "start": 89.273,
+   "end": 89.753,
    "type": "word"
   },
   {
    "text": "sebagai",
-   "start": 94.293,
-   "end": 94.614,
+   "start": 89.793,
+   "end": 90.114,
    "type": "word"
   },
   {
    "text": "langkah",
-   "start": 94.674,
-   "end": 95.074,
+   "start": 90.174,
+   "end": 90.574,
    "type": "word"
   },
   {
    "text": "terakhir",
-   "start": 95.154,
-   "end": 95.594,
+   "start": 90.654,
+   "end": 91.094,
    "type": "word"
   },
   {
    "text": "apabila",
-   "start": 95.654,
-   "end": 95.974,
+   "start": 91.154,
+   "end": 91.474,
    "type": "word"
   },
   {
    "text": "seseorang",
-   "start": 96.054,
-   "end": 96.414,
+   "start": 91.554,
+   "end": 91.914,
    "type": "word"
   },
   {
    "text": "itu",
-   "start": 96.454,
-   "end": 96.634,
+   "start": 91.954,
+   "end": 92.134,
    "type": "word"
   },
   {
    "text": "pertama",
-   "start": 96.847,
-   "end": 97.187,
+   "start": 92.347,
+   "end": 92.687,
    "type": "word"
   },
   {
    "text": "berisiko",
-   "start": 97.267,
-   "end": 97.688,
+   "start": 92.767,
+   "end": 93.188,
    "type": "word"
   },
   {
    "text": "mencederakan",
-   "start": 97.748,
-   "end": 98.188,
+   "start": 93.248,
+   "end": 93.688,
    "type": "word"
   },
   {
    "text": "diri",
-   "start": 98.208,
-   "end": 98.328,
+   "start": 93.708,
+   "end": 93.828,
    "type": "word"
   },
   {
    "text": "sendiri",
-   "start": 98.328,
-   "end": 98.588,
+   "start": 93.828,
+   "end": 94.067,
    "type": "word"
   },
   {
    "text": "yang",
-   "start": 98.888,
-   "end": 99.008,
+   "start": 94.088,
+   "end": 94.208,
    "type": "word"
   },
   {
    "text": "kedua",
-   "start": 99.028,
-   "end": 99.288,
+   "start": 94.228,
+   "end": 94.488,
    "type": "word"
   },
   {
    "text": "berisiko",
-   "start": 99.348,
-   "end": 99.788,
+   "start": 94.548,
+   "end": 94.988,
    "type": "word"
   },
   {
    "text": "mencederakan",
-   "start": 99.888,
-   "end": 100.448,
+   "start": 95.088,
+   "end": 95.648,
    "type": "word"
   },
   {
    "text": "orang",
-   "start": 100.488,
-   "end": 100.648,
+   "start": 95.688,
+   "end": 95.848,
    "type": "word"
   },
   {
    "text": "lain",
-   "start": 100.668,
-   "end": 100.888,
+   "start": 95.868,
+   "end": 96.088,
    "type": "word"
   },
   {
    "text": "dan",
-   "start": 100.948,
-   "end": 101.088,
+   "start": 96.148,
+   "end": 96.288,
    "type": "word"
   },
   {
    "text": "semua",
-   "start": 101.229,
-   "end": 101.589,
+   "start": 96.429,
+   "end": 96.789,
    "type": "word"
   },
   {
    "text": "cara",
-   "start": 101.629,
-   "end": 101.809,
+   "start": 96.829,
+   "end": 97.009,
    "type": "word"
   },
   {
    "text": "lain",
-   "start": 101.849,
-   "end": 102.129,
+   "start": 97.049,
+   "end": 97.329,
    "type": "word"
   },
   {
    "text": "untuk",
-   "start": 102.429,
-   "end": 102.609,
+   "start": 97.629,
+   "end": 97.809,
    "type": "word"
   },
   {
    "text": "menenangkan",
-   "start": 102.629,
-   "end": 103.089,
+   "start": 97.829,
+   "end": 98.289,
    "type": "word"
   },
   {
    "text": "pesakit",
-   "start": 103.109,
-   "end": 103.469,
+   "start": 98.309,
+   "end": 98.669,
    "type": "word"
   },
   {
    "text": "tidak",
-   "start": 103.529,
-   "end": 103.769,
+   "start": 98.729,
+   "end": 98.969,
    "type": "word"
   },
   {
    "text": "berjaya",
-   "start": 103.789,
-   "end": 104.129,
+   "start": 98.989,
+   "end": 99.329,
    "type": "word"
   },
   {
    "text": "apabila",
-   "start": 104.376,
-   "end": 104.696,
+   "start": 99.576,
+   "end": 99.896,
    "type": "word"
   },
   {
    "text": "pesakit",
-   "start": 104.757,
-   "end": 105.097,
+   "start": 99.957,
+   "end": 100.297,
    "type": "word"
   },
   {
    "text": "sudah",
-   "start": 105.117,
-   "end": 105.297,
+   "start": 100.317,
+   "end": 100.497,
    "type": "word"
   },
   {
    "text": "stabil",
-   "start": 105.317,
-   "end": 105.657,
+   "start": 100.517,
+   "end": 100.857,
    "type": "word"
   },
   {
    "text": "restraint",
-   "start": 105.777,
-   "end": 106.237,
+   "start": 100.977,
+   "end": 101.437,
    "type": "word"
   },
   {
    "text": "tersebut",
-   "start": 106.277,
-   "end": 106.597,
+   "start": 101.477,
+   "end": 101.797,
    "type": "word"
   },
   {
    "text": "akan",
-   "start": 106.637,
-   "end": 106.837,
+   "start": 101.837,
+   "end": 102.037,
    "type": "word"
   },
   {
    "text": "dihentikan",
-   "start": 106.857,
-   "end": 107.437,
+   "start": 102.057,
+   "end": 102.637,
    "type": "word"
   },
   {
    "text": "secepat",
-   "start": 107.477,
-   "end": 107.757,
+   "start": 102.677,
+   "end": 102.957,
    "type": "word"
   },
   {
    "text": "mungkin",
-   "start": 107.777,
-   "end": 108.117,
+   "start": 102.977,
+   "end": 103.317,
    "type": "word"
   },
   {
    "text": "ikut",
-   "start": 108.237,
-   "end": 108.498,
+   "start": 103.437,
+   "end": 103.698,
    "type": "word"
   },
   {
    "text": "prosedur",
-   "start": 108.518,
-   "end": 108.958,
+   "start": 103.718,
+   "end": 104.158,
    "type": "word"
   },
   {
    "text": "dan",
-   "start": 108.978,
-   "end": 109.078,
+   "start": 104.178,
+   "end": 104.278,
    "type": "word"
   },
   {
    "text": "pemantauan",
-   "start": 109.118,
-   "end": 109.658,
+   "start": 104.318,
+   "end": 104.858,
    "type": "word"
   },
   {
    "text": "yang",
-   "start": 109.698,
-   "end": 109.818,
+   "start": 104.898,
+   "end": 105.018,
    "type": "word"
   },
   {
    "text": "ketat",
-   "start": 109.838,
-   "end": 110.258,
+   "start": 105.038,
+   "end": 105.458,
    "type": "word"
   },
   {
    "text": "yang",
-   "start": 110.611,
-   "end": 110.751,
+   "start": 105.811,
+   "end": 105.951,
    "type": "word"
   },
   {
    "text": "penting",
-   "start": 110.771,
-   "end": 111.111,
-   "type": "word"
-  },
-  {
-   "text": "kat",
-   "start": 111.151,
-   "end": 111.231,
-   "type": "word"
-  },
-  {
-   "text": "sini",
-   "start": 111.251,
-   "end": 111.411,
-   "type": "word"
-  },
-  {
-   "text": "adalah",
-   "start": 111.471,
-   "end": 111.711,
+   "start": 105.971,
+   "end": 106.311,
    "type": "word"
   },
   {
    "text": "masuk",
-   "start": 111.771,
-   "end": 112.092,
+   "start": 106.371,
+   "end": 106.692,
    "type": "word"
   },
   {
    "text": "wad",
-   "start": 112.132,
-   "end": 112.232,
+   "start": 106.732,
+   "end": 106.832,
    "type": "word"
   },
   {
    "text": "psikiatri",
-   "start": 112.252,
-   "end": 112.652,
+   "start": 106.852,
+   "end": 107.252,
    "type": "word"
   },
   {
    "text": "ni",
-   "start": 112.712,
-   "end": 112.772,
+   "start": 107.312,
+   "end": 107.372,
    "type": "word"
   },
   {
    "text": "bukan",
-   "start": 112.872,
-   "end": 113.172,
+   "start": 107.472,
+   "end": 107.772,
    "type": "word"
   },
   {
    "text": "bermaksud",
-   "start": 113.292,
-   "end": 113.732,
+   "start": 107.892,
+   "end": 108.332,
    "type": "word"
   },
   {
    "text": "hidup",
-   "start": 113.772,
-   "end": 114.052,
-   "type": "word"
-  },
-  {
-   "text": "dah",
-   "start": 114.112,
-   "end": 114.212,
+   "start": 108.372,
+   "end": 108.633,
    "type": "word"
   },
   {
    "text": "berakhir",
-   "start": 114.232,
-   "end": 114.592,
-   "type": "word"
-  },
-  {
-   "text": "dah",
-   "start": 114.612,
-   "end": 114.712,
+   "start": 108.699,
+   "end": 109.059,
    "type": "word"
   },
   {
    "text": "bukan",
-   "start": 114.772,
-   "end": 114.952,
+   "start": 109.072,
+   "end": 109.252,
    "type": "word"
   },
   {
    "text": "bermaksud",
-   "start": 114.952,
-   "end": 115.252,
+   "start": 109.252,
+   "end": 109.552,
    "type": "word"
   },
   {
    "text": "anda",
-   "start": 115.292,
-   "end": 115.452,
+   "start": 109.592,
+   "end": 109.752,
    "type": "word"
   },
   {
    "text": "gila",
-   "start": 115.552,
-   "end": 115.793,
-   "type": "word"
-  },
-  {
-   "text": "ke",
-   "start": 115.893,
-   "end": 115.933,
-   "type": "word"
-  },
-  {
-   "text": "apa",
-   "start": 115.953,
-   "end": 116.413,
+   "start": 109.852,
+   "end": 110.093,
    "type": "word"
   },
   {
    "text": "tidak",
-   "start": 116.64,
-   "end": 116.8,
+   "start": 110.24,
+   "end": 110.4,
    "type": "word"
   },
   {
    "text": "ramai",
-   "start": 116.8,
-   "end": 117.001,
+   "start": 110.4,
+   "end": 110.601,
    "type": "word"
   },
   {
    "text": "pesakit",
-   "start": 117.041,
-   "end": 117.401,
+   "start": 110.641,
+   "end": 111.001,
    "type": "word"
   },
   {
    "text": "masuk",
-   "start": 117.421,
-   "end": 117.662,
+   "start": 111.021,
+   "end": 111.262,
    "type": "word"
   },
   {
    "text": "wad",
-   "start": 117.702,
-   "end": 117.802,
+   "start": 111.302,
+   "end": 111.402,
    "type": "word"
   },
   {
    "text": "psikiatri",
-   "start": 117.802,
-   "end": 118.183,
+   "start": 111.402,
+   "end": 111.783,
    "type": "word"
   },
   {
    "text": "selepas",
-   "start": 118.223,
-   "end": 118.543,
+   "start": 111.823,
+   "end": 112.143,
    "type": "word"
   },
   {
    "text": "beberapa",
-   "start": 118.583,
-   "end": 119.164,
+   "start": 112.183,
+   "end": 112.764,
    "type": "word"
   },
   {
    "text": "hari",
-   "start": 119.244,
-   "end": 119.465,
+   "start": 112.844,
+   "end": 113.065,
    "type": "word"
   },
   {
    "text": "beberapa",
-   "start": 119.545,
-   "end": 119.805,
+   "start": 113.145,
+   "end": 113.405,
    "type": "word"
   },
   {
    "text": "minggu",
-   "start": 119.865,
-   "end": 120.106,
+   "start": 113.465,
+   "end": 113.706,
    "type": "word"
   },
   {
    "text": "keluar",
-   "start": 120.226,
-   "end": 120.586,
+   "start": 113.826,
+   "end": 114.186,
    "type": "word"
   },
   {
    "text": "semula",
-   "start": 120.626,
-   "end": 120.967,
+   "start": 114.226,
+   "end": 114.567,
    "type": "word"
   },
   {
    "text": "sambung",
-   "start": 121.107,
-   "end": 121.428,
+   "start": 114.707,
+   "end": 115.028,
    "type": "word"
   },
   {
    "text": "rawatan",
-   "start": 121.448,
-   "end": 121.908,
+   "start": 115.048,
+   "end": 115.508,
    "type": "word"
   },
   {
    "text": "mereka",
-   "start": 122.069,
-   "end": 122.269,
+   "start": 115.669,
+   "end": 115.869,
    "type": "word"
   },
   {
    "text": "kembali",
-   "start": 122.329,
-   "end": 122.569,
+   "start": 115.929,
+   "end": 116.169,
    "type": "word"
   },
   {
    "text": "bekerja",
-   "start": 122.61,
-   "end": 122.95,
+   "start": 116.21,
+   "end": 116.55,
    "type": "word"
   },
   {
    "text": "kembali",
-   "start": 123.13,
-   "end": 123.411,
+   "start": 116.73,
+   "end": 117.011,
    "type": "word"
   },
   {
    "text": "belajar",
-   "start": 123.451,
-   "end": 123.831,
+   "start": 117.051,
+   "end": 117.431,
    "type": "word"
   },
   {
    "text": "kembali",
-   "start": 123.912,
-   "end": 124.352,
+   "start": 117.512,
+   "end": 117.952,
    "type": "word"
   },
   {
    "text": "hidup",
-   "start": 124.412,
-   "end": 124.633,
+   "start": 118.012,
+   "end": 118.233,
    "type": "word"
   },
   {
    "text": "seperti",
-   "start": 124.653,
-   "end": 124.893,
+   "start": 118.253,
+   "end": 118.493,
    "type": "word"
   },
   {
    "text": "biasa",
-   "start": 124.933,
-   "end": 125.254,
+   "start": 118.533,
+   "end": 118.854,
    "type": "word"
   },
   {
    "text": "wad",
-   "start": 125.775,
-   "end": 125.915,
+   "start": 119.375,
+   "end": 119.515,
    "type": "word"
   },
   {
    "text": "psikiatri",
-   "start": 125.915,
-   "end": 126.276,
+   "start": 119.515,
+   "end": 119.876,
    "type": "word"
   },
   {
    "text": "ni",
-   "start": 126.316,
-   "end": 126.376,
+   "start": 119.916,
+   "end": 119.976,
    "type": "word"
   },
   {
    "text": "bukan",
-   "start": 126.396,
-   "end": 126.556,
+   "start": 119.996,
+   "end": 120.156,
    "type": "word"
   },
   {
    "text": "tempat",
-   "start": 126.576,
-   "end": 126.777,
+   "start": 120.176,
+   "end": 120.377,
    "type": "word"
   },
   {
    "text": "hukum",
-   "start": 126.817,
-   "end": 127.197,
-   "type": "word"
-  },
-  {
-   "text": "ke",
-   "start": 127.297,
-   "end": 127.337,
-   "type": "word"
-  },
-  {
-   "text": "apa",
-   "start": 127.377,
-   "end": 127.558,
+   "start": 120.417,
+   "end": 120.797,
    "type": "word"
   },
   {
    "text": "ia",
-   "start": 127.81,
-   "end": 127.89,
+   "start": 120.977,
+   "end": 121.057,
    "type": "word"
   },
   {
    "text": "adalah",
-   "start": 127.93,
-   "end": 128.111,
+   "start": 121.097,
+   "end": 121.278,
    "type": "word"
   },
   {
    "text": "tempat",
-   "start": 128.151,
-   "end": 128.531,
+   "start": 121.318,
+   "end": 121.698,
    "type": "word"
   },
   {
    "text": "yang",
-   "start": 128.571,
-   "end": 128.732,
+   "start": 121.738,
+   "end": 121.899,
    "type": "word"
   },
   {
    "text": "selamat",
-   "start": 128.792,
-   "end": 129.132,
-   "type": "word"
-  },
-  {
-   "text": "sebenarnya",
-   "start": 129.172,
-   "end": 129.473,
+   "start": 121.959,
+   "end": 122.299,
    "type": "word"
   },
   {
    "text": "untuk",
-   "start": 129.553,
-   "end": 129.733,
+   "start": 122.3,
+   "end": 122.466,
    "type": "word"
   },
   {
    "text": "seseorang",
-   "start": 129.773,
-   "end": 130.154,
+   "start": 122.506,
+   "end": 122.887,
    "type": "word"
   },
   {
    "text": "itu",
-   "start": 130.214,
-   "end": 130.394,
+   "start": 122.947,
+   "end": 123.127,
    "type": "word"
   },
   {
    "text": "berehat",
-   "start": 130.574,
-   "end": 131.015,
+   "start": 123.307,
+   "end": 123.748,
    "type": "word"
   },
   {
    "text": "distabilkan",
-   "start": 131.275,
-   "end": 132.096,
+   "start": 124.008,
+   "end": 124.829,
    "type": "word"
   },
   {
    "text": "dan",
-   "start": 132.404,
-   "end": 132.504,
+   "start": 125.37,
+   "end": 125.467,
    "type": "word"
   },
   {
    "text": "diberi",
-   "start": 133.125,
-   "end": 133.365,
+   "start": 125.467,
+   "end": 125.698,
    "type": "word"
   },
   {
    "text": "peluang",
-   "start": 133.425,
-   "end": 133.906,
+   "start": 125.758,
+   "end": 126.239,
    "type": "word"
   },
   {
    "text": "untuk",
-   "start": 134.026,
-   "end": 134.387,
+   "start": 126.359,
+   "end": 126.72,
    "type": "word"
   },
   {
    "text": "memulakan",
-   "start": 134.557,
-   "end": 135.058,
+   "start": 126.89,
+   "end": 127.391,
    "type": "word"
   },
   {
    "text": "proses",
-   "start": 135.118,
-   "end": 135.578,
+   "start": 127.451,
+   "end": 127.911,
    "type": "word"
   },
   {
    "text": "sembuh",
-   "start": 135.859,
-   "end": 136.219,
-   "type": "word"
-  },
-  {
-   "text": "itu",
-   "start": 136.299,
-   "end": 136.399,
+   "start": 128.192,
+   "end": 128.552,
    "type": "word"
   },
   {
    "text": "jadi",
-   "start": 136.753,
-   "end": 136.893,
+   "start": 128.653,
+   "end": 128.793,
    "type": "word"
   },
   {
    "text": "kalau",
-   "start": 136.933,
-   "end": 137.134,
+   "start": 128.833,
+   "end": 129.034,
    "type": "word"
   },
   {
    "text": "anda",
-   "start": 137.194,
-   "end": 137.454,
+   "start": 129.094,
+   "end": 129.354,
    "type": "word"
   },
   {
    "text": "ataupun",
-   "start": 137.654,
-   "end": 137.935,
+   "start": 129.554,
+   "end": 129.835,
    "type": "word"
   },
   {
    "text": "orang",
-   "start": 137.995,
-   "end": 138.155,
+   "start": 129.895,
+   "end": 130.055,
    "type": "word"
   },
   {
    "text": "tersayang",
-   "start": 138.155,
-   "end": 138.435,
+   "start": 130.055,
+   "end": 130.335,
    "type": "word"
   },
   {
    "text": "sedang",
-   "start": 138.455,
-   "end": 138.615,
+   "start": 130.355,
+   "end": 130.515,
    "type": "word"
   },
   {
    "text": "bergelut",
-   "start": 138.635,
-   "end": 139.016,
+   "start": 130.535,
+   "end": 130.916,
    "type": "word"
   },
   {
    "text": "dengan",
-   "start": 139.076,
-   "end": 139.436,
+   "start": 130.976,
+   "end": 131.336,
    "type": "word"
   },
   {
    "text": "kesihatan",
-   "start": 139.697,
-   "end": 139.997,
+   "start": 131.597,
+   "end": 131.897,
    "type": "word"
   },
   {
    "text": "mental",
-   "start": 140.017,
-   "end": 140.277,
+   "start": 131.917,
+   "end": 132.177,
    "type": "word"
   },
   {
    "text": "jangan",
-   "start": 140.531,
-   "end": 140.731,
+   "start": 132.431,
+   "end": 132.631,
    "type": "word"
   },
   {
    "text": "takut",
-   "start": 140.771,
-   "end": 141.233,
+   "start": 132.671,
+   "end": 133.133,
    "type": "word"
   },
   {
    "text": "untuk",
-   "start": 141.353,
-   "end": 141.513,
+   "start": 133.253,
+   "end": 133.413,
    "type": "word"
   },
   {
    "text": "mendapatkan",
-   "start": 141.513,
-   "end": 141.814,
+   "start": 133.413,
+   "end": 133.714,
    "type": "word"
   },
   {
    "text": "bantuan",
-   "start": 141.834,
-   "end": 142.135,
-   "type": "word"
-  },
-  {
-   "text": "apa",
-   "start": 142.175,
-   "end": 142.267,
+   "start": 133.734,
+   "end": 134.035,
    "type": "word"
   },
   {
    "text": "boleh",
-   "start": 142.327,
-   "end": 142.488,
+   "start": 134.227,
+   "end": 134.388,
    "type": "word"
   },
   {
    "text": "datang",
-   "start": 142.508,
-   "end": 142.769,
+   "start": 134.408,
+   "end": 134.669,
    "type": "word"
   },
   {
    "text": "buat",
-   "start": 142.789,
-   "end": 142.889,
+   "start": 134.689,
+   "end": 134.789,
    "type": "word"
   },
   {
    "text": "saringan",
-   "start": 142.909,
-   "end": 143.21,
+   "start": 134.809,
+   "end": 135.11,
    "type": "word"
   },
   {
    "text": "konsultasi",
-   "start": 143.29,
-   "end": 143.651,
+   "start": 135.19,
+   "end": 135.551,
    "type": "word"
   },
   {
    "text": "kesihatan",
-   "start": 143.711,
-   "end": 143.972,
+   "start": 135.611,
+   "end": 135.872,
    "type": "word"
   },
   {
    "text": "mental",
-   "start": 144.012,
-   "end": 144.272,
+   "start": 135.912,
+   "end": 136.172,
    "type": "word"
   },
   {
    "text": "di",
-   "start": 144.313,
-   "end": 144.373,
+   "start": 136.213,
+   "end": 136.273,
    "type": "word"
   },
   {
    "text": "klinik",
-   "start": 144.393,
-   "end": 144.573,
+   "start": 136.293,
+   "end": 136.473,
    "type": "word"
   },
   {
    "text": "saya",
-   "start": 144.593,
-   "end": 144.834,
+   "start": 136.493,
+   "end": 136.734,
    "type": "word"
   },
   {
    "text": "kita",
-   "start": 145.038,
-   "end": 145.199,
+   "start": 136.938,
+   "end": 137.099,
    "type": "word"
   },
   {
    "text": "bincang",
-   "start": 145.239,
-   "end": 145.541,
+   "start": 137.139,
+   "end": 137.441,
    "type": "word"
   },
   {
    "text": "dahulu",
-   "start": 145.561,
-   "end": 145.864,
+   "start": 137.461,
+   "end": 137.764,
    "type": "word"
   },
   {
    "text": "pilihan",
-   "start": 145.924,
-   "end": 146.166,
+   "start": 137.824,
+   "end": 138.066,
    "type": "word"
   },
   {
    "text": "rawatan",
-   "start": 146.166,
-   "end": 146.548,
+   "start": 138.066,
+   "end": 138.448,
    "type": "word"
   },
   {
    "text": "yang",
-   "start": 146.589,
-   "end": 146.709,
+   "start": 138.489,
+   "end": 138.609,
    "type": "word"
   },
   {
    "text": "paling",
-   "start": 146.73,
-   "end": 147.011,
+   "start": 138.63,
+   "end": 138.911,
    "type": "word"
   },
   {
    "text": "sesuai",
-   "start": 147.032,
-   "end": 147.273,
+   "start": 138.932,
+   "end": 139.173,
    "type": "word"
   },
   {
    "text": "untuk",
-   "start": 147.273,
-   "end": 147.434,
+   "start": 139.173,
+   "end": 139.334,
    "type": "word"
   },
   {
    "text": "anda",
-   "start": 147.434,
-   "end": 147.595,
+   "start": 139.334,
+   "end": 139.495,
    "type": "word"
   },
   {
-   "text": "apa",
-   "start": 147.762,
-   "end": 147.822,
+   "text": "apa-apa",
+   "start": 139.662,
+   "end": 139.722,
    "type": "word"
   },
   {
    "text": "soalan",
-   "start": 147.842,
-   "end": 148.123,
+   "start": 139.742,
+   "end": 140.023,
    "type": "word"
   },
   {
    "text": "minta",
-   "start": 148.123,
-   "end": 148.263,
+   "start": 140.023,
+   "end": 140.163,
    "type": "word"
   },
   {
    "text": "anda",
-   "start": 148.324,
-   "end": 148.484,
+   "start": 140.224,
+   "end": 140.384,
    "type": "word"
   },
   {
    "text": "komen",
-   "start": 148.564,
-   "end": 148.825,
+   "start": 140.464,
+   "end": 140.725,
    "type": "word"
   },
   {
    "text": "take",
-   "start": 148.885,
-   "end": 149.115,
+   "start": 140.785,
+   "end": 141.016,
    "type": "word"
   },
   {
    "text": "care",
-   "start": 149.115,
-   "end": 149.346,
+   "start": 141.016,
+   "end": 141.246,
    "type": "word"
   }
  ]

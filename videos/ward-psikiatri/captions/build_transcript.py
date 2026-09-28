@@ -21,6 +21,10 @@ for i, w in enumerate(words):
     t = w["text"]
     prev = words[i - 1]["text"] if i else ""
     t = FIX_AFTER.get((prev, t), FIX.get(t, t))
+    if t == "apa" and prev == "bantuan":  # aligner put the first "apa" of "apa-apa" before 229.45; not in the audio
+        continue
+    if t == "apa" and i + 1 < len(words) and words[i + 1]["text"] == "soalan":  # its first half was dropped above
+        t = "apa-apa"
     if t == "tekeh":  # "take care": split the aligned span
         mid = round((w["start"] + w["end"]) / 2, 3)
         out += [{"text": "take", "start": w["start"], "end": mid}, {"text": "care", "start": mid, "end": w["end"]}]
