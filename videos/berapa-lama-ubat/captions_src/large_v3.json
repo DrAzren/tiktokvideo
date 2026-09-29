@@ -1,0 +1,1545 @@
+[
+ {
+  "start": 0.0,
+  "end": 0.56,
+  "text": " Assalamualaikum",
+  "words": [
+   {
+    "text": " Assalamualaikum",
+    "start": 0.0,
+    "end": 0.56,
+    "p": 0.9988173842430115
+   }
+  ]
+ },
+ {
+  "start": 0.56,
+  "end": 1.62,
+  "text": " Soalan",
+  "words": [
+   {
+    "text": " Soalan",
+    "start": 0.56,
+    "end": 1.62,
+    "p": 0.813604861497879
+   }
+  ]
+ },
+ {
+  "start": 1.62,
+  "end": 3.98,
+  "text": " Doktor, berapa lama saya kena makan ubat ni?",
+  "words": [
+   {
+    "text": " Doktor,",
+    "start": 1.62,
+    "end": 2.5,
+    "p": 0.9702548384666443
+   },
+   {
+    "text": " berapa",
+    "start": 2.5,
+    "end": 2.72,
+    "p": 0.9982658922672272
+   },
+   {
+    "text": " lama",
+    "start": 2.72,
+    "end": 2.98,
+    "p": 0.9999381303787231
+   },
+   {
+    "text": " saya",
+    "start": 2.98,
+    "end": 3.16,
+    "p": 0.9968296885490417
+   },
+   {
+    "text": " kena",
+    "start": 3.16,
+    "end": 3.42,
+    "p": 0.9999391436576843
+   },
+   {
+    "text": " makan",
+    "start": 3.42,
+    "end": 3.56,
+    "p": 0.9998095631599426
+   },
+   {
+    "text": " ubat",
+    "start": 3.56,
+    "end": 3.82,
+    "p": 0.9984241425991058
+   },
+   {
+    "text": " ni?",
+    "start": 3.82,
+    "end": 3.98,
+    "p": 0.981487512588501
+   }
+  ]
+ },
+ {
+  "start": 4.08,
+  "end": 6.18,
+  "text": " Adakah saya kena makan ubat ni seumur hidup saya?",
+  "words": [
+   {
+    "text": " Adakah",
+    "start": 4.08,
+    "end": 4.5,
+    "p": 0.9972104728221893
+   },
+   {
+    "text": " saya",
+    "start": 4.5,
+    "end": 4.72,
+    "p": 0.9999774694442749
+   },
+   {
+    "text": " kena",
+    "start": 4.72,
+    "end": 4.94,
+    "p": 0.9999791979789734
+   },
+   {
+    "text": " makan",
+    "start": 4.94,
+    "end": 5.14,
+    "p": 0.999977707862854
+   },
+   {
+    "text": " ubat",
+    "start": 5.14,
+    "end": 5.44,
+    "p": 0.9999533295631409
+   },
+   {
+    "text": " ni",
+    "start": 5.44,
+    "end": 5.56,
+    "p": 0.999394416809082
+   },
+   {
+    "text": " seumur",
+    "start": 5.56,
+    "end": 5.82,
+    "p": 0.9979321757952372
+   },
+   {
+    "text": " hidup",
+    "start": 5.82,
+    "end": 6.04,
+    "p": 0.9998761713504791
+   },
+   {
+    "text": " saya?",
+    "start": 6.04,
+    "end": 6.18,
+    "p": 0.9999831914901733
+   }
+  ]
+ },
+ {
+  "start": 6.56,
+  "end": 7.56,
+  "text": " Ok, jom kita kupas",
+  "words": [
+   {
+    "text": " Ok,",
+    "start": 6.56,
+    "end": 6.9,
+    "p": 0.6942489743232727
+   },
+   {
+    "text": " jom",
+    "start": 6.92,
+    "end": 7.1,
+    "p": 0.9989913105964661
+   },
+   {
+    "text": " kita",
+    "start": 7.1,
+    "end": 7.22,
+    "p": 0.9999651908874512
+   },
+   {
+    "text": " kupas",
+    "start": 7.22,
+    "end": 7.56,
+    "p": 0.932932585477829
+   }
+  ]
+ },
+ {
+  "start": 7.56,
+  "end": 10.36,
+  "text": " Pertama, tempoh makan ubat ni bergantung kepada",
+  "words": [
+   {
+    "text": " Pertama,",
+    "start": 7.56,
+    "end": 8.34,
+    "p": 0.9865531722704569
+   },
+   {
+    "text": " tempoh",
+    "start": 8.38,
+    "end": 8.88,
+    "p": 0.9972572326660156
+   },
+   {
+    "text": " makan",
+    "start": 8.88,
+    "end": 9.18,
+    "p": 0.9999490976333618
+   },
+   {
+    "text": " ubat",
+    "start": 9.18,
+    "end": 9.58,
+    "p": 0.9999729990959167
+   },
+   {
+    "text": " ni",
+    "start": 9.58,
+    "end": 9.68,
+    "p": 0.9993353486061096
+   },
+   {
+    "text": " bergantung",
+    "start": 9.68,
+    "end": 10.16,
+    "p": 0.9979549944400787
+   },
+   {
+    "text": " kepada",
+    "start": 10.16,
+    "end": 10.36,
+    "p": 0.9981132745742798
+   }
+  ]
+ },
+ {
+  "start": 10.36,
+  "end": 12.36,
+  "text": " tahap gejala yang anda alami",
+  "words": [
+   {
+    "text": " tahap",
+    "start": 10.36,
+    "end": 11.36,
+    "p": 0.9235087037086487
+   },
+   {
+    "text": " gejala",
+    "start": 11.36,
+    "end": 11.76,
+    "p": 0.8909850120544434
+   },
+   {
+    "text": " yang",
+    "start": 11.76,
+    "end": 11.96,
+    "p": 0.9999253749847412
+   },
+   {
+    "text": " anda",
+    "start": 11.96,
+    "end": 12.12,
+    "p": 0.9998387098312378
+   },
+   {
+    "text": " alami",
+    "start": 12.12,
+    "end": 12.36,
+    "p": 0.9997627139091492
+   }
+  ]
+ },
+ {
+  "start": 12.36,
+  "end": 14.38,
+  "text": " Kalau kemurungan atau anxiety tu ringan",
+  "words": [
+   {
+    "text": " Kalau",
+    "start": 12.36,
+    "end": 12.58,
+    "p": 0.64191734790802
+   },
+   {
+    "text": " kemurungan",
+    "start": 12.58,
+    "end": 13.2,
+    "p": 0.9710647583007812
+   },
+   {
+    "text": " atau",
+    "start": 13.2,
+    "end": 13.38,
+    "p": 0.9945354461669922
+   },
+   {
+    "text": " anxiety",
+    "start": 13.38,
+    "end": 13.78,
+    "p": 0.8222568035125732
+   },
+   {
+    "text": " tu",
+    "start": 13.78,
+    "end": 14.06,
+    "p": 0.575204610824585
+   },
+   {
+    "text": " ringan",
+    "start": 14.06,
+    "end": 14.38,
+    "p": 0.9999060928821564
+   }
+  ]
+ },
+ {
+  "start": 14.38,
+  "end": 16.5,
+  "text": " biasanya 6 hingga 12 bulan",
+  "words": [
+   {
+    "text": " biasanya",
+    "start": 14.38,
+    "end": 14.84,
+    "p": 0.7500199973583221
+   },
+   {
+    "text": " 6",
+    "start": 14.84,
+    "end": 15.58,
+    "p": 0.9967729449272156
+   },
+   {
+    "text": " hingga",
+    "start": 15.58,
+    "end": 15.88,
+    "p": 0.9938018918037415
+   },
+   {
+    "text": " 12",
+    "start": 15.88,
+    "end": 16.04,
+    "p": 0.9999058246612549
+   },
+   {
+    "text": " bulan",
+    "start": 16.04,
+    "end": 16.5,
+    "p": 0.9980485141277313
+   }
+  ]
+ },
+ {
+  "start": 16.5,
+  "end": 17.1,
+  "text": " Approximately",
+  "words": [
+   {
+    "text": " Approximately",
+    "start": 16.5,
+    "end": 17.1,
+    "p": 0.6733997352421284
+   }
+  ]
+ },
+ {
+  "start": 17.1,
+  "end": 19.68,
+  "text": " Tapi kalau dah pernah relapse",
+  "words": [
+   {
+    "text": " Tapi",
+    "start": 17.1,
+    "end": 18.02,
+    "p": 0.9984033703804016
+   },
+   {
+    "text": " kalau",
+    "start": 18.02,
+    "end": 18.3,
+    "p": 0.9611878991127014
+   },
+   {
+    "text": " dah",
+    "start": 18.3,
+    "end": 18.92,
+    "p": 0.999646782875061
+   },
+   {
+    "text": " pernah",
+    "start": 18.92,
+    "end": 19.16,
+    "p": 0.9999648332595825
+   },
+   {
+    "text": " relapse",
+    "start": 19.16,
+    "end": 19.68,
+    "p": 0.9585900604724884
+   }
+  ]
+ },
+ {
+  "start": 19.68,
+  "end": 21.04,
+  "text": " gejala berulang berlaku",
+  "words": [
+   {
+    "text": " gejala",
+    "start": 19.68,
+    "end": 20.22,
+    "p": 0.764243463675181
+   },
+   {
+    "text": " berulang",
+    "start": 20.22,
+    "end": 20.66,
+    "p": 0.9994798302650452
+   },
+   {
+    "text": " berlaku",
+    "start": 20.66,
+    "end": 21.04,
+    "p": 0.8596657911936442
+   }
+  ]
+ },
+ {
+  "start": 21.04,
+  "end": 22.32,
+  "text": " tempoh tu boleh jadi lama",
+  "words": [
+   {
+    "text": " tempoh",
+    "start": 21.04,
+    "end": 21.56,
+    "p": 0.9294641613960266
+   },
+   {
+    "text": " tu",
+    "start": 21.56,
+    "end": 21.68,
+    "p": 0.9998637437820435
+   },
+   {
+    "text": " boleh",
+    "start": 21.68,
+    "end": 21.92,
+    "p": 0.9999915361404419
+   },
+   {
+    "text": " jadi",
+    "start": 21.92,
+    "end": 22.08,
+    "p": 0.9999381303787231
+   },
+   {
+    "text": " lama",
+    "start": 22.08,
+    "end": 22.32,
+    "p": 0.9999604225158691
+   }
+  ]
+ },
+ {
+  "start": 22.32,
+  "end": 23.06,
+  "text": " Kenapa?",
+  "words": [
+   {
+    "text": " Kenapa?",
+    "start": 22.32,
+    "end": 23.06,
+    "p": 0.9960625767707825
+   }
+  ]
+ },
+ {
+  "start": 23.22,
+  "end": 23.74,
+  "text": " Sebab",
+  "words": [
+   {
+    "text": " Sebab",
+    "start": 23.22,
+    "end": 23.74,
+    "p": 0.9998031258583069
+   }
+  ]
+ },
+ {
+  "start": 23.74,
+  "end": 26.78,
+  "text": " Doktor nak pastikan anda betul-betul stabil dulu",
+  "words": [
+   {
+    "text": " Doktor",
+    "start": 23.74,
+    "end": 24.74,
+    "p": 0.8184866011142731
+   },
+   {
+    "text": " nak",
+    "start": 24.74,
+    "end": 24.88,
+    "p": 0.9999706745147705
+   },
+   {
+    "text": " pastikan",
+    "start": 24.88,
+    "end": 25.46,
+    "p": 0.9999473094940186
+   },
+   {
+    "text": " anda",
+    "start": 25.46,
+    "end": 25.84,
+    "p": 0.9976611137390137
+   },
+   {
+    "text": " betul",
+    "start": 25.84,
+    "end": 26.1,
+    "p": 0.9998027682304382
+   },
+   {
+    "text": "-betul",
+    "start": 26.1,
+    "end": 26.2,
+    "p": 0.9994847973187765
+   },
+   {
+    "text": " stabil",
+    "start": 26.2,
+    "end": 26.5,
+    "p": 0.999795138835907
+   },
+   {
+    "text": " dulu",
+    "start": 26.5,
+    "end": 26.78,
+    "p": 0.9936887621879578
+   }
+  ]
+ },
+ {
+  "start": 26.78,
+  "end": 28.7,
+  "text": " sebelum ubat tu diberhentikan",
+  "words": [
+   {
+    "text": " sebelum",
+    "start": 26.78,
+    "end": 27.28,
+    "p": 0.9853697717189789
+   },
+   {
+    "text": " ubat",
+    "start": 27.28,
+    "end": 27.92,
+    "p": 0.9951893091201782
+   },
+   {
+    "text": " tu",
+    "start": 27.92,
+    "end": 28.04,
+    "p": 0.9994301199913025
+   },
+   {
+    "text": " diberhentikan",
+    "start": 28.04,
+    "end": 28.7,
+    "p": 0.9956594109535217
+   }
+  ]
+ },
+ {
+  "start": 28.7,
+  "end": 34.36,
+  "text": " Kalau ubat itu stop terlalu awal, risiko simptom datang balik itu tinggi.",
+  "words": [
+   {
+    "text": " Kalau",
+    "start": 28.7,
+    "end": 29.02,
+    "p": 0.6228815913200378
+   },
+   {
+    "text": " ubat",
+    "start": 29.02,
+    "end": 29.86,
+    "p": 0.9937271773815155
+   },
+   {
+    "text": " itu",
+    "start": 29.86,
+    "end": 30.08,
+    "p": 0.643141508102417
+   },
+   {
+    "text": " stop",
+    "start": 30.08,
+    "end": 31.36,
+    "p": 0.7950210571289062
+   },
+   {
+    "text": " terlalu",
+    "start": 31.36,
+    "end": 31.74,
+    "p": 0.9997487266858419
+   },
+   {
+    "text": " awal,",
+    "start": 31.74,
+    "end": 32.12,
+    "p": 0.9998759925365448
+   },
+   {
+    "text": " risiko",
+    "start": 32.12,
+    "end": 32.6,
+    "p": 0.9951015710830688
+   },
+   {
+    "text": " simptom",
+    "start": 32.6,
+    "end": 33.1,
+    "p": 0.9854385455449423
+   },
+   {
+    "text": " datang",
+    "start": 33.1,
+    "end": 33.52,
+    "p": 0.9903415441513062
+   },
+   {
+    "text": " balik",
+    "start": 33.52,
+    "end": 33.84,
+    "p": 0.9970166087150574
+   },
+   {
+    "text": " itu",
+    "start": 33.84,
+    "end": 33.96,
+    "p": 0.996842622756958
+   },
+   {
+    "text": " tinggi.",
+    "start": 33.96,
+    "end": 34.36,
+    "p": 0.9996608197689056
+   }
+  ]
+ },
+ {
+  "start": 34.48,
+  "end": 40.18,
+  "text": " Tapi kalau anda ada penyakit mental yang kronik macam bipolar atau skizofrenia,",
+  "words": [
+   {
+    "text": " Tapi",
+    "start": 34.48,
+    "end": 35.08,
+    "p": 0.994554877281189
+   },
+   {
+    "text": " kalau",
+    "start": 35.08,
+    "end": 35.78,
+    "p": 0.788261890411377
+   },
+   {
+    "text": " anda",
+    "start": 35.78,
+    "end": 36.88,
+    "p": 0.9987230896949768
+   },
+   {
+    "text": " ada",
+    "start": 36.88,
+    "end": 37.1,
+    "p": 0.9999066591262817
+   },
+   {
+    "text": " penyakit",
+    "start": 37.1,
+    "end": 37.5,
+    "p": 0.9999208599328995
+   },
+   {
+    "text": " mental",
+    "start": 37.5,
+    "end": 37.72,
+    "p": 0.9989820122718811
+   },
+   {
+    "text": " yang",
+    "start": 37.72,
+    "end": 38.04,
+    "p": 0.9995434880256653
+   },
+   {
+    "text": " kronik",
+    "start": 38.04,
+    "end": 38.4,
+    "p": 0.9994433720906576
+   },
+   {
+    "text": " macam",
+    "start": 38.4,
+    "end": 38.7,
+    "p": 0.7228575944900513
+   },
+   {
+    "text": " bipolar",
+    "start": 38.7,
+    "end": 39.04,
+    "p": 0.9255163669586182
+   },
+   {
+    "text": " atau",
+    "start": 39.04,
+    "end": 39.52,
+    "p": 0.9959794282913208
+   },
+   {
+    "text": " skizofrenia,",
+    "start": 39.52,
+    "end": 40.18,
+    "p": 0.8963251233100891
+   }
+  ]
+ },
+ {
+  "start": 40.94,
+  "end": 43.96,
+  "text": " ubat mungkin perlu diambil untuk jangka masa yang panjang.",
+  "words": [
+   {
+    "text": " ubat",
+    "start": 40.879999999999995,
+    "end": 41.18,
+    "p": 0.9990423619747162
+   },
+   {
+    "text": " mungkin",
+    "start": 41.18,
+    "end": 41.4,
+    "p": 0.9996645450592041
+   },
+   {
+    "text": " perlu",
+    "start": 41.4,
+    "end": 41.8,
+    "p": 0.9999403953552246
+   },
+   {
+    "text": " diambil",
+    "start": 41.8,
+    "end": 42.3,
+    "p": 0.9999240835507711
+   },
+   {
+    "text": " untuk",
+    "start": 42.3,
+    "end": 42.52,
+    "p": 0.9999599456787109
+   },
+   {
+    "text": " jangka",
+    "start": 42.52,
+    "end": 43.0,
+    "p": 0.9988239407539368
+   },
+   {
+    "text": " masa",
+    "start": 43.0,
+    "end": 43.3,
+    "p": 0.9997738003730774
+   },
+   {
+    "text": " yang",
+    "start": 43.3,
+    "end": 43.56,
+    "p": 0.9999591112136841
+   },
+   {
+    "text": " panjang.",
+    "start": 43.56,
+    "end": 43.96,
+    "p": 0.9999531507492065
+   }
+  ]
+ },
+ {
+  "start": 44.1,
+  "end": 49.14,
+  "text": " Sama juga macam pesakit darah tinggi, kecing manis yang perlukan ubat untuk kawal tekanan darah,",
+  "words": [
+   {
+    "text": " Sama",
+    "start": 44.1,
+    "end": 44.7,
+    "p": 0.9995412826538086
+   },
+   {
+    "text": " juga",
+    "start": 44.7,
+    "end": 44.86,
+    "p": 0.9996925592422485
+   },
+   {
+    "text": " macam",
+    "start": 44.86,
+    "end": 45.14,
+    "p": 0.995158851146698
+   },
+   {
+    "text": " pesakit",
+    "start": 45.14,
+    "end": 45.64,
+    "p": 0.9887308677037557
+   },
+   {
+    "text": " darah",
+    "start": 45.64,
+    "end": 45.84,
+    "p": 0.9960648715496063
+   },
+   {
+    "text": " tinggi,",
+    "start": 45.84,
+    "end": 46.22,
+    "p": 0.9999561905860901
+   },
+   {
+    "text": " kecing",
+    "start": 46.26,
+    "end": 46.48,
+    "p": 0.8751664161682129
+   },
+   {
+    "text": " manis",
+    "start": 46.48,
+    "end": 46.9,
+    "p": 0.9972851276397705
+   },
+   {
+    "text": " yang",
+    "start": 46.9,
+    "end": 47.04,
+    "p": 0.9625372886657715
+   },
+   {
+    "text": " perlukan",
+    "start": 47.04,
+    "end": 47.32,
+    "p": 0.9693182309468588
+   },
+   {
+    "text": " ubat",
+    "start": 47.32,
+    "end": 47.66,
+    "p": 0.9999118447303772
+   },
+   {
+    "text": " untuk",
+    "start": 47.66,
+    "end": 47.96,
+    "p": 0.9999431371688843
+   },
+   {
+    "text": " kawal",
+    "start": 47.96,
+    "end": 48.52,
+    "p": 0.9868408640225729
+   },
+   {
+    "text": " tekanan",
+    "start": 48.52,
+    "end": 48.76,
+    "p": 0.9985363880793253
+   },
+   {
+    "text": " darah,",
+    "start": 48.76,
+    "end": 49.14,
+    "p": 0.9999685883522034
+   }
+  ]
+ },
+ {
+  "start": 49.14,
+  "end": 50.46,
+  "text": " kawal gula dalam badan mereka.",
+  "words": [
+   {
+    "text": " kawal",
+    "start": 49.14,
+    "end": 49.62,
+    "p": 0.9996228019396464
+   },
+   {
+    "text": " gula",
+    "start": 49.62,
+    "end": 49.92,
+    "p": 0.9996910691261292
+   },
+   {
+    "text": " dalam",
+    "start": 49.92,
+    "end": 50.06,
+    "p": 0.9998548030853271
+   },
+   {
+    "text": " badan",
+    "start": 50.06,
+    "end": 50.28,
+    "p": 0.9990852177143097
+   },
+   {
+    "text": " mereka.",
+    "start": 50.28,
+    "end": 50.46,
+    "p": 0.9999237060546875
+   }
+  ]
+ },
+ {
+  "start": 50.78,
+  "end": 54.12,
+  "text": " Dan yang paling penting sekali, ubat ini tak boleh nak stop suka-suka.",
+  "words": [
+   {
+    "text": " Dan",
+    "start": 50.78,
+    "end": 51.04,
+    "p": 0.9838629961013794
+   },
+   {
+    "text": " yang",
+    "start": 51.04,
+    "end": 51.2,
+    "p": 0.9987084865570068
+   },
+   {
+    "text": " paling",
+    "start": 51.2,
+    "end": 51.36,
+    "p": 0.9999356269836426
+   },
+   {
+    "text": " penting",
+    "start": 51.36,
+    "end": 51.68,
+    "p": 0.9999766945838928
+   },
+   {
+    "text": " sekali,",
+    "start": 51.68,
+    "end": 51.82,
+    "p": 0.9993916749954224
+   },
+   {
+    "text": " ubat",
+    "start": 51.92,
+    "end": 52.22,
+    "p": 0.9996830821037292
+   },
+   {
+    "text": " ini",
+    "start": 52.22,
+    "end": 52.38,
+    "p": 0.9788876175880432
+   },
+   {
+    "text": " tak",
+    "start": 52.38,
+    "end": 52.56,
+    "p": 0.9919929504394531
+   },
+   {
+    "text": " boleh",
+    "start": 52.56,
+    "end": 52.78,
+    "p": 0.9999924898147583
+   },
+   {
+    "text": " nak",
+    "start": 52.78,
+    "end": 52.98,
+    "p": 0.9965304732322693
+   },
+   {
+    "text": " stop",
+    "start": 52.98,
+    "end": 53.26,
+    "p": 0.9996117949485779
+   },
+   {
+    "text": " suka",
+    "start": 53.26,
+    "end": 53.82,
+    "p": 0.668874204158783
+   },
+   {
+    "text": "-suka.",
+    "start": 53.82,
+    "end": 54.12,
+    "p": 0.9997355739275614
+   }
+  ]
+ },
+ {
+  "start": 54.14,
+  "end": 58.34,
+  "text": " Kalau dah sampai masa nak stop, doktor akan buat proses tapering.",
+  "words": [
+   {
+    "text": " Kalau",
+    "start": 54.14,
+    "end": 54.44,
+    "p": 0.9963020086288452
+   },
+   {
+    "text": " dah",
+    "start": 54.44,
+    "end": 55.3,
+    "p": 0.9972425699234009
+   },
+   {
+    "text": " sampai",
+    "start": 55.3,
+    "end": 55.64,
+    "p": 0.99992835521698
+   },
+   {
+    "text": " masa",
+    "start": 55.64,
+    "end": 55.88,
+    "p": 0.999566376209259
+   },
+   {
+    "text": " nak",
+    "start": 55.88,
+    "end": 56.14,
+    "p": 0.999922513961792
+   },
+   {
+    "text": " stop,",
+    "start": 56.14,
+    "end": 56.38,
+    "p": 0.9999064207077026
+   },
+   {
+    "text": " doktor",
+    "start": 56.5,
+    "end": 56.74,
+    "p": 0.9929709136486053
+   },
+   {
+    "text": " akan",
+    "start": 56.74,
+    "end": 56.92,
+    "p": 0.999972939491272
+   },
+   {
+    "text": " buat",
+    "start": 56.92,
+    "end": 57.28,
+    "p": 0.9997888207435608
+   },
+   {
+    "text": " proses",
+    "start": 57.28,
+    "end": 57.86,
+    "p": 0.9995045959949493
+   },
+   {
+    "text": " tapering.",
+    "start": 57.86,
+    "end": 58.34,
+    "p": 0.8859950602054596
+   }
+  ]
+ },
+ {
+  "start": 58.34,
+  "end": 60.76,
+  "text": " iaitu kurangkan dos secara perlahan-lahan",
+  "words": [
+   {
+    "text": " iaitu",
+    "start": 58.34,
+    "end": 58.8,
+    "p": 0.9466285705566406
+   },
+   {
+    "text": " kurangkan",
+    "start": 58.8,
+    "end": 59.38,
+    "p": 0.9946313897768656
+   },
+   {
+    "text": " dos",
+    "start": 59.38,
+    "end": 59.6,
+    "p": 0.9924747347831726
+   },
+   {
+    "text": " secara",
+    "start": 59.6,
+    "end": 60.26,
+    "p": 0.9987411499023438
+   },
+   {
+    "text": " perlahan",
+    "start": 60.26,
+    "end": 60.48,
+    "p": 0.992994487285614
+   },
+   {
+    "text": "-lahan",
+    "start": 60.48,
+    "end": 60.76,
+    "p": 0.9988458752632141
+   }
+  ]
+ },
+ {
+  "start": 60.76,
+  "end": 62.68,
+  "text": " untuk elakkan withdrawal symptom tu",
+  "words": [
+   {
+    "text": " untuk",
+    "start": 60.76,
+    "end": 61.06,
+    "p": 0.9981817007064819
+   },
+   {
+    "text": " elakkan",
+    "start": 61.06,
+    "end": 61.66,
+    "p": 0.9951868057250977
+   },
+   {
+    "text": " withdrawal",
+    "start": 61.66,
+    "end": 61.86,
+    "p": 0.8232507109642029
+   },
+   {
+    "text": " symptom",
+    "start": 61.86,
+    "end": 62.28,
+    "p": 0.8603910803794861
+   },
+   {
+    "text": " tu",
+    "start": 62.28,
+    "end": 62.68,
+    "p": 0.8084757924079895
+   }
+  ]
+ },
+ {
+  "start": 62.68,
+  "end": 64.88,
+  "text": " jadi jangan takut",
+  "words": [
+   {
+    "text": " jadi",
+    "start": 62.68,
+    "end": 63.5,
+    "p": 0.6119560599327087
+   },
+   {
+    "text": " jangan",
+    "start": 63.5,
+    "end": 64.44,
+    "p": 0.9627351760864258
+   },
+   {
+    "text": " takut",
+    "start": 64.44,
+    "end": 64.88,
+    "p": 0.999899297952652
+   }
+  ]
+ },
+ {
+  "start": 64.88,
+  "end": 66.44,
+  "text": " nak mulakan ubat tu",
+  "words": [
+   {
+    "text": " nak",
+    "start": 64.88,
+    "end": 65.28,
+    "p": 0.9978735446929932
+   },
+   {
+    "text": " mulakan",
+    "start": 65.28,
+    "end": 65.92,
+    "p": 0.9726564884185791
+   },
+   {
+    "text": " ubat",
+    "start": 65.92,
+    "end": 66.26,
+    "p": 0.9984173774719238
+   },
+   {
+    "text": " tu",
+    "start": 66.26,
+    "end": 66.44,
+    "p": 0.9965919256210327
+   }
+  ]
+ },
+ {
+  "start": 66.44,
+  "end": 68.28,
+  "text": " dia bukanlah kita kata hukuman",
+  "words": [
+   {
+    "text": " dia",
+    "start": 66.44,
+    "end": 66.62,
+    "p": 0.9222550988197327
+   },
+   {
+    "text": " bukanlah",
+    "start": 66.62,
+    "end": 67.04,
+    "p": 0.9942755699157715
+   },
+   {
+    "text": " kita",
+    "start": 67.04,
+    "end": 67.4,
+    "p": 0.9942739605903625
+   },
+   {
+    "text": " kata",
+    "start": 67.4,
+    "end": 67.7,
+    "p": 0.9999697804450989
+   },
+   {
+    "text": " hukuman",
+    "start": 67.7,
+    "end": 68.28,
+    "p": 0.9994133114814758
+   }
+  ]
+ },
+ {
+  "start": 68.28,
+  "end": 70.86,
+  "text": " seumur hidup tapi dia sebenarnya adalah satu peluang",
+  "words": [
+   {
+    "text": " seumur",
+    "start": 68.28,
+    "end": 68.82,
+    "p": 0.9665323694547018
+   },
+   {
+    "text": " hidup",
+    "start": 68.82,
+    "end": 69.1,
+    "p": 0.9993884265422821
+   },
+   {
+    "text": " tapi",
+    "start": 69.1,
+    "end": 69.38,
+    "p": 0.9845768809318542
+   },
+   {
+    "text": " dia",
+    "start": 69.38,
+    "end": 69.6,
+    "p": 0.9986666440963745
+   },
+   {
+    "text": " sebenarnya",
+    "start": 69.6,
+    "end": 69.84,
+    "p": 0.9998389780521393
+   },
+   {
+    "text": " adalah",
+    "start": 69.84,
+    "end": 70.08,
+    "p": 0.9996159076690674
+   },
+   {
+    "text": " satu",
+    "start": 70.08,
+    "end": 70.36,
+    "p": 0.998751163482666
+   },
+   {
+    "text": " peluang",
+    "start": 70.36,
+    "end": 70.86,
+    "p": 0.999924878279368
+   }
+  ]
+ },
+ {
+  "start": 70.86,
+  "end": 72.6,
+  "text": " untuk kita sembuh",
+  "words": [
+   {
+    "text": " untuk",
+    "start": 70.86,
+    "end": 71.18,
+    "p": 0.9996680021286011
+   },
+   {
+    "text": " kita",
+    "start": 71.18,
+    "end": 72.16,
+    "p": 0.9982166886329651
+   },
+   {
+    "text": " sembuh",
+    "start": 72.16,
+    "end": 72.6,
+    "p": 0.9994785785675049
+   }
+  ]
+ },
+ {
+  "start": 72.6,
+  "end": 74.9,
+  "text": " dapatkan semula kualiti hidup kita",
+  "words": [
+   {
+    "text": " dapatkan",
+    "start": 72.6,
+    "end": 73.28,
+    "p": 0.9868113398551941
+   },
+   {
+    "text": " semula",
+    "start": 73.28,
+    "end": 73.88,
+    "p": 0.9997356832027435
+   },
+   {
+    "text": " kualiti",
+    "start": 73.88,
+    "end": 74.36,
+    "p": 0.9930050174395243
+   },
+   {
+    "text": " hidup",
+    "start": 74.36,
+    "end": 74.66,
+    "p": 0.9996389448642731
+   },
+   {
+    "text": " kita",
+    "start": 74.66,
+    "end": 74.9,
+    "p": 0.9968043565750122
+   }
+  ]
+ },
+ {
+  "start": 74.9,
+  "end": 76.84,
+  "text": " kalau ada apa-apa soalan boleh tanya di dalam komen",
+  "words": [
+   {
+    "text": " kalau",
+    "start": 74.9,
+    "end": 75.42,
+    "p": 0.9615619778633118
+   },
+   {
+    "text": " ada",
+    "start": 75.42,
+    "end": 75.54,
+    "p": 0.9615353941917419
+   },
+   {
+    "text": " apa",
+    "start": 75.54,
+    "end": 75.64,
+    "p": 0.45154285430908203
+   },
+   {
+    "text": "-apa",
+    "start": 75.64,
+    "end": 75.72,
+    "p": 0.7506900131702423
+   },
+   {
+    "text": " soalan",
+    "start": 75.72,
+    "end": 75.9,
+    "p": 0.9988715946674347
+   },
+   {
+    "text": " boleh",
+    "start": 75.9,
+    "end": 76.18,
+    "p": 0.9895443320274353
+   },
+   {
+    "text": " tanya",
+    "start": 76.18,
+    "end": 76.42,
+    "p": 0.9996038377285004
+   },
+   {
+    "text": " di",
+    "start": 76.42,
+    "end": 76.52,
+    "p": 0.9776745438575745
+   },
+   {
+    "text": " dalam",
+    "start": 76.52,
+    "end": 76.56,
+    "p": 0.43720459938049316
+   },
+   {
+    "text": " komen",
+    "start": 76.56,
+    "end": 76.84,
+    "p": 0.9912061095237732
+   }
+  ]
+ },
+ {
+  "start": 76.84,
+  "end": 77.46,
+  "text": " take care",
+  "words": [
+   {
+    "text": " take",
+    "start": 76.84,
+    "end": 77.18,
+    "p": 0.9179461002349854
+   },
+   {
+    "text": " care",
+    "start": 77.18,
+    "end": 77.46,
+    "p": 0.9999892711639404
+   }
+  ]
+ },
+ {
+  "start": 114.93999999999998,
+  "end": 118.32,
+  "text": " Terima kasih kerana menonton",
+  "words": [
+   {
+    "text": " Terima",
+    "start": 114.93999999999998,
+    "end": 116.33999999999999,
+    "p": 0.8104878067970276
+   },
+   {
+    "text": " kasih",
+    "start": 116.33999999999999,
+    "end": 117.74,
+    "p": 0.99411940574646
+   },
+   {
+    "text": " kerana",
+    "start": 117.74,
+    "end": 118.32,
+    "p": 0.9800861179828644
+   },
+   {
+    "text": " menonton",
+    "start": 118.32,
+    "end": 118.32,
+    "p": 0.9978323876857758
+   }
+  ]
+ },
+ {
+  "start": 142.07999999999998,
+  "end": 148.32,
+  "text": " Terima kasih kerana menonton!",
+  "words": [
+   {
+    "text": " Terima",
+    "start": 142.07999999999998,
+    "end": 143.48,
+    "p": 0.7699106633663177
+   },
+   {
+    "text": " kasih",
+    "start": 143.48,
+    "end": 144.88,
+    "p": 0.9958920478820801
+   },
+   {
+    "text": " kerana",
+    "start": 144.88,
+    "end": 148.32,
+    "p": 0.9764305651187897
+   },
+   {
+    "text": " menonton!",
+    "start": 148.32,
+    "end": 148.32,
+    "p": 0.9946331679821014
+   }
+  ]
+ },
+ {
+  "start": 148.34,
+  "end": 149.96,
+  "text": " Terima kasih kerana menonton!",
+  "words": [
+   {
+    "text": " Terima",
+    "start": 148.34,
+    "end": 149.08,
+    "p": 0.8345870077610016
+   },
+   {
+    "text": " kasih",
+    "start": 149.08,
+    "end": 149.52,
+    "p": 0.9918938279151917
+   },
+   {
+    "text": " kerana",
+    "start": 149.52,
+    "end": 149.96,
+    "p": 0.963340699672699
+   },
+   {
+    "text": " menonton!",
+    "start": 149.96,
+    "end": 149.96,
+    "p": 0.9977563321590424
+   }
+  ]
+ }
+]
