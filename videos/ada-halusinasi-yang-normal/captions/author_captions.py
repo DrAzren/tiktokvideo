@@ -18,8 +18,8 @@ C = Path(__file__).parent
 P = C / "project"
 words = json.loads((C / "transcript.json").read_text())["words"]
 
-MAX_WORDS, MAX_CHARS, PAUSE, MIN_ON = 3, 19, 0.28, 0.62
-FIT = 19   # characters that fit one Anton line at 0.05h across the plane — merges never exceed it
+MAX_WORDS, MAX_CHARS, PAUSE, MIN_ON = 3, 19, 0.28, 0.78
+FIT = 21   # characters that fit one Anton line at 0.046h across the plane — merges never exceed it
 FORCE_BREAK = set()
 # fixed phrases that must never be split across two caption lines
 GLUE = {("pesakit", "mental"), ("persepsi", "deria"), ("rangsangan", "sebenar"), ("external", "stimulation"),
@@ -27,7 +27,8 @@ GLUE = {("pesakit", "mental"), ("persepsi", "deria"), ("rangsangan", "sebenar"),
         ("kesihatan", "mental"), ("gangguan", "neurologi"), ("gangguan", "mental"), ("take", "care"),
         ("jumpa", "doktor"), ("di", "ruang"), ("ruang", "komen"), ("lima", "hari"), ("dua", "tiga"),
         ("tiga", "jam"), ("tak", "wujud"), ("orang", "normal"), ("orang", "sihat"), ("sebelum", "kita"),
-        ("dapatkan", "bantuan"), ("tak", "semestinya"), ("nama", "anda"), ("diri", "anda")}
+        ("dapatkan", "bantuan"), ("tak", "semestinya"), ("nama", "anda"), ("diri", "anda"), ("perkongsian", "ilmu"),
+        ("boleh", "tanya")}
 
 
 # clause/sentence ends: large-v3's punctuated transcript of the same cut, attached to OUR words by
@@ -58,7 +59,7 @@ def punct_break(prev, w, strong_only=False):
     return m == "." if strong_only else m is not None
 
 
-BODY_CSS = ("font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; "
+BODY_CSS = ("font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; "
             "-webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; "
             "text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);")
 HERO_CSS = "font-size: calc(0.10*var(--h)); text-transform: uppercase; color: #0E5E6F !important;"
@@ -123,13 +124,56 @@ def block(ln):
     return {"plane": "narr", "flip": True, "lines": [{"words": [w["text"] for w in ln], "css": BODY_CSS}]}
 
 
-blocks = [block(ln) for ln in group(words[:hero_i - 2])]
+# hand-broken lines where he speaks fast (auto-grouping left 0.3-0.6s flashes); each entry is the
+# exact spoken words, one string per caption line
+PINNED = [
+    ["definisi halusinasi", "bermaksud persepsi", "deria yang terjadi", "tanpa rangsangan", "sebenar daripada",
+     "persekitaran"],
+    ["atau gangguan", "mental yang lain"],
+    ["termasuklah", "orang yang normal", "orang yang sihat"],
+    ["ada juga halusinasi", "yang berlaku selepas", "kita bangun dari tidur", "yang kita panggil",
+     "sebagai hypnopompic", "hallucination"],
+    ["mencipta image", "atau bunyi yang", "tak wujud pun"],
+    ["semakin kerap", "boleh mengganggu", "kehidupan seharian"],
+    ["mungkin menjadi", "petanda masalah mental", "dan memerlukan rawatan"],
+    ["tapi kalau", "ia berterusan", "better jumpa doktor", "untuk check"],
+    ["jangan lupa follow", "untuk lebih banyak", "perkongsian ilmu"],
+    ["apa-apa soalan boleh", "tanya di ruang komen", "take care"],
+]
+
+
+def lines_for(ws):
+    """group() the free stretches; PINNED phrases keep their hand breaks."""
+    toks = [w["text"] for w in ws]
+    spans = []
+    for spec in PINNED:
+        flat = " ".join(spec).split()
+        hits = [i for i in range(len(toks) - len(flat) + 1) if toks[i:i + len(flat)] == flat]
+        if hits:
+            spans.append((hits[0], hits[0] + len(flat), spec))
+    spans.sort()
+    out, i = [], 0
+    for a, b, spec in spans:
+        out += group(ws[i:a]) if a > i else []
+        k = a
+        for ln in spec:
+            n = len(ln.split())
+            out.append(ws[k:k + n])
+            k += n
+        i = b
+    return out + (group(ws[i:]) if i < len(ws) else [])
+
+
+used = [spec for spec in PINNED if " ".join(" ".join(spec).split()) in " ".join(w["text"] for w in words)]
+assert len(used) == len(PINNED), [spec for spec in PINNED if spec not in used]
+
+blocks = [block(ln) for ln in lines_for(words[:hero_i - 2])]
 hero_block = {"plane": "narr", "flip": True, "lines": [
     {"words": ["itu", "adalah"], "css": BODY_CSS},
     {"words": ["halusinasi"], "hero": True, "css": HERO_CSS},
 ]}
 blocks.append(hero_block)
-blocks += [block(ln) for ln in group(words[hero_i + 1:])]
+blocks += [block(ln) for ln in lines_for(words[hero_i + 1:])]
 
 cin = {
     "dna": "loud",

@@ -18,7 +18,7 @@
       "tak",
       "anda"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -32,7 +32,7 @@
       "suara",
       "orang"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -46,7 +46,7 @@
       "nama",
       "anda"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -60,7 +60,7 @@
       "bila",
       "toleh"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -75,7 +75,7 @@
       "siapa",
       "pun"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -89,7 +89,7 @@
       "ada",
       "orang"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -102,7 +102,7 @@
       "yang",
       "berbisik"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -116,7 +116,7 @@
       "bisikan",
       "yang"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -130,7 +130,7 @@
       "jelas",
       "cakap"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -143,7 +143,7 @@
       "benda",
       "negatif"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -157,7 +157,7 @@
       "diri",
       "anda"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -171,7 +171,7 @@
       "anda",
       "nampak"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -184,7 +184,7 @@
       "bayang-bayang",
       "hitam"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -198,7 +198,7 @@
       "tapi",
       "bila"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -212,7 +212,7 @@
       "balik",
       "tak"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -226,7 +226,7 @@
       "apa-apa",
       "kosong"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -239,7 +239,7 @@
       "itu",
       "adalah"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     },
     {
      "words": [
@@ -259,7 +259,7 @@
       "tapi",
       "adakah"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -272,7 +272,7 @@
       "halusinasi",
       "ini"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -283,21 +283,10 @@
     {
      "words": [
       "hanya",
-      "berlaku"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
+      "berlaku",
       "kepada"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -310,7 +299,7 @@
       "pesakit",
       "mental"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -324,7 +313,7 @@
       "kita",
       "bincangkan"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -337,7 +326,7 @@
       "definisi",
       "halusinasi"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -347,9 +336,10 @@
    "lines": [
     {
      "words": [
-      "bermaksud"
+      "bermaksud",
+      "persepsi"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -359,11 +349,11 @@
    "lines": [
     {
      "words": [
-      "persepsi",
       "deria",
-      "yang"
+      "yang",
+      "terjadi"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -373,10 +363,10 @@
    "lines": [
     {
      "words": [
-      "terjadi",
-      "tanpa"
+      "tanpa",
+      "rangsangan"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -386,22 +376,10 @@
    "lines": [
     {
      "words": [
-      "rangsangan",
-      "sebenar"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
+      "sebenar",
       "daripada"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -413,7 +391,7 @@
      "words": [
       "persekitaran"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -426,7 +404,7 @@
       "without",
       "any"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -439,7 +417,7 @@
       "external",
       "stimulation"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -453,7 +431,7 @@
       "boleh",
       "melibatkan"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -465,7 +443,7 @@
      "words": [
       "pendengaran"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -475,22 +453,11 @@
    "lines": [
     {
      "words": [
-      "penglihatan"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
+      "penglihatan",
       "bau",
       "rasa"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -503,7 +470,7 @@
       "sentuhan",
       "yang"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -517,7 +484,7 @@
       "wujud",
       "pun"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -530,7 +497,7 @@
       "halusinasi",
       "ini"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -543,7 +510,7 @@
       "bukannya",
       "hanya"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -556,7 +523,7 @@
       "dialami",
       "oleh"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -569,7 +536,7 @@
       "pesakit",
       "mental"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -582,7 +549,7 @@
       "seperti",
       "pesakit"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -592,10 +559,9 @@
    "lines": [
     {
      "words": [
-      "skizofrenia",
-      "atau"
+      "skizofrenia"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -605,10 +571,10 @@
    "lines": [
     {
      "words": [
-      "gangguan",
-      "mental"
+      "atau",
+      "gangguan"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -618,10 +584,11 @@
    "lines": [
     {
      "words": [
+      "mental",
       "yang",
       "lain"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -635,7 +602,7 @@
       "juga",
       "boleh"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -648,7 +615,7 @@
       "berlaku",
       "pada"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -661,7 +628,7 @@
       "sesiapa",
       "saja"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -671,10 +638,9 @@
    "lines": [
     {
      "words": [
-      "termasuklah",
-      "orang"
+      "termasuklah"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -684,10 +650,11 @@
    "lines": [
     {
      "words": [
+      "orang",
       "yang",
       "normal"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -701,7 +668,7 @@
       "yang",
       "sihat"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -715,7 +682,7 @@
       "yang",
       "pertama"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -728,7 +695,7 @@
       "adalah",
       "halusinasi"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -742,7 +709,7 @@
       "kita",
       "panggil"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -755,7 +722,7 @@
       "sebagai",
       "hypnagogic"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -768,7 +735,7 @@
       "hallucination",
       "iaitu"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -782,7 +749,7 @@
       "atau",
       "suara"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -795,7 +762,7 @@
       "yang",
       "muncul"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -809,7 +776,7 @@
       "kita",
       "tidur"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -823,7 +790,7 @@
       "tak",
       "rasa"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -837,7 +804,7 @@
       "sesuatu",
       "yang"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -851,7 +818,7 @@
       "selimut",
       "anda"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -865,7 +832,7 @@
       "bila",
       "buka"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -879,7 +846,7 @@
       "tak",
       "ada"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -893,7 +860,7 @@
       "pun",
       "itu"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -906,7 +873,7 @@
       "normal",
       "dan"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -919,7 +886,7 @@
       "tak",
       "semestinya"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -932,7 +899,7 @@
       "tanda",
       "penyakit"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -946,7 +913,7 @@
       "juga",
       "halusinasi"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -957,9 +924,10 @@
     {
      "words": [
       "yang",
-      "berlaku"
+      "berlaku",
+      "selepas"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -969,25 +937,12 @@
    "lines": [
     {
      "words": [
-      "selepas",
       "kita",
-      "bangun"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
+      "bangun",
       "dari",
-      "tidur",
-      "yang"
+      "tidur"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -997,10 +952,11 @@
    "lines": [
     {
      "words": [
+      "yang",
       "kita",
       "panggil"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1013,7 +969,7 @@
       "sebagai",
       "hypnopompic"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1025,7 +981,7 @@
      "words": [
       "hallucination"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1039,7 +995,7 @@
       "juga",
       "halusinasi"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1053,7 +1009,7 @@
       "berlaku",
       "akibat"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1063,22 +1019,11 @@
    "lines": [
     {
      "words": [
-      "seorang"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
+      "seorang",
       "kurang",
       "tidur"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1092,7 +1037,7 @@
       "anda",
       "tak"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1106,7 +1051,7 @@
       "rehat",
       "selama"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1119,7 +1064,7 @@
       "beberapa",
       "hari"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1133,7 +1078,7 @@
       "lima",
       "hari"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1144,23 +1089,12 @@
     {
      "words": [
       "tidur",
-      "dua"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
+      "dua",
       "tiga",
       "jam",
       "je"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1174,7 +1108,7 @@
       "boleh",
       "jadi"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1188,7 +1122,7 @@
       "dan",
       "boleh"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1199,10 +1133,9 @@
     {
      "words": [
       "mencipta",
-      "image",
-      "atau"
+      "image"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1212,10 +1145,11 @@
    "lines": [
     {
      "words": [
+      "atau",
       "bunyi",
       "yang"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1229,7 +1163,7 @@
       "wujud",
       "pun"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1242,7 +1176,7 @@
       "halusinasi",
       "ini"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1255,7 +1189,7 @@
       "boleh",
       "disebabkan"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1269,7 +1203,7 @@
       "banyak",
       "faktor"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1283,7 +1217,7 @@
       "lain",
       "seperti"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1297,7 +1231,7 @@
       "yang",
       "melampau"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1310,7 +1244,7 @@
       "kesedihan",
       "yang"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1322,7 +1256,7 @@
      "words": [
       "berpanjangan"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1335,7 +1269,7 @@
       "penggunaan",
       "dadah"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1348,7 +1282,7 @@
       "migrain",
       "atau"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1361,7 +1295,7 @@
       "gangguan",
       "neurologi"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1374,7 +1308,7 @@
       "seperti",
       "parkinson"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1387,7 +1321,7 @@
       "tapi",
       "kalau"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1400,7 +1334,7 @@
       "halusinasi",
       "ini"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1411,10 +1345,9 @@
     {
      "words": [
       "semakin",
-      "kerap",
-      "boleh"
+      "kerap"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1424,9 +1357,10 @@
    "lines": [
     {
      "words": [
+      "boleh",
       "mengganggu"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1439,7 +1373,7 @@
       "kehidupan",
       "seharian"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1453,7 +1387,7 @@
       "atau",
       "datang"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1466,7 +1400,7 @@
       "dengan",
       "perasaan"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1480,7 +1414,7 @@
       "atau",
       "paranoid"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1493,7 +1427,7 @@
       "mungkin",
       "menjadi"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1503,23 +1437,11 @@
    "lines": [
     {
      "words": [
-      "petanda"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
+      "petanda",
       "masalah",
-      "mental",
-      "dan"
+      "mental"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1529,10 +1451,11 @@
    "lines": [
     {
      "words": [
+      "dan",
       "memerlukan",
       "rawatan"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1546,7 +1469,7 @@
       "takut",
       "untuk"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1559,7 +1482,7 @@
       "dapatkan",
       "bantuan"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1572,7 +1495,7 @@
       "kesimpulannya",
       "tak"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1585,7 +1508,7 @@
       "semua",
       "halusinasi"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1599,7 +1522,7 @@
       "sakit",
       "mental"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1610,10 +1533,9 @@
     {
      "words": [
       "tapi",
-      "kalau",
-      "ia"
+      "kalau"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1623,10 +1545,10 @@
    "lines": [
     {
      "words": [
-      "berterusan",
-      "better"
+      "ia",
+      "berterusan"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1636,11 +1558,11 @@
    "lines": [
     {
      "words": [
+      "better",
       "jumpa",
-      "doktor",
-      "untuk"
+      "doktor"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1650,25 +1572,10 @@
    "lines": [
     {
      "words": [
-      "check",
-      "jangan",
-      "lupa"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
-      "follow",
       "untuk",
-      "lebih"
+      "check"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1678,10 +1585,11 @@
    "lines": [
     {
      "words": [
-      "banyak",
-      "perkongsian"
+      "jangan",
+      "lupa",
+      "follow"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1691,9 +1599,24 @@
    "lines": [
     {
      "words": [
+      "untuk",
+      "lebih",
+      "banyak"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "perkongsian",
       "ilmu"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1706,7 +1629,7 @@
       "kesihatan",
       "mental"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1717,9 +1640,10 @@
     {
      "words": [
       "apa-apa",
-      "soalan"
+      "soalan",
+      "boleh"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1729,24 +1653,12 @@
    "lines": [
     {
      "words": [
-      "boleh",
-      "tanya"
-     ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
-    }
-   ]
-  },
-  {
-   "plane": "narr",
-   "flip": true,
-   "lines": [
-    {
-     "words": [
+      "tanya",
       "di",
       "ruang",
       "komen"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   },
@@ -1759,7 +1671,7 @@
       "take",
       "care"
      ],
-     "css": "font-size: calc(0.05*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
    ]
   }
