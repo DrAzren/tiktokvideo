@@ -21,7 +21,7 @@ WORDS = json.loads((W.parent / "edit" / "cut_words.json").read_text())
 FPS = 30
 TEAL, DEEP, MINT, CREAM, INK, RED, MUTED = "#0E5E6F", "#08323C", "#5EEAD4", "#FFF8EE", "#0B1F2A", "#E5484D", "#6B7C85"
 LEAD = 0.12          # an element starts this much before its word so it lands on it
-HERO = (14.0, 15.5)  # "Itu adalah HALUSINASI" — matted behind the head: inserts must stay clear
+HERO = (14.25, 15.5)  # "Itu adalah HALUSINASI" — matted behind the head: inserts must stay clear
 
 
 def T(phrase: str, after: float = 0.0, end: bool = False) -> float:
@@ -45,6 +45,8 @@ ICON = {
     "taste": '<path d="M14 18h20v6a10 10 0 0 1-20 0z"/><path d="M24 26v8"/><path d="M12 18c3-5 21-5 24 0"/>',
     "hand": '<path d="M16 26V13a2.5 2.5 0 0 1 5 0v10M21 22V10a2.5 2.5 0 0 1 5 0v12M26 22V12a2.5 2.5 0 0 1 5 0v12'
             'M31 24v-6a2.5 2.5 0 0 1 5 0v10c0 8-5 13-12 13-5 0-8-3-11-8l-4-7a2.5 2.5 0 0 1 4-3l3 4"/>',
+    "speech": '<path d="M8 12h32v20H22l-8 7v-7H8z"/><path d="M15 20h18M15 26h11"/>',
+    "person": '<circle cx="24" cy="13" r="6"/><path d="M12 42v-8a12 12 0 0 1 24 0v8"/>',
     "bolt": '<path d="M27 5L12 27h11l-3 16 16-23H25z"/>',
     "rain": '<path d="M15 27a8 8 0 0 1 1.5-15.8A10 10 0 0 1 35 14a7 7 0 0 1-1 13.9H15z"/><path d="M17 32l-2 6M25 32l-2 6M33 32l-2 6"/>',
     "pill": '<rect x="9" y="17" width="30" height="14" rx="7" transform="rotate(-35 24 24)"/><path d="M20 17l8 14"/>',
@@ -70,7 +72,7 @@ def build():
                   "text": text or []})
 
     # "atau anda nampak bayang-bayang hitam lalu, tapi bila tengok balik, tak ada apa-apa, kosong"
-    broll("b1-hallway", "hallway", T("bayang bayang hitam") - 0.1, T("kosong", end=True) + 0.1, (1.04, 1.13, 18, -10))
+    broll("b1-hallway", "hallway", T("bayang bayang hitam") - 0.1, T("kosong", end=True) + 0.08, (1.04, 1.13, 18, -10))
     # "pernah tak rasa ada sesuatu yang tarik selimut anda, tapi bila buka mata ..."
     broll("b2-bedroom", "bedroom", T("pernah tak rasa") - 0.1, T("buka mata", end=True) + 0.25, (1.12, 1.03, 0, 14))
     # "bila anda tak cukup rehat selama beberapa hari, contohnya lima hari, tidur dua tiga jam je"
@@ -125,10 +127,10 @@ def build():
     I.append({"id": "m3-tidur", "kind": "mg", "start": fq(s - 0.1), "end": fq(T("hypnopompic hallucination", after=s, end=True) + 0.35),
               "body": f"""
       <div class="half top"><img src="broll/bedroom.jpg" class="half-img" style="top:-420px"/><div class="half-shade"></div>
-        <div class="slot" style="top:150px"><div class="mg-chip" id="m3-c1">Sebelum tidur</div>
+        <div class="slot" style="top:150px"><div class="mg-chip" id="m3-c1">#1 · Sebelum tidur</div>
           <div class="slot-title" id="m3-t1">Hypnagogic</div></div></div>
-      <div class="half bot img"><img src="broll/morning.jpg" class="half-img" id="m3-img2" style="top:-560px"/><div class="half-shade"></div>
-        <div class="slot" style="top:120px"><div class="mg-chip sun" id="m3-c2">Selepas bangun</div>
+      <div class="half bot img"><img src="broll/morning.jpg" class="half-img" id="m3-img2" style="top:-560px"/><div class="half-shade dark"></div>
+        <div class="slot" style="top:120px"><div class="mg-chip sun" id="m3-c2">#2 · Selepas bangun</div>
           <div class="slot-title" id="m3-t2">Hypnopompic</div></div></div>
       <div class="seam" id="m3-seam"></div>
       <div class="ai-tag" style="top:1440px">Ilustrasi AI</div>""",
@@ -240,7 +242,7 @@ CSS = f"""
   rgba(0,0,0,0) 20%, rgba(0,0,0,.34) 25%, rgba(0,0,0,.30) 32%, rgba(0,0,0,0) 42%, rgba(0,0,0,0) 52%, rgba(0,0,0,.45) 66%, rgba(0,0,0,.2) 80%); }}
 .ai-tag {{ position:absolute; left:48px; top:160px; font:700 24px 'Plus Jakarta Sans'; letter-spacing:.08em; text-transform:uppercase;
   color:rgba(255,255,255,.92); background:rgba(0,0,0,.40); padding:7px 14px 6px; border-radius:10px; z-index:5; }}
-.kb-stat {{ position:absolute; left:70px; right:70px; top:1120px; text-align:center; font-family:'Plus Jakarta Sans'; font-weight:800;
+.kb-stat {{ position:absolute; left:70px; right:70px; top:700px; text-align:center; font-family:'Plus Jakarta Sans'; font-weight:800;
   font-size:84px; line-height:1.08; letter-spacing:-.02em; color:{CREAM}; text-shadow:0 6px 28px rgba(0,0,0,.6); }}
 .kb-stat .mint, .mg .mint {{ color:{MINT}; }}
 .mg {{ position:absolute; inset:0; background:radial-gradient(120% 80% at 80% 10%, {TEAL} 0%, {DEEP} 62%, #051E25 100%);
@@ -270,6 +272,7 @@ CSS = f"""
 .half.top {{ top:0; background:radial-gradient(120% 90% at 80% 0%, #1B3A44 0%, #0A1E25 70%); }}
 .half.bot {{ top:960px; background:radial-gradient(120% 90% at 20% 0%, {TEAL} 0%, {DEEP} 70%); }}
 .half-img {{ position:absolute; left:0; width:1080px; height:1920px; object-fit:cover; }}
+.half-shade.dark {{ background:linear-gradient(180deg, rgba(4,20,26,.78) 0%, rgba(4,20,26,.55) 38%, rgba(0,0,0,.05) 62%, rgba(0,0,0,.35)); }}
 .half-shade {{ position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.1) 45%, rgba(0,0,0,.5)); }}
 .at-top {{ position:absolute; left:80px; top:170px; }}
 .myth {{ position:absolute; left:80px; top:640px; font-weight:800; font-size:70px; color:rgba(255,248,238,.62); }}
@@ -278,8 +281,8 @@ CSS = f"""
 .bigx {{ position:absolute; right:70px; top:760px; }}
 .stamp-lg {{ display:inline-block; transform:rotate(-7deg); border:8px solid {RED}; color:{RED}; border-radius:18px; font-weight:800;
   font-size:76px; letter-spacing:.04em; padding:8px 28px 2px; background:rgba(255,248,238,.94); }}
-.half.bot .mg-chip {{ position:absolute; left:80px; top:70px; }}
-.half.bot .mg-title {{ position:absolute; left:80px; top:150px; font-size:86px; margin:0; }}
+.half.bot > .mg-chip {{ position:absolute; left:80px; top:70px; }}
+.half.bot > .mg-title {{ position:absolute; left:80px; top:150px; font-size:86px; margin:0; }}
 .pills {{ position:absolute; left:80px; top:420px; display:flex; gap:22px; }}
 .pill-lg {{ font-weight:800; font-size:50px; padding:18px 32px; border-radius:22px; background:{CREAM}; color:{INK}; }}
 .slot {{ position:absolute; left:80px; }}

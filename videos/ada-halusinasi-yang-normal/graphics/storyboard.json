@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 3,
+  "composition": {
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "durationSeconds": 110.336,
+    "layout": "portrait",
+    "themeId": "custom-teal",
+    "seed": 7
+  },
+  "videoTrack": {
+    "sourcePath": "input-video.mp4",
+    "startSec": 0,
+    "endSec": 110.336,
+    "bounds": {
+      "x": 0,
+      "y": 320,
+      "width": 1080,
+      "height": 1920
+    }
+  },
+  "subtitles": {
+    "enabled": false
+  },
+  "cards": [
+    {
+      "id": "c01-hook",
+      "intent": "Hook — have you experienced these?",
+      "startSec": 0.0,
+      "endSec": 11.5167,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c02-soalan",
+      "intent": "The question",
+      "startSec": 15.5333,
+      "endSec": 19.5333,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c03-definisi",
+      "intent": "Definition",
+      "startSec": 19.5333,
+      "endSec": 28.1833,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 2
+      }
+    },
+    {
+      "id": "c04-mitos",
+      "intent": "Myth: only mental patients — NOT TRUE",
+      "startSec": 32.9333,
+      "endSec": 39.8833,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c05-contoh1",
+      "intent": "Example 1: hypnagogic",
+      "startSec": 43.9,
+      "endSec": 52.7167,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c06-normal",
+      "intent": "That's normal, not a sign of illness",
+      "startSec": 56.2,
+      "endSec": 59.35,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c07-contoh3",
+      "intent": "Example 3: sleep deprivation",
+      "startSec": 64.9333,
+      "endSec": 68.6167,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c08-overload",
+      "intent": "The brain overloads and creates images/sounds",
+      "startSec": 72.9,
+      "endSec": 77.6833,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c09-bantuan",
+      "intent": "Don't be afraid to get help",
+      "startSec": 97.3667,
+      "endSec": 99.1333,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c10-kesimpulan",
+      "intent": "Conclusion",
+      "startSec": 99.1333,
+      "endSec": 102.2167,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c11-cta",
+      "intent": "CTA — follow, comment",
+      "startSec": 104.0,
+      "endSec": 110.3333,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 2
+      }
+    }
+  ],
+  "inserts": [
+    {
+      "id": "b1-hallway",
+      "kind": "broll",
+      "startSec": 11.1667,
+      "endSec": 14.2333
+    },
+    {
+      "id": "m1-deria",
+      "kind": "mg",
+      "startSec": 27.8333,
+      "endSec": 33.1
+    },
+    {
+      "id": "m2-realiti",
+      "kind": "mg",
+      "startSec": 39.5333,
+      "endSec": 44.2333
+    },
+    {
+      "id": "b2-bedroom",
+      "kind": "broll",
+      "startSec": 52.3667,
+      "endSec": 56.3333
+    },
+    {
+      "id": "m3-tidur",
+      "kind": "mg",
+      "startSec": 59.0,
+      "endSec": 65.2
+    },
+    {
+      "id": "b3-desk",
+      "kind": "broll",
+      "startSec": 68.2667,
+      "endSec": 73.0333
+    },
+    {
+      "id": "m4-punca",
+      "kind": "mg",
+      "startSec": 77.3333,
+      "endSec": 87.5333
+    },
+    {
+      "id": "m5-amaran",
+      "kind": "mg",
+      "startSec": 87.2,
+      "endSec": 97.9333
+    },
+    {
+      "id": "b4-doctor",
+      "kind": "broll",
+      "startSec": 101.8667,
+      "endSec": 104.3333
+    }
+  ]
+}
