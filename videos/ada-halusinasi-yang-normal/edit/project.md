@@ -59,9 +59,17 @@ soft ambient bed ducked under the voice; −14 LUFS / −1 dBTP.
   (42 frames, 36 s) instead of all 3311 frames; the rest of `frames_fg/` is one hard-linked blank.
 - Gates: inject-fonts, check-timing --strict (308 words OK), check-occlusion --strict (PASS).
 
-**Audio** (`tools/mix_music.py --voice-fx enhance`, new): high-pass 80 Hz, light de-noise, −2.5 dB
+**Audio** (`tools/mix_music.py --voice-fx enhance`, new): high-pass 80 Hz, −2.5 dB
 at 250 Hz, +3 dB presence at 3.2 kHz, air shelf, de-esser, 3:1 compressor +5 dB makeup; original
-D-major ambient bed (`tools/ambient_bed.py`) at −26 LUFS undocked, sidechain-ducked.
+D-major ambient bed (`tools/ambient_bed.py`) at −26 LUFS undocked, sidechain-ducked; music sits
+19.6 dB under the voice. `afftdn` (de-noise) was dropped from the chain: it delays audio by a constant
+25 ms (measured per filter) — the first mix read 25 ms lag at every range. The clean export's floor is
+−70 dB anyway.
+
+**QA** (`qa.sh`, on `final.mp4` and `final_tiktok.mp4`): 1080×1920 @ 30, 3311 frames, 1:50.4;
+sync worst 0.9 ms; −14.0 LUFS, true peak −1.0 dBTP, LRA 1.1 LU; no black frames (≥0.1 s),
+no frozen frames (≥1 s); contact sheet `edit/verify/final_sheet.png`. `final_tiktok.mp4` = two-pass
+x264 1850 kb/s, audio copied → 28.4 MB.
 
 **Outstanding**
 - Switch on TikTok's "AI-generated content" label (AI B-roll stills).

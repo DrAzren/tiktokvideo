@@ -29,7 +29,7 @@ TARGET = "I=-14:TP=-1:LRA=11"
 # --voice-fx enhance: clearer, more forward dialogue before it is mixed and mastered
 VOICE_FX = {
     "enhance": ("highpass=f=80:poles=2,"                          # rumble / handling noise
-                "afftdn=nr=6:nf=-50:tn=1,"                         # light broadband de-noise (tracks the floor)
+                # (no afftdn: it delays audio by a constant 25 ms and breaks lip sync)
                 "equalizer=f=250:t=q:w=1.0:g=-2.5,"                # boxy/mud
                 "equalizer=f=3200:t=q:w=1.2:g=3,"                  # presence: intelligibility on phone speakers
                 "equalizer=f=10000:t=h:w=3000:g=1.5,"              # air
