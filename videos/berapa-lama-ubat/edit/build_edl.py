@@ -2,7 +2,7 @@
 
 Template: videos/ward-psikiatri/edit/build_edl.py (same edge rules). Differences:
   - the source is a CapCut export with a music bed mixed under the voice, so audio comes from
-    the demucs vocal stem (src_clean.mp4 = working video + vocals) and a new bed goes on in stage 6;
+    the demucs vocal stem (src_clean.mov = working video + vocals) and a new bed goes on in stage 6;
   - TRIM shortens drawn-out words ("kalauuu") to a natural length before the forced cut.
 
 Segments reference aligned.json words as (island, first_word, island, last_word).
@@ -21,7 +21,7 @@ import numpy as np
 
 E = Path(__file__).parent
 SRC = "ubat"
-SRC_PATH = str((E / "src_clean.mp4").resolve())
+SRC_PATH = str((E / "src_clean.mov").resolve())
 
 QUIET_DB = -40.0     # below this for QUIET_RUN frames = the word has really ended/not begun
 QUIET_RUN = 3        # 30ms
@@ -33,7 +33,7 @@ ZOOMS = [1.0, 1.06, 1.02, 1.07]  # punch-in levels cycled across jump cuts (user
 PUNCH_MIN = 0.8      # ranges shorter than this keep the previous zoom (no flicker)
 MICRO = 0.7          # a pause-shrink cut that leaves a range shorter than this is undone (no stutter)
 TAIL_HOLD = 1.0      # freeze the last frame so the end card / CTA can land
-FACE = [0.53, 0.42]  # zoom focus: face centre as a fraction of the frame (head top ~y385, chin ~y1180)
+FACE = [0.50, 0.62]  # zoom focus (after the caption crop): nose height, so punch-ins push the mouth down as little as possible
 
 # (island_a, word_a, island_b, word_b, beat, note[, {"start"/"end": override s, "gain_db": dB}])
 SEGMENTS = [
@@ -96,8 +96,8 @@ def main() -> None:
         i, stop = int(t * 100), int(hi * 100)
         while i < stop and not quiet(i):
             i += 1
-        if i >= stop:  # never goes quiet (breath/hum follows): cut at the deepest dip
-            return emin(t - 0.02, hi)
+        if i >= stop:  # never goes quiet (breath/hum follows): cut at the deepest dip near the word's own
+            return emin(t - 0.02, min(hi, t + 0.12))   # edge (a mid-gap dip would keep half the breath)
         return min(limit, i / 100 + TAIL_OUT)
 
     def snap_in(t: float, floor: float) -> float:
@@ -106,7 +106,7 @@ def main() -> None:
         while i > stop and not quiet(i - QUIET_RUN):
             i -= 1
         if i <= stop:
-            return emin(lo, t + 0.02)
+            return emin(max(lo, t - 0.12), t + 0.02)
         return max(floor, i / 100 - LEAD_IN)
 
     def between(a: dict, b: dict) -> float:
@@ -146,8 +146,12 @@ def main() -> None:
             if dropped or hes:
                 # the neighbour is a filler/voiced hesitation, so energy never goes quiet: cut at the
                 # deepest dip right at each word's own edge
-                seg.append([cur, emin(a["end"] - 0.02, a["end"] + 0.07)])
-                cur = emin(b["start"] - 0.07, b["start"] + 0.02)
+                # the search windows stop at the dropped word's own edges: a short coarticulated "ni"/"tu"
+                # would otherwise survive inside a window that reaches past it
+                hi = a["end"] + 0.07 if not dropped else max(a["end"] + 0.01, min(a["end"] + 0.07, flat[k + 1]["start"] + 0.01))
+                lo = b["start"] - 0.07 if not dropped else min(b["start"] - 0.01, max(b["start"] - 0.07, flat[k2 - 1]["end"] - 0.01))
+                seg.append([cur, emin(a["end"] - 0.02, hi)])
+                cur = emin(lo, b["start"] + 0.02)
                 forced.append(True)
             elif b["start"] - a["end"] > MAX_PAUSE:
                 seg.append([cur, cut_out(k)])
@@ -177,6 +181,17 @@ def main() -> None:
                 r["reason"] = note
             ranges.append(r)
 
+    # ranges that touch in the source (island boundaries with no real gap) are one take: merge them,
+    # or the renderer's 30ms edge fades would put an audible dip mid-word
+    merged = []
+    for r in ranges:
+        if merged and merged[-1]["end"] >= r["start"] - 0.02 and merged[-1].get("gain_db") == r.get("gain_db"):
+            merged[-1]["end"] = r["end"]
+            if "reason" in r:
+                merged[-1]["reason"] = r["reason"]
+        else:
+            merged.append(r)
+    ranges = merged
     z, zi = ZOOMS[0], 0
     for i, r in enumerate(ranges):
         assert r["end"] - r["start"] > 0.15, r
