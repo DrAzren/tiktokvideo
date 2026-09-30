@@ -9,7 +9,7 @@ Also reports how far the music sits below the voice during speech vs. pauses, so
 the balance is measured, not guessed.
 
 Usage:
-    python tools/mix_music.py <video.mp4> <bed.wav> -o <out.mp4> [--bed-lufs -20] [--fade-out 2.5]
+    python tools/mix_music.py <video.mp4> <bed.wav> -o <out.mp4> [--bed-lufs -20] [--fade-out 2.5] [--voice-fx enhance]
 """
 
 from __future__ import annotations
@@ -26,6 +26,16 @@ import soundfile as sf
 MUSIC_EQ = "highpass=f=120:poles=2,equalizer=f=320:t=q:w=1.2:g=-4"  # phone speakers lose <300Hz anyway
 DUCK = "sidechaincompress=threshold=0.05:ratio=4:attack=30:release=600:knee=6:makeup=1"
 TARGET = "I=-14:TP=-1:LRA=11"
+# --voice-fx enhance: clearer, more forward dialogue before it is mixed and mastered
+VOICE_FX = {
+    "enhance": ("highpass=f=80:poles=2,"                          # rumble / handling noise
+                "afftdn=nr=6:nf=-50:tn=1,"                         # light broadband de-noise (tracks the floor)
+                "equalizer=f=250:t=q:w=1.0:g=-2.5,"                # boxy/mud
+                "equalizer=f=3200:t=q:w=1.2:g=3,"                  # presence: intelligibility on phone speakers
+                "equalizer=f=10000:t=h:w=3000:g=1.5,"              # air
+                "deesser=i=0.35:m=0.5:f=0.5,"
+                "acompressor=threshold=-22dB:ratio=3:attack=6:release=140:knee=4:makeup=5dB"),  # even, louder voice
+}
 
 
 def ff(*args: str) -> str:
@@ -44,6 +54,7 @@ def main() -> None:
     ap.add_argument("-o", "--output", required=True)
     ap.add_argument("--bed-lufs", type=float, default=-20.0, help="undocked bed loudness")
     ap.add_argument("--fade-out", type=float, default=2.5)
+    ap.add_argument("--voice-fx", choices=list(VOICE_FX), help="process the dialogue before mixing")
     args = ap.parse_args()
 
     dur = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration",
@@ -51,14 +62,15 @@ def main() -> None:
     gain = args.bed_lufs - integrated_lufs(args.bed, MUSIC_EQ)
     music = (f"[1:a]{MUSIC_EQ},volume={gain:.2f}dB,atrim=0:{dur:.3f},"
              f"afade=t=out:st={dur - args.fade_out:.3f}:d={args.fade_out}[m]")
-    graph = (f"{music};[0:a]asplit=2[v][sc];[m][sc]{DUCK},asplit=2[md][dk];"
+    vfx = f"{VOICE_FX[args.voice_fx]}," if args.voice_fx else ""
+    graph = (f"{music};[0:a]{vfx}asplit=2[v][sc];[m][sc]{DUCK},asplit=2[md][dk];"
              f"[v][md]amix=inputs=2:duration=first:normalize=0[mix]")
 
     with tempfile.TemporaryDirectory() as t:
         pre, ducked, voice = Path(t, "premix.wav"), Path(t, "ducked.wav"), Path(t, "voice.wav")
         ff("-y", "-i", args.video, "-i", args.bed, "-filter_complex", graph,
            "-map", "[mix]", "-c:a", "pcm_s24le", str(pre), "-map", "[dk]", "-c:a", "pcm_s24le", str(ducked))
-        ff("-y", "-i", args.video, "-vn", "-c:a", "pcm_s24le", str(voice))
+        ff("-y", "-i", args.video, "-vn", "-af", vfx + "anull", "-c:a", "pcm_s24le", str(voice))
 
         # measured balance: music vs voice, speech frames vs pause frames (400ms windows)
         v, sr = sf.read(voice)
