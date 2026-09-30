@@ -1,0 +1,1049 @@
+{
+ "language_code": "ms",
+ "words": [
+  {
+   "text": "doktor",
+   "start": 0.053,
+   "end": 0.376,
+   "type": "word"
+  },
+  {
+   "text": "berapa",
+   "start": 0.437,
+   "end": 0.639,
+   "type": "word"
+  },
+  {
+   "text": "lama",
+   "start": 0.68,
+   "end": 0.882,
+   "type": "word"
+  },
+  {
+   "text": "saya",
+   "start": 0.962,
+   "end": 1.104,
+   "type": "word"
+  },
+  {
+   "text": "kena",
+   "start": 1.144,
+   "end": 1.286,
+   "type": "word"
+  },
+  {
+   "text": "makan",
+   "start": 1.326,
+   "end": 1.508,
+   "type": "word"
+  },
+  {
+   "text": "ubat",
+   "start": 1.548,
+   "end": 1.75,
+   "type": "word"
+  },
+  {
+   "text": "ni",
+   "start": 1.791,
+   "end": 1.872,
+   "type": "word"
+  },
+  {
+   "text": "adakah",
+   "start": 2.09,
+   "end": 2.351,
+   "type": "word"
+  },
+  {
+   "text": "saya",
+   "start": 2.412,
+   "end": 2.532,
+   "type": "word"
+  },
+  {
+   "text": "kena",
+   "start": 2.552,
+   "end": 2.693,
+   "type": "word"
+  },
+  {
+   "text": "makan",
+   "start": 2.733,
+   "end": 2.994,
+   "type": "word"
+  },
+  {
+   "text": "ubat",
+   "start": 3.015,
+   "end": 3.195,
+   "type": "word"
+  },
+  {
+   "text": "ni",
+   "start": 3.215,
+   "end": 3.296,
+   "type": "word"
+  },
+  {
+   "text": "seumur",
+   "start": 3.356,
+   "end": 3.617,
+   "type": "word"
+  },
+  {
+   "text": "hidup",
+   "start": 3.637,
+   "end": 3.798,
+   "type": "word"
+  },
+  {
+   "text": "saya",
+   "start": 3.838,
+   "end": 4.039,
+   "type": "word"
+  },
+  {
+   "text": "jom",
+   "start": 4.225,
+   "end": 4.348,
+   "type": "word"
+  },
+  {
+   "text": "kita",
+   "start": 4.389,
+   "end": 4.511,
+   "type": "word"
+  },
+  {
+   "text": "kupas",
+   "start": 4.552,
+   "end": 4.798,
+   "type": "word"
+  },
+  {
+   "text": "pertama",
+   "start": 4.967,
+   "end": 5.288,
+   "type": "word"
+  },
+  {
+   "text": "tempoh",
+   "start": 5.394,
+   "end": 5.815,
+   "type": "word"
+  },
+  {
+   "text": "makan",
+   "start": 5.976,
+   "end": 6.196,
+   "type": "word"
+  },
+  {
+   "text": "ubat",
+   "start": 6.256,
+   "end": 6.436,
+   "type": "word"
+  },
+  {
+   "text": "bergantung",
+   "start": 6.497,
+   "end": 6.958,
+   "type": "word"
+  },
+  {
+   "text": "kepada",
+   "start": 6.978,
+   "end": 7.399,
+   "type": "word"
+  },
+  {
+   "text": "tahap",
+   "start": 7.439,
+   "end": 7.76,
+   "type": "word"
+  },
+  {
+   "text": "gejala",
+   "start": 8.0,
+   "end": 8.321,
+   "type": "word"
+  },
+  {
+   "text": "yang",
+   "start": 8.381,
+   "end": 8.481,
+   "type": "word"
+  },
+  {
+   "text": "anda",
+   "start": 8.501,
+   "end": 8.622,
+   "type": "word"
+  },
+  {
+   "text": "alami",
+   "start": 8.662,
+   "end": 8.882,
+   "type": "word"
+  },
+  {
+   "text": "kalau",
+   "start": 8.982,
+   "end": 9.183,
+   "type": "word"
+  },
+  {
+   "text": "kemurungan",
+   "start": 9.223,
+   "end": 9.744,
+   "type": "word"
+  },
+  {
+   "text": "atau",
+   "start": 9.824,
+   "end": 10.004,
+   "type": "word"
+  },
+  {
+   "text": "anxiety",
+   "start": 10.065,
+   "end": 10.465,
+   "type": "word"
+  },
+  {
+   "text": "ringan",
+   "start": 10.526,
+   "end": 10.846,
+   "type": "word"
+  },
+  {
+   "text": "biasanya",
+   "start": 10.886,
+   "end": 11.287,
+   "type": "word"
+  },
+  {
+   "text": "enam",
+   "start": 11.482,
+   "end": 11.663,
+   "type": "word"
+  },
+  {
+   "text": "hingga",
+   "start": 11.723,
+   "end": 11.903,
+   "type": "word"
+  },
+  {
+   "text": "dua",
+   "start": 11.943,
+   "end": 12.003,
+   "type": "word"
+  },
+  {
+   "text": "belas",
+   "start": 12.023,
+   "end": 12.184,
+   "type": "word"
+  },
+  {
+   "text": "bulan",
+   "start": 12.244,
+   "end": 12.524,
+   "type": "word"
+  },
+  {
+   "text": "tapi",
+   "start": 12.627,
+   "end": 12.848,
+   "type": "word"
+  },
+  {
+   "text": "kalau",
+   "start": 12.908,
+   "end": 13.2,
+   "type": "word"
+  },
+  {
+   "text": "pernah",
+   "start": 13.205,
+   "end": 13.426,
+   "type": "word"
+  },
+  {
+   "text": "relapse",
+   "start": 13.486,
+   "end": 14.149,
+   "type": "word"
+  },
+  {
+   "text": "gejala",
+   "start": 14.169,
+   "end": 14.45,
+   "type": "word"
+  },
+  {
+   "text": "berulang",
+   "start": 14.49,
+   "end": 14.831,
+   "type": "word"
+  },
+  {
+   "text": "berlaku",
+   "start": 14.851,
+   "end": 15.193,
+   "type": "word"
+  },
+  {
+   "text": "tempoh",
+   "start": 15.354,
+   "end": 15.695,
+   "type": "word"
+  },
+  {
+   "text": "boleh",
+   "start": 15.789,
+   "end": 15.97,
+   "type": "word"
+  },
+  {
+   "text": "jadi",
+   "start": 15.99,
+   "end": 16.13,
+   "type": "word"
+  },
+  {
+   "text": "lama",
+   "start": 16.171,
+   "end": 16.412,
+   "type": "word"
+  },
+  {
+   "text": "kenapa",
+   "start": 16.633,
+   "end": 17.001,
+   "type": "word"
+  },
+  {
+   "text": "sebab",
+   "start": 17.288,
+   "end": 17.513,
+   "type": "word"
+  },
+  {
+   "text": "doktor",
+   "start": 17.66,
+   "end": 18.001,
+   "type": "word"
+  },
+  {
+   "text": "nak",
+   "start": 18.061,
+   "end": 18.181,
+   "type": "word"
+  },
+  {
+   "text": "pastikan",
+   "start": 18.261,
+   "end": 18.842,
+   "type": "word"
+  },
+  {
+   "text": "anda",
+   "start": 18.983,
+   "end": 19.143,
+   "type": "word"
+  },
+  {
+   "text": "betul-betul",
+   "start": 19.183,
+   "end": 19.524,
+   "type": "word"
+  },
+  {
+   "text": "stabil",
+   "start": 19.524,
+   "end": 19.864,
+   "type": "word"
+  },
+  {
+   "text": "dulu",
+   "start": 19.905,
+   "end": 20.045,
+   "type": "word"
+  },
+  {
+   "text": "sebelum",
+   "start": 20.105,
+   "end": 20.506,
+   "type": "word"
+  },
+  {
+   "text": "ubat",
+   "start": 20.586,
+   "end": 20.827,
+   "type": "word"
+  },
+  {
+   "text": "diberhentikan",
+   "start": 20.88,
+   "end": 21.602,
+   "type": "word"
+  },
+  {
+   "text": "kalau",
+   "start": 21.797,
+   "end": 22.037,
+   "type": "word"
+  },
+  {
+   "text": "ubat",
+   "start": 22.117,
+   "end": 22.358,
+   "type": "word"
+  },
+  {
+   "text": "stop",
+   "start": 22.5,
+   "end": 22.761,
+   "type": "word"
+  },
+  {
+   "text": "terlalu",
+   "start": 22.801,
+   "end": 23.062,
+   "type": "word"
+  },
+  {
+   "text": "awal",
+   "start": 23.142,
+   "end": 23.442,
+   "type": "word"
+  },
+  {
+   "text": "risiko",
+   "start": 23.522,
+   "end": 23.923,
+   "type": "word"
+  },
+  {
+   "text": "simptom",
+   "start": 24.043,
+   "end": 24.444,
+   "type": "word"
+  },
+  {
+   "text": "datang",
+   "start": 24.564,
+   "end": 24.845,
+   "type": "word"
+  },
+  {
+   "text": "balik",
+   "start": 24.885,
+   "end": 25.146,
+   "type": "word"
+  },
+  {
+   "text": "tinggi",
+   "start": 25.167,
+   "end": 25.447,
+   "type": "word"
+  },
+  {
+   "text": "tapi",
+   "start": 25.72,
+   "end": 26.001,
+   "type": "word"
+  },
+  {
+   "text": "kalau",
+   "start": 26.542,
+   "end": 26.833,
+   "type": "word"
+  },
+  {
+   "text": "anda",
+   "start": 26.871,
+   "end": 27.072,
+   "type": "word"
+  },
+  {
+   "text": "ada",
+   "start": 27.152,
+   "end": 27.272,
+   "type": "word"
+  },
+  {
+   "text": "penyakit",
+   "start": 27.312,
+   "end": 27.633,
+   "type": "word"
+  },
+  {
+   "text": "mental",
+   "start": 27.653,
+   "end": 28.014,
+   "type": "word"
+  },
+  {
+   "text": "yang",
+   "start": 28.054,
+   "end": 28.214,
+   "type": "word"
+  },
+  {
+   "text": "kronik",
+   "start": 28.234,
+   "end": 28.555,
+   "type": "word"
+  },
+  {
+   "text": "bipolar",
+   "start": 28.656,
+   "end": 29.157,
+   "type": "word"
+  },
+  {
+   "text": "atau",
+   "start": 29.237,
+   "end": 29.397,
+   "type": "word"
+  },
+  {
+   "text": "skizofrenia",
+   "start": 29.417,
+   "end": 30.019,
+   "type": "word"
+  },
+  {
+   "text": "ubat",
+   "start": 30.426,
+   "end": 30.707,
+   "type": "word"
+  },
+  {
+   "text": "mungkin",
+   "start": 30.807,
+   "end": 31.128,
+   "type": "word"
+  },
+  {
+   "text": "perlu",
+   "start": 31.188,
+   "end": 31.348,
+   "type": "word"
+  },
+  {
+   "text": "diambil",
+   "start": 31.388,
+   "end": 31.789,
+   "type": "word"
+  },
+  {
+   "text": "untuk",
+   "start": 31.809,
+   "end": 32.11,
+   "type": "word"
+  },
+  {
+   "text": "jangka",
+   "start": 32.23,
+   "end": 32.631,
+   "type": "word"
+  },
+  {
+   "text": "masa",
+   "start": 32.711,
+   "end": 32.952,
+   "type": "word"
+  },
+  {
+   "text": "yang",
+   "start": 32.992,
+   "end": 33.092,
+   "type": "word"
+  },
+  {
+   "text": "panjang",
+   "start": 33.112,
+   "end": 33.493,
+   "type": "word"
+  },
+  {
+   "text": "sama",
+   "start": 33.707,
+   "end": 34.028,
+   "type": "word"
+  },
+  {
+   "text": "juga",
+   "start": 34.088,
+   "end": 34.229,
+   "type": "word"
+  },
+  {
+   "text": "macam",
+   "start": 34.309,
+   "end": 34.51,
+   "type": "word"
+  },
+  {
+   "text": "pesakit",
+   "start": 34.55,
+   "end": 34.931,
+   "type": "word"
+  },
+  {
+   "text": "darah",
+   "start": 34.971,
+   "end": 35.172,
+   "type": "word"
+  },
+  {
+   "text": "tinggi",
+   "start": 35.192,
+   "end": 35.433,
+   "type": "word"
+  },
+  {
+   "text": "kencing",
+   "start": 35.433,
+   "end": 35.64,
+   "type": "word"
+  },
+  {
+   "text": "manis",
+   "start": 35.66,
+   "end": 36.041,
+   "type": "word"
+  },
+  {
+   "text": "yang",
+   "start": 36.081,
+   "end": 36.202,
+   "type": "word"
+  },
+  {
+   "text": "perlukan",
+   "start": 36.202,
+   "end": 36.503,
+   "type": "word"
+  },
+  {
+   "text": "ubat",
+   "start": 36.543,
+   "end": 36.804,
+   "type": "word"
+  },
+  {
+   "text": "untuk",
+   "start": 36.924,
+   "end": 37.165,
+   "type": "word"
+  },
+  {
+   "text": "kawal",
+   "start": 37.205,
+   "end": 37.586,
+   "type": "word"
+  },
+  {
+   "text": "tekanan",
+   "start": 37.626,
+   "end": 37.867,
+   "type": "word"
+  },
+  {
+   "text": "darah",
+   "start": 37.907,
+   "end": 38.228,
+   "type": "word"
+  },
+  {
+   "text": "kawal",
+   "start": 38.409,
+   "end": 38.69,
+   "type": "word"
+  },
+  {
+   "text": "gula",
+   "start": 38.75,
+   "end": 38.97,
+   "type": "word"
+  },
+  {
+   "text": "dalam",
+   "start": 39.051,
+   "end": 39.211,
+   "type": "word"
+  },
+  {
+   "text": "badan",
+   "start": 39.231,
+   "end": 39.392,
+   "type": "word"
+  },
+  {
+   "text": "mereka",
+   "start": 39.392,
+   "end": 39.653,
+   "type": "word"
+  },
+  {
+   "text": "dan",
+   "start": 39.841,
+   "end": 39.961,
+   "type": "word"
+  },
+  {
+   "text": "yang",
+   "start": 40.001,
+   "end": 40.101,
+   "type": "word"
+  },
+  {
+   "text": "paling",
+   "start": 40.121,
+   "end": 40.282,
+   "type": "word"
+  },
+  {
+   "text": "penting",
+   "start": 40.282,
+   "end": 40.522,
+   "type": "word"
+  },
+  {
+   "text": "sekali",
+   "start": 40.543,
+   "end": 40.783,
+   "type": "word"
+  },
+  {
+   "text": "ubat",
+   "start": 40.883,
+   "end": 41.104,
+   "type": "word"
+  },
+  {
+   "text": "tak",
+   "start": 41.133,
+   "end": 41.245,
+   "type": "word"
+  },
+  {
+   "text": "boleh",
+   "start": 41.285,
+   "end": 41.526,
+   "type": "word"
+  },
+  {
+   "text": "stop",
+   "start": 41.593,
+   "end": 41.814,
+   "type": "word"
+  },
+  {
+   "text": "suka-suka",
+   "start": 42.235,
+   "end": 42.656,
+   "type": "word"
+  },
+  {
+   "text": "kalau",
+   "start": 42.796,
+   "end": 43.067,
+   "type": "word"
+  },
+  {
+   "text": "sampai",
+   "start": 43.067,
+   "end": 43.373,
+   "type": "word"
+  },
+  {
+   "text": "masa",
+   "start": 43.433,
+   "end": 43.674,
+   "type": "word"
+  },
+  {
+   "text": "nak",
+   "start": 43.734,
+   "end": 43.834,
+   "type": "word"
+  },
+  {
+   "text": "stop",
+   "start": 43.874,
+   "end": 44.095,
+   "type": "word"
+  },
+  {
+   "text": "doktor",
+   "start": 44.155,
+   "end": 44.436,
+   "type": "word"
+  },
+  {
+   "text": "akan",
+   "start": 44.496,
+   "end": 44.737,
+   "type": "word"
+  },
+  {
+   "text": "buat",
+   "start": 44.817,
+   "end": 44.997,
+   "type": "word"
+  },
+  {
+   "text": "proses",
+   "start": 45.158,
+   "end": 45.559,
+   "type": "word"
+  },
+  {
+   "text": "tapering",
+   "start": 45.679,
+   "end": 45.96,
+   "type": "word"
+  },
+  {
+   "text": "iaitu",
+   "start": 45.98,
+   "end": 46.482,
+   "type": "word"
+  },
+  {
+   "text": "kurangkan",
+   "start": 46.662,
+   "end": 47.064,
+   "type": "word"
+  },
+  {
+   "text": "dos",
+   "start": 47.144,
+   "end": 47.324,
+   "type": "word"
+  },
+  {
+   "text": "secara",
+   "start": 47.665,
+   "end": 47.926,
+   "type": "word"
+  },
+  {
+   "text": "perlahan-lahan",
+   "start": 47.966,
+   "end": 48.468,
+   "type": "word"
+  },
+  {
+   "text": "untuk",
+   "start": 48.548,
+   "end": 48.809,
+   "type": "word"
+  },
+  {
+   "text": "elakkan",
+   "start": 48.889,
+   "end": 49.31,
+   "type": "word"
+  },
+  {
+   "text": "withdrawal",
+   "start": 49.37,
+   "end": 49.732,
+   "type": "word"
+  },
+  {
+   "text": "symptom",
+   "start": 49.792,
+   "end": 50.173,
+   "type": "word"
+  },
+  {
+   "text": "jangan",
+   "start": 50.311,
+   "end": 50.512,
+   "type": "word"
+  },
+  {
+   "text": "takut",
+   "start": 50.532,
+   "end": 50.833,
+   "type": "word"
+  },
+  {
+   "text": "nak",
+   "start": 50.928,
+   "end": 51.069,
+   "type": "word"
+  },
+  {
+   "text": "mulakan",
+   "start": 51.37,
+   "end": 51.751,
+   "type": "word"
+  },
+  {
+   "text": "ubat",
+   "start": 51.811,
+   "end": 52.032,
+   "type": "word"
+  },
+  {
+   "text": "bukanlah",
+   "start": 52.126,
+   "end": 52.527,
+   "type": "word"
+  },
+  {
+   "text": "hukuman",
+   "start": 52.567,
+   "end": 53.064,
+   "type": "word"
+  },
+  {
+   "text": "seumur",
+   "start": 53.325,
+   "end": 53.566,
+   "type": "word"
+  },
+  {
+   "text": "hidup",
+   "start": 53.586,
+   "end": 53.806,
+   "type": "word"
+  },
+  {
+   "text": "tapi",
+   "start": 53.866,
+   "end": 54.107,
+   "type": "word"
+  },
+  {
+   "text": "satu",
+   "start": 54.167,
+   "end": 54.33,
+   "type": "word"
+  },
+  {
+   "text": "peluang",
+   "start": 54.371,
+   "end": 54.812,
+   "type": "word"
+  },
+  {
+   "text": "untuk",
+   "start": 54.892,
+   "end": 55.153,
+   "type": "word"
+  },
+  {
+   "text": "kita",
+   "start": 55.2,
+   "end": 55.389,
+   "type": "word"
+  },
+  {
+   "text": "sembuh",
+   "start": 55.429,
+   "end": 55.751,
+   "type": "word"
+  },
+  {
+   "text": "dapatkan",
+   "start": 55.831,
+   "end": 56.553,
+   "type": "word"
+  },
+  {
+   "text": "semula",
+   "start": 56.674,
+   "end": 56.995,
+   "type": "word"
+  },
+  {
+   "text": "kualiti",
+   "start": 57.175,
+   "end": 57.556,
+   "type": "word"
+  },
+  {
+   "text": "hidup",
+   "start": 57.597,
+   "end": 57.797,
+   "type": "word"
+  },
+  {
+   "text": "kita",
+   "start": 57.857,
+   "end": 58.078,
+   "type": "word"
+  },
+  {
+   "text": "kalau",
+   "start": 58.439,
+   "end": 58.58,
+   "type": "word"
+  },
+  {
+   "text": "ada",
+   "start": 58.58,
+   "end": 58.64,
+   "type": "word"
+  },
+  {
+   "text": "apa-apa",
+   "start": 58.66,
+   "end": 58.821,
+   "type": "word"
+  },
+  {
+   "text": "soalan",
+   "start": 58.841,
+   "end": 59.182,
+   "type": "word"
+  },
+  {
+   "text": "boleh",
+   "start": 59.202,
+   "end": 59.362,
+   "type": "word"
+  },
+  {
+   "text": "tanya",
+   "start": 59.382,
+   "end": 59.543,
+   "type": "word"
+  },
+  {
+   "text": "dalam",
+   "start": 59.583,
+   "end": 59.744,
+   "type": "word"
+  },
+  {
+   "text": "komen",
+   "start": 59.804,
+   "end": 60.085,
+   "type": "word"
+  },
+  {
+   "text": "take",
+   "start": 60.245,
+   "end": 60.406,
+   "type": "word"
+  },
+  {
+   "text": "care",
+   "start": 60.446,
+   "end": 60.526,
+   "type": "word"
+  }
+ ]
+}

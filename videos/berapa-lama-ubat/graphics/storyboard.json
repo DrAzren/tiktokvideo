@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 3,
+  "composition": {
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "durationSeconds": 61.781,
+    "layout": "portrait",
+    "themeId": "custom-teal",
+    "seed": 7
+  },
+  "videoTrack": {
+    "sourcePath": "input-video.mp4",
+    "startSec": 0,
+    "endSec": 61.781,
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920
+    }
+  },
+  "subtitles": {
+    "enabled": false
+  },
+  "cards": [
+    {
+      "id": "c01-hook",
+      "intent": "Hook — the patient's two questions",
+      "startSec": 0.0,
+      "endSec": 4.12,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 2
+      }
+    },
+    {
+      "id": "c02-kenapa",
+      "intent": "Soalan #3 — why can it take longer?",
+      "startSec": 16.55,
+      "endSec": 17.62,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c03-sebelum",
+      "intent": "Stable first, then stop",
+      "startSec": 20.1,
+      "endSec": 21.72,
+      "accentIndex": 2,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c04-kronik",
+      "intent": "Chronic illness: bipolar, schizophrenia",
+      "startSec": 25.62,
+      "endSec": 30.4,
+      "accentIndex": 3,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c05-penting",
+      "intent": "Most important: never stop on your own",
+      "startSec": 41.07,
+      "endSec": 42.72,
+      "accentIndex": 4,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c06-mitos",
+      "intent": "Myth: medication = a life sentence. Reality: a chance to heal",
+      "startSec": 50.85,
+      "endSec": 55.8,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 2
+      }
+    },
+    {
+      "id": "c07-cta",
+      "intent": "CTA — ask in the comments",
+      "startSec": 58.3,
+      "endSec": 61.781,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8" />
+<style>
+@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:block;}@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:block;}@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:block;}
+* { box-sizing:border-box; }
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; background:#000;
+  font-family:"Plus Jakarta Sans", sans-serif; }
+#stage { position:relative; width:1080px; height:1920px; overflow:hidden; }
+.video-wrapper { position:absolute; left:0; top:0; width:1080px; height:1920px; overflow:hidden; }
+.video-wrapper video { width:100%; height:100%; object-fit:cover; }
+.card-host { position:absolute; pointer-events:none; overflow:hidden; }
+.page { opacity:0; }
+
+.card-host .card { position:relative; width:100%; height:100%; }
+.panel { position:absolute; left:60px; top:140px; width:960px; display:grid; background:#FFF8EE; border-radius:34px;
+  box-shadow:0 22px 60px rgba(8,22,30,.30), 0 2px 0 rgba(255,255,255,.6) inset; padding:24px 36px 26px;
+  font-family:'Plus Jakarta Sans', sans-serif; color:#0B1F2A; overflow:hidden; }
+.panel::before { content:""; position:absolute; left:0; top:0; bottom:0; width:12px; background:#0E5E6F; }
+.page { grid-area:1/1; position:relative; align-self:start; }  /* pages share one cell; panel height set per page */
+.page > * + * { margin-top:12px; }
+.chip { display:inline-block; color:#fff; font-weight:800; font-size:30px; letter-spacing:.07em; text-transform:uppercase;
+  padding:9px 20px 8px; border-radius:999px; }
+.title { font-weight:800; font-size:58px; line-height:1.08; letter-spacing:-.015em; }
+.title.sm { font-size:44px; font-weight:700; }
+.title.xl { font-size:84px; letter-spacing:-.02em; line-height:1.0; }
+.title.muted { color:#6B7C85; font-size:50px; }
+.sub { font-weight:700; font-size:38px; color:#44525A; }
+.sub.strong { color:#0B1F2A; display:flex; align-items:center; gap:14px; }
+.label { font-weight:700; font-size:32px; color:#44525A; text-transform:uppercase; letter-spacing:.06em; }
+.row { display:flex; align-items:center; gap:18px; font-weight:700; font-size:38px; line-height:1.15; }
+.row.big { font-size:44px; }
+.row + .row { margin-top:11px; }
+.ico { width:40px; height:40px; flex:none; }
+.arr { width:44px; height:44px; }
+.num { width:44px; height:44px; flex:none; border-radius:50%; background:#E5484D; color:#fff; font-size:26px; font-weight:800;
+  display:inline-flex; align-items:center; justify-content:center; }
+.grid { display:flex; flex-wrap:wrap; gap:14px; }
+.pill { display:inline-block; font-weight:700; font-size:34px; padding:12px 24px; border-radius:18px; background:#E3F4F1; color:#0E5E6F;
+  border:2px solid rgba(14,94,111,.25); }
+.steps { display:flex; align-items:center; flex-wrap:wrap; gap:14px; font-weight:800; font-size:40px; }
+.step { display:inline-block; padding:10px 22px; border-radius:16px; background:#E3F4F1; color:#0E5E6F; }
+.step.hi { background:#0E5E6F; color:#fff; }
+.sep { color:#6B7C85; font-size:40px; font-weight:800; }
+.strikeword { background:linear-gradient(#E5484D,#E5484D) left 55%/0% 6px no-repeat; }
+.stampwrap { position:absolute; right:4px; top:-6px; margin:0 !important; }  /* sits in the (half-width) chip row */
+.stampflow { transform-origin:left center; padding-top:6px; }
+.stamp { display:inline-block; transform:rotate(-6deg); border:6px solid #E5484D; color:#E5484D; border-radius:14px;
+  font-weight:800; font-size:40px; letter-spacing:.04em; padding:4px 16px 0; background:rgba(255,248,238,.92); }
+.stamp.teal { border-color:#0E5E6F; color:#0E5E6F; font-size:72px; }
+
+
+.ins { position:absolute; left:0; top:0; width:1080px; height:1920px; overflow:hidden; pointer-events:none; }
+.ins-in { position:absolute; inset:0; overflow:hidden; }
+.kb { position:absolute; left:0; top:0; width:1080px; height:1920px; object-fit:cover; transform-origin:50% 45%; }
+.cap-shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.25) 0%, rgba(0,0,0,0) 12%,
+  rgba(0,0,0,0) 16%, rgba(0,0,0,.32) 19%, rgba(0,0,0,.32) 26%, rgba(0,0,0,0) 32%); }
+.flicker { position:absolute; inset:0; background:#000; opacity:0; }
+.ai-tag { position:absolute; left:48px; top:1440px; font:700 24px 'Plus Jakarta Sans'; letter-spacing:.08em; text-transform:uppercase;
+  color:rgba(255,255,255,.9); background:rgba(0,0,0,.38); padding:7px 14px 6px; border-radius:10px; }
+.mg { position:absolute; inset:0; background:radial-gradient(120% 80% at 80% 10%, #0E5E6F 0%, #08323C 62%, #051E25 100%);
+  font-family:'Plus Jakarta Sans', sans-serif; color:#FFF8EE; }
+.mg .mint { color:#5EEAD4; }
+.head { position:absolute; left:80px; top:150px; width:920px; }
+.mg-chip { display:inline-block; font-weight:800; font-size:30px; letter-spacing:.08em; text-transform:uppercase;
+  padding:10px 22px 9px; border-radius:999px; background:#5EEAD4; color:#08323C; }
+.mg-chip.red { background:#E5484D; color:#fff; }
+.mg-title { font-weight:800; font-size:72px; line-height:1.04; letter-spacing:-.02em; margin-top:18px; white-space:nowrap; }
+.mg-sub { font-weight:700; font-size:44px; color:rgba(255,248,238,.82); margin-top:22px; }
+.stack { position:absolute; left:80px; width:920px; display:flex; flex-direction:column; gap:22px; }
+.crow { display:flex; align-items:center; gap:26px; height:118px; padding:0 30px; border-radius:26px; background:#FFF8EE;
+  color:#0B1F2A; font-weight:800; font-size:46px; box-shadow:0 14px 34px rgba(0,0,0,.28); }
+.disc { width:78px; height:78px; border-radius:50%; background:#0E5E6F; display:inline-flex; align-items:center; justify-content:center; flex:none; }
+.mg-ico { width:50px; height:50px; }
+.rail { position:absolute; }
+.rail path { stroke-dasharray:720; }
+.rung { position:absolute; width:820px; height:130px; display:flex; align-items:center; gap:24px; padding:0 30px; border-radius:24px;
+  background:#FFF8EE; color:#0B1F2A; font-weight:800; font-size:40px; line-height:1.1; box-shadow:0 14px 34px rgba(0,0,0,.28); }
+.rung.last { width:700px; height:120px; background:transparent; border:6px solid #E5484D; color:#fff; font-size:50px; box-shadow:none;
+  justify-content:center; transform-origin:center; }
+.rnum { width:64px; height:64px; flex:none; border-radius:50%; background:#E5484D; color:#fff; font-size:34px; display:inline-flex;
+  align-items:center; justify-content:center; }
+.node { position:absolute; left:112px; display:flex; align-items:center; gap:34px; }
+.node .dot { width:60px; height:60px; border-radius:50%; background:#08323C; border:8px solid #5EEAD4; flex:none; }
+.node.hi .dot { background:#5EEAD4; }
+.nlabel { font-weight:800; font-size:54px; padding:14px 28px; border-radius:22px; background:#FFF8EE; color:#0B1F2A; }
+.node.hi .nlabel { background:#5EEAD4; color:#08323C; }
+.half { position:absolute; left:0; width:1080px; height:960px; overflow:hidden; }
+.half.top { top:0; }
+.half.bot { top:960px; background:radial-gradient(120% 90% at 20% 0%, #0E5E6F 0%, #08323C 70%); }
+.half-img { position:absolute; left:0; top:-280px; width:1080px; height:1920px; object-fit:cover; }
+.grim { filter:grayscale(1) contrast(1.15) brightness(.7); }
+.half-shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.15) 40%, rgba(0,0,0,.55)); }
+.at-top { position:absolute; left:80px; top:170px; }
+.bigx { position:absolute; left:0; right:0; top:760px; text-align:center; }
+.stamp-lg { display:inline-block; transform:rotate(-7deg); border:8px solid #E5484D; color:#E5484D; border-radius:18px; font-weight:800;
+  font-size:84px; letter-spacing:.04em; padding:8px 28px 2px; background:rgba(255,248,238,.93); }
+.half.bot .mg-chip { position:absolute; left:80px; top:70px; }
+.half.bot .mg-title { position:absolute; left:80px; top:150px; font-size:92px; margin:0; }
+.half.bot .mg-sub { position:absolute; left:80px; top:370px; margin:0; font-size:50px; }
+.seam { position:absolute; left:0; top:954px; width:1080px; height:12px; background:#FFF8EE; transform-origin:left center; z-index:3; }
+/* berapa-lama additions */
+.mg-foot { position:absolute; left:80px; top:1330px; display:flex; align-items:center; gap:16px; font-weight:700; font-size:32px; color:rgba(255,248,238,.72); }
+.foot-ico { width:40px; height:40px; }
+.brow { display:flex; flex-direction:column; gap:16px; }
+.blabel { display:flex; align-items:baseline; gap:18px; }
+.bt { font-weight:800; font-size:54px; color:#FFF8EE; }
+.bs { font-weight:700; font-size:34px; color:rgba(255,248,238,.65); }
+.btrack { position:relative; height:104px; border-radius:22px; background:rgba(255,248,238,.12); overflow:hidden; }
+.bfill { position:absolute; left:0; top:0; bottom:0; border-radius:22px; background:#5EEAD4; transform-origin:left center; }
+.bfill.hi { background:linear-gradient(90deg, #5EEAD4, #FFD37A); }
+.bval { position:absolute; left:32px; top:50%; margin-top:-30px; line-height:60px; font-weight:800; font-size:50px; color:#08323C; }
+.cnode { position:absolute; left:80px; width:920px; height:140px; display:flex; align-items:center; gap:28px; padding:0 34px; border-radius:28px;
+  background:#FFF8EE; color:#0B1F2A; font-weight:800; font-size:50px; box-shadow:0 14px 34px rgba(0,0,0,.28); }
+.disc.red { background:#E5484D; }
+.gauge { position:absolute; left:240px; top:1110px; width:600px; text-align:center; }
+.gsvg { width:420px; height:238px; }
+.glabel { font-weight:800; font-size:48px; color:#FFF8EE; margin-top:-6px; }
+.glabel b { display:inline-block; color:#fff; background:#E5484D; padding:2px 18px; border-radius:12px; margin-left:8px; }
+.sbox { position:absolute; left:80px; width:920px; min-height:150px; display:flex; align-items:center; gap:28px; padding:22px 34px; border-radius:28px;
+  background:#FFF8EE; color:#0B1F2A; box-shadow:0 14px 34px rgba(0,0,0,.28); }
+.sbox.pair { position:relative; left:auto; width:auto; flex:1; flex-direction:column; justify-content:center; gap:16px; min-height:250px; }
+.sbt { font-weight:800; font-size:48px; line-height:1.1; }
+.sbs { font-weight:700; font-size:32px; color:#44525A; margin-top:6px; }
+.eq { position:absolute; left:470px; top:770px; width:140px; height:140px; border-radius:50%; background:#5EEAD4; color:#08323C;
+  font-weight:800; font-size:110px; line-height:132px; text-align:center; box-shadow:0 12px 30px rgba(0,0,0,.3); }
+.pairrow { position:absolute; left:80px; width:920px; display:flex; gap:28px; }
+.kawal { position:absolute; left:80px; width:920px; top:1270px; display:flex; flex-wrap:wrap; align-items:center; gap:16px; }
+.klabel { font-weight:700; font-size:38px; color:rgba(255,248,238,.8); margin-right:6px; }
+.kchip { font-weight:800; font-size:40px; padding:10px 24px; border-radius:18px; background:#5EEAD4; color:#08323C; }
+.stairs { position:absolute; left:0; top:640px; width:1080px; height:540px; }
+.stair { position:absolute; bottom:0; width:206px; border-radius:24px 24px 8px 8px; background:#FFF8EE; box-shadow:0 14px 34px rgba(0,0,0,.28);
+  transform-origin:bottom center; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; padding-top:26px; gap:18px; }
+.spill { display:block; height:34px; border-radius:17px; background:#0E5E6F; }
+.sval { font-weight:800; font-size:48px; color:#0B1F2A; }
+.dose-label { position:absolute; left:90px; top:580px; font-weight:700; font-size:34px; color:rgba(255,248,238,.72); text-transform:uppercase; letter-spacing:.08em; }
+.shieldrow { position:absolute; left:80px; top:1250px; display:flex; align-items:center; gap:26px; font-weight:800; font-size:52px; color:#FFF8EE; }
+
+</style>
+</head>
+<body>
+<div id="stage" data-composition-id="talking-head-recut" data-start="0" data-duration="61.781" data-fps="30" data-width="1080" data-height="1920">
+  <div class="video-wrapper" id="video-wrap">
+    <video id="bg-video" src="input-video.mp4" muted playsinline data-start="0" data-duration="61.781" data-track-index="1"></video>
+  </div>
+  <audio id="source-audio" src="input-video.mp4" data-start="0" data-duration="61.781" data-track-index="10" data-volume="1"></audio>
+  <div id="card-c01-hook" class="card-host clip" data-card-id="c01-hook" data-start="0.0" data-duration="4.1333" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c01-hook"><div class="root"><div class="panel" id="c01-hook-panel"><div class="page" id="c01-hook-page0"><div id="c01-hook-kicker" data-anim="pop" data-anim-at="0.0"><span class="chip" style="background:#0E5E6F">Soalan #1</span></div><div id="c01-hook-t1" data-anim="slide" data-anim-at="0.0"><div class="title">Berapa lama kena <span style="color:#0E5E6F">makan ubat?</span></div></div></div><div class="page" id="c01-hook-page1"><div id="c01-hook-kicker2" data-anim="pop" data-anim-at="2.9333"><span class="chip" style="background:#0E5E6F">Soalan #2</span></div><div id="c01-hook-t2" data-anim="pop" data-anim-at="3.2333"><div class="title xl" style="color:#0E5E6F">SEUMUR HIDUP?</div></div></div></div></div></div></div>
+<div id="card-c02-kenapa" class="card-host clip" data-card-id="c02-kenapa" data-start="16.5333" data-duration="1.1" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c02-kenapa"><div class="root"><div class="panel" id="c02-kenapa-panel"><div class="page" id="c02-kenapa-page0"><div id="c02-kenapa-kicker" data-anim="pop" data-anim-at="0.0667"><span class="chip" style="background:#0E5E6F">Soalan #3</span></div><div id="c02-kenapa-t" data-anim="slide" data-anim-at="-0.0333"><div class="title">Kenapa <span style="color:#0E5E6F">lama?</span></div></div></div></div></div></div></div>
+<div id="card-c03-sebelum" class="card-host clip" data-card-id="c03-sebelum" data-start="20.1" data-duration="1.6333" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c03-sebelum"><div class="root"><div class="panel" id="c03-sebelum-panel"><div class="page" id="c03-sebelum-page0"><div id="c03-sebelum-r" data-anim="slide" data-anim-at="-0.1"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Stabil dulu, <span style="color:#0E5E6F">baru berhenti</span></span></div></div></div></div></div></div></div>
+<div id="card-c04-kronik" class="card-host clip" data-card-id="c04-kronik" data-start="25.6333" data-duration="4.7667" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c04-kronik"><div class="root"><div class="panel" id="c04-kronik-panel"><div class="page" id="c04-kronik-page0"><div id="c04-kronik-t" data-anim="slide" data-anim-at="1.5667"><div class="title sm">Penyakit mental <span style="color:#0E5E6F">kronik</span></div></div><div id="c04-kronik-g" data-anim="none" data-anim-at="0.0"><div class="steps"><span id="c04-s1" class="step">Bipolar</span><span id="c04-s2" class="step">Skizofrenia</span><span id="c04-s3" class="step hi">Jangka panjang</span></div></div></div></div></div></div></div>
+<div id="card-c05-penting" class="card-host clip" data-card-id="c05-penting" data-start="41.0667" data-duration="1.6666" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c05-penting"><div class="root"><div class="panel" id="c05-penting-panel"><div class="page" id="c05-penting-page0"><div id="c05-penting-kicker" data-anim="pop" data-anim-at="0.1"><span class="chip" style="background:#E5484D">Paling penting</span></div><div id="c05-penting-t" data-anim="slide" data-anim-at="0.4"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#E5484D"/><path d="M8 8l8 8M16 8l-8 8" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg><span>Jangan stop ubat <span style="color:#E5484D">suka-suka</span></span></div></div></div></div></div></div></div>
+<div id="card-c06-mitos" class="card-host clip" data-card-id="c06-mitos" data-start="50.8667" data-duration="4.9333" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c06-mitos"><div class="root"><div class="panel" id="c06-mitos-panel"><div class="page" id="c06-mitos-page0"><div id="c06-mitos-kicker" data-anim="pop" data-anim-at="0.0666"><span class="chip" style="background:#E5484D">Mitos</span></div><div id="c06-mitos-a" data-anim="slide" data-anim-at="0.4"><div class="title muted"><span class="strikeword">Hukuman seumur hidup</span></div></div><div id="c06-mitos-st" class="stampwrap" data-anim="stamp" data-anim-at="1.6"><div class="stamp">TIDAK BENAR</div></div></div><div class="page" id="c06-mitos-page1"><div id="c06-mitos-kicker2" data-anim="pop" data-anim-at="2.8666"><span class="chip" style="background:#0E5E6F">Realiti</span></div><div id="c06-mitos-b" data-anim="pop" data-anim-at="3.4"><div class="title">Peluang untuk <span style="color:#0E5E6F">sembuh</span></div></div></div></div></div></div></div>
+<div id="card-c07-cta" class="card-host clip" data-card-id="c07-cta" data-start="58.3" data-duration="3.481" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c07-cta"><div class="root"><div class="panel" id="c07-cta-panel"><div class="page" id="c07-cta-page0"><div id="c07-cta-t3" data-anim="pop" data-anim-at="0.4333"><div class="title xl" style="color:#0E5E6F">Ada soalan?</div></div><div id="c07-cta-s3" data-anim="slide" data-anim-at="1.3667"><div class="sub strong">Tanya di komen <svg viewBox="0 0 24 24" class="arr"><path d="M12 4v15M5.5 12.5L12 19l6.5-6.5" stroke="#0E5E6F" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div></div></div></div></div></div>
+  <div id="ins-m1-tempoh" class="ins clip" data-start="8.8667" data-duration="7.8333" data-track-index="5" style="z-index:20"><div class="ins-in" id="m1-tempoh-in"><div class="mg">
+      <div class="head"><div class="mg-chip" id="m1-c">Berapa lama?</div>
+        <div class="mg-title" id="m1-t">Ikut <span class="mint">tahap gejala</span></div></div>
+      <div class="stack" style="top:600px; gap:60px"><div class="brow" id="m1-r0"><div class="blabel"><span class="bt">Ringan</span><span class="bs">kemurungan · anxiety</span></div><div class="btrack"><div class="bfill" id="m1-f0" style="width:52%"></div><span class="bval" id="m1-v0">6–12 bulan</span></div></div><div class="brow" id="m1-r1"><div class="blabel"><span class="bt">Pernah relapse</span><span class="bs">gejala berulang</span></div><div class="btrack"><div class="bfill hi" id="m1-f1" style="width:92%"></div><span class="bval" id="m1-v1">Lebih lama</span></div></div></div>
+      <div class="mg-foot" id="m1-ft"><svg viewBox="0 0 48 48" class="foot-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="7" y="10" width="34" height="30" rx="5"/><path d="M7 19h34M16 6v8M32 6v8"/></g></svg><span>anggaran biasa — doktor tentukan ikut pesakit</span></div></div></div></div>
+<div id="ins-b1-consult" class="ins clip" data-start="17.5667" data-duration="2.6" data-track-index="6" style="z-index:21"><div class="ins-in" id="b1-consult-in"><img src="broll/consult.jpg" class="kb" id="b1-consult-img"/><div class="cap-shade"></div><div class="ai-tag">Ilustrasi AI</div></div></div>
+<div id="ins-m2-awal" class="ins clip" data-start="21.7" data-duration="4.1333" data-track-index="5" style="z-index:22"><div class="ins-in" id="m2-awal-in"><div class="mg">
+      <div class="head"><div class="mg-chip red" id="m2-c">Awas</div>
+        <div class="mg-title" id="m2-t">Stop <span class="mint">terlalu awal?</span></div></div>
+      <div class="cnode" id="m2-a" style="top:600px"><span class="disc red"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="6" y="17" width="36" height="14" rx="7" transform="rotate(-30 24 24)"/><path d="M17 31l14-14" /></g></svg></span><span>Ubat dihentikan awal</span></div>
+      <svg class="rail" viewBox="0 0 40 150" style="left:150px; top:752px; width:40px; height:150px">
+        <path id="m2-ar" d="M20 6V132" stroke="#5EEAD4" stroke-width="7" stroke-linecap="round" fill="none"/>
+        <path id="m2-tip" d="M6 118L20 140 34 118" stroke="#5EEAD4" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      <div class="cnode" id="m2-b" style="top:920px"><span class="disc"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M36 18a13 13 0 1 0 2 10"/><path d="M38 9v10h-10"/></g></svg></span><span>Simptom datang balik</span></div>
+      <div class="gauge" id="m2-g"><svg viewBox="0 0 300 170" class="gsvg">
+        <path d="M30 150A120 120 0 0 1 270 150" stroke="rgba(255,248,238,.18)" stroke-width="26" fill="none" stroke-linecap="round"/>
+        <path id="m2-garc" d="M30 150A120 120 0 0 1 270 150" stroke="#E5484D" stroke-width="26" fill="none" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+        <g id="m2-needle"><path d="M150 150L150 48" stroke="#FFF8EE" stroke-width="9" stroke-linecap="round"/></g>
+        <circle cx="150" cy="150" r="15" fill="#FFF8EE"/></svg>
+        <div class="glabel">Risiko <b id="m2-hi">TINGGI</b></div></div></div></div></div>
+<div id="ins-b2-organizer" class="ins clip" data-start="30.3333" data-duration="3.4" data-track-index="6" style="z-index:23"><div class="ins-in" id="b2-organizer-in"><img src="broll/organizer.jpg" class="kb" id="b2-organizer-img"/><div class="cap-shade"></div><div class="ai-tag">Ilustrasi AI</div></div></div>
+<div id="ins-m3-sama" class="ins clip" data-start="33.6" data-duration="6.3667" data-track-index="5" style="z-index:24"><div class="ins-in" id="m3-sama-in"><div class="mg">
+      <div class="head"><div class="mg-chip" id="m3-c">Penyakit kronik</div>
+        <div class="mg-title" id="m3-t">Sama juga <span class="mint">macam…</span></div></div>
+      <div class="sbox" id="m3-l" style="top:560px"><span class="disc"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M19 8a6 6 0 0 0-6 6 6 6 0 0 0-4 10 6 6 0 0 0 4 10 6 6 0 0 0 6 6V8zM29 8a6 6 0 0 1 6 6 6 6 0 0 1 4 10 6 6 0 0 1-4 10 6 6 0 0 1-6 6V8z"/></g></svg></span>
+        <div><div class="sbt">Bipolar · Skizofrenia</div><div class="sbs">kesihatan mental</div></div></div>
+      <div class="eq" id="m3-eq">=</div>
+      <div class="pairrow" style="top:960px">
+        <div class="sbox pair" id="m3-r1"><span class="disc red"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 40S7 30 7 18a9 9 0 0 1 17-4 9 9 0 0 1 17 4c0 12-17 22-17 22z"/><path d="M11 24h8l3-5 4 9 3-4h8"/></g></svg></span><div class="sbt">Darah tinggi</div></div>
+        <div class="sbox pair" id="m3-r2"><span class="disc red"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 6s13 15 13 24a13 13 0 0 1-26 0C11 21 24 6 24 6z"/></g></svg></span><div class="sbt">Kencing manis</div></div></div>
+      <div class="kawal" id="m3-k"><span class="klabel">Ubat untuk kawal</span>
+        <span class="kchip" id="m3-k1">tekanan darah</span><span class="kchip" id="m3-k2">gula</span></div></div></div></div>
+<div id="ins-b3-cutter" class="ins clip" data-start="42.7" data-duration="2.3333" data-track-index="6" style="z-index:25"><div class="ins-in" id="b3-cutter-in"><img src="broll/cutter.jpg" class="kb" id="b3-cutter-img"/><div class="cap-shade"></div><div class="ai-tag">Ilustrasi AI</div></div></div>
+<div id="ins-m4-tapering" class="ins clip" data-start="45.0333" data-duration="5.4334" data-track-index="5" style="z-index:26"><div class="ins-in" id="m4-tapering-in"><div class="mg">
+      <div class="head"><div class="mg-chip" id="m4-c">Proses tapering</div>
+        <div class="mg-title" id="m4-t">Dos turun <span class="mint">perlahan-lahan</span></div></div>
+      <div class="stairs"><div class="stair" id="m4-s0" style="left:90px; height:520px"><span class="spill" style="width:100%"></span><span class="sval">100%</span></div><div class="stair" id="m4-s1" style="left:322px; height:402px"><span class="spill" style="width:78%"></span><span class="sval">75%</span></div><div class="stair" id="m4-s2" style="left:554px; height:284px"><span class="spill" style="width:56%"></span><span class="sval">50%</span></div><div class="stair" id="m4-s3" style="left:786px; height:166px"><span class="spill" style="width:34%"></span><span class="sval">25%</span></div></div>
+      <div class="dose-label" id="m4-dl">Dos ubat</div>
+      <div class="shieldrow" id="m4-sh"><span class="disc"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 5l16 6v11c0 10-7 17-16 21C15 39 8 32 8 22V11z"/><path d="M17 24l5 5 9-10"/></g></svg></span><span>Elak <span class="mint">withdrawal symptom</span></span></div></div></div></div>
+<div id="ins-b4-walk" class="ins clip" data-start="55.7667" data-duration="2.4333" data-track-index="6" style="z-index:27"><div class="ins-in" id="b4-walk-in"><img src="broll/walk.jpg" class="kb" id="b4-walk-img"/><div class="cap-shade"></div><div class="ai-tag">Ilustrasi AI</div></div></div>
+  <script src="vendor/gsap.min.js"></script>
+  <script>
+  (function () {
+    const tl = window.gsap.timeline({ paused: true });
+    // c01-hook: Hook — the patient's two questions
+    tl.set('.card-host[data-card-id="c01-hook"]', {visibility:"visible", opacity:1}, 0.0);
+    tl.set('#c01-hook-panel', {opacity:1, y:0, scale:1}, 0);
+    tl.set('#c01-hook-page0', {opacity:1}, 0.0);
+    tl.set('#c01-hook-kicker', {opacity:1}, 0);
+    tl.set('#c01-hook-t1', {opacity:1}, 0);
+    tl.to('#c01-hook-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 2.5667);
+    tl.fromTo('#c01-hook-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 2.8333);
+    tl.fromTo('#c01-hook-kicker2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 2.9333);
+    tl.fromTo('#c01-hook-t2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 3.2333);
+    tl.to('#c01-hook-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 3.8333);
+    tl.set('.card-host[data-card-id="c01-hook"]', {visibility:"hidden"}, 4.1333);
+    // c02-kenapa: Soalan #3 — why can it take longer?
+    tl.set('.card-host[data-card-id="c02-kenapa"]', {visibility:"visible", opacity:1}, 16.5333);
+    tl.fromTo('#c02-kenapa-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 16.5333);
+    tl.set('#c02-kenapa-page0', {opacity:1}, 16.5333);
+    tl.fromTo('#c02-kenapa-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 16.6);
+    tl.fromTo('#c02-kenapa-t', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 16.6);
+    tl.to('#c02-kenapa-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 17.3333);
+    tl.set('.card-host[data-card-id="c02-kenapa"]', {visibility:"hidden"}, 17.6333);
+    // c03-sebelum: Stable first, then stop
+    tl.set('.card-host[data-card-id="c03-sebelum"]', {visibility:"visible", opacity:1}, 20.1);
+    tl.fromTo('#c03-sebelum-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 20.1);
+    tl.set('#c03-sebelum-page0', {opacity:1}, 20.1);
+    tl.fromTo('#c03-sebelum-r', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 20.1667);
+    tl.to('#c03-sebelum-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 21.4333);
+    tl.set('.card-host[data-card-id="c03-sebelum"]', {visibility:"hidden"}, 21.7333);
+    // c04-kronik: Chronic illness: bipolar, schizophrenia
+    tl.set('.card-host[data-card-id="c04-kronik"]', {visibility:"visible", opacity:1}, 25.6333);
+    tl.fromTo('#c04-kronik-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 25.6333);
+    tl.set('#c04-kronik-page0', {opacity:1}, 25.6333);
+    tl.fromTo('#c04-kronik-t', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 27.2);
+    tl.fromTo('#c04-s1', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 28.5333);
+    tl.fromTo('#c04-s2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 29.3);
+    tl.fromTo('#c04-s3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 30.0667);
+    tl.to('#c04-kronik-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 30.1);
+    tl.set('.card-host[data-card-id="c04-kronik"]', {visibility:"hidden"}, 30.4);
+    // c05-penting: Most important: never stop on your own
+    tl.set('.card-host[data-card-id="c05-penting"]', {visibility:"visible", opacity:1}, 41.0667);
+    tl.fromTo('#c05-penting-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 41.0667);
+    tl.set('#c05-penting-page0', {opacity:1}, 41.0667);
+    tl.fromTo('#c05-penting-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 41.1667);
+    tl.fromTo('#c05-penting-t', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 41.4667);
+    tl.to('#c05-penting-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 42.4333);
+    tl.set('.card-host[data-card-id="c05-penting"]', {visibility:"hidden"}, 42.7333);
+    // c06-mitos: Myth: medication = a life sentence. Reality: a chance to heal
+    tl.set('.card-host[data-card-id="c06-mitos"]', {visibility:"visible", opacity:1}, 50.8667);
+    tl.fromTo('#c06-mitos-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 50.8667);
+    tl.set('#c06-mitos-page0', {opacity:1}, 50.8667);
+    tl.fromTo('#c06-mitos-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 50.9333);
+    tl.fromTo('#c06-mitos-a', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 51.2667);
+    tl.fromTo('#c06-mitos-a .strikeword', {backgroundSize:'0% 6px'}, {backgroundSize:'100% 6px', duration:0.35, ease:'power2.inOut'}, 52.1333);
+    tl.fromTo('#c06-mitos-st', {opacity:0, scale:1.9}, {opacity:1, scale:1, duration:0.26, ease:'power4.out'}, 52.4667);
+    tl.to('#c06-mitos-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 53.5667);
+    tl.fromTo('#c06-mitos-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 53.8333);
+    tl.fromTo('#c06-mitos-kicker2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 53.7333);
+    tl.fromTo('#c06-mitos-b', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 54.2667);
+    tl.to('#c06-mitos-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 55.5);
+    tl.set('.card-host[data-card-id="c06-mitos"]', {visibility:"hidden"}, 55.8);
+    // c07-cta: CTA — ask in the comments
+    tl.set('.card-host[data-card-id="c07-cta"]', {visibility:"visible", opacity:1}, 58.3);
+    tl.fromTo('#c07-cta-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 58.3);
+    tl.set('#c07-cta-page0', {opacity:1}, 58.3);
+    tl.fromTo('#c07-cta-t3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 58.7333);
+    tl.fromTo('#c07-cta-s3', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 59.6667);
+    tl.to('#c07-cta-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 61.481);
+    tl.set('.card-host[data-card-id="c07-cta"]', {visibility:"hidden"}, 61.781);
+    // insert m1-tempoh (mg) 8.87-16.70s
+    tl.fromTo('#m1-tempoh-in', {clipPath:'inset(100% 0% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.42, ease:'power3.inOut'}, 8.8667);
+    tl.fromTo('#m1-c', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 8.987);
+    tl.fromTo('#m1-t', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 8.987);
+    tl.fromTo('#m1-r0', {opacity:0, x:80}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 9.103);
+    tl.fromTo('#m1-f0', {scaleX:0}, {scaleX:1, duration:1.042, ease:'power2.out'}, 11.362);
+    tl.fromTo('#m1-v0', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 12.124);
+    tl.fromTo('#m1-r1', {opacity:0, x:80}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 13.366);
+    tl.fromTo('#m1-f1', {scaleX:0}, {scaleX:1, duration:1.058, ease:'power2.out'}, 15.234);
+    tl.fromTo('#m1-v1', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 15.87);
+    tl.fromTo('#m1-ft', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 13.686);
+    tl.to('#m1-tempoh-in', {opacity:0, duration:0.24, ease:'power2.in'}, 16.46);
+    // insert b1-consult (broll) 17.57-20.17s
+    tl.fromTo('#b1-consult-in', {opacity:0, scale:1.05}, {opacity:1, scale:1, duration:0.3, ease:'power2.out'}, 17.5667);
+    tl.fromTo('#b1-consult-img', {scale:1.03, x:0, y:0}, {scale:1.12, x:-20, y:0, duration:2.6, ease:'sine.inOut'}, 17.5667);
+    tl.to('#b1-consult-in', {opacity:0, duration:0.24, ease:'power2.in'}, 19.927);
+    // insert m2-awal (mg) 21.70-25.83s
+    tl.fromTo('#m2-awal-in', {clipPath:'inset(100% 0% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.42, ease:'power3.inOut'}, 21.7);
+    tl.fromTo('#m2-c', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 21.82);
+    tl.fromTo('#m2-t', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 21.82);
+    tl.fromTo('#m2-a', {opacity:0, x:80}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 22.38);
+    tl.fromTo('#m2-ar', {strokeDashoffset:720}, {strokeDashoffset:0, duration:0.45, ease:'power1.inOut'}, 22.901);
+    tl.fromTo('#m2-tip', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 23.422);
+    tl.fromTo('#m2-b', {opacity:0, x:80}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 23.923);
+    tl.fromTo('#m2-g', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 24.444);
+    tl.fromTo('#m2-garc', {strokeDashoffset:100}, {strokeDashoffset:12, duration:0.5, ease:'power3.out'}, 24.867);
+    tl.fromTo('#m2-needle', {rotation:-90, svgOrigin:'150 150'}, {rotation:62, svgOrigin:'150 150', duration:0.5, ease:'back.out(1.6)'}, 24.867);
+    tl.fromTo('#m2-hi', {opacity:0, scale:1.9}, {opacity:1, scale:1, duration:0.26, ease:'power4.out'}, 25.047);
+    tl.to('#m2-awal-in', {opacity:0, duration:0.24, ease:'power2.in'}, 25.593);
+    // insert b2-organizer (broll) 30.33-33.73s
+    tl.fromTo('#b2-organizer-in', {opacity:0, scale:1.05}, {opacity:1, scale:1, duration:0.3, ease:'power2.out'}, 30.3333);
+    tl.fromTo('#b2-organizer-img', {scale:1.1, x:0, y:0}, {scale:1.02, x:0, y:18, duration:3.4, ease:'sine.inOut'}, 30.3333);
+    tl.to('#b2-organizer-in', {opacity:0, duration:0.24, ease:'power2.in'}, 33.493);
+    // insert m3-sama (mg) 33.60-39.97s
+    tl.fromTo('#m3-sama-in', {clipPath:'inset(100% 0% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.42, ease:'power3.inOut'}, 33.6);
+    tl.fromTo('#m3-c', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 33.72);
+    tl.fromTo('#m3-t', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 33.72);
+    tl.fromTo('#m3-l', {opacity:0, x:80}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 33.757);
+    tl.fromTo('#m3-eq', {opacity:0, scale:1.9}, {opacity:1, scale:1, duration:0.26, ease:'power4.out'}, 34.189);
+    tl.fromTo('#m3-r1', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 34.851);
+    tl.fromTo('#m3-r2', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 35.313);
+    tl.fromTo('#m3-k', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 36.082);
+    tl.fromTo('#m3-k1', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 37.506);
+    tl.fromTo('#m3-k2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 38.63);
+    tl.to('#m3-sama-in', {opacity:0, duration:0.24, ease:'power2.in'}, 39.727);
+    // insert b3-cutter (broll) 42.70-45.03s
+    tl.fromTo('#b3-cutter-in', {opacity:0, scale:1.05}, {opacity:1, scale:1, duration:0.3, ease:'power2.out'}, 42.7);
+    tl.fromTo('#b3-cutter-img', {scale:1.02, x:0, y:0}, {scale:1.11, x:0, y:-20, duration:2.333, ease:'sine.inOut'}, 42.7);
+    tl.to('#b3-cutter-in', {opacity:0, duration:0.24, ease:'power2.in'}, 44.793);
+    // insert m4-tapering (mg) 45.03-50.47s
+    tl.fromTo('#m4-tapering-in', {clipPath:'inset(100% 0% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.42, ease:'power3.inOut'}, 45.0333);
+    tl.fromTo('#m4-c', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 45.153);
+    tl.fromTo('#m4-t', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 45.158);
+    tl.fromTo('#m4-dl', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 45.258);
+    tl.fromTo('#m4-s0', {opacity:0, y:60, scaleY:0.6}, {opacity:1, y:0, scaleY:1, duration:0.4, ease:'power3.out'}, 45.153);
+    tl.fromTo('#m4-s1', {opacity:0, y:60, scaleY:0.6}, {opacity:1, y:0, scaleY:1, duration:0.4, ease:'power3.out'}, 46.542);
+    tl.fromTo('#m4-s2', {opacity:0, y:60, scaleY:0.6}, {opacity:1, y:0, scaleY:1, duration:0.4, ease:'power3.out'}, 47.545);
+    tl.fromTo('#m4-s3', {opacity:0, y:60, scaleY:0.6}, {opacity:1, y:0, scaleY:1, duration:0.4, ease:'power3.out'}, 48.127);
+    tl.fromTo('#m4-sh', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 48.769);
+    tl.to('#m4-tapering-in', {opacity:0, duration:0.24, ease:'power2.in'}, 50.227);
+    // insert b4-walk (broll) 55.77-58.20s
+    tl.fromTo('#b4-walk-in', {opacity:0, scale:1.05}, {opacity:1, scale:1, duration:0.3, ease:'power2.out'}, 55.7667);
+    tl.fromTo('#b4-walk-img', {scale:1.04, x:0, y:0}, {scale:1.13, x:0, y:-26, duration:2.433, ease:'sine.inOut'}, 55.7667);
+    tl.to('#b4-walk-in', {opacity:0, duration:0.24, ease:'power2.in'}, 57.96);
+    window.__timelines = window.__timelines || {};
+    window.__timelines["talking-head-recut"] = tl;
+  })();
+  </script>
+</div>
+</body>
+</html>
