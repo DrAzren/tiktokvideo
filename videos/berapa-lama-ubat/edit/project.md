@@ -65,3 +65,18 @@ centred line each (`patch_apex.py`). Matte only for 6.0–9.0 s (`build_matte_fr
 reduplications re-joined so "suka-suka." ends a line).
 
 **Audio:** original bed `tools/ambient_bed.py --key F --bpm 70 --seed 23`, mixed with `mix_music.py --bed-lufs -20`.
+
+**Delivery / QA (session 2)**
+- `final.mp4` master (CRF 14) and `final_tiktok.mp4` delivery: 1080×1920 @ 30, 61.8 s, H.264 3.47 Mb/s +
+  AAC 192k, 28.4 MB (two-pass).
+- Loudness −14.0 LUFS integrated, true peak −5.7 dBTP; music −20.6 dB under the voice, +2.2 dB in pauses.
+- Sync (check_sync vs edl.json) worst 0.1 ms on graphics/output.mp4, final.mp4 and final_tiktok.mp4.
+- blackdetect: none. freezedetect: only 60.73–61.5 s = the intended 1 s end hold on the CTA card.
+- Visual: frame pairs at all cuts, snapshots of every card/insert at its built moment, caption previews of
+  the apex window, a 22-frame grid of the final, and a 5 fps strip of the hook captions.
+
+**Outstanding**
+- User review. Switch on TikTok's "AI-generated content" label (4 AI stills, tagged "Ilustrasi AI" on screen).
+- Chin sits in the bottom-20% TikTok UI zone because of the caption crop (user chose option b); a clean
+  CapCut re-export (no captions / music) would restore the original framing and the real voice track.
+- Swap the synthesized bed for a TikTok-library track in-app if preferred.
