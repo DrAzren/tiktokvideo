@@ -9,7 +9,7 @@ Also reports how far the music sits below the voice during speech vs. pauses, so
 the balance is measured, not guessed.
 
 Usage:
-    python tools/mix_music.py <video.mp4> <bed.wav> -o <out.mp4> [--bed-lufs -20] [--fade-out 2.5] [--voice-fx enhance]
+    python tools/mix_music.py <video.mp4> <bed.wav> -o <out.mp4> [--bed-lufs -20] [--fade-out 2.5] [--voice-fx enhance] [--tp -1.5]
 """
 
 from __future__ import annotations
@@ -55,6 +55,8 @@ def main() -> None:
     ap.add_argument("--bed-lufs", type=float, default=-20.0, help="undocked bed loudness")
     ap.add_argument("--fade-out", type=float, default=2.5)
     ap.add_argument("--voice-fx", choices=list(VOICE_FX), help="process the dialogue before mixing")
+    ap.add_argument("--tp", type=float, default=-1.0,
+                    help="loudnorm true-peak ceiling (dBTP); AAC can overshoot it by ~0.3-0.5 dB, so use -1.5 for a hard -1")
     args = ap.parse_args()
 
     dur = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration",
@@ -85,9 +87,10 @@ def main() -> None:
         print(f"music under speech: {np.median(mr[speech] - vr[speech]):+.1f} dB vs voice; "
               f"music level in pauses vs under speech: {np.median(mr[pause]) - np.median(mr[speech]):+.1f} dB (ducking)")
 
-        err = ff("-i", str(pre), "-af", f"loudnorm={TARGET}:print_format=json", "-f", "null", "-")
+        target = TARGET.replace("TP=-1", f"TP={args.tp:g}")
+        err = ff("-i", str(pre), "-af", f"loudnorm={target}:print_format=json", "-f", "null", "-")
         j = json.loads(err[err.rindex("{"):err.rindex("}") + 1])
-        af = (f"loudnorm={TARGET}:measured_I={j['input_i']}:measured_TP={j['input_tp']}:measured_LRA={j['input_lra']}:"
+        af = (f"loudnorm={target}:measured_I={j['input_i']}:measured_TP={j['input_tp']}:measured_LRA={j['input_lra']}:"
               f"measured_thresh={j['input_thresh']}:offset={j['target_offset']}:linear=true")
         ff("-y", "-i", args.video, "-i", str(pre), "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-af", af,
            "-ar", "48000", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", args.output)

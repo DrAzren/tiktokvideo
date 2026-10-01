@@ -1,0 +1,4634 @@
+{
+ "score": 0.835,
+ "words": [
+  {
+   "i": 0,
+   "text": "assalamualaikum",
+   "start": 2.001,
+   "end": 2.762,
+   "score": 0.597
+  },
+  {
+   "i": 1,
+   "text": "saya",
+   "start": 2.862,
+   "end": 2.982,
+   "score": 0.472
+  },
+  {
+   "i": 2,
+   "text": "doktor",
+   "start": 3.002,
+   "end": 3.242,
+   "score": 0.526
+  },
+  {
+   "i": 3,
+   "text": "azren",
+   "start": 3.282,
+   "end": 3.562,
+   "score": 0.739
+  },
+  {
+   "i": 4,
+   "text": "saya",
+   "start": 3.582,
+   "end": 3.682,
+   "score": 0.482
+  },
+  {
+   "i": 5,
+   "text": "merupakan",
+   "start": 3.702,
+   "end": 3.963,
+   "score": 0.649
+  },
+  {
+   "i": 6,
+   "text": "doktor",
+   "start": 4.003,
+   "end": 4.163,
+   "score": 0.574
+  },
+  {
+   "i": 7,
+   "text": "di",
+   "start": 4.183,
+   "end": 4.243,
+   "score": 0.48
+  },
+  {
+   "i": 8,
+   "text": "jabatan",
+   "start": 4.263,
+   "end": 4.543,
+   "score": 0.365
+  },
+  {
+   "i": 9,
+   "text": "psikiatri",
+   "start": 4.563,
+   "end": 5.043,
+   "score": 0.594
+  },
+  {
+   "i": 10,
+   "text": "ramai",
+   "start": 5.744,
+   "end": 5.904,
+   "score": 0.781
+  },
+  {
+   "i": 11,
+   "text": "yang",
+   "start": 5.924,
+   "end": 6.004,
+   "score": 0.951
+  },
+  {
+   "i": 12,
+   "text": "salah",
+   "start": 6.024,
+   "end": 6.184,
+   "score": 0.539
+  },
+  {
+   "i": 13,
+   "text": "faham",
+   "start": 6.204,
+   "end": 6.444,
+   "score": 0.964
+  },
+  {
+   "i": 14,
+   "text": "yang",
+   "start": 6.484,
+   "end": 6.564,
+   "score": 0.981
+  },
+  {
+   "i": 15,
+   "text": "ingat",
+   "start": 6.604,
+   "end": 6.805,
+   "score": 0.941
+  },
+  {
+   "i": 16,
+   "text": "gangguan",
+   "start": 7.145,
+   "end": 7.465,
+   "score": 0.964
+  },
+  {
+   "i": 17,
+   "text": "mania",
+   "start": 7.485,
+   "end": 7.765,
+   "score": 0.771
+  },
+  {
+   "i": 18,
+   "text": "ni",
+   "start": 7.865,
+   "end": 7.925,
+   "score": 0.936
+  },
+  {
+   "i": 19,
+   "text": "seperti",
+   "start": 7.985,
+   "end": 8.406,
+   "score": 0.978
+  },
+  {
+   "i": 20,
+   "text": "gangguan",
+   "start": 9.426,
+   "end": 9.706,
+   "score": 0.947
+  },
+  {
+   "i": 21,
+   "text": "personaliti",
+   "start": 9.726,
+   "end": 10.147,
+   "score": 0.905
+  },
+  {
+   "i": 22,
+   "text": "atau",
+   "start": 10.247,
+   "end": 10.487,
+   "score": 0.503
+  },
+  {
+   "i": 23,
+   "text": "identiti",
+   "start": 10.607,
+   "end": 10.907,
+   "score": 0.581
+  },
+  {
+   "i": 24,
+   "text": "yang",
+   "start": 10.947,
+   "end": 11.027,
+   "score": 0.969
+  },
+  {
+   "i": 25,
+   "text": "berubah",
+   "start": 11.047,
+   "end": 11.227,
+   "score": 0.488
+  },
+  {
+   "i": 26,
+   "text": "ubah",
+   "start": 11.288,
+   "end": 11.548,
+   "score": 0.979
+  },
+  {
+   "i": 27,
+   "text": "okay",
+   "start": 12.208,
+   "end": 12.408,
+   "score": 0.444
+  },
+  {
+   "i": 28,
+   "text": "sebelumnya",
+   "start": 12.428,
+   "end": 12.668,
+   "score": 0.541
+  },
+  {
+   "i": 29,
+   "text": "nak",
+   "start": 12.688,
+   "end": 12.748,
+   "score": 0.152
+  },
+  {
+   "i": 30,
+   "text": "tahu",
+   "start": 12.769,
+   "end": 12.889,
+   "score": 0.691
+  },
+  {
+   "i": 31,
+   "text": "mania",
+   "start": 12.969,
+   "end": 13.249,
+   "score": 0.772
+  },
+  {
+   "i": 32,
+   "text": "kita",
+   "start": 13.309,
+   "end": 13.409,
+   "score": 0.926
+  },
+  {
+   "i": 33,
+   "text": "kena",
+   "start": 13.429,
+   "end": 13.529,
+   "score": 0.806
+  },
+  {
+   "i": 34,
+   "text": "tahu",
+   "start": 13.589,
+   "end": 13.869,
+   "score": 0.996
+  },
+  {
+   "i": 35,
+   "text": "bipolar",
+   "start": 14.089,
+   "end": 14.51,
+   "score": 0.833
+  },
+  {
+   "i": 36,
+   "text": "gangguan",
+   "start": 14.81,
+   "end": 15.01,
+   "score": 0.773
+  },
+  {
+   "i": 37,
+   "text": "bipolar",
+   "start": 15.03,
+   "end": 15.37,
+   "score": 0.809
+  },
+  {
+   "i": 38,
+   "text": "ni",
+   "start": 15.43,
+   "end": 15.49,
+   "score": 0.921
+  },
+  {
+   "i": 39,
+   "text": "dia",
+   "start": 15.55,
+   "end": 15.61,
+   "score": 0.677
+  },
+  {
+   "i": 40,
+   "text": "adalah",
+   "start": 15.65,
+   "end": 15.871,
+   "score": 0.983
+  },
+  {
+   "i": 41,
+   "text": "salah",
+   "start": 15.931,
+   "end": 16.111,
+   "score": 0.511
+  },
+  {
+   "i": 42,
+   "text": "satu",
+   "start": 16.131,
+   "end": 16.391,
+   "score": 0.982
+  },
+  {
+   "i": 43,
+   "text": "penyakit",
+   "start": 16.451,
+   "end": 16.791,
+   "score": 0.959
+  },
+  {
+   "i": 44,
+   "text": "mental",
+   "start": 16.811,
+   "end": 17.292,
+   "score": 0.818
+  },
+  {
+   "i": 45,
+   "text": "yang",
+   "start": 17.412,
+   "end": 17.512,
+   "score": 0.989
+  },
+  {
+   "i": 46,
+   "text": "menyebabkan",
+   "start": 17.532,
+   "end": 17.972,
+   "score": 0.702
+  },
+  {
+   "i": 47,
+   "text": "perubahan",
+   "start": 17.992,
+   "end": 18.392,
+   "score": 0.952
+  },
+  {
+   "i": 48,
+   "text": "mood",
+   "start": 18.492,
+   "end": 18.652,
+   "score": 0.255
+  },
+  {
+   "i": 49,
+   "text": "yang",
+   "start": 18.813,
+   "end": 18.993,
+   "score": 0.993
+  },
+  {
+   "i": 50,
+   "text": "drastik",
+   "start": 19.053,
+   "end": 19.513,
+   "score": 0.994
+  },
+  {
+   "i": 51,
+   "text": "di",
+   "start": 19.553,
+   "end": 19.613,
+   "score": 0.989
+  },
+  {
+   "i": 52,
+   "text": "antara",
+   "start": 19.673,
+   "end": 20.033,
+   "score": 0.996
+  },
+  {
+   "i": 53,
+   "text": "fasa",
+   "start": 20.153,
+   "end": 20.414,
+   "score": 0.965
+  },
+  {
+   "i": 54,
+   "text": "tinggi",
+   "start": 20.494,
+   "end": 20.754,
+   "score": 0.984
+  },
+  {
+   "i": 55,
+   "text": "atau",
+   "start": 20.854,
+   "end": 20.974,
+   "score": 0.771
+  },
+  {
+   "i": 56,
+   "text": "kita",
+   "start": 20.994,
+   "end": 21.094,
+   "score": 0.258
+  },
+  {
+   "i": 57,
+   "text": "panggil",
+   "start": 21.114,
+   "end": 21.294,
+   "score": 0.706
+  },
+  {
+   "i": 58,
+   "text": "sebagai",
+   "start": 21.314,
+   "end": 21.534,
+   "score": 0.79
+  },
+  {
+   "i": 59,
+   "text": "fasa",
+   "start": 21.554,
+   "end": 21.795,
+   "score": 0.971
+  },
+  {
+   "i": 60,
+   "text": "mania",
+   "start": 21.875,
+   "end": 22.175,
+   "score": 0.78
+  },
+  {
+   "i": 61,
+   "text": "dan",
+   "start": 22.935,
+   "end": 23.035,
+   "score": 0.982
+  },
+  {
+   "i": 62,
+   "text": "juga",
+   "start": 23.075,
+   "end": 23.276,
+   "score": 0.992
+  },
+  {
+   "i": 63,
+   "text": "fasa",
+   "start": 23.396,
+   "end": 23.656,
+   "score": 0.96
+  },
+  {
+   "i": 64,
+   "text": "rendah",
+   "start": 24.316,
+   "end": 24.636,
+   "score": 0.984
+  },
+  {
+   "i": 65,
+   "text": "kita",
+   "start": 24.957,
+   "end": 25.137,
+   "score": 0.046
+  },
+  {
+   "i": 66,
+   "text": "panggil",
+   "start": 25.157,
+   "end": 25.357,
+   "score": 0.825
+  },
+  {
+   "i": 67,
+   "text": "sebagai",
+   "start": 25.397,
+   "end": 25.737,
+   "score": 0.884
+  },
+  {
+   "i": 68,
+   "text": "depression",
+   "start": 26.197,
+   "end": 26.738,
+   "score": 0.779
+  },
+  {
+   "i": 69,
+   "text": "okay",
+   "start": 27.418,
+   "end": 27.558,
+   "score": 0.487
+  },
+  {
+   "i": 70,
+   "text": "fasa",
+   "start": 27.598,
+   "end": 27.799,
+   "score": 0.967
+  },
+  {
+   "i": 71,
+   "text": "mania",
+   "start": 27.879,
+   "end": 28.239,
+   "score": 0.742
+  },
+  {
+   "i": 72,
+   "text": "ni",
+   "start": 28.359,
+   "end": 28.439,
+   "score": 0.919
+  },
+  {
+   "i": 73,
+   "text": "dia",
+   "start": 28.599,
+   "end": 28.679,
+   "score": 0.857
+  },
+  {
+   "i": 74,
+   "text": "ada",
+   "start": 28.739,
+   "end": 28.859,
+   "score": 0.984
+  },
+  {
+   "i": 75,
+   "text": "beberapa",
+   "start": 28.899,
+   "end": 29.199,
+   "score": 0.993
+  },
+  {
+   "i": 76,
+   "text": "gejala",
+   "start": 29.26,
+   "end": 29.6,
+   "score": 0.989
+  },
+  {
+   "i": 77,
+   "text": "dan",
+   "start": 29.68,
+   "end": 29.8,
+   "score": 0.991
+  },
+  {
+   "i": 78,
+   "text": "gejala",
+   "start": 29.88,
+   "end": 30.18,
+   "score": 0.996
+  },
+  {
+   "i": 79,
+   "text": "gejala",
+   "start": 30.22,
+   "end": 30.46,
+   "score": 0.994
+  },
+  {
+   "i": 80,
+   "text": "ini",
+   "start": 30.54,
+   "end": 30.72,
+   "score": 0.993
+  },
+  {
+   "i": 81,
+   "text": "mestilah",
+   "start": 30.901,
+   "end": 31.421,
+   "score": 0.991
+  },
+  {
+   "i": 82,
+   "text": "berlaku",
+   "start": 31.541,
+   "end": 31.881,
+   "score": 0.85
+  },
+  {
+   "i": 83,
+   "text": "hari",
+   "start": 32.061,
+   "end": 32.402,
+   "score": 0.976
+  },
+  {
+   "i": 84,
+   "text": "hari",
+   "start": 32.482,
+   "end": 32.722,
+   "score": 0.971
+  },
+  {
+   "i": 85,
+   "text": "at",
+   "start": 33.322,
+   "end": 33.442,
+   "score": 0.125
+  },
+  {
+   "i": 86,
+   "text": "least",
+   "start": 33.562,
+   "end": 33.823,
+   "score": 0.364
+  },
+  {
+   "i": 87,
+   "text": "satu",
+   "start": 34.123,
+   "end": 34.383,
+   "score": 0.604
+  },
+  {
+   "i": 88,
+   "text": "minggu",
+   "start": 34.423,
+   "end": 34.663,
+   "score": 0.733
+  },
+  {
+   "i": 89,
+   "text": "sekurang",
+   "start": 34.783,
+   "end": 35.023,
+   "score": 0.949
+  },
+  {
+   "i": 90,
+   "text": "kurangnya",
+   "start": 35.043,
+   "end": 35.243,
+   "score": 0.949
+  },
+  {
+   "i": 91,
+   "text": "satu",
+   "start": 35.264,
+   "end": 35.424,
+   "score": 0.77
+  },
+  {
+   "i": 92,
+   "text": "minggu",
+   "start": 35.464,
+   "end": 35.704,
+   "score": 0.885
+  },
+  {
+   "i": 93,
+   "text": "kalau",
+   "start": 35.784,
+   "end": 36.024,
+   "score": 0.945
+  },
+  {
+   "i": 94,
+   "text": "dia",
+   "start": 36.044,
+   "end": 36.104,
+   "score": 0.758
+  },
+  {
+   "i": 95,
+   "text": "berlaku",
+   "start": 36.144,
+   "end": 36.544,
+   "score": 0.818
+  },
+  {
+   "i": 96,
+   "text": "kurang",
+   "start": 36.724,
+   "end": 37.045,
+   "score": 0.949
+  },
+  {
+   "i": 97,
+   "text": "dari",
+   "start": 37.065,
+   "end": 37.185,
+   "score": 0.98
+  },
+  {
+   "i": 98,
+   "text": "satu",
+   "start": 37.225,
+   "end": 37.405,
+   "score": 0.966
+  },
+  {
+   "i": 99,
+   "text": "minggu",
+   "start": 37.445,
+   "end": 37.705,
+   "score": 0.974
+  },
+  {
+   "i": 100,
+   "text": "kita",
+   "start": 38.366,
+   "end": 38.486,
+   "score": 0.979
+  },
+  {
+   "i": 101,
+   "text": "tak",
+   "start": 38.526,
+   "end": 38.626,
+   "score": 0.908
+  },
+  {
+   "i": 102,
+   "text": "panggil",
+   "start": 38.646,
+   "end": 38.946,
+   "score": 0.782
+  },
+  {
+   "i": 103,
+   "text": "dia",
+   "start": 38.966,
+   "end": 39.066,
+   "score": 0.387
+  },
+  {
+   "i": 104,
+   "text": "fasa",
+   "start": 39.266,
+   "end": 39.506,
+   "score": 0.944
+  },
+  {
+   "i": 105,
+   "text": "mania",
+   "start": 39.566,
+   "end": 39.867,
+   "score": 0.735
+  },
+  {
+   "i": 106,
+   "text": "jadi",
+   "start": 40.347,
+   "end": 40.507,
+   "score": 0.98
+  },
+  {
+   "i": 107,
+   "text": "apa",
+   "start": 40.587,
+   "end": 40.767,
+   "score": 0.897
+  },
+  {
+   "i": 108,
+   "text": "yang",
+   "start": 40.807,
+   "end": 40.887,
+   "score": 0.677
+  },
+  {
+   "i": 109,
+   "text": "berlaku",
+   "start": 40.907,
+   "end": 41.147,
+   "score": 0.795
+  },
+  {
+   "i": 110,
+   "text": "dalam",
+   "start": 41.187,
+   "end": 41.328,
+   "score": 0.872
+  },
+  {
+   "i": 111,
+   "text": "fasa",
+   "start": 41.348,
+   "end": 41.568,
+   "score": 0.864
+  },
+  {
+   "i": 112,
+   "text": "mania",
+   "start": 41.628,
+   "end": 41.888,
+   "score": 0.526
+  },
+  {
+   "i": 113,
+   "text": "ni",
+   "start": 41.968,
+   "end": 42.048,
+   "score": 0.491
+  },
+  {
+   "i": 114,
+   "text": "orang",
+   "start": 45.851,
+   "end": 46.011,
+   "score": 0.866
+  },
+  {
+   "i": 115,
+   "text": "yang",
+   "start": 46.031,
+   "end": 46.111,
+   "score": 0.257
+  },
+  {
+   "i": 116,
+   "text": "mengalami",
+   "start": 46.151,
+   "end": 46.351,
+   "score": 0.07
+  },
+  {
+   "i": 117,
+   "text": "mania",
+   "start": 46.371,
+   "end": 46.651,
+   "score": 0.623
+  },
+  {
+   "i": 118,
+   "text": "ni",
+   "start": 46.711,
+   "end": 46.771,
+   "score": 0.987
+  },
+  {
+   "i": 119,
+   "text": "dia",
+   "start": 46.851,
+   "end": 46.931,
+   "score": 0.854
+  },
+  {
+   "i": 120,
+   "text": "akan",
+   "start": 46.971,
+   "end": 47.312,
+   "score": 0.99
+  },
+  {
+   "i": 121,
+   "text": "ada",
+   "start": 47.592,
+   "end": 47.732,
+   "score": 0.989
+  },
+  {
+   "i": 122,
+   "text": "mood",
+   "start": 47.872,
+   "end": 48.032,
+   "score": 0.25
+  },
+  {
+   "i": 123,
+   "text": "yang",
+   "start": 48.112,
+   "end": 48.332,
+   "score": 0.986
+  },
+  {
+   "i": 124,
+   "text": "berlebihan",
+   "start": 48.432,
+   "end": 49.033,
+   "score": 0.993
+  },
+  {
+   "i": 125,
+   "text": "maksudnya",
+   "start": 49.113,
+   "end": 49.473,
+   "score": 0.902
+  },
+  {
+   "i": 126,
+   "text": "individu",
+   "start": 49.553,
+   "end": 49.953,
+   "score": 0.993
+  },
+  {
+   "i": 127,
+   "text": "itu",
+   "start": 50.153,
+   "end": 50.334,
+   "score": 0.996
+  },
+  {
+   "i": 128,
+   "text": "akan",
+   "start": 50.474,
+   "end": 50.714,
+   "score": 0.997
+  },
+  {
+   "i": 129,
+   "text": "rasa",
+   "start": 50.774,
+   "end": 51.094,
+   "score": 0.998
+  },
+  {
+   "i": 130,
+   "text": "ada",
+   "start": 51.434,
+   "end": 51.554,
+   "score": 0.997
+  },
+  {
+   "i": 131,
+   "text": "perasaan",
+   "start": 51.594,
+   "end": 52.015,
+   "score": 0.993
+  },
+  {
+   "i": 132,
+   "text": "gairah",
+   "start": 52.135,
+   "end": 52.515,
+   "score": 0.966
+  },
+  {
+   "i": 133,
+   "text": "dan",
+   "start": 52.735,
+   "end": 52.855,
+   "score": 0.991
+  },
+  {
+   "i": 134,
+   "text": "penuh",
+   "start": 52.955,
+   "end": 53.195,
+   "score": 0.994
+  },
+  {
+   "i": 135,
+   "text": "semangat",
+   "start": 53.296,
+   "end": 53.656,
+   "score": 0.965
+  },
+  {
+   "i": 136,
+   "text": "mereka",
+   "start": 54.556,
+   "end": 54.797,
+   "score": 0.991
+  },
+  {
+   "i": 137,
+   "text": "ni",
+   "start": 54.857,
+   "end": 54.917,
+   "score": 0.992
+  },
+  {
+   "i": 138,
+   "text": "mungkin",
+   "start": 54.977,
+   "end": 55.457,
+   "score": 0.986
+  },
+  {
+   "i": 139,
+   "text": "kalau",
+   "start": 56.097,
+   "end": 56.237,
+   "score": 0.75
+  },
+  {
+   "i": 140,
+   "text": "kita",
+   "start": 56.258,
+   "end": 56.358,
+   "score": 0.892
+  },
+  {
+   "i": 141,
+   "text": "tengok",
+   "start": 56.398,
+   "end": 56.638,
+   "score": 0.701
+  },
+  {
+   "i": 142,
+   "text": "orang",
+   "start": 56.678,
+   "end": 56.798,
+   "score": 0.978
+  },
+  {
+   "i": 143,
+   "text": "yang",
+   "start": 56.818,
+   "end": 56.898,
+   "score": 0.988
+  },
+  {
+   "i": 144,
+   "text": "ada",
+   "start": 56.938,
+   "end": 57.038,
+   "score": 0.624
+  },
+  {
+   "i": 145,
+   "text": "bipolar",
+   "start": 57.058,
+   "end": 57.498,
+   "score": 0.649
+  },
+  {
+   "i": 146,
+   "text": "dia",
+   "start": 57.618,
+   "end": 57.759,
+   "score": 0.49
+  },
+  {
+   "i": 147,
+   "text": "akan",
+   "start": 57.919,
+   "end": 58.319,
+   "score": 0.427
+  },
+  {
+   "i": 148,
+   "text": "dia",
+   "start": 61.481,
+   "end": 61.601,
+   "score": 0.891
+  },
+  {
+   "i": 149,
+   "text": "akan",
+   "start": 61.661,
+   "end": 61.881,
+   "score": 0.948
+  },
+  {
+   "i": 150,
+   "text": "jadi",
+   "start": 61.941,
+   "end": 62.141,
+   "score": 0.965
+  },
+  {
+   "i": 151,
+   "text": "lebih",
+   "start": 62.201,
+   "end": 62.482,
+   "score": 0.961
+  },
+  {
+   "i": 152,
+   "text": "banyak",
+   "start": 62.742,
+   "end": 63.022,
+   "score": 0.941
+  },
+  {
+   "i": 153,
+   "text": "bercakap",
+   "start": 63.042,
+   "end": 63.462,
+   "score": 0.785
+  },
+  {
+   "i": 154,
+   "text": "susah",
+   "start": 63.662,
+   "end": 64.043,
+   "score": 0.994
+  },
+  {
+   "i": 155,
+   "text": "nak",
+   "start": 64.123,
+   "end": 64.243,
+   "score": 0.975
+  },
+  {
+   "i": 156,
+   "text": "stop",
+   "start": 64.303,
+   "end": 64.623,
+   "score": 0.747
+  },
+  {
+   "i": 157,
+   "text": "percakapan",
+   "start": 64.783,
+   "end": 65.243,
+   "score": 0.886
+  },
+  {
+   "i": 158,
+   "text": "dia",
+   "start": 65.284,
+   "end": 65.364,
+   "score": 0.984
+  },
+  {
+   "i": 159,
+   "text": "kalau",
+   "start": 65.384,
+   "end": 65.524,
+   "score": 0.612
+  },
+  {
+   "i": 160,
+   "text": "kita",
+   "start": 65.544,
+   "end": 65.704,
+   "score": 0.996
+  },
+  {
+   "i": 161,
+   "text": "berbual",
+   "start": 65.744,
+   "end": 66.044,
+   "score": 0.609
+  },
+  {
+   "i": 162,
+   "text": "dengan",
+   "start": 66.084,
+   "end": 66.244,
+   "score": 0.906
+  },
+  {
+   "i": 163,
+   "text": "dia",
+   "start": 66.284,
+   "end": 66.344,
+   "score": 0.668
+  },
+  {
+   "i": 164,
+   "text": "kita",
+   "start": 66.364,
+   "end": 66.464,
+   "score": 0.497
+  },
+  {
+   "i": 165,
+   "text": "nampak",
+   "start": 66.504,
+   "end": 66.785,
+   "score": 0.978
+  },
+  {
+   "i": 166,
+   "text": "dia",
+   "start": 66.825,
+   "end": 66.925,
+   "score": 0.99
+  },
+  {
+   "i": 167,
+   "text": "sangat",
+   "start": 66.985,
+   "end": 67.285,
+   "score": 0.928
+  },
+  {
+   "i": 168,
+   "text": "ceria",
+   "start": 67.325,
+   "end": 67.625,
+   "score": 0.985
+  },
+  {
+   "i": 169,
+   "text": "dan",
+   "start": 67.785,
+   "end": 67.945,
+   "score": 0.993
+  },
+  {
+   "i": 170,
+   "text": "optimistik",
+   "start": 68.286,
+   "end": 68.886,
+   "score": 0.99
+  },
+  {
+   "i": 171,
+   "text": "yang",
+   "start": 68.926,
+   "end": 69.046,
+   "score": 0.947
+  },
+  {
+   "i": 172,
+   "text": "berlebihan",
+   "start": 69.066,
+   "end": 69.626,
+   "score": 0.96
+  },
+  {
+   "i": 173,
+   "text": "dalam",
+   "start": 70.407,
+   "end": 70.587,
+   "score": 0.985
+  },
+  {
+   "i": 174,
+   "text": "fasa",
+   "start": 70.607,
+   "end": 70.847,
+   "score": 0.696
+  },
+  {
+   "i": 175,
+   "text": "mania",
+   "start": 70.907,
+   "end": 71.227,
+   "score": 0.778
+  },
+  {
+   "i": 176,
+   "text": "ni",
+   "start": 71.428,
+   "end": 71.528,
+   "score": 0.925
+  },
+  {
+   "i": 177,
+   "text": "individu",
+   "start": 72.348,
+   "end": 72.748,
+   "score": 0.99
+  },
+  {
+   "i": 178,
+   "text": "tu",
+   "start": 72.869,
+   "end": 72.929,
+   "score": 0.815
+  },
+  {
+   "i": 179,
+   "text": "cenderung",
+   "start": 73.109,
+   "end": 73.549,
+   "score": 0.846
+  },
+  {
+   "i": 180,
+   "text": "untuk",
+   "start": 73.629,
+   "end": 74.089,
+   "score": 0.994
+  },
+  {
+   "i": 181,
+   "text": "melakukan",
+   "start": 74.169,
+   "end": 74.61,
+   "score": 0.994
+  },
+  {
+   "i": 182,
+   "text": "lebih",
+   "start": 74.63,
+   "end": 74.77,
+   "score": 0.998
+  },
+  {
+   "i": 183,
+   "text": "banyak",
+   "start": 74.79,
+   "end": 75.01,
+   "score": 0.997
+  },
+  {
+   "i": 184,
+   "text": "aktiviti",
+   "start": 75.05,
+   "end": 75.53,
+   "score": 0.943
+  },
+  {
+   "i": 185,
+   "text": "mereka",
+   "start": 76.131,
+   "end": 76.491,
+   "score": 0.995
+  },
+  {
+   "i": 186,
+   "text": "tak",
+   "start": 76.951,
+   "end": 77.071,
+   "score": 0.984
+  },
+  {
+   "i": 187,
+   "text": "memikirkan",
+   "start": 77.111,
+   "end": 77.652,
+   "score": 0.887
+  },
+  {
+   "i": 188,
+   "text": "pun",
+   "start": 77.732,
+   "end": 77.852,
+   "score": 0.992
+  },
+  {
+   "i": 189,
+   "text": "risiko",
+   "start": 77.932,
+   "end": 78.352,
+   "score": 0.983
+  },
+  {
+   "i": 190,
+   "text": "atau",
+   "start": 78.512,
+   "end": 78.692,
+   "score": 0.983
+  },
+  {
+   "i": 191,
+   "text": "kesan",
+   "start": 78.732,
+   "end": 78.953,
+   "score": 0.824
+  },
+  {
+   "i": 192,
+   "text": "negatif",
+   "start": 78.973,
+   "end": 79.353,
+   "score": 0.997
+  },
+  {
+   "i": 193,
+   "text": "terhadap",
+   "start": 79.893,
+   "end": 80.173,
+   "score": 0.637
+  },
+  {
+   "i": 194,
+   "text": "perkara",
+   "start": 80.213,
+   "end": 80.534,
+   "score": 0.909
+  },
+  {
+   "i": 195,
+   "text": "yang",
+   "start": 80.554,
+   "end": 80.654,
+   "score": 0.913
+  },
+  {
+   "i": 196,
+   "text": "mereka",
+   "start": 80.674,
+   "end": 80.854,
+   "score": 0.981
+  },
+  {
+   "i": 197,
+   "text": "lakukan",
+   "start": 80.894,
+   "end": 81.234,
+   "score": 0.995
+  },
+  {
+   "i": 198,
+   "text": "itu",
+   "start": 81.294,
+   "end": 81.434,
+   "score": 0.985
+  },
+  {
+   "i": 199,
+   "text": "dan",
+   "start": 82.155,
+   "end": 82.415,
+   "score": 0.982
+  },
+  {
+   "i": 200,
+   "text": "mereka",
+   "start": 83.075,
+   "end": 83.496,
+   "score": 0.989
+  },
+  {
+   "i": 201,
+   "text": "boleh",
+   "start": 83.616,
+   "end": 83.816,
+   "score": 0.981
+  },
+  {
+   "i": 202,
+   "text": "jadi",
+   "start": 83.836,
+   "end": 84.076,
+   "score": 0.992
+  },
+  {
+   "i": 203,
+   "text": "terlalu",
+   "start": 85.117,
+   "end": 85.437,
+   "score": 0.958
+  },
+  {
+   "i": 204,
+   "text": "aktif",
+   "start": 85.537,
+   "end": 85.917,
+   "score": 0.886
+  },
+  {
+   "i": 205,
+   "text": "kurang",
+   "start": 86.438,
+   "end": 86.718,
+   "score": 0.943
+  },
+  {
+   "i": 206,
+   "text": "tidur",
+   "start": 86.758,
+   "end": 87.178,
+   "score": 0.58
+  },
+  {
+   "i": 207,
+   "text": "buat",
+   "start": 87.718,
+   "end": 87.919,
+   "score": 0.979
+  },
+  {
+   "i": 208,
+   "text": "banyak",
+   "start": 87.979,
+   "end": 88.279,
+   "score": 0.967
+  },
+  {
+   "i": 209,
+   "text": "projek",
+   "start": 88.319,
+   "end": 88.779,
+   "score": 0.951
+  },
+  {
+   "i": 210,
+   "text": "tanpa",
+   "start": 88.899,
+   "end": 89.239,
+   "score": 0.797
+  },
+  {
+   "i": 211,
+   "text": "dapat",
+   "start": 89.54,
+   "end": 89.82,
+   "score": 0.986
+  },
+  {
+   "i": 212,
+   "text": "menyiapkannya",
+   "start": 89.84,
+   "end": 90.58,
+   "score": 0.944
+  },
+  {
+   "i": 213,
+   "text": "mereka",
+   "start": 91.881,
+   "end": 92.201,
+   "score": 0.982
+  },
+  {
+   "i": 214,
+   "text": "ni",
+   "start": 92.282,
+   "end": 92.362,
+   "score": 0.917
+  },
+  {
+   "i": 215,
+   "text": "dia",
+   "start": 92.602,
+   "end": 92.722,
+   "score": 0.659
+  },
+  {
+   "i": 216,
+   "text": "rasa",
+   "start": 94.243,
+   "end": 94.563,
+   "score": 0.99
+  },
+  {
+   "i": 217,
+   "text": "dia",
+   "start": 94.643,
+   "end": 94.703,
+   "score": 0.726
+  },
+  {
+   "i": 218,
+   "text": "memiliki",
+   "start": 94.743,
+   "end": 95.223,
+   "score": 0.986
+  },
+  {
+   "i": 219,
+   "text": "banyak",
+   "start": 95.324,
+   "end": 95.544,
+   "score": 0.986
+  },
+  {
+   "i": 220,
+   "text": "tenaga",
+   "start": 95.584,
+   "end": 95.924,
+   "score": 0.979
+  },
+  {
+   "i": 221,
+   "text": "dan",
+   "start": 96.144,
+   "end": 96.224,
+   "score": 0.985
+  },
+  {
+   "i": 222,
+   "text": "keperluan",
+   "start": 96.284,
+   "end": 96.704,
+   "score": 0.945
+  },
+  {
+   "i": 223,
+   "text": "tidur",
+   "start": 96.744,
+   "end": 97.045,
+   "score": 0.6
+  },
+  {
+   "i": 224,
+   "text": "dia",
+   "start": 97.085,
+   "end": 97.145,
+   "score": 0.407
+  },
+  {
+   "i": 225,
+   "text": "tu",
+   "start": 97.165,
+   "end": 97.225,
+   "score": 0.771
+  },
+  {
+   "i": 226,
+   "text": "akan",
+   "start": 97.285,
+   "end": 97.405,
+   "score": 0.974
+  },
+  {
+   "i": 227,
+   "text": "jadi",
+   "start": 97.425,
+   "end": 97.545,
+   "score": 0.985
+  },
+  {
+   "i": 228,
+   "text": "berkurangan",
+   "start": 97.585,
+   "end": 98.025,
+   "score": 0.905
+  },
+  {
+   "i": 229,
+   "text": "tengok",
+   "start": 98.185,
+   "end": 98.386,
+   "score": 0.545
+  },
+  {
+   "i": 230,
+   "text": "orang",
+   "start": 98.426,
+   "end": 98.566,
+   "score": 0.889
+  },
+  {
+   "i": 231,
+   "text": "yang",
+   "start": 98.586,
+   "end": 98.686,
+   "score": 0.935
+  },
+  {
+   "i": 232,
+   "text": "ada",
+   "start": 98.706,
+   "end": 98.866,
+   "score": 0.981
+  },
+  {
+   "i": 233,
+   "text": "dalam",
+   "start": 99.346,
+   "end": 99.506,
+   "score": 0.985
+  },
+  {
+   "i": 234,
+   "text": "fasa",
+   "start": 99.546,
+   "end": 99.726,
+   "score": 0.951
+  },
+  {
+   "i": 235,
+   "text": "mania",
+   "start": 99.787,
+   "end": 100.027,
+   "score": 0.661
+  },
+  {
+   "i": 236,
+   "text": "ni",
+   "start": 100.067,
+   "end": 100.147,
+   "score": 0.959
+  },
+  {
+   "i": 237,
+   "text": "tidur",
+   "start": 100.187,
+   "end": 100.467,
+   "score": 0.589
+  },
+  {
+   "i": 238,
+   "text": "dia",
+   "start": 100.487,
+   "end": 100.547,
+   "score": 0.469
+  },
+  {
+   "i": 239,
+   "text": "dalam",
+   "start": 100.587,
+   "end": 100.807,
+   "score": 0.492
+  },
+  {
+   "i": 240,
+   "text": "dua",
+   "start": 100.887,
+   "end": 101.027,
+   "score": 0.402
+  },
+  {
+   "i": 241,
+   "text": "tiga",
+   "start": 101.067,
+   "end": 101.247,
+   "score": 0.296
+  },
+  {
+   "i": 242,
+   "text": "jam",
+   "start": 101.308,
+   "end": 101.488,
+   "score": 0.732
+  },
+  {
+   "i": 243,
+   "text": "je",
+   "start": 101.528,
+   "end": 101.568,
+   "score": 0.359
+  },
+  {
+   "i": 244,
+   "text": "satu",
+   "start": 101.628,
+   "end": 101.768,
+   "score": 0.802
+  },
+  {
+   "i": 245,
+   "text": "hari",
+   "start": 101.808,
+   "end": 101.988,
+   "score": 0.812
+  },
+  {
+   "i": 246,
+   "text": "and",
+   "start": 106.631,
+   "end": 106.731,
+   "score": 0.24
+  },
+  {
+   "i": 247,
+   "text": "then",
+   "start": 106.751,
+   "end": 106.931,
+   "score": 0.396
+  },
+  {
+   "i": 248,
+   "text": "fikiran",
+   "start": 107.011,
+   "end": 107.412,
+   "score": 0.943
+  },
+  {
+   "i": 249,
+   "text": "dia",
+   "start": 107.452,
+   "end": 107.512,
+   "score": 0.679
+  },
+  {
+   "i": 250,
+   "text": "sangat",
+   "start": 107.552,
+   "end": 107.812,
+   "score": 0.908
+  },
+  {
+   "i": 251,
+   "text": "laju",
+   "start": 107.852,
+   "end": 108.072,
+   "score": 0.985
+  },
+  {
+   "i": 252,
+   "text": "terlalu",
+   "start": 108.232,
+   "end": 108.452,
+   "score": 0.93
+  },
+  {
+   "i": 253,
+   "text": "banyak",
+   "start": 108.492,
+   "end": 108.753,
+   "score": 0.78
+  },
+  {
+   "i": 254,
+   "text": "idea",
+   "start": 108.913,
+   "end": 109.173,
+   "score": 0.695
+  },
+  {
+   "i": 255,
+   "text": "yang",
+   "start": 109.313,
+   "end": 109.473,
+   "score": 0.989
+  },
+  {
+   "i": 256,
+   "text": "melibatkan",
+   "start": 109.513,
+   "end": 109.893,
+   "score": 0.799
+  },
+  {
+   "i": 257,
+   "text": "risiko",
+   "start": 109.933,
+   "end": 110.334,
+   "score": 0.973
+  },
+  {
+   "i": 258,
+   "text": "dan",
+   "start": 110.974,
+   "end": 111.094,
+   "score": 0.993
+  },
+  {
+   "i": 259,
+   "text": "kesukaran",
+   "start": 111.154,
+   "end": 111.594,
+   "score": 0.977
+  },
+  {
+   "i": 260,
+   "text": "untuk",
+   "start": 111.674,
+   "end": 111.915,
+   "score": 0.998
+  },
+  {
+   "i": 261,
+   "text": "menumpukan",
+   "start": 111.955,
+   "end": 112.455,
+   "score": 0.963
+  },
+  {
+   "i": 262,
+   "text": "perhatian",
+   "start": 112.495,
+   "end": 112.915,
+   "score": 0.944
+  },
+  {
+   "i": 263,
+   "text": "pada",
+   "start": 112.955,
+   "end": 113.115,
+   "score": 0.998
+  },
+  {
+   "i": 264,
+   "text": "sesuatu",
+   "start": 113.155,
+   "end": 113.636,
+   "score": 0.994
+  },
+  {
+   "i": 265,
+   "text": "fasa",
+   "start": 114.236,
+   "end": 114.496,
+   "score": 0.921
+  },
+  {
+   "i": 266,
+   "text": "mania",
+   "start": 114.556,
+   "end": 114.837,
+   "score": 0.741
+  },
+  {
+   "i": 267,
+   "text": "ni",
+   "start": 114.917,
+   "end": 115.017,
+   "score": 0.993
+  },
+  {
+   "i": 268,
+   "text": "boleh",
+   "start": 115.297,
+   "end": 115.477,
+   "score": 0.998
+  },
+  {
+   "i": 269,
+   "text": "menyebabkan",
+   "start": 115.497,
+   "end": 116.237,
+   "score": 0.984
+  },
+  {
+   "i": 270,
+   "text": "seorang",
+   "start": 116.418,
+   "end": 116.698,
+   "score": 0.992
+  },
+  {
+   "i": 271,
+   "text": "itu",
+   "start": 116.738,
+   "end": 116.938,
+   "score": 0.998
+  },
+  {
+   "i": 272,
+   "text": "mengambil",
+   "start": 116.998,
+   "end": 117.338,
+   "score": 0.867
+  },
+  {
+   "i": 273,
+   "text": "risiko",
+   "start": 117.358,
+   "end": 117.799,
+   "score": 0.99
+  },
+  {
+   "i": 274,
+   "text": "yang",
+   "start": 117.999,
+   "end": 118.159,
+   "score": 0.993
+  },
+  {
+   "i": 275,
+   "text": "tidak",
+   "start": 118.259,
+   "end": 118.439,
+   "score": 0.998
+  },
+  {
+   "i": 276,
+   "text": "masuk",
+   "start": 118.459,
+   "end": 118.659,
+   "score": 0.874
+  },
+  {
+   "i": 277,
+   "text": "akal",
+   "start": 118.699,
+   "end": 118.959,
+   "score": 0.744
+  },
+  {
+   "i": 278,
+   "text": "seperti",
+   "start": 118.999,
+   "end": 119.32,
+   "score": 0.807
+  },
+  {
+   "i": 279,
+   "text": "penggunaan",
+   "start": 119.4,
+   "end": 119.94,
+   "score": 0.937
+  },
+  {
+   "i": 280,
+   "text": "dadah",
+   "start": 120.32,
+   "end": 120.74,
+   "score": 0.895
+  },
+  {
+   "i": 281,
+   "text": "atau",
+   "start": 120.921,
+   "end": 121.081,
+   "score": 0.962
+  },
+  {
+   "i": 282,
+   "text": "alkohol",
+   "start": 121.121,
+   "end": 121.481,
+   "score": 0.702
+  },
+  {
+   "i": 283,
+   "text": "yang",
+   "start": 121.521,
+   "end": 121.601,
+   "score": 0.997
+  },
+  {
+   "i": 284,
+   "text": "berlebihan",
+   "start": 121.621,
+   "end": 122.241,
+   "score": 0.979
+  },
+  {
+   "i": 285,
+   "text": "pengeluaran",
+   "start": 122.982,
+   "end": 123.382,
+   "score": 0.948
+  },
+  {
+   "i": 286,
+   "text": "wang",
+   "start": 123.482,
+   "end": 123.682,
+   "score": 0.978
+  },
+  {
+   "i": 287,
+   "text": "yang",
+   "start": 123.742,
+   "end": 123.843,
+   "score": 0.995
+  },
+  {
+   "i": 288,
+   "text": "tidak",
+   "start": 123.863,
+   "end": 124.023,
+   "score": 0.997
+  },
+  {
+   "i": 289,
+   "text": "terkawal",
+   "start": 124.063,
+   "end": 124.543,
+   "score": 0.971
+  },
+  {
+   "i": 290,
+   "text": "berbelanja",
+   "start": 124.643,
+   "end": 125.043,
+   "score": 0.929
+  },
+  {
+   "i": 291,
+   "text": "secara",
+   "start": 125.083,
+   "end": 125.264,
+   "score": 0.862
+  },
+  {
+   "i": 292,
+   "text": "berlebihan",
+   "start": 125.424,
+   "end": 126.124,
+   "score": 0.852
+  },
+  {
+   "i": 293,
+   "text": "kelakuan",
+   "start": 127.045,
+   "end": 127.585,
+   "score": 0.989
+  },
+  {
+   "i": 294,
+   "text": "agresif",
+   "start": 127.665,
+   "end": 128.245,
+   "score": 0.869
+  },
+  {
+   "i": 295,
+   "text": "rasa",
+   "start": 128.686,
+   "end": 128.866,
+   "score": 0.963
+  },
+  {
+   "i": 296,
+   "text": "cepat",
+   "start": 128.926,
+   "end": 129.126,
+   "score": 0.864
+  },
+  {
+   "i": 297,
+   "text": "marah",
+   "start": 129.166,
+   "end": 129.566,
+   "score": 0.995
+  },
+  {
+   "i": 298,
+   "text": "impulsif",
+   "start": 130.307,
+   "end": 130.987,
+   "score": 0.956
+  },
+  {
+   "i": 299,
+   "text": "dan",
+   "start": 131.207,
+   "end": 131.328,
+   "score": 0.984
+  },
+  {
+   "i": 300,
+   "text": "lain",
+   "start": 131.368,
+   "end": 131.528,
+   "score": 0.839
+  },
+  {
+   "i": 301,
+   "text": "lain",
+   "start": 131.548,
+   "end": 131.628,
+   "score": 0.167
+  },
+  {
+   "i": 302,
+   "text": "lagi",
+   "start": 131.668,
+   "end": 131.828,
+   "score": 0.943
+  },
+  {
+   "i": 303,
+   "text": "ada",
+   "start": 135.21,
+   "end": 135.29,
+   "score": 0.852
+  },
+  {
+   "i": 304,
+   "text": "yang",
+   "start": 135.31,
+   "end": 135.39,
+   "score": 0.583
+  },
+  {
+   "i": 305,
+   "text": "saya",
+   "start": 135.41,
+   "end": 135.49,
+   "score": 0.461
+  },
+  {
+   "i": 306,
+   "text": "jumpa",
+   "start": 135.51,
+   "end": 135.73,
+   "score": 0.969
+  },
+  {
+   "i": 307,
+   "text": "tu",
+   "start": 135.811,
+   "end": 135.891,
+   "score": 0.976
+  },
+  {
+   "i": 308,
+   "text": "dia",
+   "start": 135.991,
+   "end": 136.111,
+   "score": 0.97
+  },
+  {
+   "i": 309,
+   "text": "tak",
+   "start": 136.171,
+   "end": 136.291,
+   "score": 0.969
+  },
+  {
+   "i": 310,
+   "text": "pergi",
+   "start": 136.331,
+   "end": 136.471,
+   "score": 0.878
+  },
+  {
+   "i": 311,
+   "text": "kerja",
+   "start": 136.511,
+   "end": 136.711,
+   "score": 0.747
+  },
+  {
+   "i": 312,
+   "text": "sebab",
+   "start": 136.831,
+   "end": 137.091,
+   "score": 0.979
+  },
+  {
+   "i": 313,
+   "text": "dia",
+   "start": 137.332,
+   "end": 137.452,
+   "score": 0.967
+  },
+  {
+   "i": 314,
+   "text": "kata",
+   "start": 137.512,
+   "end": 137.792,
+   "score": 0.99
+  },
+  {
+   "i": 315,
+   "text": "dia",
+   "start": 137.952,
+   "end": 138.072,
+   "score": 0.924
+  },
+  {
+   "i": 316,
+   "text": "pergi",
+   "start": 138.112,
+   "end": 138.352,
+   "score": 0.595
+  },
+  {
+   "i": 317,
+   "text": "panjat",
+   "start": 138.592,
+   "end": 138.913,
+   "score": 0.852
+  },
+  {
+   "i": 318,
+   "text": "gunung",
+   "start": 139.013,
+   "end": 139.433,
+   "score": 0.762
+  },
+  {
+   "i": 319,
+   "text": "tanpa",
+   "start": 139.553,
+   "end": 139.773,
+   "score": 0.809
+  },
+  {
+   "i": 320,
+   "text": "pakai",
+   "start": 139.853,
+   "end": 140.113,
+   "score": 0.979
+  },
+  {
+   "i": 321,
+   "text": "baju",
+   "start": 140.153,
+   "end": 140.434,
+   "score": 0.993
+  },
+  {
+   "i": 322,
+   "text": "tanpa",
+   "start": 140.554,
+   "end": 140.734,
+   "score": 0.825
+  },
+  {
+   "i": 323,
+   "text": "pakai",
+   "start": 140.774,
+   "end": 140.954,
+   "score": 0.977
+  },
+  {
+   "i": 324,
+   "text": "kasut",
+   "start": 140.974,
+   "end": 141.374,
+   "score": 0.872
+  },
+  {
+   "i": 325,
+   "text": "sebab",
+   "start": 141.494,
+   "end": 141.714,
+   "score": 0.993
+  },
+  {
+   "i": 326,
+   "text": "nak",
+   "start": 141.775,
+   "end": 141.855,
+   "score": 0.961
+  },
+  {
+   "i": 327,
+   "text": "cari",
+   "start": 141.875,
+   "end": 142.055,
+   "score": 0.99
+  },
+  {
+   "i": 328,
+   "text": "puteri",
+   "start": 142.115,
+   "end": 142.335,
+   "score": 0.663
+  },
+  {
+   "i": 329,
+   "text": "gunung",
+   "start": 142.395,
+   "end": 142.595,
+   "score": 0.892
+  },
+  {
+   "i": 330,
+   "text": "ledang",
+   "start": 142.615,
+   "end": 142.935,
+   "score": 0.826
+  },
+  {
+   "i": 331,
+   "text": "di",
+   "start": 142.995,
+   "end": 143.035,
+   "score": 0.991
+  },
+  {
+   "i": 332,
+   "text": "sana",
+   "start": 143.095,
+   "end": 143.316,
+   "score": 0.993
+  },
+  {
+   "i": 333,
+   "text": "sampai",
+   "start": 144.296,
+   "end": 144.516,
+   "score": 0.98
+  },
+  {
+   "i": 334,
+   "text": "tahap",
+   "start": 144.556,
+   "end": 144.696,
+   "score": 0.79
+  },
+  {
+   "i": 335,
+   "text": "macam",
+   "start": 144.716,
+   "end": 144.877,
+   "score": 0.382
+  },
+  {
+   "i": 336,
+   "text": "tu",
+   "start": 144.917,
+   "end": 144.977,
+   "score": 0.987
+  },
+  {
+   "i": 337,
+   "text": "sekali",
+   "start": 145.017,
+   "end": 145.297,
+   "score": 0.996
+  },
+  {
+   "i": 338,
+   "text": "penting",
+   "start": 145.817,
+   "end": 146.177,
+   "score": 0.95
+  },
+  {
+   "i": 339,
+   "text": "untuk",
+   "start": 146.237,
+   "end": 146.398,
+   "score": 0.958
+  },
+  {
+   "i": 340,
+   "text": "diingatkan",
+   "start": 146.418,
+   "end": 146.758,
+   "score": 0.594
+  },
+  {
+   "i": 341,
+   "text": "bahawa",
+   "start": 146.798,
+   "end": 147.118,
+   "score": 0.969
+  },
+  {
+   "i": 342,
+   "text": "gangguan",
+   "start": 147.478,
+   "end": 147.738,
+   "score": 0.547
+  },
+  {
+   "i": 343,
+   "text": "bipolar",
+   "start": 147.759,
+   "end": 147.939,
+   "score": 0.076
+  },
+  {
+   "i": 344,
+   "text": "penting",
+   "start": 148.859,
+   "end": 149.139,
+   "score": 0.951
+  },
+  {
+   "i": 345,
+   "text": "untuk",
+   "start": 149.179,
+   "end": 149.46,
+   "score": 0.941
+  },
+  {
+   "i": 346,
+   "text": "saya",
+   "start": 149.78,
+   "end": 149.88,
+   "score": 0.408
+  },
+  {
+   "i": 347,
+   "text": "ingatkan",
+   "start": 149.9,
+   "end": 150.3,
+   "score": 0.926
+  },
+  {
+   "i": 348,
+   "text": "bahawa",
+   "start": 150.36,
+   "end": 150.64,
+   "score": 0.963
+  },
+  {
+   "i": 349,
+   "text": "gangguan",
+   "start": 150.74,
+   "end": 150.981,
+   "score": 0.877
+  },
+  {
+   "i": 350,
+   "text": "bipolar",
+   "start": 151.021,
+   "end": 151.501,
+   "score": 0.731
+  },
+  {
+   "i": 351,
+   "text": "dia",
+   "start": 151.601,
+   "end": 151.701,
+   "score": 0.657
+  },
+  {
+   "i": 352,
+   "text": "memerlukan",
+   "start": 151.721,
+   "end": 152.081,
+   "score": 0.721
+  },
+  {
+   "i": 353,
+   "text": "rawatan",
+   "start": 152.101,
+   "end": 152.402,
+   "score": 0.967
+  },
+  {
+   "i": 354,
+   "text": "yang",
+   "start": 152.442,
+   "end": 152.522,
+   "score": 0.168
+  },
+  {
+   "i": 355,
+   "text": "sesuai",
+   "start": 152.542,
+   "end": 152.862,
+   "score": 0.806
+  },
+  {
+   "i": 356,
+   "text": "seperti",
+   "start": 152.922,
+   "end": 153.322,
+   "score": 0.998
+  },
+  {
+   "i": 357,
+   "text": "terapi",
+   "start": 153.783,
+   "end": 154.143,
+   "score": 0.995
+  },
+  {
+   "i": 358,
+   "text": "dan",
+   "start": 154.503,
+   "end": 154.583,
+   "score": 0.997
+  },
+  {
+   "i": 359,
+   "text": "juga",
+   "start": 154.623,
+   "end": 154.783,
+   "score": 0.998
+  },
+  {
+   "i": 360,
+   "text": "mungkin",
+   "start": 154.823,
+   "end": 155.063,
+   "score": 0.99
+  },
+  {
+   "i": 361,
+   "text": "ubat",
+   "start": 155.123,
+   "end": 155.243,
+   "score": 0.727
+  },
+  {
+   "i": 362,
+   "text": "ubatan",
+   "start": 155.264,
+   "end": 155.584,
+   "score": 0.818
+  },
+  {
+   "i": 363,
+   "text": "untuk",
+   "start": 155.644,
+   "end": 155.784,
+   "score": 0.996
+  },
+  {
+   "i": 364,
+   "text": "membantu",
+   "start": 155.804,
+   "end": 156.224,
+   "score": 0.916
+  },
+  {
+   "i": 365,
+   "text": "menguruskan",
+   "start": 156.504,
+   "end": 157.005,
+   "score": 0.975
+  },
+  {
+   "i": 366,
+   "text": "gejala",
+   "start": 157.085,
+   "end": 157.385,
+   "score": 0.974
+  },
+  {
+   "i": 367,
+   "text": "dan",
+   "start": 157.465,
+   "end": 157.565,
+   "score": 0.996
+  },
+  {
+   "i": 368,
+   "text": "meningkatkan",
+   "start": 157.585,
+   "end": 158.225,
+   "score": 0.976
+  },
+  {
+   "i": 369,
+   "text": "kualiti",
+   "start": 158.686,
+   "end": 159.126,
+   "score": 0.931
+  },
+  {
+   "i": 370,
+   "text": "hidup",
+   "start": 159.226,
+   "end": 159.486,
+   "score": 0.997
+  },
+  {
+   "i": 371,
+   "text": "individu",
+   "start": 159.646,
+   "end": 159.987,
+   "score": 0.882
+  },
+  {
+   "i": 372,
+   "text": "yang",
+   "start": 160.047,
+   "end": 160.147,
+   "score": 0.941
+  },
+  {
+   "i": 373,
+   "text": "menghidapnya",
+   "start": 160.167,
+   "end": 160.647,
+   "score": 0.891
+  },
+  {
+   "i": 374,
+   "text": "kalau",
+   "start": 161.588,
+   "end": 161.728,
+   "score": 0.782
+  },
+  {
+   "i": 375,
+   "text": "ada",
+   "start": 161.748,
+   "end": 161.808,
+   "score": 0.651
+  },
+  {
+   "i": 376,
+   "text": "apa",
+   "start": 161.828,
+   "end": 161.888,
+   "score": 0.653
+  },
+  {
+   "i": 377,
+   "text": "apa",
+   "start": 161.928,
+   "end": 162.008,
+   "score": 0.335
+  },
+  {
+   "i": 378,
+   "text": "soalan",
+   "start": 162.048,
+   "end": 162.488,
+   "score": 0.796
+  },
+  {
+   "i": 379,
+   "text": "boleh",
+   "start": 162.528,
+   "end": 162.688,
+   "score": 0.942
+  },
+  {
+   "i": 380,
+   "text": "tanya",
+   "start": 162.708,
+   "end": 162.849,
+   "score": 0.925
+  },
+  {
+   "i": 381,
+   "text": "di",
+   "start": 162.889,
+   "end": 162.929,
+   "score": 0.99
+  },
+  {
+   "i": 382,
+   "text": "ruang",
+   "start": 162.969,
+   "end": 163.089,
+   "score": 0.615
+  },
+  {
+   "i": 383,
+   "text": "komen",
+   "start": 163.129,
+   "end": 163.409,
+   "score": 0.944
+  },
+  {
+   "i": 384,
+   "text": "take",
+   "start": 163.469,
+   "end": 163.629,
+   "score": 0.381
+  },
+  {
+   "i": 385,
+   "text": "care",
+   "start": 163.669,
+   "end": 163.769,
+   "score": 0.229
+  }
+ ],
+ "stars": [
+  {
+   "after": 0,
+   "start": 2.762,
+   "end": 2.862
+  },
+  {
+   "after": 1,
+   "start": 2.982,
+   "end": 3.002
+  },
+  {
+   "after": 2,
+   "start": 3.242,
+   "end": 3.282
+  },
+  {
+   "after": 3,
+   "start": 3.562,
+   "end": 3.582
+  },
+  {
+   "after": 4,
+   "start": 3.682,
+   "end": 3.702
+  },
+  {
+   "after": 5,
+   "start": 3.963,
+   "end": 4.003
+  },
+  {
+   "after": 6,
+   "start": 4.163,
+   "end": 4.183
+  },
+  {
+   "after": 7,
+   "start": 4.243,
+   "end": 4.263
+  },
+  {
+   "after": 8,
+   "start": 4.543,
+   "end": 4.563
+  },
+  {
+   "after": 9,
+   "start": 5.043,
+   "end": 5.744
+  },
+  {
+   "after": 10,
+   "start": 5.904,
+   "end": 5.924
+  },
+  {
+   "after": 11,
+   "start": 6.004,
+   "end": 6.024
+  },
+  {
+   "after": 12,
+   "start": 6.184,
+   "end": 6.204
+  },
+  {
+   "after": 13,
+   "start": 6.444,
+   "end": 6.484
+  },
+  {
+   "after": 14,
+   "start": 6.564,
+   "end": 6.604
+  },
+  {
+   "after": 15,
+   "start": 6.805,
+   "end": 7.145
+  },
+  {
+   "after": 16,
+   "start": 7.465,
+   "end": 7.485
+  },
+  {
+   "after": 17,
+   "start": 7.765,
+   "end": 7.865
+  },
+  {
+   "after": 18,
+   "start": 7.925,
+   "end": 7.985
+  },
+  {
+   "after": 19,
+   "start": 8.406,
+   "end": 9.426
+  },
+  {
+   "after": 20,
+   "start": 9.706,
+   "end": 9.726
+  },
+  {
+   "after": 21,
+   "start": 10.147,
+   "end": 10.247
+  },
+  {
+   "after": 22,
+   "start": 10.487,
+   "end": 10.607
+  },
+  {
+   "after": 23,
+   "start": 10.907,
+   "end": 10.947
+  },
+  {
+   "after": 24,
+   "start": 11.027,
+   "end": 11.047
+  },
+  {
+   "after": 25,
+   "start": 11.227,
+   "end": 11.288
+  },
+  {
+   "after": 26,
+   "start": 11.548,
+   "end": 12.208
+  },
+  {
+   "after": 27,
+   "start": 12.408,
+   "end": 12.428
+  },
+  {
+   "after": 28,
+   "start": 12.668,
+   "end": 12.688
+  },
+  {
+   "after": 29,
+   "start": 12.748,
+   "end": 12.769
+  },
+  {
+   "after": 30,
+   "start": 12.889,
+   "end": 12.969
+  },
+  {
+   "after": 31,
+   "start": 13.249,
+   "end": 13.309
+  },
+  {
+   "after": 32,
+   "start": 13.409,
+   "end": 13.429
+  },
+  {
+   "after": 33,
+   "start": 13.529,
+   "end": 13.589
+  },
+  {
+   "after": 34,
+   "start": 13.869,
+   "end": 14.089
+  },
+  {
+   "after": 35,
+   "start": 14.51,
+   "end": 14.81
+  },
+  {
+   "after": 36,
+   "start": 15.01,
+   "end": 15.03
+  },
+  {
+   "after": 37,
+   "start": 15.37,
+   "end": 15.43
+  },
+  {
+   "after": 38,
+   "start": 15.49,
+   "end": 15.55
+  },
+  {
+   "after": 39,
+   "start": 15.61,
+   "end": 15.65
+  },
+  {
+   "after": 40,
+   "start": 15.871,
+   "end": 15.931
+  },
+  {
+   "after": 41,
+   "start": 16.111,
+   "end": 16.131
+  },
+  {
+   "after": 42,
+   "start": 16.391,
+   "end": 16.451
+  },
+  {
+   "after": 43,
+   "start": 16.791,
+   "end": 16.811
+  },
+  {
+   "after": 44,
+   "start": 17.292,
+   "end": 17.412
+  },
+  {
+   "after": 45,
+   "start": 17.512,
+   "end": 17.532
+  },
+  {
+   "after": 46,
+   "start": 17.972,
+   "end": 17.992
+  },
+  {
+   "after": 47,
+   "start": 18.392,
+   "end": 18.492
+  },
+  {
+   "after": 48,
+   "start": 18.652,
+   "end": 18.813
+  },
+  {
+   "after": 49,
+   "start": 18.993,
+   "end": 19.053
+  },
+  {
+   "after": 50,
+   "start": 19.513,
+   "end": 19.553
+  },
+  {
+   "after": 51,
+   "start": 19.613,
+   "end": 19.673
+  },
+  {
+   "after": 52,
+   "start": 20.033,
+   "end": 20.153
+  },
+  {
+   "after": 53,
+   "start": 20.414,
+   "end": 20.494
+  },
+  {
+   "after": 54,
+   "start": 20.754,
+   "end": 20.854
+  },
+  {
+   "after": 55,
+   "start": 20.974,
+   "end": 20.994
+  },
+  {
+   "after": 56,
+   "start": 21.094,
+   "end": 21.114
+  },
+  {
+   "after": 57,
+   "start": 21.294,
+   "end": 21.314
+  },
+  {
+   "after": 58,
+   "start": 21.534,
+   "end": 21.554
+  },
+  {
+   "after": 59,
+   "start": 21.795,
+   "end": 21.875
+  },
+  {
+   "after": 60,
+   "start": 22.175,
+   "end": 22.935
+  },
+  {
+   "after": 61,
+   "start": 23.035,
+   "end": 23.075
+  },
+  {
+   "after": 62,
+   "start": 23.276,
+   "end": 23.396
+  },
+  {
+   "after": 63,
+   "start": 23.656,
+   "end": 24.316
+  },
+  {
+   "after": 64,
+   "start": 24.636,
+   "end": 24.957
+  },
+  {
+   "after": 65,
+   "start": 25.137,
+   "end": 25.157
+  },
+  {
+   "after": 66,
+   "start": 25.357,
+   "end": 25.397
+  },
+  {
+   "after": 67,
+   "start": 25.737,
+   "end": 26.197
+  },
+  {
+   "after": 68,
+   "start": 26.738,
+   "end": 27.418
+  },
+  {
+   "after": 69,
+   "start": 27.558,
+   "end": 27.598
+  },
+  {
+   "after": 70,
+   "start": 27.799,
+   "end": 27.879
+  },
+  {
+   "after": 71,
+   "start": 28.239,
+   "end": 28.359
+  },
+  {
+   "after": 72,
+   "start": 28.439,
+   "end": 28.599
+  },
+  {
+   "after": 73,
+   "start": 28.679,
+   "end": 28.739
+  },
+  {
+   "after": 74,
+   "start": 28.859,
+   "end": 28.899
+  },
+  {
+   "after": 75,
+   "start": 29.199,
+   "end": 29.26
+  },
+  {
+   "after": 76,
+   "start": 29.6,
+   "end": 29.68
+  },
+  {
+   "after": 77,
+   "start": 29.8,
+   "end": 29.88
+  },
+  {
+   "after": 78,
+   "start": 30.18,
+   "end": 30.22
+  },
+  {
+   "after": 79,
+   "start": 30.46,
+   "end": 30.54
+  },
+  {
+   "after": 80,
+   "start": 30.72,
+   "end": 30.901
+  },
+  {
+   "after": 81,
+   "start": 31.421,
+   "end": 31.541
+  },
+  {
+   "after": 82,
+   "start": 31.881,
+   "end": 32.061
+  },
+  {
+   "after": 83,
+   "start": 32.402,
+   "end": 32.482
+  },
+  {
+   "after": 84,
+   "start": 32.722,
+   "end": 33.322
+  },
+  {
+   "after": 85,
+   "start": 33.442,
+   "end": 33.562
+  },
+  {
+   "after": 86,
+   "start": 33.823,
+   "end": 34.123
+  },
+  {
+   "after": 87,
+   "start": 34.383,
+   "end": 34.423
+  },
+  {
+   "after": 88,
+   "start": 34.663,
+   "end": 34.783
+  },
+  {
+   "after": 89,
+   "start": 35.023,
+   "end": 35.043
+  },
+  {
+   "after": 90,
+   "start": 35.243,
+   "end": 35.264
+  },
+  {
+   "after": 91,
+   "start": 35.424,
+   "end": 35.464
+  },
+  {
+   "after": 92,
+   "start": 35.704,
+   "end": 35.784
+  },
+  {
+   "after": 93,
+   "start": 36.024,
+   "end": 36.044
+  },
+  {
+   "after": 94,
+   "start": 36.104,
+   "end": 36.144
+  },
+  {
+   "after": 95,
+   "start": 36.544,
+   "end": 36.724
+  },
+  {
+   "after": 96,
+   "start": 37.045,
+   "end": 37.065
+  },
+  {
+   "after": 97,
+   "start": 37.185,
+   "end": 37.225
+  },
+  {
+   "after": 98,
+   "start": 37.405,
+   "end": 37.445
+  },
+  {
+   "after": 99,
+   "start": 37.705,
+   "end": 38.366
+  },
+  {
+   "after": 100,
+   "start": 38.486,
+   "end": 38.526
+  },
+  {
+   "after": 101,
+   "start": 38.626,
+   "end": 38.646
+  },
+  {
+   "after": 102,
+   "start": 38.946,
+   "end": 38.966
+  },
+  {
+   "after": 103,
+   "start": 39.066,
+   "end": 39.266
+  },
+  {
+   "after": 104,
+   "start": 39.506,
+   "end": 39.566
+  },
+  {
+   "after": 105,
+   "start": 39.867,
+   "end": 40.347
+  },
+  {
+   "after": 106,
+   "start": 40.507,
+   "end": 40.587
+  },
+  {
+   "after": 107,
+   "start": 40.767,
+   "end": 40.807
+  },
+  {
+   "after": 108,
+   "start": 40.887,
+   "end": 40.907
+  },
+  {
+   "after": 109,
+   "start": 41.147,
+   "end": 41.187
+  },
+  {
+   "after": 110,
+   "start": 41.328,
+   "end": 41.348
+  },
+  {
+   "after": 111,
+   "start": 41.568,
+   "end": 41.628
+  },
+  {
+   "after": 112,
+   "start": 41.888,
+   "end": 41.968
+  },
+  {
+   "after": 113,
+   "start": 42.048,
+   "end": 45.851
+  },
+  {
+   "after": 114,
+   "start": 46.011,
+   "end": 46.031
+  },
+  {
+   "after": 115,
+   "start": 46.111,
+   "end": 46.151
+  },
+  {
+   "after": 116,
+   "start": 46.351,
+   "end": 46.371
+  },
+  {
+   "after": 117,
+   "start": 46.651,
+   "end": 46.711
+  },
+  {
+   "after": 118,
+   "start": 46.771,
+   "end": 46.851
+  },
+  {
+   "after": 119,
+   "start": 46.931,
+   "end": 46.971
+  },
+  {
+   "after": 120,
+   "start": 47.312,
+   "end": 47.592
+  },
+  {
+   "after": 121,
+   "start": 47.732,
+   "end": 47.872
+  },
+  {
+   "after": 122,
+   "start": 48.032,
+   "end": 48.112
+  },
+  {
+   "after": 123,
+   "start": 48.332,
+   "end": 48.432
+  },
+  {
+   "after": 124,
+   "start": 49.033,
+   "end": 49.113
+  },
+  {
+   "after": 125,
+   "start": 49.473,
+   "end": 49.553
+  },
+  {
+   "after": 126,
+   "start": 49.953,
+   "end": 50.153
+  },
+  {
+   "after": 127,
+   "start": 50.334,
+   "end": 50.474
+  },
+  {
+   "after": 128,
+   "start": 50.714,
+   "end": 50.774
+  },
+  {
+   "after": 129,
+   "start": 51.094,
+   "end": 51.434
+  },
+  {
+   "after": 130,
+   "start": 51.554,
+   "end": 51.594
+  },
+  {
+   "after": 131,
+   "start": 52.015,
+   "end": 52.135
+  },
+  {
+   "after": 132,
+   "start": 52.515,
+   "end": 52.735
+  },
+  {
+   "after": 133,
+   "start": 52.855,
+   "end": 52.955
+  },
+  {
+   "after": 134,
+   "start": 53.195,
+   "end": 53.296
+  },
+  {
+   "after": 135,
+   "start": 53.656,
+   "end": 54.556
+  },
+  {
+   "after": 136,
+   "start": 54.797,
+   "end": 54.857
+  },
+  {
+   "after": 137,
+   "start": 54.917,
+   "end": 54.977
+  },
+  {
+   "after": 138,
+   "start": 55.457,
+   "end": 56.097
+  },
+  {
+   "after": 139,
+   "start": 56.237,
+   "end": 56.258
+  },
+  {
+   "after": 140,
+   "start": 56.358,
+   "end": 56.398
+  },
+  {
+   "after": 141,
+   "start": 56.638,
+   "end": 56.678
+  },
+  {
+   "after": 142,
+   "start": 56.798,
+   "end": 56.818
+  },
+  {
+   "after": 143,
+   "start": 56.898,
+   "end": 56.938
+  },
+  {
+   "after": 144,
+   "start": 57.038,
+   "end": 57.058
+  },
+  {
+   "after": 145,
+   "start": 57.498,
+   "end": 57.618
+  },
+  {
+   "after": 146,
+   "start": 57.759,
+   "end": 57.919
+  },
+  {
+   "after": 147,
+   "start": 58.319,
+   "end": 61.481
+  },
+  {
+   "after": 148,
+   "start": 61.601,
+   "end": 61.661
+  },
+  {
+   "after": 149,
+   "start": 61.881,
+   "end": 61.941
+  },
+  {
+   "after": 150,
+   "start": 62.141,
+   "end": 62.201
+  },
+  {
+   "after": 151,
+   "start": 62.482,
+   "end": 62.742
+  },
+  {
+   "after": 152,
+   "start": 63.022,
+   "end": 63.042
+  },
+  {
+   "after": 153,
+   "start": 63.462,
+   "end": 63.662
+  },
+  {
+   "after": 154,
+   "start": 64.043,
+   "end": 64.123
+  },
+  {
+   "after": 155,
+   "start": 64.243,
+   "end": 64.303
+  },
+  {
+   "after": 156,
+   "start": 64.623,
+   "end": 64.783
+  },
+  {
+   "after": 157,
+   "start": 65.243,
+   "end": 65.284
+  },
+  {
+   "after": 158,
+   "start": 65.364,
+   "end": 65.384
+  },
+  {
+   "after": 159,
+   "start": 65.524,
+   "end": 65.544
+  },
+  {
+   "after": 160,
+   "start": 65.704,
+   "end": 65.744
+  },
+  {
+   "after": 161,
+   "start": 66.044,
+   "end": 66.084
+  },
+  {
+   "after": 162,
+   "start": 66.244,
+   "end": 66.284
+  },
+  {
+   "after": 163,
+   "start": 66.344,
+   "end": 66.364
+  },
+  {
+   "after": 164,
+   "start": 66.464,
+   "end": 66.504
+  },
+  {
+   "after": 165,
+   "start": 66.785,
+   "end": 66.825
+  },
+  {
+   "after": 166,
+   "start": 66.925,
+   "end": 66.985
+  },
+  {
+   "after": 167,
+   "start": 67.285,
+   "end": 67.325
+  },
+  {
+   "after": 168,
+   "start": 67.625,
+   "end": 67.785
+  },
+  {
+   "after": 169,
+   "start": 67.945,
+   "end": 68.286
+  },
+  {
+   "after": 170,
+   "start": 68.886,
+   "end": 68.926
+  },
+  {
+   "after": 171,
+   "start": 69.046,
+   "end": 69.066
+  },
+  {
+   "after": 172,
+   "start": 69.626,
+   "end": 70.407
+  },
+  {
+   "after": 173,
+   "start": 70.587,
+   "end": 70.607
+  },
+  {
+   "after": 174,
+   "start": 70.847,
+   "end": 70.907
+  },
+  {
+   "after": 175,
+   "start": 71.227,
+   "end": 71.428
+  },
+  {
+   "after": 176,
+   "start": 71.528,
+   "end": 72.348
+  },
+  {
+   "after": 177,
+   "start": 72.748,
+   "end": 72.869
+  },
+  {
+   "after": 178,
+   "start": 72.929,
+   "end": 73.109
+  },
+  {
+   "after": 179,
+   "start": 73.549,
+   "end": 73.629
+  },
+  {
+   "after": 180,
+   "start": 74.089,
+   "end": 74.169
+  },
+  {
+   "after": 181,
+   "start": 74.61,
+   "end": 74.63
+  },
+  {
+   "after": 182,
+   "start": 74.77,
+   "end": 74.79
+  },
+  {
+   "after": 183,
+   "start": 75.01,
+   "end": 75.05
+  },
+  {
+   "after": 184,
+   "start": 75.53,
+   "end": 76.131
+  },
+  {
+   "after": 185,
+   "start": 76.491,
+   "end": 76.951
+  },
+  {
+   "after": 186,
+   "start": 77.071,
+   "end": 77.111
+  },
+  {
+   "after": 187,
+   "start": 77.652,
+   "end": 77.732
+  },
+  {
+   "after": 188,
+   "start": 77.852,
+   "end": 77.932
+  },
+  {
+   "after": 189,
+   "start": 78.352,
+   "end": 78.512
+  },
+  {
+   "after": 190,
+   "start": 78.692,
+   "end": 78.732
+  },
+  {
+   "after": 191,
+   "start": 78.953,
+   "end": 78.973
+  },
+  {
+   "after": 192,
+   "start": 79.353,
+   "end": 79.893
+  },
+  {
+   "after": 193,
+   "start": 80.173,
+   "end": 80.213
+  },
+  {
+   "after": 194,
+   "start": 80.534,
+   "end": 80.554
+  },
+  {
+   "after": 195,
+   "start": 80.654,
+   "end": 80.674
+  },
+  {
+   "after": 196,
+   "start": 80.854,
+   "end": 80.894
+  },
+  {
+   "after": 197,
+   "start": 81.234,
+   "end": 81.294
+  },
+  {
+   "after": 198,
+   "start": 81.434,
+   "end": 82.155
+  },
+  {
+   "after": 199,
+   "start": 82.415,
+   "end": 83.075
+  },
+  {
+   "after": 200,
+   "start": 83.496,
+   "end": 83.616
+  },
+  {
+   "after": 201,
+   "start": 83.816,
+   "end": 83.836
+  },
+  {
+   "after": 202,
+   "start": 84.076,
+   "end": 85.117
+  },
+  {
+   "after": 203,
+   "start": 85.437,
+   "end": 85.537
+  },
+  {
+   "after": 204,
+   "start": 85.917,
+   "end": 86.438
+  },
+  {
+   "after": 205,
+   "start": 86.718,
+   "end": 86.758
+  },
+  {
+   "after": 206,
+   "start": 87.178,
+   "end": 87.718
+  },
+  {
+   "after": 207,
+   "start": 87.919,
+   "end": 87.979
+  },
+  {
+   "after": 208,
+   "start": 88.279,
+   "end": 88.319
+  },
+  {
+   "after": 209,
+   "start": 88.779,
+   "end": 88.899
+  },
+  {
+   "after": 210,
+   "start": 89.239,
+   "end": 89.54
+  },
+  {
+   "after": 211,
+   "start": 89.82,
+   "end": 89.84
+  },
+  {
+   "after": 212,
+   "start": 90.58,
+   "end": 91.881
+  },
+  {
+   "after": 213,
+   "start": 92.201,
+   "end": 92.282
+  },
+  {
+   "after": 214,
+   "start": 92.362,
+   "end": 92.602
+  },
+  {
+   "after": 215,
+   "start": 92.722,
+   "end": 94.243
+  },
+  {
+   "after": 216,
+   "start": 94.563,
+   "end": 94.643
+  },
+  {
+   "after": 217,
+   "start": 94.703,
+   "end": 94.743
+  },
+  {
+   "after": 218,
+   "start": 95.223,
+   "end": 95.324
+  },
+  {
+   "after": 219,
+   "start": 95.544,
+   "end": 95.584
+  },
+  {
+   "after": 220,
+   "start": 95.924,
+   "end": 96.144
+  },
+  {
+   "after": 221,
+   "start": 96.224,
+   "end": 96.284
+  },
+  {
+   "after": 222,
+   "start": 96.704,
+   "end": 96.744
+  },
+  {
+   "after": 223,
+   "start": 97.045,
+   "end": 97.085
+  },
+  {
+   "after": 224,
+   "start": 97.145,
+   "end": 97.165
+  },
+  {
+   "after": 225,
+   "start": 97.225,
+   "end": 97.285
+  },
+  {
+   "after": 226,
+   "start": 97.405,
+   "end": 97.425
+  },
+  {
+   "after": 227,
+   "start": 97.545,
+   "end": 97.585
+  },
+  {
+   "after": 228,
+   "start": 98.025,
+   "end": 98.185
+  },
+  {
+   "after": 229,
+   "start": 98.386,
+   "end": 98.426
+  },
+  {
+   "after": 230,
+   "start": 98.566,
+   "end": 98.586
+  },
+  {
+   "after": 231,
+   "start": 98.686,
+   "end": 98.706
+  },
+  {
+   "after": 232,
+   "start": 98.866,
+   "end": 99.346
+  },
+  {
+   "after": 233,
+   "start": 99.506,
+   "end": 99.546
+  },
+  {
+   "after": 234,
+   "start": 99.726,
+   "end": 99.787
+  },
+  {
+   "after": 235,
+   "start": 100.027,
+   "end": 100.067
+  },
+  {
+   "after": 236,
+   "start": 100.147,
+   "end": 100.187
+  },
+  {
+   "after": 237,
+   "start": 100.467,
+   "end": 100.487
+  },
+  {
+   "after": 238,
+   "start": 100.547,
+   "end": 100.587
+  },
+  {
+   "after": 239,
+   "start": 100.807,
+   "end": 100.887
+  },
+  {
+   "after": 240,
+   "start": 101.027,
+   "end": 101.067
+  },
+  {
+   "after": 241,
+   "start": 101.247,
+   "end": 101.308
+  },
+  {
+   "after": 242,
+   "start": 101.488,
+   "end": 101.528
+  },
+  {
+   "after": 243,
+   "start": 101.568,
+   "end": 101.628
+  },
+  {
+   "after": 244,
+   "start": 101.768,
+   "end": 101.808
+  },
+  {
+   "after": 245,
+   "start": 101.988,
+   "end": 106.631
+  },
+  {
+   "after": 246,
+   "start": 106.731,
+   "end": 106.751
+  },
+  {
+   "after": 247,
+   "start": 106.931,
+   "end": 107.011
+  },
+  {
+   "after": 248,
+   "start": 107.412,
+   "end": 107.452
+  },
+  {
+   "after": 249,
+   "start": 107.512,
+   "end": 107.552
+  },
+  {
+   "after": 250,
+   "start": 107.812,
+   "end": 107.852
+  },
+  {
+   "after": 251,
+   "start": 108.072,
+   "end": 108.232
+  },
+  {
+   "after": 252,
+   "start": 108.452,
+   "end": 108.492
+  },
+  {
+   "after": 253,
+   "start": 108.753,
+   "end": 108.913
+  },
+  {
+   "after": 254,
+   "start": 109.173,
+   "end": 109.313
+  },
+  {
+   "after": 255,
+   "start": 109.473,
+   "end": 109.513
+  },
+  {
+   "after": 256,
+   "start": 109.893,
+   "end": 109.933
+  },
+  {
+   "after": 257,
+   "start": 110.334,
+   "end": 110.974
+  },
+  {
+   "after": 258,
+   "start": 111.094,
+   "end": 111.154
+  },
+  {
+   "after": 259,
+   "start": 111.594,
+   "end": 111.674
+  },
+  {
+   "after": 260,
+   "start": 111.915,
+   "end": 111.955
+  },
+  {
+   "after": 261,
+   "start": 112.455,
+   "end": 112.495
+  },
+  {
+   "after": 262,
+   "start": 112.915,
+   "end": 112.955
+  },
+  {
+   "after": 263,
+   "start": 113.115,
+   "end": 113.155
+  },
+  {
+   "after": 264,
+   "start": 113.636,
+   "end": 114.236
+  },
+  {
+   "after": 265,
+   "start": 114.496,
+   "end": 114.556
+  },
+  {
+   "after": 266,
+   "start": 114.837,
+   "end": 114.917
+  },
+  {
+   "after": 267,
+   "start": 115.017,
+   "end": 115.297
+  },
+  {
+   "after": 268,
+   "start": 115.477,
+   "end": 115.497
+  },
+  {
+   "after": 269,
+   "start": 116.237,
+   "end": 116.418
+  },
+  {
+   "after": 270,
+   "start": 116.698,
+   "end": 116.738
+  },
+  {
+   "after": 271,
+   "start": 116.938,
+   "end": 116.998
+  },
+  {
+   "after": 272,
+   "start": 117.338,
+   "end": 117.358
+  },
+  {
+   "after": 273,
+   "start": 117.799,
+   "end": 117.999
+  },
+  {
+   "after": 274,
+   "start": 118.159,
+   "end": 118.259
+  },
+  {
+   "after": 275,
+   "start": 118.439,
+   "end": 118.459
+  },
+  {
+   "after": 276,
+   "start": 118.659,
+   "end": 118.699
+  },
+  {
+   "after": 277,
+   "start": 118.959,
+   "end": 118.999
+  },
+  {
+   "after": 278,
+   "start": 119.32,
+   "end": 119.4
+  },
+  {
+   "after": 279,
+   "start": 119.94,
+   "end": 120.32
+  },
+  {
+   "after": 280,
+   "start": 120.74,
+   "end": 120.921
+  },
+  {
+   "after": 281,
+   "start": 121.081,
+   "end": 121.121
+  },
+  {
+   "after": 282,
+   "start": 121.481,
+   "end": 121.521
+  },
+  {
+   "after": 283,
+   "start": 121.601,
+   "end": 121.621
+  },
+  {
+   "after": 284,
+   "start": 122.241,
+   "end": 122.982
+  },
+  {
+   "after": 285,
+   "start": 123.382,
+   "end": 123.482
+  },
+  {
+   "after": 286,
+   "start": 123.682,
+   "end": 123.742
+  },
+  {
+   "after": 287,
+   "start": 123.843,
+   "end": 123.863
+  },
+  {
+   "after": 288,
+   "start": 124.023,
+   "end": 124.063
+  },
+  {
+   "after": 289,
+   "start": 124.543,
+   "end": 124.643
+  },
+  {
+   "after": 290,
+   "start": 125.043,
+   "end": 125.083
+  },
+  {
+   "after": 291,
+   "start": 125.264,
+   "end": 125.424
+  },
+  {
+   "after": 292,
+   "start": 126.124,
+   "end": 127.045
+  },
+  {
+   "after": 293,
+   "start": 127.585,
+   "end": 127.665
+  },
+  {
+   "after": 294,
+   "start": 128.245,
+   "end": 128.686
+  },
+  {
+   "after": 295,
+   "start": 128.866,
+   "end": 128.926
+  },
+  {
+   "after": 296,
+   "start": 129.126,
+   "end": 129.166
+  },
+  {
+   "after": 297,
+   "start": 129.566,
+   "end": 130.307
+  },
+  {
+   "after": 298,
+   "start": 130.987,
+   "end": 131.207
+  },
+  {
+   "after": 299,
+   "start": 131.328,
+   "end": 131.368
+  },
+  {
+   "after": 300,
+   "start": 131.528,
+   "end": 131.548
+  },
+  {
+   "after": 301,
+   "start": 131.628,
+   "end": 131.668
+  },
+  {
+   "after": 302,
+   "start": 131.828,
+   "end": 135.21
+  },
+  {
+   "after": 303,
+   "start": 135.29,
+   "end": 135.31
+  },
+  {
+   "after": 304,
+   "start": 135.39,
+   "end": 135.41
+  },
+  {
+   "after": 305,
+   "start": 135.49,
+   "end": 135.51
+  },
+  {
+   "after": 306,
+   "start": 135.73,
+   "end": 135.811
+  },
+  {
+   "after": 307,
+   "start": 135.891,
+   "end": 135.991
+  },
+  {
+   "after": 308,
+   "start": 136.111,
+   "end": 136.171
+  },
+  {
+   "after": 309,
+   "start": 136.291,
+   "end": 136.331
+  },
+  {
+   "after": 310,
+   "start": 136.471,
+   "end": 136.511
+  },
+  {
+   "after": 311,
+   "start": 136.711,
+   "end": 136.831
+  },
+  {
+   "after": 312,
+   "start": 137.091,
+   "end": 137.332
+  },
+  {
+   "after": 313,
+   "start": 137.452,
+   "end": 137.512
+  },
+  {
+   "after": 314,
+   "start": 137.792,
+   "end": 137.952
+  },
+  {
+   "after": 315,
+   "start": 138.072,
+   "end": 138.112
+  },
+  {
+   "after": 316,
+   "start": 138.352,
+   "end": 138.592
+  },
+  {
+   "after": 317,
+   "start": 138.913,
+   "end": 139.013
+  },
+  {
+   "after": 318,
+   "start": 139.433,
+   "end": 139.553
+  },
+  {
+   "after": 319,
+   "start": 139.773,
+   "end": 139.853
+  },
+  {
+   "after": 320,
+   "start": 140.113,
+   "end": 140.153
+  },
+  {
+   "after": 321,
+   "start": 140.434,
+   "end": 140.554
+  },
+  {
+   "after": 322,
+   "start": 140.734,
+   "end": 140.774
+  },
+  {
+   "after": 323,
+   "start": 140.954,
+   "end": 140.974
+  },
+  {
+   "after": 324,
+   "start": 141.374,
+   "end": 141.494
+  },
+  {
+   "after": 325,
+   "start": 141.714,
+   "end": 141.775
+  },
+  {
+   "after": 326,
+   "start": 141.855,
+   "end": 141.875
+  },
+  {
+   "after": 327,
+   "start": 142.055,
+   "end": 142.115
+  },
+  {
+   "after": 328,
+   "start": 142.335,
+   "end": 142.395
+  },
+  {
+   "after": 329,
+   "start": 142.595,
+   "end": 142.615
+  },
+  {
+   "after": 330,
+   "start": 142.935,
+   "end": 142.995
+  },
+  {
+   "after": 331,
+   "start": 143.035,
+   "end": 143.095
+  },
+  {
+   "after": 332,
+   "start": 143.316,
+   "end": 144.296
+  },
+  {
+   "after": 333,
+   "start": 144.516,
+   "end": 144.556
+  },
+  {
+   "after": 334,
+   "start": 144.696,
+   "end": 144.716
+  },
+  {
+   "after": 335,
+   "start": 144.877,
+   "end": 144.917
+  },
+  {
+   "after": 336,
+   "start": 144.977,
+   "end": 145.017
+  },
+  {
+   "after": 337,
+   "start": 145.297,
+   "end": 145.817
+  },
+  {
+   "after": 338,
+   "start": 146.177,
+   "end": 146.237
+  },
+  {
+   "after": 339,
+   "start": 146.398,
+   "end": 146.418
+  },
+  {
+   "after": 340,
+   "start": 146.758,
+   "end": 146.798
+  },
+  {
+   "after": 341,
+   "start": 147.118,
+   "end": 147.478
+  },
+  {
+   "after": 342,
+   "start": 147.738,
+   "end": 147.759
+  },
+  {
+   "after": 343,
+   "start": 147.939,
+   "end": 148.859
+  },
+  {
+   "after": 344,
+   "start": 149.139,
+   "end": 149.179
+  },
+  {
+   "after": 345,
+   "start": 149.46,
+   "end": 149.78
+  },
+  {
+   "after": 346,
+   "start": 149.88,
+   "end": 149.9
+  },
+  {
+   "after": 347,
+   "start": 150.3,
+   "end": 150.36
+  },
+  {
+   "after": 348,
+   "start": 150.64,
+   "end": 150.74
+  },
+  {
+   "after": 349,
+   "start": 150.981,
+   "end": 151.021
+  },
+  {
+   "after": 350,
+   "start": 151.501,
+   "end": 151.601
+  },
+  {
+   "after": 351,
+   "start": 151.701,
+   "end": 151.721
+  },
+  {
+   "after": 352,
+   "start": 152.081,
+   "end": 152.101
+  },
+  {
+   "after": 353,
+   "start": 152.402,
+   "end": 152.442
+  },
+  {
+   "after": 354,
+   "start": 152.522,
+   "end": 152.542
+  },
+  {
+   "after": 355,
+   "start": 152.862,
+   "end": 152.922
+  },
+  {
+   "after": 356,
+   "start": 153.322,
+   "end": 153.783
+  },
+  {
+   "after": 357,
+   "start": 154.143,
+   "end": 154.503
+  },
+  {
+   "after": 358,
+   "start": 154.583,
+   "end": 154.623
+  },
+  {
+   "after": 359,
+   "start": 154.783,
+   "end": 154.823
+  },
+  {
+   "after": 360,
+   "start": 155.063,
+   "end": 155.123
+  },
+  {
+   "after": 361,
+   "start": 155.243,
+   "end": 155.264
+  },
+  {
+   "after": 362,
+   "start": 155.584,
+   "end": 155.644
+  },
+  {
+   "after": 363,
+   "start": 155.784,
+   "end": 155.804
+  },
+  {
+   "after": 364,
+   "start": 156.224,
+   "end": 156.504
+  },
+  {
+   "after": 365,
+   "start": 157.005,
+   "end": 157.085
+  },
+  {
+   "after": 366,
+   "start": 157.385,
+   "end": 157.465
+  },
+  {
+   "after": 367,
+   "start": 157.565,
+   "end": 157.585
+  },
+  {
+   "after": 368,
+   "start": 158.225,
+   "end": 158.686
+  },
+  {
+   "after": 369,
+   "start": 159.126,
+   "end": 159.226
+  },
+  {
+   "after": 370,
+   "start": 159.486,
+   "end": 159.646
+  },
+  {
+   "after": 371,
+   "start": 159.987,
+   "end": 160.047
+  },
+  {
+   "after": 372,
+   "start": 160.147,
+   "end": 160.167
+  },
+  {
+   "after": 373,
+   "start": 160.647,
+   "end": 161.588
+  },
+  {
+   "after": 374,
+   "start": 161.728,
+   "end": 161.748
+  },
+  {
+   "after": 375,
+   "start": 161.808,
+   "end": 161.828
+  },
+  {
+   "after": 376,
+   "start": 161.888,
+   "end": 161.928
+  },
+  {
+   "after": 377,
+   "start": 162.008,
+   "end": 162.048
+  },
+  {
+   "after": 378,
+   "start": 162.488,
+   "end": 162.528
+  },
+  {
+   "after": 379,
+   "start": 162.688,
+   "end": 162.708
+  },
+  {
+   "after": 380,
+   "start": 162.849,
+   "end": 162.889
+  },
+  {
+   "after": 381,
+   "start": 162.929,
+   "end": 162.969
+  },
+  {
+   "after": 382,
+   "start": 163.089,
+   "end": 163.129
+  },
+  {
+   "after": 383,
+   "start": 163.409,
+   "end": 163.469
+  },
+  {
+   "after": 384,
+   "start": 163.629,
+   "end": 163.669
+  }
+ ]
+}

@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8" />
+<style>
+@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:block;}@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:block;}@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:block;}
+* { box-sizing:border-box; }
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; background:#08323C;
+  font-family:"Plus Jakarta Sans", sans-serif; }
+#stage { position:relative; width:1080px; height:1920px; overflow:hidden; background:#08323C; }
+/* header band: the picture sits 180px lower; its top edge fades into the band */
+#band { position:absolute; left:0; top:0; width:1080px; height:320px;
+  background:radial-gradient(90% 120% at 78% 0%, #13707F 0%, rgba(19,112,127,0) 60%), linear-gradient(180deg, #05222A 0%, #08323C 45%, #0C5160 100%); }
+.video-wrapper { position:absolute; left:0; top:180px; width:1080px; height:1920px; overflow:hidden;
+  -webkit-mask-image:linear-gradient(180deg, rgba(0,0,0,0) 0px, #000 120px); mask-image:linear-gradient(180deg, rgba(0,0,0,0) 0px, #000 120px); }
+.video-wrapper video { width:100%; height:100%; object-fit:cover; }
+.card-host { position:absolute; pointer-events:none; overflow:hidden; }
+.page { opacity:0; }
+
+.card-host .card { position:relative; width:100%; height:100%; }
+.panel { position:absolute; left:60px; top:150px; width:960px; display:grid; background:#FFF8EE; border-radius:34px;
+  box-shadow:0 22px 60px rgba(4,18,24,.40), 0 2px 0 rgba(255,255,255,.6) inset; padding:28px 36px 30px;
+  font-family:'Plus Jakarta Sans', sans-serif; color:#0B1F2A; overflow:hidden; }
+.panel::before { content:""; position:absolute; left:0; top:0; bottom:0; width:12px; background:#0E5E6F; }
+.page { grid-area:1/1; position:relative; align-self:start; }
+.page > * + * { margin-top:12px; }
+.chip { display:inline-block; color:#fff; font-weight:800; font-size:30px; letter-spacing:.07em; text-transform:uppercase;
+  padding:8px 20px 7px; border-radius:999px; }
+.title { font-weight:800; font-size:54px; line-height:1.08; letter-spacing:-.015em; }
+.title.sm { font-size:40px; font-weight:700; color:#33434B; }
+.title.xl { font-size:80px; letter-spacing:-.02em; line-height:1.0; }
+.title.muted { color:#6B7C85; font-size:46px; }
+.sub { font-weight:700; font-size:36px; color:#44525A; }
+.sub.en { font-style:italic; font-weight:500; color:#0E5E6F; }
+.sub.strong { color:#0B1F2A; display:flex; align-items:center; gap:14px; font-size:40px; }
+.row { display:flex; align-items:center; gap:18px; font-weight:700; font-size:38px; line-height:1.15; }
+.row.big { font-size:44px; }
+.row + .row { margin-top:10px; }
+.ico { width:42px; height:42px; flex:none; }
+.cdisc { width:46px; height:46px; flex:none; border-radius:50%; background:#0E5E6F; display:inline-flex; align-items:center; justify-content:center; }
+.cdisc svg { width:30px; height:30px; }
+.arr { width:44px; height:44px; }
+.steps { display:flex; align-items:center; flex-wrap:wrap; gap:12px; font-weight:800; font-size:38px; }
+.step { display:inline-block; padding:8px 20px; border-radius:16px; background:#E3F4F1; color:#0E5E6F; }
+.step.hi { background:#0E5E6F; color:#fff; }
+.step.day { min-width:62px; padding:8px 0; text-align:center; font-size:34px; }
+.sep { color:#6B7C85; font-size:38px; font-weight:800; }
+.strikeword { background:linear-gradient(#E5484D,#E5484D) left 55%/0% 6px no-repeat; }
+.stampwrap { position:absolute; right:0; top:-12px; margin:0 !important; }
+.stamp { display:inline-block; transform:rotate(-6deg); border:6px solid #E5484D; color:#E5484D; border-radius:14px;
+  font-weight:800; font-size:34px; letter-spacing:.04em; padding:4px 14px 0; background:rgba(255,248,238,.94); }
+
+
+.ins { position:absolute; left:0; top:0; width:1080px; height:1920px; overflow:hidden; pointer-events:none; }
+.ins-in { position:absolute; inset:0; overflow:hidden; }
+.kb { position:absolute; left:0; top:0; width:1080px; height:1920px; object-fit:cover; transform-origin:50% 45%; }
+.cap-shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.34) 0%, rgba(0,0,0,0) 14%,
+  rgba(0,0,0,0) 20%, rgba(0,0,0,.34) 25%, rgba(0,0,0,.30) 32%, rgba(0,0,0,0) 42%, rgba(0,0,0,0) 52%, rgba(0,0,0,.45) 66%, rgba(0,0,0,.2) 80%); }
+.ai-tag { position:absolute; left:48px; top:160px; font:700 24px 'Plus Jakarta Sans'; letter-spacing:.08em; text-transform:uppercase;
+  color:rgba(255,255,255,.92); background:rgba(0,0,0,.40); padding:7px 14px 6px; border-radius:10px; z-index:5; }
+.kb-stat { position:absolute; left:70px; right:70px; top:700px; z-index:2; text-align:center; font-family:'Plus Jakarta Sans'; font-weight:800;
+  font-size:84px; line-height:1.08; letter-spacing:-.02em; color:#FFF8EE; text-shadow:0 6px 28px rgba(0,0,0,.6); }
+.kb-stat::before { content:""; position:absolute; left:-60px; right:-60px; top:-70px; bottom:-70px; z-index:-1;
+  background:radial-gradient(closest-side, rgba(4,20,26,.62), rgba(4,20,26,.38) 60%, rgba(4,20,26,0)); }
+.kb-stat.sm { font-size:66px; line-height:1.18; }
+.kb-stat .mint, .mg .mint { color:#5EEAD4; }
+.kb-stat .cream2 { color:#FFF8EE; font-size:52px; font-weight:700; }
+.mg { position:absolute; inset:0; background:radial-gradient(120% 80% at 80% 10%, #0E5E6F 0%, #08323C 62%, #051E25 100%);
+  font-family:'Plus Jakarta Sans', sans-serif; color:#FFF8EE; }
+.mg.has-bg { background:#08323C; }
+.mg-bgimg { filter:saturate(.7); }
+.mg-veil { position:absolute; inset:0; background:linear-gradient(180deg, rgba(5,30,37,.92) 0%, rgba(8,50,60,.84) 40%, rgba(5,30,37,.80) 75%, rgba(5,30,37,.92) 100%); }
+.head { position:absolute; left:80px; top:150px; width:920px; }
+.mg-chip { display:inline-block; font-weight:800; font-size:30px; letter-spacing:.08em; text-transform:uppercase;
+  padding:10px 22px 9px; border-radius:999px; background:#5EEAD4; color:#08323C; }
+.mg-chip.red { background:#E5484D; color:#fff; }
+.mg-title { font-weight:800; font-size:76px; line-height:1.04; letter-spacing:-.02em; margin-top:20px; }
+.stack { position:absolute; left:80px; width:920px; display:flex; flex-direction:column; gap:20px; }
+.crow { display:flex; align-items:center; gap:26px; height:124px; padding:0 30px; border-radius:26px; background:#FFF8EE;
+  color:#0B1F2A; font-weight:800; font-size:46px; box-shadow:0 14px 34px rgba(0,0,0,.28); }
+.disc { width:82px; height:82px; border-radius:50%; background:#0E5E6F; display:inline-flex; align-items:center; justify-content:center; flex:none; }
+.disc.sm { width:72px; height:72px; }
+.mg-ico { width:52px; height:52px; }
+.disc.sm .mg-ico { width:44px; height:44px; }
+.rail { position:absolute; }
+.rail path { stroke-dasharray:1400; }
+.rung { position:absolute; width:800px; height:140px; display:flex; align-items:center; gap:26px; padding:0 30px; border-radius:26px;
+  background:#FFF8EE; color:#0B1F2A; font-weight:800; font-size:50px; line-height:1.1; box-shadow:0 14px 34px rgba(0,0,0,.28); }
+.rung:last-child { background:#5EEAD4; }
+.myth-band { position:absolute; left:0; top:0; width:1080px; height:560px; background:radial-gradient(120% 90% at 80% 0%, #1B3A44 0%, #0A1E25 70%); }
+.myth-band .mg-chip { position:absolute; left:80px; top:170px; }
+.myth { position:absolute; left:80px; top:250px; font-weight:800; font-size:58px; color:rgba(255,248,238,.62); }
+.strikeword { background:linear-gradient(#E5484D,#E5484D) left 55%/0% 8px no-repeat; }
+.strikeword.on { background-size:100% 8px; }
+.stamp-lg { display:inline-block; transform:rotate(-7deg); border:8px solid #E5484D; color:#E5484D; border-radius:18px; font-weight:800;
+  font-size:76px; letter-spacing:.04em; padding:8px 28px 2px; background:rgba(255,248,238,.94); }
+.stamp-lg.sm { position:absolute; right:80px; top:360px; font-size:56px; border-width:7px; }
+.seam { position:absolute; left:0; width:1080px; height:12px; background:#FFF8EE; transform-origin:left center; z-index:3; }
+.wave { position:absolute; overflow:visible; }
+.wave #m1-wave { stroke-dasharray:1400; }
+.wlabel { position:absolute; display:flex; flex-direction:column; align-items:flex-start; gap:6px; }
+.wl1 { font-weight:700; font-size:36px; color:rgba(255,248,238,.85); }
+.wl2 { font-weight:800; font-size:64px; letter-spacing:.02em; padding:6px 22px 4px; border-radius:16px; }
+.wlabel.up .wl2 { background:#5EEAD4; color:#08323C; }
+.wlabel.down .wl2 { background:#FFF8EE; color:#0E5E6F; }
+.speed { position:absolute; right:80px; top:300px; width:240px; height:180px; }
+.speed i { position:absolute; right:0; height:10px; border-radius:6px; background:#5EEAD4; opacity:.75; }
+
+</style>
+</head>
+<body>
+<div id="stage" data-composition-id="talking-head-recut" data-start="0" data-duration="108.0" data-fps="30" data-width="1080" data-height="1920">
+  <div id="band"></div>
+  <div class="video-wrapper" id="video-wrap">
+    <video id="bg-video" src="input-video.mp4" muted playsinline data-start="0" data-duration="108.0" data-track-index="1"></video>
+  </div>
+  <audio id="source-audio" src="input-video.mp4" data-start="0" data-duration="108.0" data-track-index="10" data-volume="1"></audio>
+  <div id="card-c01-mitos" class="card-host clip" data-card-id="c01-mitos" data-start="0.0" data-duration="5.4667" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c01-mitos"><div class="root"><div class="panel" id="c01-mitos-panel"><div class="page" id="c01-mitos-page0"><div id="c01-mitos-kicker" data-anim="pop"><span class="chip" style="background:#E5484D">Mitos</span></div><div id="c01-mitos-q" data-anim="fade"><div class="title sm">Ramai salah faham, mania ialah…</div></div><div id="c01-mitos-r1" data-anim="slide"><div class="row"><span class="cdisc"><svg viewBox="0 0 48 48"><g stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="24" cy="13" r="6"/><path d="M12 42v-8a12 12 0 0 1 24 0v8"/></g></svg></span><span><span class="strikeword">Gangguan personaliti</span></span></div></div><div id="c01-mitos-r2" data-anim="slide"><div class="row"><span class="cdisc"><svg viewBox="0 0 48 48"><g stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M8 16h28l-7-7M40 32H12l7 7"/></g></svg></span><span><span class="strikeword">Identiti berubah-ubah</span></span></div></div><div id="c01-mitos-st" class="stampwrap" data-anim="stamp"><div class="stamp">TIDAK BENAR</div></div></div></div></div></div></div>
+<div id="card-c02-soalan1" class="card-host clip" data-card-id="c02-soalan1" data-start="7.8" data-duration="2.6167" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c02-soalan1"><div class="root"><div class="panel" id="c02-soalan1-panel"><div class="page" id="c02-soalan1-page0"><div id="c02-soalan1-kicker" data-anim="pop"><span class="chip" style="background:#0E5E6F">Soalan #1</span></div><div id="c02-soalan1-t" data-anim="slide"><div class="title">Apa itu <span style="color:#0E5E6F">bipolar</span>?</div></div><div id="c02-soalan1-r1" data-anim="slide"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><path d="M7 12.5l3.2 3.2L17.5 8.5" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Salah satu penyakit mental</span></div></div></div></div></div></div></div>
+<div id="card-c03-soalan2" class="card-host clip" data-card-id="c03-soalan2" data-start="17.3333" data-duration="8.5334" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c03-soalan2"><div class="root"><div class="panel" id="c03-soalan2-panel"><div class="page" id="c03-soalan2-page0"><div id="c03-soalan2-kicker" data-anim="pop"><span class="chip" style="background:#0E5E6F">Soalan #2</span></div><div id="c03-soalan2-t" data-anim="slide"><div class="title">Berapa lama?</div></div><div id="c03-soalan2-s" data-anim="fade"><div class="sub">Gejala mesti berlaku hari-hari</div></div><div id="c03-soalan2-g" data-anim="none"><div class="steps"><span id="c03-d0" class="step day">I</span><span id="c03-d1" class="step day">S</span><span id="c03-d2" class="step day">R</span><span id="c03-d3" class="step day">K</span><span id="c03-d4" class="step day">J</span><span id="c03-d5" class="step day">S</span><span id="c03-d6" class="step day">A</span><span id="c03-w" class="step hi">≥ 1 minggu</span></div></div></div><div class="page" id="c03-soalan2-page1"><div id="c03-soalan2-t2" data-anim="slide"><div class="title">Kurang <span style="color:#0E5E6F">1 minggu</span>?</div></div><div id="c03-soalan2-s2" data-anim="slide"><div class="title muted">Bukan fasa mania</div></div></div></div></div></div></div>
+<div id="card-c04-soalan3" class="card-host clip" data-card-id="c04-soalan3" data-start="25.8667" data-duration="8.3333" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c04-soalan3"><div class="root"><div class="panel" id="c04-soalan3-panel"><div class="page" id="c04-soalan3-page0"><div id="c04-soalan3-kicker" data-anim="pop"><span class="chip" style="background:#0E5E6F">Soalan #3</span></div><div id="c04-soalan3-t" data-anim="slide"><div class="title">Apa berlaku dalam <span style="color:#0E5E6F">fasa mania</span>?</div></div></div><div class="page" id="c04-soalan3-page1"><div id="c04-soalan3-r1" data-anim="slide"><div class="row big"><span class="cdisc"><svg viewBox="0 0 48 48"><g stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 40V9M12 21L24 9l12 12"/></g></svg></span><span>Mood berlebihan</span></div></div><div id="c04-soalan3-r2" data-anim="slide"><div class="row big"><span class="cdisc"><svg viewBox="0 0 48 48"><g stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 6l5.3 11.6L42 19l-9.5 8.6L35 40l-11-6.4L13 40l2.5-12.4L6 19l12.7-1.4z"/></g></svg></span><span>Gairah &amp; penuh semangat</span></div></div></div></div></div></div></div>
+<div id="card-c05-gejala1" class="card-host clip" data-card-id="c05-gejala1" data-start="34.2" data-duration="8.6333" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c05-gejala1"><div class="root"><div class="panel" id="c05-gejala1-panel"><div class="page" id="c05-gejala1-page0"><div id="c05-gejala1-kicker" data-anim="pop"><span class="chip" style="background:#0E5E6F">Gejala</span></div><div id="c05-gejala1-r1" data-anim="slide"><div class="row big"><span class="cdisc"><svg viewBox="0 0 48 48"><g stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M8 12h32v20H22l-8 7v-7H8z"/><path d="M15 20h18M15 26h11"/></g></svg></span><span>Lebih banyak bercakap</span></div></div><div id="c05-gejala1-r2" data-anim="slide"><div class="row big"><span class="cdisc"><svg viewBox="0 0 48 48"><g stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M8 12h32v20H22l-8 7v-7H8z"/><path d="M16 22h2M23 22h2M30 22h2"/></g></svg></span><span>Susah nak berhenti</span></div></div><div id="c05-gejala1-r3" data-anim="slide"><div class="row big"><span class="cdisc"><svg viewBox="0 0 48 48"><g stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="24" cy="24" r="8"/><path d="M24 5v5M24 38v5M5 24h5M38 24h5M10.5 10.5l3.5 3.5M34 34l3.5 3.5M10.5 37.5l3.5-3.5M34 14l3.5-3.5"/></g></svg></span><span>Ceria &amp; optimistik melampau</span></div></div></div></div></div></div></div>
+<div id="card-c06-gejala2" class="card-host clip" data-card-id="c06-gejala2" data-start="42.8333" data-duration="11.7167" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c06-gejala2"><div class="root"><div class="panel" id="c06-gejala2-panel"><div class="page" id="c06-gejala2-page0"><div id="c06-gejala2-kicker" data-anim="pop"><span class="chip" style="background:#0E5E6F">Gejala</span></div><div id="c06-gejala2-r1" data-anim="slide"><div class="row big"><span class="cdisc"><svg viewBox="0 0 48 48"><g stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="29" cy="9" r="4"/><path d="M14 23l7-7 8 3 4 8 7 2"/><path d="M21 16l-3 13 8 6-2 9M18 29l-8 9"/></g></svg></span><span>Lebih banyak aktiviti</span></div></div><div id="c06-gejala2-r2" data-anim="slide"><div class="row big"><span class="cdisc"><svg viewBox="0 0 48 48"><g stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 7L43 40H5z"/><path d="M24 19v10M24 34v1"/></g></svg></span><span>Tak fikir risiko</span></div></div></div><div class="page" id="c06-gejala2-page1"><div id="c06-gejala2-r3" data-anim="slide"><div class="row big"><span class="cdisc"><svg viewBox="0 0 48 48"><g stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M27 5L12 27h11l-3 16 16-23H25z"/></g></svg></span><span>Terlalu aktif</span></div></div><div id="c06-gejala2-r4" data-anim="slide"><div class="row big"><span class="cdisc"><svg viewBox="0 0 48 48"><g stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M36 30A15 15 0 0 1 19 9a15 15 0 1 0 17 21z"/></g></svg></span><span>Kurang tidur</span></div></div></div></div></div></div></div>
+<div id="card-c07-tenaga" class="card-host clip" data-card-id="c07-tenaga" data-start="57.0" data-duration="4.2833" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c07-tenaga"><div class="root"><div class="panel" id="c07-tenaga-panel"><div class="page" id="c07-tenaga-page0"><div id="c07-tenaga-kicker" data-anim="pop"><span class="chip" style="background:#0E5E6F">Gejala</span></div><div id="c07-tenaga-r1" data-anim="slide"><div class="row big"><span class="cdisc"><svg viewBox="0 0 48 48"><g stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="5" y="15" width="34" height="18" rx="3"/><path d="M43 21v6M10 20v8M16 20v8M22 20v8M28 20v8"/></g></svg></span><span>Rasa banyak tenaga</span></div></div><div id="c07-tenaga-r2" data-anim="slide"><div class="row big"><span class="cdisc"><svg viewBox="0 0 48 48"><g stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M36 30A15 15 0 0 1 19 9a15 15 0 1 0 17 21z"/></g></svg></span><span>Kurang perlu tidur</span></div></div></div></div></div></div></div>
+<div id="card-c08-risiko" class="card-host clip" data-card-id="c08-risiko" data-start="70.5667" data-duration="4.5833" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c08-risiko"><div class="root"><div class="panel" id="c08-risiko-panel"><div class="page" id="c08-risiko-page0"><div id="c08-risiko-kicker" data-anim="pop"><span class="chip" style="background:#E5484D">Risiko</span></div><div id="c08-risiko-t" data-anim="slide"><div class="title">Ambil risiko <span style="color:#0E5E6F">tak masuk akal</span></div></div></div></div></div></div></div>
+<div id="card-c09-kes" class="card-host clip" data-card-id="c09-kes" data-start="85.4" data-duration="3.2833" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c09-kes"><div class="root"><div class="panel" id="c09-kes-panel"><div class="page" id="c09-kes-page0"><div id="c09-kes-kicker" data-anim="pop"><span class="chip" style="background:#0E5E6F">Kes sebenar</span></div><div id="c09-kes-t" data-anim="slide"><div class="title">Tak pergi kerja…</div></div></div></div></div></div></div>
+<div id="card-c10-cta" class="card-host clip" data-card-id="c10-cta" data-start="104.5333" data-duration="3.4667" data-track-index="2" style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c10-cta"><div class="root"><div class="panel" id="c10-cta-panel"><div class="page" id="c10-cta-page0"><div id="c10-cta-kicker" data-anim="pop"><span class="chip" style="background:#0E5E6F">Ada soalan?</span></div><div id="c10-cta-t" data-anim="pop"><div class="title xl" style="color:#0E5E6F">Tanya di komen</div></div><div id="c10-cta-s" data-anim="slide"><div class="sub strong">Take care!</div></div></div></div></div></div></div>
+  <div id="ins-m1-realiti" class="ins clip" data-start="10.0667" data-duration="7.3" data-track-index="5" style="z-index:20"><div class="ins-in" id="m1-realiti-in"><div class="mg">
+      <div class="myth-band"><div class="mg-chip red" id="m1-c1">Mitos</div>
+        <div class="myth" id="m1-m"><span class="strikeword on">Gangguan personaliti / identiti</span></div>
+        <div class="stamp-lg sm" id="m1-x">TIDAK BENAR</div></div>
+      <div class="seam" id="m1-seam" style="top:560px"></div>
+      <div class="head" style="top:610px"><div class="mg-chip" id="m1-c2">Realiti</div>
+        <div class="mg-title" id="m1-t">Perubahan <span class="mint">mood</span> drastik</div></div>
+      <svg class="wave" viewBox="0 0 920 560" style="left:80px; top:880px; width:920px; height:560px">
+        <path d="M0 280H920" stroke="rgba(255,248,238,.22)" stroke-width="3" stroke-dasharray="10 12" fill="none"/>
+        <path id="m1-wave" d="M0 280 C 90 280, 150 60, 250 60 S 400 280, 460 280 S 560 500, 660 500 S 830 280, 920 280"
+          stroke="#5EEAD4" stroke-width="10" stroke-linecap="round" fill="none"/>
+      </svg>
+      <div class="wlabel up" id="m1-hi" style="left:430px; top:850px"><span class="wl1">Fasa tinggi</span>
+        <span class="wl2" id="m1-hi2">MANIA</span></div>
+      <div class="wlabel down" id="m1-lo" style="left:120px; top:1310px"><span class="wl1">Fasa rendah</span>
+        <span class="wl2" id="m1-lo2">DEPRESSION</span></div></div></div></div>
+<div id="ins-b1-projek" class="ins clip" data-start="54.2" data-duration="2.8333" data-track-index="6" style="z-index:21"><div class="ins-in" id="b1-projek-in"><img src="broll/desk.jpg" class="kb" id="b1-projek-img"/><div class="cap-shade"></div><div class="kb-stat"><span id="b1-t1">Banyak projek</span><br/><span id="b1-t2" class="mint">tak siap</span></div><div class="ai-tag">Ilustrasi AI</div></div></div>
+<div id="ins-b2-tidur" class="ins clip" data-start="60.9333" data-duration="3.4667" data-track-index="5" style="z-index:22"><div class="ins-in" id="b2-tidur-in"><img src="broll/sleep.jpg" class="kb" id="b2-tidur-img"/><div class="cap-shade"></div><div class="kb-stat"><span id="b2-t1">2–3 jam</span><br/><span id="b2-t2" class="mint">tidur sehari</span></div><div class="ai-tag">Ilustrasi AI</div></div></div>
+<div id="ins-m2-fikiran" class="ins clip" data-start="64.3667" data-duration="6.1666" data-track-index="6" style="z-index:23"><div class="ins-in" id="m2-fikiran-in"><div class="mg">
+      <div class="head"><div class="mg-chip" id="m2-c">Fikiran</div>
+        <div class="mg-title" id="m2-t">Sangat <span class="mint">laju</span></div></div>
+      <div class="speed" id="m2-speed"><i style="top:40px; width:220px"></i><i style="top:74px; width:180px"></i><i style="top:108px; width:140px"></i><i style="top:142px; width:100px"></i></div>
+      <div class="stack" style="top:660px"><div class="crow" id="m2-r0" style="height:124px"><span class="disc" id="m2-d0"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M17 30a11 11 0 1 1 14 0v5H17z"/><path d="M19 40h10M21 44h6"/></g></svg></span><span>Terlalu banyak idea</span></div><div class="crow" id="m2-r1" style="height:124px"><span class="disc" id="m2-d1"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 7L43 40H5z"/><path d="M24 19v10M24 34v1"/></g></svg></span><span>Idea yang berisiko</span></div><div class="crow" id="m2-r2" style="height:124px"><span class="disc" id="m2-d2"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="24" cy="24" r="17"/><circle cx="24" cy="24" r="9"/><circle cx="24" cy="24" r="2"/></g></svg></span><span>Susah nak fokus</span></div></div></div></div></div>
+<div id="ins-m3-risiko" class="ins clip" data-start="74.8" data-duration="10.5" data-track-index="5" style="z-index:24"><div class="ins-in" id="m3-risiko-in"><div class="mg has-bg"><img src="broll/shopping.jpg" class="kb mg-bgimg" id="m3-risiko-img"/><div class="mg-veil"></div><div class="ai-tag" style="left:auto; right:48px">Ilustrasi AI</div>
+      <div class="head"><div class="mg-chip red" id="m3-c">Risiko tak masuk akal</div>
+        <div class="mg-title" id="m3-t">Contohnya…</div></div>
+      <div class="stack" style="top:620px"><div class="crow" id="m3-r0" style="height:112px"><span class="disc" id="m3-d0"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="9" y="17" width="30" height="14" rx="7" transform="rotate(-35 24 24)"/><path d="M20 17l8 14"/></g></svg></span><span>Dadah / alkohol berlebihan</span></div><div class="crow" id="m3-r1" style="height:112px"><span class="disc" id="m3-d1"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="5" y="14" width="38" height="20" rx="3"/><circle cx="24" cy="24" r="5"/><path d="M11 19v10M37 19v10"/></g></svg></span><span>Wang tidak terkawal</span></div><div class="crow" id="m3-r2" style="height:112px"><span class="disc" id="m3-d2"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M10 16h28l-3 26H13z"/><path d="M18 20v-6a6 6 0 0 1 12 0v6"/></g></svg></span><span>Belanja berlebihan</span></div><div class="crow" id="m3-r3" style="height:112px"><span class="disc" id="m3-d3"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="24" cy="24" r="17"/><path d="M15 17l6 3M33 17l-6 3"/><path d="M17 34c4-4 10-4 14 0"/></g></svg></span><span>Kelakuan agresif</span></div><div class="crow" id="m3-r4" style="height:112px"><span class="disc" id="m3-d4"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 5c2 8 12 12 12 23a12 12 0 0 1-24 0c0-6 4-9 6-13 1 4 3 6 5 6-2-6 0-12 1-16z"/></g></svg></span><span>Cepat marah</span></div><div class="crow" id="m3-r5" style="height:112px"><span class="disc" id="m3-d5"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M27 5L12 27h11l-3 16 16-23H25z"/></g></svg></span><span>Impulsif</span></div></div></div></div></div>
+<div id="ins-b3-gunung" class="ins clip" data-start="88.3333" data-duration="4.6" data-track-index="6" style="z-index:25"><div class="ins-in" id="b3-gunung-in"><img src="broll/mountain.jpg" class="kb" id="b3-gunung-img"/><div class="cap-shade"></div><div class="kb-stat sm"><span id="b3-t1">Panjat gunung</span><br/><span id="b3-t2" class="cream2">tanpa baju · tanpa kasut</span><br/><span id="b3-t3" class="mint">cari Puteri Gunung Ledang</span></div><div class="ai-tag">Ilustrasi AI</div></div></div>
+<div id="ins-b4-rawatan" class="ins clip" data-start="94.3333" data-duration="3.8" data-track-index="5" style="z-index:26"><div class="ins-in" id="b4-rawatan-in"><img src="broll/consult.jpg" class="kb" id="b4-rawatan-img"/><div class="cap-shade"></div><div class="kb-stat"><span id="b4-t1">Bipolar perlukan</span><br/><span id="b4-t2" class="mint">rawatan yang sesuai</span></div><div class="ai-tag">Ilustrasi AI</div></div></div>
+<div id="ins-m4-rawatan" class="ins clip" data-start="98.1" data-duration="6.4" data-track-index="6" style="z-index:27"><div class="ins-in" id="m4-rawatan-in"><div class="mg">
+      <div class="head"><div class="mg-chip" id="m4-c">Rawatan</div>
+        <div class="mg-title" id="m4-t">Bipolar <span class="mint">boleh diurus</span></div></div>
+      <svg class="rail" viewBox="0 0 40 760" style="left:30px; top:660px; width:40px; height:760px">
+        <path id="m4-rail" d="M20 750V20" stroke="#5EEAD4" stroke-width="6" stroke-linecap="round" fill="none"/>
+        <path d="M6 34L20 12 34 34" stroke="#5EEAD4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" id="m4-tip"/></svg>
+      <div class="rung" id="m4-r0" style="top:1300px; left:80px"><span class="disc sm"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M5 9h24v15H16l-6 5v-5H5z"/><path d="M33 19h10v14h-4v5l-6-5h-9v-5"/></g></svg></span><span>Terapi</span></div><div class="rung" id="m4-r1" style="top:1110px; left:120px"><span class="disc sm"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="9" y="17" width="30" height="14" rx="7" transform="rotate(-35 24 24)"/><path d="M20 17l8 14"/></g></svg></span><span>Ubat-ubatan</span></div><div class="rung" id="m4-r2" style="top:920px; left:160px"><span class="disc sm"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M9 14h30M9 24h30M9 34h30"/><circle cx="17" cy="14" r="4"/><circle cx="31" cy="24" r="4"/><circle cx="20" cy="34" r="4"/></g></svg></span><span>Urus gejala</span></div><div class="rung" id="m4-r3" style="top:730px; left:200px"><span class="disc sm"><svg viewBox="0 0 48 48" class="mg-ico"><g stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 41S7 31 7 19a9 9 0 0 1 17-4 9 9 0 0 1 17 4c0 12-17 22-17 22z"/></g></svg></span><span>Kualiti hidup ↑</span></div></div></div></div>
+  <script src="vendor/gsap.min.js"></script>
+  <script>
+  (function () {
+    const tl = window.gsap.timeline({ paused: true });
+    // c01-mitos: Hook — the myth: mania = personality/identity disorder
+    tl.set('.card-host[data-card-id="c01-mitos"]', {visibility:"visible", opacity:1}, 0.0);
+    tl.set('#c01-mitos-panel', {opacity:1, y:0, scale:1}, 0);
+    tl.set('#c01-mitos-panel', {height:166}, 0);
+    tl.to('#c01-mitos-panel', {height:224, duration:0.34, ease:'power3.out'}, 2.7333);
+    tl.to('#c01-mitos-panel', {height:282, duration:0.34, ease:'power3.out'}, 3.6);
+    tl.to('#c01-mitos-panel', {height:282, duration:0.34, ease:'power3.out'}, 4.6);
+    tl.set('#c01-mitos-page0', {opacity:1}, 0.0);
+    tl.set('#c01-mitos-kicker', {opacity:1}, 0);
+    tl.set('#c01-mitos-q', {opacity:1}, 0);
+    tl.fromTo('#c01-mitos-r1', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 2.7667);
+    tl.fromTo('#c01-mitos-r2', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 3.6667);
+    tl.fromTo('#c01-mitos-st', {opacity:0, scale:1.9}, {opacity:1, scale:1, duration:0.26, ease:'power4.out'}, 4.6333);
+    tl.fromTo('#c01-mitos-r1 .strikeword', {backgroundSize:'0% 6px'}, {backgroundSize:'100% 6px', duration:0.35, ease:'power2.inOut'}, 4.2667);
+    tl.fromTo('#c01-mitos-r2 .strikeword', {backgroundSize:'0% 6px'}, {backgroundSize:'100% 6px', duration:0.35, ease:'power2.inOut'}, 4.4);
+    tl.to('#c01-mitos-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 5.1667);
+    tl.set('.card-host[data-card-id="c01-mitos"]', {visibility:"hidden"}, 5.4667);
+    // c02-soalan1: Q1 — what is bipolar?
+    tl.set('.card-host[data-card-id="c02-soalan1"]', {visibility:"visible", opacity:1}, 7.8);
+    tl.fromTo('#c02-soalan1-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 7.8);
+    tl.set('#c02-soalan1-panel', {height:181}, 7.8);
+    tl.to('#c02-soalan1-panel', {height:244, duration:0.34, ease:'power3.out'}, 8.4667);
+    tl.set('#c02-soalan1-page0', {opacity:1}, 7.8);
+    tl.fromTo('#c02-soalan1-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 7.8667);
+    tl.fromTo('#c02-soalan1-t', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 7.8667);
+    tl.fromTo('#c02-soalan1-r1', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 8.5);
+    tl.to('#c02-soalan1-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 10.1167);
+    tl.set('.card-host[data-card-id="c02-soalan1"]', {visibility:"hidden"}, 10.4167);
+    // c03-soalan2: Q2 — how long? daily, >= 1 week
+    tl.set('.card-host[data-card-id="c03-soalan2"]', {visibility:"visible", opacity:1}, 17.3333);
+    tl.fromTo('#c03-soalan2-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 17.3333);
+    tl.set('#c03-soalan2-panel', {height:181}, 17.3333);
+    tl.to('#c03-soalan2-panel', {height:238, duration:0.34, ease:'power3.out'}, 21.0);
+    tl.to('#c03-soalan2-panel', {height:314, duration:0.34, ease:'power3.out'}, 21.7667);
+    tl.to('#c03-soalan2-panel', {height:116, duration:0.36, ease:'power2.inOut'}, 23.3667);
+    tl.to('#c03-soalan2-panel', {height:178, duration:0.34, ease:'power3.out'}, 24.6333);
+    tl.set('#c03-soalan2-page0', {opacity:1}, 17.3333);
+    tl.fromTo('#c03-soalan2-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 17.3667);
+    tl.fromTo('#c03-soalan2-t', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 17.4333);
+    tl.fromTo('#c03-soalan2-s', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 21.0333);
+    tl.fromTo('#c03-d0', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 21.8);
+    tl.fromTo('#c03-d1', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 21.8667);
+    tl.fromTo('#c03-d2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 21.9333);
+    tl.fromTo('#c03-d3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 22.0);
+    tl.fromTo('#c03-d4', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 22.0667);
+    tl.fromTo('#c03-d5', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 22.1333);
+    tl.fromTo('#c03-d6', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 22.2);
+    tl.fromTo('#c03-w', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 22.2667);
+    tl.to('#c03-soalan2-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 23.3667);
+    tl.fromTo('#c03-soalan2-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 23.6333);
+    tl.fromTo('#c03-soalan2-t2', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 23.6667);
+    tl.fromTo('#c03-soalan2-s2', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 24.6667);
+    tl.to('#c03-soalan2-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 25.5667);
+    tl.set('.card-host[data-card-id="c03-soalan2"]', {visibility:"hidden"}, 25.8667);
+    // c04-soalan3: Q3 — what happens in the mania phase?
+    tl.set('.card-host[data-card-id="c04-soalan3"]', {visibility:"visible", opacity:1}, 25.8667);
+    tl.fromTo('#c04-soalan3-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 25.8667);
+    tl.set('#c04-soalan3-panel', {height:181}, 25.8667);
+    tl.to('#c04-soalan3-panel', {height:109, duration:0.36, ease:'power2.inOut'}, 28.7);
+    tl.to('#c04-soalan3-panel', {height:172, duration:0.34, ease:'power3.out'}, 32.5333);
+    tl.set('#c04-soalan3-page0', {opacity:1}, 25.8667);
+    tl.fromTo('#c04-soalan3-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 25.9333);
+    tl.fromTo('#c04-soalan3-t', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 25.9333);
+    tl.to('#c04-soalan3-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 28.5333);
+    tl.fromTo('#c04-soalan3-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 28.8);
+    tl.fromTo('#c04-soalan3-r1', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 29.0);
+    tl.fromTo('#c04-soalan3-r2', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 32.5667);
+    tl.to('#c04-soalan3-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 33.9);
+    tl.set('.card-host[data-card-id="c04-soalan3"]', {visibility:"hidden"}, 34.2);
+    // c05-gejala1: Symptoms: talkative, cheerful
+    tl.set('.card-host[data-card-id="c05-gejala1"]', {visibility:"visible", opacity:1}, 34.2);
+    tl.fromTo('#c05-gejala1-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 34.2);
+    tl.set('#c05-gejala1-panel', {height:111}, 34.2);
+    tl.to('#c05-gejala1-panel', {height:174, duration:0.34, ease:'power3.out'}, 35.5667);
+    tl.to('#c05-gejala1-panel', {height:237, duration:0.34, ease:'power3.out'}, 37.0333);
+    tl.to('#c05-gejala1-panel', {height:299, duration:0.34, ease:'power3.out'}, 40.6);
+    tl.set('#c05-gejala1-page0', {opacity:1}, 34.2);
+    tl.fromTo('#c05-gejala1-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 34.2667);
+    tl.fromTo('#c05-gejala1-r1', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 35.6);
+    tl.fromTo('#c05-gejala1-r2', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 37.0667);
+    tl.fromTo('#c05-gejala1-r3', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 40.6333);
+    tl.to('#c05-gejala1-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 42.5333);
+    tl.set('.card-host[data-card-id="c05-gejala1"]', {visibility:"hidden"}, 42.8333);
+    // c06-gejala2: Symptoms: more activity, no risk thinking, overactive, little sleep
+    tl.set('.card-host[data-card-id="c06-gejala2"]', {visibility:"visible", opacity:1}, 42.8333);
+    tl.fromTo('#c06-gejala2-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 42.8333);
+    tl.set('#c06-gejala2-panel', {height:111}, 42.8333);
+    tl.to('#c06-gejala2-panel', {height:174, duration:0.34, ease:'power3.out'}, 45.8);
+    tl.to('#c06-gejala2-panel', {height:237, duration:0.34, ease:'power3.out'}, 47.2);
+    tl.to('#c06-gejala2-panel', {height:109, duration:0.36, ease:'power2.inOut'}, 52.1667);
+    tl.to('#c06-gejala2-panel', {height:172, duration:0.34, ease:'power3.out'}, 53.2667);
+    tl.set('#c06-gejala2-page0', {opacity:1}, 42.8333);
+    tl.fromTo('#c06-gejala2-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 42.9);
+    tl.fromTo('#c06-gejala2-r1', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 45.8333);
+    tl.fromTo('#c06-gejala2-r2', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 47.2333);
+    tl.to('#c06-gejala2-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 50.8333);
+    tl.fromTo('#c06-gejala2-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 51.1333);
+    tl.fromTo('#c06-gejala2-r3', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 52.4667);
+    tl.fromTo('#c06-gejala2-r4', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 53.3333);
+    tl.to('#c06-gejala2-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 54.25);
+    tl.set('.card-host[data-card-id="c06-gejala2"]', {visibility:"hidden"}, 54.55);
+    // c07-tenaga: Symptoms: lots of energy, less need for sleep
+    tl.set('.card-host[data-card-id="c07-tenaga"]', {visibility:"visible", opacity:1}, 57.0);
+    tl.fromTo('#c07-tenaga-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 57.0);
+    tl.set('#c07-tenaga-panel', {height:111}, 57.0);
+    tl.to('#c07-tenaga-panel', {height:174, duration:0.34, ease:'power3.out'}, 58.3);
+    tl.to('#c07-tenaga-panel', {height:237, duration:0.34, ease:'power3.out'}, 59.1667);
+    tl.set('#c07-tenaga-page0', {opacity:1}, 57.0);
+    tl.fromTo('#c07-tenaga-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 57.0333);
+    tl.fromTo('#c07-tenaga-r1', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 58.3333);
+    tl.fromTo('#c07-tenaga-r2', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 59.2);
+    tl.to('#c07-tenaga-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 60.9833);
+    tl.set('.card-host[data-card-id="c07-tenaga"]', {visibility:"hidden"}, 61.2833);
+    // c08-risiko: Risk-taking that makes no sense
+    tl.set('.card-host[data-card-id="c08-risiko"]', {visibility:"visible", opacity:1}, 70.5667);
+    tl.fromTo('#c08-risiko-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 70.5667);
+    tl.set('#c08-risiko-panel', {height:111}, 70.5667);
+    tl.to('#c08-risiko-panel', {height:181, duration:0.34, ease:'power3.out'}, 73.1);
+    tl.set('#c08-risiko-page0', {opacity:1}, 70.5667);
+    tl.fromTo('#c08-risiko-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 70.6333);
+    tl.fromTo('#c08-risiko-t', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 73.1333);
+    tl.to('#c08-risiko-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 74.85);
+    tl.set('.card-host[data-card-id="c08-risiko"]', {visibility:"hidden"}, 75.15);
+    // c09-kes: A real case from the clinic
+    tl.set('.card-host[data-card-id="c09-kes"]', {visibility:"visible", opacity:1}, 85.4);
+    tl.fromTo('#c09-kes-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 85.4);
+    tl.set('#c09-kes-panel', {height:111}, 85.4);
+    tl.to('#c09-kes-panel', {height:181, duration:0.34, ease:'power3.out'}, 86.0667);
+    tl.set('#c09-kes-page0', {opacity:1}, 85.4);
+    tl.fromTo('#c09-kes-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 85.4667);
+    tl.fromTo('#c09-kes-t', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 86.1333);
+    tl.to('#c09-kes-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 88.3833);
+    tl.set('.card-host[data-card-id="c09-kes"]', {visibility:"hidden"}, 88.6833);
+    // c10-cta: CTA — questions in the comments
+    tl.set('.card-host[data-card-id="c10-cta"]', {visibility:"visible", opacity:1}, 104.5333);
+    tl.fromTo('#c10-cta-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 104.5333);
+    tl.set('#c10-cta-panel', {height:111}, 104.5333);
+    tl.to('#c10-cta-panel', {height:203, duration:0.34, ease:'power3.out'}, 105.3333);
+    tl.to('#c10-cta-panel', {height:266, duration:0.34, ease:'power3.out'}, 106.2667);
+    tl.set('#c10-cta-page0', {opacity:1}, 104.5333);
+    tl.fromTo('#c10-cta-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 104.6);
+    tl.fromTo('#c10-cta-t', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 105.3667);
+    tl.fromTo('#c10-cta-s', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 106.3);
+    tl.to('#c10-cta-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 107.7);
+    tl.set('.card-host[data-card-id="c10-cta"]', {visibility:"hidden"}, 108.0);
+    // insert m1-realiti (mg) 10.07-17.37s
+    tl.fromTo('#m1-realiti-in', {clipPath:'inset(100% 0% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.42, ease:'power3.inOut'}, 10.0667);
+    tl.fromTo('#m1-c1', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 10.187);
+    tl.fromTo('#m1-m', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 10.187);
+    tl.fromTo('#m1-x', {opacity:0, scale:1.9}, {opacity:1, scale:1, duration:0.26, ease:'power4.out'}, 10.187);
+    tl.fromTo('#m1-seam', {scaleX:0}, {scaleX:1, duration:0.5, ease:'power3.inOut'}, 10.187);
+    tl.fromTo('#m1-c2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 10.209);
+    tl.fromTo('#m1-t', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 10.259);
+    tl.fromTo('#m1-wave', {strokeDashoffset:1400}, {strokeDashoffset:0, duration:3.916, ease:'power1.inOut'}, 11.52);
+    tl.fromTo('#m1-hi', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 12.2);
+    tl.fromTo('#m1-hi2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 13.601);
+    tl.fromTo('#m1-lo', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 14.743);
+    tl.fromTo('#m1-lo2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 16.644);
+    tl.to('#m1-realiti-in', {opacity:0, duration:0.24, ease:'power2.in'}, 17.127);
+    // insert b1-projek (broll) 54.20-57.03s
+    tl.fromTo('#b1-projek-in', {opacity:0, scale:1.05}, {opacity:1, scale:1, duration:0.3, ease:'power2.out'}, 54.2);
+    tl.fromTo('#b1-projek-img', {scale:1.03, x:0, y:0}, {scale:1.12, x:-16, y:10, duration:2.833, ease:'sine.inOut'}, 54.2);
+    tl.fromTo('#b1-t1', {opacity:0, y:30}, {opacity:1, y:0, duration:0.36, ease:'power3.out'}, 54.35);
+    tl.fromTo('#b1-t2', {opacity:0, y:30}, {opacity:1, y:0, duration:0.36, ease:'power3.out'}, 56.087);
+    tl.to('#b1-projek-in', {opacity:0, duration:0.24, ease:'power2.in'}, 56.793);
+    // insert b2-tidur (broll) 60.93-64.40s
+    tl.fromTo('#b2-tidur-in', {opacity:0, scale:1.05}, {opacity:1, scale:1, duration:0.3, ease:'power2.out'}, 60.9333);
+    tl.fromTo('#b2-tidur-img', {scale:1.12, x:0, y:0}, {scale:1.03, x:0, y:-14, duration:3.467, ease:'sine.inOut'}, 60.9333);
+    tl.fromTo('#b2-t1', {opacity:0, y:30}, {opacity:1, y:0, duration:0.36, ease:'power3.out'}, 63.067);
+    tl.fromTo('#b2-t2', {opacity:0, y:30}, {opacity:1, y:0, duration:0.36, ease:'power3.out'}, 63.808);
+    tl.to('#b2-tidur-in', {opacity:0, duration:0.24, ease:'power2.in'}, 64.16);
+    // insert m2-fikiran (mg) 64.37-70.53s
+    tl.fromTo('#m2-fikiran-in', {clipPath:'inset(100% 0% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.42, ease:'power3.inOut'}, 64.3667);
+    tl.fromTo('#m2-c', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 64.487);
+    tl.fromTo('#m2-t', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 64.799);
+    tl.fromTo('#m2-speed', {opacity:0, x:80}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 64.919);
+    tl.fromTo('#m2-r0', {opacity:0, x:80}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 65.479);
+    tl.fromTo('#m2-d0', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 65.539);
+    tl.fromTo('#m2-r1', {opacity:0, x:80}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 66.76);
+    tl.fromTo('#m2-d1', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 66.82);
+    tl.fromTo('#m2-r2', {opacity:0, x:80}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 67.867);
+    tl.fromTo('#m2-d2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 67.927);
+    tl.to('#m2-fikiran-in', {opacity:0, duration:0.24, ease:'power2.in'}, 70.293);
+    // insert m3-risiko (mg) 74.80-85.30s
+    tl.fromTo('#m3-risiko-in', {clipPath:'inset(100% 0% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.42, ease:'power3.inOut'}, 74.8);
+    tl.fromTo('#m3-risiko-img', {scale:1.04}, {scale:1.12, duration:10.5, ease:'sine.inOut'}, 74.8);
+    tl.fromTo('#m3-c', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 74.92);
+    tl.fromTo('#m3-t', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 74.949);
+    tl.fromTo('#m3-r0', {opacity:0, x:80}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 75.833);
+    tl.fromTo('#m3-d0', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 75.893);
+    tl.fromTo('#m3-r1', {opacity:0, x:80}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 77.962);
+    tl.fromTo('#m3-d1', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 78.022);
+    tl.fromTo('#m3-r2', {opacity:0, x:80}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 79.623);
+    tl.fromTo('#m3-d2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 79.683);
+    tl.fromTo('#m3-r3', {opacity:0, x:80}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 81.192);
+    tl.fromTo('#m3-d3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 81.252);
+    tl.fromTo('#m3-r4', {opacity:0, x:80}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 82.806);
+    tl.fromTo('#m3-d4', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 82.866);
+    tl.fromTo('#m3-r5', {opacity:0, x:80}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 83.554);
+    tl.fromTo('#m3-d5', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 83.614);
+    tl.to('#m3-risiko-in', {opacity:0, duration:0.24, ease:'power2.in'}, 85.06);
+    // insert b3-gunung (broll) 88.33-92.93s
+    tl.fromTo('#b3-gunung-in', {opacity:0, scale:1.05}, {opacity:1, scale:1, duration:0.3, ease:'power2.out'}, 88.3333);
+    tl.fromTo('#b3-gunung-img', {scale:1.03, x:0, y:0}, {scale:1.13, x:0, y:24, duration:4.6, ease:'sine.inOut'}, 88.3333);
+    tl.fromTo('#b3-t1', {opacity:0, y:30}, {opacity:1, y:0, duration:0.36, ease:'power3.out'}, 88.483);
+    tl.fromTo('#b3-t2', {opacity:0, y:30}, {opacity:1, y:0, duration:0.36, ease:'power3.out'}, 89.266);
+    tl.fromTo('#b3-t3', {opacity:0, y:30}, {opacity:1, y:0, duration:0.36, ease:'power3.out'}, 91.548);
+    tl.to('#b3-gunung-in', {opacity:0, duration:0.24, ease:'power2.in'}, 92.693);
+    // insert b4-rawatan (broll) 94.33-98.13s
+    tl.fromTo('#b4-rawatan-in', {opacity:0, scale:1.05}, {opacity:1, scale:1, duration:0.3, ease:'power2.out'}, 94.3333);
+    tl.fromTo('#b4-rawatan-img', {scale:1.1, x:0, y:0}, {scale:1.02, x:0, y:-16, duration:3.8, ease:'sine.inOut'}, 94.3333);
+    tl.fromTo('#b4-t1', {opacity:0, y:30}, {opacity:1, y:0, duration:0.36, ease:'power3.out'}, 95.953);
+    tl.fromTo('#b4-t2', {opacity:0, y:30}, {opacity:1, y:0, duration:0.36, ease:'power3.out'}, 96.834);
+    tl.to('#b4-rawatan-in', {opacity:0, duration:0.24, ease:'power2.in'}, 97.893);
+    // insert m4-rawatan (mg) 98.10-104.50s
+    tl.fromTo('#m4-rawatan-in', {clipPath:'inset(100% 0% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.42, ease:'power3.inOut'}, 98.1);
+    tl.fromTo('#m4-c', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 98.22);
+    tl.fromTo('#m4-t', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 98.22);
+    tl.fromTo('#m4-rail', {strokeDashoffset:1400}, {strokeDashoffset:0, duration:4.312, ease:'power1.inOut'}, 98.255);
+    tl.fromTo('#m4-r0', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 98.53);
+    tl.fromTo('#m4-r1', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 99.57);
+    tl.fromTo('#m4-r2', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 100.651);
+    tl.fromTo('#m4-r3', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 102.347);
+    tl.fromTo('#m4-tip', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 102.417);
+    tl.to('#m4-rawatan-in', {opacity:0, duration:0.24, ease:'power2.in'}, 104.26);
+    window.__timelines = window.__timelines || {};
+    window.__timelines["talking-head-recut"] = tl;
+  })();
+  </script>
+</div>
+</body>
+</html>

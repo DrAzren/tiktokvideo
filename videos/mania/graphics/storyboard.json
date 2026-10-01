@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 3,
+  "composition": {
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "durationSeconds": 108.0,
+    "layout": "portrait",
+    "themeId": "custom-teal",
+    "seed": 7
+  },
+  "videoTrack": {
+    "sourcePath": "input-video.mp4",
+    "startSec": 0,
+    "endSec": 108.0,
+    "bounds": {
+      "x": 0,
+      "y": 180,
+      "width": 1080,
+      "height": 1920
+    }
+  },
+  "subtitles": {
+    "enabled": false
+  },
+  "cards": [
+    {
+      "id": "c01-mitos",
+      "intent": "Hook — the myth: mania = personality/identity disorder",
+      "startSec": 0.0,
+      "endSec": 5.4667,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c02-soalan1",
+      "intent": "Q1 — what is bipolar?",
+      "startSec": 7.8,
+      "endSec": 10.4167,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c03-soalan2",
+      "intent": "Q2 — how long? daily, >= 1 week",
+      "startSec": 17.3333,
+      "endSec": 25.8667,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 2
+      }
+    },
+    {
+      "id": "c04-soalan3",
+      "intent": "Q3 — what happens in the mania phase?",
+      "startSec": 25.8667,
+      "endSec": 34.2,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 2
+      }
+    },
+    {
+      "id": "c05-gejala1",
+      "intent": "Symptoms: talkative, cheerful",
+      "startSec": 34.2,
+      "endSec": 42.8333,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c06-gejala2",
+      "intent": "Symptoms: more activity, no risk thinking, overactive, little sleep",
+      "startSec": 42.8333,
+      "endSec": 54.55,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 2
+      }
+    },
+    {
+      "id": "c07-tenaga",
+      "intent": "Symptoms: lots of energy, less need for sleep",
+      "startSec": 57.0,
+      "endSec": 61.2833,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c08-risiko",
+      "intent": "Risk-taking that makes no sense",
+      "startSec": 70.5667,
+      "endSec": 75.15,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c09-kes",
+      "intent": "A real case from the clinic",
+      "startSec": 85.4,
+      "endSec": 88.6833,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c10-cta",
+      "intent": "CTA — questions in the comments",
+      "startSec": 104.5333,
+      "endSec": 108.0,
+      "zone": "headroom",
+      "contentHints": {
+        "pages": 1
+      }
+    }
+  ],
+  "inserts": [
+    {
+      "id": "m1-realiti",
+      "kind": "mg",
+      "startSec": 10.0667,
+      "endSec": 17.3667
+    },
+    {
+      "id": "b1-projek",
+      "kind": "broll",
+      "startSec": 54.2,
+      "endSec": 57.0333
+    },
+    {
+      "id": "b2-tidur",
+      "kind": "broll",
+      "startSec": 60.9333,
+      "endSec": 64.4
+    },
+    {
+      "id": "m2-fikiran",
+      "kind": "mg",
+      "startSec": 64.3667,
+      "endSec": 70.5333
+    },
+    {
+      "id": "m3-risiko",
+      "kind": "mg",
+      "startSec": 74.8,
+      "endSec": 85.3
+    },
+    {
+      "id": "b3-gunung",
+      "kind": "broll",
+      "startSec": 88.3333,
+      "endSec": 92.9333
+    },
+    {
+      "id": "b4-rawatan",
+      "kind": "broll",
+      "startSec": 94.3333,
+      "endSec": 98.1333
+    },
+    {
+      "id": "m4-rawatan",
+      "kind": "mg",
+      "startSec": 98.1,
+      "endSec": 104.5
+    }
+  ]
+}
