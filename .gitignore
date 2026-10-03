@@ -22,4 +22,7 @@ videos/**
 !videos/*/captions_src/large_v3.json
 !videos/*/captions_src/large_v3_v4.json
 !videos/*/captions/make_fg_alpha.sh
+!videos/*/captions/matte_hero.sh
+!videos/*/captions_src/large_v3_cut.json
+!videos/*/audio/voice_af.txt
 !videos/*/assemble.sh

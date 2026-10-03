@@ -1,0 +1,1652 @@
+[
+ {
+  "start": 0.0,
+  "end": 4.44,
+  "text": " Orang kata borderline personality disorder ni sekadar moody je, mood swing.",
+  "words": [
+   {
+    "text": "Orang",
+    "start": 0.0,
+    "end": 0.2,
+    "p": 0.92
+   },
+   {
+    "text": "kata",
+    "start": 0.2,
+    "end": 0.56,
+    "p": 1.0
+   },
+   {
+    "text": "borderline",
+    "start": 0.56,
+    "end": 1.24,
+    "p": 0.969
+   },
+   {
+    "text": "personality",
+    "start": 1.24,
+    "end": 1.58,
+    "p": 0.994
+   },
+   {
+    "text": "disorder",
+    "start": 1.58,
+    "end": 2.16,
+    "p": 0.999
+   },
+   {
+    "text": "ni",
+    "start": 2.16,
+    "end": 2.6,
+    "p": 0.973
+   },
+   {
+    "text": "sekadar",
+    "start": 2.6,
+    "end": 3.26,
+    "p": 0.986
+   },
+   {
+    "text": "moody",
+    "start": 3.26,
+    "end": 3.6,
+    "p": 0.853
+   },
+   {
+    "text": "je,",
+    "start": 3.6,
+    "end": 3.88,
+    "p": 0.996
+   },
+   {
+    "text": "mood",
+    "start": 3.96,
+    "end": 4.12,
+    "p": 0.997
+   },
+   {
+    "text": "swing.",
+    "start": 4.12,
+    "end": 4.44,
+    "p": 0.989
+   }
+  ]
+ },
+ {
+  "start": 4.72,
+  "end": 12.04,
+  "text": " Betul ke? Jom saya explain, tunjukkan tanda-tanda utama BPD supaya kita lebih faham tentang penyakit ini.",
+  "words": [
+   {
+    "text": "Betul",
+    "start": 4.72,
+    "end": 5.2,
+    "p": 0.796
+   },
+   {
+    "text": "ke?",
+    "start": 5.2,
+    "end": 5.3,
+    "p": 1.0
+   },
+   {
+    "text": "Jom",
+    "start": 5.54,
+    "end": 6.02,
+    "p": 0.999
+   },
+   {
+    "text": "saya",
+    "start": 6.02,
+    "end": 6.28,
+    "p": 0.999
+   },
+   {
+    "text": "explain,",
+    "start": 6.28,
+    "end": 6.88,
+    "p": 0.998
+   },
+   {
+    "text": "tunjukkan",
+    "start": 7.14,
+    "end": 7.92,
+    "p": 1.0
+   },
+   {
+    "text": "tanda",
+    "start": 7.92,
+    "end": 8.34,
+    "p": 1.0
+   },
+   {
+    "text": "-tanda",
+    "start": 8.34,
+    "end": 8.52,
+    "p": 1.0
+   },
+   {
+    "text": "utama",
+    "start": 8.52,
+    "end": 8.98,
+    "p": 1.0
+   },
+   {
+    "text": "BPD",
+    "start": 8.98,
+    "end": 9.28,
+    "p": 0.997
+   },
+   {
+    "text": "supaya",
+    "start": 9.28,
+    "end": 9.78,
+    "p": 0.998
+   },
+   {
+    "text": "kita",
+    "start": 9.78,
+    "end": 10.0,
+    "p": 1.0
+   },
+   {
+    "text": "lebih",
+    "start": 10.0,
+    "end": 10.2,
+    "p": 1.0
+   },
+   {
+    "text": "faham",
+    "start": 10.2,
+    "end": 10.76,
+    "p": 1.0
+   },
+   {
+    "text": "tentang",
+    "start": 10.76,
+    "end": 10.98,
+    "p": 1.0
+   },
+   {
+    "text": "penyakit",
+    "start": 10.98,
+    "end": 11.92,
+    "p": 1.0
+   },
+   {
+    "text": "ini.",
+    "start": 11.92,
+    "end": 12.04,
+    "p": 0.929
+   }
+  ]
+ },
+ {
+  "start": 12.22,
+  "end": 14.82,
+  "text": " Pertama, orang BPD ni takut ditinggalkan.",
+  "words": [
+   {
+    "text": "Pertama,",
+    "start": 12.22,
+    "end": 12.7,
+    "p": 1.0
+   },
+   {
+    "text": "orang",
+    "start": 12.76,
+    "end": 13.0,
+    "p": 0.999
+   },
+   {
+    "text": "BPD",
+    "start": 13.0,
+    "end": 13.48,
+    "p": 1.0
+   },
+   {
+    "text": "ni",
+    "start": 13.48,
+    "end": 13.66,
+    "p": 0.997
+   },
+   {
+    "text": "takut",
+    "start": 13.66,
+    "end": 14.12,
+    "p": 1.0
+   },
+   {
+    "text": "ditinggalkan.",
+    "start": 14.12,
+    "end": 14.82,
+    "p": 1.0
+   }
+  ]
+ },
+ {
+  "start": 15.0,
+  "end": 20.04,
+  "text": " Contohnya kalau pasangan dia lambat balas WhatsApp, terus dia rasa diabaikan, terus rasa panik.",
+  "words": [
+   {
+    "text": "Contohnya",
+    "start": 15.0,
+    "end": 15.48,
+    "p": 1.0
+   },
+   {
+    "text": "kalau",
+    "start": 15.48,
+    "end": 15.66,
+    "p": 0.976
+   },
+   {
+    "text": "pasangan",
+    "start": 15.66,
+    "end": 16.42,
+    "p": 1.0
+   },
+   {
+    "text": "dia",
+    "start": 16.42,
+    "end": 16.66,
+    "p": 1.0
+   },
+   {
+    "text": "lambat",
+    "start": 16.66,
+    "end": 17.1,
+    "p": 1.0
+   },
+   {
+    "text": "balas",
+    "start": 17.1,
+    "end": 17.38,
+    "p": 1.0
+   },
+   {
+    "text": "WhatsApp,",
+    "start": 17.38,
+    "end": 17.68,
+    "p": 0.575
+   },
+   {
+    "text": "terus",
+    "start": 17.82,
+    "end": 18.0,
+    "p": 1.0
+   },
+   {
+    "text": "dia",
+    "start": 18.0,
+    "end": 18.14,
+    "p": 0.99
+   },
+   {
+    "text": "rasa",
+    "start": 18.14,
+    "end": 18.38,
+    "p": 1.0
+   },
+   {
+    "text": "diabaikan,",
+    "start": 18.38,
+    "end": 19.08,
+    "p": 0.997
+   },
+   {
+    "text": "terus",
+    "start": 19.28,
+    "end": 19.46,
+    "p": 1.0
+   },
+   {
+    "text": "rasa",
+    "start": 19.46,
+    "end": 19.62,
+    "p": 0.999
+   },
+   {
+    "text": "panik.",
+    "start": 19.62,
+    "end": 20.04,
+    "p": 0.967
+   }
+  ]
+ },
+ {
+  "start": 20.04,
+  "end": 21.96,
+  "text": " Yang kedua, hubungan mereka ni tak stabil.",
+  "words": [
+   {
+    "text": "Yang",
+    "start": 20.04,
+    "end": 20.16,
+    "p": 0.999
+   },
+   {
+    "text": "kedua,",
+    "start": 20.16,
+    "end": 20.44,
+    "p": 1.0
+   },
+   {
+    "text": "hubungan",
+    "start": 20.52,
+    "end": 21.06,
+    "p": 1.0
+   },
+   {
+    "text": "mereka",
+    "start": 21.06,
+    "end": 21.26,
+    "p": 0.999
+   },
+   {
+    "text": "ni",
+    "start": 21.26,
+    "end": 21.5,
+    "p": 1.0
+   },
+   {
+    "text": "tak",
+    "start": 21.5,
+    "end": 21.62,
+    "p": 1.0
+   },
+   {
+    "text": "stabil.",
+    "start": 21.62,
+    "end": 21.96,
+    "p": 1.0
+   }
+  ]
+ },
+ {
+  "start": 22.3,
+  "end": 26.88,
+  "text": " Sekejap rasa orang tu perfect, sekejap rasa orang tu jahat, hubungan jadi naik turun.",
+  "words": [
+   {
+    "text": "Sekejap",
+    "start": 22.3,
+    "end": 22.78,
+    "p": 0.999
+   },
+   {
+    "text": "rasa",
+    "start": 22.78,
+    "end": 23.12,
+    "p": 0.966
+   },
+   {
+    "text": "orang",
+    "start": 23.12,
+    "end": 23.5,
+    "p": 1.0
+   },
+   {
+    "text": "tu",
+    "start": 23.5,
+    "end": 23.7,
+    "p": 0.998
+   },
+   {
+    "text": "perfect,",
+    "start": 23.7,
+    "end": 23.94,
+    "p": 0.997
+   },
+   {
+    "text": "sekejap",
+    "start": 24.2,
+    "end": 24.5,
+    "p": 1.0
+   },
+   {
+    "text": "rasa",
+    "start": 24.5,
+    "end": 24.62,
+    "p": 1.0
+   },
+   {
+    "text": "orang",
+    "start": 24.62,
+    "end": 24.84,
+    "p": 1.0
+   },
+   {
+    "text": "tu",
+    "start": 24.84,
+    "end": 25.02,
+    "p": 1.0
+   },
+   {
+    "text": "jahat,",
+    "start": 25.02,
+    "end": 25.54,
+    "p": 1.0
+   },
+   {
+    "text": "hubungan",
+    "start": 25.6,
+    "end": 26.28,
+    "p": 1.0
+   },
+   {
+    "text": "jadi",
+    "start": 26.28,
+    "end": 26.42,
+    "p": 0.992
+   },
+   {
+    "text": "naik",
+    "start": 26.42,
+    "end": 26.66,
+    "p": 1.0
+   },
+   {
+    "text": "turun.",
+    "start": 26.66,
+    "end": 26.88,
+    "p": 0.993
+   }
+  ]
+ },
+ {
+  "start": 26.92,
+  "end": 28.98,
+  "text": " Kalau dia percaya dengan orang tu, dia mudah percaya.",
+  "words": [
+   {
+    "text": "Kalau",
+    "start": 26.92,
+    "end": 27.02,
+    "p": 0.999
+   },
+   {
+    "text": "dia",
+    "start": 27.02,
+    "end": 27.16,
+    "p": 1.0
+   },
+   {
+    "text": "percaya",
+    "start": 27.16,
+    "end": 27.5,
+    "p": 1.0
+   },
+   {
+    "text": "dengan",
+    "start": 27.5,
+    "end": 27.62,
+    "p": 1.0
+   },
+   {
+    "text": "orang",
+    "start": 27.62,
+    "end": 27.86,
+    "p": 1.0
+   },
+   {
+    "text": "tu,",
+    "start": 27.86,
+    "end": 28.08,
+    "p": 1.0
+   },
+   {
+    "text": "dia",
+    "start": 28.1,
+    "end": 28.2,
+    "p": 1.0
+   },
+   {
+    "text": "mudah",
+    "start": 28.2,
+    "end": 28.6,
+    "p": 1.0
+   },
+   {
+    "text": "percaya.",
+    "start": 28.6,
+    "end": 28.98,
+    "p": 1.0
+   }
+  ]
+ },
+ {
+  "start": 28.98,
+  "end": 31.42,
+  "text": " Kalau dia benci dengan orang tu, dia akan benci sangat-sangat",
+  "words": [
+   {
+    "text": "Kalau",
+    "start": 28.98,
+    "end": 29.32,
+    "p": 0.764
+   },
+   {
+    "text": "dia",
+    "start": 29.32,
+    "end": 29.54,
+    "p": 0.992
+   },
+   {
+    "text": "benci",
+    "start": 29.54,
+    "end": 29.92,
+    "p": 0.998
+   },
+   {
+    "text": "dengan",
+    "start": 29.92,
+    "end": 30.04,
+    "p": 0.979
+   },
+   {
+    "text": "orang",
+    "start": 30.04,
+    "end": 30.26,
+    "p": 0.998
+   },
+   {
+    "text": "tu,",
+    "start": 30.26,
+    "end": 30.4,
+    "p": 0.878
+   },
+   {
+    "text": "dia",
+    "start": 30.44,
+    "end": 30.5,
+    "p": 0.998
+   },
+   {
+    "text": "akan",
+    "start": 30.5,
+    "end": 30.64,
+    "p": 0.999
+   },
+   {
+    "text": "benci",
+    "start": 30.64,
+    "end": 31.04,
+    "p": 0.999
+   },
+   {
+    "text": "sangat",
+    "start": 31.04,
+    "end": 31.16,
+    "p": 0.996
+   },
+   {
+    "text": "-sangat",
+    "start": 31.16,
+    "end": 31.42,
+    "p": 0.996
+   }
+  ]
+ },
+ {
+  "start": 31.42,
+  "end": 33.24,
+  "text": " Yang ketiga, emosi tak stabil",
+  "words": [
+   {
+    "text": "Yang",
+    "start": 31.42,
+    "end": 31.92,
+    "p": 0.138
+   },
+   {
+    "text": "ketiga,",
+    "start": 31.92,
+    "end": 32.34,
+    "p": 0.995
+   },
+   {
+    "text": "emosi",
+    "start": 32.38,
+    "end": 32.76,
+    "p": 0.993
+   },
+   {
+    "text": "tak",
+    "start": 32.76,
+    "end": 32.92,
+    "p": 0.997
+   },
+   {
+    "text": "stabil",
+    "start": 32.92,
+    "end": 33.24,
+    "p": 0.999
+   }
+  ]
+ },
+ {
+  "start": 33.24,
+  "end": 34.52,
+  "text": " Emosi turun naik dengan cepat",
+  "words": [
+   {
+    "text": "Emosi",
+    "start": 33.24,
+    "end": 33.66,
+    "p": 0.815
+   },
+   {
+    "text": "turun",
+    "start": 33.66,
+    "end": 33.82,
+    "p": 0.998
+   },
+   {
+    "text": "naik",
+    "start": 33.82,
+    "end": 34.04,
+    "p": 0.997
+   },
+   {
+    "text": "dengan",
+    "start": 34.04,
+    "end": 34.2,
+    "p": 1.0
+   },
+   {
+    "text": "cepat",
+    "start": 34.2,
+    "end": 34.52,
+    "p": 1.0
+   }
+  ]
+ },
+ {
+  "start": 34.52,
+  "end": 36.26,
+  "text": " Contohnya, pagi rasa happy",
+  "words": [
+   {
+    "text": "Contohnya,",
+    "start": 34.52,
+    "end": 35.42,
+    "p": 0.994
+   },
+   {
+    "text": "pagi",
+    "start": 35.44,
+    "end": 35.74,
+    "p": 0.999
+   },
+   {
+    "text": "rasa",
+    "start": 35.74,
+    "end": 35.86,
+    "p": 0.637
+   },
+   {
+    "text": "happy",
+    "start": 35.86,
+    "end": 36.26,
+    "p": 0.996
+   }
+  ]
+ },
+ {
+  "start": 36.26,
+  "end": 37.3,
+  "text": " Tengah hari rasa kosong",
+  "words": [
+   {
+    "text": "Tengah",
+    "start": 36.26,
+    "end": 36.54,
+    "p": 0.879
+   },
+   {
+    "text": "hari",
+    "start": 36.54,
+    "end": 36.7,
+    "p": 1.0
+   },
+   {
+    "text": "rasa",
+    "start": 36.7,
+    "end": 36.86,
+    "p": 0.999
+   },
+   {
+    "text": "kosong",
+    "start": 36.86,
+    "end": 37.3,
+    "p": 1.0
+   }
+  ]
+ },
+ {
+  "start": 37.3,
+  "end": 38.42,
+  "text": " Malam tiba-tiba marah",
+  "words": [
+   {
+    "text": "Malam",
+    "start": 37.3,
+    "end": 37.72,
+    "p": 0.967
+   },
+   {
+    "text": "tiba",
+    "start": 37.72,
+    "end": 37.88,
+    "p": 0.99
+   },
+   {
+    "text": "-tiba",
+    "start": 37.88,
+    "end": 38.02,
+    "p": 1.0
+   },
+   {
+    "text": "marah",
+    "start": 38.02,
+    "end": 38.42,
+    "p": 1.0
+   }
+  ]
+ },
+ {
+  "start": 38.42,
+  "end": 40.86,
+  "text": " Yang keempat, rasa kosong yang berpanjangan",
+  "words": [
+   {
+    "text": "Yang",
+    "start": 38.42,
+    "end": 38.7,
+    "p": 0.999
+   },
+   {
+    "text": "keempat,",
+    "start": 38.7,
+    "end": 39.18,
+    "p": 1.0
+   },
+   {
+    "text": "rasa",
+    "start": 39.3,
+    "end": 39.68,
+    "p": 1.0
+   },
+   {
+    "text": "kosong",
+    "start": 39.68,
+    "end": 40.28,
+    "p": 1.0
+   },
+   {
+    "text": "yang",
+    "start": 40.28,
+    "end": 40.38,
+    "p": 0.999
+   },
+   {
+    "text": "berpanjangan",
+    "start": 40.38,
+    "end": 40.86,
+    "p": 0.999
+   }
+  ]
+ },
+ {
+  "start": 40.86,
+  "end": 43.08,
+  "text": " Walaupun dikelilingi dengan ramai orang",
+  "words": [
+   {
+    "text": "Walaupun",
+    "start": 40.86,
+    "end": 41.32,
+    "p": 1.0
+   },
+   {
+    "text": "dikelilingi",
+    "start": 41.32,
+    "end": 42.0,
+    "p": 0.996
+   },
+   {
+    "text": "dengan",
+    "start": 42.0,
+    "end": 42.2,
+    "p": 1.0
+   },
+   {
+    "text": "ramai",
+    "start": 42.2,
+    "end": 42.9,
+    "p": 1.0
+   },
+   {
+    "text": "orang",
+    "start": 42.9,
+    "end": 43.08,
+    "p": 1.0
+   }
+  ]
+ },
+ {
+  "start": 43.08,
+  "end": 45.64,
+  "text": " Tetapi jiwa rasa kosong",
+  "words": [
+   {
+    "text": "Tetapi",
+    "start": 43.08,
+    "end": 44.08,
+    "p": 0.983
+   },
+   {
+    "text": "jiwa",
+    "start": 44.08,
+    "end": 44.86,
+    "p": 0.935
+   },
+   {
+    "text": "rasa",
+    "start": 44.86,
+    "end": 45.06,
+    "p": 1.0
+   },
+   {
+    "text": "kosong",
+    "start": 45.06,
+    "end": 45.64,
+    "p": 1.0
+   }
+  ]
+ },
+ {
+  "start": 45.64,
+  "end": 49.08,
+  "text": " Yang kelima, kemarahan yang melampau dan susah nak kawal",
+  "words": [
+   {
+    "text": "Yang",
+    "start": 45.64,
+    "end": 45.8,
+    "p": 0.999
+   },
+   {
+    "text": "kelima,",
+    "start": 45.8,
+    "end": 46.22,
+    "p": 0.999
+   },
+   {
+    "text": "kemarahan",
+    "start": 46.26,
+    "end": 47.18,
+    "p": 1.0
+   },
+   {
+    "text": "yang",
+    "start": 47.18,
+    "end": 47.42,
+    "p": 0.998
+   },
+   {
+    "text": "melampau",
+    "start": 47.42,
+    "end": 47.9,
+    "p": 0.999
+   },
+   {
+    "text": "dan",
+    "start": 47.9,
+    "end": 48.02,
+    "p": 0.593
+   },
+   {
+    "text": "susah",
+    "start": 48.02,
+    "end": 48.52,
+    "p": 1.0
+   },
+   {
+    "text": "nak",
+    "start": 48.52,
+    "end": 48.62,
+    "p": 1.0
+   },
+   {
+    "text": "kawal",
+    "start": 48.62,
+    "end": 49.08,
+    "p": 0.998
+   }
+  ]
+ },
+ {
+  "start": 49.08,
+  "end": 52.26,
+  "text": " Tiba-tiba marah yang melampau bila rasa tak difahami",
+  "words": [
+   {
+    "text": "Tiba",
+    "start": 49.08,
+    "end": 49.32,
+    "p": 1.0
+   },
+   {
+    "text": "-tiba",
+    "start": 49.32,
+    "end": 49.6,
+    "p": 1.0
+   },
+   {
+    "text": "marah",
+    "start": 49.6,
+    "end": 50.02,
+    "p": 1.0
+   },
+   {
+    "text": "yang",
+    "start": 50.02,
+    "end": 50.12,
+    "p": 1.0
+   },
+   {
+    "text": "melampau",
+    "start": 50.12,
+    "end": 50.66,
+    "p": 1.0
+   },
+   {
+    "text": "bila",
+    "start": 50.66,
+    "end": 51.02,
+    "p": 0.931
+   },
+   {
+    "text": "rasa",
+    "start": 51.02,
+    "end": 51.5,
+    "p": 1.0
+   },
+   {
+    "text": "tak",
+    "start": 51.5,
+    "end": 51.82,
+    "p": 1.0
+   },
+   {
+    "text": "difahami",
+    "start": 51.82,
+    "end": 52.26,
+    "p": 0.988
+   }
+  ]
+ },
+ {
+  "start": 52.26,
+  "end": 53.32,
+  "text": " Walaupun benda kecil je",
+  "words": [
+   {
+    "text": "Walaupun",
+    "start": 52.26,
+    "end": 52.68,
+    "p": 0.998
+   },
+   {
+    "text": "benda",
+    "start": 52.68,
+    "end": 52.88,
+    "p": 0.999
+   },
+   {
+    "text": "kecil",
+    "start": 52.88,
+    "end": 53.22,
+    "p": 0.985
+   },
+   {
+    "text": "je",
+    "start": 53.22,
+    "end": 53.32,
+    "p": 0.987
+   }
+  ]
+ },
+ {
+  "start": 53.32,
+  "end": 55.96,
+  "text": " Nombor enam adalah tingkah laku yang impulsif",
+  "words": [
+   {
+    "text": "Nombor",
+    "start": 53.32,
+    "end": 53.66,
+    "p": 0.991
+   },
+   {
+    "text": "enam",
+    "start": 53.66,
+    "end": 53.86,
+    "p": 0.801
+   },
+   {
+    "text": "adalah",
+    "start": 53.86,
+    "end": 54.18,
+    "p": 0.923
+   },
+   {
+    "text": "tingkah",
+    "start": 54.18,
+    "end": 54.94,
+    "p": 0.993
+   },
+   {
+    "text": "laku",
+    "start": 54.94,
+    "end": 55.18,
+    "p": 1.0
+   },
+   {
+    "text": "yang",
+    "start": 55.18,
+    "end": 55.34,
+    "p": 1.0
+   },
+   {
+    "text": "impulsif",
+    "start": 55.34,
+    "end": 55.96,
+    "p": 0.999
+   }
+  ]
+ },
+ {
+  "start": 55.96,
+  "end": 58.18,
+  "text": " Contohnya, shopping yang berlebihan",
+  "words": [
+   {
+    "text": "Contohnya,",
+    "start": 55.96,
+    "end": 56.7,
+    "p": 0.999
+   },
+   {
+    "text": "shopping",
+    "start": 56.8,
+    "end": 57.28,
+    "p": 0.984
+   },
+   {
+    "text": "yang",
+    "start": 57.28,
+    "end": 57.64,
+    "p": 1.0
+   },
+   {
+    "text": "berlebihan",
+    "start": 57.64,
+    "end": 58.18,
+    "p": 1.0
+   }
+  ]
+ },
+ {
+  "start": 58.18,
+  "end": 59.86,
+  "text": " Ambil risiko yang berbahaya",
+  "words": [
+   {
+    "text": "Ambil",
+    "start": 58.18,
+    "end": 58.54,
+    "p": 0.643
+   },
+   {
+    "text": "risiko",
+    "start": 58.54,
+    "end": 59.0,
+    "p": 0.992
+   },
+   {
+    "text": "yang",
+    "start": 59.0,
+    "end": 59.2,
+    "p": 0.985
+   },
+   {
+    "text": "berbahaya",
+    "start": 59.2,
+    "end": 59.86,
+    "p": 0.997
+   }
+  ]
+ },
+ {
+  "start": 59.86,
+  "end": 61.96,
+  "text": " Atau self-harm bila stres",
+  "words": [
+   {
+    "text": "Atau",
+    "start": 59.86,
+    "end": 60.24,
+    "p": 0.836
+   },
+   {
+    "text": "self",
+    "start": 60.24,
+    "end": 60.5,
+    "p": 0.949
+   },
+   {
+    "text": "-harm",
+    "start": 60.5,
+    "end": 60.96,
+    "p": 0.903
+   },
+   {
+    "text": "bila",
+    "start": 60.96,
+    "end": 61.44,
+    "p": 0.805
+   },
+   {
+    "text": "stres",
+    "start": 61.44,
+    "end": 61.96,
+    "p": 0.908
+   }
+  ]
+ },
+ {
+  "start": 61.96,
+  "end": 63.58,
+  "text": " Kalau ada tanda-tanda ni",
+  "words": [
+   {
+    "text": "Kalau",
+    "start": 61.96,
+    "end": 62.52,
+    "p": 0.99
+   },
+   {
+    "text": "ada",
+    "start": 62.52,
+    "end": 63.0,
+    "p": 1.0
+   },
+   {
+    "text": "tanda",
+    "start": 63.0,
+    "end": 63.26,
+    "p": 0.997
+   },
+   {
+    "text": "-tanda",
+    "start": 63.26,
+    "end": 63.44,
+    "p": 0.999
+   },
+   {
+    "text": "ni",
+    "start": 63.44,
+    "end": 63.58,
+    "p": 0.911
+   }
+  ]
+ },
+ {
+  "start": 63.58,
+  "end": 65.3,
+  "text": " Bukanlah bermakna anda gila",
+  "words": [
+   {
+    "text": "Bukanlah",
+    "start": 63.58,
+    "end": 64.12,
+    "p": 0.811
+   },
+   {
+    "text": "bermakna",
+    "start": 64.12,
+    "end": 64.58,
+    "p": 0.996
+   },
+   {
+    "text": "anda",
+    "start": 64.58,
+    "end": 64.76,
+    "p": 0.999
+   },
+   {
+    "text": "gila",
+    "start": 64.76,
+    "end": 65.3,
+    "p": 0.999
+   }
+  ]
+ },
+ {
+  "start": 65.3,
+  "end": 66.88,
+  "text": " Ini adalah kejala-kejala",
+  "words": [
+   {
+    "text": "Ini",
+    "start": 65.3,
+    "end": 65.46,
+    "p": 0.989
+   },
+   {
+    "text": "adalah",
+    "start": 65.46,
+    "end": 65.68,
+    "p": 1.0
+   },
+   {
+    "text": "kejala",
+    "start": 65.68,
+    "end": 66.4,
+    "p": 0.917
+   },
+   {
+    "text": "-kejala",
+    "start": 66.4,
+    "end": 66.88,
+    "p": 1.0
+   }
+  ]
+ },
+ {
+  "start": 66.88,
+  "end": 68.2,
+  "text": " Borderline personality disorder",
+  "words": [
+   {
+    "text": "Borderline",
+    "start": 66.88,
+    "end": 67.44,
+    "p": 0.852
+   },
+   {
+    "text": "personality",
+    "start": 67.44,
+    "end": 67.74,
+    "p": 0.925
+   },
+   {
+    "text": "disorder",
+    "start": 67.74,
+    "end": 68.2,
+    "p": 1.0
+   }
+  ]
+ },
+ {
+  "start": 68.2,
+  "end": 70.36,
+  "text": " Dan rawatan untuk penyakit ni memang ada",
+  "words": [
+   {
+    "text": "Dan",
+    "start": 68.2,
+    "end": 68.58,
+    "p": 0.929
+   },
+   {
+    "text": "rawatan",
+    "start": 68.58,
+    "end": 69.1,
+    "p": 1.0
+   },
+   {
+    "text": "untuk",
+    "start": 69.1,
+    "end": 69.3,
+    "p": 0.999
+   },
+   {
+    "text": "penyakit",
+    "start": 69.3,
+    "end": 69.74,
+    "p": 1.0
+   },
+   {
+    "text": "ni",
+    "start": 69.74,
+    "end": 69.76,
+    "p": 0.991
+   },
+   {
+    "text": "memang",
+    "start": 69.76,
+    "end": 70.0,
+    "p": 0.89
+   },
+   {
+    "text": "ada",
+    "start": 70.0,
+    "end": 70.36,
+    "p": 1.0
+   }
+  ]
+ },
+ {
+  "start": 70.36,
+  "end": 72.16,
+  "text": " Kalau anda nak buat konsultasi",
+  "words": [
+   {
+    "text": "Kalau",
+    "start": 70.36,
+    "end": 70.66,
+    "p": 0.999
+   },
+   {
+    "text": "anda",
+    "start": 70.66,
+    "end": 70.9,
+    "p": 1.0
+   },
+   {
+    "text": "nak",
+    "start": 70.9,
+    "end": 71.08,
+    "p": 1.0
+   },
+   {
+    "text": "buat",
+    "start": 71.08,
+    "end": 71.28,
+    "p": 1.0
+   },
+   {
+    "text": "konsultasi",
+    "start": 71.28,
+    "end": 72.16,
+    "p": 0.989
+   }
+  ]
+ },
+ {
+  "start": 72.16,
+  "end": 73.18,
+  "text": " Dan saringan kesihatan mental",
+  "words": [
+   {
+    "text": "Dan",
+    "start": 72.16,
+    "end": 72.24,
+    "p": 0.713
+   },
+   {
+    "text": "saringan",
+    "start": 72.24,
+    "end": 72.64,
+    "p": 0.976
+   },
+   {
+    "text": "kesihatan",
+    "start": 72.64,
+    "end": 72.88,
+    "p": 0.962
+   },
+   {
+    "text": "mental",
+    "start": 72.88,
+    "end": 73.18,
+    "p": 0.999
+   }
+  ]
+ },
+ {
+  "start": 73.18,
+  "end": 75.22,
+  "text": " Anda boleh datang ke klinik saya dinilai",
+  "words": [
+   {
+    "text": "Anda",
+    "start": 73.18,
+    "end": 73.46,
+    "p": 0.992
+   },
+   {
+    "text": "boleh",
+    "start": 73.46,
+    "end": 73.66,
+    "p": 1.0
+   },
+   {
+    "text": "datang",
+    "start": 73.66,
+    "end": 74.1,
+    "p": 1.0
+   },
+   {
+    "text": "ke",
+    "start": 74.1,
+    "end": 74.24,
+    "p": 0.995
+   },
+   {
+    "text": "klinik",
+    "start": 74.24,
+    "end": 74.56,
+    "p": 0.997
+   },
+   {
+    "text": "saya",
+    "start": 74.56,
+    "end": 74.66,
+    "p": 0.999
+   },
+   {
+    "text": "dinilai",
+    "start": 74.66,
+    "end": 75.22,
+    "p": 0.873
+   }
+  ]
+ },
+ {
+  "start": 75.22,
+  "end": 77.3,
+  "text": " Sama ada nak faham tentang keadaan diri",
+  "words": [
+   {
+    "text": "Sama",
+    "start": 75.22,
+    "end": 75.46,
+    "p": 0.99
+   },
+   {
+    "text": "ada",
+    "start": 75.46,
+    "end": 75.68,
+    "p": 0.999
+   },
+   {
+    "text": "nak",
+    "start": 75.68,
+    "end": 75.9,
+    "p": 1.0
+   },
+   {
+    "text": "faham",
+    "start": 75.9,
+    "end": 76.52,
+    "p": 1.0
+   },
+   {
+    "text": "tentang",
+    "start": 76.52,
+    "end": 76.66,
+    "p": 0.924
+   },
+   {
+    "text": "keadaan",
+    "start": 76.66,
+    "end": 77.02,
+    "p": 0.999
+   },
+   {
+    "text": "diri",
+    "start": 77.02,
+    "end": 77.3,
+    "p": 1.0
+   }
+  ]
+ },
+ {
+  "start": 77.3,
+  "end": 78.72,
+  "text": " Ataupun nak dapatkan rawatan yang sesuai",
+  "words": [
+   {
+    "text": "Ataupun",
+    "start": 77.3,
+    "end": 77.62,
+    "p": 0.981
+   },
+   {
+    "text": "nak",
+    "start": 77.62,
+    "end": 77.72,
+    "p": 1.0
+   },
+   {
+    "text": "dapatkan",
+    "start": 77.72,
+    "end": 78.06,
+    "p": 1.0
+   },
+   {
+    "text": "rawatan",
+    "start": 78.06,
+    "end": 78.34,
+    "p": 0.999
+   },
+   {
+    "text": "yang",
+    "start": 78.34,
+    "end": 78.4,
+    "p": 0.849
+   },
+   {
+    "text": "sesuai",
+    "start": 78.4,
+    "end": 78.72,
+    "p": 0.992
+   }
+  ]
+ },
+ {
+  "start": 78.72,
+  "end": 79.96,
+  "text": " InsyaAllah kami boleh bantu",
+  "words": [
+   {
+    "text": "InsyaAllah",
+    "start": 78.72,
+    "end": 79.16,
+    "p": 0.948
+   },
+   {
+    "text": "kami",
+    "start": 79.16,
+    "end": 79.46,
+    "p": 0.993
+   },
+   {
+    "text": "boleh",
+    "start": 79.46,
+    "end": 79.66,
+    "p": 1.0
+   },
+   {
+    "text": "bantu",
+    "start": 79.66,
+    "end": 79.96,
+    "p": 0.999
+   }
+  ]
+ },
+ {
+  "start": 79.96,
+  "end": 81.9,
+  "text": " Apa persoalan boleh tanya di ruang komen",
+  "words": [
+   {
+    "text": "Apa",
+    "start": 79.96,
+    "end": 80.46,
+    "p": 0.925
+   },
+   {
+    "text": "persoalan",
+    "start": 80.46,
+    "end": 80.82,
+    "p": 0.834
+   },
+   {
+    "text": "boleh",
+    "start": 80.82,
+    "end": 81.18,
+    "p": 0.869
+   },
+   {
+    "text": "tanya",
+    "start": 81.18,
+    "end": 81.42,
+    "p": 0.999
+   },
+   {
+    "text": "di",
+    "start": 81.42,
+    "end": 81.54,
+    "p": 0.999
+   },
+   {
+    "text": "ruang",
+    "start": 81.54,
+    "end": 81.7,
+    "p": 0.998
+   },
+   {
+    "text": "komen",
+    "start": 81.7,
+    "end": 81.9,
+    "p": 0.998
+   }
+  ]
+ },
+ {
+  "start": 81.9,
+  "end": 82.46,
+  "text": " Take care",
+  "words": [
+   {
+    "text": "Take",
+    "start": 81.9,
+    "end": 82.22,
+    "p": 0.968
+   },
+   {
+    "text": "care",
+    "start": 82.22,
+    "end": 82.46,
+    "p": 1.0
+   }
+  ]
+ }
+]

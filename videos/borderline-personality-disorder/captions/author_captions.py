@@ -22,21 +22,25 @@ words = json.loads((P / "transcript.json").read_text())["words"]
 MAX_WORDS, MAX_CHARS, PAUSE, MIN_ON = 3, 20, 0.28, 0.62
 FIT = 21   # characters that fit one Anton line at 0.042h across the plane (~880px) — merges never exceed it
 # forced breaks (prev, word): the patient's quoted question starts at "doktor"
-FORCE_BREAK = {("ke", "jom"), ("panik", "yang"), ("stabil", "sekejap"), ("cepat", "contohnya")}
+FORCE_BREAK = {("ke", "jom"), ("panik", "yang"), ("stabil", "sekejap"), ("cepat", "contohnya"), ("Nilai", "sama")}
 # fixed phrases that must never be split across two caption lines
 GLUE = {("borderline", "personality"), ("personality", "disorder"), ("mood", "swing"), ("betul", "ke"),
         ("tak", "stabil"), ("naik", "turun"), ("turun", "naik"), ("orang", "tu"), ("tengah", "hari"),
         ("rasa", "kosong"), ("tingkah", "laku"), ("kesihatan", "mental"), ("take", "care"),
         ("ruang", "komen"), ("di", "Nilai"), ("yang", "kedua"), ("yang", "ketiga"), ("yang", "keempat"),
-        ("yang", "kelima"), ("nombor", "enam"), ("benda", "kecil"), ("tak", "difahami"), ("self-harm", "bila")}
+        ("yang", "kelima"), ("nombor", "enam"), ("benda", "kecil"), ("tak", "difahami"), ("self-harm", "bila"),
+        ("bila", "stres"), ("kecil", "je"), ("memang", "ada"), ("sama", "ada")}
 
 # clause/sentence ends: large-v3's punctuated transcript of the same cut, attached to OUR
 # words by sequence-aligning the two word lists (its timestamps drift; its text doesn't)
 def _punct_marks():
     import difflib
     import re
-    lv3 = [w["text"] for seg in json.loads((C.parent / "captions_src" / "large_v3_cut.json").read_text())
-           for w in seg["words"]]
+    # large-v3 drops punctuation after ~0:31 but still splits sentences into segments: a segment's
+    # last word counts as a sentence end
+    segs = json.loads((C.parent / "captions_src" / "large_v3_cut.json").read_text())
+    lv3 = [w["text"] + ("." if k == len(seg["words"]) - 1 and w["text"].rstrip()[-1:] not in ".?!," else "")
+           for seg in segs for k, w in enumerate(seg["words"])]
     norm = lambda t: re.sub(r"[^a-z0-9]", "", t.lower())
     sm = difflib.SequenceMatcher(a=[norm(w["text"]) for w in words], b=[norm(t) for t in lv3], autojunk=False)
     marks = {}
