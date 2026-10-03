@@ -2,6 +2,7 @@
 
   music: high-pass 120 Hz + 4 dB dip at 320 Hz (out of the voice's way), set to
          --bed-lufs, then sidechain-ducked by the dialogue (fast attack, slow release)
+  voice: optional --voice-af chain (e.g. rumble high-pass, notch, denoise, presence EQ)
   mix:   dialogue + ducked music → two-pass loudnorm to -14 LUFS / -1 dBTP
   video: stream-copied (no re-encode)
 
@@ -9,7 +10,7 @@ Also reports how far the music sits below the voice during speech vs. pauses, so
 the balance is measured, not guessed.
 
 Usage:
-    python tools/mix_music.py <video.mp4> <bed.wav> -o <out.mp4> [--bed-lufs -20] [--fade-out 2.5]
+    python tools/mix_music.py <video.mp4> <bed.wav> -o <out.mp4> [--bed-lufs -20] [--fade-out 2.5] [--voice-af "<chain>"]
 """
 
 from __future__ import annotations
@@ -44,6 +45,8 @@ def main() -> None:
     ap.add_argument("-o", "--output", required=True)
     ap.add_argument("--bed-lufs", type=float, default=-20.0, help="undocked bed loudness")
     ap.add_argument("--fade-out", type=float, default=2.5)
+    ap.add_argument("--voice-af", default="", help="ffmpeg filter chain for the dialogue (EQ/denoise), "
+                    "applied before the mix AND before the ducking sidechain")
     args = ap.parse_args()
 
     dur = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration",
@@ -51,14 +54,15 @@ def main() -> None:
     gain = args.bed_lufs - integrated_lufs(args.bed, MUSIC_EQ)
     music = (f"[1:a]{MUSIC_EQ},volume={gain:.2f}dB,atrim=0:{dur:.3f},"
              f"afade=t=out:st={dur - args.fade_out:.3f}:d={args.fade_out}[m]")
-    graph = (f"{music};[0:a]asplit=2[v][sc];[m][sc]{DUCK},asplit=2[md][dk];"
+    vfx = f"{args.voice_af}," if args.voice_af else ""
+    graph = (f"{music};[0:a]{vfx}asplit=2[v][sc];[m][sc]{DUCK},asplit=2[md][dk];"
              f"[v][md]amix=inputs=2:duration=first:normalize=0[mix]")
 
     with tempfile.TemporaryDirectory() as t:
         pre, ducked, voice = Path(t, "premix.wav"), Path(t, "ducked.wav"), Path(t, "voice.wav")
         ff("-y", "-i", args.video, "-i", args.bed, "-filter_complex", graph,
            "-map", "[mix]", "-c:a", "pcm_s24le", str(pre), "-map", "[dk]", "-c:a", "pcm_s24le", str(ducked))
-        ff("-y", "-i", args.video, "-vn", "-c:a", "pcm_s24le", str(voice))
+        ff("-y", "-i", args.video, "-vn", *(["-af", args.voice_af] if args.voice_af else []), "-c:a", "pcm_s24le", str(voice))
 
         # measured balance: music vs voice, speech frames vs pause frames (400ms windows)
         v, sr = sf.read(voice)

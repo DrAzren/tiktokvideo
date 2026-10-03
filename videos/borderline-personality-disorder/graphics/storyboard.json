@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 3,
+  "composition": {
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "durationSeconds": 83.9333,
+    "layout": "portrait",
+    "themeId": "custom-teal",
+    "seed": 7
+  },
+  "videoTrack": {
+    "sourcePath": "input-video.mp4",
+    "startSec": 0,
+    "endSec": 83.9333,
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920
+    }
+  },
+  "subtitles": {
+    "enabled": false
+  },
+  "cards": [
+    {
+      "id": "c01-hook",
+      "intent": "Hook — the myth 'BPD is just moodiness'",
+      "startSec": 0.0,
+      "endSec": 7.452,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c02-realiti",
+      "intent": "Reality: 6 main signs",
+      "startSec": 10.95,
+      "endSec": 12.264999999999999,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c03-t1",
+      "intent": "Sign 1 — fear of abandonment",
+      "startSec": 13.255,
+      "endSec": 15.136,
+      "accentIndex": 2,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c04-t2",
+      "intent": "Sign 2 — unstable relationships",
+      "startSec": 20.019,
+      "endSec": 22.388,
+      "accentIndex": 3,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c04b-t2",
+      "intent": "Sign 2 — trust and hate both go to extremes",
+      "startSec": 29.3,
+      "endSec": 31.959,
+      "accentIndex": 4,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c05-t3",
+      "intent": "Sign 3 — unstable emotions",
+      "startSec": 31.909,
+      "endSec": 35.013,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c06-t4",
+      "intent": "Sign 4 — chronic emptiness",
+      "startSec": 39.114,
+      "endSec": 41.055,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c06b-t4",
+      "intent": "Sign 4 — empty even among people",
+      "startSec": 43.608000000000004,
+      "endSec": 45.719,
+      "accentIndex": 2,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c07-t5",
+      "intent": "Sign 5 — intense, hard-to-control anger",
+      "startSec": 46.15,
+      "endSec": 49.249,
+      "accentIndex": 3,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c07b-t5",
+      "intent": "Sign 5 — even over small things",
+      "startSec": 52.5,
+      "endSec": 53.451,
+      "accentIndex": 4,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c08-t6",
+      "intent": "Sign 6 — impulsive behaviour",
+      "startSec": 54.242,
+      "endSec": 56.224,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c09-gejala",
+      "intent": "These are symptoms, and treatment exists",
+      "startSec": 65.402,
+      "endSec": 70.586,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c10-klinik",
+      "intent": "Plug — consultation and screening at the clinic",
+      "startSec": 71.017,
+      "endSec": 73.459,
+      "accentIndex": 2,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c10b-klinik",
+      "intent": "Plug — what the clinic helps with",
+      "startSec": 75.42999999999999,
+      "endSec": 80.394,
+      "accentIndex": 3,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c11-cta",
+      "intent": "CTA — ask in the comments",
+      "startSec": 80.34400000000001,
+      "endSec": 83.9333,
+      "accentIndex": 4,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    }
+  ]
+}

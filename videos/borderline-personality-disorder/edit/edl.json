@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "sources": {
+    "bpd": "/home/user/tiktokvideo/videos/borderline-personality-disorder/raw/bpd.mp4"
+  },
+  "ranges": [
+    {
+      "source": "bpd",
+      "start": 0.495,
+      "end": 3.205,
+      "beat": "HOOK",
+      "zoom": 1.0
+    },
+    {
+      "source": "bpd",
+      "start": 3.445,
+      "end": 4.075,
+      "beat": "HOOK",
+      "zoom": 1.06
+    },
+    {
+      "source": "bpd",
+      "start": 4.655,
+      "end": 5.345,
+      "beat": "HOOK",
+      "zoom": 1.02
+    },
+    {
+      "source": "bpd",
+      "start": 5.725,
+      "end": 6.54,
+      "beat": "HOOK",
+      "zoom": 1.07
+    },
+    {
+      "source": "bpd",
+      "start": 7.01,
+      "end": 7.9,
+      "beat": "HOOK",
+      "reason": "Orang kata BPD ni sekadar moody je, mood swing. Betul ke? — 'dia', 'sekadaaar', 'jeee' cut",
+      "zoom": 1.0
+    },
+    {
+      "source": "bpd",
+      "start": 11.99,
+      "end": 13.59,
+      "beat": "INTRO",
+      "zoom": 1.06
+    },
+    {
+      "source": "bpd",
+      "start": 13.91,
+      "end": 16.505,
+      "beat": "INTRO",
+      "zoom": 1.02
+    },
+    {
+      "source": "bpd",
+      "start": 18.145,
+      "end": 20.53,
+      "beat": "INTRO",
+      "reason": "Jom saya explain ... supaya kita lebih faham tentang penyakit ini. — pause + 'jadi' before it, false start 'kita mudah' cut",
+      "zoom": 1.07
+    },
+    {
+      "source": "bpd",
+      "start": 20.985,
+      "end": 22.475,
+      "beat": "T1",
+      "zoom": 1.0
+    },
+    {
+      "source": "bpd",
+      "start": 22.675,
+      "end": 26.775,
+      "beat": "T1",
+      "zoom": 1.06
+    },
+    {
+      "source": "bpd",
+      "start": 27.015,
+      "end": 27.635,
+      "beat": "T1",
+      "zoom": 1.02
+    },
+    {
+      "source": "bpd",
+      "start": 29.245,
+      "end": 30.085,
+      "beat": "T1",
+      "zoom": 1.07
+    },
+    {
+      "source": "bpd",
+      "start": 30.365,
+      "end": 31.105,
+      "beat": "T1",
+      "zoom": 1.0
+    },
+    {
+      "source": "bpd",
+      "start": 31.985,
+      "end": 34.23,
+      "beat": "T1",
+      "reason": "Pertama, orang BPD ni takut ditinggalkan ... terus rasa panik. Yang kedua, — 'dia' x2, 'ke', 'macam', 'waktu tu' cut",
+      "zoom": 1.06
+    },
+    {
+      "source": "bpd",
+      "start": 34.76,
+      "end": 36.715,
+      "beat": "T2",
+      "zoom": 1.02
+    },
+    {
+      "source": "bpd",
+      "start": 36.955,
+      "end": 39.065,
+      "beat": "T2",
+      "zoom": 1.07
+    },
+    {
+      "source": "bpd",
+      "start": 39.175,
+      "end": 42.05,
+      "beat": "T2",
+      "zoom": 1.0
+    },
+    {
+      "source": "bpd",
+      "start": 42.95,
+      "end": 47.385,
+      "beat": "T2",
+      "reason": "hubungan mereka ni tak stabil ... Yang ketiga, — 'dia' x2 cut",
+      "zoom": 1.06
+    },
+    {
+      "source": "bpd",
+      "start": 47.495,
+      "end": 49.235,
+      "beat": "T3",
+      "zoom": 1.02
+    },
+    {
+      "source": "bpd",
+      "start": 49.735,
+      "end": 50.085,
+      "beat": "T3",
+      "zoom": 1.02
+    },
+    {
+      "source": "bpd",
+      "start": 50.145,
+      "end": 50.735,
+      "beat": "T3",
+      "zoom": 1.02
+    },
+    {
+      "source": "bpd",
+      "start": 51.145,
+      "end": 53.38,
+      "beat": "T3",
+      "reason": "emosi tak stabil ... malam tiba-tiba marah. — 'dia' x2, 'contohnyaaa', 'hepiii' cut",
+      "zoom": 1.07
+    },
+    {
+      "source": "bpd",
+      "start": 54.29,
+      "end": 60.585,
+      "beat": "T4T5",
+      "zoom": 1.0
+    },
+    {
+      "source": "bpd",
+      "start": 60.905,
+      "end": 61.225,
+      "beat": "T4T5",
+      "zoom": 1.0
+    },
+    {
+      "source": "bpd",
+      "start": 61.455,
+      "end": 61.885,
+      "beat": "T4T5",
+      "zoom": 1.0
+    },
+    {
+      "source": "bpd",
+      "start": 63.415,
+      "end": 66.86,
+      "beat": "T4T5",
+      "reason": "Yang keempat ... susah nak kawal. — half-said 'yang', 'rasaaa', 'dia', 'dalam jiwa dia tu' cut",
+      "zoom": 1.06
+    },
+    {
+      "source": "bpd",
+      "start": 69.24,
+      "end": 72.445,
+      "beat": "T5",
+      "zoom": 1.02
+    },
+    {
+      "source": "bpd",
+      "start": 72.635,
+      "end": 73.005,
+      "beat": "T5",
+      "zoom": 1.02
+    },
+    {
+      "source": "bpd",
+      "start": 73.275,
+      "end": 73.895,
+      "beat": "T5",
+      "reason": "Tiba-tiba marah yang melampau ... walaupun benda kecil je. — first 'tiba-tiba marah', 'benda tu', 'sebenarnya' cut",
+      "zoom": 1.07
+    },
+    {
+      "source": "bpd",
+      "start": 74.98,
+      "end": 78.54,
+      "beat": "T6",
+      "zoom": 1.0
+    },
+    {
+      "source": "bpd",
+      "start": 79.2,
+      "end": 80.615,
+      "beat": "T6",
+      "zoom": 1.06
+    },
+    {
+      "source": "bpd",
+      "start": 82.105,
+      "end": 83.655,
+      "beat": "T6",
+      "zoom": 1.02
+    },
+    {
+      "source": "bpd",
+      "start": 84.315,
+      "end": 86.76,
+      "beat": "T6",
+      "reason": "Nombor enam ... atau self-harm bila stres. — 'ataupun buat sesuatu', 'berbahayaaa' cut",
+      "zoom": 1.07
+    },
+    {
+      "source": "bpd",
+      "start": 101.16,
+      "end": 104.165,
+      "beat": "REASSURE",
+      "zoom": 1.0
+    },
+    {
+      "source": "bpd",
+      "start": 106.245,
+      "end": 123.58,
+      "beat": "REASSURE",
+      "reason": "Kalau ada tanda-tanda ni bukanlah bermakna anda gila ... memang ada. — retake kept (first take 86.8-92.2s + 8s pause dropped); 'ke apa' + 'eee' cut + Kalau anda nak buat konsultasi ... insyaAllah kami boleh bantu. — already at the end, before the CTA + Apa-apa soalan boleh tanya di ruang komen. Take care.",
+      "zoom": 1.06
+    }
+  ],
+  "grade": "subtle",
+  "zoom_focus": [
+    0.45,
+    0.27
+  ],
+  "tail_hold": 1.2,
+  "overlays": [],
+  "total_duration_s": 83.83
+}
