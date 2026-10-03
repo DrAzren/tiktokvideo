@@ -54,5 +54,27 @@ behind the head at 0:09; ambient bed louder than ward-psikiatri, voice enhanced;
   (−10.7 dB rumble), 1761 Hz notch, −2 dB @250 Hz, +3 dB @3.2 kHz, +2 dB air shelf, 2.5:1
   compression. afftdn was dropped: it delays the voice by 25 ms (sync tolerance).
 
+- Captions: `loud` (Anton, uppercase, white + dark stroke), one line at y ~334–420 (plane x 4–85%,
+  clear of the right-hand buttons and the bottom 20%). Line breaks use large-v3's punctuation AND
+  its segment ends (it stops punctuating after ~0:31). Display spellings mapped back in
+  `captions/build_transcript.py` (BPD, WhatsApp, moody, di Nilai, take care, reduplications).
+- Apex: the compiler's width-fit raise made the 3-letter "BPD" 0.28h with the lockup running down
+  the face → `patch_apex.py` sets 0.2h, letters at y ~250–540, lockup plane at 6% (no cards then).
+  Occlusion gate: avg 23% / peak 26% (WARN, intended). Matte only for 7.9–10.95 s (`matte_hero.sh`,
+  91 frames instead of 2518); preview needed a sparse `frames_bg/` (real frames only at samples).
+- Music: −17 LUFS undocked (ward used −20; user asked for more music) → sits −13.2 dB under the
+  voice. Master target TP −1.5 so the AAC encode lands at −1.4 dBTP (TP −1 measured −0.9).
+- Sync check after the mix: `check_sync.py`'s 0.27 s snippet on the one-word range "walaupun"
+  locked onto a false peak with the louder bed (−344 ms reported); real lag vs the pre-mix file
+  is +4.3 ms median / 14.2 ms worst. `assemble.sh` now checks the EDL on the pre-mix file and the
+  mix stage in 1 s windows.
+
+**Results** — `final.mp4` (master, 161 MB) and `final_tiktok_1080p.mp4` (29.8 MB, sent to the user):
+1080×1920 @ 30, 83.93 s (2518 frames), −14.0 / −14.1 LUFS, −1.4 dBTP, sync 0.6 ms pre-mix,
+no black or frozen stretches; large-v3 on the cut hears none of the removed words.
+
 **Outstanding**
-- (filled in at the end of the session)
+- User review. Switch on TikTok's "AI-generated content" label (6 Canva AI stills).
+- Confirm the helpline shown with "self-harm" (Talian HEAL 15555) is the one the clinic wants.
+- The window still (woman by a window) is the original, non-Malaysian-looking one; only the crowd
+  still was regenerated on request.

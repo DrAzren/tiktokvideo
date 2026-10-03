@@ -41,9 +41,28 @@ ffmpeg -nostdin -y -loglevel error -i final.mp4 -c:v libx264 -preset slow -b:v $
   -passlogfile /tmp/bpd_x264 -pix_fmt yuv420p -c:a aac -b:a 160k -movflags +faststart final_tiktok_1080p.mp4
 echo "delivery: final_tiktok_1080p.mp4 @ ${VK}k video"
 
-# checks
-"$PY" "$ROOT/tools/check_sync.py" edit/edl.json final.mp4 | tail -1
-"$PY" "$ROOT/tools/check_sync.py" edit/edl.json final_tiktok_1080p.mp4 | tail -1
+# checks. Sync: the EDL check runs on the pre-music file (with the bed underneath, its 0.27s snippet on
+# one-word ranges like "walaupun" can lock onto a false peak: -344ms reported, +4ms real). The mix stage
+# is then checked against that file in 1s windows (voice chain = +4ms phase).
+"$PY" "$ROOT/tools/check_sync.py" edit/edl.json captions/captioned.mp4 | tail -1
+for f in final.mp4 final_tiktok_1080p.mp4; do
+  ffmpeg -nostdin -v error -y -i captions/captioned.mp4 -vn -ac 1 -ar 16000 /tmp/_pre.wav
+  ffmpeg -nostdin -v error -y -i "$f" -vn -ac 1 -ar 16000 /tmp/_out.wav
+  "$PY" - "$f" <<'EOF2'
+import sys, numpy as np, soundfile as sf
+a, sr = sf.read("/tmp/_pre.wav"); b, _ = sf.read("/tmp/_out.wav")
+lags = []
+for t in np.arange(0.5, len(a) / sr - 2, 1.0):
+    x = a[int(t * sr):int((t + 1) * sr)]
+    if np.sqrt((x ** 2).mean()) < 0.01:
+        continue
+    lo = int((t - 0.4) * sr); y = b[lo:int((t + 1.4) * sr)]
+    lags.append(((np.argmax(np.correlate(y, x, "valid")) + lo) / sr - t) * 1000)
+lags = np.array(lags)
+print(f"{sys.argv[1]} vs pre-mix: {len(lags)} windows, median {np.median(lags):+.1f} ms, worst {np.abs(lags).max():.1f} ms")
+sys.exit(1 if np.abs(lags).max() > 25 else 0)
+EOF2
+done
 for f in final.mp4 final_tiktok_1080p.mp4; do
   echo "== $f  $(du -m $f | cut -f1) MB"
   ffprobe -v error -show_entries stream=codec_type,width,height,r_frame_rate,duration,nb_frames -of compact "$f"
