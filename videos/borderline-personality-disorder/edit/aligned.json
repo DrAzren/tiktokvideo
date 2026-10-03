@@ -1,0 +1,1706 @@
+{
+  "I00": {
+    "hyp": "orang kata borderline personality disorder ni dia sekadar mudi je mud swing betul ke",
+    "score": 0.846,
+    "words": [
+      {
+        "text": "orang",
+        "start": 0.561,
+        "end": 0.781,
+        "score": 0.999
+      },
+      {
+        "text": "kata",
+        "start": 0.821,
+        "end": 1.121,
+        "score": 0.992
+      },
+      {
+        "text": "borderline",
+        "start": 1.321,
+        "end": 1.842,
+        "score": 0.817
+      },
+      {
+        "text": "personality",
+        "start": 1.902,
+        "end": 2.423,
+        "score": 0.715
+      },
+      {
+        "text": "disorder",
+        "start": 2.463,
+        "end": 2.983,
+        "score": 0.743
+      },
+      {
+        "text": "ni",
+        "start": 3.043,
+        "end": 3.143,
+        "score": 0.915
+      },
+      {
+        "text": "dia",
+        "start": 3.244,
+        "end": 3.384,
+        "score": 0.988
+      },
+      {
+        "text": "sekadar",
+        "start": 3.444,
+        "end": 4.084,
+        "score": 0.802
+      },
+      {
+        "text": "mudi",
+        "start": 4.725,
+        "end": 5.025,
+        "score": 0.976
+      },
+      {
+        "text": "je",
+        "start": 5.186,
+        "end": 5.286,
+        "score": 0.845
+      },
+      {
+        "text": "mud",
+        "start": 5.786,
+        "end": 5.946,
+        "score": 0.839
+      },
+      {
+        "text": "swing",
+        "start": 6.067,
+        "end": 6.427,
+        "score": 0.847
+      },
+      {
+        "text": "betul",
+        "start": 7.088,
+        "end": 7.448,
+        "score": 0.883
+      },
+      {
+        "text": "ke",
+        "start": 7.528,
+        "end": 7.608,
+        "score": 0.967
+      }
+    ]
+  },
+  "I01": {
+    "hyp": "jom saya eksplen tunjukkan tanda tanda utama bipidi supaya kita mudah kita lebih faham tentang penyakit ini pertama orang bipidi ni dia takut ditinggalkan contohnya kalau pasangan dia lambat balas wasap ke terus dia rasa macam diabaikan dia terus rasa panik waktu tu yang kedua hubungan mereka ni tak stabil",
+    "score": 0.955,
+    "words": [
+      {
+        "text": "jom",
+        "start": 12.191,
+        "end": 12.391,
+        "score": 0.708
+      },
+      {
+        "text": "saya",
+        "start": 12.531,
+        "end": 12.771,
+        "score": 0.995
+      },
+      {
+        "text": "eksplen",
+        "start": 12.871,
+        "end": 13.432,
+        "score": 0.874
+      },
+      {
+        "text": "tunjukkan",
+        "start": 13.952,
+        "end": 14.672,
+        "score": 0.997
+      },
+      {
+        "text": "tanda",
+        "start": 14.752,
+        "end": 14.952,
+        "score": 0.858
+      },
+      {
+        "text": "tanda",
+        "start": 15.012,
+        "end": 15.232,
+        "score": 0.991
+      },
+      {
+        "text": "utama",
+        "start": 15.292,
+        "end": 15.593,
+        "score": 0.999
+      },
+      {
+        "text": "bipidi",
+        "start": 15.673,
+        "end": 16.033,
+        "score": 0.995
+      },
+      {
+        "text": "supaya",
+        "start": 16.133,
+        "end": 16.453,
+        "score": 0.998
+      },
+      {
+        "text": "kita",
+        "start": 16.513,
+        "end": 16.833,
+        "score": 0.998
+      },
+      {
+        "text": "mudah",
+        "start": 17.393,
+        "end": 17.753,
+        "score": 0.997
+      },
+      {
+        "text": "kita",
+        "start": 18.134,
+        "end": 18.314,
+        "score": 0.998
+      },
+      {
+        "text": "lebih",
+        "start": 18.374,
+        "end": 18.594,
+        "score": 0.999
+      },
+      {
+        "text": "faham",
+        "start": 18.674,
+        "end": 19.034,
+        "score": 0.961
+      },
+      {
+        "text": "tentang",
+        "start": 19.114,
+        "end": 19.514,
+        "score": 0.971
+      },
+      {
+        "text": "penyakit",
+        "start": 19.834,
+        "end": 20.194,
+        "score": 0.992
+      },
+      {
+        "text": "ini",
+        "start": 20.234,
+        "end": 20.394,
+        "score": 0.989
+      },
+      {
+        "text": "pertama",
+        "start": 21.015,
+        "end": 21.395,
+        "score": 0.957
+      },
+      {
+        "text": "orang",
+        "start": 21.695,
+        "end": 21.895,
+        "score": 0.999
+      },
+      {
+        "text": "bipidi",
+        "start": 21.935,
+        "end": 22.275,
+        "score": 0.991
+      },
+      {
+        "text": "ni",
+        "start": 22.335,
+        "end": 22.415,
+        "score": 0.986
+      },
+      {
+        "text": "dia",
+        "start": 22.495,
+        "end": 22.575,
+        "score": 0.596
+      },
+      {
+        "text": "takut",
+        "start": 22.675,
+        "end": 23.036,
+        "score": 0.988
+      },
+      {
+        "text": "ditinggalkan",
+        "start": 23.076,
+        "end": 23.736,
+        "score": 0.993
+      },
+      {
+        "text": "contohnya",
+        "start": 24.036,
+        "end": 24.416,
+        "score": 0.95
+      },
+      {
+        "text": "kalau",
+        "start": 24.456,
+        "end": 24.776,
+        "score": 0.995
+      },
+      {
+        "text": "pasangan",
+        "start": 25.056,
+        "end": 25.456,
+        "score": 0.983
+      },
+      {
+        "text": "dia",
+        "start": 25.497,
+        "end": 25.637,
+        "score": 0.97
+      },
+      {
+        "text": "lambat",
+        "start": 25.757,
+        "end": 26.057,
+        "score": 0.996
+      },
+      {
+        "text": "balas",
+        "start": 26.117,
+        "end": 26.357,
+        "score": 0.989
+      },
+      {
+        "text": "wasap",
+        "start": 26.397,
+        "end": 26.717,
+        "score": 0.736
+      },
+      {
+        "text": "ke",
+        "start": 26.817,
+        "end": 26.897,
+        "score": 0.964
+      },
+      {
+        "text": "terus",
+        "start": 27.037,
+        "end": 27.217,
+        "score": 0.999
+      },
+      {
+        "text": "dia",
+        "start": 27.257,
+        "end": 27.357,
+        "score": 0.665
+      },
+      {
+        "text": "rasa",
+        "start": 27.357,
+        "end": 27.657,
+        "score": 0.999
+      },
+      {
+        "text": "macam",
+        "start": 28.378,
+        "end": 28.718,
+        "score": 0.997
+      },
+      {
+        "text": "diabaikan",
+        "start": 29.318,
+        "end": 30.038,
+        "score": 0.997
+      },
+      {
+        "text": "dia",
+        "start": 30.278,
+        "end": 30.338,
+        "score": 0.663
+      },
+      {
+        "text": "terus",
+        "start": 30.378,
+        "end": 30.539,
+        "score": 0.998
+      },
+      {
+        "text": "rasa",
+        "start": 30.579,
+        "end": 30.739,
+        "score": 0.864
+      },
+      {
+        "text": "panik",
+        "start": 30.799,
+        "end": 31.119,
+        "score": 0.734
+      },
+      {
+        "text": "waktu",
+        "start": 31.339,
+        "end": 31.519,
+        "score": 0.914
+      },
+      {
+        "text": "tu",
+        "start": 31.559,
+        "end": 31.639,
+        "score": 0.972
+      },
+      {
+        "text": "yang",
+        "start": 32.019,
+        "end": 32.139,
+        "score": 0.999
+      },
+      {
+        "text": "kedua",
+        "start": 32.159,
+        "end": 32.399,
+        "score": 0.989
+      },
+      {
+        "text": "hubungan",
+        "start": 32.559,
+        "end": 33.04,
+        "score": 0.99
+      },
+      {
+        "text": "mereka",
+        "start": 33.08,
+        "end": 33.32,
+        "score": 0.999
+      },
+      {
+        "text": "ni",
+        "start": 33.38,
+        "end": 33.44,
+        "score": 0.994
+      },
+      {
+        "text": "tak",
+        "start": 33.5,
+        "end": 33.6,
+        "score": 0.986
+      },
+      {
+        "text": "stabil",
+        "start": 33.66,
+        "end": 34.06,
+        "score": 0.998
+      }
+    ]
+  },
+  "I02": {
+    "hyp": "sekejap rasa orang tu perfek dia sekejap rasa orang tu jahat hubungan dia jadi naik turun kalau dia percaya dengan orang tu dia mudah percaya kalau dia benci dengan orang tu dia akan benci sangat sangat yang ketiga emosi tak stabil emosi dia turun naik dengan cepat",
+    "score": 0.908,
+    "words": [
+      {
+        "text": "sekejap",
+        "start": 34.821,
+        "end": 35.201,
+        "score": 0.857
+      },
+      {
+        "text": "rasa",
+        "start": 35.542,
+        "end": 35.782,
+        "score": 0.98
+      },
+      {
+        "text": "orang",
+        "start": 35.902,
+        "end": 36.083,
+        "score": 0.97
+      },
+      {
+        "text": "tu",
+        "start": 36.103,
+        "end": 36.183,
+        "score": 0.996
+      },
+      {
+        "text": "perfek",
+        "start": 36.243,
+        "end": 36.663,
+        "score": 0.679
+      },
+      {
+        "text": "dia",
+        "start": 36.864,
+        "end": 36.964,
+        "score": 0.988
+      },
+      {
+        "text": "sekejap",
+        "start": 36.984,
+        "end": 37.264,
+        "score": 0.855
+      },
+      {
+        "text": "rasa",
+        "start": 37.284,
+        "end": 37.464,
+        "score": 0.979
+      },
+      {
+        "text": "orang",
+        "start": 37.525,
+        "end": 37.685,
+        "score": 0.996
+      },
+      {
+        "text": "tu",
+        "start": 37.685,
+        "end": 37.745,
+        "score": 0.997
+      },
+      {
+        "text": "jahat",
+        "start": 37.785,
+        "end": 38.266,
+        "score": 0.993
+      },
+      {
+        "text": "hubungan",
+        "start": 38.686,
+        "end": 39.067,
+        "score": 0.926
+      },
+      {
+        "text": "dia",
+        "start": 39.087,
+        "end": 39.167,
+        "score": 0.564
+      },
+      {
+        "text": "jadi",
+        "start": 39.187,
+        "end": 39.327,
+        "score": 0.995
+      },
+      {
+        "text": "naik",
+        "start": 39.367,
+        "end": 39.507,
+        "score": 0.908
+      },
+      {
+        "text": "turun",
+        "start": 39.527,
+        "end": 39.748,
+        "score": 0.998
+      },
+      {
+        "text": "kalau",
+        "start": 39.808,
+        "end": 39.928,
+        "score": 0.6
+      },
+      {
+        "text": "dia",
+        "start": 39.968,
+        "end": 40.048,
+        "score": 0.924
+      },
+      {
+        "text": "percaya",
+        "start": 40.048,
+        "end": 40.348,
+        "score": 0.879
+      },
+      {
+        "text": "dengan",
+        "start": 40.388,
+        "end": 40.569,
+        "score": 0.789
+      },
+      {
+        "text": "orang",
+        "start": 40.609,
+        "end": 40.809,
+        "score": 0.922
+      },
+      {
+        "text": "tu",
+        "start": 40.849,
+        "end": 40.909,
+        "score": 0.971
+      },
+      {
+        "text": "dia",
+        "start": 40.989,
+        "end": 41.109,
+        "score": 0.958
+      },
+      {
+        "text": "mudah",
+        "start": 41.17,
+        "end": 41.45,
+        "score": 0.995
+      },
+      {
+        "text": "percaya",
+        "start": 41.51,
+        "end": 41.85,
+        "score": 0.87
+      },
+      {
+        "text": "kalau",
+        "start": 42.992,
+        "end": 43.132,
+        "score": 0.766
+      },
+      {
+        "text": "dia",
+        "start": 43.192,
+        "end": 43.272,
+        "score": 0.952
+      },
+      {
+        "text": "benci",
+        "start": 43.292,
+        "end": 43.593,
+        "score": 0.994
+      },
+      {
+        "text": "dengan",
+        "start": 43.653,
+        "end": 43.833,
+        "score": 0.827
+      },
+      {
+        "text": "orang",
+        "start": 43.873,
+        "end": 44.033,
+        "score": 0.999
+      },
+      {
+        "text": "tu",
+        "start": 44.054,
+        "end": 44.114,
+        "score": 0.996
+      },
+      {
+        "text": "dia",
+        "start": 44.154,
+        "end": 44.234,
+        "score": 0.852
+      },
+      {
+        "text": "akan",
+        "start": 44.254,
+        "end": 44.414,
+        "score": 0.981
+      },
+      {
+        "text": "benci",
+        "start": 44.454,
+        "end": 44.714,
+        "score": 0.999
+      },
+      {
+        "text": "sangat",
+        "start": 44.775,
+        "end": 44.935,
+        "score": 0.863
+      },
+      {
+        "text": "sangat",
+        "start": 44.955,
+        "end": 45.175,
+        "score": 0.989
+      },
+      {
+        "text": "yang",
+        "start": 45.676,
+        "end": 45.796,
+        "score": 0.964
+      },
+      {
+        "text": "ketiga",
+        "start": 45.796,
+        "end": 46.056,
+        "score": 0.998
+      },
+      {
+        "text": "emosi",
+        "start": 46.156,
+        "end": 46.517,
+        "score": 0.956
+      },
+      {
+        "text": "tak",
+        "start": 46.577,
+        "end": 46.677,
+        "score": 0.947
+      },
+      {
+        "text": "stabil",
+        "start": 46.717,
+        "end": 47.078,
+        "score": 0.927
+      },
+      {
+        "text": "emosi",
+        "start": 47.098,
+        "end": 47.358,
+        "score": 0.91
+      },
+      {
+        "text": "dia",
+        "start": 47.398,
+        "end": 47.498,
+        "score": 0.736
+      },
+      {
+        "text": "turun",
+        "start": 47.498,
+        "end": 47.679,
+        "score": 0.926
+      },
+      {
+        "text": "naik",
+        "start": 47.699,
+        "end": 47.899,
+        "score": 0.857
+      },
+      {
+        "text": "dengan",
+        "start": 47.899,
+        "end": 48.059,
+        "score": 0.959
+      },
+      {
+        "text": "cepat",
+        "start": 48.079,
+        "end": 48.4,
+        "score": 0.892
+      }
+    ]
+  },
+  "I03": {
+    "hyp": "contohnya pagi dia rasa hepi tengah hari rasa kosong malam tiba tiba marah yang keempat rasa kosong yang berpanjangan walaupun dikelilingi dengan ramai orang tetapi jiwa dia rasa kosong dalam jiwa dia tu yang kelima kemarahan yang melampau dan susah nak kawal",
+    "score": 0.957,
+    "words": [
+      {
+        "text": "contohnya",
+        "start": 48.78,
+        "end": 49.241,
+        "score": 0.919
+      },
+      {
+        "text": "pagi",
+        "start": 49.781,
+        "end": 50.021,
+        "score": 0.99
+      },
+      {
+        "text": "dia",
+        "start": 50.081,
+        "end": 50.162,
+        "score": 0.652
+      },
+      {
+        "text": "rasa",
+        "start": 50.162,
+        "end": 50.322,
+        "score": 0.993
+      },
+      {
+        "text": "hepi",
+        "start": 50.382,
+        "end": 50.682,
+        "score": 0.98
+      },
+      {
+        "text": "tengah",
+        "start": 51.143,
+        "end": 51.303,
+        "score": 0.929
+      },
+      {
+        "text": "hari",
+        "start": 51.323,
+        "end": 51.463,
+        "score": 0.987
+      },
+      {
+        "text": "rasa",
+        "start": 51.543,
+        "end": 51.683,
+        "score": 0.978
+      },
+      {
+        "text": "kosong",
+        "start": 51.723,
+        "end": 52.204,
+        "score": 0.961
+      },
+      {
+        "text": "malam",
+        "start": 52.244,
+        "end": 52.464,
+        "score": 0.987
+      },
+      {
+        "text": "tiba",
+        "start": 52.484,
+        "end": 52.604,
+        "score": 0.687
+      },
+      {
+        "text": "tiba",
+        "start": 52.644,
+        "end": 52.784,
+        "score": 0.739
+      },
+      {
+        "text": "marah",
+        "start": 52.824,
+        "end": 53.946,
+        "score": 0.87
+      },
+      {
+        "text": "yang",
+        "start": 54.346,
+        "end": 54.486,
+        "score": 0.971
+      },
+      {
+        "text": "keempat",
+        "start": 54.506,
+        "end": 54.887,
+        "score": 0.993
+      },
+      {
+        "text": "rasa",
+        "start": 55.267,
+        "end": 55.487,
+        "score": 0.999
+      },
+      {
+        "text": "kosong",
+        "start": 55.547,
+        "end": 55.948,
+        "score": 0.996
+      },
+      {
+        "text": "yang",
+        "start": 55.988,
+        "end": 56.088,
+        "score": 0.999
+      },
+      {
+        "text": "berpanjangan",
+        "start": 56.108,
+        "end": 56.628,
+        "score": 0.976
+      },
+      {
+        "text": "walaupun",
+        "start": 56.688,
+        "end": 57.109,
+        "score": 0.985
+      },
+      {
+        "text": "dikelilingi",
+        "start": 57.129,
+        "end": 57.65,
+        "score": 0.972
+      },
+      {
+        "text": "dengan",
+        "start": 57.71,
+        "end": 57.97,
+        "score": 0.982
+      },
+      {
+        "text": "ramai",
+        "start": 58.21,
+        "end": 58.571,
+        "score": 0.993
+      },
+      {
+        "text": "orang",
+        "start": 58.651,
+        "end": 58.911,
+        "score": 0.999
+      },
+      {
+        "text": "tetapi",
+        "start": 59.291,
+        "end": 59.732,
+        "score": 0.998
+      },
+      {
+        "text": "jiwa",
+        "start": 60.272,
+        "end": 60.593,
+        "score": 0.997
+      },
+      {
+        "text": "dia",
+        "start": 60.733,
+        "end": 60.853,
+        "score": 0.987
+      },
+      {
+        "text": "rasa",
+        "start": 60.913,
+        "end": 61.193,
+        "score": 0.998
+      },
+      {
+        "text": "kosong",
+        "start": 61.454,
+        "end": 61.894,
+        "score": 0.996
+      },
+      {
+        "text": "dalam",
+        "start": 61.954,
+        "end": 62.134,
+        "score": 0.976
+      },
+      {
+        "text": "jiwa",
+        "start": 62.174,
+        "end": 62.415,
+        "score": 0.996
+      },
+      {
+        "text": "dia",
+        "start": 62.495,
+        "end": 62.575,
+        "score": 0.567
+      },
+      {
+        "text": "tu",
+        "start": 62.615,
+        "end": 62.675,
+        "score": 0.815
+      },
+      {
+        "text": "yang",
+        "start": 63.436,
+        "end": 63.576,
+        "score": 0.905
+      },
+      {
+        "text": "kelima",
+        "start": 63.596,
+        "end": 63.896,
+        "score": 0.997
+      },
+      {
+        "text": "kemarahan",
+        "start": 64.337,
+        "end": 64.957,
+        "score": 0.988
+      },
+      {
+        "text": "yang",
+        "start": 65.037,
+        "end": 65.158,
+        "score": 0.993
+      },
+      {
+        "text": "melampau",
+        "start": 65.178,
+        "end": 65.658,
+        "score": 0.994
+      },
+      {
+        "text": "dan",
+        "start": 65.718,
+        "end": 65.838,
+        "score": 0.998
+      },
+      {
+        "text": "susah",
+        "start": 65.898,
+        "end": 66.219,
+        "score": 0.998
+      },
+      {
+        "text": "nak",
+        "start": 66.279,
+        "end": 66.379,
+        "score": 0.991
+      },
+      {
+        "text": "kawal",
+        "start": 66.439,
+        "end": 66.779,
+        "score": 0.999
+      }
+    ]
+  },
+  "I04": {
+    "hyp": "tiba tiba marah tiba tiba marah yang melampau bila rasa tak difahami walaupun benda tu benda kecil je sebenarnya nombor enam adalah tingkah laku yang impulsif contohnya syoping yang berlebihan ataupun buat sesuatu ambil risiko yang berbahaya atau self harm bila stres",
+    "score": 0.859,
+    "words": [
+      {
+        "text": "tiba",
+        "start": 67.6,
+        "end": 67.76,
+        "score": 0.377
+      },
+      {
+        "text": "tiba",
+        "start": 67.8,
+        "end": 67.981,
+        "score": 0.395
+      },
+      {
+        "text": "marah",
+        "start": 68.041,
+        "end": 68.461,
+        "score": 0.59
+      },
+      {
+        "text": "tiba",
+        "start": 69.282,
+        "end": 69.402,
+        "score": 0.479
+      },
+      {
+        "text": "tiba",
+        "start": 69.462,
+        "end": 69.682,
+        "score": 0.857
+      },
+      {
+        "text": "marah",
+        "start": 69.742,
+        "end": 70.063,
+        "score": 0.982
+      },
+      {
+        "text": "yang",
+        "start": 70.123,
+        "end": 70.223,
+        "score": 0.983
+      },
+      {
+        "text": "melampau",
+        "start": 70.243,
+        "end": 70.763,
+        "score": 0.978
+      },
+      {
+        "text": "bila",
+        "start": 70.904,
+        "end": 71.164,
+        "score": 0.986
+      },
+      {
+        "text": "rasa",
+        "start": 71.424,
+        "end": 71.724,
+        "score": 0.991
+      },
+      {
+        "text": "tak",
+        "start": 71.825,
+        "end": 71.945,
+        "score": 0.985
+      },
+      {
+        "text": "difahami",
+        "start": 71.965,
+        "end": 72.445,
+        "score": 0.985
+      },
+      {
+        "text": "walaupun",
+        "start": 72.685,
+        "end": 73.026,
+        "score": 0.77
+      },
+      {
+        "text": "benda",
+        "start": 73.046,
+        "end": 73.186,
+        "score": 0.641
+      },
+      {
+        "text": "tu",
+        "start": 73.226,
+        "end": 73.266,
+        "score": 0.96
+      },
+      {
+        "text": "benda",
+        "start": 73.306,
+        "end": 73.426,
+        "score": 0.609
+      },
+      {
+        "text": "kecil",
+        "start": 73.466,
+        "end": 73.767,
+        "score": 0.792
+      },
+      {
+        "text": "je",
+        "start": 73.807,
+        "end": 73.867,
+        "score": 0.497
+      },
+      {
+        "text": "sebenarnya",
+        "start": 73.907,
+        "end": 74.247,
+        "score": 0.735
+      },
+      {
+        "text": "nombor",
+        "start": 75.068,
+        "end": 75.308,
+        "score": 0.649
+      },
+      {
+        "text": "enam",
+        "start": 75.328,
+        "end": 75.528,
+        "score": 0.737
+      },
+      {
+        "text": "adalah",
+        "start": 75.669,
+        "end": 76.009,
+        "score": 0.997
+      },
+      {
+        "text": "tingkah",
+        "start": 76.329,
+        "end": 76.589,
+        "score": 0.984
+      },
+      {
+        "text": "laku",
+        "start": 76.63,
+        "end": 76.83,
+        "score": 0.998
+      },
+      {
+        "text": "yang",
+        "start": 76.91,
+        "end": 77.01,
+        "score": 0.977
+      },
+      {
+        "text": "impulsif",
+        "start": 77.05,
+        "end": 77.611,
+        "score": 0.952
+      },
+      {
+        "text": "contohnya",
+        "start": 77.791,
+        "end": 78.311,
+        "score": 0.964
+      },
+      {
+        "text": "syoping",
+        "start": 79.372,
+        "end": 79.813,
+        "score": 0.852
+      },
+      {
+        "text": "yang",
+        "start": 79.853,
+        "end": 79.953,
+        "score": 0.976
+      },
+      {
+        "text": "berlebihan",
+        "start": 79.953,
+        "end": 80.554,
+        "score": 0.983
+      },
+      {
+        "text": "ataupun",
+        "start": 80.674,
+        "end": 81.094,
+        "score": 0.993
+      },
+      {
+        "text": "buat",
+        "start": 81.374,
+        "end": 81.495,
+        "score": 0.744
+      },
+      {
+        "text": "sesuatu",
+        "start": 81.515,
+        "end": 81.995,
+        "score": 0.994
+      },
+      {
+        "text": "ambil",
+        "start": 82.155,
+        "end": 82.355,
+        "score": 0.786
+      },
+      {
+        "text": "risiko",
+        "start": 82.375,
+        "end": 82.776,
+        "score": 0.994
+      },
+      {
+        "text": "yang",
+        "start": 82.896,
+        "end": 83.056,
+        "score": 0.998
+      },
+      {
+        "text": "berbahaya",
+        "start": 83.116,
+        "end": 83.637,
+        "score": 0.993
+      },
+      {
+        "text": "atau",
+        "start": 84.378,
+        "end": 84.638,
+        "score": 0.924
+      },
+      {
+        "text": "self",
+        "start": 84.758,
+        "end": 84.978,
+        "score": 0.518
+      },
+      {
+        "text": "harm",
+        "start": 85.078,
+        "end": 85.339,
+        "score": 0.688
+      },
+      {
+        "text": "bila",
+        "start": 85.699,
+        "end": 85.899,
+        "score": 0.992
+      },
+      {
+        "text": "stres",
+        "start": 85.979,
+        "end": 86.38,
+        "score": 0.986
+      }
+    ]
+  },
+  "I05": {
+    "hyp": "kalau ada tanda tanda ni bukan bermakna anda gila ke apa ini mungkin",
+    "score": 0.87,
+    "words": [
+      {
+        "text": "kalau",
+        "start": 86.8,
+        "end": 87.101,
+        "score": 0.99
+      },
+      {
+        "text": "ada",
+        "start": 87.221,
+        "end": 87.361,
+        "score": 0.997
+      },
+      {
+        "text": "tanda",
+        "start": 87.421,
+        "end": 87.541,
+        "score": 0.765
+      },
+      {
+        "text": "tanda",
+        "start": 87.581,
+        "end": 87.742,
+        "score": 0.754
+      },
+      {
+        "text": "ni",
+        "start": 87.822,
+        "end": 87.902,
+        "score": 0.975
+      },
+      {
+        "text": "bukan",
+        "start": 87.962,
+        "end": 88.203,
+        "score": 0.989
+      },
+      {
+        "text": "bermakna",
+        "start": 88.243,
+        "end": 88.623,
+        "score": 0.688
+      },
+      {
+        "text": "anda",
+        "start": 88.844,
+        "end": 89.024,
+        "score": 0.987
+      },
+      {
+        "text": "gila",
+        "start": 89.104,
+        "end": 89.385,
+        "score": 0.952
+      },
+      {
+        "text": "ke",
+        "start": 89.525,
+        "end": 89.565,
+        "score": 0.038
+      },
+      {
+        "text": "apa",
+        "start": 89.585,
+        "end": 89.765,
+        "score": 0.995
+      },
+      {
+        "text": "ini",
+        "start": 90.567,
+        "end": 90.747,
+        "score": 0.996
+      },
+      {
+        "text": "mungkin",
+        "start": 91.108,
+        "end": 91.528,
+        "score": 0.997
+      }
+    ]
+  },
+  "I06": {
+    "hyp": "kalau ada tanda tanda ni bukanlah bermakna anda gila ke apa ini adalah gejala gejala borderline personality disorder dan rawatan untuk penyakit ni memang ada kalau anda nak buat konsultasi dan saringan kesihatan mental anda boleh datang ke klinik saya di nilai sama ada nak faham tentang keadaan diri ataupun nak dapatkan rawatan yang sesuai insyaallah kami boleh bantu apa apa soalan boleh tanya di ruang komen tek ker",
+    "score": 0.846,
+    "words": [
+      {
+        "text": "kalau",
+        "start": 101.301,
+        "end": 101.601,
+        "score": 0.992
+      },
+      {
+        "text": "ada",
+        "start": 101.701,
+        "end": 101.841,
+        "score": 0.998
+      },
+      {
+        "text": "tanda",
+        "start": 101.901,
+        "end": 102.041,
+        "score": 0.793
+      },
+      {
+        "text": "tanda",
+        "start": 102.081,
+        "end": 102.282,
+        "score": 0.899
+      },
+      {
+        "text": "ni",
+        "start": 102.322,
+        "end": 102.422,
+        "score": 0.88
+      },
+      {
+        "text": "bukanlah",
+        "start": 102.502,
+        "end": 102.982,
+        "score": 0.944
+      },
+      {
+        "text": "bermakna",
+        "start": 103.002,
+        "end": 103.342,
+        "score": 0.941
+      },
+      {
+        "text": "anda",
+        "start": 103.443,
+        "end": 103.683,
+        "score": 0.985
+      },
+      {
+        "text": "gila",
+        "start": 103.783,
+        "end": 104.163,
+        "score": 0.838
+      },
+      {
+        "text": "ke",
+        "start": 104.283,
+        "end": 104.323,
+        "score": 0.052
+      },
+      {
+        "text": "apa",
+        "start": 104.323,
+        "end": 104.523,
+        "score": 0.971
+      },
+      {
+        "text": "ini",
+        "start": 106.285,
+        "end": 106.405,
+        "score": 0.952
+      },
+      {
+        "text": "adalah",
+        "start": 106.465,
+        "end": 106.705,
+        "score": 0.959
+      },
+      {
+        "text": "gejala",
+        "start": 106.985,
+        "end": 107.306,
+        "score": 0.986
+      },
+      {
+        "text": "gejala",
+        "start": 107.366,
+        "end": 107.726,
+        "score": 0.983
+      },
+      {
+        "text": "borderline",
+        "start": 107.986,
+        "end": 108.387,
+        "score": 0.572
+      },
+      {
+        "text": "personality",
+        "start": 108.427,
+        "end": 108.867,
+        "score": 0.635
+      },
+      {
+        "text": "disorder",
+        "start": 108.907,
+        "end": 109.327,
+        "score": 0.612
+      },
+      {
+        "text": "dan",
+        "start": 109.387,
+        "end": 109.508,
+        "score": 0.995
+      },
+      {
+        "text": "rawatan",
+        "start": 109.608,
+        "end": 110.028,
+        "score": 0.997
+      },
+      {
+        "text": "untuk",
+        "start": 110.088,
+        "end": 110.248,
+        "score": 0.927
+      },
+      {
+        "text": "penyakit",
+        "start": 110.268,
+        "end": 110.588,
+        "score": 0.843
+      },
+      {
+        "text": "ni",
+        "start": 110.608,
+        "end": 110.669,
+        "score": 0.978
+      },
+      {
+        "text": "memang",
+        "start": 110.729,
+        "end": 111.089,
+        "score": 0.947
+      },
+      {
+        "text": "ada",
+        "start": 111.129,
+        "end": 111.309,
+        "score": 0.997
+      },
+      {
+        "text": "kalau",
+        "start": 111.469,
+        "end": 111.649,
+        "score": 0.99
+      },
+      {
+        "text": "anda",
+        "start": 111.689,
+        "end": 111.829,
+        "score": 0.993
+      },
+      {
+        "text": "nak",
+        "start": 111.87,
+        "end": 111.99,
+        "score": 0.887
+      },
+      {
+        "text": "buat",
+        "start": 112.03,
+        "end": 112.19,
+        "score": 0.974
+      },
+      {
+        "text": "konsultasi",
+        "start": 112.37,
+        "end": 113.01,
+        "score": 0.926
+      },
+      {
+        "text": "dan",
+        "start": 113.071,
+        "end": 113.191,
+        "score": 0.997
+      },
+      {
+        "text": "saringan",
+        "start": 113.231,
+        "end": 113.511,
+        "score": 0.762
+      },
+      {
+        "text": "kesihatan",
+        "start": 113.551,
+        "end": 113.811,
+        "score": 0.478
+      },
+      {
+        "text": "mental",
+        "start": 113.831,
+        "end": 114.171,
+        "score": 0.801
+      },
+      {
+        "text": "anda",
+        "start": 114.292,
+        "end": 114.432,
+        "score": 0.996
+      },
+      {
+        "text": "boleh",
+        "start": 114.452,
+        "end": 114.612,
+        "score": 0.938
+      },
+      {
+        "text": "datang",
+        "start": 114.632,
+        "end": 114.972,
+        "score": 0.946
+      },
+      {
+        "text": "ke",
+        "start": 115.072,
+        "end": 115.132,
+        "score": 0.992
+      },
+      {
+        "text": "klinik",
+        "start": 115.192,
+        "end": 115.432,
+        "score": 0.965
+      },
+      {
+        "text": "saya",
+        "start": 115.473,
+        "end": 115.653,
+        "score": 0.996
+      },
+      {
+        "text": "di",
+        "start": 115.693,
+        "end": 115.753,
+        "score": 0.981
+      },
+      {
+        "text": "nilai",
+        "start": 115.773,
+        "end": 116.073,
+        "score": 0.94
+      },
+      {
+        "text": "sama",
+        "start": 116.213,
+        "end": 116.373,
+        "score": 0.904
+      },
+      {
+        "text": "ada",
+        "start": 116.453,
+        "end": 116.613,
+        "score": 0.935
+      },
+      {
+        "text": "nak",
+        "start": 116.714,
+        "end": 116.854,
+        "score": 0.965
+      },
+      {
+        "text": "faham",
+        "start": 116.974,
+        "end": 117.374,
+        "score": 0.967
+      },
+      {
+        "text": "tentang",
+        "start": 117.434,
+        "end": 117.694,
+        "score": 0.83
+      },
+      {
+        "text": "keadaan",
+        "start": 117.694,
+        "end": 117.935,
+        "score": 0.506
+      },
+      {
+        "text": "diri",
+        "start": 117.955,
+        "end": 118.135,
+        "score": 0.999
+      },
+      {
+        "text": "ataupun",
+        "start": 118.295,
+        "end": 118.535,
+        "score": 0.956
+      },
+      {
+        "text": "nak",
+        "start": 118.555,
+        "end": 118.615,
+        "score": 0.698
+      },
+      {
+        "text": "dapatkan",
+        "start": 118.655,
+        "end": 118.955,
+        "score": 0.755
+      },
+      {
+        "text": "rawatan",
+        "start": 118.975,
+        "end": 119.256,
+        "score": 0.995
+      },
+      {
+        "text": "yang",
+        "start": 119.276,
+        "end": 119.356,
+        "score": 0.012
+      },
+      {
+        "text": "sesuai",
+        "start": 119.356,
+        "end": 119.636,
+        "score": 0.931
+      },
+      {
+        "text": "insyaallah",
+        "start": 119.696,
+        "end": 120.136,
+        "score": 0.784
+      },
+      {
+        "text": "kami",
+        "start": 120.256,
+        "end": 120.417,
+        "score": 0.998
+      },
+      {
+        "text": "boleh",
+        "start": 120.457,
+        "end": 120.597,
+        "score": 0.993
+      },
+      {
+        "text": "bantu",
+        "start": 120.617,
+        "end": 120.877,
+        "score": 0.999
+      },
+      {
+        "text": "apa",
+        "start": 121.277,
+        "end": 121.397,
+        "score": 0.989
+      },
+      {
+        "text": "apa",
+        "start": 121.417,
+        "end": 121.477,
+        "score": 0.344
+      },
+      {
+        "text": "soalan",
+        "start": 121.518,
+        "end": 121.938,
+        "score": 0.88
+      },
+      {
+        "text": "boleh",
+        "start": 121.978,
+        "end": 122.138,
+        "score": 0.649
+      },
+      {
+        "text": "tanya",
+        "start": 122.138,
+        "end": 122.318,
+        "score": 0.931
+      },
+      {
+        "text": "di",
+        "start": 122.358,
+        "end": 122.398,
+        "score": 0.991
+      },
+      {
+        "text": "ruang",
+        "start": 122.458,
+        "end": 122.618,
+        "score": 0.582
+      },
+      {
+        "text": "komen",
+        "start": 122.638,
+        "end": 122.899,
+        "score": 0.979
+      },
+      {
+        "text": "tek",
+        "start": 123.039,
+        "end": 123.179,
+        "score": 0.783
+      },
+      {
+        "text": "ker",
+        "start": 123.219,
+        "end": 123.419,
+        "score": 0.555
+      }
+    ]
+  }
+}
