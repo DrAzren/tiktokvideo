@@ -24,7 +24,7 @@ node "$SD/safe-zones.cjs" "$PWD/_hero"
 cp _hero/safe-zones.json project/safe-zones.json
 
 rm -rf project/frames_fg && mkdir -p project/frames_fg
-python3 - "$F0" "$N" "$TOTAL" <<'EOF'
+../../../.venv/bin/python - "$F0" "$N" "$TOTAL" <<'EOF'
 import os, shutil, sys
 from PIL import Image
 f0, n, total = map(int, sys.argv[1:])
