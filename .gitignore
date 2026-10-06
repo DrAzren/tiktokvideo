@@ -23,3 +23,9 @@ videos/**
 !videos/*/captions_src/large_v3_v4.json
 !videos/*/captions/make_fg_alpha.sh
 !videos/*/assemble.sh
+!videos/*/captions/*.sh
+!videos/*/captions/project/transcript.json
+!videos/*/captions_src/*.json
+!videos/*/graphics/*.cjs
+!videos/*/graphics/page_heights.json
+!videos/*/edit/hair_top.json

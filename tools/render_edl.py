@@ -98,10 +98,14 @@ def main() -> None:
         s = Fraction(round(r["start"] * fps)) / fps          # frame-aligned edges
         e = Fraction(round(r["end"] * fps)) / fps
         d = float(e - s)
+        n = round((e - s) * fps)                               # exact frame count of this range
         inputs += ["-ss", f"{float(s):.6f}", "-t", f"{d:.6f}", "-i", sources[r["source"]]]
-        chains.append(f"[{i}:v]{zoom_filter(r.get('zoom', 1.0), focus, width, height)}setpts=PTS-STARTPTS[v{i}]")
+        # trim to exactly n frames / d seconds: sources whose frame times sit a few µs off the 1/fps grid
+        # otherwise let one extra frame in at the edge, and concat then pads the audio → 1-frame drift per hit
+        chains.append(f"[{i}:v]trim=end_frame={n},{zoom_filter(r.get('zoom', 1.0), focus, width, height)}"
+                      f"setpts=PTS-STARTPTS[v{i}]")
         gain = f"volume={r['gain_db']}dB," if r.get("gain_db") else ""
-        chains.append(f"[{i}:a]aresample=48000,{gain}asetpts=PTS-STARTPTS,"
+        chains.append(f"[{i}:a]atrim=duration={d:.6f},aresample=48000,{gain}asetpts=PTS-STARTPTS,"
                       f"afade=t=in:st=0:d={FADE},afade=t=out:st={d - FADE:.6f}:d={FADE}[a{i}]")
         labels.append(f"[v{i}][a{i}]")
 

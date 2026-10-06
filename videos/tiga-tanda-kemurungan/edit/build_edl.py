@@ -36,13 +36,13 @@ FACE = [0.49, 0.45]  # zoom focus: face centre as a fraction of the frame (measu
 #   "short": plug + "Boleh klik di bio." + outro (drops the duplicate "Kalau perlukan bantuan untuk
 #            mendapatkan konsultasi dan saringan kesihatan mental bersama saya, Doktor Azren")
 #   "full":  plug + the whole original CTA + outro
-CTA = "short"
+CTA = "full"   # user picked (b) full
 
 # (island_a, word_a, island_b, word_b, beat, note[, {"start"/"end": override s, "gain_db": dB}])
 HOOK_TO_SIGN6 = [
     ("I00", 1, "I00", 11, "HOOK", "Kalau tiga tanda-tanda yang saya sebut ni ada pada anda,"),
     ("I01", 0, "I01", 14, "HOOK", "ini mungkin bukan penat yang biasa. Ini mungkin tanda kemurungan yang ramai orang tak perasan."),
-    ("I02", 0, "I02", 6, "HOOK", "Yang nombor tiga yang paling common. — 'tu', 'sebenarnya' cut"),
+    ("I02", 0, "I02", 6, "HOOK", "Yang nombor tiga, paling common. — 'tu yang' (one run, no gap) + 'sebenarnya' cut"),
     ("I02", 8, "I02", 57, "SIGN1", "Nombor satu ... nak bangun pun tak ada tenaga. — 'ha dia', 'ke apa', 'dia', 'ha', 'ke', 'tu', 4x 'dah' cut"),
     ("I03", 0, "I03", 36, "SIGN2", "Yang kedua ... sekarang semua rasa kosong. — 'eee', 3x 'dah', 'macam', 2x 'ke', 'ni', 'tu' cut"),
     ("I04", 0, "I04", 16, "SIGN2", "Yang ni yang kita panggil sebagai anhedonia ... menggembirakan anda. — 'Iklan' + clinic plug (48.5-64.7) moved to the end"),
@@ -50,11 +50,15 @@ HOOK_TO_SIGN6 = [
     ("I09", 3, "I09", 13, "SIGN3", "Bila bangun pagi, benda pertama yang kita capai adalah telefon."),
     ("I10", 1, "I10", 25, "SIGN3", "bukan nak scroll pun ... hati ataupun mood yang tak stabil. — 'sebenarnya', first 'hati … tak stabil', 'tu' cut"),
     ("I11", 0, "I11", 6, "SIGN4", "Yang keempat, mood swing yang teruk. — hesitation cut; 'Bukan macam apa panggil? Mood swing yang teruk' retake dropped"),
-    ("I13", 4, "I13", 27, "SIGN4", "Kejap pagi rasa okey ... tanpa sebab yang jelas. — 2x 'macam', 'tu' cut"),
+    ("I13", 4, "I13", 20, "SIGN4", "Kejap pagi rasa okey ... Emosi — 'macam' cut"),
+    # "tu" runs straight into "naik" (large-v3 on the first cut still heard it): start on the nasal onset of "naik"
+    ("I13", 22, "I13", 27, "SIGN4", "naik turun tanpa sebab yang jelas. — 'tu' cut", {"start": 104.12}),
     ("I14", 0, "I14", 7, "SIGN5", "Yang kelima, mudah lupa dan susah fokus."),
     ("I15", 0, "I15", 14, "SIGN5", "Baca satu benda sampai tiga kali pun tak boleh nak ingat. Otak jadi serabut — 'atau orang otak jadi serabut' retake dropped"),
     ("I18", 0, "I18", 6, "SIGN5", "atau kita panggil sebagai brain fog."),
-    ("I19", 0, "I20", 14, "SIGN6", "Nombor enam ... membuatkan kita rasa frustrated. — 'dia' + hesitations cut"),
+    # "dia" starts ~129.27, under the tail of "fizikal" (outs to 129.26 audition clean with large-v3; 129.30+ keep "dia"/"je")
+    ("I19", 0, "I20", 4, "SIGN6", "Nombor enam ... bukan letih fizikal, — hesitations cut", {"end": 129.2333}),
+    ("I20", 5, "I20", 14, "SIGN6", "letih dalam kepala. Benda kecil pun membuatkan kita rasa frustrated. — 'dia' cut (129.63-129.70 is its 'd')", {"start": 129.68}),
     ("I20", 15, "I20", 33, "CLOSE", "Kalau tanda-tanda ni makin kerap ... sama penting dengan kesihatan fizikal. — 'ni sebenarnya' cut"),
 ]
 PLUG = [("I06", 4, "I06", 47, "PLUG", "Kalau anda rasa banyak tanda-tanda ni ... rawatan apa yang sesuai untuk anda. — moved from 0:49; false start 'Kalau anda rasa' (49.4s) cut")]
@@ -68,28 +72,26 @@ SEGMENTS = HOOK_TO_SIGN6 + PLUG + CTA_LINES[CTA] + OUTRO
 
 # filler words dropped from inside kept segments (listed to the user before cutting)
 DROP = {
-    ("I02", 3),                                           # "nombor tiga tu yang"
+    ("I02", 3), ("I02", 4),                               # "nombor tiga tu yang paling": no gap inside "tu yang", cut both at the dip before "paling"
     ("I02", 17), ("I02", 25), ("I02", 26), ("I02", 27),   # "ha dia bukan", "diet ke apa", "dia skip"
     ("I02", 31), ("I02", 40), ("I02", 43),                # "sebab dah tak ada", "malas ke tapi", "badan dah rasa"
     ("I02", 47), ("I02", 48), ("I02", 54),                # "minda tu dah rasa", "pun dah tak ada"
     ("I03", 2),                                           # "eee" after "yang kedua"
     ("I03", 9), ("I03", 14), ("I03", 16),                 # "sekarang dah tak", "apa-apa dah", "kalau macam dulu"
     ("I03", 23), ("I03", 27),                             # "drama ke", "luar ke"
-    ("I03", 31), ("I03", 33), ("I03", 34),                # "sekarang ni semua tu dah rasa kosong"
-    ("I06", 7), ("I06", 9), ("I06", 40),                  # hesitations "rasa * banyak * tanda", "kita * bincangkan"
+    ("I03", 33), ("I03", 34),                             # "sekarang ni semua tu dah rasa kosong" ("ni" kept: not a filler here)
+    ("I06", 7),                                           # hesitation "rasa * banyak" (sub-0.1s sounds are left: cutting them only adds a jump)
     ("I09", 6),                                           # sound after "bila bangun pagi"
     ("I10", 16), ("I10", 17), ("I10", 18), ("I10", 19),   # first "hati … tak stabil" (restarted as "hati ataupun mood")
     ("I11", 2),                                           # hesitation after "yang keempat"
-    ("I13", 8), ("I13", 13),                              # sounds after "okey", "murung"
-    ("I13", 15), ("I13", 17), ("I13", 21),                # "malam macam rasa macam", "emosi tu"
-    ("I14", 2),                                           # sound after "yang kelima"
-    ("I15", 12),                                          # sound inside "otak * jadi"
+    ("I13", 8),                                           # sound after "okey"
+    ("I13", 15),                                          # "malam macam rasa (macam nak menangis kept: meaning)"
     ("I18", 1),                                           # hesitation "atau * kita"
-    ("I20", 27), ("I20", 28),                             # "kesihatan mental ni sebenarnya sama penting"
+    ("I20", 28),                                          # "kesihatan mental ni sebenarnya sama penting"
 }
 # voiced hesitations ("aa", "mmm", drawn-out vowels) filling short gaps (gap_scan.py): always cut,
 # whatever the gap length. Given as the word BEFORE the gap.
-HESITATE = {("I02", 9), ("I02", 36), ("I06", 38), ("I15", 2), ("I19", 3), ("I19", 9), ("I20", 4)}
+HESITATE = {("I02", 9), ("I02", 36), ("I06", 38), ("I15", 2), ("I19", 3), ("I19", 9)}
 
 def main() -> None:
     db = np.load(E / "env_db.npy")

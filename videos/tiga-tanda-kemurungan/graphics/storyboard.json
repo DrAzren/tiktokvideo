@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 3,
+  "composition": {
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "durationSeconds": 105.3333,
+    "layout": "portrait",
+    "themeId": "custom-teal",
+    "seed": 7
+  },
+  "videoTrack": {
+    "sourcePath": "input-video.mp4",
+    "startSec": 0,
+    "endSec": 105.3333,
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920
+    }
+  },
+  "subtitles": {
+    "enabled": false
+  },
+  "cards": [
+    {
+      "id": "c01-hook",
+      "intent": "Hook — if 3 of these signs are in you, it may not be ordinary tiredness",
+      "startSec": 0.0,
+      "endSec": 5.9,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 2
+      }
+    },
+    {
+      "id": "c02-teaser",
+      "intent": "Teaser — sign #3 is the most common",
+      "startSec": 9.207,
+      "endSec": 10.7,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c03-tanda1",
+      "intent": "Sign 1 — waking late and skipping breakfast",
+      "startSec": 10.692,
+      "endSec": 15.05,
+      "accentIndex": 2,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c04-tanda2",
+      "intent": "Sign 2 — what used to be fun now feels like nothing",
+      "startSec": 23.367,
+      "endSec": 26.617,
+      "accentIndex": 3,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c05-anhedonia",
+      "intent": "The term: anhedonia — losing interest in what used to bring joy",
+      "startSec": 31.543,
+      "endSec": 37.967,
+      "accentIndex": 4,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 2
+      }
+    },
+    {
+      "id": "c06-tanda3",
+      "intent": "Sign 3 (most common) — the phone first thing; not to scroll, to escape",
+      "startSec": 38.019,
+      "endSec": 49.667,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 3
+      }
+    },
+    {
+      "id": "c07-tanda4",
+      "intent": "Sign 4 — severe mood swings",
+      "startSec": 49.72,
+      "endSec": 52.15,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c08-emosi",
+      "intent": "Emotions up and down for no clear reason",
+      "startSec": 56.737,
+      "endSec": 59.233,
+      "accentIndex": 2,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c09-tanda5",
+      "intent": "Sign 5 — forgetful, can't focus: brain fog",
+      "startSec": 59.269,
+      "endSec": 67.533,
+      "accentIndex": 3,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 2
+      }
+    },
+    {
+      "id": "c10-tanda6",
+      "intent": "Sign 6 — tired and irritable; tired in the head, not the body",
+      "startSec": 68.119,
+      "endSec": 74.683,
+      "accentIndex": 4,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 2
+      }
+    },
+    {
+      "id": "c11-sama",
+      "intent": "Mental health matters as much as physical health",
+      "startSec": 80.915,
+      "endSec": 83.5,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c12-klinik",
+      "intent": "Plug (moved from 0:49) — screening at the clinic in Nilai",
+      "startSec": 83.549,
+      "endSec": 91.15,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 2
+      }
+    },
+    {
+      "id": "c13-cta",
+      "intent": "CTA — consultation with Dr Azren, link in bio, questions in the comments",
+      "startSec": 94.749,
+      "endSec": 105.333,
+      "accentIndex": 2,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 3
+      }
+    }
+  ],
+  "inserts": [
+    {
+      "id": "m1-sebab",
+      "kind": "mg",
+      "startSec": 14.7,
+      "endSec": 21.2333
+    },
+    {
+      "id": "b1-bed",
+      "kind": "broll",
+      "startSec": 21.1,
+      "endSec": 23.4
+    },
+    {
+      "id": "m2-kosong",
+      "kind": "mg",
+      "startSec": 26.2667,
+      "endSec": 32.1
+    },
+    {
+      "id": "b2-phone",
+      "kind": "broll",
+      "startSec": 39.8,
+      "endSec": 42.3667
+    },
+    {
+      "id": "m3-hari",
+      "kind": "mg",
+      "startSec": 51.8,
+      "endSec": 56.2667
+    },
+    {
+      "id": "b3-fog",
+      "kind": "broll",
+      "startSec": 61.7333,
+      "endSec": 64.4
+    },
+    {
+      "id": "b4-rain",
+      "kind": "broll",
+      "startSec": 74.3333,
+      "endSec": 76.9667
+    },
+    {
+      "id": "m4-recap",
+      "kind": "mg",
+      "startSec": 76.9667,
+      "endSec": 81.3667
+    },
+    {
+      "id": "b5-clinic",
+      "kind": "broll",
+      "startSec": 90.8,
+      "endSec": 94.7
+    }
+  ]
+}
