@@ -1,0 +1,462 @@
+{
+  "version": 1,
+  "sources": {
+    "tiga": "/home/user/tiktokvideo/videos/tiga-tanda-kemurungan/raw/Tiga Tanda Kemurungan.mp4"
+  },
+  "ranges": [
+    {
+      "source": "tiga",
+      "start": 0.795,
+      "end": 4.66,
+      "beat": "HOOK",
+      "reason": "Kalau tiga tanda-tanda yang saya sebut ni ada pada anda,",
+      "zoom": 1.0
+    },
+    {
+      "source": "tiga",
+      "start": 5.11,
+      "end": 10.51,
+      "beat": "HOOK",
+      "reason": "ini mungkin bukan penat yang biasa. Ini mungkin tanda kemurungan yang ramai orang tak perasan.",
+      "zoom": 1.06
+    },
+    {
+      "source": "tiga",
+      "start": 11.09,
+      "end": 11.825,
+      "beat": "HOOK",
+      "zoom": 1.06
+    },
+    {
+      "source": "tiga",
+      "start": 11.875,
+      "end": 12.785,
+      "beat": "HOOK",
+      "reason": "Yang nombor tiga yang paling common. — 'tu', 'sebenarnya' cut",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 13.59,
+      "end": 14.245,
+      "beat": "SIGN1",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 14.505,
+      "end": 17.905,
+      "beat": "SIGN1",
+      "zoom": 1.07
+    },
+    {
+      "source": "tiga",
+      "start": 18.475,
+      "end": 20.675,
+      "beat": "SIGN1",
+      "zoom": 1.0
+    },
+    {
+      "source": "tiga",
+      "start": 21.625,
+      "end": 22.485,
+      "beat": "SIGN1",
+      "zoom": 1.06
+    },
+    {
+      "source": "tiga",
+      "start": 22.605,
+      "end": 23.605,
+      "beat": "SIGN1",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 23.755,
+      "end": 24.615,
+      "beat": "SIGN1",
+      "zoom": 1.07
+    },
+    {
+      "source": "tiga",
+      "start": 24.765,
+      "end": 25.605,
+      "beat": "SIGN1",
+      "zoom": 1.0
+    },
+    {
+      "source": "tiga",
+      "start": 25.735,
+      "end": 26.725,
+      "beat": "SIGN1",
+      "zoom": 1.06
+    },
+    {
+      "source": "tiga",
+      "start": 26.865,
+      "end": 28.185,
+      "beat": "SIGN1",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 28.285,
+      "end": 28.875,
+      "beat": "SIGN1",
+      "reason": "Nombor satu ... nak bangun pun tak ada tenaga. — 'ha dia', 'ke apa', 'dia', 'ha', 'ke', 'tu', 4x 'dah' cut",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 29.5,
+      "end": 29.975,
+      "beat": "SIGN2",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 30.445,
+      "end": 32.335,
+      "beat": "SIGN2",
+      "zoom": 1.07
+    },
+    {
+      "source": "tiga",
+      "start": 32.425,
+      "end": 33.075,
+      "beat": "SIGN2",
+      "zoom": 1.07
+    },
+    {
+      "source": "tiga",
+      "start": 33.615,
+      "end": 33.795,
+      "beat": "SIGN2",
+      "zoom": 1.07
+    },
+    {
+      "source": "tiga",
+      "start": 33.985,
+      "end": 36.045,
+      "beat": "SIGN2",
+      "zoom": 1.0
+    },
+    {
+      "source": "tiga",
+      "start": 36.455,
+      "end": 37.455,
+      "beat": "SIGN2",
+      "zoom": 1.06
+    },
+    {
+      "source": "tiga",
+      "start": 37.585,
+      "end": 38.485,
+      "beat": "SIGN2",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 38.625,
+      "end": 39.015,
+      "beat": "SIGN2",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 39.155,
+      "end": 39.755,
+      "beat": "SIGN2",
+      "reason": "Yang kedua ... sekarang semua rasa kosong. — 'eee', 3x 'dah', 'macam', 2x 'ke', 'ni', 'tu' cut",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 40.36,
+      "end": 42.25,
+      "beat": "SIGN2",
+      "zoom": 1.07
+    },
+    {
+      "source": "tiga",
+      "start": 42.72,
+      "end": 45.89,
+      "beat": "SIGN2",
+      "zoom": 1.0
+    },
+    {
+      "source": "tiga",
+      "start": 46.24,
+      "end": 47.57,
+      "beat": "SIGN2",
+      "reason": "Yang ni yang kita panggil sebagai anhedonia ... menggembirakan anda. — 'Iklan' + clinic plug (48.5-64.7) moved to the end",
+      "zoom": 1.06
+    },
+    {
+      "source": "tiga",
+      "start": 66.3,
+      "end": 67.11,
+      "beat": "SIGN3",
+      "reason": "Nombor tiga. — 3x 'Okey kita sambung' + false start 'Bangun' cut",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 73.58,
+      "end": 74.605,
+      "beat": "SIGN3",
+      "zoom": 1.07
+    },
+    {
+      "source": "tiga",
+      "start": 75.135,
+      "end": 77.63,
+      "beat": "SIGN3",
+      "reason": "Bila bangun pagi, benda pertama yang kita capai adalah telefon.",
+      "zoom": 1.0
+    },
+    {
+      "source": "tiga",
+      "start": 78.205,
+      "end": 83.975,
+      "beat": "SIGN3",
+      "zoom": 1.06
+    },
+    {
+      "source": "tiga",
+      "start": 86.695,
+      "end": 88.305,
+      "beat": "SIGN3",
+      "reason": "bukan nak scroll pun ... hati ataupun mood yang tak stabil. — 'sebenarnya', first 'hati … tak stabil', 'tu' cut",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 89.04,
+      "end": 89.765,
+      "beat": "SIGN4",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 90.085,
+      "end": 91.41,
+      "beat": "SIGN4",
+      "reason": "Yang keempat, mood swing yang teruk. — hesitation cut; 'Bukan macam apa panggil? Mood swing yang teruk' retake dropped",
+      "zoom": 1.07
+    },
+    {
+      "source": "tiga",
+      "start": 97.96,
+      "end": 99.485,
+      "beat": "SIGN4",
+      "zoom": 1.0
+    },
+    {
+      "source": "tiga",
+      "start": 99.795,
+      "end": 100.815,
+      "beat": "SIGN4",
+      "zoom": 1.06
+    },
+    {
+      "source": "tiga",
+      "start": 100.815,
+      "end": 101.245,
+      "beat": "SIGN4",
+      "zoom": 1.06
+    },
+    {
+      "source": "tiga",
+      "start": 101.515,
+      "end": 101.695,
+      "beat": "SIGN4",
+      "zoom": 1.06
+    },
+    {
+      "source": "tiga",
+      "start": 101.865,
+      "end": 104.025,
+      "beat": "SIGN4",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 104.055,
+      "end": 106.12,
+      "beat": "SIGN4",
+      "reason": "Kejap pagi rasa okey ... tanpa sebab yang jelas. — 2x 'macam', 'tu' cut",
+      "zoom": 1.07
+    },
+    {
+      "source": "tiga",
+      "start": 106.58,
+      "end": 107.115,
+      "beat": "SIGN5",
+      "zoom": 1.07
+    },
+    {
+      "source": "tiga",
+      "start": 107.125,
+      "end": 109.06,
+      "beat": "SIGN5",
+      "reason": "Yang kelima, mudah lupa dan susah fokus.",
+      "zoom": 1.0
+    },
+    {
+      "source": "tiga",
+      "start": 109.92,
+      "end": 111.005,
+      "beat": "SIGN5",
+      "zoom": 1.06
+    },
+    {
+      "source": "tiga",
+      "start": 111.465,
+      "end": 113.795,
+      "beat": "SIGN5",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 113.795,
+      "end": 114.66,
+      "beat": "SIGN5",
+      "reason": "Baca satu benda sampai tiga kali pun tak boleh nak ingat. Otak jadi serabut — 'atau orang otak jadi serabut' retake dropped",
+      "zoom": 1.07
+    },
+    {
+      "source": "tiga",
+      "start": 118.89,
+      "end": 119.465,
+      "beat": "SIGN5",
+      "zoom": 1.07
+    },
+    {
+      "source": "tiga",
+      "start": 119.785,
+      "end": 121.49,
+      "beat": "SIGN5",
+      "reason": "atau kita panggil sebagai brain fog.",
+      "zoom": 1.0
+    },
+    {
+      "source": "tiga",
+      "start": 122.96,
+      "end": 124.005,
+      "beat": "SIGN6",
+      "zoom": 1.06
+    },
+    {
+      "source": "tiga",
+      "start": 124.215,
+      "end": 126.325,
+      "beat": "SIGN6",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 127.065,
+      "end": 129.395,
+      "beat": "SIGN6",
+      "zoom": 1.07
+    },
+    {
+      "source": "tiga",
+      "start": 129.645,
+      "end": 133.1,
+      "beat": "SIGN6",
+      "reason": "Nombor enam ... membuatkan kita rasa frustrated. — 'dia' + hesitations cut",
+      "zoom": 1.0
+    },
+    {
+      "source": "tiga",
+      "start": 133.55,
+      "end": 137.6,
+      "beat": "CLOSE",
+      "zoom": 1.06
+    },
+    {
+      "source": "tiga",
+      "start": 137.97,
+      "end": 138.815,
+      "beat": "CLOSE",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 139.185,
+      "end": 140.86,
+      "beat": "CLOSE",
+      "reason": "Kalau tanda-tanda ni makin kerap ... sama penting dengan kesihatan fizikal. — 'ni sebenarnya' cut",
+      "zoom": 1.07
+    },
+    {
+      "source": "tiga",
+      "start": 52.185,
+      "end": 53.235,
+      "beat": "PLUG",
+      "zoom": 1.0
+    },
+    {
+      "source": "tiga",
+      "start": 53.305,
+      "end": 53.695,
+      "beat": "PLUG",
+      "zoom": 1.0
+    },
+    {
+      "source": "tiga",
+      "start": 53.625,
+      "end": 59.58,
+      "beat": "PLUG",
+      "zoom": 1.06
+    },
+    {
+      "source": "tiga",
+      "start": 60.09,
+      "end": 61.845,
+      "beat": "PLUG",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 62.655,
+      "end": 63.015,
+      "beat": "PLUG",
+      "zoom": 1.02
+    },
+    {
+      "source": "tiga",
+      "start": 63.015,
+      "end": 64.83,
+      "beat": "PLUG",
+      "reason": "Kalau anda rasa banyak tanda-tanda ni ... rawatan apa yang sesuai untuk anda. — moved from 0:49; false start 'Kalau anda rasa' (49.4s) cut",
+      "zoom": 1.07
+    },
+    {
+      "source": "tiga",
+      "start": 152.555,
+      "end": 154.21,
+      "beat": "CTA",
+      "reason": "Boleh klik di bio.",
+      "zoom": 1.0
+    },
+    {
+      "source": "tiga",
+      "start": 158.16,
+      "end": 160.1,
+      "beat": "CTA",
+      "reason": "Apa persoalan boleh tanya di dalam komen. Take care.",
+      "zoom": 1.06
+    }
+  ],
+  "grade": "subtle",
+  "zoom_focus": [
+    0.49,
+    0.45
+  ],
+  "tail_hold": 1.2,
+  "overlays": [],
+  "total_duration_s": 99.96
+}

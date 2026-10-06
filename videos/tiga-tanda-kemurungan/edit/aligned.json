@@ -1,0 +1,2486 @@
+{
+  "I00": {
+    "hyp": "* kalau tiga tanda tanda yang saya sebut ni ada pada anda",
+    "score": 0.942,
+    "words": [
+      {
+        "text": "*",
+        "start": 0.45,
+        "end": 0.871,
+        "score": 1.0
+      },
+      {
+        "text": "kalau",
+        "start": 0.871,
+        "end": 1.232,
+        "score": 0.999
+      },
+      {
+        "text": "tiga",
+        "start": 1.372,
+        "end": 1.793,
+        "score": 0.937
+      },
+      {
+        "text": "tanda",
+        "start": 1.974,
+        "end": 2.234,
+        "score": 0.993
+      },
+      {
+        "text": "tanda",
+        "start": 2.294,
+        "end": 2.615,
+        "score": 0.988
+      },
+      {
+        "text": "yang",
+        "start": 2.695,
+        "end": 2.795,
+        "score": 0.98
+      },
+      {
+        "text": "saya",
+        "start": 2.815,
+        "end": 2.956,
+        "score": 0.5
+      },
+      {
+        "text": "sebut",
+        "start": 2.956,
+        "end": 3.236,
+        "score": 0.963
+      },
+      {
+        "text": "ni",
+        "start": 3.297,
+        "end": 3.377,
+        "score": 0.993
+      },
+      {
+        "text": "ada",
+        "start": 3.637,
+        "end": 3.838,
+        "score": 0.997
+      },
+      {
+        "text": "pada",
+        "start": 3.918,
+        "end": 4.138,
+        "score": 0.999
+      },
+      {
+        "text": "anda",
+        "start": 4.179,
+        "end": 4.379,
+        "score": 0.995
+      }
+    ]
+  },
+  "I01": {
+    "hyp": "ini mungkin bukan penat yang biasa ini mungkin tanda kemurungan yang ramai orang tak perasan",
+    "score": 0.945,
+    "words": [
+      {
+        "text": "ini",
+        "start": 5.191,
+        "end": 5.351,
+        "score": 1.0
+      },
+      {
+        "text": "mungkin",
+        "start": 5.452,
+        "end": 5.793,
+        "score": 0.979
+      },
+      {
+        "text": "bukan",
+        "start": 5.873,
+        "end": 6.255,
+        "score": 1.0
+      },
+      {
+        "text": "penat",
+        "start": 6.395,
+        "end": 6.696,
+        "score": 0.938
+      },
+      {
+        "text": "yang",
+        "start": 6.756,
+        "end": 6.877,
+        "score": 0.993
+      },
+      {
+        "text": "biasa",
+        "start": 6.897,
+        "end": 7.258,
+        "score": 0.999
+      },
+      {
+        "text": "ini",
+        "start": 7.399,
+        "end": 7.539,
+        "score": 1.0
+      },
+      {
+        "text": "mungkin",
+        "start": 7.599,
+        "end": 7.9,
+        "score": 0.974
+      },
+      {
+        "text": "tanda",
+        "start": 7.961,
+        "end": 8.242,
+        "score": 0.969
+      },
+      {
+        "text": "kemurungan",
+        "start": 8.342,
+        "end": 8.864,
+        "score": 0.993
+      },
+      {
+        "text": "yang",
+        "start": 8.944,
+        "end": 9.125,
+        "score": 0.958
+      },
+      {
+        "text": "ramai",
+        "start": 9.225,
+        "end": 9.626,
+        "score": 0.999
+      },
+      {
+        "text": "orang",
+        "start": 9.707,
+        "end": 9.887,
+        "score": 0.92
+      },
+      {
+        "text": "tak",
+        "start": 9.887,
+        "end": 10.008,
+        "score": 0.734
+      },
+      {
+        "text": "perasan",
+        "start": 10.008,
+        "end": 10.369,
+        "score": 0.716
+      }
+    ]
+  },
+  "I02": {
+    "hyp": "yang nombor tiga tu yang paling common sebenarnya nombor satu adalah bangun lewat dan selalu skip breakfast dia bukan selalu skip breakfast sebab nak diet ke apa dia skip breakfast sebab dah tak ada perasaan nak makan bukan sebab malas ke tapi badan dah rasa berat minda tu dah rasa kosong nak bangun pun dah tak ada tenaga dah",
+    "score": 0.828,
+    "words": [
+      {
+        "text": "yang",
+        "start": 11.14,
+        "end": 11.28,
+        "score": 0.97
+      },
+      {
+        "text": "nombor",
+        "start": 11.28,
+        "end": 11.48,
+        "score": 0.808
+      },
+      {
+        "text": "tiga",
+        "start": 11.52,
+        "end": 11.761,
+        "score": 0.963
+      },
+      {
+        "text": "tu",
+        "start": 11.841,
+        "end": 11.901,
+        "score": 0.989
+      },
+      {
+        "text": "yang",
+        "start": 11.941,
+        "end": 12.081,
+        "score": 0.992
+      },
+      {
+        "text": "paling",
+        "start": 12.101,
+        "end": 12.361,
+        "score": 0.959
+      },
+      {
+        "text": "common",
+        "start": 12.401,
+        "end": 12.701,
+        "score": 0.503
+      },
+      {
+        "text": "sebenarnya",
+        "start": 12.781,
+        "end": 13.121,
+        "score": 0.84
+      },
+      {
+        "text": "nombor",
+        "start": 13.642,
+        "end": 13.902,
+        "score": 0.904
+      },
+      {
+        "text": "satu",
+        "start": 13.942,
+        "end": 14.262,
+        "score": 0.979
+      },
+      {
+        "text": "adalah",
+        "start": 14.542,
+        "end": 14.882,
+        "score": 0.959
+      },
+      {
+        "text": "bangun",
+        "start": 15.342,
+        "end": 15.703,
+        "score": 0.949
+      },
+      {
+        "text": "lewat",
+        "start": 15.763,
+        "end": 16.083,
+        "score": 0.973
+      },
+      {
+        "text": "dan",
+        "start": 16.323,
+        "end": 16.503,
+        "score": 0.995
+      },
+      {
+        "text": "selalu",
+        "start": 16.623,
+        "end": 16.983,
+        "score": 0.991
+      },
+      {
+        "text": "skip",
+        "start": 17.123,
+        "end": 17.384,
+        "score": 0.812
+      },
+      {
+        "text": "breakfast",
+        "start": 17.404,
+        "end": 17.844,
+        "score": 0.465
+      },
+      {
+        "text": "dia",
+        "start": 18.404,
+        "end": 18.464,
+        "score": 0.31
+      },
+      {
+        "text": "bukan",
+        "start": 18.524,
+        "end": 18.724,
+        "score": 0.997
+      },
+      {
+        "text": "selalu",
+        "start": 18.744,
+        "end": 18.944,
+        "score": 0.989
+      },
+      {
+        "text": "skip",
+        "start": 19.004,
+        "end": 19.205,
+        "score": 0.822
+      },
+      {
+        "text": "breakfast",
+        "start": 19.225,
+        "end": 19.665,
+        "score": 0.445
+      },
+      {
+        "text": "sebab",
+        "start": 19.705,
+        "end": 20.005,
+        "score": 0.992
+      },
+      {
+        "text": "nak",
+        "start": 20.245,
+        "end": 20.365,
+        "score": 0.988
+      },
+      {
+        "text": "diet",
+        "start": 20.385,
+        "end": 20.645,
+        "score": 0.453
+      },
+      {
+        "text": "ke",
+        "start": 20.665,
+        "end": 20.705,
+        "score": 0.169
+      },
+      {
+        "text": "apa",
+        "start": 20.765,
+        "end": 20.945,
+        "score": 0.787
+      },
+      {
+        "text": "dia",
+        "start": 21.106,
+        "end": 21.186,
+        "score": 0.483
+      },
+      {
+        "text": "skip",
+        "start": 21.686,
+        "end": 21.906,
+        "score": 0.78
+      },
+      {
+        "text": "breakfast",
+        "start": 21.926,
+        "end": 22.306,
+        "score": 0.43
+      },
+      {
+        "text": "sebab",
+        "start": 22.306,
+        "end": 22.486,
+        "score": 0.93
+      },
+      {
+        "text": "dah",
+        "start": 22.506,
+        "end": 22.586,
+        "score": 0.661
+      },
+      {
+        "text": "tak",
+        "start": 22.606,
+        "end": 22.666,
+        "score": 0.851
+      },
+      {
+        "text": "ada",
+        "start": 22.666,
+        "end": 22.746,
+        "score": 0.713
+      },
+      {
+        "text": "perasaan",
+        "start": 22.766,
+        "end": 23.167,
+        "score": 0.98
+      },
+      {
+        "text": "nak",
+        "start": 23.267,
+        "end": 23.347,
+        "score": 0.986
+      },
+      {
+        "text": "makan",
+        "start": 23.367,
+        "end": 23.607,
+        "score": 0.988
+      },
+      {
+        "text": "bukan",
+        "start": 23.807,
+        "end": 23.987,
+        "score": 0.997
+      },
+      {
+        "text": "sebab",
+        "start": 24.027,
+        "end": 24.167,
+        "score": 0.951
+      },
+      {
+        "text": "malas",
+        "start": 24.207,
+        "end": 24.567,
+        "score": 0.997
+      },
+      {
+        "text": "ke",
+        "start": 24.627,
+        "end": 24.688,
+        "score": 0.959
+      },
+      {
+        "text": "tapi",
+        "start": 24.788,
+        "end": 24.988,
+        "score": 0.998
+      },
+      {
+        "text": "badan",
+        "start": 25.408,
+        "end": 25.628,
+        "score": 0.872
+      },
+      {
+        "text": "dah",
+        "start": 25.648,
+        "end": 25.708,
+        "score": 0.529
+      },
+      {
+        "text": "rasa",
+        "start": 25.728,
+        "end": 25.888,
+        "score": 0.862
+      },
+      {
+        "text": "berat",
+        "start": 25.948,
+        "end": 26.188,
+        "score": 0.946
+      },
+      {
+        "text": "minda",
+        "start": 26.428,
+        "end": 26.669,
+        "score": 0.988
+      },
+      {
+        "text": "tu",
+        "start": 26.749,
+        "end": 26.809,
+        "score": 0.986
+      },
+      {
+        "text": "dah",
+        "start": 26.849,
+        "end": 26.909,
+        "score": 0.622
+      },
+      {
+        "text": "rasa",
+        "start": 26.929,
+        "end": 27.089,
+        "score": 0.932
+      },
+      {
+        "text": "kosong",
+        "start": 27.129,
+        "end": 27.469,
+        "score": 0.966
+      },
+      {
+        "text": "nak",
+        "start": 27.489,
+        "end": 27.609,
+        "score": 0.865
+      },
+      {
+        "text": "bangun",
+        "start": 27.649,
+        "end": 28.029,
+        "score": 0.978
+      },
+      {
+        "text": "pun",
+        "start": 28.089,
+        "end": 28.189,
+        "score": 0.77
+      },
+      {
+        "text": "dah",
+        "start": 28.209,
+        "end": 28.269,
+        "score": 0.689
+      },
+      {
+        "text": "tak",
+        "start": 28.289,
+        "end": 28.369,
+        "score": 0.841
+      },
+      {
+        "text": "ada",
+        "start": 28.369,
+        "end": 28.45,
+        "score": 0.677
+      },
+      {
+        "text": "tenaga",
+        "start": 28.49,
+        "end": 28.81,
+        "score": 0.869
+      },
+      {
+        "text": "dah",
+        "start": 28.87,
+        "end": 28.99,
+        "score": 0.794
+      }
+    ]
+  },
+  "I03": {
+    "hyp": "yang kedua * benda yang dulu seronok tapi sekarang dah tak rasa apa apa dah kalau macam dulu suka main game tengok drama ke makan kat luar ke lepak lepak sekarang ni semua tu dah rasa kosong dah",
+    "score": 0.876,
+    "words": [
+      {
+        "text": "yang",
+        "start": 29.55,
+        "end": 29.691,
+        "score": 0.964
+      },
+      {
+        "text": "kedua",
+        "start": 29.711,
+        "end": 29.951,
+        "score": 0.85
+      },
+      {
+        "text": "*",
+        "start": 29.951,
+        "end": 30.492,
+        "score": 1.0
+      },
+      {
+        "text": "benda",
+        "start": 30.492,
+        "end": 30.733,
+        "score": 0.801
+      },
+      {
+        "text": "yang",
+        "start": 30.813,
+        "end": 30.933,
+        "score": 0.989
+      },
+      {
+        "text": "dulu",
+        "start": 30.953,
+        "end": 31.153,
+        "score": 0.999
+      },
+      {
+        "text": "seronok",
+        "start": 31.193,
+        "end": 31.594,
+        "score": 0.982
+      },
+      {
+        "text": "tapi",
+        "start": 31.694,
+        "end": 31.935,
+        "score": 0.999
+      },
+      {
+        "text": "sekarang",
+        "start": 31.995,
+        "end": 32.315,
+        "score": 0.984
+      },
+      {
+        "text": "dah",
+        "start": 32.336,
+        "end": 32.416,
+        "score": 0.884
+      },
+      {
+        "text": "tak",
+        "start": 32.436,
+        "end": 32.516,
+        "score": 0.931
+      },
+      {
+        "text": "rasa",
+        "start": 32.536,
+        "end": 32.696,
+        "score": 0.724
+      },
+      {
+        "text": "apa",
+        "start": 32.716,
+        "end": 32.776,
+        "score": 0.309
+      },
+      {
+        "text": "apa",
+        "start": 32.796,
+        "end": 33.017,
+        "score": 0.669
+      },
+      {
+        "text": "dah",
+        "start": 33.077,
+        "end": 33.197,
+        "score": 0.975
+      },
+      {
+        "text": "kalau",
+        "start": 33.618,
+        "end": 33.798,
+        "score": 0.742
+      },
+      {
+        "text": "macam",
+        "start": 33.818,
+        "end": 33.999,
+        "score": 0.766
+      },
+      {
+        "text": "dulu",
+        "start": 34.019,
+        "end": 34.239,
+        "score": 0.996
+      },
+      {
+        "text": "suka",
+        "start": 34.319,
+        "end": 34.54,
+        "score": 0.751
+      },
+      {
+        "text": "main",
+        "start": 34.6,
+        "end": 34.78,
+        "score": 0.942
+      },
+      {
+        "text": "game",
+        "start": 34.86,
+        "end": 35.501,
+        "score": 0.49
+      },
+      {
+        "text": "tengok",
+        "start": 35.501,
+        "end": 35.722,
+        "score": 0.798
+      },
+      {
+        "text": "drama",
+        "start": 35.742,
+        "end": 36.022,
+        "score": 0.994
+      },
+      {
+        "text": "ke",
+        "start": 36.203,
+        "end": 36.283,
+        "score": 0.993
+      },
+      {
+        "text": "makan",
+        "start": 36.503,
+        "end": 36.964,
+        "score": 0.982
+      },
+      {
+        "text": "kat",
+        "start": 37.064,
+        "end": 37.164,
+        "score": 0.595
+      },
+      {
+        "text": "luar",
+        "start": 37.185,
+        "end": 37.405,
+        "score": 0.913
+      },
+      {
+        "text": "ke",
+        "start": 37.465,
+        "end": 37.545,
+        "score": 0.991
+      },
+      {
+        "text": "lepak",
+        "start": 37.605,
+        "end": 37.806,
+        "score": 0.925
+      },
+      {
+        "text": "lepak",
+        "start": 37.826,
+        "end": 38.166,
+        "score": 0.971
+      },
+      {
+        "text": "sekarang",
+        "start": 38.226,
+        "end": 38.507,
+        "score": 0.989
+      },
+      {
+        "text": "ni",
+        "start": 38.507,
+        "end": 38.587,
+        "score": 0.907
+      },
+      {
+        "text": "semua",
+        "start": 38.687,
+        "end": 38.988,
+        "score": 0.842
+      },
+      {
+        "text": "tu",
+        "start": 39.008,
+        "end": 39.068,
+        "score": 0.959
+      },
+      {
+        "text": "dah",
+        "start": 39.108,
+        "end": 39.188,
+        "score": 0.846
+      },
+      {
+        "text": "rasa",
+        "start": 39.208,
+        "end": 39.349,
+        "score": 0.631
+      },
+      {
+        "text": "kosong",
+        "start": 39.369,
+        "end": 39.729,
+        "score": 0.973
+      },
+      {
+        "text": "dah",
+        "start": 39.749,
+        "end": 39.849,
+        "score": 0.985
+      }
+    ]
+  },
+  "I04": {
+    "hyp": "yang ni yang kita panggil sebagai anhidonia hilang minat terhadap perkara yang sebelum ni pernah menggembirakan anda",
+    "score": 0.859,
+    "words": [
+      {
+        "text": "yang",
+        "start": 40.41,
+        "end": 40.551,
+        "score": 0.523
+      },
+      {
+        "text": "ni",
+        "start": 40.551,
+        "end": 40.591,
+        "score": 0.155
+      },
+      {
+        "text": "yang",
+        "start": 40.591,
+        "end": 40.691,
+        "score": 0.727
+      },
+      {
+        "text": "kita",
+        "start": 40.711,
+        "end": 40.811,
+        "score": 0.6
+      },
+      {
+        "text": "panggil",
+        "start": 40.831,
+        "end": 41.051,
+        "score": 0.759
+      },
+      {
+        "text": "sebagai",
+        "start": 41.051,
+        "end": 41.412,
+        "score": 0.993
+      },
+      {
+        "text": "anhidonia",
+        "start": 41.492,
+        "end": 42.052,
+        "score": 0.934
+      },
+      {
+        "text": "hilang",
+        "start": 42.793,
+        "end": 43.214,
+        "score": 0.956
+      },
+      {
+        "text": "minat",
+        "start": 43.254,
+        "end": 43.554,
+        "score": 0.926
+      },
+      {
+        "text": "terhadap",
+        "start": 43.695,
+        "end": 44.015,
+        "score": 0.615
+      },
+      {
+        "text": "perkara",
+        "start": 44.035,
+        "end": 44.416,
+        "score": 0.92
+      },
+      {
+        "text": "yang",
+        "start": 44.576,
+        "end": 44.756,
+        "score": 0.997
+      },
+      {
+        "text": "sebelum",
+        "start": 44.836,
+        "end": 45.156,
+        "score": 0.993
+      },
+      {
+        "text": "ni",
+        "start": 45.197,
+        "end": 45.277,
+        "score": 0.974
+      },
+      {
+        "text": "pernah",
+        "start": 45.357,
+        "end": 45.697,
+        "score": 0.845
+      },
+      {
+        "text": "menggembirakan",
+        "start": 46.318,
+        "end": 47.139,
+        "score": 0.99
+      },
+      {
+        "text": "anda",
+        "start": 47.199,
+        "end": 47.399,
+        "score": 0.999
+      }
+    ]
+  },
+  "I05": {
+    "hyp": "iklan",
+    "score": 0.694,
+    "words": [
+      {
+        "text": "iklan",
+        "start": 48.476,
+        "end": 48.781,
+        "score": 0.694
+      }
+    ]
+  },
+  "I06": {
+    "hyp": "kalau anda rasa * kalau anda rasa * banyak * tanda tanda ni berlaku pada diri sendiri anda boleh datang ke klinik saya di nilai kita buat konsultasi dan saringan kesihatan mental saya akan buat penilaian yang lengkap dan kita * bincangkan rawatan apa yang sesuai untuk anda",
+    "score": 0.837,
+    "words": [
+      {
+        "text": "kalau",
+        "start": 49.39,
+        "end": 49.75,
+        "score": 0.024
+      },
+      {
+        "text": "anda",
+        "start": 49.99,
+        "end": 50.211,
+        "score": 0.008
+      },
+      {
+        "text": "rasa",
+        "start": 50.291,
+        "end": 50.671,
+        "score": 0.012
+      },
+      {
+        "text": "*",
+        "start": 50.671,
+        "end": 52.232,
+        "score": 1.0
+      },
+      {
+        "text": "kalau",
+        "start": 52.232,
+        "end": 52.492,
+        "score": 0.989
+      },
+      {
+        "text": "anda",
+        "start": 52.612,
+        "end": 52.792,
+        "score": 0.998
+      },
+      {
+        "text": "rasa",
+        "start": 52.872,
+        "end": 53.172,
+        "score": 0.985
+      },
+      {
+        "text": "*",
+        "start": 53.172,
+        "end": 53.353,
+        "score": 1.0
+      },
+      {
+        "text": "banyak",
+        "start": 53.353,
+        "end": 53.633,
+        "score": 0.973
+      },
+      {
+        "text": "*",
+        "start": 53.633,
+        "end": 53.673,
+        "score": 1.0
+      },
+      {
+        "text": "tanda",
+        "start": 53.673,
+        "end": 53.833,
+        "score": 0.722
+      },
+      {
+        "text": "tanda",
+        "start": 53.873,
+        "end": 54.033,
+        "score": 0.768
+      },
+      {
+        "text": "ni",
+        "start": 54.113,
+        "end": 54.193,
+        "score": 0.996
+      },
+      {
+        "text": "berlaku",
+        "start": 54.293,
+        "end": 54.593,
+        "score": 0.855
+      },
+      {
+        "text": "pada",
+        "start": 54.653,
+        "end": 54.834,
+        "score": 0.999
+      },
+      {
+        "text": "diri",
+        "start": 54.874,
+        "end": 55.034,
+        "score": 0.751
+      },
+      {
+        "text": "sendiri",
+        "start": 55.074,
+        "end": 55.334,
+        "score": 0.961
+      },
+      {
+        "text": "anda",
+        "start": 55.474,
+        "end": 55.594,
+        "score": 0.971
+      },
+      {
+        "text": "boleh",
+        "start": 55.674,
+        "end": 55.834,
+        "score": 0.948
+      },
+      {
+        "text": "datang",
+        "start": 55.854,
+        "end": 56.114,
+        "score": 0.958
+      },
+      {
+        "text": "ke",
+        "start": 56.134,
+        "end": 56.174,
+        "score": 0.979
+      },
+      {
+        "text": "klinik",
+        "start": 56.214,
+        "end": 56.455,
+        "score": 0.743
+      },
+      {
+        "text": "saya",
+        "start": 56.495,
+        "end": 56.715,
+        "score": 0.999
+      },
+      {
+        "text": "di",
+        "start": 56.795,
+        "end": 56.855,
+        "score": 0.959
+      },
+      {
+        "text": "nilai",
+        "start": 56.895,
+        "end": 57.235,
+        "score": 0.968
+      },
+      {
+        "text": "kita",
+        "start": 57.335,
+        "end": 57.515,
+        "score": 0.998
+      },
+      {
+        "text": "buat",
+        "start": 57.555,
+        "end": 57.675,
+        "score": 0.888
+      },
+      {
+        "text": "konsultasi",
+        "start": 57.915,
+        "end": 58.356,
+        "score": 0.811
+      },
+      {
+        "text": "dan",
+        "start": 58.396,
+        "end": 58.496,
+        "score": 0.998
+      },
+      {
+        "text": "saringan",
+        "start": 58.536,
+        "end": 58.816,
+        "score": 0.786
+      },
+      {
+        "text": "kesihatan",
+        "start": 58.836,
+        "end": 59.136,
+        "score": 0.651
+      },
+      {
+        "text": "mental",
+        "start": 59.156,
+        "end": 59.476,
+        "score": 0.786
+      },
+      {
+        "text": "saya",
+        "start": 60.137,
+        "end": 60.297,
+        "score": 0.973
+      },
+      {
+        "text": "akan",
+        "start": 60.337,
+        "end": 60.477,
+        "score": 0.995
+      },
+      {
+        "text": "buat",
+        "start": 60.517,
+        "end": 60.637,
+        "score": 0.78
+      },
+      {
+        "text": "penilaian",
+        "start": 60.657,
+        "end": 61.057,
+        "score": 0.941
+      },
+      {
+        "text": "yang",
+        "start": 61.077,
+        "end": 61.157,
+        "score": 0.995
+      },
+      {
+        "text": "lengkap",
+        "start": 61.157,
+        "end": 61.578,
+        "score": 0.911
+      },
+      {
+        "text": "dan",
+        "start": 61.658,
+        "end": 61.858,
+        "score": 0.986
+      },
+      {
+        "text": "kita",
+        "start": 62.678,
+        "end": 62.959,
+        "score": 0.996
+      },
+      {
+        "text": "*",
+        "start": 62.959,
+        "end": 63.059,
+        "score": 1.0
+      },
+      {
+        "text": "bincangkan",
+        "start": 63.059,
+        "end": 63.439,
+        "score": 0.825
+      },
+      {
+        "text": "rawatan",
+        "start": 63.459,
+        "end": 63.759,
+        "score": 0.928
+      },
+      {
+        "text": "apa",
+        "start": 63.819,
+        "end": 63.959,
+        "score": 0.998
+      },
+      {
+        "text": "yang",
+        "start": 63.999,
+        "end": 64.099,
+        "score": 0.96
+      },
+      {
+        "text": "sesuai",
+        "start": 64.099,
+        "end": 64.339,
+        "score": 0.81
+      },
+      {
+        "text": "untuk",
+        "start": 64.339,
+        "end": 64.5,
+        "score": 0.565
+      },
+      {
+        "text": "anda",
+        "start": 64.52,
+        "end": 64.68,
+        "score": 0.996
+      }
+    ]
+  },
+  "I07": {
+    "hyp": "okey kita sambung nombor tiga *",
+    "score": 0.697,
+    "words": [
+      {
+        "text": "okey",
+        "start": 65.321,
+        "end": 65.482,
+        "score": 0.733
+      },
+      {
+        "text": "kita",
+        "start": 65.563,
+        "end": 65.684,
+        "score": 0.842
+      },
+      {
+        "text": "sambung",
+        "start": 65.724,
+        "end": 66.047,
+        "score": 0.585
+      },
+      {
+        "text": "nombor",
+        "start": 66.369,
+        "end": 66.591,
+        "score": 0.623
+      },
+      {
+        "text": "tiga",
+        "start": 66.631,
+        "end": 66.873,
+        "score": 0.747
+      },
+      {
+        "text": "*",
+        "start": 66.873,
+        "end": 67.7,
+        "score": 1.0
+      }
+    ]
+  },
+  "I08": {
+    "hyp": "* bangun okey kita sambung",
+    "score": 0.73,
+    "words": [
+      {
+        "text": "*",
+        "start": 68.85,
+        "end": 69.131,
+        "score": 1.0
+      },
+      {
+        "text": "bangun",
+        "start": 69.131,
+        "end": 69.472,
+        "score": 0.741
+      },
+      {
+        "text": "okey",
+        "start": 70.556,
+        "end": 70.736,
+        "score": 0.692
+      },
+      {
+        "text": "kita",
+        "start": 70.756,
+        "end": 70.897,
+        "score": 0.768
+      },
+      {
+        "text": "sambung",
+        "start": 70.937,
+        "end": 71.258,
+        "score": 0.683
+      }
+    ]
+  },
+  "I09": {
+    "hyp": "okey kita sambung bila bangun pagi * benda pertama yang kita capai adalah telefon",
+    "score": 0.917,
+    "words": [
+      {
+        "text": "okey",
+        "start": 72.44,
+        "end": 72.621,
+        "score": 0.748
+      },
+      {
+        "text": "kita",
+        "start": 72.661,
+        "end": 72.801,
+        "score": 0.999
+      },
+      {
+        "text": "sambung",
+        "start": 72.841,
+        "end": 73.182,
+        "score": 0.843
+      },
+      {
+        "text": "bila",
+        "start": 73.663,
+        "end": 73.883,
+        "score": 0.994
+      },
+      {
+        "text": "bangun",
+        "start": 73.943,
+        "end": 74.224,
+        "score": 0.963
+      },
+      {
+        "text": "pagi",
+        "start": 74.284,
+        "end": 74.604,
+        "score": 0.999
+      },
+      {
+        "text": "*",
+        "start": 74.604,
+        "end": 75.185,
+        "score": 1.0
+      },
+      {
+        "text": "benda",
+        "start": 75.185,
+        "end": 75.426,
+        "score": 0.922
+      },
+      {
+        "text": "pertama",
+        "start": 75.466,
+        "end": 75.907,
+        "score": 0.998
+      },
+      {
+        "text": "yang",
+        "start": 75.967,
+        "end": 76.107,
+        "score": 0.995
+      },
+      {
+        "text": "kita",
+        "start": 76.127,
+        "end": 76.287,
+        "score": 1.0
+      },
+      {
+        "text": "capai",
+        "start": 76.347,
+        "end": 76.648,
+        "score": 0.998
+      },
+      {
+        "text": "adalah",
+        "start": 76.708,
+        "end": 77.009,
+        "score": 0.937
+      },
+      {
+        "text": "telefon",
+        "start": 77.069,
+        "end": 77.51,
+        "score": 0.644
+      }
+    ]
+  },
+  "I10": {
+    "hyp": "sebenarnya bukan nak scroll pun kadang kadang cuma nak lari daripada realiti nak cari distraction disebabkan hati * tak stabil hati ataupun mood yang tak stabil tu",
+    "score": 0.797,
+    "words": [
+      {
+        "text": "sebenarnya",
+        "start": 77.99,
+        "end": 78.19,
+        "score": 0.319
+      },
+      {
+        "text": "bukan",
+        "start": 78.23,
+        "end": 78.431,
+        "score": 0.976
+      },
+      {
+        "text": "nak",
+        "start": 78.471,
+        "end": 78.551,
+        "score": 0.937
+      },
+      {
+        "text": "scroll",
+        "start": 78.611,
+        "end": 78.931,
+        "score": 0.563
+      },
+      {
+        "text": "pun",
+        "start": 78.971,
+        "end": 79.131,
+        "score": 0.818
+      },
+      {
+        "text": "kadang",
+        "start": 79.211,
+        "end": 79.391,
+        "score": 0.583
+      },
+      {
+        "text": "kadang",
+        "start": 79.391,
+        "end": 79.652,
+        "score": 0.933
+      },
+      {
+        "text": "cuma",
+        "start": 79.692,
+        "end": 79.892,
+        "score": 0.962
+      },
+      {
+        "text": "nak",
+        "start": 79.952,
+        "end": 80.072,
+        "score": 0.954
+      },
+      {
+        "text": "lari",
+        "start": 80.472,
+        "end": 80.813,
+        "score": 0.997
+      },
+      {
+        "text": "daripada",
+        "start": 80.913,
+        "end": 81.373,
+        "score": 0.999
+      },
+      {
+        "text": "realiti",
+        "start": 81.533,
+        "end": 81.994,
+        "score": 0.992
+      },
+      {
+        "text": "nak",
+        "start": 82.194,
+        "end": 82.354,
+        "score": 0.974
+      },
+      {
+        "text": "cari",
+        "start": 82.474,
+        "end": 82.755,
+        "score": 0.991
+      },
+      {
+        "text": "distraction",
+        "start": 82.855,
+        "end": 83.455,
+        "score": 0.631
+      },
+      {
+        "text": "disebabkan",
+        "start": 83.495,
+        "end": 83.916,
+        "score": 0.952
+      },
+      {
+        "text": "hati",
+        "start": 83.976,
+        "end": 84.416,
+        "score": 0.269
+      },
+      {
+        "text": "*",
+        "start": 84.416,
+        "end": 85.457,
+        "score": 1.0
+      },
+      {
+        "text": "tak",
+        "start": 85.457,
+        "end": 85.617,
+        "score": 0.678
+      },
+      {
+        "text": "stabil",
+        "start": 85.677,
+        "end": 86.058,
+        "score": 0.857
+      },
+      {
+        "text": "hati",
+        "start": 86.718,
+        "end": 86.978,
+        "score": 0.949
+      },
+      {
+        "text": "ataupun",
+        "start": 87.059,
+        "end": 87.379,
+        "score": 0.83
+      },
+      {
+        "text": "mood",
+        "start": 87.459,
+        "end": 87.619,
+        "score": 0.253
+      },
+      {
+        "text": "yang",
+        "start": 87.659,
+        "end": 87.779,
+        "score": 0.987
+      },
+      {
+        "text": "tak",
+        "start": 87.799,
+        "end": 87.899,
+        "score": 0.874
+      },
+      {
+        "text": "stabil",
+        "start": 87.919,
+        "end": 88.26,
+        "score": 0.997
+      },
+      {
+        "text": "tu",
+        "start": 88.3,
+        "end": 88.38,
+        "score": 0.99
+      }
+    ]
+  },
+  "I11": {
+    "hyp": "yang keempat * mood swing yang teruk",
+    "score": 0.753,
+    "words": [
+      {
+        "text": "yang",
+        "start": 89.103,
+        "end": 89.284,
+        "score": 0.996
+      },
+      {
+        "text": "keempat",
+        "start": 89.304,
+        "end": 89.727,
+        "score": 0.815
+      },
+      {
+        "text": "*",
+        "start": 89.727,
+        "end": 90.15,
+        "score": 1.0
+      },
+      {
+        "text": "mood",
+        "start": 90.15,
+        "end": 90.351,
+        "score": 0.253
+      },
+      {
+        "text": "swing",
+        "start": 90.553,
+        "end": 90.915,
+        "score": 0.864
+      },
+      {
+        "text": "yang",
+        "start": 90.935,
+        "end": 91.097,
+        "score": 0.882
+      },
+      {
+        "text": "teruk",
+        "start": 91.117,
+        "end": 91.318,
+        "score": 0.609
+      }
+    ]
+  },
+  "I12": {
+    "hyp": "bukan macam * apa panggil",
+    "score": 0.757,
+    "words": [
+      {
+        "text": "bukan",
+        "start": 92.023,
+        "end": 92.386,
+        "score": 0.984
+      },
+      {
+        "text": "macam",
+        "start": 92.587,
+        "end": 92.97,
+        "score": 0.991
+      },
+      {
+        "text": "*",
+        "start": 92.97,
+        "end": 93.313,
+        "score": 1.0
+      },
+      {
+        "text": "apa",
+        "start": 93.313,
+        "end": 93.454,
+        "score": 0.476
+      },
+      {
+        "text": "panggil",
+        "start": 93.514,
+        "end": 93.776,
+        "score": 0.513
+      }
+    ]
+  },
+  "I13": {
+    "hyp": "mood swing yang teruk kejap pagi rasa okey * tengah hari rasa murung * malam macam rasa macam nak menangis emosi tu naik turun tanpa sebab yang jelas",
+    "score": 0.791,
+    "words": [
+      {
+        "text": "mood",
+        "start": 96.8,
+        "end": 96.981,
+        "score": 0.264
+      },
+      {
+        "text": "swing",
+        "start": 97.061,
+        "end": 97.341,
+        "score": 0.766
+      },
+      {
+        "text": "yang",
+        "start": 97.361,
+        "end": 97.501,
+        "score": 0.947
+      },
+      {
+        "text": "teruk",
+        "start": 97.521,
+        "end": 97.721,
+        "score": 0.8
+      },
+      {
+        "text": "kejap",
+        "start": 98.162,
+        "end": 98.402,
+        "score": 0.728
+      },
+      {
+        "text": "pagi",
+        "start": 98.442,
+        "end": 98.722,
+        "score": 0.977
+      },
+      {
+        "text": "rasa",
+        "start": 98.802,
+        "end": 98.983,
+        "score": 0.96
+      },
+      {
+        "text": "okey",
+        "start": 99.083,
+        "end": 99.443,
+        "score": 0.725
+      },
+      {
+        "text": "*",
+        "start": 99.443,
+        "end": 99.783,
+        "score": 1.0
+      },
+      {
+        "text": "tengah",
+        "start": 99.783,
+        "end": 100.004,
+        "score": 0.776
+      },
+      {
+        "text": "hari",
+        "start": 100.024,
+        "end": 100.164,
+        "score": 0.956
+      },
+      {
+        "text": "rasa",
+        "start": 100.204,
+        "end": 100.384,
+        "score": 0.497
+      },
+      {
+        "text": "murung",
+        "start": 100.444,
+        "end": 100.825,
+        "score": 0.96
+      },
+      {
+        "text": "*",
+        "start": 100.825,
+        "end": 100.885,
+        "score": 1.0
+      },
+      {
+        "text": "malam",
+        "start": 100.885,
+        "end": 101.225,
+        "score": 0.864
+      },
+      {
+        "text": "macam",
+        "start": 101.265,
+        "end": 101.485,
+        "score": 0.783
+      },
+      {
+        "text": "rasa",
+        "start": 101.525,
+        "end": 101.705,
+        "score": 0.88
+      },
+      {
+        "text": "macam",
+        "start": 101.745,
+        "end": 101.906,
+        "score": 0.66
+      },
+      {
+        "text": "nak",
+        "start": 101.926,
+        "end": 102.046,
+        "score": 0.664
+      },
+      {
+        "text": "menangis",
+        "start": 102.046,
+        "end": 102.606,
+        "score": 0.741
+      },
+      {
+        "text": "emosi",
+        "start": 103.687,
+        "end": 103.988,
+        "score": 0.938
+      },
+      {
+        "text": "tu",
+        "start": 104.028,
+        "end": 104.088,
+        "score": 0.987
+      },
+      {
+        "text": "naik",
+        "start": 104.128,
+        "end": 104.328,
+        "score": 0.958
+      },
+      {
+        "text": "turun",
+        "start": 104.368,
+        "end": 104.648,
+        "score": 0.839
+      },
+      {
+        "text": "tanpa",
+        "start": 104.748,
+        "end": 105.029,
+        "score": 0.839
+      },
+      {
+        "text": "sebab",
+        "start": 105.129,
+        "end": 105.369,
+        "score": 0.79
+      },
+      {
+        "text": "yang",
+        "start": 105.389,
+        "end": 105.489,
+        "score": 0.256
+      },
+      {
+        "text": "jelas",
+        "start": 105.509,
+        "end": 105.89,
+        "score": 0.903
+      }
+    ]
+  },
+  "I14": {
+    "hyp": "yang kelima * mudah lupa dan susah fokus",
+    "score": 0.912,
+    "words": [
+      {
+        "text": "yang",
+        "start": 106.652,
+        "end": 106.773,
+        "score": 0.963
+      },
+      {
+        "text": "kelima",
+        "start": 106.773,
+        "end": 107.054,
+        "score": 0.983
+      },
+      {
+        "text": "*",
+        "start": 107.054,
+        "end": 107.155,
+        "score": 1.0
+      },
+      {
+        "text": "mudah",
+        "start": 107.155,
+        "end": 107.457,
+        "score": 0.997
+      },
+      {
+        "text": "lupa",
+        "start": 107.577,
+        "end": 107.899,
+        "score": 0.869
+      },
+      {
+        "text": "dan",
+        "start": 108.02,
+        "end": 108.141,
+        "score": 0.999
+      },
+      {
+        "text": "susah",
+        "start": 108.181,
+        "end": 108.443,
+        "score": 0.808
+      },
+      {
+        "text": "fokus",
+        "start": 108.463,
+        "end": 108.926,
+        "score": 0.772
+      }
+    ]
+  },
+  "I15": {
+    "hyp": "baca satu benda sampai tiga kali pun tak boleh nak ingat otak * jadi serabut",
+    "score": 0.848,
+    "words": [
+      {
+        "text": "baca",
+        "start": 110.021,
+        "end": 110.361,
+        "score": 0.749
+      },
+      {
+        "text": "satu",
+        "start": 110.441,
+        "end": 110.662,
+        "score": 1.0
+      },
+      {
+        "text": "benda",
+        "start": 110.702,
+        "end": 110.942,
+        "score": 0.764
+      },
+      {
+        "text": "sampai",
+        "start": 111.523,
+        "end": 111.764,
+        "score": 0.99
+      },
+      {
+        "text": "tiga",
+        "start": 111.804,
+        "end": 111.964,
+        "score": 0.749
+      },
+      {
+        "text": "kali",
+        "start": 112.024,
+        "end": 112.245,
+        "score": 0.997
+      },
+      {
+        "text": "pun",
+        "start": 112.305,
+        "end": 112.425,
+        "score": 0.91
+      },
+      {
+        "text": "tak",
+        "start": 112.425,
+        "end": 112.525,
+        "score": 0.722
+      },
+      {
+        "text": "boleh",
+        "start": 112.525,
+        "end": 112.646,
+        "score": 0.381
+      },
+      {
+        "text": "nak",
+        "start": 112.666,
+        "end": 112.746,
+        "score": 0.653
+      },
+      {
+        "text": "ingat",
+        "start": 112.766,
+        "end": 112.966,
+        "score": 0.908
+      },
+      {
+        "text": "otak",
+        "start": 113.447,
+        "end": 113.768,
+        "score": 0.977
+      },
+      {
+        "text": "*",
+        "start": 113.768,
+        "end": 113.828,
+        "score": 1.0
+      },
+      {
+        "text": "jadi",
+        "start": 113.828,
+        "end": 114.048,
+        "score": 1.0
+      },
+      {
+        "text": "serabut",
+        "start": 114.169,
+        "end": 114.549,
+        "score": 0.949
+      }
+    ]
+  },
+  "I16": {
+    "hyp": "atau orang *",
+    "score": 0.64,
+    "words": [
+      {
+        "text": "atau",
+        "start": 115.365,
+        "end": 115.79,
+        "score": 0.658
+      },
+      {
+        "text": "orang",
+        "start": 115.952,
+        "end": 116.154,
+        "score": 0.553
+      },
+      {
+        "text": "*",
+        "start": 116.154,
+        "end": 116.6,
+        "score": 1.0
+      }
+    ]
+  },
+  "I17": {
+    "hyp": "otak * jadi serabut",
+    "score": 0.94,
+    "words": [
+      {
+        "text": "otak",
+        "start": 116.942,
+        "end": 117.243,
+        "score": 0.964
+      },
+      {
+        "text": "*",
+        "start": 117.243,
+        "end": 117.324,
+        "score": 1.0
+      },
+      {
+        "text": "jadi",
+        "start": 117.324,
+        "end": 117.625,
+        "score": 0.999
+      },
+      {
+        "text": "serabut",
+        "start": 117.886,
+        "end": 118.328,
+        "score": 0.883
+      }
+    ]
+  },
+  "I18": {
+    "hyp": "atau * kita panggil sebagai brain fog",
+    "score": 0.705,
+    "words": [
+      {
+        "text": "atau",
+        "start": 118.982,
+        "end": 119.425,
+        "score": 0.746
+      },
+      {
+        "text": "*",
+        "start": 119.425,
+        "end": 119.807,
+        "score": 1.0
+      },
+      {
+        "text": "kita",
+        "start": 119.807,
+        "end": 119.928,
+        "score": 0.21
+      },
+      {
+        "text": "panggil",
+        "start": 119.968,
+        "end": 120.169,
+        "score": 0.669
+      },
+      {
+        "text": "sebagai",
+        "start": 120.19,
+        "end": 120.512,
+        "score": 0.969
+      },
+      {
+        "text": "brain",
+        "start": 120.612,
+        "end": 120.834,
+        "score": 0.753
+      },
+      {
+        "text": "fog",
+        "start": 120.975,
+        "end": 121.256,
+        "score": 0.603
+      }
+    ]
+  },
+  "I19": {
+    "hyp": "nombor * enam rasa penat dan cepat marah sepanjang masa",
+    "score": 0.757,
+    "words": [
+      {
+        "text": "nombor",
+        "start": 123.002,
+        "end": 123.302,
+        "score": 0.612
+      },
+      {
+        "text": "*",
+        "start": 123.302,
+        "end": 123.342,
+        "score": 1.0
+      },
+      {
+        "text": "enam",
+        "start": 123.342,
+        "end": 123.543,
+        "score": 0.749
+      },
+      {
+        "text": "rasa",
+        "start": 123.603,
+        "end": 123.964,
+        "score": 0.75
+      },
+      {
+        "text": "penat",
+        "start": 124.204,
+        "end": 124.525,
+        "score": 0.725
+      },
+      {
+        "text": "dan",
+        "start": 124.806,
+        "end": 124.946,
+        "score": 0.965
+      },
+      {
+        "text": "cepat",
+        "start": 125.006,
+        "end": 125.267,
+        "score": 0.809
+      },
+      {
+        "text": "marah",
+        "start": 125.287,
+        "end": 125.628,
+        "score": 0.999
+      },
+      {
+        "text": "sepanjang",
+        "start": 125.688,
+        "end": 126.029,
+        "score": 0.622
+      },
+      {
+        "text": "masa",
+        "start": 126.029,
+        "end": 126.329,
+        "score": 0.75
+      }
+    ]
+  },
+  "I20": {
+    "hyp": "letih tapi bukan letih fizikal letih dalam kepala benda kecil pun membuatkan kita rasa frustrated kalau tanda tanda ni makin kerap jangan biarkan ianya melarat kesihatan mental ni sebenarnya sama penting dengan kesihatan fizikal",
+    "score": 0.877,
+    "words": [
+      {
+        "text": "letih",
+        "start": 127.13,
+        "end": 127.511,
+        "score": 0.984
+      },
+      {
+        "text": "tapi",
+        "start": 127.811,
+        "end": 128.031,
+        "score": 0.997
+      },
+      {
+        "text": "bukan",
+        "start": 128.131,
+        "end": 128.451,
+        "score": 0.998
+      },
+      {
+        "text": "letih",
+        "start": 128.491,
+        "end": 128.731,
+        "score": 0.972
+      },
+      {
+        "text": "fizikal",
+        "start": 128.731,
+        "end": 129.332,
+        "score": 0.839
+      },
+      {
+        "text": "letih",
+        "start": 129.712,
+        "end": 130.012,
+        "score": 0.962
+      },
+      {
+        "text": "dalam",
+        "start": 130.032,
+        "end": 130.192,
+        "score": 0.984
+      },
+      {
+        "text": "kepala",
+        "start": 130.232,
+        "end": 130.533,
+        "score": 0.962
+      },
+      {
+        "text": "benda",
+        "start": 130.633,
+        "end": 130.833,
+        "score": 0.982
+      },
+      {
+        "text": "kecil",
+        "start": 130.873,
+        "end": 131.193,
+        "score": 0.799
+      },
+      {
+        "text": "pun",
+        "start": 131.233,
+        "end": 131.393,
+        "score": 0.999
+      },
+      {
+        "text": "membuatkan",
+        "start": 131.433,
+        "end": 131.794,
+        "score": 0.973
+      },
+      {
+        "text": "kita",
+        "start": 131.834,
+        "end": 131.954,
+        "score": 0.97
+      },
+      {
+        "text": "rasa",
+        "start": 131.994,
+        "end": 132.254,
+        "score": 0.997
+      },
+      {
+        "text": "frustrated",
+        "start": 132.394,
+        "end": 133.014,
+        "score": 0.648
+      },
+      {
+        "text": "kalau",
+        "start": 133.755,
+        "end": 133.955,
+        "score": 0.948
+      },
+      {
+        "text": "tanda",
+        "start": 133.975,
+        "end": 134.115,
+        "score": 0.733
+      },
+      {
+        "text": "tanda",
+        "start": 134.155,
+        "end": 134.415,
+        "score": 0.985
+      },
+      {
+        "text": "ni",
+        "start": 134.515,
+        "end": 134.616,
+        "score": 0.997
+      },
+      {
+        "text": "makin",
+        "start": 134.776,
+        "end": 135.176,
+        "score": 0.999
+      },
+      {
+        "text": "kerap",
+        "start": 135.276,
+        "end": 135.556,
+        "score": 0.986
+      },
+      {
+        "text": "jangan",
+        "start": 135.716,
+        "end": 136.117,
+        "score": 0.971
+      },
+      {
+        "text": "biarkan",
+        "start": 136.257,
+        "end": 136.757,
+        "score": 0.853
+      },
+      {
+        "text": "ianya",
+        "start": 136.937,
+        "end": 137.117,
+        "score": 0.908
+      },
+      {
+        "text": "melarat",
+        "start": 137.157,
+        "end": 137.518,
+        "score": 0.904
+      },
+      {
+        "text": "kesihatan",
+        "start": 138.098,
+        "end": 138.418,
+        "score": 0.559
+      },
+      {
+        "text": "mental",
+        "start": 138.458,
+        "end": 138.798,
+        "score": 0.864
+      },
+      {
+        "text": "ni",
+        "start": 138.838,
+        "end": 138.899,
+        "score": 0.937
+      },
+      {
+        "text": "sebenarnya",
+        "start": 138.939,
+        "end": 139.159,
+        "score": 0.665
+      },
+      {
+        "text": "sama",
+        "start": 139.219,
+        "end": 139.459,
+        "score": 0.999
+      },
+      {
+        "text": "penting",
+        "start": 139.499,
+        "end": 139.819,
+        "score": 0.995
+      },
+      {
+        "text": "dengan",
+        "start": 139.839,
+        "end": 139.979,
+        "score": 0.985
+      },
+      {
+        "text": "kesihatan",
+        "start": 140.019,
+        "end": 140.32,
+        "score": 0.619
+      },
+      {
+        "text": "fizikal",
+        "start": 140.34,
+        "end": 140.72,
+        "score": 0.818
+      }
+    ]
+  },
+  "I21": {
+    "hyp": "kalau perlukan bantuan",
+    "score": 0.638,
+    "words": [
+      {
+        "text": "kalau",
+        "start": 141.432,
+        "end": 141.654,
+        "score": 0.579
+      },
+      {
+        "text": "perlukan",
+        "start": 141.714,
+        "end": 142.015,
+        "score": 0.564
+      },
+      {
+        "text": "bantuan",
+        "start": 142.015,
+        "end": 142.418,
+        "score": 0.766
+      }
+    ]
+  },
+  "I22": {
+    "hyp": "untuk mendapatkan konsultasi dan saringan kesihatan mental bersama saya doktor azren * boleh klik di bio",
+    "score": 0.749,
+    "words": [
+      {
+        "text": "untuk",
+        "start": 148.0,
+        "end": 148.161,
+        "score": 0.857
+      },
+      {
+        "text": "mendapatkan",
+        "start": 148.181,
+        "end": 148.581,
+        "score": 0.778
+      },
+      {
+        "text": "konsultasi",
+        "start": 148.621,
+        "end": 149.022,
+        "score": 0.694
+      },
+      {
+        "text": "dan",
+        "start": 149.082,
+        "end": 149.162,
+        "score": 0.991
+      },
+      {
+        "text": "saringan",
+        "start": 149.202,
+        "end": 149.503,
+        "score": 0.807
+      },
+      {
+        "text": "kesihatan",
+        "start": 149.543,
+        "end": 149.823,
+        "score": 0.475
+      },
+      {
+        "text": "mental",
+        "start": 149.843,
+        "end": 150.304,
+        "score": 0.777
+      },
+      {
+        "text": "bersama",
+        "start": 150.524,
+        "end": 150.925,
+        "score": 0.949
+      },
+      {
+        "text": "saya",
+        "start": 151.045,
+        "end": 151.225,
+        "score": 0.878
+      },
+      {
+        "text": "doktor",
+        "start": 151.265,
+        "end": 151.466,
+        "score": 0.706
+      },
+      {
+        "text": "azren",
+        "start": 151.526,
+        "end": 151.846,
+        "score": 0.602
+      },
+      {
+        "text": "*",
+        "start": 151.846,
+        "end": 152.667,
+        "score": 1.0
+      },
+      {
+        "text": "boleh",
+        "start": 152.667,
+        "end": 153.008,
+        "score": 0.982
+      },
+      {
+        "text": "klik",
+        "start": 153.569,
+        "end": 153.709,
+        "score": 0.444
+      },
+      {
+        "text": "di",
+        "start": 153.729,
+        "end": 153.789,
+        "score": 0.871
+      },
+      {
+        "text": "bio",
+        "start": 153.829,
+        "end": 154.029,
+        "score": 0.547
+      }
+    ]
+  },
+  "I23": {
+    "hyp": "apa persoalan boleh tanya dalam komen take care",
+    "score": 0.436,
+    "words": [
+      {
+        "text": "apa",
+        "start": 158.223,
+        "end": 158.324,
+        "score": 0.61
+      },
+      {
+        "text": "persoalan",
+        "start": 158.364,
+        "end": 158.727,
+        "score": 0.559
+      },
+      {
+        "text": "boleh",
+        "start": 158.727,
+        "end": 158.848,
+        "score": 0.087
+      },
+      {
+        "text": "tanya",
+        "start": 158.848,
+        "end": 158.989,
+        "score": 0.569
+      },
+      {
+        "text": "dalam",
+        "start": 159.03,
+        "end": 159.171,
+        "score": 0.06
+      },
+      {
+        "text": "komen",
+        "start": 159.211,
+        "end": 159.494,
+        "score": 0.934
+      },
+      {
+        "text": "take",
+        "start": 159.554,
+        "end": 159.675,
+        "score": 0.399
+      },
+      {
+        "text": "care",
+        "start": 159.736,
+        "end": 159.917,
+        "score": 0.179
+      }
+    ]
+  }
+}
