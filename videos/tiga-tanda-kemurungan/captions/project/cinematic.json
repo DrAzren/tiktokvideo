@@ -1488,7 +1488,8 @@
    "lines": [
     {
      "words": [
-      "konsultasi"
+      "konsultasi",
+      "dan"
      ],
      "css": "font-size: calc(0.044*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"
     }
@@ -1500,7 +1501,6 @@
    "lines": [
     {
      "words": [
-      "dan",
       "saringan"
      ],
      "css": "font-size: calc(0.044*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.55); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.35), 0 8px 26px rgba(0,0,0,0.55);"

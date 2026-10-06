@@ -255,9 +255,17 @@
     {
       "source": "tiga",
       "start": 101.515,
-      "end": 104.025,
+      "end": 102.74,
       "beat": "SIGN4",
-      "reason": "Kejap pagi rasa okey ... Emosi — 'macam' cut",
+      "reason": "Kejap pagi rasa okey ... nak menangis. — 'macam' cut",
+      "zoom": 1.06
+    },
+    {
+      "source": "tiga",
+      "start": 103.61,
+      "end": 104.03,
+      "beat": "SIGN4",
+      "reason": "Emosi",
       "zoom": 1.06
     },
     {
@@ -405,10 +413,17 @@
     {
       "source": "tiga",
       "start": 147.94,
+      "end": 151.905,
+      "beat": "CTA",
+      "zoom": 1.0
+    },
+    {
+      "source": "tiga",
+      "start": 152.615,
       "end": 154.21,
       "beat": "CTA",
       "reason": "untuk mendapatkan konsultasi ... Doktor Azren, boleh klik di bio.",
-      "zoom": 1.0
+      "zoom": 1.06
     },
     {
       "source": "tiga",
@@ -416,7 +431,7 @@
       "end": 160.1,
       "beat": "CTA",
       "reason": "Apa persoalan boleh tanya di dalam komen. Take care.",
-      "zoom": 1.06
+      "zoom": 1.02
     }
   ],
   "grade": "subtle",
@@ -426,5 +441,5 @@
   ],
   "tail_hold": 1.2,
   "overlays": [],
-  "total_duration_s": 105.45
+  "total_duration_s": 103.88
 }

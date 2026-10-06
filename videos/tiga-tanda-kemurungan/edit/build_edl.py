@@ -50,7 +50,10 @@ HOOK_TO_SIGN6 = [
     ("I09", 3, "I09", 13, "SIGN3", "Bila bangun pagi, benda pertama yang kita capai adalah telefon."),
     ("I10", 1, "I10", 25, "SIGN3", "bukan nak scroll pun ... hati ataupun mood yang tak stabil. — 'sebenarnya', first 'hati … tak stabil', 'tu' cut"),
     ("I11", 0, "I11", 6, "SIGN4", "Yang keempat, mood swing yang teruk. — hesitation cut; 'Bukan macam apa panggil? Mood swing yang teruk' retake dropped"),
-    ("I13", 4, "I13", 20, "SIGN4", "Kejap pagi rasa okey ... Emosi — 'macam' cut"),
+    ("I13", 4, "I13", 19, "SIGN4", "Kejap pagi rasa okey ... nak menangis. — 'macam' cut"),
+    # "emosi" on its own segment: inside the previous one the 0.34s range left by the "tu" cut was
+    # MICRO-merged back across the 1.1s breath pause before it (timeline_view caught the pause)
+    ("I13", 20, "I13", 20, "SIGN4", "Emosi", {"end": 104.03}),
     # "tu" runs straight into "naik" (large-v3 on the first cut still heard it): start on the nasal onset of "naik"
     ("I13", 22, "I13", 27, "SIGN4", "naik turun tanpa sebab yang jelas. — 'tu' cut", {"start": 104.12}),
     ("I14", 0, "I14", 7, "SIGN5", "Yang kelima, mudah lupa dan susah fokus."),
@@ -88,6 +91,7 @@ DROP = {
     ("I13", 15),                                          # "malam macam rasa (macam nak menangis kept: meaning)"
     ("I18", 1),                                           # hesitation "atau * kita"
     ("I20", 28),                                          # "kesihatan mental ni sebenarnya sama penting"
+    ("I22", 11),                                          # 0.8s breath between "Doktor Azren" and "boleh klik di bio"
 }
 # voiced hesitations ("aa", "mmm", drawn-out vowels) filling short gaps (gap_scan.py): always cut,
 # whatever the gap length. Given as the word BEFORE the gap.

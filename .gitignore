@@ -29,3 +29,4 @@ videos/**
 !videos/*/graphics/*.cjs
 !videos/*/graphics/page_heights.json
 !videos/*/edit/hair_top.json
+!videos/*/rebuild.sh

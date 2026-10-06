@@ -28,6 +28,24 @@ ffmpeg -nostdin -y -loglevel error \
   -map "[v]" -map 3:a -r 30 -c:v libx264 -crf 14 -preset medium -g 30 -c:a copy \
   -movflags +faststart captions/captioned.mp4
 echo "captioned → captions/captioned.mp4"
+# guard: outside the matte window the overlays must be no-ops (a broken frames_fg pasted a stale
+# subject over every frame once) — captioned must equal its background layer frame for frame there
+"$PY" - "$W0" "$W1" <<'PY'
+import subprocess, sys
+import numpy as np
+w0, w1 = map(float, sys.argv[1:3])
+def frames(p):
+    raw = subprocess.run(["ffmpeg", "-nostdin", "-loglevel", "error", "-i", p, "-vf", "scale=54:96,format=gray",
+                          "-f", "rawvideo", "-"], capture_output=True, check=True).stdout
+    return np.frombuffer(raw, np.uint8).reshape(-1, 96, 54).astype(float)
+a, b = frames("captions/captioned.mp4"), frames("captions/bg_plus_caps.mp4")
+assert len(a) == len(b), (len(a), len(b))
+t = np.arange(len(a)) / 30
+d = np.abs(a - b).mean((1, 2))
+out = (t < w0 - 0.05) | (t > w1 + 0.05)
+assert d[out].max() < 1.5, f"captioned differs from bg outside the window: max {d[out].max():.2f} at t={t[out][d[out].argmax()]:.2f}"
+print(f"guard: outside {w0}-{w1}s captioned == bg (max diff {d[out].max():.2f}); inside max {d[~out].max():.2f}")
+PY
 
 "$PY" "$ROOT/tools/mix_music.py" captions/captioned.mp4 audio/bed.wav -o final.mp4 --bed-lufs -20
 "$PY" "$ROOT/tools/check_sync.py" edit/edl.json final.mp4 | tail -1
@@ -37,7 +55,7 @@ ffmpeg -nostdin -hide_banner -i final.mp4 -af ebur128=peak=true -f null - 2>&1 |
 # download copy < 30 MB: two-pass x264 at a bitrate that fits 28 MB including 160k audio
 DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 final.mp4)
 VB=$("$PY" -c "print(int((28 * 8 * 1024 * 1024 / $DUR - 160_000) / 1000))")
-ffmpeg -nostdin -y -loglevel error -i final.mp4 -c:v libx264 -preset slow -b:v ${VB}k -pass 1 -passlogfile /tmp/tt2pass -an -f mp4 /dev/null
+ffmpeg -nostdin -y -loglevel error -i final.mp4 -c:v libx264 -preset slow -b:v ${VB}k -pass 1 -passlogfile /tmp/tt2pass -pix_fmt yuv420p -g 60 -an -f mp4 /dev/null
 ffmpeg -nostdin -y -loglevel error -i final.mp4 -c:v libx264 -preset slow -b:v ${VB}k -pass 2 -passlogfile /tmp/tt2pass \
   -pix_fmt yuv420p -g 60 -c:a aac -b:a 160k -movflags +faststart final_tiktok.mp4
 ls -la final.mp4 final_tiktok.mp4
