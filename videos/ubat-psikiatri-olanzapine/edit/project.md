@@ -51,3 +51,16 @@ behind the head; ambient bed ducked under the voice; prominent transition SFX; �
 - Switch on TikTok's "AI-generated content" label (six AI stills, tagged "Ilustrasi AI" on screen).
 - Optionally swap the bed for a licensed track in the TikTok app.
 - Source audio is clipped in places (true peak +0.6 dBTP in the CapCut export) — not recoverable.
+
+## Session 1, round 2 — 2026-10-07: varied SFX
+
+**Ask:** "pelbagaikan sound effect, jangan ulang ting dan whoosh banyak kali, tukar sound effect lain."
+- `audio/make_sfx.py` rewritten as a cue sheet: 74 cues / 7 sounds (38 tings, 17 whooshes) → 48 cues / 23 sounds.
+  Each full-screen MG has its own transition (riser, zip, deep whoosh, tape riser); only the two long MGs get
+  an exit sound; photo inserts get shutter / polaroid / soft swell to suit the still; cards rotate paper /
+  swipe / flick; list items play rising notes on a different instrument per card (marimba, kalimba,
+  xylophone, bubble); one-off cues for check ticks, "risiko naik" blips, "JANGAN" dun / chord, stamps, quote
+  sparkle, "Ada soalan?" message pop, hero impact. Kicker chips that land with their card are silent; no
+  cue repeats back-to-back except the deliberate rising scales. Cue list: `audio/sfx_cues.txt`.
+- SFX trimmed +2 dB in the mix (`--sfx-db 2`): median cue peak ~7 dB under the voice peak. Master −14.0 LUFS,
+  −2.2 dBTP; sync 0.2 ms.

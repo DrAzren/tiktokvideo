@@ -28,7 +28,7 @@ ffmpeg -nostdin -y -loglevel error \
 echo "captioned → captions/captioned.mp4"
 
 "$PY" audio/make_sfx.py captions/captioned.mp4 -o audio/sfx.wav
-"$PY" "$ROOT/tools/mix_music.py" captions/captioned.mp4 audio/bed.wav -o final.mp4 --bed-lufs -20 --sfx audio/sfx.wav
+"$PY" "$ROOT/tools/mix_music.py" captions/captioned.mp4 audio/bed.wav -o final.mp4 --bed-lufs -20 --sfx audio/sfx.wav --sfx-db 2
 "$PY" "$ROOT/tools/check_sync.py" edit/edl.json final.mp4 | tail -1
 ffprobe -v error -show_entries stream=codec_type,width,height,duration,nb_frames -of compact final.mp4
 ffmpeg -nostdin -hide_banner -i final.mp4 -af ebur128=peak=true -f null - 2>&1 | grep -E "^\s+(I|Peak):"
