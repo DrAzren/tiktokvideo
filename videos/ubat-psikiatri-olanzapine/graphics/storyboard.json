@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 3,
+  "composition": {
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "durationSeconds": 85.504,
+    "layout": "portrait",
+    "themeId": "custom-teal",
+    "seed": 7
+  },
+  "videoTrack": {
+    "sourcePath": "input-video.mp4",
+    "startSec": 0,
+    "endSec": 85.504,
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920
+    }
+  },
+  "subtitles": {
+    "enabled": false
+  },
+  "cards": [
+    {
+      "id": "c01-mood",
+      "intent": "Benefit #1: stabilises mood; who it suits",
+      "startSec": 10.55,
+      "endSec": 16.45,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 2
+      }
+    },
+    {
+      "id": "c02-berguna",
+      "intent": "Useful when anxiety kills appetite / sleep",
+      "startSec": 26.21,
+      "endSec": 30.2,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c03-keburukan",
+      "intent": "Side effects; #1 weight gain, the most common",
+      "startSec": 37.03,
+      "endSec": 45.3,
+      "accentIndex": 2,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 3
+      }
+    },
+    {
+      "id": "c04-mengantuk",
+      "intent": "Side effect #2: drowsiness",
+      "startSec": 47.43,
+      "endSec": 48.85,
+      "accentIndex": 3,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c05-pantau",
+      "intent": "So the doctor monitors blood and weight",
+      "startSec": 57.04,
+      "endSec": 62.4,
+      "accentIndex": 4,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 2
+      }
+    },
+    {
+      "id": "c06-risau",
+      "intent": "Plug, moved to the end: worried about side effects?",
+      "startSec": 67.49,
+      "endSec": 69.8,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c07-klinik",
+      "intent": "Plug: one-on-one consultation + screening at the clinic in Nilai",
+      "startSec": 73.77,
+      "endSec": 77.4,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c08-cta",
+      "intent": "CTA: link in bio / DM; questions in the comments",
+      "startSec": 78.76,
+      "endSec": 85.504,
+      "accentIndex": 2,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 2
+      }
+    }
+  ]
+}

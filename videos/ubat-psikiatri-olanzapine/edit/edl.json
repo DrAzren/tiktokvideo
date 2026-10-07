@@ -1,0 +1,308 @@
+{
+  "version": 1,
+  "sources": {
+    "olanzapine": "/home/user/tiktokvideo/videos/ubat-psikiatri-olanzapine/raw/Olanzapine.mp4"
+  },
+  "ranges": [
+    {
+      "source": "olanzapine",
+      "start": 0.595,
+      "end": 3.18,
+      "beat": "HOOK",
+      "reason": "Pernah dengar nama ubat olanzapine?",
+      "zoom": 1.0
+    },
+    {
+      "source": "olanzapine",
+      "start": 10.395,
+      "end": 11.725,
+      "beat": "HOOK",
+      "zoom": 1.06
+    },
+    {
+      "source": "olanzapine",
+      "start": 12.335,
+      "end": 14.26,
+      "beat": "HOOK",
+      "reason": "Jom saya terangkan apa kebaikan dan keburukan ubat ni. — plug take 1 (16.9-29.5) + dead air dropped",
+      "zoom": 1.02
+    },
+    {
+      "source": "olanzapine",
+      "start": 53.225,
+      "end": 56.815,
+      "beat": "KEBAIKAN",
+      "zoom": 1.07
+    },
+    {
+      "source": "olanzapine",
+      "start": 57.085,
+      "end": 59.7,
+      "beat": "KEBAIKAN",
+      "zoom": 1.0
+    },
+    {
+      "source": "olanzapine",
+      "start": 60.05,
+      "end": 63.185,
+      "beat": "KEBAIKAN",
+      "zoom": 1.06
+    },
+    {
+      "source": "olanzapine",
+      "start": 63.365,
+      "end": 64.77,
+      "beat": "KEBAIKAN",
+      "reason": "Pertama, kebaikan… gangguan psikosis.",
+      "zoom": 1.02
+    },
+    {
+      "source": "olanzapine",
+      "start": 64.98,
+      "end": 67.375,
+      "beat": "KEBAIKAN",
+      "zoom": 1.07
+    },
+    {
+      "source": "olanzapine",
+      "start": 67.675,
+      "end": 68.47,
+      "beat": "KEBAIKAN",
+      "zoom": 1.0
+    },
+    {
+      "source": "olanzapine",
+      "start": 68.76,
+      "end": 69.585,
+      "beat": "KEBAIKAN",
+      "zoom": 1.06
+    },
+    {
+      "source": "olanzapine",
+      "start": 69.645,
+      "end": 70.495,
+      "beat": "KEBAIKAN",
+      "zoom": 1.02
+    },
+    {
+      "source": "olanzapine",
+      "start": 71.02,
+      "end": 73.355,
+      "beat": "KEBAIKAN",
+      "zoom": 1.07
+    },
+    {
+      "source": "olanzapine",
+      "start": 73.585,
+      "end": 74.67,
+      "beat": "KEBAIKAN",
+      "reason": "Ia boleh kurangkan halusinasi… tidur seseorang.",
+      "zoom": 1.0
+    },
+    {
+      "source": "olanzapine",
+      "start": 75.665,
+      "end": 76.135,
+      "beat": "KEBAIKAN",
+      "zoom": 1.06
+    },
+    {
+      "source": "olanzapine",
+      "start": 76.285,
+      "end": 80.8,
+      "beat": "KEBAIKAN",
+      "reason": "Ia berguna kalau pesakit… insomnia.",
+      "zoom": 1.02
+    },
+    {
+      "source": "olanzapine",
+      "start": 82.955,
+      "end": 83.865,
+      "beat": "KEBAIKAN",
+      "zoom": 1.07
+    },
+    {
+      "source": "olanzapine",
+      "start": 84.035,
+      "end": 84.355,
+      "beat": "KEBAIKAN",
+      "zoom": 1.07
+    },
+    {
+      "source": "olanzapine",
+      "start": 84.695,
+      "end": 85.825,
+      "beat": "KEBAIKAN",
+      "zoom": 1.0
+    },
+    {
+      "source": "olanzapine",
+      "start": 86.015,
+      "end": 86.775,
+      "beat": "KEBAIKAN",
+      "zoom": 1.06
+    },
+    {
+      "source": "olanzapine",
+      "start": 87.415,
+      "end": 88.765,
+      "beat": "KEBAIKAN",
+      "zoom": 1.02
+    },
+    {
+      "source": "olanzapine",
+      "start": 89.005,
+      "end": 90.92,
+      "beat": "KEBAIKAN",
+      "reason": "Ada juga yang cakap dunia kembali senyap… penyakit-penyakit tertentu.",
+      "zoom": 1.07
+    },
+    {
+      "source": "olanzapine",
+      "start": 91.185,
+      "end": 94.67,
+      "beat": "KEBURUKAN",
+      "zoom": 1.0
+    },
+    {
+      "source": "olanzapine",
+      "start": 94.9,
+      "end": 96.775,
+      "beat": "KEBURUKAN",
+      "zoom": 1.06
+    },
+    {
+      "source": "olanzapine",
+      "start": 97.135,
+      "end": 98.125,
+      "beat": "KEBURUKAN",
+      "zoom": 1.02
+    },
+    {
+      "source": "olanzapine",
+      "start": 98.255,
+      "end": 100.615,
+      "beat": "KEBURUKAN",
+      "zoom": 1.07
+    },
+    {
+      "source": "olanzapine",
+      "start": 102.705,
+      "end": 104.595,
+      "beat": "KEBURUKAN",
+      "zoom": 1.0
+    },
+    {
+      "source": "olanzapine",
+      "start": 105.235,
+      "end": 107.985,
+      "beat": "KEBURUKAN",
+      "zoom": 1.06
+    },
+    {
+      "source": "olanzapine",
+      "start": 108.375,
+      "end": 109.93,
+      "beat": "KEBURUKAN",
+      "reason": "Tapi kita kena tahu juga kesan sampingan… start rawatan dulu.",
+      "zoom": 1.02
+    },
+    {
+      "source": "olanzapine",
+      "start": 110.75,
+      "end": 111.375,
+      "beat": "KEBURUKAN",
+      "zoom": 1.07
+    },
+    {
+      "source": "olanzapine",
+      "start": 111.605,
+      "end": 120.155,
+      "beat": "KEBURUKAN",
+      "zoom": 1.0
+    },
+    {
+      "source": "olanzapine",
+      "start": 120.565,
+      "end": 120.955,
+      "beat": "KEBURUKAN",
+      "zoom": 1.0
+    },
+    {
+      "source": "olanzapine",
+      "start": 121.165,
+      "end": 122.38,
+      "beat": "KEBURUKAN",
+      "reason": "Yang ketiga… ambil ubat olanzapine ni. — 9s pause after it cut",
+      "zoom": 1.06
+    },
+    {
+      "source": "olanzapine",
+      "start": 131.115,
+      "end": 134.095,
+      "beat": "PENUTUP",
+      "zoom": 1.02
+    },
+    {
+      "source": "olanzapine",
+      "start": 134.565,
+      "end": 135.26,
+      "beat": "PENUTUP",
+      "reason": "Yang penting, kita jangan stop ubat sendiri. Jangan give up.",
+      "zoom": 1.07
+    },
+    {
+      "source": "olanzapine",
+      "start": 36.975,
+      "end": 37.675,
+      "beat": "PLUG",
+      "zoom": 1.0
+    },
+    {
+      "source": "olanzapine",
+      "start": 37.975,
+      "end": 45.865,
+      "beat": "PLUG",
+      "zoom": 1.06
+    },
+    {
+      "source": "olanzapine",
+      "start": 46.415,
+      "end": 49.595,
+      "beat": "PLUG",
+      "reason": "Kalau anda mula ambil ubat psikiatri… secara one on one. — moved from 0:37 to the end; 'Tapi jangan risau' and 'boleh tekan di bio untuk book slot anda' (said again in the CTA) dropped",
+      "zoom": 1.02
+    },
+    {
+      "source": "olanzapine",
+      "start": 135.52,
+      "end": 136.995,
+      "beat": "CTA",
+      "zoom": 1.07
+    },
+    {
+      "source": "olanzapine",
+      "start": 138.585,
+      "end": 141.54,
+      "beat": "CTA",
+      "reason": "Kalau anda perlukan bantuan, boleh tekan di bio atau DM untuk buat appointment. — repeated 'boleh' cut",
+      "zoom": 1.0
+    },
+    {
+      "source": "olanzapine",
+      "start": 142.98,
+      "end": 145.42,
+      "beat": "CTA",
+      "reason": "Kalau ada soalan, boleh tanya dalam komen. Take care.",
+      "zoom": 1.06
+    }
+  ],
+  "grade": "subtle",
+  "zoom_focus": [
+    0.52,
+    0.4
+  ],
+  "tail_hold": 1.2,
+  "overlays": [],
+  "total_duration_s": 85.44
+}

@@ -22,6 +22,18 @@ FILLER_PROMPT = {
 }
 
 
+def _load(path: Path):
+    """16 kHz mono WAV → float32 array (bypasses PyAV, whose 15+ API breaks faster-whisper's
+    decode_audio: "open() got an unexpected keyword argument 'metadata_errors'"). Other inputs
+    are passed through as paths."""
+    if path.suffix.lower() == ".wav":
+        import soundfile as sf
+        a, sr = sf.read(path, dtype="float32")
+        if sr == 16000:
+            return a if a.ndim == 1 else a.mean(axis=1)
+    return str(path)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("input", type=Path)
@@ -38,7 +50,7 @@ def main() -> None:
 
     model = WhisperModel(args.model, device="cpu", compute_type="int8")
     segments, info = model.transcribe(
-        str(args.input),
+        _load(args.input),
         language=args.language,
         word_timestamps=True,
         vad_filter=False,

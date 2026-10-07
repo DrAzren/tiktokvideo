@@ -8,8 +8,11 @@
 Also reports how far the music sits below the voice during speech vs. pauses, so
 the balance is measured, not guessed.
 
+Optional --sfx <wav>: a sound-effects track (same timeline as the video) mixed in AFTER the ducking,
+so effects stay crisp and are never pumped by the voice; --sfx-db trims its level.
+
 Usage:
-    python tools/mix_music.py <video.mp4> <bed.wav> -o <out.mp4> [--bed-lufs -20] [--fade-out 2.5]
+    python tools/mix_music.py <video.mp4> <bed.wav> -o <out.mp4> [--bed-lufs -20] [--fade-out 2.5] [--sfx fx.wav --sfx-db 0]
 """
 
 from __future__ import annotations
@@ -44,6 +47,8 @@ def main() -> None:
     ap.add_argument("-o", "--output", required=True)
     ap.add_argument("--bed-lufs", type=float, default=-20.0, help="undocked bed loudness")
     ap.add_argument("--fade-out", type=float, default=2.5)
+    ap.add_argument("--sfx", help="sound-effects wav on the video's timeline (not ducked)")
+    ap.add_argument("--sfx-db", type=float, default=0.0)
     args = ap.parse_args()
 
     dur = float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration",
@@ -53,10 +58,15 @@ def main() -> None:
              f"afade=t=out:st={dur - args.fade_out:.3f}:d={args.fade_out}[m]")
     graph = (f"{music};[0:a]asplit=2[v][sc];[m][sc]{DUCK},asplit=2[md][dk];"
              f"[v][md]amix=inputs=2:duration=first:normalize=0[mix]")
+    extra = []
+    if args.sfx:
+        graph = graph.replace("[mix]", "[vm]") + (f";[2:a]aresample=48000,volume={args.sfx_db}dB,atrim=0:{dur:.3f}[fx];"
+                                                   f"[vm][fx]amix=inputs=2:duration=first:normalize=0[mix]")
+        extra = ["-i", args.sfx]
 
     with tempfile.TemporaryDirectory() as t:
         pre, ducked, voice = Path(t, "premix.wav"), Path(t, "ducked.wav"), Path(t, "voice.wav")
-        ff("-y", "-i", args.video, "-i", args.bed, "-filter_complex", graph,
+        ff("-y", "-i", args.video, "-i", args.bed, *extra, "-filter_complex", graph,
            "-map", "[mix]", "-c:a", "pcm_s24le", str(pre), "-map", "[dk]", "-c:a", "pcm_s24le", str(ducked))
         ff("-y", "-i", args.video, "-vn", "-c:a", "pcm_s24le", str(voice))
 
