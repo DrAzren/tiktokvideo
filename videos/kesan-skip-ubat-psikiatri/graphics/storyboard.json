@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 3,
+  "composition": {
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "durationSeconds": 83.947,
+    "layout": "portrait",
+    "themeId": "custom-teal",
+    "seed": 7
+  },
+  "videoTrack": {
+    "sourcePath": "input-video.mp4",
+    "startSec": 0,
+    "endSec": 83.947,
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920
+    }
+  },
+  "subtitles": {
+    "enabled": false
+  },
+  "cards": [
+    {
+      "id": "c01-intro",
+      "intent": "Who is speaking: Dr Azren, psychiatrist",
+      "startSec": 5.75,
+      "endSec": 8.3,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c02-relapse",
+      "intent": "Risk #1: relapse, symptoms come back",
+      "startSec": 13.0,
+      "endSec": 16.75,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c03-stop",
+      "intent": "Stopping suddenly destabilises the brain",
+      "startSec": 20.11,
+      "endSec": 22.9,
+      "accentIndex": 2,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c04-withdrawal",
+      "intent": "Risk #2: withdrawal symptoms; not every medicine",
+      "startSec": 28.95,
+      "endSec": 32.55,
+      "accentIndex": 3,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 2
+      }
+    },
+    {
+      "id": "c05-rawatan",
+      "intent": "Risk #3: it damages the treatment process",
+      "startSec": 41.05,
+      "endSec": 43.6,
+      "accentIndex": 4,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c06-efektif",
+      "intent": "Sometimes the medicine stops working as well",
+      "startSec": 51.65,
+      "endSec": 54.1,
+      "accentIndex": 0,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c07-klinik",
+      "intent": "Plug (moved to the end): services at the clinic in Nilai",
+      "startSec": 58.6,
+      "endSec": 73.2,
+      "accentIndex": 1,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 4
+      }
+    },
+    {
+      "id": "c08-cta",
+      "intent": "CTA: not sure? see a professional; clinic, link in bio / DM",
+      "startSec": 76.45,
+      "endSec": 83.947,
+      "accentIndex": 2,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 3
+      }
+    }
+  ]
+}

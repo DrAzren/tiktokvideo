@@ -53,6 +53,7 @@ ICON = {
     "capsule": '<rect x="5" y="17" width="38" height="14" rx="7" transform="rotate(-35 24 24)"/><path d="M19 16l10 16"/>',
     "stop": '<path d="M16 6h16l10 10v16L32 42H16L6 32V16z"/><path d="M17 24h14"/>',
     "play": '<path d="M16 10l22 14-22 14z"/>',
+    "skip": '<path d="M7 12l15 12-15 12z"/><path d="M22 12l15 12-15 12z"/><path d="M41 12v24"/>',
 }
 
 
@@ -107,7 +108,7 @@ def build():
     I.append({"id": "m1-skip", "kind": "mg", "start": fq(s - 0.15), "end": fq(T("yang pertama") - 0.06), "body": f"""
       <div class="head"><div class="mg-chip" id="m1-c">Apa jadi kalau…</div></div>
       <div class="skipwrap">
-        <span class="bigdisc red" id="m1-d">{icon("capsule", "big-ico")}</span>
+        <span class="bigdisc red" id="m1-d">{icon("skip", "big-ico")}</span>
         <div class="skipword" id="m1-w">SKIP</div>
         <div class="skipsub" id="m1-s">ubat psikiatri</div>
       </div>
@@ -118,9 +119,9 @@ def build():
                   ("#m1-w", T("skip", after=s) - LEAD + 0.04, "slam"),
                   ("#m1-s", T("ubat psikiatri", after=s) - LEAD, "rise"),
                   ("#m1-n", T("tanpa", after=s) - LEAD, "slidein"),
-                  ("#m1-3", T("doktor", after=s) + 0.1, "fade"),
-                  ("#m1-31", T("doktor", after=s) + 0.12, "pop"), ("#m1-32", T("doktor", after=s) + 0.27, "pop"),
-                  ("#m1-33", T("doktor", after=s) + 0.42, "pop")]})
+                  ("#m1-3", T("dengan doktor", after=s) - 0.1, "fade"),
+                  ("#m1-31", T("dengan doktor", after=s) - 0.06, "pop"), ("#m1-32", T("dengan doktor", after=s) + 0.08, "pop"),
+                  ("#m1-33", T("dengan doktor", after=s) + 0.22, "pop")]})
 
     # MG2 — relapse, escalating: mood swing → cemas → (the ward still takes the third step)
     s = T("contohnya")

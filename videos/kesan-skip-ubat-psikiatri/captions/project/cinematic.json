@@ -1,0 +1,1146 @@
+{
+ "dna": "loud",
+ "width": 1080,
+ "height": 1920,
+ "fps": 30,
+ "planes": {
+  "narr": "top: 20.4%; left: 4%; width: 92%; height: 5.6%;",
+  "hero": null
+ },
+ "blocks": [
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "doktor",
+      "saya"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "dah",
+      "sihat",
+      "sikit"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "saya",
+      "nak"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    },
+    {
+     "words": [
+      "berhenti"
+     ],
+     "hero": true,
+     "css": "font-size: calc(0.115*var(--h)); text-transform: uppercase; color: #0E5E6F !important;"
+    },
+    {
+     "words": [
+      "ubat",
+      "sendiri"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "takpe",
+      "ke",
+      "doktor"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "assalamualaikum"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "saya",
+      "doktor",
+      "Azren"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "doktor",
+      "psikiatri"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "jom",
+      "kita",
+      "sembang",
+      "sekejap"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "apa",
+      "jadi",
+      "kalau"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "kita",
+      "skip"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "ubat",
+      "psikiatri"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "tanpa",
+      "bincang"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "dengan",
+      "doktor"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "yang",
+      "pertama"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "risiko",
+      "relapse"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "gejala",
+      "berulang"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "berlaku",
+      "semula"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "ubat",
+      "psikiatri",
+      "ni",
+      "macam"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "pelindung",
+      "untuk",
+      "kita"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "bila",
+      "kita",
+      "stop",
+      "tiba-tiba"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "otak",
+      "kita",
+      "boleh"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "jadi",
+      "tak",
+      "stabil",
+      "semula"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "contohnya",
+      "boleh",
+      "dapat"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "mood",
+      "swing",
+      "balik"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "rasa",
+      "cemas"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "semakin",
+      "menjadi-jadi"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "atau",
+      "sampai",
+      "tahap"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "boleh",
+      "masuk",
+      "wad",
+      "balik"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "yang",
+      "kedua"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "withdrawal",
+      "symptom"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "gejala",
+      "penarikan"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "bukan",
+      "semua",
+      "tapi"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "ada",
+      "ubat",
+      "bila"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "berhenti",
+      "secara",
+      "mengejut"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "boleh",
+      "dapat"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "simptom-simptom"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "seperti",
+      "rasa",
+      "loya"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "pening",
+      "kepala"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "gangguan",
+      "tidur"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "rasa",
+      "emosi",
+      "huru-hara"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "otak",
+      "jadi",
+      "serabut"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "yang",
+      "ketiga"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "boleh",
+      "merosakkan"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "proses",
+      "rawatan"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "setiap",
+      "kali"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "stop",
+      "start",
+      "ubat"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "stop",
+      "start",
+      "stop",
+      "start"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "macam",
+      "kita",
+      "tekan"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "reset",
+      "button",
+      "balik"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "lambat",
+      "sembuhnya"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "kena",
+      "mula",
+      "balik"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "daripada",
+      "bawah"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "kadang-kadang",
+      "ubat"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "jadi",
+      "tak",
+      "efektif"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "macam",
+      "dulu",
+      "lagi"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "saya",
+      "ada",
+      "berita",
+      "baik"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "di",
+      "klinik",
+      "saya",
+      "di",
+      "Nilai"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "kami",
+      "menyediakan"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "servis",
+      "konsultasi"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "dan",
+      "juga",
+      "saringan"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "kesihatan",
+      "mental"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "secara",
+      "one-on-one"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "boleh",
+      "bincang",
+      "tentang"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "isu",
+      "kemurungan"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "anxiety",
+      "masalah",
+      "tidur"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "nak",
+      "start",
+      "rawatan"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "ataupun",
+      "nak",
+      "dapatkan"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "second",
+      "opinion"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "sebelum",
+      "ambil",
+      "ubat"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "nak",
+      "tentukan",
+      "diagnosis"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "boleh",
+      "datang"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "klinik",
+      "saya",
+      "di",
+      "Nilai"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "kalau",
+      "anda",
+      "tengah",
+      "keliru"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "patut",
+      "teruskan",
+      "rawatan"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "ataupun",
+      "tidak"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "atau",
+      "rasa",
+      "nak"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "mulakan",
+      "rawatan"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "tapi",
+      "tak",
+      "pasti"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "boleh",
+      "jumpa"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "dengan",
+      "profesional"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "kesihatan",
+      "mental"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  },
+  {
+   "plane": "narr",
+   "flip": true,
+   "lines": [
+    {
+     "words": [
+      "take",
+      "care"
+     ],
+     "css": "font-size: calc(0.046*var(--h)); text-transform: uppercase; letter-spacing: 0.01em; -webkit-text-stroke: 3px rgba(0,0,0,0.6); paint-order: stroke fill; text-shadow: 0 4px 0 rgba(0,0,0,0.38), 0 8px 26px rgba(0,0,0,0.6);"
+    }
+   ]
+  }
+ ],
+ "tones": {
+  "default": "soft",
+  "hero": "impact"
+ }
+}

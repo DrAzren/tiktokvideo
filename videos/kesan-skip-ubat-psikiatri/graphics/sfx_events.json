@@ -1,0 +1,457 @@
+[
+ {
+  "t": 5.733,
+  "kind": "swish",
+  "src": "c01-intro"
+ },
+ {
+  "t": 6.433,
+  "kind": "ting",
+  "src": "#c01-intro-kicker"
+ },
+ {
+  "t": 8.233,
+  "kind": "whoosh_in",
+  "src": "m1-skip"
+ },
+ {
+  "t": 8.353,
+  "kind": "ting",
+  "src": "#m1-c"
+ },
+ {
+  "t": 9.709,
+  "kind": "ting",
+  "src": "#m1-d"
+ },
+ {
+  "t": 9.949,
+  "kind": "thud",
+  "src": "#m1-w"
+ },
+ {
+  "t": 11.291,
+  "kind": "swish",
+  "src": "#m1-n"
+ },
+ {
+  "t": 12.072,
+  "kind": "ting",
+  "src": "#m1-31"
+ },
+ {
+  "t": 12.212,
+  "kind": "ting",
+  "src": "#m1-32"
+ },
+ {
+  "t": 12.352,
+  "kind": "ting",
+  "src": "#m1-33"
+ },
+ {
+  "t": 12.947,
+  "kind": "whoosh_out",
+  "src": "m1-skip"
+ },
+ {
+  "t": 13.0,
+  "kind": "swish",
+  "src": "c02-relapse"
+ },
+ {
+  "t": 13.1,
+  "kind": "ting",
+  "src": "#c02-relapse-kicker"
+ },
+ {
+  "t": 16.733,
+  "kind": "whoosh_in",
+  "src": "b0-pelindung"
+ },
+ {
+  "t": 17.912,
+  "kind": "chime",
+  "src": "b0-pelindung"
+ },
+ {
+  "t": 18.713,
+  "kind": "whoosh_out",
+  "src": "b0-pelindung"
+ },
+ {
+  "t": 20.1,
+  "kind": "swish",
+  "src": "c03-stop"
+ },
+ {
+  "t": 20.2,
+  "kind": "ting",
+  "src": "#c03-stop-kicker"
+ },
+ {
+  "t": 22.867,
+  "kind": "whoosh_in",
+  "src": "m2-relapse"
+ },
+ {
+  "t": 22.987,
+  "kind": "ting",
+  "src": "#m2-c"
+ },
+ {
+  "t": 24.14,
+  "kind": "swish",
+  "src": "#m2-r0"
+ },
+ {
+  "t": 24.2,
+  "kind": "ting",
+  "src": "#m2-d0"
+ },
+ {
+  "t": 25.413,
+  "kind": "swish",
+  "src": "#m2-r1"
+ },
+ {
+  "t": 25.473,
+  "kind": "ting",
+  "src": "#m2-d1"
+ },
+ {
+  "t": 26.58,
+  "kind": "whoosh_swap",
+  "src": "m2-relapse"
+ },
+ {
+  "t": 27.786,
+  "kind": "label",
+  "src": "#b1-wad-l1"
+ },
+ {
+  "t": 28.813,
+  "kind": "whoosh_out",
+  "src": "b1-wad"
+ },
+ {
+  "t": 28.933,
+  "kind": "swish",
+  "src": "c04-withdrawal"
+ },
+ {
+  "t": 29.0,
+  "kind": "ting",
+  "src": "#c04-withdrawal-kicker"
+ },
+ {
+  "t": 31.1,
+  "kind": "ting",
+  "src": "#c04-withdrawal-kicker2"
+ },
+ {
+  "t": 31.433,
+  "kind": "thud",
+  "src": "#c04-withdrawal-st"
+ },
+ {
+  "t": 32.2,
+  "kind": "whoosh_in",
+  "src": "b2-ubat"
+ },
+ {
+  "t": 33.978,
+  "kind": "label",
+  "src": "#b2-ubat-l1"
+ },
+ {
+  "t": 34.313,
+  "kind": "whoosh_swap",
+  "src": "b2-ubat"
+ },
+ {
+  "t": 34.553,
+  "kind": "ting",
+  "src": "#m3-c"
+ },
+ {
+  "t": 36.57,
+  "kind": "swish",
+  "src": "#m3-r0"
+ },
+ {
+  "t": 36.63,
+  "kind": "ting",
+  "src": "#m3-d0"
+ },
+ {
+  "t": 36.911,
+  "kind": "swish",
+  "src": "#m3-r1"
+ },
+ {
+  "t": 36.971,
+  "kind": "ting",
+  "src": "#m3-d1"
+ },
+ {
+  "t": 37.58,
+  "kind": "swish",
+  "src": "#m3-r2"
+ },
+ {
+  "t": 37.64,
+  "kind": "ting",
+  "src": "#m3-d2"
+ },
+ {
+  "t": 38.748,
+  "kind": "swish",
+  "src": "#m3-r3"
+ },
+ {
+  "t": 38.808,
+  "kind": "ting",
+  "src": "#m3-d3"
+ },
+ {
+  "t": 39.89,
+  "kind": "swish",
+  "src": "#m3-r4"
+ },
+ {
+  "t": 39.95,
+  "kind": "ting",
+  "src": "#m3-d4"
+ },
+ {
+  "t": 41.067,
+  "kind": "swish",
+  "src": "c05-rawatan"
+ },
+ {
+  "t": 41.167,
+  "kind": "ting",
+  "src": "#c05-rawatan-kicker"
+ },
+ {
+  "t": 41.413,
+  "kind": "whoosh_out",
+  "src": "m3-withdrawal"
+ },
+ {
+  "t": 43.533,
+  "kind": "whoosh_in",
+  "src": "m4-reset"
+ },
+ {
+  "t": 43.653,
+  "kind": "ting",
+  "src": "#m4-c"
+ },
+ {
+  "t": 44.465,
+  "kind": "flip",
+  "src": "#m4-f0"
+ },
+ {
+  "t": 44.852,
+  "kind": "flip",
+  "src": "#m4-f1"
+ },
+ {
+  "t": 44.912,
+  "kind": "ting",
+  "src": "#m4-n1"
+ },
+ {
+  "t": 45.833,
+  "kind": "flip",
+  "src": "#m4-f2"
+ },
+ {
+  "t": 46.214,
+  "kind": "flip",
+  "src": "#m4-f3"
+ },
+ {
+  "t": 46.274,
+  "kind": "ting",
+  "src": "#m4-n2"
+ },
+ {
+  "t": 46.554,
+  "kind": "flip",
+  "src": "#m4-f4"
+ },
+ {
+  "t": 46.814,
+  "kind": "flip",
+  "src": "#m4-f5"
+ },
+ {
+  "t": 46.874,
+  "kind": "ting",
+  "src": "#m4-n3"
+ },
+ {
+  "t": 47.849,
+  "kind": "ting",
+  "src": "#m4-b"
+ },
+ {
+  "t": 48.289,
+  "kind": "press",
+  "src": "#m4-bi"
+ },
+ {
+  "t": 49.08,
+  "kind": "whoosh_out",
+  "src": "m4-reset"
+ },
+ {
+  "t": 49.1,
+  "kind": "whoosh_in",
+  "src": "b3-tangga"
+ },
+ {
+  "t": 50.041,
+  "kind": "label",
+  "src": "#b3-tangga-l1"
+ },
+ {
+  "t": 51.18,
+  "kind": "whoosh_out",
+  "src": "b3-tangga"
+ },
+ {
+  "t": 51.667,
+  "kind": "swish",
+  "src": "c06-efektif"
+ },
+ {
+  "t": 51.733,
+  "kind": "ting",
+  "src": "#c06-efektif-kicker"
+ },
+ {
+  "t": 54.067,
+  "kind": "whoosh_in",
+  "src": "b4-klinik"
+ },
+ {
+  "t": 55.48,
+  "kind": "label",
+  "src": "#b4-klinik-l1"
+ },
+ {
+  "t": 57.28,
+  "kind": "whoosh_out",
+  "src": "b4-klinik"
+ },
+ {
+  "t": 58.6,
+  "kind": "swish",
+  "src": "c07-klinik"
+ },
+ {
+  "t": 58.7,
+  "kind": "ting",
+  "src": "#c07-klinik-kicker"
+ },
+ {
+  "t": 59.0,
+  "kind": "ting",
+  "src": "#c07-p1"
+ },
+ {
+  "t": 60.533,
+  "kind": "ting",
+  "src": "#c07-p2"
+ },
+ {
+  "t": 62.1,
+  "kind": "ting",
+  "src": "#c07-p3"
+ },
+ {
+  "t": 63.933,
+  "kind": "ting",
+  "src": "#c07-klinik-kicker2"
+ },
+ {
+  "t": 64.233,
+  "kind": "ting",
+  "src": "#c07-q1"
+ },
+ {
+  "t": 64.8,
+  "kind": "ting",
+  "src": "#c07-q2"
+ },
+ {
+  "t": 65.333,
+  "kind": "ting",
+  "src": "#c07-q3"
+ },
+ {
+  "t": 66.267,
+  "kind": "ting",
+  "src": "#c07-klinik-kicker3"
+ },
+ {
+  "t": 66.333,
+  "kind": "ting",
+  "src": "#c07-r1"
+ },
+ {
+  "t": 68.0,
+  "kind": "ting",
+  "src": "#c07-r2"
+ },
+ {
+  "t": 70.2,
+  "kind": "ting",
+  "src": "#c07-r3"
+ },
+ {
+  "t": 72.267,
+  "kind": "ting",
+  "src": "#c07-klinik-kicker4"
+ },
+ {
+  "t": 73.167,
+  "kind": "whoosh_in",
+  "src": "b5-keliru"
+ },
+ {
+  "t": 74.985,
+  "kind": "label",
+  "src": "#b5-keliru-l1"
+ },
+ {
+  "t": 76.313,
+  "kind": "whoosh_out",
+  "src": "b5-keliru"
+ },
+ {
+  "t": 76.467,
+  "kind": "swish",
+  "src": "c08-cta"
+ },
+ {
+  "t": 76.533,
+  "kind": "ting",
+  "src": "#c08-cta-kicker"
+ },
+ {
+  "t": 79.6,
+  "kind": "ting",
+  "src": "#c08-cta-kicker2"
+ },
+ {
+  "t": 81.2,
+  "kind": "ting",
+  "src": "#c08-cta-kicker3"
+ }
+]

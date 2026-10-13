@@ -99,9 +99,12 @@ CARDS = [
     {"id": "c04-withdrawal", "start": 28.95, "end": 32.55, "intent": "Risk #2: withdrawal symptoms; not every medicine", "pages": [
         (28.95, [
             ("kicker", chip("Kesan #2", RED), 29.0, "pop"),
-            ("st", '<div class="stamp">BUKAN SEMUA UBAT</div>', 31.27 - LEAD, "stamp"),
             ("t", '<div class="title">Withdrawal <span style="color:%s">symptom</span></div>' % RED, 29.16 - LEAD, "slide"),
             ("s", '<div class="sub">Gejala penarikan</div>', 30.12 - LEAD, "fade"),
+        ]),
+        (31.05, [   # the key warning gets its own page: the stamp would collide with the long title
+            ("kicker2", chip("Withdrawal symptom", RED), 31.1, "pop"),
+            ("st", '<div class="stamp big">BUKAN SEMUA UBAT</div>', 31.27 - LEAD + 0.08, "stampflow"),
         ]),
     ]},
     {"id": "c05-rawatan", "start": 41.05, "end": 43.6, "intent": "Risk #3: it damages the treatment process", "pages": [
@@ -248,6 +251,7 @@ CARD_CSS = f"""
 .stampflow {{ transform-origin:left center; padding-top:6px; }}
 .stamp {{ display:inline-block; transform:rotate(-6deg); border:5px solid {RED}; color:{RED}; border-radius:14px;
   font-weight:800; font-size:36px; letter-spacing:.04em; padding:6px 18px 2px; background:rgba(255,248,238,.92); }}
+.stamp.big {{ font-size:50px; padding:8px 24px 4px; }}
 .stamp.teal {{ border-color:{TEAL}; color:{TEAL}; font-size:72px; }}
 """
 

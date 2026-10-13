@@ -1,0 +1,1250 @@
+[
+ {
+  "start": 0.0,
+  "end": 3.26,
+  "text": "Doktor, saya dah sihat sikit. Saya nak berhenti ubat sendiri.",
+  "words": [
+   {
+    "text": "Doktor,",
+    "start": 0.0,
+    "end": 0.46
+   },
+   {
+    "text": "saya",
+    "start": 0.5,
+    "end": 0.7
+   },
+   {
+    "text": "dah",
+    "start": 0.7,
+    "end": 0.9
+   },
+   {
+    "text": "sihat",
+    "start": 0.9,
+    "end": 1.24
+   },
+   {
+    "text": "sikit.",
+    "start": 1.24,
+    "end": 1.56
+   },
+   {
+    "text": "Saya",
+    "start": 1.58,
+    "end": 1.96
+   },
+   {
+    "text": "nak",
+    "start": 1.96,
+    "end": 2.28
+   },
+   {
+    "text": "berhenti",
+    "start": 2.28,
+    "end": 2.66
+   },
+   {
+    "text": "ubat",
+    "start": 2.66,
+    "end": 3.08
+   },
+   {
+    "text": "sendiri.",
+    "start": 3.08,
+    "end": 3.26
+   }
+  ]
+ },
+ {
+  "start": 3.64,
+  "end": 4.78,
+  "text": "Tak apa ke, Doktor?",
+  "words": [
+   {
+    "text": "Tak",
+    "start": 3.64,
+    "end": 4.0
+   },
+   {
+    "text": "apa",
+    "start": 4.0,
+    "end": 4.14
+   },
+   {
+    "text": "ke,",
+    "start": 4.14,
+    "end": 4.44
+   },
+   {
+    "text": "Doktor?",
+    "start": 4.48,
+    "end": 4.78
+   }
+  ]
+ },
+ {
+  "start": 4.9,
+  "end": 7.12,
+  "text": "Assalamualaikum, saya Doktor Azrin, Doktor Sekretari.",
+  "words": [
+   {
+    "text": "Assalamualaikum,",
+    "start": 4.9,
+    "end": 5.44
+   },
+   {
+    "text": "saya",
+    "start": 5.66,
+    "end": 5.8
+   },
+   {
+    "text": "Doktor",
+    "start": 5.8,
+    "end": 6.04
+   },
+   {
+    "text": "Azrin,",
+    "start": 6.04,
+    "end": 6.3
+   },
+   {
+    "text": "Doktor",
+    "start": 6.46,
+    "end": 6.74
+   },
+   {
+    "text": "Sekretari.",
+    "start": 6.74,
+    "end": 7.12
+   }
+  ]
+ },
+ {
+  "start": 7.3,
+  "end": 8.1,
+  "text": "Jom kita sembang sekejap.",
+  "words": [
+   {
+    "text": "Jom",
+    "start": 7.3,
+    "end": 7.46
+   },
+   {
+    "text": "kita",
+    "start": 7.46,
+    "end": 7.54
+   },
+   {
+    "text": "sembang",
+    "start": 7.54,
+    "end": 7.92
+   },
+   {
+    "text": "sekejap.",
+    "start": 7.92,
+    "end": 8.1
+   }
+  ]
+ },
+ {
+  "start": 8.24,
+  "end": 12.58,
+  "text": "Apa jadi kalau kita skip ubat sekretari tanpa bincang dengan Doktor?",
+  "words": [
+   {
+    "text": "Apa",
+    "start": 8.24,
+    "end": 8.5
+   },
+   {
+    "text": "jadi",
+    "start": 8.5,
+    "end": 8.76
+   },
+   {
+    "text": "kalau",
+    "start": 8.76,
+    "end": 9.1
+   },
+   {
+    "text": "kita",
+    "start": 9.1,
+    "end": 9.6
+   },
+   {
+    "text": "skip",
+    "start": 9.6,
+    "end": 10.02
+   },
+   {
+    "text": "ubat",
+    "start": 10.02,
+    "end": 10.5
+   },
+   {
+    "text": "sekretari",
+    "start": 10.5,
+    "end": 10.98
+   },
+   {
+    "text": "tanpa",
+    "start": 10.98,
+    "end": 11.58
+   },
+   {
+    "text": "bincang",
+    "start": 11.58,
+    "end": 12.06
+   },
+   {
+    "text": "dengan",
+    "start": 12.06,
+    "end": 12.18
+   },
+   {
+    "text": "Doktor?",
+    "start": 12.18,
+    "end": 12.58
+   }
+  ]
+ },
+ {
+  "start": 12.68,
+  "end": 14.6,
+  "text": "Yang pertama, risiko relapse.",
+  "words": [
+   {
+    "text": "Yang",
+    "start": 12.68,
+    "end": 13.14
+   },
+   {
+    "text": "pertama,",
+    "start": 13.14,
+    "end": 13.44
+   },
+   {
+    "text": "risiko",
+    "start": 13.72,
+    "end": 14.14
+   },
+   {
+    "text": "relapse.",
+    "start": 14.14,
+    "end": 14.6
+   }
+  ]
+ },
+ {
+  "start": 14.8,
+  "end": 16.66,
+  "text": "Gejala berulang berlaku semula.",
+  "words": [
+   {
+    "text": "Gejala",
+    "start": 14.8,
+    "end": 15.18
+   },
+   {
+    "text": "berulang",
+    "start": 15.18,
+    "end": 15.9
+   },
+   {
+    "text": "berlaku",
+    "start": 15.9,
+    "end": 16.26
+   },
+   {
+    "text": "semula.",
+    "start": 16.26,
+    "end": 16.66
+   }
+  ]
+ },
+ {
+  "start": 16.74,
+  "end": 18.74,
+  "text": "Ubat sekretari ni macam pelindung untuk kita.",
+  "words": [
+   {
+    "text": "Ubat",
+    "start": 16.74,
+    "end": 16.88
+   },
+   {
+    "text": "sekretari",
+    "start": 16.88,
+    "end": 17.36
+   },
+   {
+    "text": "ni",
+    "start": 17.36,
+    "end": 17.48
+   },
+   {
+    "text": "macam",
+    "start": 17.48,
+    "end": 17.7
+   },
+   {
+    "text": "pelindung",
+    "start": 17.7,
+    "end": 18.32
+   },
+   {
+    "text": "untuk",
+    "start": 18.32,
+    "end": 18.52
+   },
+   {
+    "text": "kita.",
+    "start": 18.52,
+    "end": 18.74
+   }
+  ]
+ },
+ {
+  "start": 18.82,
+  "end": 22.48,
+  "text": "Bila kita stop tiba-tiba, otak kita boleh jadi tak stabil semula.",
+  "words": [
+   {
+    "text": "Bila",
+    "start": 18.82,
+    "end": 19.02
+   },
+   {
+    "text": "kita",
+    "start": 19.02,
+    "end": 19.18
+   },
+   {
+    "text": "stop",
+    "start": 19.18,
+    "end": 19.58
+   },
+   {
+    "text": "tiba",
+    "start": 19.58,
+    "end": 19.92
+   },
+   {
+    "text": "-tiba,",
+    "start": 19.92,
+    "end": 20.22
+   },
+   {
+    "text": "otak",
+    "start": 20.32,
+    "end": 20.84
+   },
+   {
+    "text": "kita",
+    "start": 20.84,
+    "end": 21.02
+   },
+   {
+    "text": "boleh",
+    "start": 21.02,
+    "end": 21.32
+   },
+   {
+    "text": "jadi",
+    "start": 21.32,
+    "end": 21.56
+   },
+   {
+    "text": "tak",
+    "start": 21.56,
+    "end": 21.78
+   },
+   {
+    "text": "stabil",
+    "start": 21.78,
+    "end": 22.08
+   },
+   {
+    "text": "semula.",
+    "start": 22.08,
+    "end": 22.48
+   }
+  ]
+ },
+ {
+  "start": 22.86,
+  "end": 26.48,
+  "text": "Contohnya, boleh dapat mood swing balik, rasa cemas semakin menjadi jadi",
+  "words": [
+   {
+    "text": "Contohnya,",
+    "start": 22.86,
+    "end": 23.42
+   },
+   {
+    "text": "boleh",
+    "start": 23.44,
+    "end": 23.54
+   },
+   {
+    "text": "dapat",
+    "start": 23.54,
+    "end": 23.78
+   },
+   {
+    "text": "mood",
+    "start": 23.78,
+    "end": 24.32
+   },
+   {
+    "text": "swing",
+    "start": 24.32,
+    "end": 24.58
+   },
+   {
+    "text": "balik,",
+    "start": 24.58,
+    "end": 25.04
+   },
+   {
+    "text": "rasa",
+    "start": 25.04,
+    "end": 25.4
+   },
+   {
+    "text": "cemas",
+    "start": 25.4,
+    "end": 25.76
+   },
+   {
+    "text": "semakin",
+    "start": 25.76,
+    "end": 26.08
+   },
+   {
+    "text": "menjadi",
+    "start": 26.08,
+    "end": 26.22
+   },
+   {
+    "text": "jadi",
+    "start": 26.22,
+    "end": 26.48
+   }
+  ]
+ },
+ {
+  "start": 26.48,
+  "end": 28.48,
+  "text": "atau sampai tahap boleh masuk wad balik.",
+  "words": [
+   {
+    "text": "atau",
+    "start": 26.48,
+    "end": 26.76
+   },
+   {
+    "text": "sampai",
+    "start": 26.76,
+    "end": 27.1
+   },
+   {
+    "text": "tahap",
+    "start": 27.1,
+    "end": 27.56
+   },
+   {
+    "text": "boleh",
+    "start": 27.56,
+    "end": 27.72
+   },
+   {
+    "text": "masuk",
+    "start": 27.72,
+    "end": 28.0
+   },
+   {
+    "text": "wad",
+    "start": 28.0,
+    "end": 28.2
+   },
+   {
+    "text": "balik.",
+    "start": 28.2,
+    "end": 28.48
+   }
+  ]
+ },
+ {
+  "start": 28.48,
+  "end": 40.86,
+  "text": "Yang kedua, withdrawal symptom, gejala penaikan. Bukan semua tapi ada ubat bila berhenti secara mengejut boleh dapat simptom-simptom seperti rasa loya, pening kepala, tangguhan tidur, rasa emosi huru-hara, otak jadi serabut.",
+  "words": [
+   {
+    "text": "Yang",
+    "start": 28.48,
+    "end": 28.7
+   },
+   {
+    "text": "kedua,",
+    "start": 28.7,
+    "end": 29.08
+   },
+   {
+    "text": "withdrawal",
+    "start": 29.1,
+    "end": 29.28
+   },
+   {
+    "text": "symptom,",
+    "start": 29.28,
+    "end": 29.76
+   },
+   {
+    "text": "gejala",
+    "start": 30.0,
+    "end": 30.24
+   },
+   {
+    "text": "penaikan.",
+    "start": 30.24,
+    "end": 30.7
+   },
+   {
+    "text": "Bukan",
+    "start": 30.86,
+    "end": 31.42
+   },
+   {
+    "text": "semua",
+    "start": 31.42,
+    "end": 31.64
+   },
+   {
+    "text": "tapi",
+    "start": 31.64,
+    "end": 31.96
+   },
+   {
+    "text": "ada",
+    "start": 31.96,
+    "end": 32.28
+   },
+   {
+    "text": "ubat",
+    "start": 32.28,
+    "end": 32.68
+   },
+   {
+    "text": "bila",
+    "start": 32.68,
+    "end": 32.98
+   },
+   {
+    "text": "berhenti",
+    "start": 32.98,
+    "end": 33.54
+   },
+   {
+    "text": "secara",
+    "start": 33.54,
+    "end": 34.02
+   },
+   {
+    "text": "mengejut",
+    "start": 34.02,
+    "end": 34.42
+   },
+   {
+    "text": "boleh",
+    "start": 34.42,
+    "end": 34.6
+   },
+   {
+    "text": "dapat",
+    "start": 34.6,
+    "end": 34.84
+   },
+   {
+    "text": "simptom",
+    "start": 34.84,
+    "end": 35.44
+   },
+   {
+    "text": "-simptom",
+    "start": 35.44,
+    "end": 35.9
+   },
+   {
+    "text": "seperti",
+    "start": 35.9,
+    "end": 36.12
+   },
+   {
+    "text": "rasa",
+    "start": 36.12,
+    "end": 36.48
+   },
+   {
+    "text": "loya,",
+    "start": 36.48,
+    "end": 36.84
+   },
+   {
+    "text": "pening",
+    "start": 36.96,
+    "end": 37.22
+   },
+   {
+    "text": "kepala,",
+    "start": 37.22,
+    "end": 37.62
+   },
+   {
+    "text": "tangguhan",
+    "start": 37.66,
+    "end": 37.98
+   },
+   {
+    "text": "tidur,",
+    "start": 37.98,
+    "end": 38.44
+   },
+   {
+    "text": "rasa",
+    "start": 38.5,
+    "end": 38.7
+   },
+   {
+    "text": "emosi",
+    "start": 38.7,
+    "end": 39.2
+   },
+   {
+    "text": "huru",
+    "start": 39.2,
+    "end": 39.36
+   },
+   {
+    "text": "-hara,",
+    "start": 39.36,
+    "end": 39.64
+   },
+   {
+    "text": "otak",
+    "start": 39.84,
+    "end": 40.12
+   },
+   {
+    "text": "jadi",
+    "start": 40.12,
+    "end": 40.26
+   },
+   {
+    "text": "serabut.",
+    "start": 40.26,
+    "end": 40.86
+   }
+  ]
+ },
+ {
+  "start": 41.06,
+  "end": 51.24,
+  "text": "Yang ketiga, boleh merosakkan proses rawatan. Setiap kali stop, start ubat. Stop, start, stop, start. Macam kita tekan reset button balik, ambat sembuhnya. Kena mula balik daripada bawah.",
+  "words": [
+   {
+    "text": "Yang",
+    "start": 41.06,
+    "end": 41.2
+   },
+   {
+    "text": "ketiga,",
+    "start": 41.2,
+    "end": 41.62
+   },
+   {
+    "text": "boleh",
+    "start": 41.62,
+    "end": 41.76
+   },
+   {
+    "text": "merosakkan",
+    "start": 41.76,
+    "end": 42.4
+   },
+   {
+    "text": "proses",
+    "start": 42.4,
+    "end": 42.94
+   },
+   {
+    "text": "rawatan.",
+    "start": 42.94,
+    "end": 43.42
+   },
+   {
+    "text": "Setiap",
+    "start": 43.52,
+    "end": 44.02
+   },
+   {
+    "text": "kali",
+    "start": 44.02,
+    "end": 44.3
+   },
+   {
+    "text": "stop,",
+    "start": 44.3,
+    "end": 44.68
+   },
+   {
+    "text": "start",
+    "start": 44.8,
+    "end": 44.94
+   },
+   {
+    "text": "ubat.",
+    "start": 44.94,
+    "end": 45.52
+   },
+   {
+    "text": "Stop,",
+    "start": 45.56,
+    "end": 45.98
+   },
+   {
+    "text": "start,",
+    "start": 46.12,
+    "end": 46.42
+   },
+   {
+    "text": "stop,",
+    "start": 46.48,
+    "end": 46.72
+   },
+   {
+    "text": "start.",
+    "start": 46.78,
+    "end": 46.96
+   },
+   {
+    "text": "Macam",
+    "start": 47.12,
+    "end": 47.42
+   },
+   {
+    "text": "kita",
+    "start": 47.42,
+    "end": 47.72
+   },
+   {
+    "text": "tekan",
+    "start": 47.72,
+    "end": 48.14
+   },
+   {
+    "text": "reset",
+    "start": 48.14,
+    "end": 48.4
+   },
+   {
+    "text": "button",
+    "start": 48.4,
+    "end": 48.7
+   },
+   {
+    "text": "balik,",
+    "start": 48.7,
+    "end": 49.08
+   },
+   {
+    "text": "ambat",
+    "start": 49.1,
+    "end": 49.38
+   },
+   {
+    "text": "sembuhnya.",
+    "start": 49.38,
+    "end": 49.88
+   },
+   {
+    "text": "Kena",
+    "start": 49.92,
+    "end": 50.04
+   },
+   {
+    "text": "mula",
+    "start": 50.04,
+    "end": 50.38
+   },
+   {
+    "text": "balik",
+    "start": 50.38,
+    "end": 50.66
+   },
+   {
+    "text": "daripada",
+    "start": 50.66,
+    "end": 50.92
+   },
+   {
+    "text": "bawah.",
+    "start": 50.92,
+    "end": 51.24
+   }
+  ]
+ },
+ {
+  "start": 51.24,
+  "end": 53.96,
+  "text": "Kadang-kadang ubat jadi tak efektif macam dulu lagi.",
+  "words": [
+   {
+    "text": "Kadang",
+    "start": 51.24,
+    "end": 51.48
+   },
+   {
+    "text": "-kadang",
+    "start": 51.48,
+    "end": 51.74
+   },
+   {
+    "text": "ubat",
+    "start": 51.74,
+    "end": 52.08
+   },
+   {
+    "text": "jadi",
+    "start": 52.08,
+    "end": 52.22
+   },
+   {
+    "text": "tak",
+    "start": 52.22,
+    "end": 52.42
+   },
+   {
+    "text": "efektif",
+    "start": 52.42,
+    "end": 53.3
+   },
+   {
+    "text": "macam",
+    "start": 53.3,
+    "end": 53.44
+   },
+   {
+    "text": "dulu",
+    "start": 53.44,
+    "end": 53.72
+   },
+   {
+    "text": "lagi.",
+    "start": 53.72,
+    "end": 53.96
+   }
+  ]
+ },
+ {
+  "start": 54.08,
+  "end": 54.72,
+  "text": "Saya ada berita baik.",
+  "words": [
+   {
+    "text": "Saya",
+    "start": 54.08,
+    "end": 54.16
+   },
+   {
+    "text": "ada",
+    "start": 54.16,
+    "end": 54.3
+   },
+   {
+    "text": "berita",
+    "start": 54.3,
+    "end": 54.48
+   },
+   {
+    "text": "baik.",
+    "start": 54.48,
+    "end": 54.72
+   }
+  ]
+ },
+ {
+  "start": 54.86,
+  "end": 62.72,
+  "text": "Di klinik saya dinilai, kami menyediakan servis konsultasi dan juga saringan kesihatan mental secara one-on-one.",
+  "words": [
+   {
+    "text": "Di",
+    "start": 54.86,
+    "end": 55.46
+   },
+   {
+    "text": "klinik",
+    "start": 55.46,
+    "end": 55.86
+   },
+   {
+    "text": "saya",
+    "start": 55.86,
+    "end": 55.98
+   },
+   {
+    "text": "dinilai,",
+    "start": 55.98,
+    "end": 56.62
+   },
+   {
+    "text": "kami",
+    "start": 56.64,
+    "end": 57.64
+   },
+   {
+    "text": "menyediakan",
+    "start": 57.64,
+    "end": 58.18
+   },
+   {
+    "text": "servis",
+    "start": 58.18,
+    "end": 58.8
+   },
+   {
+    "text": "konsultasi",
+    "start": 58.8,
+    "end": 59.98
+   },
+   {
+    "text": "dan",
+    "start": 59.98,
+    "end": 60.14
+   },
+   {
+    "text": "juga",
+    "start": 60.14,
+    "end": 60.36
+   },
+   {
+    "text": "saringan",
+    "start": 60.36,
+    "end": 60.94
+   },
+   {
+    "text": "kesihatan",
+    "start": 60.94,
+    "end": 61.38
+   },
+   {
+    "text": "mental",
+    "start": 61.38,
+    "end": 61.72
+   },
+   {
+    "text": "secara",
+    "start": 61.72,
+    "end": 62.04
+   },
+   {
+    "text": "one",
+    "start": 62.04,
+    "end": 62.32
+   },
+   {
+    "text": "-on",
+    "start": 62.32,
+    "end": 62.52
+   },
+   {
+    "text": "-one.",
+    "start": 62.52,
+    "end": 62.72
+   }
+  ]
+ },
+ {
+  "start": 62.74,
+  "end": 73.02,
+  "text": "Boleh bincang tentang isu kemurungan, anxiety, masalah tidur, nak start rawatan ataupun nak dapatkan second opinion sebelum ambil ubat, nak tentukan diagnosis, boleh datang klinik saya dinilai.",
+  "words": [
+   {
+    "text": "Boleh",
+    "start": 62.74,
+    "end": 63.04
+   },
+   {
+    "text": "bincang",
+    "start": 63.04,
+    "end": 63.56
+   },
+   {
+    "text": "tentang",
+    "start": 63.56,
+    "end": 63.72
+   },
+   {
+    "text": "isu",
+    "start": 63.72,
+    "end": 64.24
+   },
+   {
+    "text": "kemurungan,",
+    "start": 64.24,
+    "end": 64.82
+   },
+   {
+    "text": "anxiety,",
+    "start": 64.82,
+    "end": 65.06
+   },
+   {
+    "text": "masalah",
+    "start": 65.36,
+    "end": 65.68
+   },
+   {
+    "text": "tidur,",
+    "start": 65.68,
+    "end": 66.16
+   },
+   {
+    "text": "nak",
+    "start": 66.16,
+    "end": 66.34
+   },
+   {
+    "text": "start",
+    "start": 66.34,
+    "end": 66.52
+   },
+   {
+    "text": "rawatan",
+    "start": 66.52,
+    "end": 66.92
+   },
+   {
+    "text": "ataupun",
+    "start": 66.92,
+    "end": 67.32
+   },
+   {
+    "text": "nak",
+    "start": 67.32,
+    "end": 67.44
+   },
+   {
+    "text": "dapatkan",
+    "start": 67.44,
+    "end": 67.9
+   },
+   {
+    "text": "second",
+    "start": 67.9,
+    "end": 68.24
+   },
+   {
+    "text": "opinion",
+    "start": 68.24,
+    "end": 68.6
+   },
+   {
+    "text": "sebelum",
+    "start": 68.6,
+    "end": 69.26
+   },
+   {
+    "text": "ambil",
+    "start": 69.26,
+    "end": 69.38
+   },
+   {
+    "text": "ubat,",
+    "start": 69.38,
+    "end": 69.78
+   },
+   {
+    "text": "nak",
+    "start": 69.84,
+    "end": 70.2
+   },
+   {
+    "text": "tentukan",
+    "start": 70.2,
+    "end": 70.56
+   },
+   {
+    "text": "diagnosis,",
+    "start": 70.56,
+    "end": 70.82
+   },
+   {
+    "text": "boleh",
+    "start": 71.22,
+    "end": 71.56
+   },
+   {
+    "text": "datang",
+    "start": 71.56,
+    "end": 72.02
+   },
+   {
+    "text": "klinik",
+    "start": 72.02,
+    "end": 72.36
+   },
+   {
+    "text": "saya",
+    "start": 72.36,
+    "end": 72.48
+   },
+   {
+    "text": "dinilai.",
+    "start": 72.48,
+    "end": 73.02
+   }
+  ]
+ },
+ {
+  "start": 73.1,
+  "end": 80.96,
+  "text": "Kalau anda tengah keliru, patut teruskan rawatan ataupun tidak atau rasa nak mulakan rawatan tapi tak pasti, boleh jumpa dengan profesional kesihatan mental.",
+  "words": [
+   {
+    "text": "Kalau",
+    "start": 73.1,
+    "end": 73.3
+   },
+   {
+    "text": "anda",
+    "start": 73.3,
+    "end": 73.6
+   },
+   {
+    "text": "tengah",
+    "start": 73.6,
+    "end": 73.96
+   },
+   {
+    "text": "keliru,",
+    "start": 73.96,
+    "end": 74.38
+   },
+   {
+    "text": "patut",
+    "start": 74.4,
+    "end": 74.9
+   },
+   {
+    "text": "teruskan",
+    "start": 74.9,
+    "end": 75.42
+   },
+   {
+    "text": "rawatan",
+    "start": 75.42,
+    "end": 75.78
+   },
+   {
+    "text": "ataupun",
+    "start": 75.78,
+    "end": 76.08
+   },
+   {
+    "text": "tidak",
+    "start": 76.08,
+    "end": 76.3
+   },
+   {
+    "text": "atau",
+    "start": 76.3,
+    "end": 76.52
+   },
+   {
+    "text": "rasa",
+    "start": 76.52,
+    "end": 77.08
+   },
+   {
+    "text": "nak",
+    "start": 77.08,
+    "end": 77.24
+   },
+   {
+    "text": "mulakan",
+    "start": 77.24,
+    "end": 77.6
+   },
+   {
+    "text": "rawatan",
+    "start": 77.6,
+    "end": 77.96
+   },
+   {
+    "text": "tapi",
+    "start": 77.96,
+    "end": 78.18
+   },
+   {
+    "text": "tak",
+    "start": 78.18,
+    "end": 78.32
+   },
+   {
+    "text": "pasti,",
+    "start": 78.32,
+    "end": 78.58
+   },
+   {
+    "text": "boleh",
+    "start": 78.68,
+    "end": 78.84
+   },
+   {
+    "text": "jumpa",
+    "start": 78.84,
+    "end": 79.66
+   },
+   {
+    "text": "dengan",
+    "start": 79.66,
+    "end": 79.8
+   },
+   {
+    "text": "profesional",
+    "start": 79.8,
+    "end": 80.16
+   },
+   {
+    "text": "kesihatan",
+    "start": 80.16,
+    "end": 80.64
+   },
+   {
+    "text": "mental.",
+    "start": 80.64,
+    "end": 80.96
+   }
+  ]
+ },
+ {
+  "start": 81.24,
+  "end": 81.58,
+  "text": "Take care.",
+  "words": [
+   {
+    "text": "Take",
+    "start": 81.24,
+    "end": 81.38
+   },
+   {
+    "text": "care.",
+    "start": 81.38,
+    "end": 81.58
+   }
+  ]
+ }
+]
