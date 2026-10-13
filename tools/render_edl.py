@@ -13,6 +13,9 @@ that point stays fixed. Alternating zoom across jump cuts disguises them.
 
 Optional: per-range "gain_db" (level-match a softly delivered line) and EDL-level
 "tail_hold" seconds (freeze the last frame + silence so an end card can land).
+EDL-level "out_size" [w, h] upscales a smaller source (e.g. a 720x1280 export) in the same
+lanczos pass as the punch-in crop, with a light unsharp to offset the softening.
+EDL-level "hflip": true un-mirrors a front-camera recording (embroidered/printed text reads backwards).
 
 Loudness: two-pass loudnorm to -14 LUFS / -1 dBTP (audio-only second pass).
 
@@ -48,12 +51,14 @@ def probe_size(path: str) -> tuple[int, int]:
     return int(w), int(h)
 
 
-def zoom_filter(z: float, focus: list[float], w: int, h: int) -> str:
+def zoom_filter(z: float, focus: list[float], w: int, h: int, ow: int | None = None, oh: int | None = None) -> str:
+    ow, oh = ow or w, oh or h
+    sharpen = "unsharp=5:5:0.45:5:5:0," if (ow, oh) != (w, h) else ""
     if not z or z <= 1.0:
-        return ""
+        return f"scale={ow}:{oh}:flags=lanczos,setsar=1,{sharpen}" if (ow, oh) != (w, h) else ""
     cw, ch = int(w / z) // 2 * 2, int(h / z) // 2 * 2
     x, y = round((w - cw) * focus[0]), round((h - ch) * focus[1])
-    return f"crop={cw}:{ch}:{x}:{y},scale={w}:{h}:flags=lanczos,setsar=1,"
+    return f"crop={cw}:{ch}:{x}:{y},scale={ow}:{oh}:flags=lanczos,setsar=1,{sharpen}"
 
 
 def grade_filter(grade: str | None) -> str:
@@ -92,6 +97,7 @@ def main() -> None:
     fps = probe_fps(next(iter(sources.values())))
     width, height = probe_size(next(iter(sources.values())))
     focus = edl.get("zoom_focus", [0.5, 0.5])
+    ow, oh = edl.get("out_size", [width, height])
 
     inputs, chains, labels = [], [], []
     for i, r in enumerate(edl["ranges"]):
@@ -102,7 +108,8 @@ def main() -> None:
         # exact lengths: -ss/-t input seeking can emit one extra frame on short ranges, and concat then
         # pads the audio by that frame -> everything after drifts 33ms off the EDL timeline
         nf, ns = round((e - s) * fps), round(d * 48000)
-        chains.append(f"[{i}:v]trim=end_frame={nf},{zoom_filter(r.get('zoom', 1.0), focus, width, height)}"
+        flip = "hflip," if edl.get("hflip") else ""
+        chains.append(f"[{i}:v]trim=end_frame={nf},{flip}{zoom_filter(r.get('zoom', 1.0), focus, width, height, ow, oh)}"
                       f"setpts=PTS-STARTPTS[v{i}]")
         gain = f"volume={r['gain_db']}dB," if r.get("gain_db") else ""
         chains.append(f"[{i}:a]aresample=48000,atrim=end_sample={ns},{gain}asetpts=PTS-STARTPTS,"

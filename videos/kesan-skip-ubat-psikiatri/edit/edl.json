@@ -1,0 +1,383 @@
+{
+  "version": 1,
+  "sources": {
+    "skip": "/home/user/tiktokvideo/videos/kesan-skip-ubat-psikiatri/raw/skip.mp4"
+  },
+  "ranges": [
+    {
+      "source": "skip",
+      "start": 9.455,
+      "end": 11.845,
+      "beat": "HOOK",
+      "zoom": 1.0
+    },
+    {
+      "source": "skip",
+      "start": 12.185,
+      "end": 14.81,
+      "beat": "HOOK",
+      "reason": "Doktor, saya dah sihat sikit. Saya nak berhenti ubat sendiri. Takpe ke, doktor? — moved ahead of the greeting",
+      "zoom": 1.06
+    },
+    {
+      "source": "skip",
+      "start": 1.255,
+      "end": 2.845,
+      "beat": "INTRO",
+      "zoom": 1.02
+    },
+    {
+      "source": "skip",
+      "start": 2.955,
+      "end": 3.815,
+      "beat": "INTRO",
+      "reason": "Assalamualaikum, saya Dr Azren, doktor psikiatri. — pre-roll noise + 5.8s silent shot dropped",
+      "zoom": 1.07
+    },
+    {
+      "source": "skip",
+      "start": 51.035,
+      "end": 51.92,
+      "beat": "TOPIK",
+      "zoom": 1.0
+    },
+    {
+      "source": "skip",
+      "start": 52.24,
+      "end": 55.245,
+      "beat": "TOPIK",
+      "zoom": 1.06
+    },
+    {
+      "source": "skip",
+      "start": 55.53,
+      "end": 58.025,
+      "beat": "TOPIK",
+      "reason": "Jom kita sembang sekejap. Apa jadi kalau kita skip ubat psikiatri tanpa bincang dengan doktor? — 'Ok, berbalik kepada topik tadi' dropped (the plug moved to the end)",
+      "zoom": 1.02
+    },
+    {
+      "source": "skip",
+      "start": 58.455,
+      "end": 60.655,
+      "beat": "KESAN1",
+      "zoom": 1.07
+    },
+    {
+      "source": "skip",
+      "start": 60.905,
+      "end": 61.705,
+      "beat": "KESAN1",
+      "zoom": 1.0
+    },
+    {
+      "source": "skip",
+      "start": 62.075,
+      "end": 62.835,
+      "beat": "KESAN1",
+      "zoom": 1.06
+    },
+    {
+      "source": "skip",
+      "start": 62.955,
+      "end": 64.295,
+      "beat": "KESAN1",
+      "zoom": 1.02
+    },
+    {
+      "source": "skip",
+      "start": 64.555,
+      "end": 66.105,
+      "beat": "KESAN1",
+      "zoom": 1.07
+    },
+    {
+      "source": "skip",
+      "start": 66.595,
+      "end": 67.395,
+      "beat": "KESAN1",
+      "zoom": 1.0
+    },
+    {
+      "source": "skip",
+      "start": 67.755,
+      "end": 70.035,
+      "beat": "KESAN1",
+      "reason": "Yang pertama, risiko relapse… otak kita boleh jadi tak stabil semula.",
+      "zoom": 1.06
+    },
+    {
+      "source": "skip",
+      "start": 70.995,
+      "end": 72.795,
+      "beat": "KESAN1",
+      "zoom": 1.02
+    },
+    {
+      "source": "skip",
+      "start": 73.135,
+      "end": 73.405,
+      "beat": "KESAN1",
+      "zoom": 1.07
+    },
+    {
+      "source": "skip",
+      "start": 73.895,
+      "end": 74.275,
+      "beat": "KESAN1",
+      "zoom": 1.0
+    },
+    {
+      "source": "skip",
+      "start": 74.495,
+      "end": 75.285,
+      "beat": "KESAN1",
+      "zoom": 1.06
+    },
+    {
+      "source": "skip",
+      "start": 75.935,
+      "end": 76.245,
+      "beat": "KESAN1",
+      "zoom": 1.02
+    },
+    {
+      "source": "skip",
+      "start": 76.445,
+      "end": 78.0,
+      "beat": "KESAN1",
+      "reason": "Contohnya boleh dapat mood swing balik… masuk wad balik.",
+      "zoom": 1.07
+    },
+    {
+      "source": "skip",
+      "start": 78.48,
+      "end": 79.035,
+      "beat": "KESAN2",
+      "zoom": 1.0
+    },
+    {
+      "source": "skip",
+      "start": 79.405,
+      "end": 81.42,
+      "beat": "KESAN2",
+      "reason": "Yang kedua, withdrawal symptom, gejala penarikan.",
+      "zoom": 1.06
+    },
+    {
+      "source": "skip",
+      "start": 82.825,
+      "end": 86.195,
+      "beat": "KESAN2",
+      "zoom": 1.02
+    },
+    {
+      "source": "skip",
+      "start": 86.825,
+      "end": 89.255,
+      "beat": "KESAN2",
+      "zoom": 1.07
+    },
+    {
+      "source": "skip",
+      "start": 89.975,
+      "end": 90.705,
+      "beat": "KESAN2",
+      "zoom": 1.0
+    },
+    {
+      "source": "skip",
+      "start": 91.105,
+      "end": 92.005,
+      "beat": "KESAN2",
+      "zoom": 1.06
+    },
+    {
+      "source": "skip",
+      "start": 92.455,
+      "end": 92.695,
+      "beat": "KESAN2",
+      "zoom": 1.02
+    },
+    {
+      "source": "skip",
+      "start": 92.995,
+      "end": 95.3,
+      "beat": "KESAN2",
+      "reason": "Bukan semua tapi ada ubat… otak jadi serabut.",
+      "zoom": 1.07
+    },
+    {
+      "source": "skip",
+      "start": 97.22,
+      "end": 97.805,
+      "beat": "KESAN3",
+      "zoom": 1.0
+    },
+    {
+      "source": "skip",
+      "start": 97.895,
+      "end": 99.805,
+      "beat": "KESAN3",
+      "zoom": 1.06
+    },
+    {
+      "source": "skip",
+      "start": 100.815,
+      "end": 102.07,
+      "beat": "KESAN3",
+      "zoom": 1.02
+    },
+    {
+      "source": "skip",
+      "start": 102.4,
+      "end": 104.725,
+      "beat": "KESAN3",
+      "zoom": 1.07
+    },
+    {
+      "source": "skip",
+      "start": 105.055,
+      "end": 105.845,
+      "beat": "KESAN3",
+      "zoom": 1.0
+    },
+    {
+      "source": "skip",
+      "start": 106.365,
+      "end": 107.56,
+      "beat": "KESAN3",
+      "reason": "Yang ketiga, boleh merosakkan proses rawatan… macam kita tekan reset button balik.",
+      "zoom": 1.06
+    },
+    {
+      "source": "skip",
+      "start": 107.985,
+      "end": 110.135,
+      "beat": "KESAN3",
+      "zoom": 1.02
+    },
+    {
+      "source": "skip",
+      "start": 111.345,
+      "end": 112.195,
+      "beat": "KESAN3",
+      "zoom": 1.07
+    },
+    {
+      "source": "skip",
+      "start": 112.425,
+      "end": 114.415,
+      "beat": "KESAN3",
+      "reason": "Lambat sembuhnya… ubat jadi tak efektif macam dulu lagi.",
+      "zoom": 1.0
+    },
+    {
+      "source": "skip",
+      "start": 23.805,
+      "end": 25.265,
+      "beat": "PLUG",
+      "zoom": 1.06
+    },
+    {
+      "source": "skip",
+      "start": 25.585,
+      "end": 27.785,
+      "beat": "PLUG",
+      "zoom": 1.02
+    },
+    {
+      "source": "skip",
+      "start": 27.935,
+      "end": 35.045,
+      "beat": "PLUG",
+      "zoom": 1.07
+    },
+    {
+      "source": "skip",
+      "start": 35.345,
+      "end": 35.875,
+      "beat": "PLUG",
+      "zoom": 1.0
+    },
+    {
+      "source": "skip",
+      "start": 36.135,
+      "end": 36.965,
+      "beat": "PLUG",
+      "zoom": 1.06
+    },
+    {
+      "source": "skip",
+      "start": 38.255,
+      "end": 43.36,
+      "beat": "PLUG",
+      "zoom": 1.02
+    },
+    {
+      "source": "skip",
+      "start": 43.88,
+      "end": 45.72,
+      "beat": "PLUG",
+      "reason": "Saya ada berita baik. Di klinik saya di Nilai… boleh datang klinik saya di Nilai. — moved from 0:23; 'Sebelum tu' and abandoned take 1 (0:16.8) dropped",
+      "zoom": 1.07
+    },
+    {
+      "source": "skip",
+      "start": 115.295,
+      "end": 115.855,
+      "beat": "CTA",
+      "zoom": 1.0
+    },
+    {
+      "source": "skip",
+      "start": 116.175,
+      "end": 118.855,
+      "beat": "CTA",
+      "zoom": 1.06
+    },
+    {
+      "source": "skip",
+      "start": 119.685,
+      "end": 120.395,
+      "beat": "CTA",
+      "zoom": 1.02
+    },
+    {
+      "source": "skip",
+      "start": 120.875,
+      "end": 122.395,
+      "beat": "CTA",
+      "zoom": 1.07
+    },
+    {
+      "source": "skip",
+      "start": 123.225,
+      "end": 125.725,
+      "beat": "CTA",
+      "reason": "Kalau anda tengah keliru… boleh jumpa dengan profesional kesihatan mental. — 'atau boleh datang klinik saya di Nilai' dropped (the plug just said it)",
+      "zoom": 1.0
+    },
+    {
+      "source": "skip",
+      "start": 127.985,
+      "end": 128.715,
+      "beat": "CTA",
+      "reason": "Take care.",
+      "zoom": 1.06
+    }
+  ],
+  "grade": "subtle",
+  "out_size": [
+    1080,
+    1920
+  ],
+  "hflip": true,
+  "zoom_focus": [
+    0.5,
+    0.4
+  ],
+  "tail_hold": 2.0,
+  "overlays": [],
+  "total_duration_s": 84.05
+}
