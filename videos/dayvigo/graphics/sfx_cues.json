@@ -426,11 +426,6 @@
    "gain": -2
   },
   {
-   "t": 58.185,
-   "kind": "slap",
-   "gain": -2
-  },
-  {
    "t": 59.35,
    "kind": "whoosh_soft",
    "gain": -10

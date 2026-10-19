@@ -348,23 +348,23 @@ plan(HERO_T, "HERO: 'INSOMNIA' slams in BEHIND the head (subject matte), kicker 
 # --- B3: can't sleep — three sticky notes on the words
 s = HERO_END
 e = T("terutamanya insomnia") - 0.1
-b3 = (sticky("n31", "Susah nak tidur", 70, 250, 560, CREAM, rot=-4)
-      + sticky("n32", "Mudah terjaga waktu malam", 330, 480, 640, PAPER2, rot=3)
-      + sticky("n33", "Tidur tak lena", 120, 730, 520, CREAM, rot=-2))
+b3 = (sticky("n31", "Susah nak tidur", 70, 180, 560, CREAM, rot=-4)
+      + sticky("n32", "Mudah terjaga waktu malam", 200, 300, 840, PAPER2, rot=2)
+      + sticky("n33", "Tidur tak lena", 90, 420, 520, CREAM, rot=-2))
 insert("b3-condo", "broll", s, e, b3, [("#n31", T("susah nak tidur") - LEAD, "slap"), ("#n32", T("mudah terjaga") - LEAD, "slap"),
                                        ("#n33", T("tidur tak lena") - LEAD, "slap")], src="b3_toss_condo.mp4", push=(1.0, 1.06),
        amb="amb_night")
-plan(s, "B-roll (AI): Chinese Malaysian woman restless in a KL condo at night; 3 sticky notes slap on", "night ambience, 3 paper slaps")
+plan(s, "B-roll (AI): Malay woman (long-sleeved pyjamas, tudung sarung) restless in a KL condo at night; 3 sticky notes slap on", "night ambience, 3 paper slaps")
 
 # --- B4: anxiety + overthinking
 s = e
 e = T("kelebihan") - 0.15
 b4 = (kin("a0", '<span class="hand-o">terutamanya insomnia berkait dengan</span>', "top")
       + kin("a1", '<span class="box">ANXIETY</span>', "mid1") + kin("a2", '<span class="box o">OVERTHINKING</span>', "mid2"))
-insert("b4-office", "broll", s, e, b4, [("#a0", T("insomnia yang berkait") - LEAD, "rise"), ("#a1", T("anxiety") - LEAD, "slam"),
+insert("b4-office", "broll", s, e, b4, [("#a0", T("insomnia yang berkait") - LEAD, "rise"), ("#a0", T("anxiety") - LEAD - 0.16, "out"), ("#a1", T("anxiety") - LEAD, "slam"),
                                         ("#a2", T("overthinking") - LEAD, "slam")], src="b4_overthink_office.mp4", push=(1.0, 1.06),
        amb="amb_office")
-plan(s, "B-roll (AI): Indian Malaysian man in a late KL office, temples in hands; ANXIETY / OVERTHINKING slam in", "office hum, 2 bass hits")
+plan(s, "B-roll (AI): Malay man in a late KL office, temples in hands; ANXIETY / OVERTHINKING slam in", "office hum, 2 bass hits")
 
 # --- MG3: lower addiction risk vs benzodiazepines — a balance tips (no numbers, qualitative)
 s = T("kurang ketagihan") - 0.15
@@ -402,11 +402,10 @@ plan(s, "B-roll (AI): Malay man wakes refreshed, opens curtains to warm light; 2
 # --- B7: daytime drowsiness, especially early on
 s = T("ubat ni boleh menyebabkan mengantuk") - 0.1
 e = T("boleh menyebabkan mimpi") - 0.25
-b7 = (sticky("n71", "Mengantuk pada siang hari", 70, 200, 780, CREAM, rot=-3)
-      + sticky("n72", "terutamanya awal pengambilan ubat", 110, 330, 870, PAPER2, hand=True, rot=2))
-insert("b7-drowsy", "broll", s, e, b7, [("#n71", T("mengantuk pada siang") - LEAD, "slap"), ("#n72", T("awal pengambilan") - LEAD, "slap")],
+b7 = sticky("n71", 'Mengantuk pada siang hari<div class="subhand" id="n72">terutamanya awal pengambilan ubat</div>', 40, 1000, 640, CREAM, rot=-2)
+insert("b7-drowsy", "broll", s, e, b7, [("#n71", T("mengantuk pada siang") - LEAD, "slap"), ("#n72", T("awal pengambilan") - LEAD, "fade")],
        src="b7_tired_work.mp4", push=(1.0, 1.06), amb="amb_office")
-plan(s, "B-roll (AI): man yawning at his office desk; sticky 'Mengantuk pada siang hari' + handwritten 'terutamanya awal pengambilan'", "office hum, 2 slaps")
+plan(s, "B-roll (AI): Malay woman in tudung yawning at her office desk; sticky 'Mengantuk pada siang hari' + handwritten 'terutamanya awal pengambilan'", "office hum, 2 slaps")
 
 # --- MG4: not for everyone
 s = T("devigo ni bukan") - 0.12
@@ -447,8 +446,8 @@ plan(s, "MG: 'JANGAN TUNGGU LAGI' rubber stamp slam", "paper tear in, stamp impa
 # --- B8: professional assessment
 s = T("boleh buat penilaian") - 0.12
 e = T("ataupun boleh buat") - 0.1
-b8 = (sticky("n81", "Penilaian profesional kesihatan mental", 70, 200, 700, CREAM, rot=-2)
-      + sticky("n82", "Cari punca sebenar", 380, 360, 640, PAPER2, rot=3))
+b8 = (sticky("n81", "Penilaian profesional kesihatan mental", 40, 860, 560, CREAM, rot=-2)
+      + sticky("n82", "Cari punca sebenar", 70, 1110, 520, PAPER2, rot=3))
 insert("b8-consult", "broll", s, e, b8, [("#n81", T("penilaian daripada") - LEAD, "slap"), ("#n82", T("cari punca") - LEAD, "slap")],
        src="b8_consult.mp4", push=(1.0, 1.05), amb="amb_clinic")
 plan(s, "B-roll (AI): supportive consultation in a Malaysian clinic (over-the-shoulder, doctor unidentifiable); 2 stickies", "soft room tone, 2 slaps, hopeful swell")
@@ -643,6 +642,8 @@ def anim(sel, t, kind, rot=0):
         js(f"tl.fromTo('{sel}', {{opacity:0, scale:1.35, rotation:{rot + 9}}}, {{opacity:1, scale:1, rotation:{rot}, duration:0.26, ease:'power4.out'}}, {t});")
     elif kind == "slam":
         js(f"tl.fromTo('{sel}', {{opacity:0, scale:1.6}}, {{opacity:1, scale:1, duration:0.22, ease:'power4.out'}}, {t});")
+    elif kind == "out":
+        js(f"tl.to('{sel}', {{opacity:0, x:-80, duration:0.2, ease:'power4.in'}}, {t});")
     elif kind == "drop":
         js(f"tl.fromTo('{sel}', {{opacity:0, y:-160}}, {{opacity:1, y:0, duration:0.32, ease:'power3.in'}}, {t});")
     elif kind == "tip":
@@ -869,14 +870,15 @@ html, body {{ margin:0; padding:0; width:100%; height:100%; overflow:hidden; bac
   color:{CREAM}; text-shadow:0 6px 24px rgba(0,0,0,.45); opacity:0; }}
 .kin .huge {{ font-size:168px; }}
 .kin.low {{ top:330px; }} .kin.low2 {{ top:560px; }}
-.kin.top {{ top:260px; }} .kin.mid1 {{ top:440px; }} .kin.mid2 {{ top:620px; }}
+.kin.top {{ top:200px; }} .kin.mid1 {{ top:206px; }} .kin.mid2 {{ top:340px; }}  /* b4: his head reaches y~480 in the push-in */
 .kin-ico {{ width:104px; height:104px; vertical-align:-10px; margin-right:18px; }}
 .hand-o {{ font-family:"Caveat", cursive; font-weight:700; font-size:84px; color:{ORANGE}; }}
 .kin.top .hand-o {{ font-size:62px; color:{CREAM}; }}
-.box {{ display:inline-block; background:{CREAM}; color:{NAVY}; padding:6px 30px 0; font-size:128px; }}
+.box {{ display:inline-block; background:{CREAM}; color:{NAVY}; padding:6px 30px 0; font-size:108px; }}
 .box.o {{ background:{ORANGE}; color:{NAVY}; }}
 .sticky {{ position:absolute; padding:34px 34px 30px; font-weight:800; font-size:50px; line-height:1.1; color:{NAVY};
   background-image:{noise_bg(0.07, 7)}; box-shadow:0 16px 34px rgba(0,0,0,.38); opacity:0; }}
+.subhand {{ font-family:"Caveat", cursive; font-weight:700; font-size:52px; color:{MARKER}; margin-top:8px; opacity:0; }}
 .sticky.hand-note {{ font-family:"Caveat", cursive; font-weight:700; font-size:54px; color:{MARKER}; }}
 .stamp-lg {{ position:absolute; left:190px; top:1060px; width:700px; text-align:center; border:10px solid {MARKER}; color:{MARKER};
   background:rgba(245,240,232,.92); border-radius:18px; font-family:"Anton", sans-serif; font-size:118px; letter-spacing:.06em;

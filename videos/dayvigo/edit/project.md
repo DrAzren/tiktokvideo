@@ -71,3 +71,14 @@ music 26 dB under the voice in speech / 20 dB in pauses, SFX peaks ≈10 dB unde
 
 **Outstanding / for the user:** switch on TikTok's AI-generated label; optionally swap the bed for a
 licensed track in-app; the source clipping can only be fully fixed by re-recording with lower mic gain.
+
+### Session 1, round 3 — user feedback: Malay casting, clothed sleeper
+
+"Model dalam video tukar ke bangsa Melayu. Klip perempuan tidur tu bagi dia pakai baju."
+- Re-generated b3 (Malay woman, long-sleeved pyjamas + tudung sarung, fully clothed), b4 (Malay man;
+  2 rolls — the first read South Asian), b7 (Malay woman in tudung, for gender variety; b1/b5 are Malay
+  men), b8 (Malay woman in baju kurung + tudung). b1/b5/b6 were already Malay; b2 is a hand only.
+  5 × 8.75 = 43.75 credits. (Five Seedance 2.5 charges at 03:35, 175 credits, are not from this session.)
+- Re-placed overlays for the new framing: b3 notes in the skyline above her; b4 context line clears as
+  ANXIETY lands, boxes above his hair; b7 one combined note bottom-left over her arm; b8 notes over the
+  doctor's out-of-focus coat. Snapshots checked early + late in each clip (after the push-in).
