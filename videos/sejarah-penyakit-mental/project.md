@@ -61,3 +61,18 @@ The end screen adds support lines: Talian HEAL 15555 and Befrienders KL 03-7627 
 - Turn on YouTube's "altered or synthetic content" disclosure.
 - Verify the helplines.
 - Optionally swap in a licensed orchestral track; the stems are in `audio/`.
+
+**Deliverables:**
+- `final_4k.mp4`: 3840×2160, 24 fps, 120.000 s, H.264 with AAC 320k. Text and graphics are rendered at native 4K
+  (DPR 2); the AI clips are 1080p, upscaled.
+- `final_1080.mp4`: downscaled from the 4K master.
+- `final_share_720p.mp4`: 33 MB review copy.
+- `sejarah-penyakit-mental_ms.srt`: editable captions.
+
+**QA:**
+- Duration is exactly 120.000 s (2880 frames). The only black is 0–0.125 s, the fade-in from black.
+- Integrated loudness −14.0 LUFS, true peak −1.3 dBFS, LRA 2.2 LU.
+- Music and SFX sit 15 dB under the voice during speech.
+- Snapshots were checked at every transition. Fixed after QA: the "Mula digunakan…" line lingered until the end,
+  and the STIGMA fade overlapped the recap card.
+- Rebuild with `doc/assemble.sh 4k`. The 4K render takes about 65 min on this container, using screenshot capture.
