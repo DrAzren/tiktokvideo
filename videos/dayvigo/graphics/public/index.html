@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8" />
+<style>
+@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-500.woff2") format("woff2");font-weight:500;font-display:block;}@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-700.woff2") format("woff2");font-weight:700;font-display:block;}@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-800.woff2") format("woff2");font-weight:800;font-display:block;}@font-face{font-family:"Anton";src:url("fonts/Anton-400.woff2") format("woff2");font-weight:400;font-display:block;}@font-face{font-family:"DM Serif Display";src:url("fonts/DMSerifDisplay-400.woff2") format("woff2");font-weight:400;font-display:block;}@font-face{font-family:"Caveat";src:url("fonts/Caveat-700-latin.woff2") format("woff2");font-weight:700;font-display:block;}
+* { box-sizing:border-box; }
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; background:#101C2C; font-family:"Plus Jakarta Sans", sans-serif; }
+#stage { position:relative; width:100%; height:100%; overflow:hidden; background:#101C2C; }
+#bg-video { position:absolute; left:0; top:0; width:1080px; height:1920px; object-fit:cover; }
+.serif { font-family:"DM Serif Display", serif; font-weight:400; letter-spacing:0; }
+.teal { color:#18A9A2; } .o { color:#F5AA55; } .o2 { color:#E8643A; }
+.tape { position:absolute; width:120px; height:34px; background:rgba(255,255,255,.55); box-shadow:0 1px 3px rgba(0,0,0,.12);
+  top:-14px; left:50%; margin-left:-60px; }
+.tape.tl { left:34px; margin-left:0; top:-4px; width:110px; height:30px; background:rgba(245,170,85,.55); }
+.hand { font-family:"Caveat", cursive; font-weight:700; font-size:40px; color:#E8643A; }
+.hand.big { font-size:66px; color:#101C2C; }
+
+/* ---- cards (headroom) */
+.card-host { position:absolute; left:0; top:0; width:1080px; height:1920px; pointer-events:none; z-index:10; }
+.paper-card { position:absolute; left:56px; top:150px; width:968px; display:grid; padding:30px 40px 40px;
+  background-color:#F5F0E8; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' seed='3'/><feColorMatrix values='0 0 0 0 .25  0 0 0 0 .2  0 0 0 0 .15  0 0 0 0.09 0'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>"); color:#101C2C; box-shadow:0 18px 40px rgba(6,14,24,.35); }
+.page { grid-area:1/1; opacity:0; align-self:start; }
+.page > .el + .el { margin-top:12px; }
+.chip { display:inline-flex; align-items:center; gap:10px; color:#fff; font-weight:800; font-size:27px; letter-spacing:.08em;
+  text-transform:uppercase; padding:9px 20px 8px; border-radius:999px; }
+.chip-ico { width:28px; height:28px; }
+.title { font-weight:800; font-size:56px; line-height:1.08; letter-spacing:-.015em; }
+.title .serif { font-size:66px; }
+.title.sm { font-size:48px; }
+.title.inl { display:inline-block; margin-right:16px; }
+.el.inl-wrap { display:inline-block; }
+#c02-orexin-w1, #c02-orexin-w2, #c02-orexin-w3 { display:inline-block; margin-right:14px; margin-top:12px; }
+.sub { font-weight:700; font-size:38px; color:#3E4B59; }
+.hl { background:linear-gradient(#F5AA55, #F5AA55) left 88%/0% 42% no-repeat; padding:0 4px; }
+.hl.o { color:#101C2C; }
+.row { display:flex; align-items:center; gap:18px; font-weight:700; font-size:42px; line-height:1.12; }
+.disc { width:52px; height:52px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; flex:none; }
+.dico { width:32px; height:32px; }
+.pills { display:flex; gap:14px; flex-wrap:wrap; }
+.pill { display:inline-block; font-weight:800; font-size:38px; padding:10px 24px; border-radius:16px; background:#101C2C; color:#F5F0E8; }
+.stamp { display:inline-block; border:7px solid #E8643A; color:#E8643A; border-radius:14px; font-weight:800; font-size:62px;
+  letter-spacing:.06em; padding:4px 22px 0; font-family:"Anton", sans-serif; }
+.stamp.teal { border-color:#18A9A2; color:#18A9A2; }
+.name { font-weight:800; font-size:52px; display:flex; align-items:center; gap:18px; }
+.name .bar { width:6px; height:46px; background:#18A9A2; display:inline-block; }
+.name .ntag { font-family:"Caveat", cursive; font-weight:700; font-size:52px; color:#18A9A2; }
+#c07-mimpi-st { display:inline-block; }  /* rotate the stamp, not a 968px-wide row */
+#c07-mimpi-s { margin-top:18px; }
+.disc-note { font-weight:600; font-size:26px; color:#5A6672; letter-spacing:.02em; }
+
+/* ---- hero */
+.hero-host { position:absolute; left:0; top:0; width:1080px; height:1920px; z-index:5; pointer-events:none; }
+.hero { position:absolute; left:0; top:380px; width:1080px; text-align:center; font-family:"Anton", sans-serif; font-size:262px;
+  line-height:1; letter-spacing:.01em; color:#18A9A2; text-shadow:0 10px 30px rgba(6,14,24,.35); }
+
+/* ---- inserts */
+.ins { position:absolute; left:0; top:0; width:1080px; height:1920px; overflow:hidden; pointer-events:none; }
+.ins-in { position:absolute; inset:0; overflow:hidden; }
+.bvwrap { position:absolute; inset:0; transform-origin:50% 42%; }
+.bv { position:absolute; left:0; top:0; width:1080px; height:1920px; object-fit:cover; }
+.ov { position:absolute; inset:0; }
+.shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(8,16,28,.55) 0%, rgba(8,16,28,.12) 30%,
+  rgba(8,16,28,0) 52%, rgba(8,16,28,.32) 66%, rgba(8,16,28,.38) 76%, rgba(8,16,28,0) 88%); }
+.shade.hook { background:linear-gradient(180deg, rgba(8,16,28,.70) 0%, rgba(8,16,28,.45) 42%, rgba(8,16,28,.10) 62%, rgba(8,16,28,.35) 100%); }
+.ai-tag { position:absolute; left:48px; top:156px; font:700 22px "Plus Jakarta Sans"; letter-spacing:.1em; text-transform:uppercase;
+  color:rgba(255,255,255,.88); background:rgba(0,0,0,.36); padding:6px 13px 5px; border-radius:9px; }
+.kin { position:absolute; left:60px; width:960px; top:470px; text-align:center; font-family:"Anton", sans-serif; font-size:118px; line-height:1.02;
+  color:#F5F0E8; text-shadow:0 6px 24px rgba(0,0,0,.45); opacity:0; }
+.kin .huge { font-size:168px; }
+.kin.low { top:330px; } .kin.low2 { top:560px; }
+.kin.top { top:260px; } .kin.mid1 { top:440px; } .kin.mid2 { top:620px; }
+.kin-ico { width:104px; height:104px; vertical-align:-10px; margin-right:18px; }
+.hand-o { font-family:"Caveat", cursive; font-weight:700; font-size:84px; color:#F5AA55; }
+.kin.top .hand-o { font-size:62px; color:#F5F0E8; }
+.box { display:inline-block; background:#F5F0E8; color:#101C2C; padding:6px 30px 0; font-size:128px; }
+.box.o { background:#F5AA55; color:#101C2C; }
+.sticky { position:absolute; padding:34px 34px 30px; font-weight:800; font-size:50px; line-height:1.1; color:#101C2C;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' seed='7'/><feColorMatrix values='0 0 0 0 .25  0 0 0 0 .2  0 0 0 0 .15  0 0 0 0.07 0'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>"); box-shadow:0 16px 34px rgba(0,0,0,.38); opacity:0; }
+.sticky.hand-note { font-family:"Caveat", cursive; font-weight:700; font-size:54px; color:#E8643A; }
+.stamp-lg { position:absolute; left:190px; top:1060px; width:700px; text-align:center; border:10px solid #E8643A; color:#E8643A;
+  background:rgba(245,240,232,.92); border-radius:18px; font-family:"Anton", sans-serif; font-size:118px; letter-spacing:.06em;
+  padding:6px 0 0; opacity:0; }
+
+/* ---- motion-graphic scenes */
+.tear { position:absolute; top:0; left:0; width:90px; height:1920px; z-index:3; background-color:#F5F0E8;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' seed='5'/><feColorMatrix values='0 0 0 0 .25  0 0 0 0 .2  0 0 0 0 .15  0 0 0 0.12 0'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>"); box-shadow:-8px 0 18px rgba(0,0,0,.25); }
+.mg { position:absolute; inset:0; }
+.sheet { position:absolute; inset:0; background-color:#F5F0E8; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' seed='9'/><feColorMatrix values='0 0 0 0 .25  0 0 0 0 .2  0 0 0 0 .15  0 0 0 0.1 0'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>"); color:#101C2C; }
+.night { position:absolute; inset:0; background:radial-gradient(110% 70% at 70% 18%, #1C3550 0%, #101C2C 60%, #0A121D 100%); color:#F5F0E8; }
+.mg-head { position:absolute; left:80px; top:180px; }
+.mg-title { position:absolute; left:80px; top:262px; width:920px; font-weight:800; font-size:78px; line-height:1.05; letter-spacing:-.02em; }
+.mg-title .serif { font-size:96px; }
+.index { position:absolute; width:440px; height:250px; padding:34px 34px; background:#FFFDF8; box-shadow:0 16px 30px rgba(10,20,30,.22);
+  border-top:10px solid #18A9A2; opacity:0; }
+.index.i1 { left:70px; top:520px; } .index.i2 { left:560px; top:600px; }
+.index .lab { font-weight:700; font-size:26px; letter-spacing:.12em; text-transform:uppercase; color:#7A8794; }
+.index .drug { font-family:"DM Serif Display", serif; font-size:70px; margin-top:16px; }
+.xmark { position:absolute; left:90px; top:470px; width:900px; height:520px; }
+.xmark path { fill:none; stroke:#E8643A; stroke-width:22; stroke-linecap:round; stroke-dasharray:1; stroke-dashoffset:1; opacity:.92; }
+.note { position:absolute; left:110px; top:1040px; width:860px; font-family:"Caveat", cursive; font-weight:700; font-size:72px; color:#E8643A; }
+.note.small { top:1056px; font-size:58px; color:#5A6672; }
+.head { position:absolute; left:290px; top:300px; width:500px; height:600px; }
+.head path { fill:none; stroke:#F5F0E8; stroke-width:7; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:1; stroke-dashoffset:1; }
+.toggle { position:absolute; left:372px; top:470px; display:flex; align-items:center; gap:16px; opacity:0; }
+.tg-lab { font-weight:800; font-size:34px; letter-spacing:.12em; color:#F5F0E8; }
+.tg-track { position:relative; width:126px; height:66px; border-radius:40px; background:#F5AA55; display:inline-block; }
+.tg-knob { position:absolute; left:64px; top:6px; width:54px; height:54px; border-radius:50%; background:#fff; box-shadow:0 3px 8px rgba(0,0,0,.3); }
+.tg-state { font-weight:800; font-size:34px; color:#18A9A2; opacity:0; }
+.m2-txt { position:absolute; left:80px; top:940px; width:920px; text-align:center; font-family:"DM Serif Display", serif; font-size:104px; opacity:0; }
+.strike { background:linear-gradient(#E8643A, #E8643A) left 56%/0% 7px no-repeat; }
+.m2-sub { position:absolute; left:80px; top:1090px; width:920px; text-align:center; font-weight:700; font-size:42px; color:rgba(245,240,232,.82); opacity:0; }
+.scale { position:absolute; left:90px; top:470px; width:900px; height:560px; }
+.post { position:absolute; left:440px; top:120px; width:20px; height:420px; background:#101C2C; border-radius:8px; }
+.beam-wrap { position:absolute; left:40px; top:100px; width:820px; height:40px; transform-origin:50% 50%; }
+.beam { position:absolute; left:0; top:12px; width:820px; height:16px; background:#101C2C; border-radius:8px; }
+.pan { position:absolute; top:28px; width:300px; height:150px; border-left:4px solid #101C2C; border-right:4px solid #101C2C; }
+.pan.l { left:-20px; } .pan.r { left:540px; }
+.tag { position:absolute; left:-20px; bottom:-40px; width:340px; padding:22px 0 18px; text-align:center; font-weight:800; font-size:40px;
+  border-radius:16px; color:#fff; opacity:0; }
+.tag.t1 { background:#18A9A2; } .tag.t2 { background:#E8643A; padding:58px 0 54px; bottom:-76px; }
+.m3-lab { position:absolute; left:80px; top:1150px; width:920px; text-align:center; font-weight:700; font-size:54px; opacity:0; }
+.m3-lab b { background:linear-gradient(#F5AA55,#F5AA55) left 88%/100% 42% no-repeat; }
+.m4-big { position:relative; top:420px; text-align:center; font-family:"DM Serif Display", serif; font-size:140px; line-height:1.05; }
+.m4-big span { display:inline-block; opacity:0; }
+.m4-ul { position:absolute; left:160px; top:720px; width:760px; height:40px; }
+.m4-ul path { fill:none; stroke:#F5AA55; stroke-width:12; stroke-linecap:round; stroke-dasharray:1; stroke-dashoffset:1; }
+.m4-sub { top:860px; font-size:56px; }
+.m5-stamp { position:absolute; left:110px; top:560px; width:860px; text-align:center; border:14px solid #F5AA55; color:#F5AA55;
+  border-radius:24px; font-family:"Anton", sans-serif; font-size:136px; line-height:1.08; padding:26px 20px 14px; opacity:0; }
+
+/* ---- captions */
+.cap { position:absolute; left:140px; top:1292px; width:800px; height:140px; z-index:100; pointer-events:none; }
+.cap-in { width:100%; text-align:center; font-weight:800; font-size:64px; line-height:1.06; text-transform:uppercase; letter-spacing:.005em;
+  color:rgba(255,255,255,.55); -webkit-text-stroke:2px rgba(16,28,44,.55); paint-order:stroke fill;
+  text-shadow:0 4px 0 rgba(16,28,44,.45), 0 10px 26px rgba(0,0,0,.55); }
+.cap-in .w.on { color:#fff; }
+.cap-in .w.key.on { color:#F5AA55; }
+</style>
+</head>
+<body>
+<div id="stage" data-composition-id="dayvigo" data-start="0" data-duration="95.8333" data-fps="30" data-width="1080" data-height="1920">
+  <video id="bg-video" src="input-video.mp4" muted playsinline data-start="0" data-duration="95.8333" data-track-index="1"></video>
+  <div class="card-host clip" id="host-c01-dayvigo" data-start="7.1333" data-duration="7.2" data-track-index="3"><div class="paper-card" id="c01-dayvigo-panel" style="clip-path:polygon(0% 0%, 100% 0%, 100.00% calc(100% - 4.0px), 97.06% calc(100% - 7.4px), 94.12% calc(100% - 3.3px), 91.18% calc(100% - 8.7px), 88.24% calc(100% - 7.5px), 85.29% calc(100% - 4.6px), 82.35% calc(100% - 0.1px), 79.41% calc(100% - 7.4px), 76.47% calc(100% - 8.0px), 73.53% calc(100% - 5.4px), 70.59% calc(100% - 5.4px), 67.65% calc(100% - 3.9px), 64.71% calc(100% - 1.5px), 61.76% calc(100% - 2.9px), 58.82% calc(100% - 4.0px), 55.88% calc(100% - 4.6px), 52.94% calc(100% - 5.2px), 50.00% calc(100% - 5.3px), 47.06% calc(100% - 4.8px), 44.12% calc(100% - 8.6px), 41.18% calc(100% - 3.2px), 38.24% calc(100% - 7.9px), 35.29% calc(100% - 5.4px), 32.35% calc(100% - 2.9px), 29.41% calc(100% - 7.3px), 26.47% calc(100% - 5.5px), 23.53% calc(100% - 5.6px), 20.59% calc(100% - 3.2px), 17.65% calc(100% - 0.2px), 14.71% calc(100% - 3.3px), 11.76% calc(100% - 8.3px), 8.82% calc(100% - 0.9px), 5.88% calc(100% - 8.8px), 2.94% calc(100% - 4.0px), 0.00% calc(100% - 8.2px))"><span class="tape tl"></span><div class="page c01-dayvigo-p0" id="c01-dayvigo-page0"><div id="c01-dayvigo-k" class="el"><span class="chip" style="background:#18A9A2"><svg viewBox="0 0 48 48" class="chip-ico"><g stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M33 30A15 15 0 0 1 18 9a15 15 0 1 0 15 21z"/></g></svg>Ubat psikiatri</span></div><div id="c01-dayvigo-t" class="el"><div class="title ">Pernah dengar <span class="serif teal">Dayvigo</span>?</div></div><div id="c01-dayvigo-n" class="el"><div class="hand">lemborexant · ubat preskripsi</div></div></div><div class="page c01-dayvigo-p1" id="c01-dayvigo-page1"><div id="c01-dayvigo-k2" class="el"><span class="chip" style="background:#101C2C">Apa itu Dayvigo?</span></div><div id="c01-dayvigo-t2" class="el"><div class="title ">Ubat tidur <span class="hl">generasi baru</span></div></div></div></div></div>
+  <div class="card-host clip" id="host-c02-orexin" data-start="19.3" data-duration="3.8" data-track-index="3"><div class="paper-card" id="c02-orexin-panel" style="clip-path:polygon(0% 0%, 100% 0%, 100.00% calc(100% - 3.5px), 97.06% calc(100% - 8.5px), 94.12% calc(100% - 1.4px), 91.18% calc(100% - 2.2px), 88.24% calc(100% - 8.0px), 85.29% calc(100% - 6.7px), 82.35% calc(100% - 5.0px), 79.41% calc(100% - 1.9px), 76.47% calc(100% - 3.1px), 73.53% calc(100% - 8.6px), 70.59% calc(100% - 8.5px), 67.65% calc(100% - 6.9px), 64.71% calc(100% - 6.5px), 61.76% calc(100% - 8.0px), 58.82% calc(100% - 5.8px), 55.88% calc(100% - 4.2px), 52.94% calc(100% - 7.2px), 50.00% calc(100% - 0.7px), 47.06% calc(100% - 7.7px), 44.12% calc(100% - 0.6px), 41.18% calc(100% - 8.9px), 38.24% calc(100% - 2.7px), 35.29% calc(100% - 6.7px), 32.35% calc(100% - 0.8px), 29.41% calc(100% - 3.3px), 26.47% calc(100% - 8.0px), 23.53% calc(100% - 2.3px), 20.59% calc(100% - 2.2px), 17.65% calc(100% - 0.7px), 14.71% calc(100% - 3.6px), 11.76% calc(100% - 1.7px), 8.82% calc(100% - 1.7px), 5.88% calc(100% - 2.6px), 2.94% calc(100% - 5.9px), 0.00% calc(100% - 0.4px))"><span class="tape tl"></span><div class="page c02-orexin-p0" id="c02-orexin-page0"><div id="c02-orexin-k" class="el"><span class="chip" style="background:#18A9A2">Kumpulan ubat</span></div><div id="c02-orexin-w1" class="el"><div class="title inl"><span class="serif">Orexin</span></div></div><div id="c02-orexin-w2" class="el"><div class="title inl"><span class="serif">Receptor</span></div></div><div id="c02-orexin-w3" class="el"><div class="title inl"><span class="serif teal">Antagonist</span></div></div></div></div></div>
+  <div class="card-host clip" id="host-c03-senang" data-start="23.1333" data-duration="2.2667" data-track-index="3"><div class="paper-card" id="c03-senang-panel" style="clip-path:polygon(0% 0%, 100% 0%, 100.00% calc(100% - 4.7px), 97.06% calc(100% - 5.4px), 94.12% calc(100% - 6.3px), 91.18% calc(100% - 6.4px), 88.24% calc(100% - 3.8px), 85.29% calc(100% - 3.1px), 82.35% calc(100% - 7.2px), 79.41% calc(100% - 6.7px), 76.47% calc(100% - 9.0px), 73.53% calc(100% - 0.4px), 70.59% calc(100% - 2.5px), 67.65% calc(100% - 5.9px), 64.71% calc(100% - 5.9px), 61.76% calc(100% - 6.7px), 58.82% calc(100% - 4.1px), 55.88% calc(100% - 5.5px), 52.94% calc(100% - 4.1px), 50.00% calc(100% - 0.2px), 47.06% calc(100% - 8.8px), 44.12% calc(100% - 5.3px), 41.18% calc(100% - 7.7px), 38.24% calc(100% - 4.1px), 35.29% calc(100% - 6.2px), 32.35% calc(100% - 1.6px), 29.41% calc(100% - 8.0px), 26.47% calc(100% - 6.3px), 23.53% calc(100% - 7.0px), 20.59% calc(100% - 7.6px), 17.65% calc(100% - 8.3px), 14.71% calc(100% - 1.0px), 11.76% calc(100% - 1.3px), 8.82% calc(100% - 0.1px), 5.88% calc(100% - 1.4px), 2.94% calc(100% - 4.8px), 0.00% calc(100% - 0.7px))"><span class="tape tl"></span><div class="page c03-senang-p0" id="c03-senang-page0"><div id="c03-senang-n" class="el"><div class="hand big">Bahasa senang…</div></div></div></div></div>
+  <div class="card-host clip" id="host-c04-fungsi" data-start="30.2333" data-duration="4.1334" data-track-index="3"><div class="paper-card" id="c04-fungsi-panel" style="clip-path:polygon(0% 0%, 100% 0%, 100.00% calc(100% - 1.5px), 97.06% calc(100% - 8.5px), 94.12% calc(100% - 4.3px), 91.18% calc(100% - 6.7px), 88.24% calc(100% - 2.3px), 85.29% calc(100% - 0.2px), 82.35% calc(100% - 8.5px), 79.41% calc(100% - 7.2px), 76.47% calc(100% - 6.5px), 73.53% calc(100% - 1.4px), 70.59% calc(100% - 1.9px), 67.65% calc(100% - 7.5px), 64.71% calc(100% - 0.8px), 61.76% calc(100% - 7.4px), 58.82% calc(100% - 8.3px), 55.88% calc(100% - 1.6px), 52.94% calc(100% - 4.8px), 50.00% calc(100% - 6.1px), 47.06% calc(100% - 2.8px), 44.12% calc(100% - 4.5px), 41.18% calc(100% - 1.2px), 38.24% calc(100% - 5.7px), 35.29% calc(100% - 0.0px), 32.35% calc(100% - 4.0px), 29.41% calc(100% - 1.6px), 26.47% calc(100% - 7.2px), 23.53% calc(100% - 2.6px), 20.59% calc(100% - 2.5px), 17.65% calc(100% - 8.8px), 14.71% calc(100% - 7.2px), 11.76% calc(100% - 4.2px), 8.82% calc(100% - 5.7px), 5.88% calc(100% - 2.9px), 2.94% calc(100% - 1.0px), 0.00% calc(100% - 1.8px))"><span class="tape tl"></span><div class="page c04-fungsi-p0" id="c04-fungsi-page0"><div id="c04-fungsi-k" class="el"><span class="chip" style="background:#18A9A2">Fungsi utama</span></div><div id="c04-fungsi-t" class="el"><div class="title sm">Untuk merawat…</div></div></div></div></div>
+  <div class="card-host clip" id="host-c05-kelebihan" data-start="42.1667" data-duration="2.7" data-track-index="3"><div class="paper-card" id="c05-kelebihan-panel" style="clip-path:polygon(0% 0%, 100% 0%, 100.00% calc(100% - 3.5px), 97.06% calc(100% - 8.6px), 94.12% calc(100% - 4.4px), 91.18% calc(100% - 8.1px), 88.24% calc(100% - 0.8px), 85.29% calc(100% - 5.4px), 82.35% calc(100% - 4.5px), 79.41% calc(100% - 1.1px), 76.47% calc(100% - 1.7px), 73.53% calc(100% - 9.0px), 70.59% calc(100% - 4.6px), 67.65% calc(100% - 6.3px), 64.71% calc(100% - 7.8px), 61.76% calc(100% - 8.0px), 58.82% calc(100% - 7.9px), 55.88% calc(100% - 5.9px), 52.94% calc(100% - 5.3px), 50.00% calc(100% - 6.4px), 47.06% calc(100% - 4.5px), 44.12% calc(100% - 4.1px), 41.18% calc(100% - 3.7px), 38.24% calc(100% - 1.7px), 35.29% calc(100% - 6.2px), 32.35% calc(100% - 5.2px), 29.41% calc(100% - 6.1px), 26.47% calc(100% - 5.6px), 23.53% calc(100% - 6.9px), 20.59% calc(100% - 7.1px), 17.65% calc(100% - 2.7px), 14.71% calc(100% - 3.2px), 11.76% calc(100% - 1.3px), 8.82% calc(100% - 0.8px), 5.88% calc(100% - 5.9px), 2.94% calc(100% - 2.1px), 0.00% calc(100% - 7.0px))"><span class="tape tl"></span><div class="page c05-kelebihan-p0" id="c05-kelebihan-page0"><div id="c05-kelebihan-k" class="el"><span class="chip" style="background:#18A9A2"><svg viewBox="0 0 48 48" class="chip-ico"><g stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M9 25l9 9L39 13"/></g></svg>Kelebihan</span></div><div id="c05-kelebihan-r" class="el"><div class="row"><span class="disc" style="background:#18A9A2"><svg viewBox="0 0 48 48" class="dico"><g stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M9 25l9 9L39 13"/></g></svg></span><span>Tidur rasa lebih <b>natural</b></span></div></div></div></div></div>
+  <div class="card-host clip" id="host-c06-kesan" data-start="52.6667" data-duration="2.2666" data-track-index="3"><div class="paper-card" id="c06-kesan-panel" style="clip-path:polygon(0% 0%, 100% 0%, 100.00% calc(100% - 4.3px), 97.06% calc(100% - 8.5px), 94.12% calc(100% - 3.9px), 91.18% calc(100% - 1.5px), 88.24% calc(100% - 5.1px), 85.29% calc(100% - 6.5px), 82.35% calc(100% - 1.1px), 79.41% calc(100% - 0.8px), 76.47% calc(100% - 1.4px), 73.53% calc(100% - 1.7px), 70.59% calc(100% - 8.6px), 67.65% calc(100% - 8.7px), 64.71% calc(100% - 4.7px), 61.76% calc(100% - 3.2px), 58.82% calc(100% - 6.0px), 55.88% calc(100% - 4.4px), 52.94% calc(100% - 0.4px), 50.00% calc(100% - 7.0px), 47.06% calc(100% - 6.1px), 44.12% calc(100% - 1.4px), 41.18% calc(100% - 8.0px), 38.24% calc(100% - 3.5px), 35.29% calc(100% - 0.3px), 32.35% calc(100% - 5.9px), 29.41% calc(100% - 5.3px), 26.47% calc(100% - 4.6px), 23.53% calc(100% - 5.0px), 20.59% calc(100% - 6.2px), 17.65% calc(100% - 6.7px), 14.71% calc(100% - 5.6px), 11.76% calc(100% - 0.0px), 8.82% calc(100% - 1.0px), 5.88% calc(100% - 6.2px), 2.94% calc(100% - 5.4px), 0.00% calc(100% - 4.1px))"><span class="tape tl"></span><div class="page c06-kesan-p0" id="c06-kesan-page0"><div id="c06-kesan-k" class="el"><span class="chip" style="background:#E8643A"><svg viewBox="0 0 48 48" class="chip-ico"><g stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 6L44 41H4z"/><path d="M24 19v10M24 35v.5"/></g></svg>Kesan sampingan</span></div><div id="c06-kesan-t" class="el"><div class="title sm">Setiap ubat ada <span class="hl o">kesan sampingan</span></div></div></div></div></div>
+  <div class="card-host clip" id="host-c07-mimpi" data-start="59.6667" data-duration="6.3333" data-track-index="3"><div class="paper-card" id="c07-mimpi-panel" style="clip-path:polygon(0% 0%, 100% 0%, 100.00% calc(100% - 7.9px), 97.06% calc(100% - 6.8px), 94.12% calc(100% - 7.8px), 91.18% calc(100% - 2.9px), 88.24% calc(100% - 7.9px), 85.29% calc(100% - 8.4px), 82.35% calc(100% - 8.7px), 79.41% calc(100% - 8.0px), 76.47% calc(100% - 0.1px), 73.53% calc(100% - 6.9px), 70.59% calc(100% - 5.0px), 67.65% calc(100% - 0.7px), 64.71% calc(100% - 8.7px), 61.76% calc(100% - 2.6px), 58.82% calc(100% - 2.9px), 55.88% calc(100% - 3.4px), 52.94% calc(100% - 8.4px), 50.00% calc(100% - 4.8px), 47.06% calc(100% - 6.6px), 44.12% calc(100% - 8.0px), 41.18% calc(100% - 8.1px), 38.24% calc(100% - 5.3px), 35.29% calc(100% - 3.6px), 32.35% calc(100% - 0.2px), 29.41% calc(100% - 0.1px), 26.47% calc(100% - 3.8px), 23.53% calc(100% - 6.0px), 20.59% calc(100% - 4.4px), 17.65% calc(100% - 7.2px), 14.71% calc(100% - 5.9px), 11.76% calc(100% - 2.3px), 8.82% calc(100% - 5.5px), 5.88% calc(100% - 1.4px), 2.94% calc(100% - 5.7px), 0.00% calc(100% - 2.8px))"><span class="tape tl"></span><div class="page c07-mimpi-p0" id="c07-mimpi-page0"><div id="c07-mimpi-k" class="el"><span class="chip" style="background:#E8643A"><svg viewBox="0 0 48 48" class="chip-ico"><g stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 6L44 41H4z"/><path d="M24 19v10M24 35v.5"/></g></svg>Kesan sampingan</span></div><div id="c07-mimpi-r1" class="el"><div class="row"><span class="disc" style="background:#E8643A"><svg viewBox="0 0 48 48" class="dico"><g stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="24" cy="24" r="5" fill="currentColor"/></g></svg></span><span>Mimpi pelik-pelik</span></div></div><div id="c07-mimpi-r2" class="el"><div class="row"><span class="disc" style="background:#E8643A"><svg viewBox="0 0 48 48" class="dico"><g stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="24" cy="24" r="5" fill="currentColor"/></g></svg></span><span>Rasa lemah sementara</span></div></div></div><div class="page c07-mimpi-p1" id="c07-mimpi-page1"><div id="c07-mimpi-st" class="el"><div class="stamp teal">RINGAN</div></div><div id="c07-mimpi-s" class="el"><div class="sub">&amp; dikawal dengan dos yang sesuai</div></div></div></div></div>
+  <div class="card-host clip" id="host-c08-arahan" data-start="72.2667" data-duration="3.7666" data-track-index="3"><div class="paper-card" id="c08-arahan-panel" style="clip-path:polygon(0% 0%, 100% 0%, 100.00% calc(100% - 5.1px), 97.06% calc(100% - 2.8px), 94.12% calc(100% - 5.4px), 91.18% calc(100% - 6.5px), 88.24% calc(100% - 7.8px), 85.29% calc(100% - 3.1px), 82.35% calc(100% - 2.3px), 79.41% calc(100% - 4.0px), 76.47% calc(100% - 0.7px), 73.53% calc(100% - 5.4px), 70.59% calc(100% - 0.8px), 67.65% calc(100% - 3.7px), 64.71% calc(100% - 6.4px), 61.76% calc(100% - 4.8px), 58.82% calc(100% - 3.0px), 55.88% calc(100% - 4.6px), 52.94% calc(100% - 3.1px), 50.00% calc(100% - 7.5px), 47.06% calc(100% - 2.4px), 44.12% calc(100% - 1.8px), 41.18% calc(100% - 9.0px), 38.24% calc(100% - 5.9px), 35.29% calc(100% - 7.6px), 32.35% calc(100% - 4.4px), 29.41% calc(100% - 2.3px), 26.47% calc(100% - 6.5px), 23.53% calc(100% - 8.0px), 20.59% calc(100% - 2.5px), 17.65% calc(100% - 4.6px), 14.71% calc(100% - 1.9px), 11.76% calc(100% - 3.2px), 8.82% calc(100% - 7.6px), 5.88% calc(100% - 5.7px), 2.94% calc(100% - 6.9px), 0.00% calc(100% - 7.4px))"><span class="tape tl"></span><div class="page c08-arahan-p0" id="c08-arahan-page0"><div id="c08-arahan-k" class="el"><span class="chip" style="background:#101C2C"><svg viewBox="0 0 48 48" class="chip-ico"><g stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 6L44 41H4z"/><path d="M24 19v10M24 35v.5"/></g></svg>Penting</span></div><div id="c08-arahan-r1" class="el"><div class="row"><span class="disc" style="background:#18A9A2"><svg viewBox="0 0 48 48" class="dico"><g stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M9 25l9 9L39 13"/></g></svg></span><span>Ambil ikut <b>arahan doktor</b></span></div></div><div id="c08-arahan-r2" class="el"><div class="row"><span class="disc" style="background:#E8643A"><svg viewBox="0 0 48 48" class="dico"><g stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M12 12l24 24M36 12L12 36"/></g></svg></span><span>Elakkan <b>alkohol</b></span></div></div></div></div></div>
+  <div class="card-host clip" id="host-c09-lama" data-start="76.0333" data-duration="4.4334" data-track-index="3"><div class="paper-card" id="c09-lama-panel" style="clip-path:polygon(0% 0%, 100% 0%, 100.00% calc(100% - 2.3px), 97.06% calc(100% - 2.1px), 94.12% calc(100% - 6.0px), 91.18% calc(100% - 8.0px), 88.24% calc(100% - 3.5px), 85.29% calc(100% - 4.4px), 82.35% calc(100% - 6.9px), 79.41% calc(100% - 8.4px), 76.47% calc(100% - 3.0px), 73.53% calc(100% - 5.0px), 70.59% calc(100% - 7.0px), 67.65% calc(100% - 6.8px), 64.71% calc(100% - 3.4px), 61.76% calc(100% - 6.1px), 58.82% calc(100% - 8.4px), 55.88% calc(100% - 7.9px), 52.94% calc(100% - 1.4px), 50.00% calc(100% - 0.6px), 47.06% calc(100% - 0.9px), 44.12% calc(100% - 8.5px), 41.18% calc(100% - 7.5px), 38.24% calc(100% - 5.6px), 35.29% calc(100% - 6.3px), 32.35% calc(100% - 7.2px), 29.41% calc(100% - 4.2px), 26.47% calc(100% - 0.2px), 23.53% calc(100% - 8.2px), 20.59% calc(100% - 4.9px), 17.65% calc(100% - 6.0px), 14.71% calc(100% - 7.4px), 11.76% calc(100% - 0.7px), 8.82% calc(100% - 8.7px), 5.88% calc(100% - 3.4px), 2.94% calc(100% - 5.8px), 0.00% calc(100% - 0.1px))"><span class="tape tl"></span><div class="page c09-lama-p0" id="c09-lama-page0"><div id="c09-lama-t" class="el"><div class="title sm">Insomnia <span class="hl o">berpanjangan</span>?</div></div><div id="c09-lama-g" class="el"><div class="pills"><span class="pill" id="c09-p1">Emosi</span><span class="pill" id="c09-p2">Kerja</span><span class="pill" id="c09-p3">Kesihatan</span></div></div></div></div></div>
+  <div class="card-host clip" id="host-c10-soalan" data-start="91.8" data-duration="4.0333" data-track-index="3"><div class="paper-card" id="c10-soalan-panel" style="clip-path:polygon(0% 0%, 100% 0%, 100.00% calc(100% - 4.7px), 97.06% calc(100% - 5.4px), 94.12% calc(100% - 6.3px), 91.18% calc(100% - 6.4px), 88.24% calc(100% - 3.8px), 85.29% calc(100% - 3.1px), 82.35% calc(100% - 7.2px), 79.41% calc(100% - 6.7px), 76.47% calc(100% - 9.0px), 73.53% calc(100% - 0.4px), 70.59% calc(100% - 2.5px), 67.65% calc(100% - 5.9px), 64.71% calc(100% - 5.9px), 61.76% calc(100% - 6.7px), 58.82% calc(100% - 4.1px), 55.88% calc(100% - 5.5px), 52.94% calc(100% - 4.1px), 50.00% calc(100% - 0.2px), 47.06% calc(100% - 8.8px), 44.12% calc(100% - 5.3px), 41.18% calc(100% - 7.7px), 38.24% calc(100% - 4.1px), 35.29% calc(100% - 6.2px), 32.35% calc(100% - 1.6px), 29.41% calc(100% - 8.0px), 26.47% calc(100% - 6.3px), 23.53% calc(100% - 7.0px), 20.59% calc(100% - 7.6px), 17.65% calc(100% - 8.3px), 14.71% calc(100% - 1.0px), 11.76% calc(100% - 1.3px), 8.82% calc(100% - 0.1px), 5.88% calc(100% - 1.4px), 2.94% calc(100% - 4.8px), 0.00% calc(100% - 0.7px))"><span class="tape tl"></span><div class="page c10-soalan-p0" id="c10-soalan-page0"><div id="c10-soalan-n" class="el"><div class="name">Dr Azren <span class="bar"></span> <span class="ntag">Spread Positivity</span></div></div></div><div class="page c10-soalan-p1" id="c10-soalan-page1"><div id="c10-soalan-t" class="el"><div class="title sm">Ada soalan? <span class="teal">Komen di bawah</span></div></div><div id="c10-soalan-d" class="el"><div class="disc-note">Video pendidikan · bukan nasihat perubatan peribadi</div></div></div></div></div>
+  <div class="hero-host clip" id="hero-host" data-start="33.5333" data-duration="1.0667" data-track-index="2"><div class="hero" id="hero-word">INSOMNIA</div></div>
+  <div class="ins" id="b1-3am-in" style="z-index:20"><div class="bvwrap" id="b1-3am-cam"><video class="bv" id="b1-3am-v" src="broll/b1_3am.mp4" muted playsinline data-start="0.0" data-duration="6.8333" data-track-index="6"></video></div><div class="ov clip" id="b1-3am-ov" data-start="0.0" data-duration="6.8333" data-track-index="8"><div class="shade hook"></div><div class="ai-tag">Ilustrasi AI</div><div class="kin " id="h1">BADAN PENAT,</div><div class="kin " id="h2">MATA DAH <span class="o">TERPEJAM-PEJAM</span></div><div class="kin " id="h3">TAPI OTAK…</div><div class="kin " id="h4"><span class="huge o">STILL BUSY</span></div><div class="kin " id="h5">PUSING-PUSING</div><div class="kin " id="h6"><svg viewBox="0 0 48 48" class="kin-ico"><g stroke="#F5AA55" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M33 30A15 15 0 0 1 18 9a15 15 0 1 0 15 21z"/></g></svg>PUKUL <span class="o">3</span> PAGI</div></div></div>
+  <div class="ins clip" id="ins-m1-benzo" data-start="14.2333" data-duration="5.1334" data-track-index="7" style="z-index:21"><div class="ins-in" id="m1-benzo-in"><div class="tear" id="m1-benzo-tear" style="clip-path:polygon(100% 0%, 100% 100%, 11.9px 100.00%, 12.4px 97.50%, 2.5px 95.00%, 8.5px 92.50%, 8.7px 90.00%, 4.4px 87.50%, 0.7px 85.00%, 13.7px 82.50%, 9.6px 80.00%, 12.8px 77.50%, 1.7px 75.00%, 9.4px 72.50%, 1.8px 70.00%, 10.3px 67.50%, 10.2px 65.00%, 3.0px 62.50%, 11.8px 60.00%, 12.1px 57.50%, 0.5px 55.00%, 11.0px 52.50%, 0.8px 50.00%, 8.7px 47.50%, 9.2px 45.00%, 2.3px 42.50%, 10.1px 40.00%, 2.1px 37.50%, 2.2px 35.00%, 6.2px 32.50%, 11.8px 30.00%, 9.3px 27.50%, 10.9px 25.00%, 8.1px 22.50%, 10.2px 20.00%, 5.4px 17.50%, 7.7px 15.00%, 9.7px 12.50%, 8.1px 10.00%, 12.8px 7.50%, 2.3px 5.00%, 3.2px 2.50%, 5.3px 0.00%)"></div><div class="mg" id="m1-benzo-mg">
+  <div class="sheet">
+    <div class="mg-head"><span class="chip" style="background:#101C2C" id="m1-k">Kelas ubat</span></div>
+    <div class="mg-title" id="m1-t">Bukan <span class="serif o2">benzodiazepin</span></div>
+    <div class="index i1" id="m1-a"><span class="tape"></span><div class="lab">contoh</div><div class="drug">Alprazolam</div></div>
+    <div class="index i2" id="m1-b"><span class="tape"></span><div class="lab">contoh</div><div class="drug">Clonazepam</div></div>
+    <svg class="xmark" viewBox="0 0 900 520"><path id="m1-x1" pathLength="1" d="M70 60 C 300 210, 560 330, 840 470"/>
+      <path id="m1-x2" pathLength="1" d="M820 50 C 600 190, 330 340, 80 480"/></svg>
+    <div class="note" id="m1-n">bukan ubat untuk buat kita “pengsan”</div>
+  </div></div></div></div>
+  <div class="ins" id="b2-switch-in" style="z-index:22"><div class="bvwrap" id="b2-switch-cam"><video class="bv" id="b2-switch-v" src="broll/b2_switch.mp4" muted playsinline data-start="25.0667" data-duration="3.4" data-track-index="6"></video></div><div class="ov clip" id="b2-switch-ov" data-start="25.0667" data-duration="3.4" data-track-index="8"><div class="shade"></div><div class="ai-tag">Ilustrasi AI</div><div class="kin low" id="s1"><span class="huge">SWITCH OFF</span></div><div class="kin low2" id="s2"><span class="hand-o">butang “jaga”</span></div></div></div>
+  <div class="ins clip" id="ins-m2-head" data-start="28.4333" data-duration="1.8" data-track-index="7" style="z-index:23"><div class="ins-in" id="m2-head-in"><div class="tear" id="m2-head-tear" style="clip-path:polygon(100% 0%, 100% 100%, 8.7px 100.00%, 1.3px 97.50%, 9.5px 95.00%, 13.1px 92.50%, 8.2px 90.00%, 12.0px 87.50%, 1.4px 85.00%, 7.3px 82.50%, 12.4px 80.00%, 4.1px 77.50%, 11.7px 75.00%, 13.2px 72.50%, 0.9px 70.00%, 0.7px 67.50%, 5.3px 65.00%, 8.1px 62.50%, 7.1px 60.00%, 8.4px 57.50%, 10.8px 55.00%, 6.9px 52.50%, 7.2px 50.00%, 1.3px 47.50%, 5.3px 45.00%, 11.5px 42.50%, 11.9px 40.00%, 2.5px 37.50%, 6.1px 35.00%, 10.6px 32.50%, 7.7px 30.00%, 11.9px 27.50%, 5.2px 25.00%, 6.1px 22.50%, 0.3px 20.00%, 7.0px 17.50%, 6.3px 15.00%, 11.1px 12.50%, 9.4px 10.00%, 6.5px 7.50%, 2.0px 5.00%, 9.7px 2.50%, 0.5px 0.00%)"></div><div class="mg" id="m2-head-mg">
+  <div class="night">
+    <svg class="head" viewBox="0 0 400 480"><path id="m2-hp" pathLength="1" d="M150 470 L150 402 C112 392 84 364 72 326 C44 312 40 280 60 258 C40 206 52 124 112 74 C172 24 272 24 322 74 C370 122 380 192 362 242 C376 266 386 286 370 300 C360 306 350 306 346 312 C351 332 346 350 330 356 C336 372 326 386 300 386 C290 402 270 408 248 402 L248 470"/></svg>
+    <div class="toggle" id="m2-tg"><span class="tg-lab">JAGA</span><span class="tg-track" id="m2-tr"><span class="tg-knob" id="m2-kn"></span></span>
+      <span class="tg-state" id="m2-st">OFF</span></div>
+    <div class="m2-txt" id="m2-a">Tak <span class="strike" id="m2-sk">paksa</span> tidur</div>
+    <div class="m2-sub" id="m2-b">matikan isyarat “jaga” — badan tidur sendiri</div>
+  </div></div></div></div>
+  <div class="ins" id="b3-condo-in" style="z-index:24"><div class="bvwrap" id="b3-condo-cam"><video class="bv" id="b3-condo-v" src="broll/b3_toss_condo.mp4" muted playsinline data-start="34.6" data-duration="3.6333" data-track-index="6"></video></div><div class="ov clip" id="b3-condo-ov" data-start="34.6" data-duration="3.6333" data-track-index="8"><div class="shade"></div><div class="ai-tag">Ilustrasi AI</div><div class="sticky" id="n31" data-rot="-4" style="left:70px; top:250px; width:560px; background-color:#F5F0E8"><span class="tape"></span>Susah nak tidur</div><div class="sticky" id="n32" data-rot="3" style="left:330px; top:480px; width:640px; background-color:#FBE7C6"><span class="tape"></span>Mudah terjaga waktu malam</div><div class="sticky" id="n33" data-rot="-2" style="left:120px; top:730px; width:520px; background-color:#F5F0E8"><span class="tape"></span>Tidur tak lena</div></div></div>
+  <div class="ins" id="b4-office-in" style="z-index:25"><div class="bvwrap" id="b4-office-cam"><video class="bv" id="b4-office-v" src="broll/b4_overthink_office.mp4" muted playsinline data-start="38.2333" data-duration="3.9334" data-track-index="7"></video></div><div class="ov clip" id="b4-office-ov" data-start="38.2333" data-duration="3.9334" data-track-index="8"><div class="shade"></div><div class="ai-tag">Ilustrasi AI</div><div class="kin top" id="a0"><span class="hand-o">terutamanya insomnia berkait dengan</span></div><div class="kin mid1" id="a1"><span class="box">ANXIETY</span></div><div class="kin mid2" id="a2"><span class="box o">OVERTHINKING</span></div></div></div>
+  <div class="ins clip" id="ins-m3-scale" data-start="44.7667" data-duration="3.3333" data-track-index="6" style="z-index:26"><div class="ins-in" id="m3-scale-in"><div class="tear" id="m3-scale-tear" style="clip-path:polygon(100% 0%, 100% 100%, 1.6px 100.00%, 2.9px 97.50%, 10.8px 95.00%, 4.2px 92.50%, 2.6px 90.00%, 12.2px 87.50%, 4.7px 85.00%, 1.0px 82.50%, 5.0px 80.00%, 1.5px 77.50%, 3.9px 75.00%, 10.9px 72.50%, 7.1px 70.00%, 3.2px 67.50%, 1.5px 65.00%, 7.6px 62.50%, 10.5px 60.00%, 1.0px 57.50%, 6.5px 55.00%, 2.2px 52.50%, 6.7px 50.00%, 13.6px 47.50%, 1.3px 45.00%, 13.1px 42.50%, 13.6px 40.00%, 7.4px 37.50%, 12.9px 35.00%, 1.9px 32.50%, 11.8px 30.00%, 11.6px 27.50%, 4.5px 25.00%, 1.0px 22.50%, 0.5px 20.00%, 13.3px 17.50%, 8.2px 15.00%, 7.2px 12.50%, 3.2px 10.00%, 12.0px 7.50%, 8.2px 5.00%, 5.6px 2.50%, 12.4px 0.00%)"></div><div class="mg" id="m3-scale-mg">
+  <div class="sheet">
+    <div class="mg-head"><span class="chip" style="background:#18A9A2" id="m3-k">Kelebihan</span></div>
+    <div class="mg-title" id="m3-t">Risiko <span class="serif">ketagihan</span></div>
+    <div class="scale">
+      <div class="post"></div>
+      <div class="beam-wrap" id="m3-beam"><div class="beam"></div>
+        <div class="pan l"><div class="tag t1" id="m3-d">Dayvigo</div></div>
+        <div class="pan r"><div class="tag t2" id="m3-bz">Benzodiazepin</div></div></div>
+    </div>
+    <div class="m3-lab" id="m3-lo">Dayvigo: risiko <b>lebih rendah</b></div>
+    <div class="note small" id="m3-n">berbanding ubat benzodiazepin</div>
+  </div></div></div></div>
+  <div class="ins" id="b5-morning-in" style="z-index:27"><div class="bvwrap" id="b5-morning-cam"><video class="bv" id="b5-morning-v" src="broll/b5_morning.mp4" muted playsinline data-start="48.1" data-duration="4.5333" data-track-index="7"></video></div><div class="ov clip" id="b5-morning-ov" data-start="48.1" data-duration="4.5333" data-track-index="8"><div class="shade"></div><div class="ai-tag">Ilustrasi AI</div><div class="sticky" id="n51" data-rot="-3" style="left:90px; top:260px; width:620px; background-color:#F5F0E8"><span class="tape"></span>Kurang <i>hangover</i> waktu pagi</div><div class="sticky" id="n52" data-rot="2" style="left:300px; top:520px; width:640px; background-color:#FBE7C6"><span class="tape"></span>Kekalkan tidur lebih lama</div></div></div>
+  <div class="ins" id="b7-drowsy-in" style="z-index:28"><div class="bvwrap" id="b7-drowsy-cam"><video class="bv" id="b7-drowsy-v" src="broll/b7_tired_work.mp4" muted playsinline data-start="54.9" data-duration="4.7" data-track-index="6"></video></div><div class="ov clip" id="b7-drowsy-ov" data-start="54.9" data-duration="4.7" data-track-index="8"><div class="shade"></div><div class="ai-tag">Ilustrasi AI</div><div class="sticky" id="n71" data-rot="-3" style="left:70px; top:200px; width:780px; background-color:#F5F0E8"><span class="tape"></span>Mengantuk pada siang hari</div><div class="sticky hand-note" id="n72" data-rot="2" style="left:110px; top:330px; width:870px; background-color:#FBE7C6"><span class="tape"></span>terutamanya awal pengambilan ubat</div></div></div>
+  <div class="ins clip" id="ins-m4-bukan" data-start="66.0333" data-duration="3.0334" data-track-index="7" style="z-index:29"><div class="ins-in" id="m4-bukan-in"><div class="tear" id="m4-bukan-tear" style="clip-path:polygon(100% 0%, 100% 100%, 7.0px 100.00%, 9.7px 97.50%, 8.6px 95.00%, 6.1px 92.50%, 3.6px 90.00%, 3.1px 87.50%, 6.8px 85.00%, 4.5px 82.50%, 8.3px 80.00%, 3.6px 77.50%, 0.9px 75.00%, 10.8px 72.50%, 2.9px 70.00%, 12.7px 67.50%, 9.6px 65.00%, 9.3px 62.50%, 8.7px 60.00%, 13.2px 57.50%, 5.6px 55.00%, 3.8px 52.50%, 10.8px 50.00%, 5.3px 47.50%, 5.9px 45.00%, 1.9px 42.50%, 3.5px 40.00%, 5.6px 37.50%, 8.0px 35.00%, 8.4px 32.50%, 12.0px 30.00%, 7.1px 27.50%, 8.8px 25.00%, 10.3px 22.50%, 2.2px 20.00%, 10.3px 17.50%, 0.6px 15.00%, 0.7px 12.50%, 7.2px 10.00%, 10.5px 7.50%, 1.5px 5.00%, 5.8px 2.50%, 0.9px 0.00%)"></div><div class="mg" id="m4-bukan-mg">
+  <div class="night">
+    <div class="m4-big"><span id="m4-w1">Bukan</span> <span id="m4-w2">untuk</span></div>
+    <div class="m4-big o"><span id="m4-w3">semua orang</span></div>
+    <svg class="m4-ul" viewBox="0 0 760 40"><path id="m4-u" pathLength="1" d="M8 26 C 200 10, 480 36, 750 14"/></svg>
+    <div class="m2-sub m4-sub" id="m4-s">Tak sesuai kalau…</div>
+  </div></div></div></div>
+  <div class="ins" id="b6-nurse-in" style="z-index:30"><div class="bvwrap" id="b6-nurse-cam"><video class="bv" id="b6-nurse-v" src="broll/b6_nightshift_nurse.mp4" muted playsinline data-start="69.0667" data-duration="3.2" data-track-index="6"></video></div><div class="ov clip" id="b6-nurse-ov" data-start="69.0667" data-duration="3.2" data-track-index="8"><div class="shade"></div><div class="ai-tag">Ilustrasi AI</div><div class="sticky" id="n61" data-rot="-3" style="left:80px; top:190px; width:640px; background-color:#F5F0E8"><span class="tape"></span>Masih perlu berjaga malam</div><div class="sticky" id="n62" data-rot="3" style="left:400px; top:360px; width:520px; background-color:#FBE7C6"><span class="tape"></span>Kerja shift malam</div><div class="stamp-lg" id="n63">TAK SESUAI</div></div></div>
+  <div class="ins clip" id="ins-m5-jangan" data-start="80.5" data-duration="1.2667" data-track-index="7" style="z-index:31"><div class="ins-in" id="m5-jangan-in"><div class="tear" id="m5-jangan-tear" style="clip-path:polygon(100% 0%, 100% 100%, 13.8px 100.00%, 2.4px 97.50%, 8.3px 95.00%, 11.5px 92.50%, 11.6px 90.00%, 11.5px 87.50%, 13.8px 85.00%, 12.7px 82.50%, 6.6px 80.00%, 11.7px 77.50%, 6.1px 75.00%, 10.6px 72.50%, 2.7px 70.00%, 10.7px 67.50%, 13.0px 65.00%, 11.0px 62.50%, 5.1px 60.00%, 8.6px 57.50%, 2.5px 55.00%, 11.4px 52.50%, 6.7px 50.00%, 3.6px 47.50%, 0.4px 45.00%, 11.9px 42.50%, 13.8px 40.00%, 5.7px 37.50%, 14.0px 35.00%, 5.0px 32.50%, 8.2px 30.00%, 8.8px 27.50%, 7.7px 25.00%, 10.2px 22.50%, 13.6px 20.00%, 5.6px 17.50%, 13.0px 15.00%, 7.7px 12.50%, 3.2px 10.00%, 11.5px 7.50%, 2.3px 5.00%, 7.0px 2.50%, 3.4px 0.00%)"></div><div class="mg" id="m5-jangan-mg">
+  <div class="night">
+    <div class="m5-stamp" id="m5-s">JANGAN TUNGGU LAGI</div>
+  </div></div></div></div>
+  <div class="ins" id="b8-consult-in" style="z-index:32"><div class="bvwrap" id="b8-consult-cam"><video class="bv" id="b8-consult-v" src="broll/b8_consult.mp4" muted playsinline data-start="85.4667" data-duration="3.5" data-track-index="6"></video></div><div class="ov clip" id="b8-consult-ov" data-start="85.4667" data-duration="3.5" data-track-index="8"><div class="shade"></div><div class="ai-tag">Ilustrasi AI</div><div class="sticky" id="n81" data-rot="-2" style="left:70px; top:200px; width:700px; background-color:#F5F0E8"><span class="tape"></span>Penilaian profesional kesihatan mental</div><div class="sticky" id="n82" data-rot="3" style="left:380px; top:360px; width:640px; background-color:#FBE7C6"><span class="tape"></span>Cari punca sebenar</div></div></div>
+  <div class="cap clip" id="cap0" data-start="6.8333" data-duration="0.4667" data-track-index="12"><div class="cap-in" id="capi0"><span class="w" id="cw0-0">pernah</span> <span class="w" id="cw0-1">tak</span></div></div>
+  <div class="cap clip" id="cap1" data-start="7.3" data-duration="0.9667" data-track-index="12"><div class="cap-in" id="capi1"><span class="w" id="cw1-0">pernah</span> <span class="w" id="cw1-1">tak</span> <span class="w" id="cw1-2">dengar</span></div></div>
+  <div class="cap clip" id="cap2" data-start="8.2667" data-duration="1.0" data-track-index="12"><div class="cap-in" id="capi2"><span class="w" id="cw2-0">ubat</span> <span class="w" id="cw2-1">nama</span> <span class="w" id="cw2-2">dia</span></div></div>
+  <div class="cap clip" id="cap3" data-start="9.3" data-duration="0.8667" data-track-index="12"><div class="cap-in" id="capi3"><span class="w key" id="cw3-0">Dayvigo</span></div></div>
+  <div class="cap clip" id="cap4" data-start="10.2" data-duration="1.2" data-track-index="12"><div class="cap-in" id="capi4"><span class="w" id="cw4-0">apa</span> <span class="w" id="cw4-1">itu</span> <span class="w key" id="cw4-2">Dayvigo</span></div></div>
+  <div class="cap clip" id="cap5" data-start="11.4333" data-duration="1.1" data-track-index="12"><div class="cap-in" id="capi5"><span class="w key" id="cw5-0">Dayvigo</span> <span class="w" id="cw5-1">ni</span> <span class="w" id="cw5-2">adalah</span></div></div>
+  <div class="cap clip" id="cap6" data-start="12.5333" data-duration="0.8" data-track-index="12"><div class="cap-in" id="capi6"><span class="w" id="cw6-0">ubat</span> <span class="w" id="cw6-1">tidur</span></div></div>
+  <div class="cap clip" id="cap7" data-start="13.3667" data-duration="0.9" data-track-index="12"><div class="cap-in" id="capi7"><span class="w key" id="cw7-0">generasi</span> <span class="w" id="cw7-1">baru</span></div></div>
+  <div class="cap clip" id="cap8" data-start="14.3" data-duration="0.7" data-track-index="12"><div class="cap-in" id="capi8"><span class="w" id="cw8-0">dia</span> <span class="w" id="cw8-1">bukan</span> <span class="w" id="cw8-2">di</span></div></div>
+  <div class="cap clip" id="cap9" data-start="15.0333" data-duration="0.5334" data-track-index="12"><div class="cap-in" id="capi9"><span class="w" id="cw9-0">bawah</span> <span class="w" id="cw9-1">kelas</span></div></div>
+  <div class="cap clip" id="cap10" data-start="15.6" data-duration="0.7" data-track-index="12"><div class="cap-in" id="capi10"><span class="w key" id="cw10-0">benzodiazepin</span></div></div>
+  <div class="cap clip" id="cap11" data-start="16.3333" data-duration="0.7667" data-track-index="12"><div class="cap-in" id="capi11"><span class="w" id="cw11-0">macam</span> <span class="w key" id="cw11-1">alprazolam</span></div></div>
+  <div class="cap clip" id="cap12" data-start="17.1333" data-duration="0.6667" data-track-index="12"><div class="cap-in" id="capi12"><span class="w key" id="cw12-0">clonazepam</span></div></div>
+  <div class="cap clip" id="cap13" data-start="17.8333" data-duration="0.6667" data-track-index="12"><div class="cap-in" id="capi13"><span class="w" id="cw13-0">dia</span> <span class="w" id="cw13-1">bukan</span> <span class="w" id="cw13-2">ubat</span></div></div>
+  <div class="cap clip" id="cap14" data-start="18.5" data-duration="0.4333" data-track-index="12"><div class="cap-in" id="capi14"><span class="w" id="cw14-0">untuk</span> <span class="w" id="cw14-1">buat</span> <span class="w" id="cw14-2">kita</span></div></div>
+  <div class="cap clip" id="cap15" data-start="18.9667" data-duration="0.4333" data-track-index="12"><div class="cap-in" id="capi15"><span class="w" id="cw15-0">pengsan</span></div></div>
+  <div class="cap clip" id="cap16" data-start="19.4333" data-duration="0.6334" data-track-index="12"><div class="cap-in" id="capi16"><span class="w" id="cw16-0">ubat</span> <span class="w" id="cw16-1">ni</span> <span class="w" id="cw16-2">adalah</span></div></div>
+  <div class="cap clip" id="cap17" data-start="20.0667" data-duration="1.0" data-track-index="12"><div class="cap-in" id="capi17"><span class="w" id="cw17-0">daripada</span> <span class="w" id="cw17-1">kumpulan</span></div></div>
+  <div class="cap clip" id="cap18" data-start="21.0667" data-duration="1.4" data-track-index="12"><div class="cap-in" id="capi18"><span class="w key" id="cw18-0">orexin</span> <span class="w" id="cw18-1">reseptor</span></div></div>
+  <div class="cap clip" id="cap19" data-start="22.4667" data-duration="0.6666" data-track-index="12"><div class="cap-in" id="capi19"><span class="w key" id="cw19-0">antagonis</span></div></div>
+  <div class="cap clip" id="cap20" data-start="23.1333" data-duration="0.9667" data-track-index="12"><div class="cap-in" id="capi20"><span class="w" id="cw20-0">bahasa</span> <span class="w" id="cw20-1">senang</span> <span class="w" id="cw20-2">dia</span></div></div>
+  <div class="cap clip" id="cap21" data-start="24.1" data-duration="1.1333" data-track-index="12"><div class="cap-in" id="capi21"><span class="w" id="cw21-0">ubat</span> <span class="w" id="cw21-1">ni</span> <span class="w" id="cw21-2">function</span></div></div>
+  <div class="cap clip" id="cap22" data-start="25.2667" data-duration="0.8333" data-track-index="12"><div class="cap-in" id="capi22"><span class="w" id="cw22-0">dia</span> <span class="w" id="cw22-1">untuk</span></div></div>
+  <div class="cap clip" id="cap23" data-start="26.1333" data-duration="1.2334" data-track-index="12"><div class="cap-in" id="capi23"><span class="w key" id="cw23-0">switch</span> <span class="w key" id="cw23-1">off</span></div></div>
+  <div class="cap clip" id="cap24" data-start="27.4" data-duration="1.2333" data-track-index="12"><div class="cap-in" id="capi24"><span class="w" id="cw24-0">butang</span> <span class="w key" id="cw24-1">jaga</span> <span class="w" id="cw24-2">dalam</span></div></div>
+  <div class="cap clip" id="cap25" data-start="28.6667" data-duration="0.4333" data-track-index="12"><div class="cap-in" id="capi25"><span class="w" id="cw25-0">otak</span> <span class="w" id="cw25-1">kita</span></div></div>
+  <div class="cap clip" id="cap26" data-start="29.1333" data-duration="0.5334" data-track-index="12"><div class="cap-in" id="capi26"><span class="w" id="cw26-0">dia</span> <span class="w" id="cw26-1">tak</span> <span class="w" id="cw26-2">paksa</span></div></div>
+  <div class="cap clip" id="cap27" data-start="29.7" data-duration="0.5333" data-track-index="12"><div class="cap-in" id="capi27"><span class="w" id="cw27-0">tidur</span> <span class="w" id="cw27-1">pun</span></div></div>
+  <div class="cap clip" id="cap28" data-start="30.2667" data-duration="0.7333" data-track-index="12"><div class="cap-in" id="capi28"><span class="w" id="cw28-0">antara</span> <span class="w" id="cw28-1">fungsi</span></div></div>
+  <div class="cap clip" id="cap29" data-start="31.0333" data-duration="0.5667" data-track-index="12"><div class="cap-in" id="capi29"><span class="w" id="cw29-0">utama</span> <span class="w" id="cw29-1">ubat</span></div></div>
+  <div class="cap clip" id="cap30" data-start="31.6333" data-duration="0.9334" data-track-index="12"><div class="cap-in" id="capi30"><span class="w key" id="cw30-0">Dayvigo</span> <span class="w" id="cw30-1">ni</span> <span class="w" id="cw30-2">adalah</span></div></div>
+  <div class="cap clip" id="cap31" data-start="32.6" data-duration="1.4" data-track-index="12"><div class="cap-in" id="capi31"><span class="w" id="cw31-0">untuk</span> <span class="w" id="cw31-1">rawat</span></div></div>
+  <div class="cap clip" id="cap32" data-start="34.6" data-duration="0.4333" data-track-index="12"><div class="cap-in" id="capi32"><span class="w" id="cw32-0">untuk</span> <span class="w" id="cw32-1">kes</span> <span class="w" id="cw32-2">susah</span></div></div>
+  <div class="cap clip" id="cap33" data-start="35.0667" data-duration="0.7" data-track-index="12"><div class="cap-in" id="capi33"><span class="w" id="cw33-0">nak</span> <span class="w" id="cw33-1">tidur</span></div></div>
+  <div class="cap clip" id="cap34" data-start="35.7667" data-duration="0.8" data-track-index="12"><div class="cap-in" id="capi34"><span class="w" id="cw34-0">mudah</span> <span class="w" id="cw34-1">terjaga</span></div></div>
+  <div class="cap clip" id="cap35" data-start="36.6" data-duration="0.7333" data-track-index="12"><div class="cap-in" id="capi35"><span class="w" id="cw35-0">pada</span> <span class="w" id="cw35-1">waktu</span> <span class="w" id="cw35-2">malam</span></div></div>
+  <div class="cap clip" id="cap36" data-start="37.3333" data-duration="0.9" data-track-index="12"><div class="cap-in" id="capi36"><span class="w" id="cw36-0">tidur</span> <span class="w" id="cw36-1">tak</span> <span class="w" id="cw36-2">lena</span></div></div>
+  <div class="cap clip" id="cap37" data-start="38.2333" data-duration="0.6" data-track-index="12"><div class="cap-in" id="capi37"><span class="w" id="cw37-0">terutamanya</span></div></div>
+  <div class="cap clip" id="cap38" data-start="38.8333" data-duration="0.5334" data-track-index="12"><div class="cap-in" id="capi38"><span class="w key" id="cw38-0">insomnia</span> <span class="w" id="cw38-1">yang</span></div></div>
+  <div class="cap clip" id="cap39" data-start="39.3667" data-duration="1.0" data-track-index="12"><div class="cap-in" id="capi39"><span class="w" id="cw39-0">berkait</span> <span class="w" id="cw39-1">dengan</span></div></div>
+  <div class="cap clip" id="cap40" data-start="40.4" data-duration="0.9667" data-track-index="12"><div class="cap-in" id="capi40"><span class="w key" id="cw40-0">anxiety</span> <span class="w" id="cw40-1">dan</span> <span class="w" id="cw40-2">juga</span></div></div>
+  <div class="cap clip" id="cap41" data-start="41.3667" data-duration="0.8666" data-track-index="12"><div class="cap-in" id="capi41"><span class="w key" id="cw41-0">overthinking</span></div></div>
+  <div class="cap clip" id="cap42" data-start="42.2333" data-duration="1.0" data-track-index="12"><div class="cap-in" id="capi42"><span class="w" id="cw42-0">kelebihan</span> <span class="w key" id="cw42-1">Dayvigo</span></div></div>
+  <div class="cap clip" id="cap43" data-start="43.2333" data-duration="0.8" data-track-index="12"><div class="cap-in" id="capi43"><span class="w" id="cw43-0">ni</span> <span class="w" id="cw43-1">tidur</span> <span class="w" id="cw43-2">rasa</span></div></div>
+  <div class="cap clip" id="cap44" data-start="44.0333" data-duration="0.8" data-track-index="12"><div class="cap-in" id="capi44"><span class="w" id="cw44-0">lebih</span> <span class="w key" id="cw44-1">natural</span></div></div>
+  <div class="cap clip" id="cap45" data-start="44.8333" data-duration="1.1" data-track-index="12"><div class="cap-in" id="capi45"><span class="w" id="cw45-0">kurang</span> <span class="w key" id="cw45-1">ketagihan</span></div></div>
+  <div class="cap clip" id="cap46" data-start="45.9333" data-duration="0.9667" data-track-index="12"><div class="cap-in" id="capi46"><span class="w" id="cw46-0">berbanding</span> <span class="w" id="cw46-1">dengan</span></div></div>
+  <div class="cap clip" id="cap47" data-start="46.9" data-duration="1.2" data-track-index="12"><div class="cap-in" id="capi47"><span class="w" id="cw47-0">ubat</span> <span class="w key" id="cw47-1">benzodiazepin</span></div></div>
+  <div class="cap clip" id="cap48" data-start="48.1" data-duration="0.5" data-track-index="12"><div class="cap-in" id="capi48"><span class="w" id="cw48-0">dia</span> <span class="w" id="cw48-1">kurang</span></div></div>
+  <div class="cap clip" id="cap49" data-start="48.6333" data-duration="0.7" data-track-index="12"><div class="cap-in" id="capi49"><span class="w key" id="cw49-0">hangover</span> <span class="w" id="cw49-1">effect</span></div></div>
+  <div class="cap clip" id="cap50" data-start="49.3333" data-duration="0.8667" data-track-index="12"><div class="cap-in" id="capi50"><span class="w" id="cw50-0">juga</span> <span class="w" id="cw50-1">pada</span> <span class="w" id="cw50-2">waktu</span> <span class="w" id="cw50-3">pagi</span></div></div>
+  <div class="cap clip" id="cap51" data-start="50.2" data-duration="0.3333" data-track-index="12"><div class="cap-in" id="capi51"><span class="w" id="cw51-0">dan</span> <span class="w" id="cw51-1">boleh</span></div></div>
+  <div class="cap clip" id="cap52" data-start="50.5333" data-duration="0.8" data-track-index="12"><div class="cap-in" id="capi52"><span class="w" id="cw52-0">kekalkan</span> <span class="w" id="cw52-1">tidur</span></div></div>
+  <div class="cap clip" id="cap53" data-start="51.3667" data-duration="1.1666" data-track-index="12"><div class="cap-in" id="capi53"><span class="w" id="cw53-0">dengan</span> <span class="w" id="cw53-1">lebih</span> <span class="w" id="cw53-2">lama</span></div></div>
+  <div class="cap clip" id="cap54" data-start="52.7" data-duration="0.7333" data-track-index="12"><div class="cap-in" id="capi54"><span class="w" id="cw54-0">tapi</span> <span class="w" id="cw54-1">setiap</span> <span class="w" id="cw54-2">ubat</span></div></div>
+  <div class="cap clip" id="cap55" data-start="53.4333" data-duration="0.3" data-track-index="12"><div class="cap-in" id="capi55"><span class="w" id="cw55-0">pun</span> <span class="w" id="cw55-1">ada</span></div></div>
+  <div class="cap clip" id="cap56" data-start="53.6333" data-duration="0.7334" data-track-index="12"><div class="cap-in" id="capi56"><span class="w" id="cw56-0">kesan</span> <span class="w key" id="cw56-1">sampingan</span></div></div>
+  <div class="cap clip" id="cap57" data-start="54.4" data-duration="0.9333" data-track-index="12"><div class="cap-in" id="capi57"><span class="w" id="cw57-0">contohnya</span> <span class="w" id="cw57-1">ubat</span> <span class="w" id="cw57-2">ni</span></div></div>
+  <div class="cap clip" id="cap58" data-start="55.3667" data-duration="0.6333" data-track-index="12"><div class="cap-in" id="capi58"><span class="w" id="cw58-0">boleh</span> <span class="w" id="cw58-1">menyebabkan</span></div></div>
+  <div class="cap clip" id="cap59" data-start="56.0" data-duration="0.8333" data-track-index="12"><div class="cap-in" id="capi59"><span class="w key" id="cw59-0">mengantuk</span> <span class="w" id="cw59-1">pada</span></div></div>
+  <div class="cap clip" id="cap60" data-start="56.8667" data-duration="0.4333" data-track-index="12"><div class="cap-in" id="capi60"><span class="w" id="cw60-0">siang</span> <span class="w" id="cw60-1">hari</span></div></div>
+  <div class="cap clip" id="cap61" data-start="57.3333" data-duration="0.8667" data-track-index="12"><div class="cap-in" id="capi61"><span class="w" id="cw61-0">terutamanya</span> <span class="w" id="cw61-1">pada</span></div></div>
+  <div class="cap clip" id="cap62" data-start="58.2333" data-duration="0.9334" data-track-index="12"><div class="cap-in" id="capi62"><span class="w" id="cw62-0">awal</span> <span class="w" id="cw62-1">pengambilan</span></div></div>
+  <div class="cap clip" id="cap63" data-start="59.1667" data-duration="0.6" data-track-index="12"><div class="cap-in" id="capi63"><span class="w" id="cw63-0">ubat</span> <span class="w" id="cw63-1">ni</span></div></div>
+  <div class="cap clip" id="cap64" data-start="59.8" data-duration="0.4667" data-track-index="12"><div class="cap-in" id="capi64"><span class="w" id="cw64-0">boleh</span> <span class="w" id="cw64-1">menyebabkan</span></div></div>
+  <div class="cap clip" id="cap65" data-start="60.3" data-duration="1.0667" data-track-index="12"><div class="cap-in" id="capi65"><span class="w key" id="cw65-0">mimpi</span> <span class="w" id="cw65-1">pelik-pelik</span></div></div>
+  <div class="cap clip" id="cap66" data-start="61.3667" data-duration="0.8" data-track-index="12"><div class="cap-in" id="capi66"><span class="w" id="cw66-0">rasa</span> <span class="w key" id="cw66-1">lemah</span></div></div>
+  <div class="cap clip" id="cap67" data-start="62.1667" data-duration="1.0333" data-track-index="12"><div class="cap-in" id="capi67"><span class="w" id="cw67-0">sementara</span></div></div>
+  <div class="cap clip" id="cap68" data-start="63.5" data-duration="0.7667" data-track-index="12"><div class="cap-in" id="capi68"><span class="w" id="cw68-0">tapi</span> <span class="w" id="cw68-1">ni</span> <span class="w key" id="cw68-2">ringan</span></div></div>
+  <div class="cap clip" id="cap69" data-start="64.2667" data-duration="0.7333" data-track-index="12"><div class="cap-in" id="capi69"><span class="w" id="cw69-0">je</span> <span class="w" id="cw69-1">dan</span> <span class="w" id="cw69-2">dikawal</span></div></div>
+  <div class="cap clip" id="cap70" data-start="65.0" data-duration="0.6667" data-track-index="12"><div class="cap-in" id="capi70"><span class="w" id="cw70-0">dengan</span> <span class="w" id="cw70-1">dos</span> <span class="w" id="cw70-2">yang</span></div></div>
+  <div class="cap clip" id="cap71" data-start="65.6667" data-duration="0.3666" data-track-index="12"><div class="cap-in" id="capi71"><span class="w" id="cw71-0">sesuai</span></div></div>
+  <div class="cap clip" id="cap72" data-start="66.0667" data-duration="0.8333" data-track-index="12"><div class="cap-in" id="capi72"><span class="w key" id="cw72-0">Dayvigo</span> <span class="w" id="cw72-1">ni</span> <span class="w" id="cw72-2">bukan</span></div></div>
+  <div class="cap clip" id="cap73" data-start="66.9" data-duration="0.6667" data-track-index="12"><div class="cap-in" id="capi73"><span class="w" id="cw73-0">untuk</span> <span class="w" id="cw73-1">semua</span> <span class="w" id="cw73-2">orang</span></div></div>
+  <div class="cap clip" id="cap74" data-start="67.6" data-duration="1.5667" data-track-index="12"><div class="cap-in" id="capi74"><span class="w" id="cw74-0">tak</span> <span class="w" id="cw74-1">sesuai</span> <span class="w" id="cw74-2">kalau</span></div></div>
+  <div class="cap clip" id="cap75" data-start="69.2" data-duration="0.8" data-track-index="12"><div class="cap-in" id="capi75"><span class="w" id="cw75-0">masih</span> <span class="w" id="cw75-1">perlu</span> <span class="w key" id="cw75-2">jaga</span></div></div>
+  <div class="cap clip" id="cap76" data-start="70.0333" data-duration="0.4" data-track-index="12"><div class="cap-in" id="capi76"><span class="w" id="cw76-0">malam</span></div></div>
+  <div class="cap clip" id="cap77" data-start="70.4667" data-duration="0.5333" data-track-index="12"><div class="cap-in" id="capi77"><span class="w" id="cw77-0">contohnya</span> <span class="w" id="cw77-1">kena</span></div></div>
+  <div class="cap clip" id="cap78" data-start="71.0" data-duration="0.8" data-track-index="12"><div class="cap-in" id="capi78"><span class="w" id="cw78-0">kerja</span> <span class="w key" id="cw78-1">shift</span> <span class="w" id="cw78-2">malam</span></div></div>
+  <div class="cap clip" id="cap79" data-start="71.8333" data-duration="0.5" data-track-index="12"><div class="cap-in" id="capi79"><span class="w" id="cw79-0">tak</span> <span class="w" id="cw79-1">sesuai</span></div></div>
+  <div class="cap clip" id="cap80" data-start="72.3667" data-duration="0.9" data-track-index="12"><div class="cap-in" id="capi80"><span class="w" id="cw80-0">perlu</span> <span class="w" id="cw80-1">ambil</span> <span class="w" id="cw80-2">ikut</span></div></div>
+  <div class="cap clip" id="cap81" data-start="73.3" data-duration="0.6667" data-track-index="12"><div class="cap-in" id="capi81"><span class="w" id="cw81-0">arahan</span> <span class="w key" id="cw81-1">doktor</span></div></div>
+  <div class="cap clip" id="cap82" data-start="74.0" data-duration="0.8" data-track-index="12"><div class="cap-in" id="capi82"><span class="w" id="cw82-0">dan</span> <span class="w" id="cw82-1">elakkan</span></div></div>
+  <div class="cap clip" id="cap83" data-start="74.8333" data-duration="0.6" data-track-index="12"><div class="cap-in" id="capi83"><span class="w key" id="cw83-0">alkohol</span> <span class="w" id="cw83-1">kalau</span></div></div>
+  <div class="cap clip" id="cap84" data-start="75.4667" data-duration="0.6" data-track-index="12"><div class="cap-in" id="capi84"><span class="w" id="cw84-0">ambil</span> <span class="w" id="cw84-1">ubat</span> <span class="w" id="cw84-2">ni</span></div></div>
+  <div class="cap clip" id="cap85" data-start="76.0667" data-duration="0.7666" data-track-index="12"><div class="cap-in" id="capi85"><span class="w" id="cw85-0">kalau</span> <span class="w key" id="cw85-1">insomnia</span></div></div>
+  <div class="cap clip" id="cap86" data-start="76.8667" data-duration="0.9333" data-track-index="12"><div class="cap-in" id="capi86"><span class="w" id="cw86-0">dah</span> <span class="w" id="cw86-1">lama</span> <span class="w" id="cw86-2">sangat</span></div></div>
+  <div class="cap clip" id="cap87" data-start="77.8" data-duration="1.1333" data-track-index="12"><div class="cap-in" id="capi87"><span class="w" id="cw87-0">sampai</span> <span class="w" id="cw87-1">kacau</span></div></div>
+  <div class="cap clip" id="cap88" data-start="78.9667" data-duration="1.6" data-track-index="12"><div class="cap-in" id="capi88"><span class="w" id="cw88-0">emosi</span> <span class="w" id="cw88-1">kerja</span> <span class="w" id="cw88-2">kesihatan</span></div></div>
+  <div class="cap clip" id="cap89" data-start="80.5667" data-duration="1.2" data-track-index="12"><div class="cap-in" id="capi89"><span class="w key" id="cw89-0">jangan</span> <span class="w key" id="cw89-1">tunggu</span> <span class="w" id="cw89-2">lagi</span></div></div>
+  <div class="cap clip" id="cap90" data-start="81.8" data-duration="1.0" data-track-index="12"><div class="cap-in" id="capi90"><span class="w" id="cw90-0">tidur</span> <span class="w" id="cw90-1">yang</span></div></div>
+  <div class="cap clip" id="cap91" data-start="82.8" data-duration="1.0333" data-track-index="12"><div class="cap-in" id="capi91"><span class="w" id="cw91-0">terganggu</span> <span class="w" id="cw91-1">boleh</span></div></div>
+  <div class="cap clip" id="cap92" data-start="83.8667" data-duration="1.0" data-track-index="12"><div class="cap-in" id="capi92"><span class="w" id="cw92-0">menyebabkan</span> <span class="w" id="cw92-1">otak</span></div></div>
+  <div class="cap clip" id="cap93" data-start="84.8667" data-duration="0.6333" data-track-index="12"><div class="cap-in" id="capi93"><span class="w" id="cw93-0">jadi</span> <span class="w key" id="cw93-1">rosak</span></div></div>
+  <div class="cap clip" id="cap94" data-start="85.5" data-duration="0.8" data-track-index="12"><div class="cap-in" id="capi94"><span class="w" id="cw94-0">boleh</span> <span class="w" id="cw94-1">buat</span> <span class="w" id="cw94-2">penilaian</span></div></div>
+  <div class="cap clip" id="cap95" data-start="86.3" data-duration="0.7" data-track-index="12"><div class="cap-in" id="capi95"><span class="w" id="cw95-0">daripada</span> <span class="w key" id="cw95-1">profesional</span></div></div>
+  <div class="cap clip" id="cap96" data-start="87.0333" data-duration="0.6" data-track-index="12"><div class="cap-in" id="capi96"><span class="w" id="cw96-0">kesihatan</span> <span class="w" id="cw96-1">mental</span></div></div>
+  <div class="cap clip" id="cap97" data-start="87.6667" data-duration="0.4" data-track-index="12"><div class="cap-in" id="capi97"><span class="w" id="cw97-0">untuk</span> <span class="w" id="cw97-1">cari</span></div></div>
+  <div class="cap clip" id="cap98" data-start="88.0667" data-duration="0.9" data-track-index="12"><div class="cap-in" id="capi98"><span class="w" id="cw98-0">punca</span> <span class="w" id="cw98-1">sebenar</span></div></div>
+  <div class="cap clip" id="cap99" data-start="88.9667" data-duration="0.4666" data-track-index="12"><div class="cap-in" id="capi99"><span class="w" id="cw99-0">ataupun</span> <span class="w" id="cw99-1">boleh</span></div></div>
+  <div class="cap clip" id="cap100" data-start="89.4667" data-duration="0.6333" data-track-index="12"><div class="cap-in" id="capi100"><span class="w" id="cw100-0">buat</span> <span class="w" id="cw100-1">saringan</span> <span class="w" id="cw100-2">dan</span></div></div>
+  <div class="cap clip" id="cap101" data-start="90.1333" data-duration="0.3667" data-track-index="12"><div class="cap-in" id="capi101"><span class="w" id="cw101-0">konsultasi</span></div></div>
+  <div class="cap clip" id="cap102" data-start="90.5333" data-duration="0.8" data-track-index="12"><div class="cap-in" id="capi102"><span class="w" id="cw102-0">kesihatan</span> <span class="w" id="cw102-1">mental</span></div></div>
+  <div class="cap clip" id="cap103" data-start="91.3333" data-duration="0.5667" data-track-index="12"><div class="cap-in" id="capi103"><span class="w" id="cw103-0">bersama</span> <span class="w" id="cw103-1">saya</span></div></div>
+  <div class="cap clip" id="cap104" data-start="91.9" data-duration="0.4667" data-track-index="12"><div class="cap-in" id="capi104"><span class="w key" id="cw104-0">doktor</span> <span class="w" id="cw104-1">Azren</span></div></div>
+  <div class="cap clip" id="cap105" data-start="92.4" data-duration="0.4333" data-track-index="12"><div class="cap-in" id="capi105"><span class="w" id="cw105-0">di</span> <span class="w" id="cw105-1">klinik</span> <span class="w" id="cw105-2">saya</span></div></div>
+  <div class="cap clip" id="cap106" data-start="92.8667" data-duration="0.4333" data-track-index="12"><div class="cap-in" id="capi106"><span class="w" id="cw106-0">di</span> <span class="w" id="cw106-1">Nilai</span></div></div>
+  <div class="cap clip" id="cap107" data-start="93.3333" data-duration="0.6334" data-track-index="12"><div class="cap-in" id="capi107"><span class="w" id="cw107-0">apa-apa</span> <span class="w" id="cw107-1">soalan</span></div></div>
+  <div class="cap clip" id="cap108" data-start="94.0" data-duration="0.7333" data-track-index="12"><div class="cap-in" id="capi108"><span class="w" id="cw108-0">boleh</span> <span class="w" id="cw108-1">tanya</span> <span class="w" id="cw108-2">di</span> <span class="w" id="cw108-3">komen</span></div></div>
+  <div class="cap clip" id="cap109" data-start="94.7667" data-duration="0.8666" data-track-index="12"><div class="cap-in" id="capi109"><span class="w" id="cw109-0">take</span> <span class="w" id="cw109-1">care</span></div></div>
+  <script src="vendor/gsap.min.js"></script>
+  <script>
+  (function () {
+    const tl = window.gsap.timeline({ paused: true });
+    // card c01-dayvigo: What Dayvigo is — a new-generation sleep medicine
+    tl.fromTo('#c01-dayvigo-panel', {x:130, opacity:0}, {x:0, opacity:1, duration:0.42, ease:'power4.out'}, 7.1333);
+    tl.set('#c01-dayvigo-page0', {opacity:1}, 7.1333);
+    tl.fromTo('#c01-dayvigo-k', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.3, ease:'back.out(1.6)'}, 7.2);
+    tl.fromTo('#c01-dayvigo-t', {x:90, opacity:0}, {x:0, opacity:1, duration:0.36, ease:'power4.out'}, 8.9333);
+    tl.fromTo('#c01-dayvigo-n', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 9.7333);
+    tl.to('#c01-dayvigo-page0', {x:-70, opacity:0, duration:0.22, ease:'power4.in'}, 9.9333);
+    tl.fromTo('#c01-dayvigo-page1', {opacity:0, x:70}, {opacity:1, x:0, duration:0.32, ease:'power4.out'}, 10.1667);
+    tl.fromTo('#c01-dayvigo-k2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.3, ease:'back.out(1.6)'}, 10.2333);
+    tl.fromTo('#c01-dayvigo-t2', {x:90, opacity:0}, {x:0, opacity:1, duration:0.36, ease:'power4.out'}, 12.5);
+    tl.fromTo('.c01-dayvigo-p1 .hl', {backgroundSize:'0% 42%'}, {backgroundSize:'100% 42%', duration:0.4, ease:'power2.inOut'}, 13.5);
+    tl.to('#c01-dayvigo-panel', {x:-130, opacity:0, duration:0.26, ease:'power4.in'}, 14.0667);
+    // card c02-orexin: Drug class, word by word
+    tl.fromTo('#c02-orexin-panel', {x:130, opacity:0}, {x:0, opacity:1, duration:0.42, ease:'power4.out'}, 19.3);
+    tl.set('#c02-orexin-page0', {opacity:1}, 19.3);
+    tl.fromTo('#c02-orexin-k', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.3, ease:'back.out(1.6)'}, 20.4333);
+    tl.fromTo('#c02-orexin-w1', {x:90, opacity:0}, {x:0, opacity:1, duration:0.36, ease:'power4.out'}, 21.0333);
+    tl.fromTo('#c02-orexin-w2', {x:90, opacity:0}, {x:0, opacity:1, duration:0.36, ease:'power4.out'}, 21.9333);
+    tl.fromTo('#c02-orexin-w3', {x:90, opacity:0}, {x:0, opacity:1, duration:0.36, ease:'power4.out'}, 22.4333);
+    tl.to('#c02-orexin-panel', {x:-130, opacity:0, duration:0.26, ease:'power4.in'}, 22.8333);
+    // card c03-senang: Plain-language setup for the switch metaphor
+    tl.fromTo('#c03-senang-panel', {x:130, opacity:0}, {x:0, opacity:1, duration:0.42, ease:'power4.out'}, 23.1333);
+    tl.set('#c03-senang-page0', {opacity:1}, 23.1333);
+    tl.fromTo('#c03-senang-n', {x:90, opacity:0}, {x:0, opacity:1, duration:0.36, ease:'power4.out'}, 23.2);
+    tl.to('#c03-senang-panel', {x:-130, opacity:0, duration:0.26, ease:'power4.in'}, 25.1333);
+    // card c04-fungsi: Kicker for the hero word
+    tl.fromTo('#c04-fungsi-panel', {x:130, opacity:0}, {x:0, opacity:1, duration:0.42, ease:'power4.out'}, 30.2333);
+    tl.set('#c04-fungsi-page0', {opacity:1}, 30.2333);
+    tl.fromTo('#c04-fungsi-k', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.3, ease:'back.out(1.6)'}, 30.5667);
+    tl.fromTo('#c04-fungsi-t', {x:90, opacity:0}, {x:0, opacity:1, duration:0.36, ease:'power4.out'}, 33.0667);
+    tl.to('#c04-fungsi-panel', {x:-130, opacity:0, duration:0.26, ease:'power4.in'}, 34.1);
+    // card c05-kelebihan: Benefit 1
+    tl.fromTo('#c05-kelebihan-panel', {x:130, opacity:0}, {x:0, opacity:1, duration:0.42, ease:'power4.out'}, 42.1667);
+    tl.set('#c05-kelebihan-page0', {opacity:1}, 42.1667);
+    tl.fromTo('#c05-kelebihan-k', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.3, ease:'back.out(1.6)'}, 42.2333);
+    tl.fromTo('#c05-kelebihan-r', {x:90, opacity:0}, {x:0, opacity:1, duration:0.36, ease:'power4.out'}, 43.4);
+    tl.to('#c05-kelebihan-panel', {x:-130, opacity:0, duration:0.26, ease:'power4.in'}, 44.6);
+    // card c06-kesan: Side effects exist for every medicine
+    tl.fromTo('#c06-kesan-panel', {x:130, opacity:0}, {x:0, opacity:1, duration:0.42, ease:'power4.out'}, 52.6667);
+    tl.set('#c06-kesan-page0', {opacity:1}, 52.6667);
+    tl.fromTo('#c06-kesan-k', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.3, ease:'back.out(1.6)'}, 53.5667);
+    tl.fromTo('#c06-kesan-t', {x:90, opacity:0}, {x:0, opacity:1, duration:0.36, ease:'power4.out'}, 52.7333);
+    tl.fromTo('.c06-kesan-p0 .hl', {backgroundSize:'0% 42%'}, {backgroundSize:'100% 42%', duration:0.4, ease:'power2.inOut'}, 53.8333);
+    tl.to('#c06-kesan-panel', {x:-130, opacity:0, duration:0.26, ease:'power4.in'}, 54.6667);
+    // card c07-mimpi: Side effects 2-3, then 'mild, dose-controlled'
+    tl.fromTo('#c07-mimpi-panel', {x:130, opacity:0}, {x:0, opacity:1, duration:0.42, ease:'power4.out'}, 59.6667);
+    tl.set('#c07-mimpi-page0', {opacity:1}, 59.6667);
+    tl.fromTo('#c07-mimpi-k', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.3, ease:'back.out(1.6)'}, 59.7333);
+    tl.fromTo('#c07-mimpi-r1', {x:90, opacity:0}, {x:0, opacity:1, duration:0.36, ease:'power4.out'}, 60.2333);
+    tl.fromTo('#c07-mimpi-r2', {x:90, opacity:0}, {x:0, opacity:1, duration:0.36, ease:'power4.out'}, 61.3333);
+    tl.to('#c07-mimpi-page0', {x:-70, opacity:0, duration:0.22, ease:'power4.in'}, 63.2667);
+    tl.fromTo('#c07-mimpi-page1', {opacity:0, x:70}, {opacity:1, x:0, duration:0.32, ease:'power4.out'}, 63.4667);
+    tl.fromTo('#c07-mimpi-st', {opacity:0, scale:2.0, rotation:-8}, {opacity:1, scale:1, rotation:-6, duration:0.24, ease:'power4.out'}, 63.9);
+    tl.fromTo('#c07-mimpi-s', {x:90, opacity:0}, {x:0, opacity:1, duration:0.36, ease:'power4.out'}, 64.5);
+    tl.to('#c07-mimpi-panel', {x:-130, opacity:0, duration:0.26, ease:'power4.in'}, 65.7333);
+    // card c08-arahan: Safety: follow the doctor, avoid alcohol
+    tl.fromTo('#c08-arahan-panel', {x:130, opacity:0}, {x:0, opacity:1, duration:0.42, ease:'power4.out'}, 72.2667);
+    tl.set('#c08-arahan-page0', {opacity:1}, 72.2667);
+    tl.fromTo('#c08-arahan-k', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.3, ease:'back.out(1.6)'}, 72.3333);
+    tl.fromTo('#c08-arahan-r1', {x:90, opacity:0}, {x:0, opacity:1, duration:0.36, ease:'power4.out'}, 73.0333);
+    tl.fromTo('#c08-arahan-r2', {x:90, opacity:0}, {x:0, opacity:1, duration:0.36, ease:'power4.out'}, 74.2667);
+    tl.to('#c08-arahan-panel', {x:-130, opacity:0, duration:0.26, ease:'power4.in'}, 75.7667);
+    // card c09-lama: Long-standing insomnia disrupting emotion / work / health
+    tl.fromTo('#c09-lama-panel', {x:130, opacity:0}, {x:0, opacity:1, duration:0.42, ease:'power4.out'}, 76.0333);
+    tl.set('#c09-lama-page0', {opacity:1}, 76.0333);
+    tl.fromTo('#c09-lama-t', {x:90, opacity:0}, {x:0, opacity:1, duration:0.36, ease:'power4.out'}, 76.1);
+    tl.fromTo('.c09-lama-p0 .hl', {backgroundSize:'0% 42%'}, {backgroundSize:'100% 42%', duration:0.4, ease:'power2.inOut'}, 77.2);
+    tl.fromTo('#c09-p1', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.3, ease:'back.out(1.6)'}, 78.9333);
+    tl.fromTo('#c09-p2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.3, ease:'back.out(1.6)'}, 79.4);
+    tl.fromTo('#c09-p3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.3, ease:'back.out(1.6)'}, 80.0);
+    tl.to('#c09-lama-panel', {x:-130, opacity:0, duration:0.26, ease:'power4.in'}, 80.2);
+    // card c10-soalan: Speaker name, then comment prompt + education disclaimer
+    tl.fromTo('#c10-soalan-panel', {x:130, opacity:0}, {x:0, opacity:1, duration:0.42, ease:'power4.out'}, 91.8);
+    tl.set('#c10-soalan-page0', {opacity:1}, 91.8);
+    tl.fromTo('#c10-soalan-n', {x:90, opacity:0}, {x:0, opacity:1, duration:0.36, ease:'power4.out'}, 91.8667);
+    tl.to('#c10-soalan-page0', {x:-70, opacity:0, duration:0.22, ease:'power4.in'}, 93.0667);
+    tl.fromTo('#c10-soalan-page1', {opacity:0, x:70}, {opacity:1, x:0, duration:0.32, ease:'power4.out'}, 93.3);
+    tl.fromTo('#c10-soalan-t', {x:90, opacity:0}, {x:0, opacity:1, duration:0.36, ease:'power4.out'}, 93.3333);
+    tl.fromTo('#c10-soalan-d', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 93.9667);
+    // hero: INSOMNIA behind the subject (stillness 0.35s after the kicker lands, then the slam)
+    tl.fromTo('#hero-word', {opacity:0, scale:1.22}, {opacity:1, scale:1, duration:0.28, ease:'power4.out'}, 33.5333);
+    // insert b1-3am (broll) 0.00-6.83s
+    tl.set('#b1-3am-in', {opacity:1, x:0}, 0);
+    tl.fromTo('#b1-3am-cam', {scale:1.0}, {scale:1.07, duration:6.833, ease:'sine.inOut'}, 0.0);
+    tl.to('#b1-3am-in', {x:-150, opacity:0, filter:'blur(16px)', duration:0.28, ease:'power4.in'}, 6.5667);
+    tl.set('#b1-3am-in', {opacity:0}, 6.8333);
+    tl.set('#h1', {opacity:1, x:0}, 0);
+    tl.to('#h1', {opacity:0, x:-120, duration:0.2, ease:'power4.in'}, 1.0);
+    tl.fromTo('#h2', {opacity:0, x:120}, {opacity:1, x:0, duration:0.3, ease:'power4.out'}, 1.1667);
+    tl.to('#h2', {opacity:0, x:-120, duration:0.2, ease:'power4.in'}, 2.2333);
+    tl.fromTo('#h3', {opacity:0, x:120}, {opacity:1, x:0, duration:0.3, ease:'power4.out'}, 2.4333);
+    tl.to('#h3', {opacity:0, x:-120, duration:0.2, ease:'power4.in'}, 3.1667);
+    tl.fromTo('#h4', {opacity:0, x:120}, {opacity:1, x:0, duration:0.3, ease:'power4.out'}, 3.3667);
+    tl.to('#h4', {opacity:0, x:-120, duration:0.2, ease:'power4.in'}, 4.7333);
+    tl.fromTo('#h5', {opacity:0, x:120}, {opacity:1, x:0, duration:0.3, ease:'power4.out'}, 4.9);
+    tl.to('#h5', {opacity:0, x:-120, duration:0.2, ease:'power4.in'}, 5.8);
+    tl.fromTo('#h6', {opacity:0, x:120}, {opacity:1, x:0, duration:0.3, ease:'power4.out'}, 5.9667);
+    // insert m1-benzo (mg) 14.23-19.37s
+    tl.fromTo('#m1-benzo-in', {clipPath:'inset(0% 0% 0% 100%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.46, ease:'power3.inOut'}, 14.2333);
+    tl.fromTo('#m1-benzo-tear', {x:1080}, {x:-90, duration:0.46, ease:'power3.inOut'}, 14.2333);
+    tl.to('#m1-benzo-in', {x:-150, opacity:0, filter:'blur(14px)', duration:0.28, ease:'power4.in'}, 19.1);
+    tl.fromTo('#m1-k', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.3, ease:'back.out(1.6)'}, 14.3333);
+    tl.fromTo('#m1-t', {opacity:0, y:46}, {opacity:1, y:0, duration:0.4, ease:'power3.out'}, 15.0);
+    tl.fromTo('#m1-a', {opacity:0, scale:1.35, rotation:4}, {opacity:1, scale:1, rotation:-5, duration:0.26, ease:'power4.out'}, 16.5333);
+    tl.fromTo('#m1-b', {opacity:0, scale:1.35, rotation:13}, {opacity:1, scale:1, rotation:4, duration:0.26, ease:'power4.out'}, 17.1);
+    tl.fromTo('#m1-x1', {strokeDashoffset:1}, {strokeDashoffset:0, duration:0.32, ease:'power2.inOut'}, 17.8667);
+    tl.fromTo('#m1-x2', {strokeDashoffset:1}, {strokeDashoffset:0, duration:0.32, ease:'power2.inOut'}, 18.1333);
+    tl.fromTo('#m1-n', {opacity:0, y:46}, {opacity:1, y:0, duration:0.4, ease:'power3.out'}, 18.9333);
+    // insert b2-switch (broll) 25.07-28.47s
+    tl.set('#b2-switch-in', {opacity:0}, 0);
+    tl.fromTo('#b2-switch-in', {x:150, opacity:0, filter:'blur(16px)'}, {x:0, opacity:1, filter:'blur(0px)', duration:0.36, ease:'power4.out'}, 25.0667);
+    tl.fromTo('#b2-switch-cam', {scale:1.0}, {scale:1.05, duration:3.4, ease:'sine.inOut'}, 25.0667);
+    tl.to('#b2-switch-in', {x:-150, opacity:0, filter:'blur(16px)', duration:0.28, ease:'power4.in'}, 28.2);
+    tl.set('#b2-switch-in', {opacity:0}, 28.4667);
+    tl.fromTo('#s1', {opacity:0, x:120}, {opacity:1, x:0, duration:0.3, ease:'power4.out'}, 26.4667);
+    tl.fromTo('#s2', {opacity:0, y:46}, {opacity:1, y:0, duration:0.4, ease:'power3.out'}, 27.3333);
+    // insert m2-head (mg) 28.43-30.23s
+    tl.fromTo('#m2-head-in', {clipPath:'inset(0% 0% 0% 100%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.46, ease:'power3.inOut'}, 28.4333);
+    tl.fromTo('#m2-head-tear', {x:1080}, {x:-90, duration:0.46, ease:'power3.inOut'}, 28.4333);
+    tl.to('#m2-head-in', {x:-150, opacity:0, filter:'blur(14px)', duration:0.28, ease:'power4.in'}, 29.9667);
+    tl.fromTo('#m2-hp', {strokeDashoffset:1}, {strokeDashoffset:0, duration:0.55, ease:'power2.inOut'}, 28.5333);
+    tl.fromTo('#m2-tg', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.3, ease:'back.out(1.6)'}, 28.7);
+    tl.fromTo('#m2-kn', {x:0}, {x:-58, duration:0.22, ease:'power3.inOut'}, 29.0333);
+    tl.fromTo('#m2-tr', {backgroundColor:'#F5AA55'}, {backgroundColor:'#34465C', duration:0.22, ease:'power2.inOut'}, 29.0333);
+    tl.fromTo('#m2-st', {opacity:0}, {opacity:1, duration:0.2}, 29.1667);
+    tl.fromTo('#m2-a', {opacity:0, y:46}, {opacity:1, y:0, duration:0.4, ease:'power3.out'}, 29.2333);
+    tl.fromTo('#m2-sk', {backgroundSize:'0% 7px'}, {backgroundSize:'100% 7px', duration:0.3, ease:'power2.inOut'}, 29.7);
+    tl.fromTo('#m2-b', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 29.7);
+    // insert b3-condo (broll) 34.60-38.23s
+    tl.set('#b3-condo-in', {opacity:0}, 0);
+    tl.fromTo('#b3-condo-in', {x:150, opacity:0, filter:'blur(16px)'}, {x:0, opacity:1, filter:'blur(0px)', duration:0.36, ease:'power4.out'}, 34.6);
+    tl.fromTo('#b3-condo-cam', {scale:1.0}, {scale:1.06, duration:3.633, ease:'sine.inOut'}, 34.6);
+    tl.to('#b3-condo-in', {x:-150, opacity:0, filter:'blur(16px)', duration:0.28, ease:'power4.in'}, 37.9667);
+    tl.set('#b3-condo-in', {opacity:0}, 38.2333);
+    tl.fromTo('#n31', {opacity:0, scale:1.35, rotation:5}, {opacity:1, scale:1, rotation:-4, duration:0.26, ease:'power4.out'}, 34.7);
+    tl.fromTo('#n32', {opacity:0, scale:1.35, rotation:12}, {opacity:1, scale:1, rotation:3, duration:0.26, ease:'power4.out'}, 35.7333);
+    tl.fromTo('#n33', {opacity:0, scale:1.35, rotation:7}, {opacity:1, scale:1, rotation:-2, duration:0.26, ease:'power4.out'}, 37.3);
+    // insert b4-office (broll) 38.23-42.17s
+    tl.set('#b4-office-in', {opacity:0}, 0);
+    tl.fromTo('#b4-office-in', {x:150, opacity:0, filter:'blur(16px)'}, {x:0, opacity:1, filter:'blur(0px)', duration:0.36, ease:'power4.out'}, 38.2333);
+    tl.fromTo('#b4-office-cam', {scale:1.0}, {scale:1.06, duration:3.933, ease:'sine.inOut'}, 38.2333);
+    tl.to('#b4-office-in', {x:-150, opacity:0, filter:'blur(16px)', duration:0.28, ease:'power4.in'}, 41.9);
+    tl.set('#b4-office-in', {opacity:0}, 42.1667);
+    tl.fromTo('#a0', {opacity:0, y:46}, {opacity:1, y:0, duration:0.4, ease:'power3.out'}, 38.8);
+    tl.fromTo('#a1', {opacity:0, scale:1.6}, {opacity:1, scale:1, duration:0.22, ease:'power4.out'}, 40.3667);
+    tl.fromTo('#a2', {opacity:0, scale:1.6}, {opacity:1, scale:1, duration:0.22, ease:'power4.out'}, 41.3333);
+    // insert m3-scale (mg) 44.77-48.10s
+    tl.fromTo('#m3-scale-in', {clipPath:'inset(0% 0% 0% 100%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.46, ease:'power3.inOut'}, 44.7667);
+    tl.fromTo('#m3-scale-tear', {x:1080}, {x:-90, duration:0.46, ease:'power3.inOut'}, 44.7667);
+    tl.to('#m3-scale-in', {x:-150, opacity:0, filter:'blur(14px)', duration:0.28, ease:'power4.in'}, 47.8333);
+    tl.fromTo('#m3-k', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.3, ease:'back.out(1.6)'}, 44.8667);
+    tl.fromTo('#m3-t', {opacity:0, y:46}, {opacity:1, y:0, duration:0.4, ease:'power3.out'}, 45.2667);
+    tl.fromTo('#m3-d', {opacity:0, y:-160}, {opacity:1, y:0, duration:0.32, ease:'power3.in'}, 45.5333);
+    tl.fromTo('#m3-n', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 45.9);
+    tl.fromTo('#m3-bz', {opacity:0, y:-160}, {opacity:1, y:0, duration:0.32, ease:'power3.in'}, 47.1);
+    tl.fromTo('#m3-beam', {rotation:0}, {rotation:9, duration:0.7, ease:'back.out(1.4)'}, 47.3333);
+    tl.fromTo('#m3-lo', {opacity:0, y:46}, {opacity:1, y:0, duration:0.4, ease:'power3.out'}, 47.4333);
+    // insert b5-morning (broll) 48.10-52.63s
+    tl.set('#b5-morning-in', {opacity:0}, 0);
+    tl.fromTo('#b5-morning-in', {x:150, opacity:0, filter:'blur(16px)'}, {x:0, opacity:1, filter:'blur(0px)', duration:0.36, ease:'power4.out'}, 48.1);
+    tl.fromTo('#b5-morning-cam', {scale:1.0}, {scale:1.05, duration:4.533, ease:'sine.inOut'}, 48.1);
+    tl.to('#b5-morning-in', {x:-150, opacity:0, filter:'blur(16px)', duration:0.28, ease:'power4.in'}, 52.3667);
+    tl.set('#b5-morning-in', {opacity:0}, 52.6333);
+    tl.fromTo('#n51', {opacity:0, scale:1.35, rotation:6}, {opacity:1, scale:1, rotation:-3, duration:0.26, ease:'power4.out'}, 48.2333);
+    tl.fromTo('#n52', {opacity:0, scale:1.35, rotation:11}, {opacity:1, scale:1, rotation:2, duration:0.26, ease:'power4.out'}, 50.5);
+    // insert b7-drowsy (broll) 54.90-59.60s
+    tl.set('#b7-drowsy-in', {opacity:0}, 0);
+    tl.fromTo('#b7-drowsy-in', {x:150, opacity:0, filter:'blur(16px)'}, {x:0, opacity:1, filter:'blur(0px)', duration:0.36, ease:'power4.out'}, 54.9);
+    tl.fromTo('#b7-drowsy-cam', {scale:1.0}, {scale:1.06, duration:4.7, ease:'sine.inOut'}, 54.9);
+    tl.to('#b7-drowsy-in', {x:-150, opacity:0, filter:'blur(16px)', duration:0.28, ease:'power4.in'}, 59.3333);
+    tl.set('#b7-drowsy-in', {opacity:0}, 59.6);
+    tl.fromTo('#n71', {opacity:0, scale:1.35, rotation:6}, {opacity:1, scale:1, rotation:-3, duration:0.26, ease:'power4.out'}, 55.9667);
+    tl.fromTo('#n72', {opacity:0, scale:1.35, rotation:11}, {opacity:1, scale:1, rotation:2, duration:0.26, ease:'power4.out'}, 58.2);
+    // insert m4-bukan (mg) 66.03-69.07s
+    tl.fromTo('#m4-bukan-in', {clipPath:'inset(0% 0% 0% 100%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.46, ease:'power3.inOut'}, 66.0333);
+    tl.fromTo('#m4-bukan-tear', {x:1080}, {x:-90, duration:0.46, ease:'power3.inOut'}, 66.0333);
+    tl.to('#m4-bukan-in', {x:-150, opacity:0, filter:'blur(14px)', duration:0.28, ease:'power4.in'}, 68.8);
+    tl.fromTo('#m4-w1', {opacity:0, y:46}, {opacity:1, y:0, duration:0.4, ease:'power3.out'}, 66.6);
+    tl.fromTo('#m4-w2', {opacity:0, y:46}, {opacity:1, y:0, duration:0.4, ease:'power3.out'}, 66.8667);
+    tl.fromTo('#m4-w3', {opacity:0, scale:1.6}, {opacity:1, scale:1, duration:0.22, ease:'power4.out'}, 67.0667);
+    tl.fromTo('#m4-u', {strokeDashoffset:1}, {strokeDashoffset:0, duration:0.4, ease:'power2.inOut'}, 67.5);
+    tl.fromTo('#m4-s', {opacity:0, y:46}, {opacity:1, y:0, duration:0.4, ease:'power3.out'}, 67.5667);
+    // insert b6-nurse (broll) 69.07-72.27s
+    tl.set('#b6-nurse-in', {opacity:0}, 0);
+    tl.fromTo('#b6-nurse-in', {x:150, opacity:0, filter:'blur(16px)'}, {x:0, opacity:1, filter:'blur(0px)', duration:0.36, ease:'power4.out'}, 69.0667);
+    tl.fromTo('#b6-nurse-cam', {scale:1.0}, {scale:1.05, duration:3.2, ease:'sine.inOut'}, 69.0667);
+    tl.to('#b6-nurse-in', {x:-150, opacity:0, filter:'blur(16px)', duration:0.28, ease:'power4.in'}, 72.0);
+    tl.set('#b6-nurse-in', {opacity:0}, 72.2667);
+    tl.fromTo('#n61', {opacity:0, scale:1.35, rotation:6}, {opacity:1, scale:1, rotation:-3, duration:0.26, ease:'power4.out'}, 69.1667);
+    tl.fromTo('#n62', {opacity:0, scale:1.35, rotation:12}, {opacity:1, scale:1, rotation:3, duration:0.26, ease:'power4.out'}, 70.9667);
+    tl.fromTo('#n63', {opacity:0, scale:2.0, rotation:-8}, {opacity:1, scale:1, rotation:-6, duration:0.24, ease:'power4.out'}, 71.8667);
+    // insert m5-jangan (mg) 80.50-81.77s
+    tl.fromTo('#m5-jangan-in', {clipPath:'inset(0% 0% 0% 100%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.46, ease:'power3.inOut'}, 80.5);
+    tl.fromTo('#m5-jangan-tear', {x:1080}, {x:-90, duration:0.46, ease:'power3.inOut'}, 80.5);
+    tl.to('#m5-jangan-in', {x:-150, opacity:0, filter:'blur(14px)', duration:0.28, ease:'power4.in'}, 81.5);
+    tl.fromTo('#m5-s', {opacity:0, scale:2.0, rotation:-8}, {opacity:1, scale:1, rotation:-6, duration:0.24, ease:'power4.out'}, 80.6333);
+    // insert b8-consult (broll) 85.47-88.97s
+    tl.set('#b8-consult-in', {opacity:0}, 0);
+    tl.fromTo('#b8-consult-in', {x:150, opacity:0, filter:'blur(16px)'}, {x:0, opacity:1, filter:'blur(0px)', duration:0.36, ease:'power4.out'}, 85.4667);
+    tl.fromTo('#b8-consult-cam', {scale:1.0}, {scale:1.05, duration:3.5, ease:'sine.inOut'}, 85.4667);
+    tl.to('#b8-consult-in', {x:-150, opacity:0, filter:'blur(16px)', duration:0.28, ease:'power4.in'}, 88.7);
+    tl.set('#b8-consult-in', {opacity:0}, 88.9667);
+    tl.fromTo('#n81', {opacity:0, scale:1.35, rotation:7}, {opacity:1, scale:1, rotation:-2, duration:0.26, ease:'power4.out'}, 85.8333);
+    tl.fromTo('#n82', {opacity:0, scale:1.35, rotation:12}, {opacity:1, scale:1, rotation:3, duration:0.26, ease:'power4.out'}, 87.7667);
+    tl.fromTo('#capi0', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 6.8333);
+    tl.set('#cw0-0', {className:'w on'}, 6.9);
+    tl.set('#cw0-1', {className:'w on'}, 7.1);
+    tl.fromTo('#capi1', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 7.3);
+    tl.set('#cw1-0', {className:'w on'}, 7.3667);
+    tl.set('#cw1-1', {className:'w on'}, 7.6667);
+    tl.set('#cw1-2', {className:'w on'}, 7.8667);
+    tl.fromTo('#capi2', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 8.2667);
+    tl.set('#cw2-0', {className:'w on'}, 8.3333);
+    tl.set('#cw2-1', {className:'w on'}, 8.6667);
+    tl.set('#cw2-2', {className:'w on'}, 8.9);
+    tl.fromTo('#capi3', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 9.3);
+    tl.set('#cw3-0', {className:'w key on'}, 9.3667);
+    tl.fromTo('#capi4', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 10.2);
+    tl.set('#cw4-0', {className:'w on'}, 10.2333);
+    tl.set('#cw4-1', {className:'w on'}, 10.6);
+    tl.set('#cw4-2', {className:'w key on'}, 10.9);
+    tl.fromTo('#capi5', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 11.4333);
+    tl.set('#cw5-0', {className:'w key on'}, 11.5);
+    tl.set('#cw5-1', {className:'w on'}, 11.9667);
+    tl.set('#cw5-2', {className:'w on'}, 12.1);
+    tl.fromTo('#capi6', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 12.5333);
+    tl.set('#cw6-0', {className:'w on'}, 12.6);
+    tl.set('#cw6-1', {className:'w on'}, 13.0);
+    tl.fromTo('#capi7', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 13.3667);
+    tl.set('#cw7-0', {className:'w key on'}, 13.4333);
+    tl.set('#cw7-1', {className:'w on'}, 13.8667);
+    tl.fromTo('#capi8', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 14.3);
+    tl.set('#cw8-0', {className:'w on'}, 14.3667);
+    tl.set('#cw8-1', {className:'w on'}, 14.6);
+    tl.set('#cw8-2', {className:'w on'}, 15.0);
+    tl.fromTo('#capi9', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 15.0333);
+    tl.set('#cw9-0', {className:'w on'}, 15.1);
+    tl.set('#cw9-1', {className:'w on'}, 15.3);
+    tl.fromTo('#capi10', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 15.6);
+    tl.set('#cw10-0', {className:'w key on'}, 15.6667);
+    tl.fromTo('#capi11', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 16.3333);
+    tl.set('#cw11-0', {className:'w on'}, 16.4);
+    tl.set('#cw11-1', {className:'w key on'}, 16.6333);
+    tl.fromTo('#capi12', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 17.1333);
+    tl.set('#cw12-0', {className:'w key on'}, 17.2);
+    tl.fromTo('#capi13', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 17.8333);
+    tl.set('#cw13-0', {className:'w on'}, 17.9);
+    tl.set('#cw13-1', {className:'w on'}, 18.0333);
+    tl.set('#cw13-2', {className:'w on'}, 18.3667);
+    tl.fromTo('#capi14', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 18.5);
+    tl.set('#cw14-0', {className:'w on'}, 18.5667);
+    tl.set('#cw14-1', {className:'w on'}, 18.7333);
+    tl.set('#cw14-2', {className:'w on'}, 18.8333);
+    tl.fromTo('#capi15', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 18.9667);
+    tl.set('#cw15-0', {className:'w on'}, 19.0333);
+    tl.fromTo('#capi16', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 19.4333);
+    tl.set('#cw16-0', {className:'w on'}, 19.4667);
+    tl.set('#cw16-1', {className:'w on'}, 19.7667);
+    tl.set('#cw16-2', {className:'w on'}, 19.9);
+    tl.fromTo('#capi17', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 20.0667);
+    tl.set('#cw17-0', {className:'w on'}, 20.1333);
+    tl.set('#cw17-1', {className:'w on'}, 20.5667);
+    tl.fromTo('#capi18', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 21.0667);
+    tl.set('#cw18-0', {className:'w key on'}, 21.1333);
+    tl.set('#cw18-1', {className:'w on'}, 22.0333);
+    tl.fromTo('#capi19', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 22.4667);
+    tl.set('#cw19-0', {className:'w key on'}, 22.5333);
+    tl.fromTo('#capi20', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 23.1333);
+    tl.set('#cw20-0', {className:'w on'}, 23.2);
+    tl.set('#cw20-1', {className:'w on'}, 23.6);
+    tl.set('#cw20-2', {className:'w on'}, 23.9333);
+    tl.fromTo('#capi21', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 24.1);
+    tl.set('#cw21-0', {className:'w on'}, 24.1667);
+    tl.set('#cw21-1', {className:'w on'}, 24.6);
+    tl.set('#cw21-2', {className:'w on'}, 24.8333);
+    tl.fromTo('#capi22', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 25.2667);
+    tl.set('#cw22-0', {className:'w on'}, 25.3333);
+    tl.set('#cw22-1', {className:'w on'}, 25.5);
+    tl.fromTo('#capi23', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 26.1333);
+    tl.set('#cw23-0', {className:'w key on'}, 26.1667);
+    tl.set('#cw23-1', {className:'w key on'}, 26.7333);
+    tl.fromTo('#capi24', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 27.4);
+    tl.set('#cw24-0', {className:'w on'}, 27.4333);
+    tl.set('#cw24-1', {className:'w key on'}, 28.0333);
+    tl.set('#cw24-2', {className:'w on'}, 28.5);
+    tl.fromTo('#capi25', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 28.6667);
+    tl.set('#cw25-0', {className:'w on'}, 28.7333);
+    tl.set('#cw25-1', {className:'w on'}, 28.9333);
+    tl.fromTo('#capi26', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 29.1333);
+    tl.set('#cw26-0', {className:'w on'}, 29.1667);
+    tl.set('#cw26-1', {className:'w on'}, 29.3333);
+    tl.set('#cw26-2', {className:'w on'}, 29.4333);
+    tl.fromTo('#capi27', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 29.7);
+    tl.set('#cw27-0', {className:'w on'}, 29.7333);
+    tl.set('#cw27-1', {className:'w on'}, 30.0667);
+    tl.fromTo('#capi28', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 30.2667);
+    tl.set('#cw28-0', {className:'w on'}, 30.3333);
+    tl.set('#cw28-1', {className:'w on'}, 30.6333);
+    tl.fromTo('#capi29', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 31.0333);
+    tl.set('#cw29-0', {className:'w on'}, 31.0667);
+    tl.set('#cw29-1', {className:'w on'}, 31.4667);
+    tl.fromTo('#capi30', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 31.6333);
+    tl.set('#cw30-0', {className:'w key on'}, 31.6667);
+    tl.set('#cw30-1', {className:'w on'}, 32.1667);
+    tl.set('#cw30-2', {className:'w on'}, 32.3333);
+    tl.fromTo('#capi31', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 32.6);
+    tl.set('#cw31-0', {className:'w on'}, 32.6667);
+    tl.set('#cw31-1', {className:'w on'}, 33.1667);
+    tl.fromTo('#capi32', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 34.6);
+    tl.set('#cw32-0', {className:'w on'}, 34.3);
+    tl.set('#cw32-1', {className:'w on'}, 34.6);
+    tl.set('#cw32-2', {className:'w on'}, 34.7667);
+    tl.fromTo('#capi33', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 35.0667);
+    tl.set('#cw33-0', {className:'w on'}, 35.1);
+    tl.set('#cw33-1', {className:'w on'}, 35.2667);
+    tl.fromTo('#capi34', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 35.7667);
+    tl.set('#cw34-0', {className:'w on'}, 35.8333);
+    tl.set('#cw34-1', {className:'w on'}, 36.1667);
+    tl.fromTo('#capi35', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 36.6);
+    tl.set('#cw35-0', {className:'w on'}, 36.6667);
+    tl.set('#cw35-1', {className:'w on'}, 36.8);
+    tl.set('#cw35-2', {className:'w on'}, 37.0333);
+    tl.fromTo('#capi36', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 37.3333);
+    tl.set('#cw36-0', {className:'w on'}, 37.4);
+    tl.set('#cw36-1', {className:'w on'}, 37.7333);
+    tl.set('#cw36-2', {className:'w on'}, 37.8667);
+    tl.fromTo('#capi37', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 38.2333);
+    tl.set('#cw37-0', {className:'w on'}, 38.3);
+    tl.fromTo('#capi38', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 38.8333);
+    tl.set('#cw38-0', {className:'w key on'}, 38.9);
+    tl.set('#cw38-1', {className:'w on'}, 39.3);
+    tl.fromTo('#capi39', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 39.3667);
+    tl.set('#cw39-0', {className:'w on'}, 39.4333);
+    tl.set('#cw39-1', {className:'w on'}, 39.8667);
+    tl.fromTo('#capi40', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 40.4);
+    tl.set('#cw40-0', {className:'w key on'}, 40.4667);
+    tl.set('#cw40-1', {className:'w on'}, 41.1333);
+    tl.set('#cw40-2', {className:'w on'}, 41.2333);
+    tl.fromTo('#capi41', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 41.3667);
+    tl.set('#cw41-0', {className:'w key on'}, 41.4333);
+    tl.fromTo('#capi42', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 42.2333);
+    tl.set('#cw42-0', {className:'w on'}, 42.3);
+    tl.set('#cw42-1', {className:'w key on'}, 42.7333);
+    tl.fromTo('#capi43', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 43.2333);
+    tl.set('#cw43-0', {className:'w on'}, 43.3);
+    tl.set('#cw43-1', {className:'w on'}, 43.5);
+    tl.set('#cw43-2', {className:'w on'}, 43.8333);
+    tl.fromTo('#capi44', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 44.0333);
+    tl.set('#cw44-0', {className:'w on'}, 44.1);
+    tl.set('#cw44-1', {className:'w key on'}, 44.3333);
+    tl.fromTo('#capi45', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 44.8333);
+    tl.set('#cw45-0', {className:'w on'}, 44.9);
+    tl.set('#cw45-1', {className:'w key on'}, 45.3667);
+    tl.fromTo('#capi46', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 45.9333);
+    tl.set('#cw46-0', {className:'w on'}, 46.0);
+    tl.set('#cw46-1', {className:'w on'}, 46.5);
+    tl.fromTo('#capi47', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 46.9);
+    tl.set('#cw47-0', {className:'w on'}, 46.9667);
+    tl.set('#cw47-1', {className:'w key on'}, 47.2);
+    tl.fromTo('#capi48', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 48.1);
+    tl.set('#cw48-0', {className:'w on'}, 48.1667);
+    tl.set('#cw48-1', {className:'w on'}, 48.3333);
+    tl.fromTo('#capi49', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 48.6333);
+    tl.set('#cw49-0', {className:'w key on'}, 48.7);
+    tl.set('#cw49-1', {className:'w on'}, 49.1);
+    tl.fromTo('#capi50', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 49.3333);
+    tl.set('#cw50-0', {className:'w on'}, 49.4);
+    tl.set('#cw50-1', {className:'w on'}, 49.6333);
+    tl.set('#cw50-2', {className:'w on'}, 49.8);
+    tl.set('#cw50-3', {className:'w on'}, 50.0);
+    tl.fromTo('#capi51', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 50.2);
+    tl.set('#cw51-0', {className:'w on'}, 50.2667);
+    tl.set('#cw51-1', {className:'w on'}, 50.4);
+    tl.fromTo('#capi52', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 50.5333);
+    tl.set('#cw52-0', {className:'w on'}, 50.6);
+    tl.set('#cw52-1', {className:'w on'}, 51.1333);
+    tl.fromTo('#capi53', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 51.3667);
+    tl.set('#cw53-0', {className:'w on'}, 51.4333);
+    tl.set('#cw53-1', {className:'w on'}, 51.6);
+    tl.set('#cw53-2', {className:'w on'}, 51.8);
+    tl.fromTo('#capi54', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 52.7);
+    tl.set('#cw54-0', {className:'w on'}, 52.7667);
+    tl.set('#cw54-1', {className:'w on'}, 53.0667);
+    tl.set('#cw54-2', {className:'w on'}, 53.3);
+    tl.fromTo('#capi55', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 53.4333);
+    tl.set('#cw55-0', {className:'w on'}, 53.5);
+    tl.set('#cw55-1', {className:'w on'}, 53.5667);
+    tl.fromTo('#capi56', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 53.6333);
+    tl.set('#cw56-0', {className:'w on'}, 53.7);
+    tl.set('#cw56-1', {className:'w key on'}, 53.9);
+    tl.fromTo('#capi57', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 54.4);
+    tl.set('#cw57-0', {className:'w on'}, 54.4333);
+    tl.set('#cw57-1', {className:'w on'}, 54.9667);
+    tl.set('#cw57-2', {className:'w on'}, 55.2333);
+    tl.fromTo('#capi58', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 55.3667);
+    tl.set('#cw58-0', {className:'w on'}, 55.4333);
+    tl.set('#cw58-1', {className:'w on'}, 55.5667);
+    tl.fromTo('#capi59', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 56.0);
+    tl.set('#cw59-0', {className:'w key on'}, 56.0667);
+    tl.set('#cw59-1', {className:'w on'}, 56.6667);
+    tl.fromTo('#capi60', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 56.8667);
+    tl.set('#cw60-0', {className:'w on'}, 56.9333);
+    tl.set('#cw60-1', {className:'w on'}, 57.1333);
+    tl.fromTo('#capi61', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 57.3333);
+    tl.set('#cw61-0', {className:'w on'}, 57.4);
+    tl.set('#cw61-1', {className:'w on'}, 57.9333);
+    tl.fromTo('#capi62', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 58.2333);
+    tl.set('#cw62-0', {className:'w on'}, 58.3);
+    tl.set('#cw62-1', {className:'w on'}, 58.8);
+    tl.fromTo('#capi63', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 59.1667);
+    tl.set('#cw63-0', {className:'w on'}, 59.2333);
+    tl.set('#cw63-1', {className:'w on'}, 59.4667);
+    tl.fromTo('#capi64', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 59.8);
+    tl.set('#cw64-0', {className:'w on'}, 59.8333);
+    tl.set('#cw64-1', {className:'w on'}, 60.0);
+    tl.fromTo('#capi65', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 60.3);
+    tl.set('#cw65-0', {className:'w key on'}, 60.3333);
+    tl.set('#cw65-1', {className:'w on'}, 60.6333);
+    tl.fromTo('#capi66', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 61.3667);
+    tl.set('#cw66-0', {className:'w on'}, 61.4333);
+    tl.set('#cw66-1', {className:'w key on'}, 61.8333);
+    tl.fromTo('#capi67', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 62.1667);
+    tl.set('#cw67-0', {className:'w on'}, 62.2333);
+    tl.fromTo('#capi68', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 63.5);
+    tl.set('#cw68-0', {className:'w on'}, 63.5667);
+    tl.set('#cw68-1', {className:'w on'}, 63.8333);
+    tl.set('#cw68-2', {className:'w key on'}, 63.9667);
+    tl.fromTo('#capi69', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 64.2667);
+    tl.set('#cw69-0', {className:'w on'}, 64.3333);
+    tl.set('#cw69-1', {className:'w on'}, 64.4667);
+    tl.set('#cw69-2', {className:'w on'}, 64.6);
+    tl.fromTo('#capi70', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 65.0);
+    tl.set('#cw70-0', {className:'w on'}, 65.0667);
+    tl.set('#cw70-1', {className:'w on'}, 65.4);
+    tl.set('#cw70-2', {className:'w on'}, 65.6);
+    tl.fromTo('#capi71', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 65.6667);
+    tl.set('#cw71-0', {className:'w on'}, 65.7333);
+    tl.fromTo('#capi72', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 66.0667);
+    tl.set('#cw72-0', {className:'w key on'}, 66.1333);
+    tl.set('#cw72-1', {className:'w on'}, 66.5);
+    tl.set('#cw72-2', {className:'w on'}, 66.7);
+    tl.fromTo('#capi73', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 66.9);
+    tl.set('#cw73-0', {className:'w on'}, 66.9667);
+    tl.set('#cw73-1', {className:'w on'}, 67.1667);
+    tl.set('#cw73-2', {className:'w on'}, 67.4);
+    tl.fromTo('#capi74', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 67.6);
+    tl.set('#cw74-0', {className:'w on'}, 67.6667);
+    tl.set('#cw74-1', {className:'w on'}, 67.8);
+    tl.set('#cw74-2', {className:'w on'}, 68.5);
+    tl.fromTo('#capi75', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 69.2);
+    tl.set('#cw75-0', {className:'w on'}, 69.2667);
+    tl.set('#cw75-1', {className:'w on'}, 69.6);
+    tl.set('#cw75-2', {className:'w key on'}, 69.8333);
+    tl.fromTo('#capi76', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 70.0333);
+    tl.set('#cw76-0', {className:'w on'}, 70.0667);
+    tl.fromTo('#capi77', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 70.4667);
+    tl.set('#cw77-0', {className:'w on'}, 70.5333);
+    tl.set('#cw77-1', {className:'w on'}, 70.9);
+    tl.fromTo('#capi78', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 71.0);
+    tl.set('#cw78-0', {className:'w on'}, 71.0667);
+    tl.set('#cw78-1', {className:'w key on'}, 71.3);
+    tl.set('#cw78-2', {className:'w on'}, 71.5);
+    tl.fromTo('#capi79', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 71.8333);
+    tl.set('#cw79-0', {className:'w on'}, 71.8667);
+    tl.set('#cw79-1', {className:'w on'}, 71.9667);
+    tl.fromTo('#capi80', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 72.3667);
+    tl.set('#cw80-0', {className:'w on'}, 72.4);
+    tl.set('#cw80-1', {className:'w on'}, 72.8333);
+    tl.set('#cw80-2', {className:'w on'}, 73.1333);
+    tl.fromTo('#capi81', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 73.3);
+    tl.set('#cw81-0', {className:'w on'}, 73.3333);
+    tl.set('#cw81-1', {className:'w key on'}, 73.5333);
+    tl.fromTo('#capi82', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 74.0);
+    tl.set('#cw82-0', {className:'w on'}, 74.0667);
+    tl.set('#cw82-1', {className:'w on'}, 74.3667);
+    tl.fromTo('#capi83', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 74.8333);
+    tl.set('#cw83-0', {className:'w key on'}, 74.8667);
+    tl.set('#cw83-1', {className:'w on'}, 75.3333);
+    tl.fromTo('#capi84', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 75.4667);
+    tl.set('#cw84-0', {className:'w on'}, 75.5333);
+    tl.set('#cw84-1', {className:'w on'}, 75.7);
+    tl.set('#cw84-2', {className:'w on'}, 75.9333);
+    tl.fromTo('#capi85', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 76.0667);
+    tl.set('#cw85-0', {className:'w on'}, 76.1333);
+    tl.set('#cw85-1', {className:'w key on'}, 76.4333);
+    tl.fromTo('#capi86', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 76.8667);
+    tl.set('#cw86-0', {className:'w on'}, 76.9333);
+    tl.set('#cw86-1', {className:'w on'}, 77.1333);
+    tl.set('#cw86-2', {className:'w on'}, 77.5667);
+    tl.fromTo('#capi87', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 77.8);
+    tl.set('#cw87-0', {className:'w on'}, 77.8667);
+    tl.set('#cw87-1', {className:'w on'}, 78.5);
+    tl.fromTo('#capi88', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 78.9667);
+    tl.set('#cw88-0', {className:'w on'}, 79.0333);
+    tl.set('#cw88-1', {className:'w on'}, 79.5);
+    tl.set('#cw88-2', {className:'w on'}, 80.1);
+    tl.fromTo('#capi89', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 80.5667);
+    tl.set('#cw89-0', {className:'w key on'}, 80.6333);
+    tl.set('#cw89-1', {className:'w key on'}, 81.3333);
+    tl.set('#cw89-2', {className:'w on'}, 81.5667);
+    tl.fromTo('#capi90', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 81.8);
+    tl.set('#cw90-0', {className:'w on'}, 81.8667);
+    tl.set('#cw90-1', {className:'w on'}, 82.3333);
+    tl.fromTo('#capi91', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 82.8);
+    tl.set('#cw91-0', {className:'w on'}, 82.8667);
+    tl.set('#cw91-1', {className:'w on'}, 83.4667);
+    tl.fromTo('#capi92', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 83.8667);
+    tl.set('#cw92-0', {className:'w on'}, 83.9);
+    tl.set('#cw92-1', {className:'w on'}, 84.5667);
+    tl.fromTo('#capi93', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 84.8667);
+    tl.set('#cw93-0', {className:'w on'}, 84.9333);
+    tl.set('#cw93-1', {className:'w key on'}, 85.1333);
+    tl.fromTo('#capi94', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 85.5);
+    tl.set('#cw94-0', {className:'w on'}, 85.5667);
+    tl.set('#cw94-1', {className:'w on'}, 85.8);
+    tl.set('#cw94-2', {className:'w on'}, 85.9333);
+    tl.fromTo('#capi95', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 86.3);
+    tl.set('#cw95-0', {className:'w on'}, 86.3667);
+    tl.set('#cw95-1', {className:'w key on'}, 86.6667);
+    tl.fromTo('#capi96', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 87.0333);
+    tl.set('#cw96-0', {className:'w on'}, 87.1);
+    tl.set('#cw96-1', {className:'w on'}, 87.4);
+    tl.fromTo('#capi97', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 87.6667);
+    tl.set('#cw97-0', {className:'w on'}, 87.7);
+    tl.set('#cw97-1', {className:'w on'}, 87.8667);
+    tl.fromTo('#capi98', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 88.0667);
+    tl.set('#cw98-0', {className:'w on'}, 88.1333);
+    tl.set('#cw98-1', {className:'w on'}, 88.5667);
+    tl.fromTo('#capi99', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 88.9667);
+    tl.set('#cw99-0', {className:'w on'}, 89.0333);
+    tl.set('#cw99-1', {className:'w on'}, 89.3333);
+    tl.fromTo('#capi100', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 89.4667);
+    tl.set('#cw100-0', {className:'w on'}, 89.5333);
+    tl.set('#cw100-1', {className:'w on'}, 89.7);
+    tl.set('#cw100-2', {className:'w on'}, 90.0667);
+    tl.fromTo('#capi101', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 90.1333);
+    tl.set('#cw101-0', {className:'w on'}, 90.2);
+    tl.fromTo('#capi102', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 90.5333);
+    tl.set('#cw102-0', {className:'w on'}, 90.6);
+    tl.set('#cw102-1', {className:'w on'}, 90.9);
+    tl.fromTo('#capi103', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 91.3333);
+    tl.set('#cw103-0', {className:'w on'}, 91.4);
+    tl.set('#cw103-1', {className:'w on'}, 91.7);
+    tl.fromTo('#capi104', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 91.9);
+    tl.set('#cw104-0', {className:'w key on'}, 91.9667);
+    tl.set('#cw104-1', {className:'w on'}, 92.2);
+    tl.fromTo('#capi105', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 92.4);
+    tl.set('#cw105-0', {className:'w on'}, 92.4333);
+    tl.set('#cw105-1', {className:'w on'}, 92.5333);
+    tl.set('#cw105-2', {className:'w on'}, 92.7667);
+    tl.fromTo('#capi106', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 92.8667);
+    tl.set('#cw106-0', {className:'w on'}, 92.9333);
+    tl.set('#cw106-1', {className:'w on'}, 93.0333);
+    tl.fromTo('#capi107', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 93.3333);
+    tl.set('#cw107-0', {className:'w on'}, 93.4);
+    tl.set('#cw107-1', {className:'w on'}, 93.6667);
+    tl.fromTo('#capi108', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 94.0);
+    tl.set('#cw108-0', {className:'w on'}, 94.0667);
+    tl.set('#cw108-1', {className:'w on'}, 94.2);
+    tl.set('#cw108-2', {className:'w on'}, 94.3333);
+    tl.set('#cw108-3', {className:'w on'}, 94.5);
+    tl.fromTo('#capi109', {opacity:0, y:16, scale:0.94}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 94.7667);
+    tl.set('#cw109-0', {className:'w on'}, 94.8);
+    tl.set('#cw109-1', {className:'w on'}, 94.9667);
+    window.__timelines["dayvigo"] = tl;
+  })();
+  </script>
+</div>
+</body>
+</html>

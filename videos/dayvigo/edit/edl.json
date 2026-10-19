@@ -1,0 +1,311 @@
+{
+  "version": 1,
+  "sources": {
+    "dayvigo": "/home/user/tiktokvideo/videos/dayvigo/edit/source_enh.mov"
+  },
+  "ranges": [
+    {
+      "source": "dayvigo",
+      "start": 0.58,
+      "end": 3.111,
+      "beat": "HOOK",
+      "zoom": 1.0
+    },
+    {
+      "source": "dayvigo",
+      "start": 3.309,
+      "end": 5.641,
+      "beat": "HOOK",
+      "zoom": 1.08
+    },
+    {
+      "source": "dayvigo",
+      "start": 5.81,
+      "end": 8.3,
+      "beat": "HOOK",
+      "reason": "Badan penat ... Pernah tak? — 4s of breath/box handling after it cut",
+      "zoom": 1.03
+    },
+    {
+      "source": "dayvigo",
+      "start": 12.22,
+      "end": 15.053,
+      "beat": "WHAT",
+      "zoom": 1.1
+    },
+    {
+      "source": "dayvigo",
+      "start": 15.74,
+      "end": 19.84,
+      "beat": "WHAT",
+      "zoom": 1.05
+    },
+    {
+      "source": "dayvigo",
+      "start": 20.04,
+      "end": 23.493,
+      "beat": "WHAT",
+      "zoom": 1.0
+    },
+    {
+      "source": "dayvigo",
+      "start": 24.059,
+      "end": 25.725,
+      "beat": "WHAT",
+      "zoom": 1.08
+    },
+    {
+      "source": "dayvigo",
+      "start": 26.201,
+      "end": 28.72,
+      "beat": "WHAT",
+      "zoom": 1.03
+    },
+    {
+      "source": "dayvigo",
+      "start": 28.84,
+      "end": 30.06,
+      "beat": "WHAT",
+      "reason": "Pernah tak dengar ubat nama dia Dayvigo? ... orexin reseptor antagonis. — first 'bahasa senang dia' take dropped",
+      "zoom": 1.1
+    },
+    {
+      "source": "dayvigo",
+      "start": 34.98,
+      "end": 37.82,
+      "beat": "HOW",
+      "zoom": 1.05
+    },
+    {
+      "source": "dayvigo",
+      "start": 38.11,
+      "end": 39.25,
+      "beat": "HOW",
+      "zoom": 1.0
+    },
+    {
+      "source": "dayvigo",
+      "start": 39.307,
+      "end": 40.065,
+      "beat": "HOW",
+      "zoom": 1.0
+    },
+    {
+      "source": "dayvigo",
+      "start": 40.391,
+      "end": 41.607,
+      "beat": "HOW",
+      "zoom": 1.08
+    },
+    {
+      "source": "dayvigo",
+      "start": 41.723,
+      "end": 42.823,
+      "beat": "HOW",
+      "reason": "Bahasa senang dia ... switch off butang jaga ... Dia tak paksa tidur pun. — 2nd take, 'dalam' and 'sebenarnya' cut",
+      "zoom": 1.03
+    },
+    {
+      "source": "dayvigo",
+      "start": 46.723,
+      "end": 50.681,
+      "beat": "USES",
+      "zoom": 1.1
+    },
+    {
+      "source": "dayvigo",
+      "start": 52.541,
+      "end": 60.43,
+      "beat": "USES",
+      "zoom": 1.05
+    },
+    {
+      "source": "dayvigo",
+      "start": 60.66,
+      "end": 62.377,
+      "beat": "USES",
+      "zoom": 1.0
+    },
+    {
+      "source": "dayvigo",
+      "start": 62.471,
+      "end": 63.52,
+      "beat": "USES",
+      "zoom": 1.08
+    },
+    {
+      "source": "dayvigo",
+      "start": 63.72,
+      "end": 66.81,
+      "beat": "USES",
+      "zoom": 1.03
+    },
+    {
+      "source": "dayvigo",
+      "start": 67.18,
+      "end": 72.223,
+      "beat": "USES",
+      "zoom": 1.1
+    },
+    {
+      "source": "dayvigo",
+      "start": 73.145,
+      "end": 74.417,
+      "beat": "USES",
+      "zoom": 1.05
+    },
+    {
+      "source": "dayvigo",
+      "start": 74.625,
+      "end": 75.213,
+      "beat": "USES",
+      "reason": "Antara fungsi utama ... kesan sampingan. Contohnya, — abandoned 'ubat ni dia boleh mengantuk pada' dropped",
+      "zoom": 1.05
+    },
+    {
+      "source": "dayvigo",
+      "start": 80.481,
+      "end": 81.013,
+      "beat": "SIDE",
+      "zoom": 1.05
+    },
+    {
+      "source": "dayvigo",
+      "start": 81.385,
+      "end": 84.799,
+      "beat": "SIDE",
+      "zoom": 1.0
+    },
+    {
+      "source": "dayvigo",
+      "start": 85.269,
+      "end": 86.13,
+      "beat": "SIDE",
+      "zoom": 1.08
+    },
+    {
+      "source": "dayvigo",
+      "start": 86.37,
+      "end": 87.88,
+      "beat": "SIDE",
+      "zoom": 1.03
+    },
+    {
+      "source": "dayvigo",
+      "start": 87.93,
+      "end": 90.703,
+      "beat": "SIDE",
+      "zoom": 1.1
+    },
+    {
+      "source": "dayvigo",
+      "start": 90.959,
+      "end": 93.089,
+      "beat": "SIDE",
+      "zoom": 1.05
+    },
+    {
+      "source": "dayvigo",
+      "start": 93.739,
+      "end": 94.293,
+      "beat": "SIDE",
+      "zoom": 1.05
+    },
+    {
+      "source": "dayvigo",
+      "start": 94.353,
+      "end": 96.95,
+      "beat": "SIDE",
+      "zoom": 1.0
+    },
+    {
+      "source": "dayvigo",
+      "start": 97.23,
+      "end": 98.889,
+      "beat": "SIDE",
+      "zoom": 1.08
+    },
+    {
+      "source": "dayvigo",
+      "start": 99.449,
+      "end": 100.445,
+      "beat": "SIDE",
+      "zoom": 1.03
+    },
+    {
+      "source": "dayvigo",
+      "start": 100.797,
+      "end": 101.343,
+      "beat": "SIDE",
+      "zoom": 1.03
+    },
+    {
+      "source": "dayvigo",
+      "start": 102.075,
+      "end": 103.65,
+      "beat": "SIDE",
+      "zoom": 1.1
+    },
+    {
+      "source": "dayvigo",
+      "start": 103.83,
+      "end": 105.92,
+      "beat": "SIDE",
+      "reason": "ubat ni boleh menyebabkan mengantuk ... elakkan alkohol kalau ambil ubat ni. — restart take, 'macam dia' cut",
+      "zoom": 1.05
+    },
+    {
+      "source": "dayvigo",
+      "start": 107.09,
+      "end": 110.477,
+      "beat": "HELP",
+      "zoom": 1.0
+    },
+    {
+      "source": "dayvigo",
+      "start": 110.811,
+      "end": 111.933,
+      "beat": "HELP",
+      "zoom": 1.08
+    },
+    {
+      "source": "dayvigo",
+      "start": 112.337,
+      "end": 113.563,
+      "beat": "HELP",
+      "zoom": 1.03
+    },
+    {
+      "source": "dayvigo",
+      "start": 114.635,
+      "end": 118.31,
+      "beat": "HELP",
+      "zoom": 1.1
+    },
+    {
+      "source": "dayvigo",
+      "start": 118.58,
+      "end": 122.08,
+      "beat": "HELP",
+      "reason": "Kalau insomnia dah lama sangat ... untuk cari punca sebenar. — kept 'otak jadi rosak' (user call)",
+      "zoom": 1.05
+    },
+    {
+      "source": "dayvigo",
+      "start": 126.39,
+      "end": 132.6,
+      "beat": "CLOSE",
+      "reason": "Ataupun boleh buat saringan ... Take care. — superseded 'Ataupun boleh datang di klinik saya' dropped",
+      "zoom": 1.0
+    }
+  ],
+  "grade": "subtle",
+  "zoom_focus": [
+    0.5,
+    0.45
+  ],
+  "hflip": true,
+  "tail_hold": 0.6,
+  "overlays": [],
+  "total_duration_s": 95.76
+}

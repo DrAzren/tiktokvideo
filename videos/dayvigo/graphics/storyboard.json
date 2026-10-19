@@ -1,0 +1,164 @@
+{
+ "duration": 95.8333,
+ "hero": {
+  "word": "INSOMNIA",
+  "start": 33.5333,
+  "end": 34.6
+ },
+ "cards": [
+  {
+   "id": "c01-dayvigo",
+   "start": 7.1333,
+   "end": 14.3333,
+   "intent": "What Dayvigo is \u2014 a new-generation sleep medicine"
+  },
+  {
+   "id": "c02-orexin",
+   "start": 19.3,
+   "end": 23.1,
+   "intent": "Drug class, word by word"
+  },
+  {
+   "id": "c03-senang",
+   "start": 23.1333,
+   "end": 25.4,
+   "intent": "Plain-language setup for the switch metaphor"
+  },
+  {
+   "id": "c04-fungsi",
+   "start": 30.2333,
+   "end": 34.3667,
+   "intent": "Kicker for the hero word"
+  },
+  {
+   "id": "c05-kelebihan",
+   "start": 42.1667,
+   "end": 44.8667,
+   "intent": "Benefit 1"
+  },
+  {
+   "id": "c06-kesan",
+   "start": 52.6667,
+   "end": 54.9333,
+   "intent": "Side effects exist for every medicine"
+  },
+  {
+   "id": "c07-mimpi",
+   "start": 59.6667,
+   "end": 66.0,
+   "intent": "Side effects 2-3, then 'mild, dose-controlled'"
+  },
+  {
+   "id": "c08-arahan",
+   "start": 72.2667,
+   "end": 76.0333,
+   "intent": "Safety: follow the doctor, avoid alcohol"
+  },
+  {
+   "id": "c09-lama",
+   "start": 76.0333,
+   "end": 80.4667,
+   "intent": "Long-standing insomnia disrupting emotion / work / health"
+  },
+  {
+   "id": "c10-soalan",
+   "start": 91.8,
+   "end": 95.8333,
+   "intent": "Speaker name, then comment prompt + education disclaimer"
+  }
+ ],
+ "inserts": [
+  {
+   "id": "b1-3am",
+   "kind": "broll",
+   "start": 0.0,
+   "end": 6.8333,
+   "src": "b1_3am.mp4"
+  },
+  {
+   "id": "m1-benzo",
+   "kind": "mg",
+   "start": 14.2333,
+   "end": 19.3667,
+   "src": null
+  },
+  {
+   "id": "b2-switch",
+   "kind": "broll",
+   "start": 25.0667,
+   "end": 28.4667,
+   "src": "b2_switch.mp4"
+  },
+  {
+   "id": "m2-head",
+   "kind": "mg",
+   "start": 28.4333,
+   "end": 30.2333,
+   "src": null
+  },
+  {
+   "id": "b3-condo",
+   "kind": "broll",
+   "start": 34.6,
+   "end": 38.2333,
+   "src": "b3_toss_condo.mp4"
+  },
+  {
+   "id": "b4-office",
+   "kind": "broll",
+   "start": 38.2333,
+   "end": 42.1667,
+   "src": "b4_overthink_office.mp4"
+  },
+  {
+   "id": "m3-scale",
+   "kind": "mg",
+   "start": 44.7667,
+   "end": 48.1,
+   "src": null
+  },
+  {
+   "id": "b5-morning",
+   "kind": "broll",
+   "start": 48.1,
+   "end": 52.6333,
+   "src": "b5_morning.mp4"
+  },
+  {
+   "id": "b7-drowsy",
+   "kind": "broll",
+   "start": 54.9,
+   "end": 59.6,
+   "src": "b7_tired_work.mp4"
+  },
+  {
+   "id": "m4-bukan",
+   "kind": "mg",
+   "start": 66.0333,
+   "end": 69.0667,
+   "src": null
+  },
+  {
+   "id": "b6-nurse",
+   "kind": "broll",
+   "start": 69.0667,
+   "end": 72.2667,
+   "src": "b6_nightshift_nurse.mp4"
+  },
+  {
+   "id": "m5-jangan",
+   "kind": "mg",
+   "start": 80.5,
+   "end": 81.7667,
+   "src": null
+  },
+  {
+   "id": "b8-consult",
+   "kind": "broll",
+   "start": 85.4667,
+   "end": 88.9667,
+   "src": "b8_consult.mp4"
+  }
+ ],
+ "caption_lines": 110
+}

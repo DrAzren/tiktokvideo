@@ -11,8 +11,9 @@ Punch-ins: a range may carry "zoom" (e.g. 1.08); the crop is centred on the
 EDL-level "zoom_focus" [x, y] (fractions of the frame, default [0.5, 0.5]) so
 that point stays fixed. Alternating zoom across jump cuts disguises them.
 
-Optional: per-range "gain_db" (level-match a softly delivered line) and EDL-level
-"tail_hold" seconds (freeze the last frame + silence so an end card can land).
+Optional: per-range "gain_db" (level-match a softly delivered line), EDL-level
+"tail_hold" seconds (freeze the last frame + silence so an end card can land) and
+EDL-level "hflip": true (un-mirror a front-camera recording whose text reads backwards).
 
 Loudness: two-pass loudnorm to -14 LUFS / -1 dBTP (audio-only second pass).
 
@@ -92,16 +93,24 @@ def main() -> None:
     fps = probe_fps(next(iter(sources.values())))
     width, height = probe_size(next(iter(sources.values())))
     focus = edl.get("zoom_focus", [0.5, 0.5])
+    flip = "hflip," if edl.get("hflip") else ""
 
     inputs, chains, labels = [], [], []
     for i, r in enumerate(edl["ranges"]):
         s = Fraction(round(r["start"] * fps)) / fps          # frame-aligned edges
         e = Fraction(round(r["end"] * fps)) / fps
         d = float(e - s)
-        inputs += ["-ss", f"{float(s):.6f}", "-t", f"{d:.6f}", "-i", sources[r["source"]]]
-        chains.append(f"[{i}:v]{zoom_filter(r.get('zoom', 1.0), focus, width, height)}setpts=PTS-STARTPTS[v{i}]")
+        n = int((e - s) * fps)
+        # Seek half a frame early so no frame sits exactly on a boundary: with µs timestamps
+        # (24.066667) a seek to the rounded edge sometimes dropped the first frame, slipping audio
+        # one frame per affected range. Video then takes exactly n frames; audio is trimmed to the
+        # same start and duration, sample-accurately.
+        h = min(float(s), 0.5 / float(fps))
+        inputs += ["-ss", f"{float(s) - h:.6f}", "-t", f"{d + h + 0.5 / float(fps):.6f}", "-i", sources[r["source"]]]
+        chains.append(f"[{i}:v]trim=end_frame={n},{flip}{zoom_filter(r.get('zoom', 1.0), focus, width, height)}"
+                      f"setpts=PTS-STARTPTS[v{i}]")
         gain = f"volume={r['gain_db']}dB," if r.get("gain_db") else ""
-        chains.append(f"[{i}:a]aresample=48000,{gain}asetpts=PTS-STARTPTS,"
+        chains.append(f"[{i}:a]atrim=start={h:.6f}:duration={d:.6f},aresample=48000,{gain}asetpts=PTS-STARTPTS,"
                       f"afade=t=in:st=0:d={FADE},afade=t=out:st={d - FADE:.6f}:d={FADE}[a{i}]")
         labels.append(f"[v{i}][a{i}]")
 
