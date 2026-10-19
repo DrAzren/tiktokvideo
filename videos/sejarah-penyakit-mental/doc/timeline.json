@@ -1,0 +1,257 @@
+{
+ "fps": 24,
+ "duration": 120.0,
+ "vo": {
+  "s1": 0.7,
+  "s2": 15.2,
+  "s3": 33.9,
+  "s4": 51.8,
+  "s5": 73.3,
+  "s6": 88.9
+ },
+ "scenes": [
+  {
+   "id": "s1",
+   "start": 0.0
+  },
+  {
+   "id": "s2",
+   "start": 15.2
+  },
+  {
+   "id": "s3",
+   "start": 33.7
+  },
+  {
+   "id": "s4",
+   "start": 51.8,
+   "turn": 64.6
+  },
+  {
+   "id": "s5",
+   "start": 73.3
+  },
+  {
+   "id": "s6",
+   "start": 88.9,
+   "stigma": 100.05,
+   "recap": 101.3
+  },
+  {
+   "id": "end",
+   "start": 113.0
+  }
+ ],
+ "shots": [
+  {
+   "id": "v01",
+   "kind": "video",
+   "src": "01_window",
+   "t0": 0.0,
+   "t1": 4.4,
+   "in": "black"
+  },
+  {
+   "id": "v02",
+   "kind": "video",
+   "src": "02_clock",
+   "t0": 4.4,
+   "t1": 8.75
+  },
+  {
+   "id": "v03",
+   "kind": "video",
+   "src": "03_globe",
+   "t0": 8.75,
+   "t1": 13.4
+  },
+  {
+   "id": "g01",
+   "kind": "title",
+   "t0": 12.6,
+   "t1": 15.4,
+   "in": "fade"
+  },
+  {
+   "id": "v04",
+   "kind": "video",
+   "src": "04_scroll",
+   "t0": 15.2,
+   "t1": 19.9,
+   "in": "ink"
+  },
+  {
+   "id": "v05",
+   "kind": "video",
+   "src": "05_mesopotamia",
+   "t0": 19.9,
+   "t1": 24.85
+  },
+  {
+   "id": "v06",
+   "kind": "video",
+   "src": "06_healer",
+   "t0": 24.85,
+   "t1": 29.55
+  },
+  {
+   "id": "g02",
+   "kind": "cultures",
+   "t0": 29.55,
+   "t1": 33.85,
+   "in": "tear"
+  },
+  {
+   "id": "v08",
+   "kind": "video",
+   "src": "08_stoa",
+   "t0": 33.7,
+   "t1": 37.2,
+   "in": "ink"
+  },
+  {
+   "id": "v09",
+   "kind": "video",
+   "src": "09_physician",
+   "t0": 37.2,
+   "t1": 41.15
+  },
+  {
+   "id": "g03",
+   "kind": "humours",
+   "t0": 41.15,
+   "t1": 45.4,
+   "in": "tear"
+  },
+  {
+   "id": "v10",
+   "kind": "video",
+   "src": "10_writing",
+   "t0": 45.4,
+   "t1": 48.2
+  },
+  {
+   "id": "v11",
+   "kind": "video",
+   "src": "11_brain_morph",
+   "t0": 48.2,
+   "t1": 51.85,
+   "mstart": 0.6
+  },
+  {
+   "id": "v13",
+   "kind": "video",
+   "src": "13_asylum_ext",
+   "t0": 51.8,
+   "t1": 56.0,
+   "in": "ink"
+  },
+  {
+   "id": "v14",
+   "kind": "video",
+   "src": "14_corridor",
+   "t0": 56.0,
+   "t1": 60.5
+  },
+  {
+   "id": "v15",
+   "kind": "video",
+   "src": "15_room",
+   "t0": 60.5,
+   "t1": 64.6
+  },
+  {
+   "id": "g04",
+   "kind": "portraits",
+   "t0": 64.6,
+   "t1": 69.4,
+   "in": "tear"
+  },
+  {
+   "id": "v16",
+   "kind": "video",
+   "src": "16_garden",
+   "t0": 69.4,
+   "t1": 73.4
+  },
+  {
+   "id": "v17",
+   "kind": "video",
+   "src": "17_lab",
+   "t0": 73.3,
+   "t1": 77.5,
+   "in": "ink"
+  },
+  {
+   "id": "v18",
+   "kind": "video",
+   "src": "18_glassware",
+   "t0": 77.5,
+   "t1": 81.4
+  },
+  {
+   "id": "v19",
+   "kind": "video",
+   "src": "19_neurons",
+   "t0": 81.4,
+   "t1": 85.0
+  },
+  {
+   "id": "g05",
+   "kind": "modern",
+   "t0": 85.0,
+   "t1": 88.95
+  },
+  {
+   "id": "i20",
+   "kind": "still",
+   "src": "counselling.png",
+   "t0": 88.9,
+   "t1": 92.3,
+   "in": "ink"
+  },
+  {
+   "id": "v21",
+   "kind": "video",
+   "src": "21_family",
+   "t0": 92.3,
+   "t1": 95.2
+  },
+  {
+   "id": "v22",
+   "kind": "video",
+   "src": "22_community",
+   "t0": 95.2,
+   "t1": 97.95
+  },
+  {
+   "id": "v24",
+   "kind": "video",
+   "src": "24_street",
+   "t0": 97.95,
+   "t1": 101.3
+  },
+  {
+   "id": "g06",
+   "kind": "recap",
+   "t0": 101.3,
+   "t1": 108.0
+  },
+  {
+   "id": "v23",
+   "kind": "video",
+   "src": "23_window_sun",
+   "t0": 108.0,
+   "t1": 113.0,
+   "srcdur": 6.5
+  },
+  {
+   "id": "g07",
+   "kind": "end",
+   "t0": 113.0,
+   "t1": 120.0,
+   "in": "fade"
+  }
+ ],
+ "whooshes": []
+}

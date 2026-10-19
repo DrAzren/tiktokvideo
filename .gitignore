@@ -28,3 +28,9 @@ videos/**
 !videos/*/yt/package/captions_ms.srt
 !videos/*/yt/package/thumb/*.html
 !videos/*/yt/package/thumb/*.cjs
+!videos/*/doc/*.json
+!videos/*/doc/*.sh
+!videos/*/doc/public/index.html
+!videos/*/*_ms.srt
+!videos/*/stills/jobs.json
+!videos/*/broll/jobs.txt
