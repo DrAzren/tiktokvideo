@@ -28,7 +28,9 @@ html, body { margin:0; padding:0; width:1920px; height:1080px; overflow:hidden; 
 #spkmove { position:absolute; inset:0; transform-origin:960px 570px; filter:drop-shadow(0 30px 50px rgba(0,0,0,.45)); }
 #spot { position:absolute; left:440px; top:50px; width:1040px; height:1040px; border-radius:50%;
   background:radial-gradient(circle, rgba(255,248,238,.20) 0%, rgba(255,248,238,0) 62%); }
-#spkv { position:absolute; left:474px; top:-430px; width:900px; height:1600px; }
+.spkv { -webkit-mask-image:linear-gradient(90deg, transparent 0, #000 110px, #000 calc(100% - 110px), transparent 100%);
+  mask-image:linear-gradient(90deg, transparent 0, #000 110px, #000 calc(100% - 110px), transparent 100%); }
+.spkv { position:absolute; left:474px; top:-430px; width:900px; height:1600px; }
 .phost { position:absolute; inset:0; z-index:4; opacity:0; pointer-events:none; }
 .ypanel { position:absolute; top:50%; transform:translateY(-58%); background:rgba(255,248,238,.97); border-radius:36px;
   padding:44px 50px 48px; color:#0B1F2A; box-shadow:0 30px 80px rgba(3,20,25,.40), 0 2px 0 rgba(255,255,255,.7) inset; }
@@ -124,7 +126,7 @@ html, body { margin:0; padding:0; width:1920px; height:1080px; overflow:hidden; 
 <div class="scene" id="sc-saferoom"><img class="bgimg" src="bg/saferoom.jpg"/><div class="wash"></div></div>
 <div id="hero"><div id="hero-k">SEBENARNYA,</div><div id="hero-w">TIDAK</div></div>
 <div id="spk"><div id="spkmove"><div id="spot"></div>
-      <video id="spkv" class="clip" src="speaker_alpha.webm" muted playsinline data-start="0" data-duration="142.833" data-track-index="1"></video>
+      <video id="spkv" class="clip spkv" src="speaker_a.webm" muted playsinline data-start="0" data-duration="93.0" data-track-index="1"></video><video id="spkv2" class="clip spkv" src="speaker_b.webm" muted playsinline data-start="93.0" data-duration="49.833" data-track-index="2"></video>
     </div></div>
 <div class="phost" id="p-hook"><div class="ypanel left" id="p-hook-left" style="left:40px;width:540px"><span class="chip" style="background:#0E5E6F;color:#fff">Soalan pesakit</span><div class="title" id="ph-a">Macam mana keadaan dalam</div></div><div class="ypanel right" id="p-hook-right" style="left:1340px;width:540px"><div class="title xl teal" id="ph-b">WAD<br/>PSIKIATRI?</div><div class="sub" id="ph-c">Seram macam dalam filem?</div></div></div>
 <div class="phost" id="p-mitos"><div class="ypanel main" id="p-mitos-main" style="left:1000px;width:860px">

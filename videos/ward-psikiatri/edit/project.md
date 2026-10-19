@@ -97,3 +97,32 @@ captions stay on top, a card that would exit during an insert exits behind it):
 
 **Outstanding:** tell viewers/TikTok the stills are AI (toggle TikTok's "AI-generated content" label);
 clinic name/booking info for the CTA still needs the user.
+
+## Session 2 — 2026-10-19: YouTube 16:9 version (`yt/`, `final_youtube.mp4`)
+
+**Ask:** a 16:9 YouTube version edited "with Higgsfield", packed with motion graphics and B-roll video,
+with audio that sounds like Adobe Podcast. User picked: 10 Higgsfield clips at 720p, a hybrid edit
+(Higgsfield for B-roll, assembly here), the local studio voice chain, and a split layout that swaps sides,
+sometimes centred, on changing backgrounds.
+
+**Decisions**
+- Speaker matted on every frame (`hyperframes remove-background`, CPU, ~0.5 s/frame). The 40-min
+  background-task limit killed the single run at 67%. The partial WebM decoded cleanly to frame 2810, so
+  frames 0–2789 were remuxed (alpha survives `-c copy`) and 2790–end matted separately. They play as two clips.
+- Layout C → L → R alternates. The speaker glides between positions (0.7 s power3.inOut), and graphics
+  panels sit on the opposite side, or on both sides in C. The outer 110 px of the source frame is
+  feathered so the original frame edge doesn't slice the shoulders.
+- Background scene per chapter: teal studio, the blurred horror corridor during the myths, a bright ward,
+  a teal grid for Soalan #2, a dark scene with a red glow for restraint, golden daylight for recovery,
+  and a calm room for the CTA.
+- "TIDAK" is drawn between the background and the matted speaker, so it sits behind his head with no
+  extra matte pass.
+- B-roll: Higgsfield Seedance 2.5, 16:9, 720p, 5 s, no audio, 10 clips (350 credits). The "plus" plan
+  refused more than 5 parallel jobs ("out of credits" with 1000+ left), so they ran in two batches.
+  The consultation clip shows a doctor's face (not a patient).
+- Voice: `tools/enhance_speech.py` (afftdn, gentle expander, EQ, de-esser, 3:1 compression, two-pass
+  loudnorm). Neural cleanup (DeepFilterNet) was not possible: its model download is blocked by the
+  session's network policy. The source was already clean (noise floor −63 dB).
+- Captions: one karaoke line (Anton) in the bottom band. No captions during the hero lockup.
+
+**Outstanding:** YouTube's "altered or synthetic content" disclosure for the AI B-roll; clinic name for the CTA.

@@ -381,6 +381,19 @@ POS = {"C": (0, 0.84), "L": (-430, 1.0), "R": (430, 1.0)}       # x shift of the
 SLOT = {"L": {"main": (1000, 860)}, "R": {"main": (80, 860)}, "C": {"left": (40, 540), "right": (1340, 540)}}
 
 
+SPLIT_F = 2790   # the matte was produced in two runs: frames 0-2789 and 2790-end
+
+
+def speaker_clips():
+    if SPEAKER != "speaker_alpha.webm":       # single preview source
+        return (f'<video id="spkv" class="clip spkv" src="{SPEAKER}" muted playsinline data-start="0" '
+                f'data-duration="{DUR}" data-track-index="1"></video>')
+    t = round(SPLIT_F / FPS, 4)
+    return (f'<video id="spkv" class="clip spkv" src="speaker_a.webm" muted playsinline data-start="0" data-duration="{t}" data-track-index="1"></video>'
+            f'<video id="spkv2" class="clip spkv" src="speaker_b.webm" muted playsinline data-start="{t}" '
+            f'data-duration="{round(DUR - t, 4)}" data-track-index="2"></video>')
+
+
 def layout_at(t):
     cur = LAYOUT[0][1]
     for t0, l in LAYOUT:
@@ -429,7 +442,7 @@ def build():
 
     # speaker
     body.append(f'''<div id="spk"><div id="spkmove"><div id="spot"></div>
-      <video id="spkv" class="clip" src="{SPEAKER}" muted playsinline data-start="0" data-duration="{DUR}" data-track-index="1"></video>
+      {speaker_clips()}
     </div></div>''')
     x0, s0 = POS[LAYOUT[0][1]]
     js.append(f"tl.set('#spkmove', {{x:{x0}, scale:{s0}}}, 0);")
@@ -547,7 +560,9 @@ html, body {{ margin:0; padding:0; width:{W}px; height:{H}px; overflow:hidden; b
 #spkmove {{ position:absolute; inset:0; transform-origin:960px 570px; filter:drop-shadow(0 30px 50px rgba(0,0,0,.45)); }}
 #spot {{ position:absolute; left:{960 - 520}px; top:{570 - 520}px; width:1040px; height:1040px; border-radius:50%;
   background:radial-gradient(circle, rgba(255,248,238,.20) 0%, rgba(255,248,238,0) 62%); }}
-#spkv {{ position:absolute; left:{960 - FACE_X}px; top:{VID_TOP}px; width:{VID_W}px; height:{VID_H}px; }}
+.spkv {{ -webkit-mask-image:linear-gradient(90deg, transparent 0, #000 110px, #000 calc(100% - 110px), transparent 100%);
+  mask-image:linear-gradient(90deg, transparent 0, #000 110px, #000 calc(100% - 110px), transparent 100%); }}
+.spkv {{ position:absolute; left:{960 - FACE_X}px; top:{VID_TOP}px; width:{VID_W}px; height:{VID_H}px; }}
 .phost {{ position:absolute; inset:0; z-index:4; opacity:0; pointer-events:none; }}
 .ypanel {{ position:absolute; top:50%; transform:translateY(-58%); background:rgba(255,248,238,.97); border-radius:36px;
   padding:44px 50px 48px; color:{INK}; box-shadow:0 30px 80px rgba(3,20,25,.40), 0 2px 0 rgba(255,255,255,.7) inset; }}
