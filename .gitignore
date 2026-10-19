@@ -25,3 +25,6 @@ videos/**
 !videos/*/assemble.sh
 !videos/*/yt/assemble_yt.sh
 !videos/*/yt/public/index.html
+!videos/*/yt/package/captions_ms.srt
+!videos/*/yt/package/thumb/*.html
+!videos/*/yt/package/thumb/*.cjs

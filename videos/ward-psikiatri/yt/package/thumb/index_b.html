@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:"Anton";src:url("Anton.woff2") format("woff2");font-display:block}
+@font-face{font-family:"PJS";src:url("PlusJakartaSans-800.woff2") format("woff2");font-weight:800;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;width:1280px;height:720px;overflow:hidden;background:#041920}
+#t{position:relative;width:1280px;height:720px;overflow:hidden;background:radial-gradient(90% 110% at 75% 40%,#13808F 0%,#0E5E6F 30%,#08323C 65%,#041920 100%)}
+#corr{position:absolute;left:0;top:0;width:640px;height:720px;overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,#000 55%,transparent 100%);mask-image:linear-gradient(90deg,#000 55%,transparent 100%)}
+#corr img{width:640px;height:1138px;object-fit:cover;margin-top:-260px;filter:grayscale(1) contrast(1.2) brightness(.55)}
+#glow{position:absolute;left:640px;top:-60px;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,rgba(94,234,212,.35) 0%,rgba(94,234,212,0) 62%)}
+#sp{position:absolute;left:650px;top:-395px;width:670px;height:1191px;filter:drop-shadow(0 18px 30px rgba(0,0,0,.55));
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 70px,#000 calc(100% - 70px),transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 70px,#000 calc(100% - 70px),transparent 100%)}
+.txt{position:absolute;left:46px;font-family:"Anton";text-transform:uppercase;line-height:.95;
+  -webkit-text-stroke:6px rgba(0,0,0,.55);paint-order:stroke fill;text-shadow:0 8px 24px rgba(0,0,0,.6)}
+#a{top:70px;font-size:96px;color:#FFF8EE;letter-spacing:.01em}
+#b{top:170px;font-size:205px;color:#E5484D;letter-spacing:.01em}
+#c{position:absolute;left:52px;top:410px;font-family:"PJS";font-weight:800;font-size:38px;color:#08323C;background:#5EEAD4;padding:12px 24px 10px;border-radius:16px;box-shadow:0 10px 26px rgba(0,0,0,.4)}
+#d{position:absolute;left:52px;top:490px;font-family:"PJS";font-weight:800;font-size:30px;color:#FFF8EE;opacity:.92}
+#stamp{position:absolute;left:60px;top:560px;font-family:"PJS";font-weight:800;font-size:46px;color:#E5484D;background:rgba(255,248,238,.95);
+  border:7px solid #E5484D;border-radius:16px;padding:4px 20px 0;transform:rotate(-7deg);box-shadow:0 10px 30px rgba(0,0,0,.45)}
+</style></head><body><div id="t">
+<div id="corr"><img src="asylum_still.jpg"></div><div id="glow"></div>
+<img id="sp" src="speaker.png">
+<div class="txt" id="a">Betul ke pesakit</div><div class="txt" id="b">diikat?</div>
+<div id="c">Doktor psikiatri jawab</div><div id="d">Realiti wad psikiatri di Malaysia</div>
+<div id="stamp">SALAH FAHAM</div>
+</div></body></html>
