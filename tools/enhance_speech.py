@@ -5,6 +5,9 @@ Chain (order matters):
   tone between phrases → de-mud -3 dB @ 300 Hz → presence +2.5 dB @ 3.2 kHz → air +2 dB shelf
   @ 10 kHz → de-esser → 3:1 compressor → two-pass loudnorm (-14 LUFS / -1 dBTP by default).
 
+afftdn delays the signal by its analysis window (25 ms at 48 kHz). The script measures the delay
+against the input by cross-correlation and trims it, so the output stays frame-locked to the video.
+
 There is no neural de-reverb here; for heavily echoey rooms run the voice through a model-based
 enhancer first (Adobe Podcast, DeepFilterNet) and pass that file in.
 
@@ -13,6 +16,12 @@ Usage: python tools/enhance_speech.py in.(wav|mp4) -o out.wav [--lufs -14]
 import argparse
 import json
 import subprocess
+import tempfile
+from pathlib import Path
+
+import numpy as np
+import soundfile as sf
+from scipy.signal import correlate
 
 CHAIN = ("highpass=f=75:poles=2,afftdn=nr=14:nf=-50:tn=1,"
          "agate=threshold=0.012:ratio=2:attack=5:release=180:range=0.25,"
@@ -35,8 +44,30 @@ def main():
     j = json.loads(err[err.rindex("{"):err.rindex("}") + 1])
     ln = (f"loudnorm={target}:measured_I={j['input_i']}:measured_TP={j['input_tp']}:measured_LRA={j['input_lra']}:"
           f"measured_thresh={j['input_thresh']}:offset={j['target_offset']}:linear=true")
-    ff("-y", "-i", a.input, "-vn", "-af", f"{CHAIN},{ln}", "-ar", "48000", "-c:a", "pcm_s24le", a.output)
-    print(f"enhanced → {a.output}  (input {j['input_i']} LUFS)")
+    with tempfile.TemporaryDirectory() as t:
+        raw, proc = Path(t, "raw.wav"), Path(t, "proc.wav")
+        ff("-y", "-i", a.input, "-vn", "-ac", "1", "-ar", "48000", str(raw))
+        ff("-y", "-i", a.input, "-vn", "-af", f"{CHAIN},{ln}", "-ar", "48000", "-c:a", "pcm_s24le", str(proc))
+        lag = measure_lag(raw, proc)
+        # trim the processing delay off the front, pad the tail back to the input length
+        ff("-y", "-i", str(proc), "-af", f"atrim=start_sample={lag},asetpts=PTS-STARTPTS,apad=pad_len={lag}",
+           "-ar", "48000", "-c:a", "pcm_s24le", a.output)
+    print(f"enhanced → {a.output}  (input {j['input_i']} LUFS, removed {lag / 48:.2f} ms processing delay)")
+
+
+def measure_lag(ref, out, sr=48000, search=0.1):
+    """Samples by which `out` trails `ref` (median over three 8 s windows)."""
+    x, _ = sf.read(ref)
+    y, _ = sf.read(out)
+    y = y.mean(axis=1) if y.ndim > 1 else y
+    m, w, lags = int(search * sr), 8 * sr, []
+    for frac in (0.2, 0.5, 0.8):
+        t0 = max(m, int(len(x) * frac) - w // 2)
+        c = correlate(y[t0 - m:t0 + w + m], x[t0:t0 + w], mode="valid", method="fft")
+        lags.append(int(np.argmax(c)) - m)
+    lag = int(np.median(lags))
+    assert 0 <= lag < m, lags
+    return lag
 
 
 if __name__ == "__main__":
