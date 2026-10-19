@@ -340,8 +340,8 @@ def overlays():
     A("#k-1952", t52 - 0.05, {"opacity": 0, "scale": 1.25}, {"opacity": 1, "scale": 1}, 0.9)
     tc = T("s5", "chlorpromazine")
     A("#k-cpz", tc - 0.1, {"opacity": 0, "scale": 1.18}, {"opacity": 1, "scale": 1}, 0.8)
-    A("#k-cpz2", tc + 0.5, {"opacity": 0}, {"opacity": 1}, 0.6)
-    TO("#k-1952, #k-cpz, #k-cpz2", 77.15, {"opacity": 0}, 0.4)
+    A("#k-cpz2", tc + 0.25, {"opacity": 0}, {"opacity": 1}, 0.4)
+    TO("#k-1952, #k-cpz, #k-cpz2", 77.2, {"opacity": 0}, 0.3)
     # present-day treatment list
     items = [("Psikoterapi", T("s6", "psikoterapi")), ("Ubat, apabila sesuai", T("s6", "ubat apabila")),
              ("Sokongan keluarga", T("s6", "sokongan keluarga")), ("Pemulihan dalam komuniti", T("s6", "pemulihan"))]
@@ -353,7 +353,7 @@ def overlays():
     ts = T("s6", "stigma")
     body.append('<div class="stig" id="k-stig">STIGMA</div>')
     A("#k-stig", ts - 0.05, {"opacity": 0, "scale": 1.22}, {"opacity": 1, "scale": 1}, 0.6)
-    TO("#k-stig", 101.05, {"opacity": 0}, 0.35)
+    TO("#k-stig", 100.85, {"opacity": 0}, 0.3)
 
     # disclosure tags: dramatisation / AI visuals on generated footage
     ai = [(s["t0"], s["t1"]) for s in TL["shots"] if s["kind"] in ("video", "still")]
