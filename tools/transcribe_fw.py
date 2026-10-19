@@ -15,11 +15,24 @@ import json
 from pathlib import Path
 
 from faster_whisper import WhisperModel
+from faster_whisper.audio import decode_audio
 
 FILLER_PROMPT = {
     "ms": "Emm, err, ah, jadi, macam, kan, eh... Okay, so, emm, macam tu lah.",
     "en": "Umm, uh, like, you know, I mean... so, uh, yeah.",
 }
+
+
+def load_audio(path: Path):
+    """16 kHz mono float32. A .wav is read with soundfile: faster-whisper's own decoder passes
+    av.open(metadata_errors=...), which PyAV >= 15 rejects."""
+    if path.suffix.lower() == ".wav":
+        import numpy as np
+        import soundfile as sf
+        audio, sr = sf.read(path, dtype="float32", always_2d=True)
+        assert sr == 16000, f"{path}: expected 16 kHz (ffmpeg -ac 1 -ar 16000), got {sr}"
+        return np.ascontiguousarray(audio.mean(axis=1))
+    return decode_audio(str(path))
 
 
 def main() -> None:
@@ -38,7 +51,7 @@ def main() -> None:
 
     model = WhisperModel(args.model, device="cpu", compute_type="int8")
     segments, info = model.transcribe(
-        str(args.input),
+        load_audio(args.input),
         language=args.language,
         word_timestamps=True,
         vad_filter=False,
