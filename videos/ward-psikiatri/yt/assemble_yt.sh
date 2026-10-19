@@ -9,7 +9,7 @@ ROOT="$(cd ../../.. && pwd)"
 PY="$ROOT/.venv/bin/python"
 export HYPERFRAMES_ROOT=~/hyperframes HYPERFRAMES_BROWSER_PATH=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell \
        PUPPETEER_EXECUTABLE_PATH=$HOME/bin/headless_shell_nosandbox
-"$PY" build_yt.py | head -1
+"$PY" build_yt.py | sed -n 1p
 (cd public && npx --yes hyperframes lint 2>&1 | grep -E "✗|◇")
 npx --yes hyperframes render public -o "$PWD/render.mp4" > render.log 2>&1
 tail -3 render.log | head -1
