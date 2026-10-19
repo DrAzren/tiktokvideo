@@ -134,6 +134,21 @@ if the user hasn't given a brand.
   tag them "Ilustrasi AI"/"AI illustration", and tell the user to switch on TikTok's AI-generated label.
 - Output: `graphics/output.mp4`.
 
+### 4b. 16:9 YouTube version from vertical footage (worked example: `videos/ward-psikiatri/yt/`)
+- Matte the speaker on every frame, then build one 1920×1080 composition. The speaker
+  (transparent WebM) moves L/R/C between layouts, with graphics panels opposite and backgrounds per
+  chapter. Hero words go between the background and the speaker, so they read as behind the head for
+  free. Feather the outer ~110 px of the source frame (CSS mask) so its edge doesn't slice the shoulders.
+- `remove-background` runs ~0.5 s/frame on CPU, and background tasks are killed after ~40 min. Matte in
+  chunks of ≤3000 frames. A killed run's `.tmp-*.webm` still decodes up to its last frame and keeps
+  alpha through `-c copy` remuxing.
+- **Higgsfield** (MCP): `generate_video_batch` with `seedance_2_5`, 16:9, 720p, 5 s, `generate_audio:false`,
+  ~35 credits a clip. Preflight with `get_cost`. More than 5 parallel jobs comes back "out of credits"
+  even with credits left: submit in batches of 5. Don't route around a blocked download through the
+  Higgsfield sandbox; that is a policy bypass.
+- Voice polish: `tools/enhance_speech.py` (ffmpeg only). There is no neural de-reverb here, so for an
+  echoey room ask the user to run Adobe Podcast on the audio and hand it back.
+
 ### 5. Captions (embedded-captions)
 - Input: `graphics/output.mp4` (or `edit/cut.mp4` if no graphics). Work dir: `videos/<p>/captions/`.
 - `hyperframes init --video` runs English whisper `small` and writes its own transcript.json —
