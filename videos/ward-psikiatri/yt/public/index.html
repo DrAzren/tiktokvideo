@@ -1,0 +1,1612 @@
+<!doctype html>
+<html lang="ms"><head><meta charset="utf-8" />
+<style>
+@font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-500.woff2") format("woff2");font-weight:500;font-display:block}
+@font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-700.woff2") format("woff2");font-weight:700;font-display:block}
+@font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-800.woff2") format("woff2");font-weight:800;font-display:block}
+@font-face{font-family:"Anton";src:url("fonts/Anton.woff2") format("woff2");font-weight:400;font-display:block}
+* { box-sizing:border-box; }
+html, body { margin:0; padding:0; width:1920px; height:1080px; overflow:hidden; background:#041920; font-family:"PJS", sans-serif; }
+#stage { position:relative; width:1920px; height:1080px; overflow:hidden; background:#041920; }
+.scene { position:absolute; inset:0; opacity:0; overflow:hidden; z-index:1; }
+.bgimg { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.vign { position:absolute; inset:0; background:radial-gradient(80% 80% at 50% 45%, rgba(0,0,0,0) 30%, rgba(0,0,0,.65) 100%); }
+.wash { position:absolute; inset:0; background:linear-gradient(180deg, rgba(8,50,60,.18), rgba(8,50,60,.42)); }
+.wash.warm { background:linear-gradient(180deg, rgba(60,30,0,.10), rgba(40,20,0,.38)); }
+.blob { position:absolute; width:900px; height:900px; border-radius:50%; left:900px; top:-200px;
+  background:radial-gradient(circle, rgba(94,234,212,.28) 0%, rgba(94,234,212,0) 65%); }
+.blob.b2 { left:-150px; top:380px; background:radial-gradient(circle, rgba(255,248,238,.14) 0%, rgba(255,248,238,0) 65%); }
+.grid { position:absolute; inset:0; background-image:linear-gradient(rgba(94,234,212,.07) 2px, transparent 2px),
+  linear-gradient(90deg, rgba(94,234,212,.07) 2px, transparent 2px); background-size:80px 80px; }
+.redglow { position:absolute; width:1100px; height:1100px; left:410px; top:-300px; border-radius:50%;
+  background:radial-gradient(circle, rgba(229,72,77,.22) 0%, rgba(229,72,77,0) 62%); }
+#hero { position:absolute; inset:0; z-index:2; text-align:center; font-family:"Anton"; pointer-events:none; }
+#hero-k { position:absolute; left:0; right:0; top:70px; font-size:84px; color:#FFF8EE; letter-spacing:.04em; opacity:0; }
+#hero-w { position:absolute; left:0; right:0; top:150px; font-size:520px; line-height:1; color:#5EEAD4; letter-spacing:.02em;
+  text-shadow:0 20px 60px rgba(0,0,0,.35); opacity:0; }
+#spk { position:absolute; inset:0; z-index:3; pointer-events:none; }
+#spkmove { position:absolute; inset:0; transform-origin:960px 570px; filter:drop-shadow(0 30px 50px rgba(0,0,0,.45)); }
+#spot { position:absolute; left:440px; top:50px; width:1040px; height:1040px; border-radius:50%;
+  background:radial-gradient(circle, rgba(255,248,238,.20) 0%, rgba(255,248,238,0) 62%); }
+#spkv { position:absolute; left:474px; top:-430px; width:900px; height:1600px; }
+.phost { position:absolute; inset:0; z-index:4; opacity:0; pointer-events:none; }
+.ypanel { position:absolute; top:50%; transform:translateY(-58%); background:rgba(255,248,238,.97); border-radius:36px;
+  padding:44px 50px 48px; color:#0B1F2A; box-shadow:0 30px 80px rgba(3,20,25,.40), 0 2px 0 rgba(255,255,255,.7) inset; }
+.ypanel::before { content:""; position:absolute; left:0; top:36px; bottom:36px; width:12px; border-radius:0 8px 8px 0; background:#0E5E6F; }
+.ypanel > * + * { margin-top:18px; }
+.chip { display:inline-block; font-weight:800; font-size:28px; letter-spacing:.08em; text-transform:uppercase; padding:10px 22px 9px; border-radius:999px; }
+.title { font-weight:800; font-size:58px; line-height:1.08; letter-spacing:-.015em; }
+.title.xl { font-size:72px; line-height:1.04; letter-spacing:-.02em; }
+.title.xxl { font-size:112px; line-height:.98; letter-spacing:-.03em; }
+.title.muted { color:#6B7C85; }
+.teal { color:#0E5E6F; } .red { color:#E5484D; } .mint { color:#5EEAD4; }
+.sub { font-weight:700; font-size:36px; color:#44525A; }
+.label { font-weight:700; font-size:30px; color:#44525A; text-transform:uppercase; letter-spacing:.06em; }
+.row { display:flex; align-items:center; gap:22px; font-weight:700; font-size:40px; line-height:1.15; }
+.row.big { font-size:46px; }
+.disc { width:70px; height:70px; flex:none; border-radius:50%; background:#0E5E6F; display:inline-flex; align-items:center; justify-content:center; }
+.disc.lg { width:84px; height:84px; }
+.ico { width:42px; height:42px; }
+.tiles { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.tile { display:flex; align-items:center; gap:18px; background:#E3F4F1; border-radius:22px; padding:16px 20px; font-weight:800; font-size:32px; color:#08323C; }
+.tile.more { justify-content:center; background:transparent; border:3px dashed rgba(14,94,111,.35); color:#0E5E6F; }
+.pills { display:flex; flex-wrap:wrap; gap:14px; }
+.pill2 { font-weight:800; font-size:36px; padding:14px 26px; border-radius:18px; background:#E3F4F1; color:#0E5E6F; }
+.hr { height:3px; background:rgba(14,94,111,.15); border-radius:2px; }
+.strike { background:linear-gradient(#E5484D,#E5484D) left 55%/0% 7px no-repeat; }
+.stamp { display:inline-block; transform:rotate(-6deg); border:8px solid #E5484D; color:#E5484D; border-radius:18px; font-weight:800;
+  font-size:96px; letter-spacing:.04em; padding:6px 28px 2px; background:rgba(255,248,238,.95); }
+.stamp.teal { border-color:#0E5E6F; color:#0E5E6F; }
+.ypanel.right:has(.stamp) { background:transparent; box-shadow:none; }
+.ypanel.right:has(.stamp)::before { display:none; }
+.rung { display:flex; align-items:center; gap:20px; background:#fff; border-radius:22px; padding:18px 22px; font-weight:800; font-size:34px;
+  line-height:1.12; box-shadow:0 8px 20px rgba(0,0,0,.08); }
+.num { width:58px; height:58px; flex:none; border-radius:50%; background:#E5484D; color:#fff; font-size:32px; display:inline-flex; align-items:center; justify-content:center; }
+.lastbox { border:6px solid #E5484D; border-radius:22px; padding:18px 24px; font-weight:800; font-size:40px; color:#E5484D; text-align:center; }
+.lastbox b { color:#0B1F2A; }
+.steps { display:flex; flex-wrap:wrap; align-items:center; gap:14px; font-weight:800; font-size:40px; }
+.step { padding:12px 24px; border-radius:16px; background:#E3F4F1; color:#0E5E6F; }
+.step.hi { background:#0E5E6F; color:#fff; }
+.sep { color:#6B7C85; }
+.arrowdown { font-size:110px; font-weight:800; color:#0E5E6F; line-height:1; }
+.subpill { display:inline-block; background:#E5484D; color:#fff; font-weight:800; font-size:30px; padding:14px 26px; border-radius:16px; }
+.medslot { width:772px; height:300px; border-radius:22px; background:#0B1F2A; overflow:hidden; }
+#medv { width:100%; height:100%; object-fit:cover; }
+.fs { position:absolute; inset:0; opacity:0; pointer-events:none; }
+.fs-in { position:absolute; inset:0; overflow:hidden; }
+.fsv { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.fs-shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,0) 70%, rgba(0,0,0,.45) 100%); }
+.ai-tag { position:absolute; left:48px; top:44px; font:700 24px "PJS"; letter-spacing:.08em; text-transform:uppercase; color:rgba(255,255,255,.92);
+  background:rgba(0,0,0,.38); padding:8px 16px 7px; border-radius:10px; }
+.mgbg { background:radial-gradient(110% 90% at 80% 10%, #0E5E6F 0%, #08323C 60%, #041920 100%); color:#FFF8EE; }
+.fs-chip { position:absolute; display:inline-block; font-weight:800; font-size:32px; letter-spacing:.08em; text-transform:uppercase;
+  padding:12px 26px 11px; border-radius:999px; background:#5EEAD4; color:#08323C; }
+.fs-chip.red { background:#E5484D; color:#fff; }
+.fs-chip.static { position:static; }
+.fs-title { position:absolute; font-weight:800; font-size:96px; line-height:1.02; letter-spacing:-.025em; }
+.fs-sub { position:absolute; font-weight:700; font-size:52px; color:rgba(255,248,238,.85); }
+.hh { position:absolute; top:0; width:960px; height:1080px; overflow:hidden; }
+.hh.left { left:0; } .hh.right { left:960px; background:radial-gradient(120% 90% at 10% 0%, #0E5E6F 0%, #08323C 70%); }
+.hh-img { position:absolute; left:0; top:-420px; width:960px; height:1707px; object-fit:cover; }
+.grim { filter:grayscale(1) contrast(1.15) brightness(.7); }
+.hh-shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.15) 40%, rgba(0,0,0,.55)); }
+.fs-stamp { position:absolute; left:0; right:0; margin:auto; top:470px; width:max-content; transform:rotate(-7deg); border:10px solid #E5484D;
+  color:#E5484D; border-radius:22px; font-weight:800; font-size:110px; letter-spacing:.04em; padding:8px 34px 2px; background:rgba(255,248,238,.94); }
+.fs-stamp.chap { top:640px; }
+.vseam { position:absolute; left:954px; top:0; width:12px; height:1080px; background:#FFF8EE; transform-origin:center top; }
+.center-col { position:absolute; left:0; right:0; top:170px; display:flex; flex-direction:column; align-items:center; gap:46px; }
+.big-line { display:flex; align-items:center; gap:36px; font-weight:800; font-size:140px; letter-spacing:-.03em; line-height:1; }
+.big-line.muted2 { font-size:96px; color:rgba(255,248,238,.6); }
+.bdisc { width:130px; height:130px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; flex:none; }
+.ico-xl { width:80px; height:80px; }
+.strike2 { background:linear-gradient(#E5484D,#E5484D) left 55%/0% 10px no-repeat; }
+.chap-num { position:absolute; left:0; right:0; top:170px; text-align:center; font-family:"Anton"; font-size:120px; letter-spacing:.06em; color:#5EEAD4; }
+.chap-q { position:absolute; left:160px; right:160px; top:340px; text-align:center; font-weight:800; font-size:92px; line-height:1.05; letter-spacing:-.02em; }
+.hrail { position:absolute; }
+.hrail path { stroke-dasharray:1500; }
+.hnode { position:absolute; top:500px; width:420px; margin-left:-180px; display:flex; flex-direction:column; align-items:center; gap:26px; }
+.hdot { width:96px; height:96px; border-radius:50%; background:#08323C; border:12px solid #5EEAD4; }
+.hnode.hi .hdot { background:#5EEAD4; }
+.hlabel { font-weight:800; font-size:46px; padding:14px 28px; border-radius:22px; background:#FFF8EE; color:#0B1F2A; white-space:nowrap; }
+.hnode.hi .hlabel { background:#5EEAD4; color:#08323C; }
+.cap { position:absolute; left:0; right:0; top:930px; z-index:100; text-align:center; font-family:"Anton"; font-size:66px; line-height:1.1;
+  text-transform:uppercase; letter-spacing:.015em; color:#fff; opacity:0; pointer-events:none;
+  -webkit-text-stroke:5px rgba(0,0,0,.6); paint-order:stroke fill; text-shadow:0 5px 0 rgba(0,0,0,.35), 0 10px 30px rgba(0,0,0,.55); }
+</style></head>
+<body>
+<div id="stage" data-composition-id="ward-yt" data-start="0" data-duration="142.833" data-fps="30" data-width="1920" data-height="1080">
+  <div class="scene" id="sc-studio" style="background:radial-gradient(120% 90% at 30% 20%, #0E5E6F 0%, #08323C 60%, #041920 100%)"><div class="blob" id="blob1"></div><div class="blob b2" id="blob2"></div></div>
+<div class="scene" id="sc-asylum"><img class="bgimg" src="bg/asylum.jpg"/><div class="vign"></div></div>
+<div class="scene" id="sc-ward"><img class="bgimg" src="bg/ward.jpg"/><div class="wash"></div></div>
+<div class="scene" id="sc-studio2" style="background:radial-gradient(110% 90% at 75% 15%, #11707F 0%, #08323C 58%, #031419 100%)"><div class="grid"></div></div>
+<div class="scene" id="sc-deep" style="background:radial-gradient(90% 80% at 50% 30%, #2A1F2B 0%, #0D1A21 60%, #05090C 100%)"><div class="redglow"></div></div>
+<div class="scene" id="sc-return"><img class="bgimg" src="bg/return.jpg"/><div class="wash warm"></div></div>
+<div class="scene" id="sc-saferoom"><img class="bgimg" src="bg/saferoom.jpg"/><div class="wash"></div></div>
+<div id="hero"><div id="hero-k">SEBENARNYA,</div><div id="hero-w">TIDAK</div></div>
+<div id="spk"><div id="spkmove"><div id="spot"></div>
+      <video id="spkv" class="clip" src="speaker_alpha.webm" muted playsinline data-start="0" data-duration="142.833" data-track-index="1"></video>
+    </div></div>
+<div class="phost" id="p-hook"><div class="ypanel left" id="p-hook-left" style="left:40px;width:540px"><span class="chip" style="background:#0E5E6F;color:#fff">Soalan pesakit</span><div class="title" id="ph-a">Macam mana keadaan dalam</div></div><div class="ypanel right" id="p-hook-right" style="left:1340px;width:540px"><div class="title xl teal" id="ph-b">WAD<br/>PSIKIATRI?</div><div class="sub" id="ph-c">Seram macam dalam filem?</div></div></div>
+<div class="phost" id="p-mitos"><div class="ypanel main" id="p-mitos-main" style="left:1000px;width:860px">
+    <span class="chip" style="background:#E5484D;color:#fff">Mitos</span><div class="label" id="pm-l">Apa orang bayangkan</div>
+    <div class="row big" id="pm-1"><span class="disc" style="background:#6B7C85"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M4 24s7-12 20-12 20 12 20 12-7 12-20 12S4 24 4 24z"/><circle cx="24" cy="24" r="5"/></g></svg></span><span class="strike">Gelap &amp; menakutkan</span></div>
+    <div class="row big" id="pm-2"><span class="disc" style="background:#6B7C85"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M27 5L12 27h11l-3 16 16-23H25z"/></g></svg></span><span class="strike">Pesakit meracau-racau</span></div>
+    <div class="row big" id="pm-3"><span class="disc" style="background:#6B7C85"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M14 14l20 20M34 14L14 34"/></g></svg></span><span class="strike">Diikat sepanjang masa</span></div></div></div>
+<div class="phost" id="p-team"><div class="ypanel main" id="p-team-main" style="left:80px;width:860px">
+    <span class="chip" style="background:#0E5E6F;color:#fff">Realiti di Malaysia</span><div class="title">Satu pasukan pakar</div>
+    <div class="tiles"><div class="tile" id="pt-0"><span class="disc lg"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M12 6v12a8 8 0 0 0 16 0V6"/><path d="M20 26v6a8 8 0 0 0 16 0v-4"/><circle cx="36" cy="25" r="3"/></g></svg></span><span>Doktor psikiatri</span></div><div class="tile" id="pt-1"><span class="disc lg"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="8" y="8" width="32" height="32" rx="8"/><path d="M24 16v16M16 24h16"/></g></svg></span><span>Jururawat terlatih</span></div><div class="tile" id="pt-2"><span class="disc lg"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M18 10a6 6 0 0 0-6 6 6 6 0 0 0-4 10 6 6 0 0 0 6 8 6 6 0 0 0 10 2V12a6 6 0 0 0-6-2z"/><path d="M30 10a6 6 0 0 1 6 6 6 6 0 0 1 4 10 6 6 0 0 1-6 8 6 6 0 0 1-10 2"/></g></svg></span><span>Ahli psikologi</span></div><div class="tile" id="pt-3"><span class="disc lg"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M8 12h22v14H16l-6 5v-5H8z"/><path d="M34 18h6v14h-2v5l-6-5H22v-2"/></g></svg></span><span>Kaunselor</span></div><div class="tile" id="pt-4"><span class="disc lg"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M10 14h8a4 4 0 1 1 8 0h8v8a4 4 0 1 0 0 8v8H26a4 4 0 1 0-8 0h-8V30a4 4 0 1 1 0-8z"/></g></svg></span><span>Jurupulih cara kerja</span></div><div class="tile more" id="pt-5"><span>+ lain-lain lagi</span></div></div></div></div>
+<div class="phost" id="p-apa"><div class="ypanel main" id="p-apa-main" style="left:1000px;width:860px">
+    <span class="chip" style="background:#0E5E6F;color:#fff">Rutin harian</span><div class="title xl" id="pa-t">Apa pesakit buat<br/>dalam wad?</div></div></div>
+<div class="phost" id="p-rutin"><div class="ypanel main" id="p-rutin-main" style="left:1000px;width:860px">
+    <span class="chip" style="background:#0E5E6F;color:#fff">Setiap hari</span><div class="medslot" id="pr-med"><video id="medv" class="clip" src="broll/v05_meds.mp4" muted playsinline data-start="39.3333" data-duration="5.0" data-track-index="3"></video></div>
+    <div class="row"><span class="disc" style="background:#0E5E6F"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M12 6v12a8 8 0 0 0 16 0V6"/><path d="M20 26v6a8 8 0 0 0 16 0v-4"/><circle cx="36" cy="25" r="3"/></g></svg></span><span>Jumpa doktor setiap hari</span></div>
+    <div id="pr-2"><div class="row"><span class="disc" style="background:#0E5E6F"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="6" y="17" width="36" height="14" rx="7" transform="rotate(-35 24 24)"/><path d="M19 17l10 14"/></g></svg></span><span>Ambil ubat ikut jadual</span></div></div>
+    <div id="pr-3"><div class="row"><span class="disc" style="background:#0E5E6F"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M4 24s7-12 20-12 20 12 20 12-7 12-20 12S4 24 4 24z"/><circle cx="24" cy="24" r="5"/></g></svg></span><span>Pemerhatian rapi</span></div></div>
+    <div id="pr-4"><div class="row"><span class="disc" style="background:#0E5E6F"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 5l15 6v11c0 10-7 17-15 21C16 39 9 32 9 22V11z"/><path d="M17 23l5 5 9-10"/></g></svg></span><span>Keselamatan dipantau</span></div></div></div></div>
+<div class="phost" id="p-terapi"><div class="ypanel main" id="p-terapi-main" style="left:80px;width:860px">
+    <span class="chip" style="background:#0E5E6F;color:#fff">Aktiviti terapi</span>
+    <div class="pills"><span class="pill2">Terapi cara kerja</span><span class="pill2">Senaman ringan</span>
+      <span class="pill2" id="pp-3">Sesi kaunseling</span></div>
+    <div class="sub" id="pp-s">Ikut hospital &amp; keadaan pesakit</div>
+    <div class="hr"></div>
+    <div id="pp-m"><div class="row"><span class="disc" style="background:#E5484D"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M14 6v14a4 4 0 0 0 8 0V6M18 6v36M32 6c-4 0-6 6-6 12s2 8 6 8v16"/></g></svg></span><span>Makan &amp; rehat ikut jadual</span></div></div></div></div>
+<div class="phost" id="p-q2c"><div class="ypanel left" id="p-q2c-left" style="left:40px;width:540px"><span class="chip" style="background:#0E5E6F;color:#fff">Soalan #2</span><div class="title">Semua pesakit agresif?</div></div><div class="ypanel right" id="p-q2c-right" style="left:1340px;width:540px"><div class="stamp teal" id="pq-s">TIDAK</div></div></div>
+<div class="phost" id="p-keadaan"><div class="ypanel main" id="p-keadaan-main" style="left:1000px;width:860px">
+    <span class="chip" style="background:#0E5E6F;color:#fff">Mereka mungkin mengalami</span><div id="pk-0"><div class="row"><span class="disc" style="background:#0E5E6F"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M15 27a8 8 0 0 1 1.5-15.8A10 10 0 0 1 35 14a7 7 0 0 1-1 13.9H15z"/><path d="M17 32l-2 6M25 32l-2 6M33 32l-2 6"/></g></svg></span><span>Kemurungan teruk</span></div></div><div id="pk-1"><div class="row"><span class="disc" style="background:#0E5E6F"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M5 25h9l4-10 6 20 5-14 3 4h11"/></g></svg></span><span>Anxiety melampau</span></div></div><div id="pk-2"><div class="row"><span class="disc" style="background:#0E5E6F"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M5 24c4-12 9-12 13 0s9 12 13 0 9-12 12-4"/></g></svg></span><span>Bipolar tidak stabil</span></div></div><div id="pk-3"><div class="row"><span class="disc" style="background:#0E5E6F"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="24" cy="24" r="14" stroke-dasharray="5 5"/><circle cx="24" cy="24" r="3" fill="#fff"/></g></svg></span><span>Skizofrenia tidak stabil</span></div></div><div id="pk-4"><div class="row"><span class="disc" style="background:#0E5E6F"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M27 5L12 27h11l-3 16 16-23H25z"/></g></svg></span><span>Krisis emosi</span></div></div>
+    <div class="sub" id="pk-s">— perlukan pemantauan, bukan hukuman</div></div></div>
+<div class="phost" id="p-restraint"><div class="ypanel main" id="p-restraint-main" style="left:80px;width:860px">
+    <span class="chip" style="background:#E5484D;color:#fff">Physical restraint</span>
+    <div class="title xl" id="px-a">Bukan rutin</div>
+    <div class="title xl red" id="px-b">Langkah terakhir</div></div></div>
+<div class="phost" id="p-ladder"><div class="ypanel left" id="p-ladder-left" style="left:40px;width:540px"><span class="chip" style="background:#E5484D;color:#fff">Hanya bila</span>
+      <div class="rung" id="pl-1"><span class="num">1</span><span>Berisiko cederakan diri sendiri</span></div>
+      <div class="rung" id="pl-2"><span class="num">2</span><span>Berisiko cederakan orang lain</span></div></div><div class="ypanel right" id="p-ladder-right" style="left:1340px;width:540px"><div class="rung" id="pl-3"><span class="num">3</span><span>Cara lain tidak berjaya menenangkan</span></div>
+      <div class="lastbox" id="pl-4">Baru restraint<br/><b>— langkah terakhir</b></div></div></div>
+<div class="phost" id="p-stabil"><div class="ypanel main" id="p-stabil-main" style="left:1000px;width:860px">
+    <span class="chip" style="background:#0E5E6F;color:#fff">Bila pesakit stabil</span>
+    <div class="title xl" id="ps-t">Dihentikan <span class="teal">secepat mungkin</span></div>
+    <div id="ps-s"><div class="row"><span class="disc" style="background:#0E5E6F"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 5l15 6v11c0 10-7 17-15 21C16 39 9 32 9 22V11z"/><path d="M17 23l5 5 9-10"/></g></svg></span><span>Ikut prosedur &amp; pemantauan ketat</span></div></div></div></div>
+<div class="phost" id="p-bukan"><div class="ypanel main" id="p-bukan-main" style="left:80px;width:860px">
+    <span class="chip" style="background:#0E5E6F;color:#fff">Masuk wad psikiatri</span>
+    <div id="pb-1"><div class="row big"><span class="disc" style="background:#E5484D"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M14 14l20 20M34 14L14 34"/></g></svg></span><span>Bukan bermaksud hidup berakhir</span></div></div>
+    <div id="pb-2"><div class="row big"><span class="disc" style="background:#E5484D"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M14 14l20 20M34 14L14 34"/></g></svg></span><span>Bukan bermaksud anda gila</span></div></div>
+    <div class="title teal" id="pb-3">Ramai pesakit pulih &amp; keluar semula</div></div></div>
+<div class="phost" id="p-hukum"><div class="ypanel main" id="p-hukum-main" style="left:1000px;width:860px">
+    <span class="chip" style="background:#0E5E6F;color:#fff">Wad psikiatri</span>
+    <div class="title xl muted"><span class="strike" id="pu-s">Tempat hukuman</span></div></div></div>
+<div class="phost" id="p-selamat"><div class="ypanel main" id="p-selamat-main" style="left:1000px;width:860px">
+    <div class="title xxl teal">TEMPAT<br/>SELAMAT</div>
+    <div class="steps"><span class="step">Berehat</span><span class="sep">·</span><span class="step">Distabilkan</span>
+      <span class="sep">·</span><span class="step hi" id="pl-h">Mula sembuh</span></div></div></div>
+<div class="phost" id="p-cta"><div class="ypanel left" id="p-cta-left" style="left:40px;width:540px"><span class="chip" style="background:#0E5E6F;color:#fff">Kesihatan mental</span><div class="title" id="pc-a">Jangan takut <span class="teal">dapatkan bantuan</span></div></div><div class="ypanel right" id="p-cta-right" style="left:1340px;width:540px"><span class="chip" style="background:#0E5E6F;color:#fff">Di klinik saya</span><div class="title" id="pc-b">Saringan &amp; konsultasi</div></div></div>
+<div class="phost" id="p-rawatan"><div class="ypanel main" id="p-rawatan-main" style="left:80px;width:860px">
+    <span class="chip" style="background:#0E5E6F;color:#fff">Kita bincang dahulu</span>
+    <div class="title xl">Pilihan rawatan <span class="teal">paling sesuai</span> untuk anda</div></div></div>
+<div class="phost" id="p-end"><div class="ypanel left" id="p-end-left" style="left:40px;width:540px"><div class="title xxl teal">Ada<br/>soalan?</div></div><div class="ypanel right" id="p-end-right" style="left:1340px;width:540px"><div class="title">Komen di bawah</div><div class="arrowdown">↓</div><div class="subpill">Subscribe untuk info kesihatan mental</div></div></div>
+<div class="fs" id="f-asylum" style="z-index:30"><div class="fs-in" id="f-asylum-in"><video class="clip fsv" id="f-asylum-v" src="broll/v01_asylum.mp4" muted playsinline data-start="5.7333" data-duration="2.133" data-track-index="4"></video><div class="fs-shade"></div><div class="ai-tag">Ilustrasi AI · Higgsfield</div></div></div>
+<div class="fs" id="f-ext" style="z-index:31"><div class="fs-in" id="f-ext-in"><video class="clip fsv" id="f-ext-v" src="broll/v02_hospital.mp4" muted playsinline data-start="10.3667" data-duration="2.867" data-track-index="5"></video><div class="fs-shade"></div><div class="ai-tag">Ilustrasi AI · Higgsfield</div></div></div>
+<div class="fs" id="f-filem" style="z-index:32"><div class="fs-in mgbg" id="f-filem-in">
+  <div class="hh left"><img src="broll/asylum_still.jpg" class="hh-img grim"/><div class="hh-shade"></div>
+    <div class="fs-chip red" style="left:90px;top:110px">Dalam filem</div>
+    <div class="fs-stamp" id="fm-x">TIDAK BENAR</div></div>
+  <div class="hh right"><div class="fs-chip" style="left:90px;top:110px" id="fm-c">Realiti</div>
+    <div class="fs-title" style="left:90px;top:200px" id="fm-t">Wad psikiatri<br/><span class="mint">di Malaysia</span></div>
+    <div class="fs-sub" style="left:90px;top:450px" id="fm-s">= wad di hospital biasa</div></div>
+  <div class="vseam" id="fm-seam"></div></div></div>
+<div class="fs" id="f-ward" style="z-index:33"><div class="fs-in" id="f-ward-in"><video class="clip fsv" id="f-ward-v" src="broll/v03_ward.mp4" muted playsinline data-start="23.6" data-duration="2.467" data-track-index="5"></video><div class="fs-shade"></div><div class="ai-tag">Ilustrasi AI · Higgsfield</div></div></div>
+<div class="fs" id="f-consult" style="z-index:34"><div class="fs-in" id="f-consult-in"><video class="clip fsv" id="f-consult-v" src="broll/v04_consult.mp4" muted playsinline data-start="36.3667" data-duration="2.967" data-track-index="4"></video><div class="fs-shade"></div><div class="ai-tag">Ilustrasi AI · Higgsfield</div></div></div>
+<div class="fs" id="f-therapy" style="z-index:35"><div class="fs-in" id="f-therapy-in"><video class="clip fsv" id="f-therapy-v" src="broll/v06_therapy.mp4" muted playsinline data-start="45.4" data-duration="3.333" data-track-index="5"></video><div class="fs-shade"></div><div class="ai-tag">Ilustrasi AI · Higgsfield</div></div></div>
+<div class="fs" id="f-tujuan" style="z-index:36"><div class="fs-in mgbg" id="f-tujuan-in">
+  <div class="center-col">
+    <div class="fs-chip static" id="ft-c">Tujuan utama</div>
+    <div class="big-line" id="ft-a"><span class="bdisc" style="background:#5EEAD4"><svg viewBox="0 0 48 48" class="ico-xl"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M12 25l8 8 16-17"/></g></svg></span><span class="mint">MENSTABILKAN</span></div>
+    <div class="big-line muted2" id="ft-b"><span class="bdisc" style="background:#E5484D"><svg viewBox="0 0 48 48" class="ico-xl"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M14 14l20 20M34 14L14 34"/></g></svg></span><span class="strike2" id="ft-s">bukan menghukum</span></div>
+  </div></div></div>
+<div class="fs" id="f-q2" style="z-index:37"><div class="fs-in mgbg" id="f-q2-in">
+  <div class="chap-num" id="q2-n">Soalan #2</div>
+  <div class="chap-q" id="q2-q">Adakah semua pesakit dalam wad <span class='mint'>agresif?</span></div>
+  <div class="fs-stamp chap" id="q2-s">TIDAK</div></div></div>
+<div class="fs" id="f-quiet" style="z-index:38"><div class="fs-in" id="f-quiet-in"><video class="clip fsv" id="f-quiet-v" src="broll/v07_quiet.mp4" muted playsinline data-start="76.3" data-duration="4.433" data-track-index="4"></video><div class="fs-shade"></div><div class="ai-tag">Ilustrasi AI · Higgsfield</div></div></div>
+<div class="fs" id="f-q3" style="z-index:39"><div class="fs-in mgbg" id="f-q3-in">
+  <div class="chap-num" id="q3-n">Soalan #3</div>
+  <div class="chap-q" id="q3-q">Kenapa ada pesakit sampai <span class='mint'>kena ikat?</span></div>
+  <div class="fs-stamp chap" id="q3-s">SALAH FAHAM</div></div></div>
+<div class="fs" id="f-pulih" style="z-index:40"><div class="fs-in mgbg" id="f-pulih-in">
+  <div class="fs-chip" style="left:120px;top:110px" id="fp-c">Realiti</div>
+  <div class="fs-title" style="left:120px;top:190px" id="fp-t">Masuk wad <span class="mint">bukan</span> pengakhiran</div>
+  <svg class="hrail" viewBox="0 0 1500 20" style="left:230px;top:546px;width:1500px;height:20px">
+    <path id="fp-rail" d="M10 10H1490" stroke="#5EEAD4" stroke-width="8" stroke-linecap="round" fill="none"/></svg>
+  <div class="hnode" id="fp-0" style="left:200px"><span class="hdot"></span><span class="hlabel">Beberapa hari</span></div><div class="hnode" id="fp-1" style="left:660px"><span class="hdot"></span><span class="hlabel">Beberapa minggu</span></div><div class="hnode hi" id="fp-2" style="left:1120px"><span class="hdot"></span><span class="hlabel">Keluar semula</span></div><div class="hnode" id="fp-3" style="left:1580px"><span class="hdot"></span><span class="hlabel">Sambung rawatan</span></div></div></div>
+<div class="fs" id="f-return" style="z-index:41"><div class="fs-in" id="f-return-in"><video class="clip fsv" id="f-return-v" src="broll/v08_return.mp4" muted playsinline data-start="115.6" data-duration="3.367" data-track-index="5"></video><div class="fs-shade"></div><div class="ai-tag">Ilustrasi AI · Higgsfield</div></div></div>
+<div class="fs" id="f-safe" style="z-index:42"><div class="fs-in" id="f-safe-in"><video class="clip fsv" id="f-safe-v" src="broll/v09_saferoom.mp4" muted playsinline data-start="121.2333" data-duration="3.667" data-track-index="4"></video><div class="fs-shade"></div><div class="ai-tag">Ilustrasi AI · Higgsfield</div></div></div>
+<div class="fs" id="f-support" style="z-index:43"><div class="fs-in" id="f-support-in"><video class="clip fsv" id="f-support-v" src="broll/v10_support.mp4" muted playsinline data-start="128.5667" data-duration="3.8" data-track-index="5"></video><div class="fs-shade"></div><div class="ai-tag">Ilustrasi AI · Higgsfield</div></div></div>
+<div class="cap" id="c0"><span class="cw" id="c0w0">saya</span> <span class="cw" id="c0w1">pernah</span> <span class="cw" id="c0w2">ada</span> <span class="cw" id="c0w3">pesakit</span> <span class="cw" id="c0w4">tanya</span></div>
+<div class="cap" id="c1"><span class="cw" id="c1w0">dekat</span> <span class="cw" id="c1w1">saya</span></div>
+<div class="cap" id="c2"><span class="cw" id="c2w0">doktor</span> <span class="cw" id="c2w1">macam</span> <span class="cw" id="c2w2">mana</span> <span class="cw" id="c2w3">keadaan</span></div>
+<div class="cap" id="c3"><span class="cw" id="c3w0">dalam</span> <span class="cw" id="c3w1">wad</span> <span class="cw" id="c3w2">psikiatri</span></div>
+<div class="cap" id="c4"><span class="cw" id="c4w0">ya</span> <span class="cw" id="c4w1">saya</span> <span class="cw" id="c4w2">takutlah</span></div>
+<div class="cap" id="c5"><span class="cw" id="c5w0">saya</span> <span class="cw" id="c5w1">tengok</span> <span class="cw" id="c5w2">macam</span> <span class="cw" id="c5w3">dalam</span></div>
+<div class="cap" id="c6"><span class="cw" id="c6w0">filem-filem</span> <span class="cw" id="c6w1">barat</span> <span class="cw" id="c6w2">tu</span></div>
+<div class="cap" id="c7"><span class="cw" id="c7w0">nampak</span> <span class="cw" id="c7w1">seram</span> <span class="cw" id="c7w2">sangat</span></div>
+<div class="cap" id="c8"><span class="cw" id="c8w0">berbeza</span> <span class="cw" id="c8w1">dengan</span> <span class="cw" id="c8w2">apa</span> <span class="cw" id="c8w3">yang</span> <span class="cw" id="c8w4">anda</span></div>
+<div class="cap" id="c9"><span class="cw" id="c9w0">bayangkan</span></div>
+<div class="cap" id="c10"><span class="cw" id="c10w0">ramai</span> <span class="cw" id="c10w1">orang</span> <span class="cw" id="c10w2">bayangkan</span> <span class="cw" id="c10w3">wad</span></div>
+<div class="cap" id="c11"><span class="cw" id="c11w0">psikiatri</span> <span class="cw" id="c11w1">ni</span> <span class="cw" id="c11w2">macam</span> <span class="cw" id="c11w3">dalam</span> <span class="cw" id="c11w4">filem</span></div>
+<div class="cap" id="c12"><span class="cw" id="c12w0">gelap</span></div>
+<div class="cap" id="c13"><span class="cw" id="c13w0">semua</span> <span class="cw" id="c13w1">pesakit</span> <span class="cw" id="c13w2">meracau-racau</span></div>
+<div class="cap" id="c14"><span class="cw" id="c14w0">dekat</span> <span class="cw" id="c14w1">dalam</span> <span class="cw" id="c14w2">wad</span></div>
+<div class="cap" id="c15"><span class="cw" id="c15w0">kena</span> <span class="cw" id="c15w1">ikat</span> <span class="cw" id="c15w2">sepanjang</span> <span class="cw" id="c15w3">masa</span></div>
+<div class="cap" id="c16"><span class="cw" id="c16w0">tapi</span> <span class="cw" id="c16w1">tidak</span> <span class="cw" id="c16w2">sebenarnya</span></div>
+<div class="cap" id="c17"><span class="cw" id="c17w0">di</span> <span class="cw" id="c17w1">malaysia</span></div>
+<div class="cap" id="c18"><span class="cw" id="c18w0">wad</span> <span class="cw" id="c18w1">psikiatri</span> <span class="cw" id="c18w2">adalah</span></div>
+<div class="cap" id="c19"><span class="cw" id="c19w0">salah</span> <span class="cw" id="c19w1">satu</span> <span class="cw" id="c19w2">wad</span> <span class="cw" id="c19w3">di</span> <span class="cw" id="c19w4">hospital</span></div>
+<div class="cap" id="c20"><span class="cw" id="c20w0">yang</span> <span class="cw" id="c20w1">dikendalikan</span> <span class="cw" id="c20w2">oleh</span> <span class="cw" id="c20w3">doktor</span></div>
+<div class="cap" id="c21"><span class="cw" id="c21w0">psikiatri</span></div>
+<div class="cap" id="c22"><span class="cw" id="c22w0">jururawat</span> <span class="cw" id="c22w1">terlatih</span></div>
+<div class="cap" id="c23"><span class="cw" id="c23w0">ahli</span> <span class="cw" id="c23w1">psikologi</span></div>
+<div class="cap" id="c24"><span class="cw" id="c24w0">kaunselor</span></div>
+<div class="cap" id="c25"><span class="cw" id="c25w0">terapi</span> <span class="cw" id="c25w1">jurupulih</span> <span class="cw" id="c25w2">kerja</span> <span class="cw" id="c25w3">dan</span></div>
+<div class="cap" id="c26"><span class="cw" id="c26w0">lain-lain</span> <span class="cw" id="c26w1">lagi</span></div>
+<div class="cap" id="c27"><span class="cw" id="c27w0">apa</span> <span class="cw" id="c27w1">pesakit</span> <span class="cw" id="c27w2">buat</span> <span class="cw" id="c27w3">dalam</span> <span class="cw" id="c27w4">wad</span></div>
+<div class="cap" id="c28"><span class="cw" id="c28w0">pesakit</span> <span class="cw" id="c28w1">akan</span> <span class="cw" id="c28w2">jumpa</span> <span class="cw" id="c28w3">dengan</span></div>
+<div class="cap" id="c29"><span class="cw" id="c29w0">doktor</span> <span class="cw" id="c29w1">setiap</span> <span class="cw" id="c29w2">hari</span> <span class="cw" id="c29w3">ataupun</span></div>
+<div class="cap" id="c30"><span class="cw" id="c30w0">mengikut</span> <span class="cw" id="c30w1">keperluan</span></div>
+<div class="cap" id="c31"><span class="cw" id="c31w0">dan</span> <span class="cw" id="c31w1">pesakit</span> <span class="cw" id="c31w2">perlulah</span> <span class="cw" id="c31w3">mengambil</span></div>
+<div class="cap" id="c32"><span class="cw" id="c32w0">ubat</span> <span class="cw" id="c32w1">mengikut</span> <span class="cw" id="c32w2">jadual</span> <span class="cw" id="c32w3">dan</span></div>
+<div class="cap" id="c33"><span class="cw" id="c33w0">pemerhatian</span> <span class="cw" id="c33w1">rapi</span> <span class="cw" id="c33w2">dan</span></div>
+<div class="cap" id="c34"><span class="cw" id="c34w0">keselamatan</span></div>
+<div class="cap" id="c35"><span class="cw" id="c35w0">akan</span> <span class="cw" id="c35w1">dipantau</span></div>
+<div class="cap" id="c36"><span class="cw" id="c36w0">aktiviti</span> <span class="cw" id="c36w1">terapi</span> <span class="cw" id="c36w2">seperti</span> <span class="cw" id="c36w3">terapi</span></div>
+<div class="cap" id="c37"><span class="cw" id="c37w0">cara</span> <span class="cw" id="c37w1">kerja</span></div>
+<div class="cap" id="c38"><span class="cw" id="c38w0">senaman</span> <span class="cw" id="c38w1">ringan</span></div>
+<div class="cap" id="c39"><span class="cw" id="c39w0">sesi</span> <span class="cw" id="c39w1">kaunseling</span></div>
+<div class="cap" id="c40"><span class="cw" id="c40w0">ini</span> <span class="cw" id="c40w1">bergantung</span> <span class="cw" id="c40w2">pada</span> <span class="cw" id="c40w3">hospital</span></div>
+<div class="cap" id="c41"><span class="cw" id="c41w0">dan</span> <span class="cw" id="c41w1">keadaan</span> <span class="cw" id="c41w2">pesakitlah</span> <span class="cw" id="c41w3">akan</span></div>
+<div class="cap" id="c42"><span class="cw" id="c42w0">dijalankan</span> <span class="cw" id="c42w1">juga</span></div>
+<div class="cap" id="c43"><span class="cw" id="c43w0">makan</span> <span class="cw" id="c43w1">dan</span> <span class="cw" id="c43w2">rehat</span></div>
+<div class="cap" id="c44"><span class="cw" id="c44w0">adalah</span></div>
+<div class="cap" id="c45"><span class="cw" id="c45w0">ikut</span> <span class="cw" id="c45w1">jadual</span></div>
+<div class="cap" id="c46"><span class="cw" id="c46w0">tujuan</span> <span class="cw" id="c46w1">utama</span> <span class="cw" id="c46w2">adalah</span> <span class="cw" id="c46w3">untuk</span></div>
+<div class="cap" id="c47"><span class="cw" id="c47w0">menstabilkan</span> <span class="cw" id="c47w1">pesakit</span></div>
+<div class="cap" id="c48"><span class="cw" id="c48w0">bukan</span> <span class="cw" id="c48w1">untuk</span> <span class="cw" id="c48w2">menghukum</span> <span class="cw" id="c48w3">pesakit</span></div>
+<div class="cap" id="c49"><span class="cw" id="c49w0">datang</span> <span class="cw" id="c49w1">pula</span> <span class="cw" id="c49w2">soalan</span> <span class="cw" id="c49w3">kedua</span></div>
+<div class="cap" id="c50"><span class="cw" id="c50w0">adakah</span> <span class="cw" id="c50w1">semua</span> <span class="cw" id="c50w2">pesakit</span> <span class="cw" id="c50w3">dalam</span> <span class="cw" id="c50w4">wad</span></div>
+<div class="cap" id="c51"><span class="cw" id="c51w0">ni</span> <span class="cw" id="c51w1">agresif</span></div>
+<div class="cap" id="c52"><span class="cw" id="c52w0">jawapannya</span> <span class="cw" id="c52w1">tidak</span></div>
+<div class="cap" id="c53"><span class="cw" id="c53w0">pesakit</span> <span class="cw" id="c53w1">dalam</span> <span class="cw" id="c53w2">wad</span> <span class="cw" id="c53w3">psikiatri</span> <span class="cw" id="c53w4">ni</span></div>
+<div class="cap" id="c54"><span class="cw" id="c54w0">mereka</span> <span class="cw" id="c54w1">mungkin</span> <span class="cw" id="c54w2">mengalami</span></div>
+<div class="cap" id="c55"><span class="cw" id="c55w0">kemurungan</span> <span class="cw" id="c55w1">yang</span> <span class="cw" id="c55w2">teruk</span></div>
+<div class="cap" id="c56"><span class="cw" id="c56w0">anxiety</span> <span class="cw" id="c56w1">yang</span> <span class="cw" id="c56w2">melampau</span></div>
+<div class="cap" id="c57"><span class="cw" id="c57w0">bipolar</span> <span class="cw" id="c57w1">yang</span> <span class="cw" id="c57w2">tidak</span> <span class="cw" id="c57w3">stabil</span></div>
+<div class="cap" id="c58"><span class="cw" id="c58w0">skizofrenia</span> <span class="cw" id="c58w1">yang</span> <span class="cw" id="c58w2">tidak</span> <span class="cw" id="c58w3">stabil</span></div>
+<div class="cap" id="c59"><span class="cw" id="c59w0">ataupun</span> <span class="cw" id="c59w1">krisis</span> <span class="cw" id="c59w2">emosi</span> <span class="cw" id="c59w3">yang</span></div>
+<div class="cap" id="c60"><span class="cw" id="c60w0">memerlukan</span> <span class="cw" id="c60w1">pemantauan</span></div>
+<div class="cap" id="c61"><span class="cw" id="c61w0">ramai</span> <span class="cw" id="c61w1">yang</span> <span class="cw" id="c61w2">pendiam</span></div>
+<div class="cap" id="c62"><span class="cw" id="c62w0">takut</span></div>
+<div class="cap" id="c63"><span class="cw" id="c63w0">sebab</span> <span class="cw" id="c63w1">mereka</span> <span class="cw" id="c63w2">sedang</span> <span class="cw" id="c63w3">berjuang</span></div>
+<div class="cap" id="c64"><span class="cw" id="c64w0">dengan</span> <span class="cw" id="c64w1">penyakit</span> <span class="cw" id="c64w2">mereka</span></div>
+<div class="cap" id="c65"><span class="cw" id="c65w0">ada</span> <span class="cw" id="c65w1">juga</span> <span class="cw" id="c65w2">yang</span> <span class="cw" id="c65w3">tanya</span> <span class="cw" id="c65w4">saya</span></div>
+<div class="cap" id="c66"><span class="cw" id="c66w0">kenapa</span> <span class="cw" id="c66w1">ada</span> <span class="cw" id="c66w2">pesakit</span> <span class="cw" id="c66w3">sampai</span> <span class="cw" id="c66w4">kena</span></div>
+<div class="cap" id="c67"><span class="cw" id="c67w0">ikat</span></div>
+<div class="cap" id="c68"><span class="cw" id="c68w0">doktor</span></div>
+<div class="cap" id="c69"><span class="cw" id="c69w0">ini</span> <span class="cw" id="c69w1">adalah</span> <span class="cw" id="c69w2">salah</span> <span class="cw" id="c69w3">faham</span> <span class="cw" id="c69w4">yang</span></div>
+<div class="cap" id="c70"><span class="cw" id="c70w0">paling</span> <span class="cw" id="c70w1">biasalah</span></div>
+<div class="cap" id="c71"><span class="cw" id="c71w0">physical</span> <span class="cw" id="c71w1">restraint</span> <span class="cw" id="c71w2">bukanlah</span></div>
+<div class="cap" id="c72"><span class="cw" id="c72w0">rutin</span></div>
+<div class="cap" id="c73"><span class="cw" id="c73w0">yang</span> <span class="cw" id="c73w1">dijalankan</span></div>
+<div class="cap" id="c74"><span class="cw" id="c74w0">ia</span> <span class="cw" id="c74w1">hanyalah</span> <span class="cw" id="c74w2">digunakan</span> <span class="cw" id="c74w3">sebagai</span></div>
+<div class="cap" id="c75"><span class="cw" id="c75w0">langkah</span> <span class="cw" id="c75w1">terakhir</span> <span class="cw" id="c75w2">apabila</span></div>
+<div class="cap" id="c76"><span class="cw" id="c76w0">seseorang</span> <span class="cw" id="c76w1">itu</span></div>
+<div class="cap" id="c77"><span class="cw" id="c77w0">pertama</span></div>
+<div class="cap" id="c78"><span class="cw" id="c78w0">berisiko</span> <span class="cw" id="c78w1">mencederakan</span> <span class="cw" id="c78w2">diri</span></div>
+<div class="cap" id="c79"><span class="cw" id="c79w0">sendiri</span></div>
+<div class="cap" id="c80"><span class="cw" id="c80w0">yang</span> <span class="cw" id="c80w1">kedua</span></div>
+<div class="cap" id="c81"><span class="cw" id="c81w0">berisiko</span> <span class="cw" id="c81w1">mencederakan</span> <span class="cw" id="c81w2">orang</span></div>
+<div class="cap" id="c82"><span class="cw" id="c82w0">lain</span> <span class="cw" id="c82w1">dan</span> <span class="cw" id="c82w2">semua</span> <span class="cw" id="c82w3">cara</span> <span class="cw" id="c82w4">lain</span></div>
+<div class="cap" id="c83"><span class="cw" id="c83w0">untuk</span> <span class="cw" id="c83w1">menenangkan</span> <span class="cw" id="c83w2">pesakit</span></div>
+<div class="cap" id="c84"><span class="cw" id="c84w0">tidak</span> <span class="cw" id="c84w1">berjaya</span></div>
+<div class="cap" id="c85"><span class="cw" id="c85w0">apabila</span> <span class="cw" id="c85w1">pesakit</span> <span class="cw" id="c85w2">sudah</span> <span class="cw" id="c85w3">stabil</span></div>
+<div class="cap" id="c86"><span class="cw" id="c86w0">restraint</span> <span class="cw" id="c86w1">tersebut</span> <span class="cw" id="c86w2">akan</span></div>
+<div class="cap" id="c87"><span class="cw" id="c87w0">dihentikan</span> <span class="cw" id="c87w1">secepat</span> <span class="cw" id="c87w2">mungkin</span></div>
+<div class="cap" id="c88"><span class="cw" id="c88w0">ikut</span> <span class="cw" id="c88w1">prosedur</span> <span class="cw" id="c88w2">dan</span> <span class="cw" id="c88w3">pemantauan</span></div>
+<div class="cap" id="c89"><span class="cw" id="c89w0">yang</span> <span class="cw" id="c89w1">ketat</span></div>
+<div class="cap" id="c90"><span class="cw" id="c90w0">yang</span> <span class="cw" id="c90w1">penting</span></div>
+<div class="cap" id="c91"><span class="cw" id="c91w0">masuk</span> <span class="cw" id="c91w1">wad</span> <span class="cw" id="c91w2">psikiatri</span> <span class="cw" id="c91w3">ni</span> <span class="cw" id="c91w4">bukan</span></div>
+<div class="cap" id="c92"><span class="cw" id="c92w0">bermaksud</span> <span class="cw" id="c92w1">hidup</span> <span class="cw" id="c92w2">berakhir</span></div>
+<div class="cap" id="c93"><span class="cw" id="c93w0">bukan</span> <span class="cw" id="c93w1">bermaksud</span> <span class="cw" id="c93w2">anda</span> <span class="cw" id="c93w3">gila</span></div>
+<div class="cap" id="c94"><span class="cw" id="c94w0">tidak</span> <span class="cw" id="c94w1">ramai</span> <span class="cw" id="c94w2">pesakit</span> <span class="cw" id="c94w3">masuk</span> <span class="cw" id="c94w4">wad</span></div>
+<div class="cap" id="c95"><span class="cw" id="c95w0">psikiatri</span> <span class="cw" id="c95w1">selepas</span> <span class="cw" id="c95w2">beberapa</span></div>
+<div class="cap" id="c96"><span class="cw" id="c96w0">hari</span></div>
+<div class="cap" id="c97"><span class="cw" id="c97w0">beberapa</span> <span class="cw" id="c97w1">minggu</span></div>
+<div class="cap" id="c98"><span class="cw" id="c98w0">keluar</span> <span class="cw" id="c98w1">semula</span></div>
+<div class="cap" id="c99"><span class="cw" id="c99w0">sambung</span> <span class="cw" id="c99w1">rawatan</span></div>
+<div class="cap" id="c100"><span class="cw" id="c100w0">mereka</span> <span class="cw" id="c100w1">kembali</span> <span class="cw" id="c100w2">bekerja</span></div>
+<div class="cap" id="c101"><span class="cw" id="c101w0">kembali</span> <span class="cw" id="c101w1">belajar</span></div>
+<div class="cap" id="c102"><span class="cw" id="c102w0">kembali</span> <span class="cw" id="c102w1">hidup</span> <span class="cw" id="c102w2">seperti</span> <span class="cw" id="c102w3">biasa</span></div>
+<div class="cap" id="c103"><span class="cw" id="c103w0">wad</span> <span class="cw" id="c103w1">psikiatri</span> <span class="cw" id="c103w2">ni</span> <span class="cw" id="c103w3">bukan</span> <span class="cw" id="c103w4">tempat</span></div>
+<div class="cap" id="c104"><span class="cw" id="c104w0">hukum</span></div>
+<div class="cap" id="c105"><span class="cw" id="c105w0">ia</span> <span class="cw" id="c105w1">adalah</span> <span class="cw" id="c105w2">tempat</span> <span class="cw" id="c105w3">yang</span> <span class="cw" id="c105w4">selamat</span></div>
+<div class="cap" id="c106"><span class="cw" id="c106w0">untuk</span> <span class="cw" id="c106w1">seseorang</span> <span class="cw" id="c106w2">itu</span> <span class="cw" id="c106w3">berehat</span></div>
+<div class="cap" id="c107"><span class="cw" id="c107w0">distabilkan</span></div>
+<div class="cap" id="c108"><span class="cw" id="c108w0">dan</span> <span class="cw" id="c108w1">diberi</span> <span class="cw" id="c108w2">peluang</span> <span class="cw" id="c108w3">untuk</span></div>
+<div class="cap" id="c109"><span class="cw" id="c109w0">memulakan</span> <span class="cw" id="c109w1">proses</span> <span class="cw" id="c109w2">sembuh</span></div>
+<div class="cap" id="c110"><span class="cw" id="c110w0">jadi</span> <span class="cw" id="c110w1">kalau</span> <span class="cw" id="c110w2">anda</span> <span class="cw" id="c110w3">ataupun</span> <span class="cw" id="c110w4">orang</span></div>
+<div class="cap" id="c111"><span class="cw" id="c111w0">tersayang</span> <span class="cw" id="c111w1">sedang</span> <span class="cw" id="c111w2">bergelut</span></div>
+<div class="cap" id="c112"><span class="cw" id="c112w0">dengan</span> <span class="cw" id="c112w1">kesihatan</span> <span class="cw" id="c112w2">mental</span></div>
+<div class="cap" id="c113"><span class="cw" id="c113w0">jangan</span> <span class="cw" id="c113w1">takut</span> <span class="cw" id="c113w2">untuk</span> <span class="cw" id="c113w3">mendapatkan</span></div>
+<div class="cap" id="c114"><span class="cw" id="c114w0">bantuan</span></div>
+<div class="cap" id="c115"><span class="cw" id="c115w0">boleh</span> <span class="cw" id="c115w1">datang</span> <span class="cw" id="c115w2">buat</span> <span class="cw" id="c115w3">saringan</span></div>
+<div class="cap" id="c116"><span class="cw" id="c116w0">konsultasi</span> <span class="cw" id="c116w1">kesihatan</span> <span class="cw" id="c116w2">mental</span> <span class="cw" id="c116w3">di</span></div>
+<div class="cap" id="c117"><span class="cw" id="c117w0">klinik</span> <span class="cw" id="c117w1">saya</span></div>
+<div class="cap" id="c118"><span class="cw" id="c118w0">kita</span> <span class="cw" id="c118w1">bincang</span> <span class="cw" id="c118w2">dahulu</span> <span class="cw" id="c118w3">pilihan</span></div>
+<div class="cap" id="c119"><span class="cw" id="c119w0">rawatan</span> <span class="cw" id="c119w1">yang</span> <span class="cw" id="c119w2">paling</span> <span class="cw" id="c119w3">sesuai</span></div>
+<div class="cap" id="c120"><span class="cw" id="c120w0">untuk</span> <span class="cw" id="c120w1">anda</span></div>
+<div class="cap" id="c121"><span class="cw" id="c121w0">apa-apa</span> <span class="cw" id="c121w1">soalan</span> <span class="cw" id="c121w2">minta</span> <span class="cw" id="c121w3">anda</span></div>
+<div class="cap" id="c122"><span class="cw" id="c122w0">komen</span></div>
+<div class="cap" id="c123"><span class="cw" id="c123w0">take</span> <span class="cw" id="c123w1">care</span></div>
+  <audio id="voice" src="voice.wav" data-start="0" data-duration="142.833" data-track-index="10" data-volume="1"></audio>
+  <script src="vendor/gsap.min.js"></script>
+  <script>
+  (function () {
+    const tl = window.gsap.timeline({ paused: true });
+    tl.set('#sc-studio', {opacity:1}, 0);
+    tl.fromTo('#sc-asylum', {opacity:0}, {opacity:1, duration:0.7, ease:'power2.inOut'}, 12.8667);
+    tl.set('#sc-studio', {opacity:0}, 13.6333);
+    tl.fromTo('#sc-asylum .bgimg', {scale:1.04}, {scale:1.14, duration:13.63, ease:'sine.inOut'}, 12.8333);
+    tl.fromTo('#sc-ward', {opacity:0}, {opacity:1, duration:0.7, ease:'power2.inOut'}, 25.7333);
+    tl.set('#sc-asylum', {opacity:0}, 26.4667);
+    tl.fromTo('#sc-ward .bgimg', {scale:1.04}, {scale:1.14, duration:38.67, ease:'sine.inOut'}, 25.6667);
+    tl.fromTo('#sc-studio2', {opacity:0}, {opacity:1, duration:0.7, ease:'power2.inOut'}, 63.5667);
+    tl.set('#sc-ward', {opacity:0}, 64.3333);
+    tl.fromTo('#sc-deep', {opacity:0}, {opacity:1, duration:0.7, ease:'power2.inOut'}, 85.5667);
+    tl.set('#sc-studio2', {opacity:0}, 86.3);
+    tl.fromTo('#sc-return', {opacity:0}, {opacity:1, duration:0.7, ease:'power2.inOut'}, 105.3667);
+    tl.set('#sc-deep', {opacity:0}, 106.1);
+    tl.fromTo('#sc-return .bgimg', {scale:1.04}, {scale:1.14, duration:20.0, ease:'sine.inOut'}, 105.3);
+    tl.fromTo('#sc-saferoom', {opacity:0}, {opacity:1, duration:0.7, ease:'power2.inOut'}, 124.5667);
+    tl.set('#sc-return', {opacity:0}, 125.3);
+    tl.fromTo('#sc-saferoom .bgimg', {scale:1.04}, {scale:1.14, duration:18.73, ease:'sine.inOut'}, 124.5);
+    tl.fromTo('#blob1', {x:-80, y:0}, {x:260, y:120, duration:14, ease:'sine.inOut'}, 0);
+    tl.fromTo('#blob2', {x:120, y:60}, {x:-220, y:-80, duration:14, ease:'sine.inOut'}, 0);
+    tl.fromTo('#hero-k', {opacity:0, y:30}, {opacity:1, y:0, duration:0.3, ease:'power3.out'}, 8.3333);
+    tl.fromTo('#hero-w', {opacity:0, scale:1.6}, {opacity:1, scale:1, duration:0.32, ease:'power4.out'}, 8.7667);
+    tl.to('#hero', {opacity:0, duration:0.3, ease:'power2.in'}, 10.2667);
+    tl.set('#spkmove', {x:0, scale:0.84}, 0);
+    tl.to('#spkmove', {x:-430, scale:1.0, duration:0.7, ease:'power3.inOut'}, 12.8667);
+    tl.to('#spkmove', {x:430, scale:1.0, duration:0.7, ease:'power3.inOut'}, 25.7333);
+    tl.to('#spkmove', {x:-430, scale:1.0, duration:0.7, ease:'power3.inOut'}, 33.8667);
+    tl.to('#spkmove', {x:430, scale:1.0, duration:0.7, ease:'power3.inOut'}, 48.3667);
+    tl.to('#spkmove', {x:0, scale:0.84, duration:0.7, ease:'power3.inOut'}, 63.5667);
+    tl.to('#spkmove', {x:-430, scale:1.0, duration:0.7, ease:'power3.inOut'}, 65.3333);
+    tl.to('#spkmove', {x:430, scale:1.0, duration:0.7, ease:'power3.inOut'}, 85.5667);
+    tl.to('#spkmove', {x:0, scale:0.84, duration:0.7, ease:'power3.inOut'}, 91.6667);
+    tl.to('#spkmove', {x:-430, scale:1.0, duration:0.7, ease:'power3.inOut'}, 99.1333);
+    tl.to('#spkmove', {x:430, scale:1.0, duration:0.7, ease:'power3.inOut'}, 105.3667);
+    tl.to('#spkmove', {x:-430, scale:1.0, duration:0.7, ease:'power3.inOut'}, 118.6333);
+    tl.to('#spkmove', {x:0, scale:0.84, duration:0.7, ease:'power3.inOut'}, 132.0333);
+    tl.to('#spkmove', {x:430, scale:1.0, duration:0.7, ease:'power3.inOut'}, 136.4667);
+    tl.to('#spkmove', {x:0, scale:0.84, duration:0.7, ease:'power3.inOut'}, 139.1333);
+    // panel p-hook C 0.0-6.0333
+    tl.set('#p-hook', {opacity:1}, 0.0);
+    tl.fromTo('#p-hook-left', {opacity:0, x:-60}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 0.1333);
+    tl.to('#p-hook-left', {opacity:0, x:-30, duration:0.3, ease:'power2.in'}, 5.7333);
+    tl.fromTo('#p-hook-right', {opacity:0, x:60}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 0.1333);
+    tl.to('#p-hook-right', {opacity:0, x:30, duration:0.3, ease:'power2.in'}, 5.7333);
+    tl.set('#p-hook', {opacity:0}, 6.0333);
+    tl.fromTo('#ph-c', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 6.1);
+    // panel p-mitos L 13.2333-21.4
+    tl.set('#p-mitos', {opacity:1}, 13.2333);
+    tl.fromTo('#p-mitos-main', {opacity:0, x:70}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 13.3667);
+    tl.to('#p-mitos-main', {opacity:0, x:35, duration:0.3, ease:'power2.in'}, 21.1);
+    tl.set('#p-mitos', {opacity:0}, 21.4);
+    tl.fromTo('#pm-l', {opacity:0}, {opacity:1, duration:0.35, ease:'power2.out'}, 13.4333);
+    tl.fromTo('#pm-1', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 16.3333);
+    tl.fromTo('#pm-2', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 17.8);
+    tl.fromTo('#pm-3', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 19.7333);
+    tl.fromTo('#pm-1 .strike', {backgroundSize:'0% 7px'}, {backgroundSize:'100% 7px', duration:0.35, ease:'power2.inOut'}, 20.9667);
+    tl.fromTo('#pm-2 .strike', {backgroundSize:'0% 7px'}, {backgroundSize:'100% 7px', duration:0.35, ease:'power2.inOut'}, 21.0667);
+    tl.fromTo('#pm-3 .strike', {backgroundSize:'0% 7px'}, {backgroundSize:'100% 7px', duration:0.35, ease:'power2.inOut'}, 21.1667);
+    // panel p-team R 26.0667-34.5333
+    tl.set('#p-team', {opacity:1}, 26.0667);
+    tl.fromTo('#p-team-main', {opacity:0, x:-70}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 26.2333);
+    tl.to('#p-team-main', {opacity:0, x:-35, duration:0.3, ease:'power2.in'}, 34.2333);
+    tl.set('#p-team', {opacity:0}, 34.5333);
+    tl.fromTo('#pt-0', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 27.1);
+    tl.fromTo('#pt-1', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 28.3333);
+    tl.fromTo('#pt-2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 29.8667);
+    tl.fromTo('#pt-3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 31.0333);
+    tl.fromTo('#pt-4', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 32.2667);
+    tl.fromTo('#pt-5', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 33.4667);
+    // panel p-apa L 34.2333-36.6667
+    tl.set('#p-apa', {opacity:1}, 34.2333);
+    tl.fromTo('#p-apa-main', {opacity:0, x:70}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 34.3667);
+    tl.to('#p-apa-main', {opacity:0, x:35, duration:0.3, ease:'power2.in'}, 36.3667);
+    tl.set('#p-apa', {opacity:0}, 36.6667);
+    tl.fromTo('#pa-t', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 34.4333);
+    // panel p-rutin L 39.3333-45.7
+    tl.set('#p-rutin', {opacity:1}, 39.3333);
+    tl.fromTo('#p-rutin-main', {opacity:0, x:70}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 39.4667);
+    tl.to('#p-rutin-main', {opacity:0, x:35, duration:0.3, ease:'power2.in'}, 45.4);
+    tl.set('#p-rutin', {opacity:0}, 45.7);
+    tl.fromTo('#pr-2', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 40.2333);
+    tl.fromTo('#pr-3', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 41.9);
+    tl.fromTo('#pr-4', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 43.1667);
+    // panel p-terapi R 48.7333-55.4333
+    tl.set('#p-terapi', {opacity:1}, 48.7333);
+    tl.fromTo('#p-terapi-main', {opacity:0, x:-70}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 48.8667);
+    tl.to('#p-terapi-main', {opacity:0, x:-35, duration:0.3, ease:'power2.in'}, 55.1333);
+    tl.set('#p-terapi', {opacity:0}, 55.4333);
+    tl.fromTo('#pp-3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 48.9333);
+    tl.fromTo('#pp-s', {opacity:0}, {opacity:1, duration:0.35, ease:'power2.out'}, 49.9667);
+    tl.fromTo('#pp-m', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 52.5);
+    // panel p-q2c C 63.9333-65.9667
+    tl.set('#p-q2c', {opacity:1}, 63.9333);
+    tl.fromTo('#p-q2c-left', {opacity:0, x:-60}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 64.0667);
+    tl.to('#p-q2c-left', {opacity:0, x:-30, duration:0.3, ease:'power2.in'}, 65.6667);
+    tl.fromTo('#p-q2c-right', {opacity:0, x:60}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 64.0667);
+    tl.to('#p-q2c-right', {opacity:0, x:30, duration:0.3, ease:'power2.in'}, 65.6667);
+    tl.set('#p-q2c', {opacity:0}, 65.9667);
+    // panel p-keadaan L 65.6667-76.6
+    tl.set('#p-keadaan', {opacity:1}, 65.6667);
+    tl.fromTo('#p-keadaan-main', {opacity:0, x:70}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 65.8333);
+    tl.to('#p-keadaan-main', {opacity:0, x:35, duration:0.3, ease:'power2.in'}, 76.3);
+    tl.set('#p-keadaan', {opacity:0}, 76.6);
+    tl.fromTo('#pk-0', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 66.7333);
+    tl.fromTo('#pk-1', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 68.1);
+    tl.fromTo('#pk-2', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 69.5333);
+    tl.fromTo('#pk-3', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 71.1667);
+    tl.fromTo('#pk-4', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 73.2667);
+    tl.fromTo('#pk-s', {opacity:0}, {opacity:1, duration:0.35, ease:'power2.out'}, 74.4667);
+    // panel p-restraint R 85.9-92.3333
+    tl.set('#p-restraint', {opacity:1}, 85.9);
+    tl.fromTo('#p-restraint-main', {opacity:0, x:-70}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 86.0667);
+    tl.to('#p-restraint-main', {opacity:0, x:-35, duration:0.3, ease:'power2.in'}, 92.0333);
+    tl.set('#p-restraint', {opacity:0}, 92.3333);
+    tl.fromTo('#px-a', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 87.0667);
+    tl.fromTo('#px-b', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 90.0667);
+    // panel p-ladder C 92.0333-99.7667
+    tl.set('#p-ladder', {opacity:1}, 92.0333);
+    tl.fromTo('#p-ladder-left', {opacity:0, x:-60}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 92.1667);
+    tl.to('#p-ladder-left', {opacity:0, x:-30, duration:0.3, ease:'power2.in'}, 99.4667);
+    tl.fromTo('#p-ladder-right', {opacity:0, x:60}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 92.1667);
+    tl.to('#p-ladder-right', {opacity:0, x:30, duration:0.3, ease:'power2.in'}, 99.4667);
+    tl.set('#p-ladder', {opacity:0}, 99.7667);
+    tl.fromTo('#pl-1', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 92.2333);
+    tl.fromTo('#pl-2', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 94.1);
+    tl.fromTo('#pl-3', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 96.3);
+    tl.fromTo('#pl-4', {opacity:0, scale:1.9}, {opacity:1, scale:1, duration:0.26, ease:'power4.out'}, 98.6);
+    // panel p-stabil L 99.4667-106.0
+    tl.set('#p-stabil', {opacity:1}, 99.4667);
+    tl.fromTo('#p-stabil-main', {opacity:0, x:70}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 99.6333);
+    tl.to('#p-stabil-main', {opacity:0, x:35, duration:0.3, ease:'power2.in'}, 105.7);
+    tl.set('#p-stabil', {opacity:0}, 106.0);
+    tl.fromTo('#ps-t', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 101.7333);
+    tl.fromTo('#ps-s', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 103.3333);
+    // panel p-bukan R 105.7-112.0333
+    tl.set('#p-bukan', {opacity:1}, 105.7);
+    tl.fromTo('#p-bukan-main', {opacity:0, x:-70}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 105.8667);
+    tl.to('#p-bukan-main', {opacity:0, x:-35, duration:0.3, ease:'power2.in'}, 111.7333);
+    tl.set('#p-bukan', {opacity:0}, 112.0333);
+    tl.fromTo('#pb-1', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 107.3667);
+    tl.fromTo('#pb-2', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 108.9667);
+    tl.fromTo('#pb-3', {opacity:0}, {opacity:1, duration:0.35, ease:'power2.out'}, 110.2667);
+    // panel p-hukum L 118.9667-121.5333
+    tl.set('#p-hukum', {opacity:1}, 118.9667);
+    tl.fromTo('#p-hukum-main', {opacity:0, x:70}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 119.1333);
+    tl.to('#p-hukum-main', {opacity:0, x:35, duration:0.3, ease:'power2.in'}, 121.2333);
+    tl.set('#p-hukum', {opacity:0}, 121.5333);
+    tl.fromTo('#pu-s', {backgroundSize:'0% 7px'}, {backgroundSize:'100% 7px', duration:0.35, ease:'power2.inOut'}, 120.3);
+    // panel p-selamat L 124.9-128.8667
+    tl.set('#p-selamat', {opacity:1}, 124.9);
+    tl.fromTo('#p-selamat-main', {opacity:0, x:70}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 125.0667);
+    tl.to('#p-selamat-main', {opacity:0, x:35, duration:0.3, ease:'power2.in'}, 128.5667);
+    tl.set('#p-selamat', {opacity:0}, 128.8667);
+    tl.fromTo('#pl-h', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 126.7667);
+    // panel p-cta C 132.3667-137.1333
+    tl.set('#p-cta', {opacity:1}, 132.3667);
+    tl.fromTo('#p-cta-left', {opacity:0, x:-60}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 132.5333);
+    tl.to('#p-cta-left', {opacity:0, x:-30, duration:0.3, ease:'power2.in'}, 136.8333);
+    tl.fromTo('#p-cta-right', {opacity:0, x:60}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 132.5333);
+    tl.to('#p-cta-right', {opacity:0, x:30, duration:0.3, ease:'power2.in'}, 136.8333);
+    tl.set('#p-cta', {opacity:0}, 137.1333);
+    tl.fromTo('#pc-a', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 132.5667);
+    tl.fromTo('#pc-b', {opacity:0, x:-50}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 134.1);
+    // panel p-rawatan R 136.8333-139.8
+    tl.set('#p-rawatan', {opacity:1}, 136.8333);
+    tl.fromTo('#p-rawatan-main', {opacity:0, x:-70}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 136.9667);
+    tl.to('#p-rawatan-main', {opacity:0, x:-35, duration:0.3, ease:'power2.in'}, 139.5);
+    tl.set('#p-rawatan', {opacity:0}, 139.8);
+    // panel p-end C 139.5-142.8333
+    tl.set('#p-end', {opacity:1}, 139.5);
+    tl.fromTo('#p-end-left', {opacity:0, x:-60}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 139.6667);
+    tl.to('#p-end-left', {opacity:0, x:-30, duration:0.3, ease:'power2.in'}, 142.5333);
+    tl.fromTo('#p-end-right', {opacity:0, x:60}, {opacity:1, x:0, duration:0.5, ease:'power3.out'}, 139.6667);
+    tl.to('#p-end-right', {opacity:0, x:30, duration:0.3, ease:'power2.in'}, 142.5333);
+    tl.set('#p-end', {opacity:0}, 142.8333);
+    tl.set('#f-asylum', {opacity:1}, 5.7333);
+    tl.fromTo('#f-asylum-in', {opacity:0, scale:1.06}, {opacity:1, scale:1, duration:0.35, ease:'power2.out'}, 5.7333);
+    tl.fromTo('#f-asylum-v', {scale:1.0}, {scale:1.07, duration:2.133, ease:'sine.inOut'}, 5.7333);
+    tl.to('#f-asylum-in', {opacity:0, duration:0.25, ease:'power2.in'}, 7.6333);
+    tl.set('#f-asylum', {opacity:0}, 7.8667);
+    tl.set('#f-ext', {opacity:1}, 10.3667);
+    tl.fromTo('#f-ext-in', {opacity:0, scale:1.06}, {opacity:1, scale:1, duration:0.35, ease:'power2.out'}, 10.3667);
+    tl.fromTo('#f-ext-v', {scale:1.0}, {scale:1.07, duration:2.867, ease:'sine.inOut'}, 10.3667);
+    tl.to('#f-ext-in', {opacity:0, duration:0.25, ease:'power2.in'}, 12.9667);
+    tl.set('#f-ext', {opacity:0}, 13.2333);
+    tl.set('#f-filem', {opacity:1}, 21.1);
+    tl.fromTo('#f-filem-in', {clipPath:'inset(0% 100% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.45, ease:'power3.inOut'}, 21.1);
+    tl.fromTo('#fm-seam', {scaleY:0}, {scaleY:1, duration:0.5, ease:'power3.inOut'}, 21.2667);
+    tl.fromTo('#fm-x', {opacity:0, scale:1.9}, {opacity:1, scale:1, duration:0.26, ease:'power4.out'}, 21.3333);
+    tl.fromTo('#fm-c', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 21.8333);
+    tl.fromTo('#fm-t', {opacity:0, y:46}, {opacity:1, y:0, duration:0.45, ease:'power3.out'}, 22.0333);
+    tl.fromTo('#fm-s', {opacity:0, y:46}, {opacity:1, y:0, duration:0.45, ease:'power3.out'}, 22.6667);
+    tl.to('#f-filem-in', {opacity:0, duration:0.25, ease:'power2.in'}, 23.6667);
+    tl.set('#f-filem', {opacity:0}, 23.9);
+    tl.set('#f-ward', {opacity:1}, 23.6);
+    tl.fromTo('#f-ward-in', {opacity:0, scale:1.06}, {opacity:1, scale:1, duration:0.35, ease:'power2.out'}, 23.6);
+    tl.fromTo('#f-ward-v', {scale:1.0}, {scale:1.07, duration:2.467, ease:'sine.inOut'}, 23.6);
+    tl.to('#f-ward-in', {opacity:0, duration:0.25, ease:'power2.in'}, 25.8333);
+    tl.set('#f-ward', {opacity:0}, 26.0667);
+    tl.set('#f-consult', {opacity:1}, 36.3667);
+    tl.fromTo('#f-consult-in', {opacity:0, scale:1.06}, {opacity:1, scale:1, duration:0.35, ease:'power2.out'}, 36.3667);
+    tl.fromTo('#f-consult-v', {scale:1.0}, {scale:1.07, duration:2.967, ease:'sine.inOut'}, 36.3667);
+    tl.to('#f-consult-in', {opacity:0, duration:0.25, ease:'power2.in'}, 39.0667);
+    tl.set('#f-consult', {opacity:0}, 39.3333);
+    tl.set('#f-therapy', {opacity:1}, 45.4);
+    tl.fromTo('#f-therapy-in', {opacity:0, scale:1.06}, {opacity:1, scale:1, duration:0.35, ease:'power2.out'}, 45.4);
+    tl.fromTo('#f-therapy-v', {scale:1.0}, {scale:1.07, duration:3.333, ease:'sine.inOut'}, 45.4);
+    tl.to('#f-therapy-in', {opacity:0, duration:0.25, ease:'power2.in'}, 48.4667);
+    tl.set('#f-therapy', {opacity:0}, 48.7333);
+    tl.set('#f-tujuan', {opacity:1}, 55.1333);
+    tl.fromTo('#f-tujuan-in', {clipPath:'inset(0% 100% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.45, ease:'power3.inOut'}, 55.1333);
+    tl.fromTo('#ft-c', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 55.2667);
+    tl.fromTo('#ft-a', {opacity:0, y:46}, {opacity:1, y:0, duration:0.45, ease:'power3.out'}, 56.5333);
+    tl.fromTo('#ft-b', {opacity:0, y:46}, {opacity:1, y:0, duration:0.45, ease:'power3.out'}, 57.9667);
+    tl.fromTo('#ft-s', {backgroundSize:'0% 10px'}, {backgroundSize:'100% 10px', duration:0.4, ease:'power2.inOut'}, 59.0333);
+    tl.to('#f-tujuan-in', {opacity:0, duration:0.25, ease:'power2.in'}, 59.6667);
+    tl.set('#f-tujuan', {opacity:0}, 59.9333);
+    tl.set('#f-q2', {opacity:1}, 59.6333);
+    tl.fromTo('#f-q2-in', {clipPath:'inset(0% 100% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.45, ease:'power3.inOut'}, 59.6333);
+    tl.fromTo('#q2-n', {opacity:0, y:46}, {opacity:1, y:0, duration:0.45, ease:'power3.out'}, 59.7667);
+    tl.fromTo('#q2-q', {opacity:0, y:46}, {opacity:1, y:0, duration:0.45, ease:'power3.out'}, 59.9667);
+    tl.fromTo('#q2-s', {opacity:0, scale:1.9}, {opacity:1, scale:1, duration:0.26, ease:'power4.out'}, 63.2333);
+    tl.to('#f-q2-in', {opacity:0, duration:0.25, ease:'power2.in'}, 63.6667);
+    tl.set('#f-q2', {opacity:0}, 63.9333);
+    tl.set('#f-quiet', {opacity:1}, 76.3);
+    tl.fromTo('#f-quiet-in', {opacity:0, scale:1.06}, {opacity:1, scale:1, duration:0.35, ease:'power2.out'}, 76.3);
+    tl.fromTo('#f-quiet-v', {scale:1.0}, {scale:1.07, duration:4.433, ease:'sine.inOut'}, 76.3);
+    tl.to('#f-quiet-in', {opacity:0, duration:0.25, ease:'power2.in'}, 80.4667);
+    tl.set('#f-quiet', {opacity:0}, 80.7333);
+    tl.set('#f-q3', {opacity:1}, 80.4333);
+    tl.fromTo('#f-q3-in', {clipPath:'inset(0% 100% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.45, ease:'power3.inOut'}, 80.4333);
+    tl.fromTo('#q3-n', {opacity:0, y:46}, {opacity:1, y:0, duration:0.45, ease:'power3.out'}, 80.5667);
+    tl.fromTo('#q3-q', {opacity:0, y:46}, {opacity:1, y:0, duration:0.45, ease:'power3.out'}, 80.7667);
+    tl.fromTo('#q3-s', {opacity:0, scale:1.9}, {opacity:1, scale:1, duration:0.26, ease:'power4.out'}, 84.0);
+    tl.to('#f-q3-in', {opacity:0, duration:0.25, ease:'power2.in'}, 85.6667);
+    tl.set('#f-q3', {opacity:0}, 85.9);
+    tl.set('#f-pulih', {opacity:1}, 111.7333);
+    tl.fromTo('#f-pulih-in', {clipPath:'inset(0% 100% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.45, ease:'power3.inOut'}, 111.7333);
+    tl.fromTo('#fp-c', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 111.8667);
+    tl.fromTo('#fp-t', {opacity:0, y:46}, {opacity:1, y:0, duration:0.45, ease:'power3.out'}, 111.8667);
+    tl.fromTo('#fp-rail', {strokeDashoffset:1500}, {strokeDashoffset:0, duration:2.974, ease:'power1.inOut'}, 111.8667);
+    tl.fromTo('#fp-0', {opacity:0, y:46}, {opacity:1, y:0, duration:0.45, ease:'power3.out'}, 112.0667);
+    tl.fromTo('#fp-1', {opacity:0, y:46}, {opacity:1, y:0, duration:0.45, ease:'power3.out'}, 113.0333);
+    tl.fromTo('#fp-2', {opacity:0, y:46}, {opacity:1, y:0, duration:0.45, ease:'power3.out'}, 113.7);
+    tl.fromTo('#fp-3', {opacity:0, y:46}, {opacity:1, y:0, duration:0.45, ease:'power3.out'}, 114.6);
+    tl.to('#f-pulih-in', {opacity:0, duration:0.25, ease:'power2.in'}, 115.6667);
+    tl.set('#f-pulih', {opacity:0}, 115.9);
+    tl.set('#f-return', {opacity:1}, 115.6);
+    tl.fromTo('#f-return-in', {opacity:0, scale:1.06}, {opacity:1, scale:1, duration:0.35, ease:'power2.out'}, 115.6);
+    tl.fromTo('#f-return-v', {scale:1.0}, {scale:1.07, duration:3.367, ease:'sine.inOut'}, 115.6);
+    tl.to('#f-return-in', {opacity:0, duration:0.25, ease:'power2.in'}, 118.7333);
+    tl.set('#f-return', {opacity:0}, 118.9667);
+    tl.set('#f-safe', {opacity:1}, 121.2333);
+    tl.fromTo('#f-safe-in', {opacity:0, scale:1.06}, {opacity:1, scale:1, duration:0.35, ease:'power2.out'}, 121.2333);
+    tl.fromTo('#f-safe-v', {scale:1.0}, {scale:1.07, duration:3.667, ease:'sine.inOut'}, 121.2333);
+    tl.to('#f-safe-in', {opacity:0, duration:0.25, ease:'power2.in'}, 124.6667);
+    tl.set('#f-safe', {opacity:0}, 124.9);
+    tl.set('#f-support', {opacity:1}, 128.5667);
+    tl.fromTo('#f-support-in', {opacity:0, scale:1.06}, {opacity:1, scale:1, duration:0.35, ease:'power2.out'}, 128.5667);
+    tl.fromTo('#f-support-v', {scale:1.0}, {scale:1.07, duration:3.8, ease:'sine.inOut'}, 128.5667);
+    tl.to('#f-support-in', {opacity:0, duration:0.25, ease:'power2.in'}, 132.1333);
+    tl.set('#f-support', {opacity:0}, 132.3667);
+    tl.fromTo('#c0', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 0.0);
+    tl.set('#c0', {opacity:0}, 1.7667);
+    tl.set('#c0w0', {color:'#5EEAD4'}, 0.1);
+    tl.set('#c0w0', {color:'#ffffff'}, 0.3333);
+    tl.set('#c0w1', {color:'#5EEAD4'}, 0.2667);
+    tl.set('#c0w1', {color:'#ffffff'}, 0.6333);
+    tl.set('#c0w2', {color:'#5EEAD4'}, 0.5667);
+    tl.set('#c0w2', {color:'#ffffff'}, 0.8333);
+    tl.set('#c0w3', {color:'#5EEAD4'}, 0.8333);
+    tl.set('#c0w3', {color:'#ffffff'}, 1.3667);
+    tl.set('#c0w4', {color:'#5EEAD4'}, 1.4667);
+    tl.set('#c0w4', {color:'#ffffff'}, 1.8);
+    tl.fromTo('#c1', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 1.7333);
+    tl.set('#c1', {opacity:0}, 2.4);
+    tl.set('#c1w0', {color:'#5EEAD4'}, 1.8333);
+    tl.set('#c1w0', {color:'#ffffff'}, 2.0333);
+    tl.set('#c1w1', {color:'#5EEAD4'}, 2.0333);
+    tl.set('#c1w1', {color:'#ffffff'}, 2.3);
+    tl.fromTo('#c2', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 2.3333);
+    tl.set('#c2', {opacity:0}, 3.6333);
+    tl.set('#c2w0', {color:'#5EEAD4'}, 2.4333);
+    tl.set('#c2w0', {color:'#ffffff'}, 2.7667);
+    tl.set('#c2w1', {color:'#5EEAD4'}, 2.7333);
+    tl.set('#c2w1', {color:'#ffffff'}, 3.0333);
+    tl.set('#c2w2', {color:'#5EEAD4'}, 3.0);
+    tl.set('#c2w2', {color:'#ffffff'}, 3.2667);
+    tl.set('#c2w3', {color:'#5EEAD4'}, 3.3667);
+    tl.set('#c2w3', {color:'#ffffff'}, 3.7333);
+    tl.fromTo('#c3', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 3.6);
+    tl.set('#c3', {opacity:0}, 4.4);
+    tl.set('#c3w0', {color:'#5EEAD4'}, 3.6667);
+    tl.set('#c3w0', {color:'#ffffff'}, 3.8667);
+    tl.set('#c3w1', {color:'#5EEAD4'}, 3.8667);
+    tl.set('#c3w1', {color:'#ffffff'}, 4.0);
+    tl.set('#c3w2', {color:'#5EEAD4'}, 3.9667);
+    tl.set('#c3w2', {color:'#ffffff'}, 4.4333);
+    tl.fromTo('#c4', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 4.3667);
+    tl.set('#c4', {opacity:0}, 5.1667);
+    tl.set('#c4w0', {color:'#5EEAD4'}, 4.4333);
+    tl.set('#c4w0', {color:'#ffffff'}, 4.5333);
+    tl.set('#c4w1', {color:'#5EEAD4'}, 4.6);
+    tl.set('#c4w1', {color:'#ffffff'}, 4.7333);
+    tl.set('#c4w2', {color:'#5EEAD4'}, 4.7333);
+    tl.set('#c4w2', {color:'#ffffff'}, 5.2);
+    tl.fromTo('#c5', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 5.1);
+    tl.set('#c5', {opacity:0}, 6.5);
+    tl.set('#c5w0', {color:'#5EEAD4'}, 5.2);
+    tl.set('#c5w0', {color:'#ffffff'}, 5.3333);
+    tl.set('#c5w1', {color:'#5EEAD4'}, 5.3333);
+    tl.set('#c5w1', {color:'#ffffff'}, 5.7667);
+    tl.set('#c5w2', {color:'#5EEAD4'}, 5.8);
+    tl.set('#c5w2', {color:'#ffffff'}, 6.2);
+    tl.set('#c5w3', {color:'#5EEAD4'}, 6.2333);
+    tl.set('#c5w3', {color:'#ffffff'}, 6.5333);
+    tl.fromTo('#c6', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 6.4333);
+    tl.set('#c6', {opacity:0}, 7.4333);
+    tl.set('#c6w0', {color:'#5EEAD4'}, 6.5333);
+    tl.set('#c6w0', {color:'#ffffff'}, 7.0);
+    tl.set('#c6w1', {color:'#5EEAD4'}, 6.9667);
+    tl.set('#c6w1', {color:'#ffffff'}, 7.3);
+    tl.set('#c6w2', {color:'#5EEAD4'}, 7.3);
+    tl.set('#c6w2', {color:'#ffffff'}, 7.4333);
+    tl.fromTo('#c7', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 7.4);
+    tl.set('#c7', {opacity:0}, 8.4);
+    tl.set('#c7w0', {color:'#5EEAD4'}, 7.5);
+    tl.set('#c7w0', {color:'#ffffff'}, 7.8);
+    tl.set('#c7w1', {color:'#5EEAD4'}, 7.8);
+    tl.set('#c7w1', {color:'#ffffff'}, 8.1);
+    tl.set('#c7w2', {color:'#5EEAD4'}, 8.1);
+    tl.set('#c7w2', {color:'#ffffff'}, 8.4);
+    tl.fromTo('#c8', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 10.7333);
+    tl.set('#c8', {opacity:0}, 12.7667);
+    tl.set('#c8w0', {color:'#5EEAD4'}, 10.8333);
+    tl.set('#c8w0', {color:'#ffffff'}, 11.2667);
+    tl.set('#c8w1', {color:'#5EEAD4'}, 11.4);
+    tl.set('#c8w1', {color:'#ffffff'}, 11.6667);
+    tl.set('#c8w2', {color:'#5EEAD4'}, 11.7333);
+    tl.set('#c8w2', {color:'#ffffff'}, 12.0667);
+    tl.set('#c8w3', {color:'#5EEAD4'}, 12.1667);
+    tl.set('#c8w3', {color:'#ffffff'}, 12.4667);
+    tl.set('#c8w4', {color:'#5EEAD4'}, 12.5667);
+    tl.set('#c8w4', {color:'#ffffff'}, 12.7667);
+    tl.fromTo('#c9', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 12.7);
+    tl.set('#c9', {opacity:0}, 13.3667);
+    tl.set('#c9w0', {color:'#5EEAD4'}, 12.8);
+    tl.set('#c9w0', {color:'#ffffff'}, 13.2667);
+    tl.fromTo('#c10', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 13.3333);
+    tl.set('#c10', {opacity:0}, 14.6333);
+    tl.set('#c10w0', {color:'#5EEAD4'}, 13.4);
+    tl.set('#c10w0', {color:'#ffffff'}, 13.8);
+    tl.set('#c10w1', {color:'#5EEAD4'}, 13.8333);
+    tl.set('#c10w1', {color:'#ffffff'}, 14.0333);
+    tl.set('#c10w2', {color:'#5EEAD4'}, 13.9667);
+    tl.set('#c10w2', {color:'#ffffff'}, 14.5);
+    tl.set('#c10w3', {color:'#5EEAD4'}, 14.5333);
+    tl.set('#c10w3', {color:'#ffffff'}, 14.7);
+    tl.fromTo('#c11', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 14.5667);
+    tl.set('#c11', {opacity:0}, 16.4333);
+    tl.set('#c11w0', {color:'#5EEAD4'}, 14.6667);
+    tl.set('#c11w0', {color:'#ffffff'}, 15.1667);
+    tl.set('#c11w1', {color:'#5EEAD4'}, 15.1333);
+    tl.set('#c11w1', {color:'#ffffff'}, 15.4);
+    tl.set('#c11w2', {color:'#5EEAD4'}, 15.4333);
+    tl.set('#c11w2', {color:'#ffffff'}, 15.7);
+    tl.set('#c11w3', {color:'#5EEAD4'}, 15.7);
+    tl.set('#c11w3', {color:'#ffffff'}, 15.9333);
+    tl.set('#c11w4', {color:'#5EEAD4'}, 15.9);
+    tl.set('#c11w4', {color:'#ffffff'}, 16.3333);
+    tl.fromTo('#c12', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 16.4);
+    tl.set('#c12', {opacity:0}, 17.3);
+    tl.set('#c12w0', {color:'#5EEAD4'}, 16.4667);
+    tl.set('#c12w0', {color:'#ffffff'}, 17.0667);
+    tl.fromTo('#c13', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 17.2667);
+    tl.set('#c13', {opacity:0}, 18.7333);
+    tl.set('#c13w0', {color:'#5EEAD4'}, 17.3333);
+    tl.set('#c13w0', {color:'#ffffff'}, 17.5667);
+    tl.set('#c13w1', {color:'#5EEAD4'}, 17.5667);
+    tl.set('#c13w1', {color:'#ffffff'}, 17.9667);
+    tl.set('#c13w2', {color:'#5EEAD4'}, 17.9);
+    tl.set('#c13w2', {color:'#ffffff'}, 18.7667);
+    tl.fromTo('#c14', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 18.7);
+    tl.set('#c14', {opacity:0}, 19.8333);
+    tl.set('#c14w0', {color:'#5EEAD4'}, 18.7667);
+    tl.set('#c14w0', {color:'#ffffff'}, 19.0);
+    tl.set('#c14w1', {color:'#5EEAD4'}, 18.9667);
+    tl.set('#c14w1', {color:'#ffffff'}, 19.2333);
+    tl.set('#c14w2', {color:'#5EEAD4'}, 19.2667);
+    tl.set('#c14w2', {color:'#ffffff'}, 19.6333);
+    tl.fromTo('#c15', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 19.7667);
+    tl.set('#c15', {opacity:0}, 21.1667);
+    tl.set('#c15w0', {color:'#5EEAD4'}, 19.8667);
+    tl.set('#c15w0', {color:'#ffffff'}, 20.0667);
+    tl.set('#c15w1', {color:'#5EEAD4'}, 20.1);
+    tl.set('#c15w1', {color:'#ffffff'}, 20.4333);
+    tl.set('#c15w2', {color:'#5EEAD4'}, 20.4333);
+    tl.set('#c15w2', {color:'#ffffff'}, 20.8667);
+    tl.set('#c15w3', {color:'#5EEAD4'}, 20.8333);
+    tl.set('#c15w3', {color:'#ffffff'}, 21.2);
+    tl.fromTo('#c16', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 21.1333);
+    tl.set('#c16', {opacity:0}, 22.1);
+    tl.set('#c16w0', {color:'#5EEAD4'}, 21.2);
+    tl.set('#c16w0', {color:'#ffffff'}, 21.4667);
+    tl.set('#c16w1', {color:'#5EEAD4'}, 21.4333);
+    tl.set('#c16w1', {color:'#ffffff'}, 21.7333);
+    tl.set('#c16w2', {color:'#5EEAD4'}, 21.7);
+    tl.set('#c16w2', {color:'#ffffff'}, 22.0667);
+    tl.fromTo('#c17', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 22.0667);
+    tl.set('#c17', {opacity:0}, 22.7333);
+    tl.set('#c17w0', {color:'#5EEAD4'}, 22.1333);
+    tl.set('#c17w0', {color:'#ffffff'}, 22.2667);
+    tl.set('#c17w1', {color:'#5EEAD4'}, 22.2333);
+    tl.set('#c17w1', {color:'#ffffff'}, 22.6667);
+    tl.fromTo('#c18', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 22.7);
+    tl.set('#c18', {opacity:0}, 24.4333);
+    tl.set('#c18w0', {color:'#5EEAD4'}, 22.8);
+    tl.set('#c18w0', {color:'#ffffff'}, 22.9667);
+    tl.set('#c18w1', {color:'#5EEAD4'}, 22.9667);
+    tl.set('#c18w1', {color:'#ffffff'}, 23.5667);
+    tl.set('#c18w2', {color:'#5EEAD4'}, 23.7);
+    tl.set('#c18w2', {color:'#ffffff'}, 24.1667);
+    tl.fromTo('#c19', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 24.4);
+    tl.set('#c19', {opacity:0}, 26.0);
+    tl.set('#c19w0', {color:'#5EEAD4'}, 24.4667);
+    tl.set('#c19w0', {color:'#ffffff'}, 24.7);
+    tl.set('#c19w1', {color:'#5EEAD4'}, 24.6667);
+    tl.set('#c19w1', {color:'#ffffff'}, 24.9333);
+    tl.set('#c19w2', {color:'#5EEAD4'}, 24.9667);
+    tl.set('#c19w2', {color:'#ffffff'}, 25.1667);
+    tl.set('#c19w3', {color:'#5EEAD4'}, 25.3333);
+    tl.set('#c19w3', {color:'#ffffff'}, 25.4667);
+    tl.set('#c19w4', {color:'#5EEAD4'}, 25.5);
+    tl.set('#c19w4', {color:'#ffffff'}, 26.0333);
+    tl.fromTo('#c20', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 25.9667);
+    tl.set('#c20', {opacity:0}, 27.4667);
+    tl.set('#c20w0', {color:'#5EEAD4'}, 26.0333);
+    tl.set('#c20w0', {color:'#ffffff'}, 26.1667);
+    tl.set('#c20w1', {color:'#5EEAD4'}, 26.1667);
+    tl.set('#c20w1', {color:'#ffffff'}, 26.7333);
+    tl.set('#c20w2', {color:'#5EEAD4'}, 26.7667);
+    tl.set('#c20w2', {color:'#ffffff'}, 27.1333);
+    tl.set('#c20w3', {color:'#5EEAD4'}, 27.2);
+    tl.set('#c20w3', {color:'#ffffff'}, 27.5333);
+    tl.fromTo('#c21', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 27.4333);
+    tl.set('#c21', {opacity:0}, 28.4);
+    tl.set('#c21w0', {color:'#5EEAD4'}, 27.5);
+    tl.set('#c21w0', {color:'#ffffff'}, 28.0);
+    tl.fromTo('#c22', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 28.3667);
+    tl.set('#c22', {opacity:0}, 29.9667);
+    tl.set('#c22w0', {color:'#5EEAD4'}, 28.4333);
+    tl.set('#c22w0', {color:'#ffffff'}, 28.9667);
+    tl.set('#c22w1', {color:'#5EEAD4'}, 28.9333);
+    tl.set('#c22w1', {color:'#ffffff'}, 29.5);
+    tl.fromTo('#c23', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 29.9333);
+    tl.set('#c23', {opacity:0}, 31.1);
+    tl.set('#c23w0', {color:'#5EEAD4'}, 30.0);
+    tl.set('#c23w0', {color:'#ffffff'}, 30.2333);
+    tl.set('#c23w1', {color:'#5EEAD4'}, 30.2);
+    tl.set('#c23w1', {color:'#ffffff'}, 30.8);
+    tl.fromTo('#c24', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 31.0667);
+    tl.set('#c24', {opacity:0}, 32.3667);
+    tl.set('#c24w0', {color:'#5EEAD4'}, 31.1333);
+    tl.set('#c24w0', {color:'#ffffff'}, 31.7333);
+    tl.fromTo('#c25', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 32.3);
+    tl.set('#c25', {opacity:0}, 33.5667);
+    tl.set('#c25w0', {color:'#5EEAD4'}, 32.4);
+    tl.set('#c25w0', {color:'#ffffff'}, 32.7);
+    tl.set('#c25w1', {color:'#5EEAD4'}, 32.7);
+    tl.set('#c25w1', {color:'#ffffff'}, 33.0333);
+    tl.set('#c25w2', {color:'#5EEAD4'}, 33.0);
+    tl.set('#c25w2', {color:'#ffffff'}, 33.2667);
+    tl.set('#c25w3', {color:'#5EEAD4'}, 33.4);
+    tl.set('#c25w3', {color:'#ffffff'}, 33.5667);
+    tl.fromTo('#c26', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 33.5);
+    tl.set('#c26', {opacity:0}, 34.4333);
+    tl.set('#c26w0', {color:'#5EEAD4'}, 33.6);
+    tl.set('#c26w0', {color:'#ffffff'}, 33.8667);
+    tl.set('#c26w1', {color:'#5EEAD4'}, 33.8333);
+    tl.set('#c26w1', {color:'#ffffff'}, 34.1);
+    tl.fromTo('#c27', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 34.4);
+    tl.set('#c27', {opacity:0}, 35.7667);
+    tl.set('#c27w0', {color:'#5EEAD4'}, 34.4667);
+    tl.set('#c27w0', {color:'#ffffff'}, 34.7);
+    tl.set('#c27w1', {color:'#5EEAD4'}, 34.7);
+    tl.set('#c27w1', {color:'#ffffff'}, 35.1);
+    tl.set('#c27w2', {color:'#5EEAD4'}, 35.1333);
+    tl.set('#c27w2', {color:'#ffffff'}, 35.3333);
+    tl.set('#c27w3', {color:'#5EEAD4'}, 35.3);
+    tl.set('#c27w3', {color:'#ffffff'}, 35.5667);
+    tl.set('#c27w4', {color:'#5EEAD4'}, 35.6);
+    tl.set('#c27w4', {color:'#ffffff'}, 35.8);
+    tl.fromTo('#c28', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 35.7);
+    tl.set('#c28', {opacity:0}, 36.9667);
+    tl.set('#c28w0', {color:'#5EEAD4'}, 35.8);
+    tl.set('#c28w0', {color:'#ffffff'}, 36.2333);
+    tl.set('#c28w1', {color:'#5EEAD4'}, 36.2667);
+    tl.set('#c28w1', {color:'#ffffff'}, 36.5);
+    tl.set('#c28w2', {color:'#5EEAD4'}, 36.4667);
+    tl.set('#c28w2', {color:'#ffffff'}, 36.8);
+    tl.set('#c28w3', {color:'#5EEAD4'}, 36.8);
+    tl.set('#c28w3', {color:'#ffffff'}, 37.0333);
+    tl.fromTo('#c29', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 36.9333);
+    tl.set('#c29', {opacity:0}, 38.4667);
+    tl.set('#c29w0', {color:'#5EEAD4'}, 37.0);
+    tl.set('#c29w0', {color:'#ffffff'}, 37.3333);
+    tl.set('#c29w1', {color:'#5EEAD4'}, 37.3333);
+    tl.set('#c29w1', {color:'#ffffff'}, 37.8);
+    tl.set('#c29w2', {color:'#5EEAD4'}, 37.8);
+    tl.set('#c29w2', {color:'#ffffff'}, 38.1);
+    tl.set('#c29w3', {color:'#5EEAD4'}, 38.2);
+    tl.set('#c29w3', {color:'#ffffff'}, 38.5333);
+    tl.fromTo('#c30', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 38.4333);
+    tl.set('#c30', {opacity:0}, 39.4333);
+    tl.set('#c30w0', {color:'#5EEAD4'}, 38.5);
+    tl.set('#c30w0', {color:'#ffffff'}, 38.8333);
+    tl.set('#c30w1', {color:'#5EEAD4'}, 38.8);
+    tl.set('#c30w1', {color:'#ffffff'}, 39.3);
+    tl.fromTo('#c31', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 39.4);
+    tl.set('#c31', {opacity:0}, 40.8);
+    tl.set('#c31w0', {color:'#5EEAD4'}, 39.4667);
+    tl.set('#c31w0', {color:'#ffffff'}, 39.6333);
+    tl.set('#c31w1', {color:'#5EEAD4'}, 39.6);
+    tl.set('#c31w1', {color:'#ffffff'}, 40.0333);
+    tl.set('#c31w2', {color:'#5EEAD4'}, 40.0333);
+    tl.set('#c31w2', {color:'#ffffff'}, 40.3667);
+    tl.set('#c31w3', {color:'#5EEAD4'}, 40.3333);
+    tl.set('#c31w3', {color:'#ffffff'}, 40.8333);
+    tl.fromTo('#c32', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 40.7667);
+    tl.set('#c32', {opacity:0}, 42.0);
+    tl.set('#c32w0', {color:'#5EEAD4'}, 40.8667);
+    tl.set('#c32w0', {color:'#ffffff'}, 41.1333);
+    tl.set('#c32w1', {color:'#5EEAD4'}, 41.1333);
+    tl.set('#c32w1', {color:'#ffffff'}, 41.4667);
+    tl.set('#c32w2', {color:'#5EEAD4'}, 41.4333);
+    tl.set('#c32w2', {color:'#ffffff'}, 41.7667);
+    tl.set('#c32w3', {color:'#5EEAD4'}, 41.7667);
+    tl.set('#c32w3', {color:'#ffffff'}, 41.9);
+    tl.fromTo('#c33', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 41.9667);
+    tl.set('#c33', {opacity:0}, 43.2667);
+    tl.set('#c33w0', {color:'#5EEAD4'}, 42.0333);
+    tl.set('#c33w0', {color:'#ffffff'}, 42.6333);
+    tl.set('#c33w1', {color:'#5EEAD4'}, 42.6);
+    tl.set('#c33w1', {color:'#ffffff'}, 43.0);
+    tl.set('#c33w2', {color:'#5EEAD4'}, 43.1333);
+    tl.set('#c33w2', {color:'#ffffff'}, 43.3);
+    tl.fromTo('#c34', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 43.2);
+    tl.set('#c34', {opacity:0}, 44.4);
+    tl.set('#c34w0', {color:'#5EEAD4'}, 43.3);
+    tl.set('#c34w0', {color:'#ffffff'}, 44.0333);
+    tl.fromTo('#c35', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 44.3667);
+    tl.set('#c35', {opacity:0}, 45.4667);
+    tl.set('#c35w0', {color:'#5EEAD4'}, 44.4333);
+    tl.set('#c35w0', {color:'#ffffff'}, 44.7333);
+    tl.set('#c35w1', {color:'#5EEAD4'}, 44.7);
+    tl.set('#c35w1', {color:'#ffffff'}, 45.2333);
+    tl.fromTo('#c36', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 45.4333);
+    tl.set('#c36', {opacity:0}, 47.2667);
+    tl.set('#c36w0', {color:'#5EEAD4'}, 45.5);
+    tl.set('#c36w0', {color:'#ffffff'}, 46.0333);
+    tl.set('#c36w1', {color:'#5EEAD4'}, 46.0);
+    tl.set('#c36w1', {color:'#ffffff'}, 46.4);
+    tl.set('#c36w2', {color:'#5EEAD4'}, 46.5);
+    tl.set('#c36w2', {color:'#ffffff'}, 46.9667);
+    tl.set('#c36w3', {color:'#5EEAD4'}, 47.0);
+    tl.set('#c36w3', {color:'#ffffff'}, 47.3333);
+    tl.fromTo('#c37', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 47.2333);
+    tl.set('#c37', {opacity:0}, 47.7667);
+    tl.set('#c37w0', {color:'#5EEAD4'}, 47.3);
+    tl.set('#c37w0', {color:'#ffffff'}, 47.5333);
+    tl.set('#c37w1', {color:'#5EEAD4'}, 47.5333);
+    tl.set('#c37w1', {color:'#ffffff'}, 47.8333);
+    tl.fromTo('#c38', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 47.7333);
+    tl.set('#c38', {opacity:0}, 48.7333);
+    tl.set('#c38w0', {color:'#5EEAD4'}, 47.8);
+    tl.set('#c38w0', {color:'#ffffff'}, 48.1667);
+    tl.set('#c38w1', {color:'#5EEAD4'}, 48.1333);
+    tl.set('#c38w1', {color:'#ffffff'}, 48.7);
+    tl.fromTo('#c39', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 48.7);
+    tl.set('#c39', {opacity:0}, 49.9);
+    tl.set('#c39w0', {color:'#5EEAD4'}, 48.7667);
+    tl.set('#c39w0', {color:'#ffffff'}, 49.0333);
+    tl.set('#c39w1', {color:'#5EEAD4'}, 49.0667);
+    tl.set('#c39w1', {color:'#ffffff'}, 49.8);
+    tl.fromTo('#c40', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 49.8667);
+    tl.set('#c40', {opacity:0}, 50.9667);
+    tl.set('#c40w0', {color:'#5EEAD4'}, 49.9333);
+    tl.set('#c40w0', {color:'#ffffff'}, 50.1333);
+    tl.set('#c40w1', {color:'#5EEAD4'}, 50.1);
+    tl.set('#c40w1', {color:'#ffffff'}, 50.4333);
+    tl.set('#c40w2', {color:'#5EEAD4'}, 50.4);
+    tl.set('#c40w2', {color:'#ffffff'}, 50.6333);
+    tl.set('#c40w3', {color:'#5EEAD4'}, 50.6);
+    tl.set('#c40w3', {color:'#ffffff'}, 51.0333);
+    tl.fromTo('#c41', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 50.9333);
+    tl.set('#c41', {opacity:0}, 51.9333);
+    tl.set('#c41w0', {color:'#5EEAD4'}, 51.0);
+    tl.set('#c41w0', {color:'#ffffff'}, 51.1333);
+    tl.set('#c41w1', {color:'#5EEAD4'}, 51.1333);
+    tl.set('#c41w1', {color:'#ffffff'}, 51.4);
+    tl.set('#c41w2', {color:'#5EEAD4'}, 51.3667);
+    tl.set('#c41w2', {color:'#ffffff'}, 51.8);
+    tl.set('#c41w3', {color:'#5EEAD4'}, 51.7667);
+    tl.set('#c41w3', {color:'#ffffff'}, 52.0);
+    tl.fromTo('#c42', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 51.9);
+    tl.set('#c42', {opacity:0}, 52.6);
+    tl.set('#c42w0', {color:'#5EEAD4'}, 51.9667);
+    tl.set('#c42w0', {color:'#ffffff'}, 52.4);
+    tl.set('#c42w1', {color:'#5EEAD4'}, 52.4);
+    tl.set('#c42w1', {color:'#ffffff'}, 52.6333);
+    tl.fromTo('#c43', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 52.5667);
+    tl.set('#c43', {opacity:0}, 53.9);
+    tl.set('#c43w0', {color:'#5EEAD4'}, 52.6333);
+    tl.set('#c43w0', {color:'#ffffff'}, 53.0667);
+    tl.set('#c43w1', {color:'#5EEAD4'}, 53.0667);
+    tl.set('#c43w1', {color:'#ffffff'}, 53.2);
+    tl.set('#c43w2', {color:'#5EEAD4'}, 53.2);
+    tl.set('#c43w2', {color:'#ffffff'}, 53.5667);
+    tl.fromTo('#c44', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 53.8667);
+    tl.set('#c44', {opacity:0}, 54.6);
+    tl.set('#c44w0', {color:'#5EEAD4'}, 53.9333);
+    tl.set('#c44w0', {color:'#ffffff'}, 54.3333);
+    tl.fromTo('#c45', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 54.5667);
+    tl.set('#c45', {opacity:0}, 55.2);
+    tl.set('#c45w0', {color:'#5EEAD4'}, 54.6333);
+    tl.set('#c45w0', {color:'#ffffff'}, 54.8667);
+    tl.set('#c45w1', {color:'#5EEAD4'}, 54.8333);
+    tl.set('#c45w1', {color:'#ffffff'}, 55.2);
+    tl.fromTo('#c46', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 55.1667);
+    tl.set('#c46', {opacity:0}, 56.6);
+    tl.set('#c46w0', {color:'#5EEAD4'}, 55.2333);
+    tl.set('#c46w0', {color:'#ffffff'}, 55.5667);
+    tl.set('#c46w1', {color:'#5EEAD4'}, 55.5667);
+    tl.set('#c46w1', {color:'#ffffff'}, 55.9333);
+    tl.set('#c46w2', {color:'#5EEAD4'}, 56.0);
+    tl.set('#c46w2', {color:'#ffffff'}, 56.3);
+    tl.set('#c46w3', {color:'#5EEAD4'}, 56.3333);
+    tl.set('#c46w3', {color:'#ffffff'}, 56.6667);
+    tl.fromTo('#c47', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 56.5667);
+    tl.set('#c47', {opacity:0}, 58.0333);
+    tl.set('#c47w0', {color:'#5EEAD4'}, 56.6667);
+    tl.set('#c47w0', {color:'#ffffff'}, 57.6333);
+    tl.set('#c47w1', {color:'#5EEAD4'}, 57.6333);
+    tl.set('#c47w1', {color:'#ffffff'}, 58.0667);
+    tl.fromTo('#c48', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 58.0);
+    tl.set('#c48', {opacity:0}, 59.7);
+    tl.set('#c48w0', {color:'#5EEAD4'}, 58.0667);
+    tl.set('#c48w0', {color:'#ffffff'}, 58.4);
+    tl.set('#c48w1', {color:'#5EEAD4'}, 58.4667);
+    tl.set('#c48w1', {color:'#ffffff'}, 58.7333);
+    tl.set('#c48w2', {color:'#5EEAD4'}, 58.7333);
+    tl.set('#c48w2', {color:'#ffffff'}, 59.2);
+    tl.set('#c48w3', {color:'#5EEAD4'}, 59.1333);
+    tl.set('#c48w3', {color:'#ffffff'}, 59.5333);
+    tl.fromTo('#c49', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 59.6667);
+    tl.set('#c49', {opacity:0}, 60.7);
+    tl.set('#c49w0', {color:'#5EEAD4'}, 59.7333);
+    tl.set('#c49w0', {color:'#ffffff'}, 60.0667);
+    tl.set('#c49w1', {color:'#5EEAD4'}, 60.0333);
+    tl.set('#c49w1', {color:'#ffffff'}, 60.2);
+    tl.set('#c49w2', {color:'#5EEAD4'}, 60.2);
+    tl.set('#c49w2', {color:'#ffffff'}, 60.4667);
+    tl.set('#c49w3', {color:'#5EEAD4'}, 60.4333);
+    tl.set('#c49w3', {color:'#ffffff'}, 60.7);
+    tl.fromTo('#c50', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 60.6667);
+    tl.set('#c50', {opacity:0}, 62.1667);
+    tl.set('#c50w0', {color:'#5EEAD4'}, 60.7333);
+    tl.set('#c50w0', {color:'#ffffff'}, 61.1333);
+    tl.set('#c50w1', {color:'#5EEAD4'}, 61.1333);
+    tl.set('#c50w1', {color:'#ffffff'}, 61.4333);
+    tl.set('#c50w2', {color:'#5EEAD4'}, 61.4333);
+    tl.set('#c50w2', {color:'#ffffff'}, 61.8667);
+    tl.set('#c50w3', {color:'#5EEAD4'}, 61.8667);
+    tl.set('#c50w3', {color:'#ffffff'}, 62.0667);
+    tl.set('#c50w4', {color:'#5EEAD4'}, 62.0667);
+    tl.set('#c50w4', {color:'#ffffff'}, 62.2333);
+    tl.fromTo('#c51', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 62.1333);
+    tl.set('#c51', {opacity:0}, 63.0667);
+    tl.set('#c51w0', {color:'#5EEAD4'}, 62.2);
+    tl.set('#c51w0', {color:'#ffffff'}, 62.3333);
+    tl.set('#c51w1', {color:'#5EEAD4'}, 62.3333);
+    tl.set('#c51w1', {color:'#ffffff'}, 62.8667);
+    tl.fromTo('#c52', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 63.0333);
+    tl.set('#c52', {opacity:0}, 63.9667);
+    tl.set('#c52w0', {color:'#5EEAD4'}, 63.1);
+    tl.set('#c52w0', {color:'#ffffff'}, 63.5333);
+    tl.set('#c52w1', {color:'#5EEAD4'}, 63.5667);
+    tl.set('#c52w1', {color:'#ffffff'}, 63.9);
+    tl.fromTo('#c53', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 63.9333);
+    tl.set('#c53', {opacity:0}, 65.7333);
+    tl.set('#c53w0', {color:'#5EEAD4'}, 64.0);
+    tl.set('#c53w0', {color:'#ffffff'}, 64.4667);
+    tl.set('#c53w1', {color:'#5EEAD4'}, 64.4667);
+    tl.set('#c53w1', {color:'#ffffff'}, 64.7333);
+    tl.set('#c53w2', {color:'#5EEAD4'}, 64.7333);
+    tl.set('#c53w2', {color:'#ffffff'}, 64.9);
+    tl.set('#c53w3', {color:'#5EEAD4'}, 64.8667);
+    tl.set('#c53w3', {color:'#ffffff'}, 65.3333);
+    tl.set('#c53w4', {color:'#5EEAD4'}, 65.3333);
+    tl.set('#c53w4', {color:'#ffffff'}, 65.5333);
+    tl.fromTo('#c54', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 65.7);
+    tl.set('#c54', {opacity:0}, 66.8333);
+    tl.set('#c54w0', {color:'#5EEAD4'}, 65.8);
+    tl.set('#c54w0', {color:'#ffffff'}, 66.1);
+    tl.set('#c54w1', {color:'#5EEAD4'}, 66.1);
+    tl.set('#c54w1', {color:'#ffffff'}, 66.4667);
+    tl.set('#c54w2', {color:'#5EEAD4'}, 66.4333);
+    tl.set('#c54w2', {color:'#ffffff'}, 66.8333);
+    tl.fromTo('#c55', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 66.8);
+    tl.set('#c55', {opacity:0}, 68.2);
+    tl.set('#c55w0', {color:'#5EEAD4'}, 66.8667);
+    tl.set('#c55w0', {color:'#ffffff'}, 67.3333);
+    tl.set('#c55w1', {color:'#5EEAD4'}, 67.3);
+    tl.set('#c55w1', {color:'#ffffff'}, 67.4333);
+    tl.set('#c55w2', {color:'#5EEAD4'}, 67.4);
+    tl.set('#c55w2', {color:'#ffffff'}, 67.9667);
+    tl.fromTo('#c56', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 68.1333);
+    tl.set('#c56', {opacity:0}, 69.6);
+    tl.set('#c56w0', {color:'#5EEAD4'}, 68.2333);
+    tl.set('#c56w0', {color:'#ffffff'}, 68.7333);
+    tl.set('#c56w1', {color:'#5EEAD4'}, 68.7);
+    tl.set('#c56w1', {color:'#ffffff'}, 68.8667);
+    tl.set('#c56w2', {color:'#5EEAD4'}, 68.8);
+    tl.set('#c56w2', {color:'#ffffff'}, 69.6);
+    tl.fromTo('#c57', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 69.5667);
+    tl.set('#c57', {opacity:0}, 71.2667);
+    tl.set('#c57w0', {color:'#5EEAD4'}, 69.6333);
+    tl.set('#c57w0', {color:'#ffffff'}, 70.2333);
+    tl.set('#c57w1', {color:'#5EEAD4'}, 70.2333);
+    tl.set('#c57w1', {color:'#ffffff'}, 70.4333);
+    tl.set('#c57w2', {color:'#5EEAD4'}, 70.4667);
+    tl.set('#c57w2', {color:'#ffffff'}, 70.7333);
+    tl.set('#c57w3', {color:'#5EEAD4'}, 70.7);
+    tl.set('#c57w3', {color:'#ffffff'}, 71.2667);
+    tl.fromTo('#c58', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 71.2);
+    tl.set('#c58', {opacity:0}, 72.8333);
+    tl.set('#c58w0', {color:'#5EEAD4'}, 71.3);
+    tl.set('#c58w0', {color:'#ffffff'}, 71.9333);
+    tl.set('#c58w1', {color:'#5EEAD4'}, 71.9333);
+    tl.set('#c58w1', {color:'#ffffff'}, 72.1);
+    tl.set('#c58w2', {color:'#5EEAD4'}, 72.0667);
+    tl.set('#c58w2', {color:'#ffffff'}, 72.3);
+    tl.set('#c58w3', {color:'#5EEAD4'}, 72.3);
+    tl.set('#c58w3', {color:'#ffffff'}, 72.8333);
+    tl.fromTo('#c59', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 72.8);
+    tl.set('#c59', {opacity:0}, 74.9667);
+    tl.set('#c59w0', {color:'#5EEAD4'}, 72.8667);
+    tl.set('#c59w0', {color:'#ffffff'}, 73.2667);
+    tl.set('#c59w1', {color:'#5EEAD4'}, 73.4);
+    tl.set('#c59w1', {color:'#ffffff'}, 73.9667);
+    tl.set('#c59w2', {color:'#5EEAD4'}, 74.0667);
+    tl.set('#c59w2', {color:'#ffffff'}, 74.5);
+    tl.set('#c59w3', {color:'#5EEAD4'}, 74.5667);
+    tl.set('#c59w3', {color:'#ffffff'}, 74.8);
+    tl.fromTo('#c60', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 74.9333);
+    tl.set('#c60', {opacity:0}, 76.3333);
+    tl.set('#c60w0', {color:'#5EEAD4'}, 75.0333);
+    tl.set('#c60w0', {color:'#ffffff'}, 75.5333);
+    tl.set('#c60w1', {color:'#5EEAD4'}, 75.5);
+    tl.set('#c60w1', {color:'#ffffff'}, 76.1);
+    tl.fromTo('#c61', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 76.3);
+    tl.set('#c61', {opacity:0}, 77.4667);
+    tl.set('#c61w0', {color:'#5EEAD4'}, 76.4);
+    tl.set('#c61w0', {color:'#ffffff'}, 76.7667);
+    tl.set('#c61w1', {color:'#5EEAD4'}, 76.7333);
+    tl.set('#c61w1', {color:'#ffffff'}, 76.9333);
+    tl.set('#c61w2', {color:'#5EEAD4'}, 76.9);
+    tl.set('#c61w2', {color:'#ffffff'}, 77.4333);
+    tl.fromTo('#c62', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 77.4333);
+    tl.set('#c62', {opacity:0}, 78.2667);
+    tl.set('#c62w0', {color:'#5EEAD4'}, 77.5);
+    tl.set('#c62w0', {color:'#ffffff'}, 78.0667);
+    tl.fromTo('#c63', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 78.2);
+    tl.set('#c63', {opacity:0}, 79.4);
+    tl.set('#c63w0', {color:'#5EEAD4'}, 78.3);
+    tl.set('#c63w0', {color:'#ffffff'}, 78.4667);
+    tl.set('#c63w1', {color:'#5EEAD4'}, 78.5667);
+    tl.set('#c63w1', {color:'#ffffff'}, 78.8);
+    tl.set('#c63w2', {color:'#5EEAD4'}, 78.8);
+    tl.set('#c63w2', {color:'#ffffff'}, 79.1);
+    tl.set('#c63w3', {color:'#5EEAD4'}, 79.0667);
+    tl.set('#c63w3', {color:'#ffffff'}, 79.5);
+    tl.fromTo('#c64', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 79.3667);
+    tl.set('#c64', {opacity:0}, 80.4667);
+    tl.set('#c64w0', {color:'#5EEAD4'}, 79.4667);
+    tl.set('#c64w0', {color:'#ffffff'}, 79.7);
+    tl.set('#c64w1', {color:'#5EEAD4'}, 79.6667);
+    tl.set('#c64w1', {color:'#ffffff'}, 80.0333);
+    tl.set('#c64w2', {color:'#5EEAD4'}, 80.0);
+    tl.set('#c64w2', {color:'#ffffff'}, 80.3333);
+    tl.fromTo('#c65', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 80.4333);
+    tl.set('#c65', {opacity:0}, 81.5);
+    tl.set('#c65w0', {color:'#5EEAD4'}, 80.5333);
+    tl.set('#c65w0', {color:'#ffffff'}, 80.7);
+    tl.set('#c65w1', {color:'#5EEAD4'}, 80.6667);
+    tl.set('#c65w1', {color:'#ffffff'}, 80.8333);
+    tl.set('#c65w2', {color:'#5EEAD4'}, 80.8333);
+    tl.set('#c65w2', {color:'#ffffff'}, 80.9667);
+    tl.set('#c65w3', {color:'#5EEAD4'}, 80.9333);
+    tl.set('#c65w3', {color:'#ffffff'}, 81.1667);
+    tl.set('#c65w4', {color:'#5EEAD4'}, 81.1333);
+    tl.set('#c65w4', {color:'#ffffff'}, 81.4);
+    tl.fromTo('#c66', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 81.4667);
+    tl.set('#c66', {opacity:0}, 82.9667);
+    tl.set('#c66w0', {color:'#5EEAD4'}, 81.5333);
+    tl.set('#c66w0', {color:'#ffffff'}, 81.9667);
+    tl.set('#c66w1', {color:'#5EEAD4'}, 81.9667);
+    tl.set('#c66w1', {color:'#ffffff'}, 82.1333);
+    tl.set('#c66w2', {color:'#5EEAD4'}, 82.1333);
+    tl.set('#c66w2', {color:'#ffffff'}, 82.5);
+    tl.set('#c66w3', {color:'#5EEAD4'}, 82.5333);
+    tl.set('#c66w3', {color:'#ffffff'}, 82.8333);
+    tl.set('#c66w4', {color:'#5EEAD4'}, 82.8333);
+    tl.set('#c66w4', {color:'#ffffff'}, 82.9667);
+    tl.fromTo('#c67', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 82.9333);
+    tl.set('#c67', {opacity:0}, 83.2);
+    tl.set('#c67w0', {color:'#5EEAD4'}, 83.0);
+    tl.set('#c67w0', {color:'#ffffff'}, 83.2667);
+    tl.fromTo('#c68', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 83.1667);
+    tl.set('#c68', {opacity:0}, 83.5333);
+    tl.set('#c68w0', {color:'#5EEAD4'}, 83.2333);
+    tl.set('#c68w0', {color:'#ffffff'}, 83.5667);
+    tl.fromTo('#c69', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 83.5);
+    tl.set('#c69', {opacity:0}, 84.8333);
+    tl.set('#c69w0', {color:'#5EEAD4'}, 83.6);
+    tl.set('#c69w0', {color:'#ffffff'}, 83.8667);
+    tl.set('#c69w1', {color:'#5EEAD4'}, 83.9);
+    tl.set('#c69w1', {color:'#ffffff'}, 84.1667);
+    tl.set('#c69w2', {color:'#5EEAD4'}, 84.1333);
+    tl.set('#c69w2', {color:'#ffffff'}, 84.3667);
+    tl.set('#c69w3', {color:'#5EEAD4'}, 84.3333);
+    tl.set('#c69w3', {color:'#ffffff'}, 84.6667);
+    tl.set('#c69w4', {color:'#5EEAD4'}, 84.7);
+    tl.set('#c69w4', {color:'#ffffff'}, 84.8667);
+    tl.fromTo('#c70', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 84.8);
+    tl.set('#c70', {opacity:0}, 86.0);
+    tl.set('#c70w0', {color:'#5EEAD4'}, 84.8667);
+    tl.set('#c70w0', {color:'#ffffff'}, 85.3);
+    tl.set('#c70w1', {color:'#5EEAD4'}, 85.3);
+    tl.set('#c70w1', {color:'#ffffff'}, 85.8333);
+    tl.fromTo('#c71', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 85.9667);
+    tl.set('#c71', {opacity:0}, 87.6333);
+    tl.set('#c71w0', {color:'#5EEAD4'}, 86.0333);
+    tl.set('#c71w0', {color:'#ffffff'}, 86.5333);
+    tl.set('#c71w1', {color:'#5EEAD4'}, 86.5667);
+    tl.set('#c71w1', {color:'#ffffff'}, 87.1);
+    tl.set('#c71w2', {color:'#5EEAD4'}, 87.2);
+    tl.set('#c71w2', {color:'#ffffff'}, 87.6667);
+    tl.fromTo('#c72', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 87.5667);
+    tl.set('#c72', {opacity:0}, 88.0);
+    tl.set('#c72w0', {color:'#5EEAD4'}, 87.6667);
+    tl.set('#c72w0', {color:'#ffffff'}, 88.0333);
+    tl.fromTo('#c73', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 87.9667);
+    tl.set('#c73', {opacity:0}, 88.5667);
+    tl.set('#c73w0', {color:'#5EEAD4'}, 88.0333);
+    tl.set('#c73w0', {color:'#ffffff'}, 88.2);
+    tl.set('#c73w1', {color:'#5EEAD4'}, 88.1667);
+    tl.set('#c73w1', {color:'#ffffff'}, 88.6);
+    tl.fromTo('#c74', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 88.5333);
+    tl.set('#c74', {opacity:0}, 90.1333);
+    tl.set('#c74w0', {color:'#5EEAD4'}, 88.6333);
+    tl.set('#c74w0', {color:'#ffffff'}, 88.8);
+    tl.set('#c74w1', {color:'#5EEAD4'}, 88.7667);
+    tl.set('#c74w1', {color:'#ffffff'}, 89.2);
+    tl.set('#c74w2', {color:'#5EEAD4'}, 89.2667);
+    tl.set('#c74w2', {color:'#ffffff'}, 89.8);
+    tl.set('#c74w3', {color:'#5EEAD4'}, 89.8);
+    tl.set('#c74w3', {color:'#ffffff'}, 90.1667);
+    tl.fromTo('#c75', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 90.1);
+    tl.set('#c75', {opacity:0}, 91.5);
+    tl.set('#c75w0', {color:'#5EEAD4'}, 90.1667);
+    tl.set('#c75w0', {color:'#ffffff'}, 90.6333);
+    tl.set('#c75w1', {color:'#5EEAD4'}, 90.6667);
+    tl.set('#c75w1', {color:'#ffffff'}, 91.1333);
+    tl.set('#c75w2', {color:'#5EEAD4'}, 91.1667);
+    tl.set('#c75w2', {color:'#ffffff'}, 91.5333);
+    tl.fromTo('#c76', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 91.4667);
+    tl.set('#c76', {opacity:0}, 92.3);
+    tl.set('#c76w0', {color:'#5EEAD4'}, 91.5667);
+    tl.set('#c76w0', {color:'#ffffff'}, 91.9667);
+    tl.set('#c76w1', {color:'#5EEAD4'}, 91.9667);
+    tl.set('#c76w1', {color:'#ffffff'}, 92.2);
+    tl.fromTo('#c77', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 92.2667);
+    tl.set('#c77', {opacity:0}, 92.7333);
+    tl.set('#c77w0', {color:'#5EEAD4'}, 92.3333);
+    tl.set('#c77w0', {color:'#ffffff'}, 92.7333);
+    tl.fromTo('#c78', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 92.7);
+    tl.set('#c78', {opacity:0}, 93.8);
+    tl.set('#c78w0', {color:'#5EEAD4'}, 92.7667);
+    tl.set('#c78w0', {color:'#ffffff'}, 93.2333);
+    tl.set('#c78w1', {color:'#5EEAD4'}, 93.2333);
+    tl.set('#c78w1', {color:'#ffffff'}, 93.7333);
+    tl.set('#c78w2', {color:'#5EEAD4'}, 93.7);
+    tl.set('#c78w2', {color:'#ffffff'}, 93.8667);
+    tl.fromTo('#c79', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 93.7333);
+    tl.set('#c79', {opacity:0}, 94.0333);
+    tl.set('#c79w0', {color:'#5EEAD4'}, 93.8333);
+    tl.set('#c79w0', {color:'#ffffff'}, 94.1333);
+    tl.fromTo('#c80', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 94.0);
+    tl.set('#c80', {opacity:0}, 94.5);
+    tl.set('#c80w0', {color:'#5EEAD4'}, 94.1);
+    tl.set('#c80w0', {color:'#ffffff'}, 94.2667);
+    tl.set('#c80w1', {color:'#5EEAD4'}, 94.2333);
+    tl.set('#c80w1', {color:'#ffffff'}, 94.5333);
+    tl.fromTo('#c81', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 94.4667);
+    tl.set('#c81', {opacity:0}, 95.8333);
+    tl.set('#c81w0', {color:'#5EEAD4'}, 94.5333);
+    tl.set('#c81w0', {color:'#ffffff'}, 95.0333);
+    tl.set('#c81w1', {color:'#5EEAD4'}, 95.1);
+    tl.set('#c81w1', {color:'#ffffff'}, 95.7);
+    tl.set('#c81w2', {color:'#5EEAD4'}, 95.7);
+    tl.set('#c81w2', {color:'#ffffff'}, 95.9);
+    tl.fromTo('#c82', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 95.8);
+    tl.set('#c82', {opacity:0}, 97.6);
+    tl.set('#c82w0', {color:'#5EEAD4'}, 95.8667);
+    tl.set('#c82w0', {color:'#ffffff'}, 96.1333);
+    tl.set('#c82w1', {color:'#5EEAD4'}, 96.1333);
+    tl.set('#c82w1', {color:'#ffffff'}, 96.3333);
+    tl.set('#c82w2', {color:'#5EEAD4'}, 96.4333);
+    tl.set('#c82w2', {color:'#ffffff'}, 96.8333);
+    tl.set('#c82w3', {color:'#5EEAD4'}, 96.8333);
+    tl.set('#c82w3', {color:'#ffffff'}, 97.0667);
+    tl.set('#c82w4', {color:'#5EEAD4'}, 97.0333);
+    tl.set('#c82w4', {color:'#ffffff'}, 97.3667);
+    tl.fromTo('#c83', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 97.5333);
+    tl.set('#c83', {opacity:0}, 98.7);
+    tl.set('#c83w0', {color:'#5EEAD4'}, 97.6333);
+    tl.set('#c83w0', {color:'#ffffff'}, 97.8667);
+    tl.set('#c83w1', {color:'#5EEAD4'}, 97.8333);
+    tl.set('#c83w1', {color:'#ffffff'}, 98.3333);
+    tl.set('#c83w2', {color:'#5EEAD4'}, 98.3);
+    tl.set('#c83w2', {color:'#ffffff'}, 98.7333);
+    tl.fromTo('#c84', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 98.6333);
+    tl.set('#c84', {opacity:0}, 99.5333);
+    tl.set('#c84w0', {color:'#5EEAD4'}, 98.7333);
+    tl.set('#c84w0', {color:'#ffffff'}, 99.0333);
+    tl.set('#c84w1', {color:'#5EEAD4'}, 99.0);
+    tl.set('#c84w1', {color:'#ffffff'}, 99.3667);
+    tl.fromTo('#c85', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 99.5);
+    tl.set('#c85', {opacity:0}, 100.9333);
+    tl.set('#c85w0', {color:'#5EEAD4'}, 99.5667);
+    tl.set('#c85w0', {color:'#ffffff'}, 99.9333);
+    tl.set('#c85w1', {color:'#5EEAD4'}, 99.9667);
+    tl.set('#c85w1', {color:'#ffffff'}, 100.3333);
+    tl.set('#c85w2', {color:'#5EEAD4'}, 100.3333);
+    tl.set('#c85w2', {color:'#ffffff'}, 100.5333);
+    tl.set('#c85w3', {color:'#5EEAD4'}, 100.5333);
+    tl.set('#c85w3', {color:'#ffffff'}, 100.9);
+    tl.fromTo('#c86', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 100.9);
+    tl.set('#c86', {opacity:0}, 102.0333);
+    tl.set('#c86w0', {color:'#5EEAD4'}, 100.9667);
+    tl.set('#c86w0', {color:'#ffffff'}, 101.5);
+    tl.set('#c86w1', {color:'#5EEAD4'}, 101.4667);
+    tl.set('#c86w1', {color:'#ffffff'}, 101.8333);
+    tl.set('#c86w2', {color:'#5EEAD4'}, 101.8333);
+    tl.set('#c86w2', {color:'#ffffff'}, 102.1);
+    tl.fromTo('#c87', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 101.9667);
+    tl.set('#c87', {opacity:0}, 103.4);
+    tl.set('#c87w0', {color:'#5EEAD4'}, 102.0667);
+    tl.set('#c87w0', {color:'#ffffff'}, 102.7);
+    tl.set('#c87w1', {color:'#5EEAD4'}, 102.6667);
+    tl.set('#c87w1', {color:'#ffffff'}, 103.0);
+    tl.set('#c87w2', {color:'#5EEAD4'}, 102.9667);
+    tl.set('#c87w2', {color:'#ffffff'}, 103.3667);
+    tl.fromTo('#c88', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 103.3667);
+    tl.set('#c88', {opacity:0}, 104.8667);
+    tl.set('#c88w0', {color:'#5EEAD4'}, 103.4333);
+    tl.set('#c88w0', {color:'#ffffff'}, 103.7333);
+    tl.set('#c88w1', {color:'#5EEAD4'}, 103.7333);
+    tl.set('#c88w1', {color:'#ffffff'}, 104.2);
+    tl.set('#c88w2', {color:'#5EEAD4'}, 104.1667);
+    tl.set('#c88w2', {color:'#ffffff'}, 104.3333);
+    tl.set('#c88w3', {color:'#5EEAD4'}, 104.3333);
+    tl.set('#c88w3', {color:'#ffffff'}, 104.9);
+    tl.fromTo('#c89', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 104.8333);
+    tl.set('#c89', {opacity:0}, 105.7667);
+    tl.set('#c89w0', {color:'#5EEAD4'}, 104.9);
+    tl.set('#c89w0', {color:'#ffffff'}, 105.0667);
+    tl.set('#c89w1', {color:'#5EEAD4'}, 105.0333);
+    tl.set('#c89w1', {color:'#ffffff'}, 105.5);
+    tl.fromTo('#c90', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 105.7333);
+    tl.set('#c90', {opacity:0}, 106.3333);
+    tl.set('#c90w0', {color:'#5EEAD4'}, 105.8);
+    tl.set('#c90w0', {color:'#ffffff'}, 106.0);
+    tl.set('#c90w1', {color:'#5EEAD4'}, 105.9667);
+    tl.set('#c90w1', {color:'#ffffff'}, 106.3667);
+    tl.fromTo('#c91', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 106.3);
+    tl.set('#c91', {opacity:0}, 107.8667);
+    tl.set('#c91w0', {color:'#5EEAD4'}, 106.3667);
+    tl.set('#c91w0', {color:'#ffffff'}, 106.7333);
+    tl.set('#c91w1', {color:'#5EEAD4'}, 106.7333);
+    tl.set('#c91w1', {color:'#ffffff'}, 106.8667);
+    tl.set('#c91w2', {color:'#5EEAD4'}, 106.8667);
+    tl.set('#c91w2', {color:'#ffffff'}, 107.3);
+    tl.set('#c91w3', {color:'#5EEAD4'}, 107.3);
+    tl.set('#c91w3', {color:'#ffffff'}, 107.4333);
+    tl.set('#c91w4', {color:'#5EEAD4'}, 107.4667);
+    tl.set('#c91w4', {color:'#ffffff'}, 107.8333);
+    tl.fromTo('#c92', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 107.8);
+    tl.set('#c92', {opacity:0}, 109.0333);
+    tl.set('#c92w0', {color:'#5EEAD4'}, 107.9);
+    tl.set('#c92w0', {color:'#ffffff'}, 108.3667);
+    tl.set('#c92w1', {color:'#5EEAD4'}, 108.3667);
+    tl.set('#c92w1', {color:'#ffffff'}, 108.6667);
+    tl.set('#c92w2', {color:'#5EEAD4'}, 108.7);
+    tl.set('#c92w2', {color:'#ffffff'}, 109.1);
+    tl.fromTo('#c93', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 109.0);
+    tl.set('#c93', {opacity:0}, 110.2);
+    tl.set('#c93w0', {color:'#5EEAD4'}, 109.0667);
+    tl.set('#c93w0', {color:'#ffffff'}, 109.3);
+    tl.set('#c93w1', {color:'#5EEAD4'}, 109.2667);
+    tl.set('#c93w1', {color:'#ffffff'}, 109.6);
+    tl.set('#c93w2', {color:'#5EEAD4'}, 109.6);
+    tl.set('#c93w2', {color:'#ffffff'}, 109.8);
+    tl.set('#c93w3', {color:'#5EEAD4'}, 109.8667);
+    tl.set('#c93w3', {color:'#ffffff'}, 110.1333);
+    tl.fromTo('#c94', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 110.1667);
+    tl.set('#c94', {opacity:0}, 111.3667);
+    tl.set('#c94w0', {color:'#5EEAD4'}, 110.2333);
+    tl.set('#c94w0', {color:'#ffffff'}, 110.4667);
+    tl.set('#c94w1', {color:'#5EEAD4'}, 110.4);
+    tl.set('#c94w1', {color:'#ffffff'}, 110.6667);
+    tl.set('#c94w2', {color:'#5EEAD4'}, 110.6333);
+    tl.set('#c94w2', {color:'#ffffff'}, 111.0667);
+    tl.set('#c94w3', {color:'#5EEAD4'}, 111.0333);
+    tl.set('#c94w3', {color:'#ffffff'}, 111.3);
+    tl.set('#c94w4', {color:'#5EEAD4'}, 111.3);
+    tl.set('#c94w4', {color:'#ffffff'}, 111.4667);
+    tl.fromTo('#c95', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 111.3333);
+    tl.set('#c95', {opacity:0}, 112.8);
+    tl.set('#c95w0', {color:'#5EEAD4'}, 111.4);
+    tl.set('#c95w0', {color:'#ffffff'}, 111.8333);
+    tl.set('#c95w1', {color:'#5EEAD4'}, 111.8333);
+    tl.set('#c95w1', {color:'#ffffff'}, 112.2);
+    tl.set('#c95w2', {color:'#5EEAD4'}, 112.1667);
+    tl.set('#c95w2', {color:'#ffffff'}, 112.8);
+    tl.fromTo('#c96', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 112.7667);
+    tl.set('#c96', {opacity:0}, 113.1);
+    tl.set('#c96w0', {color:'#5EEAD4'}, 112.8333);
+    tl.set('#c96w0', {color:'#ffffff'}, 113.1);
+    tl.fromTo('#c97', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 113.0667);
+    tl.set('#c97', {opacity:0}, 113.8);
+    tl.set('#c97w0', {color:'#5EEAD4'}, 113.1333);
+    tl.set('#c97w0', {color:'#ffffff'}, 113.4667);
+    tl.set('#c97w1', {color:'#5EEAD4'}, 113.4667);
+    tl.set('#c97w1', {color:'#ffffff'}, 113.7667);
+    tl.fromTo('#c98', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 113.7333);
+    tl.set('#c98', {opacity:0}, 114.6667);
+    tl.set('#c98w0', {color:'#5EEAD4'}, 113.8333);
+    tl.set('#c98w0', {color:'#ffffff'}, 114.2333);
+    tl.set('#c98w1', {color:'#5EEAD4'}, 114.2333);
+    tl.set('#c98w1', {color:'#ffffff'}, 114.6333);
+    tl.fromTo('#c99', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 114.6333);
+    tl.set('#c99', {opacity:0}, 115.6333);
+    tl.set('#c99w0', {color:'#5EEAD4'}, 114.7);
+    tl.set('#c99w0', {color:'#ffffff'}, 115.0667);
+    tl.set('#c99w1', {color:'#5EEAD4'}, 115.0333);
+    tl.set('#c99w1', {color:'#ffffff'}, 115.5667);
+    tl.fromTo('#c100', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 115.6);
+    tl.set('#c100', {opacity:0}, 116.7);
+    tl.set('#c100w0', {color:'#5EEAD4'}, 115.6667);
+    tl.set('#c100w0', {color:'#ffffff'}, 115.9333);
+    tl.set('#c100w1', {color:'#5EEAD4'}, 115.9333);
+    tl.set('#c100w1', {color:'#ffffff'}, 116.2333);
+    tl.set('#c100w2', {color:'#5EEAD4'}, 116.2);
+    tl.set('#c100w2', {color:'#ffffff'}, 116.6);
+    tl.fromTo('#c101', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 116.6667);
+    tl.set('#c101', {opacity:0}, 117.4667);
+    tl.set('#c101w0', {color:'#5EEAD4'}, 116.7333);
+    tl.set('#c101w0', {color:'#ffffff'}, 117.0667);
+    tl.set('#c101w1', {color:'#5EEAD4'}, 117.0667);
+    tl.set('#c101w1', {color:'#ffffff'}, 117.4667);
+    tl.fromTo('#c102', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 117.4333);
+    tl.set('#c102', {opacity:0}, 119.3333);
+    tl.set('#c102w0', {color:'#5EEAD4'}, 117.5);
+    tl.set('#c102w0', {color:'#ffffff'}, 118.0);
+    tl.set('#c102w1', {color:'#5EEAD4'}, 118.0);
+    tl.set('#c102w1', {color:'#ffffff'}, 118.2667);
+    tl.set('#c102w2', {color:'#5EEAD4'}, 118.2667);
+    tl.set('#c102w2', {color:'#ffffff'}, 118.5333);
+    tl.set('#c102w3', {color:'#5EEAD4'}, 118.5333);
+    tl.set('#c102w3', {color:'#ffffff'}, 118.9);
+    tl.fromTo('#c103', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 119.3);
+    tl.set('#c103', {opacity:0}, 120.3667);
+    tl.set('#c103w0', {color:'#5EEAD4'}, 119.3667);
+    tl.set('#c103w0', {color:'#ffffff'}, 119.5667);
+    tl.set('#c103w1', {color:'#5EEAD4'}, 119.5);
+    tl.set('#c103w1', {color:'#ffffff'}, 119.9333);
+    tl.set('#c103w2', {color:'#5EEAD4'}, 119.9);
+    tl.set('#c103w2', {color:'#ffffff'}, 120.0333);
+    tl.set('#c103w3', {color:'#5EEAD4'}, 120.0);
+    tl.set('#c103w3', {color:'#ffffff'}, 120.2);
+    tl.set('#c103w4', {color:'#5EEAD4'}, 120.1667);
+    tl.set('#c103w4', {color:'#ffffff'}, 120.4333);
+    tl.fromTo('#c104', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 120.3333);
+    tl.set('#c104', {opacity:0}, 120.9333);
+    tl.set('#c104w0', {color:'#5EEAD4'}, 120.4333);
+    tl.set('#c104w0', {color:'#ffffff'}, 120.8333);
+    tl.fromTo('#c105', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 120.9);
+    tl.set('#c105', {opacity:0}, 122.2667);
+    tl.set('#c105w0', {color:'#5EEAD4'}, 120.9667);
+    tl.set('#c105w0', {color:'#ffffff'}, 121.1);
+    tl.set('#c105w1', {color:'#5EEAD4'}, 121.1);
+    tl.set('#c105w1', {color:'#ffffff'}, 121.3333);
+    tl.set('#c105w2', {color:'#5EEAD4'}, 121.3333);
+    tl.set('#c105w2', {color:'#ffffff'}, 121.7333);
+    tl.set('#c105w3', {color:'#5EEAD4'}, 121.7333);
+    tl.set('#c105w3', {color:'#ffffff'}, 121.9333);
+    tl.set('#c105w4', {color:'#5EEAD4'}, 121.9667);
+    tl.set('#c105w4', {color:'#ffffff'}, 122.3333);
+    tl.fromTo('#c106', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 122.2333);
+    tl.set('#c106', {opacity:0}, 123.9667);
+    tl.set('#c106w0', {color:'#5EEAD4'}, 122.3);
+    tl.set('#c106w0', {color:'#ffffff'}, 122.5);
+    tl.set('#c106w1', {color:'#5EEAD4'}, 122.5);
+    tl.set('#c106w1', {color:'#ffffff'}, 122.9333);
+    tl.set('#c106w2', {color:'#5EEAD4'}, 122.9333);
+    tl.set('#c106w2', {color:'#ffffff'}, 123.1667);
+    tl.set('#c106w3', {color:'#5EEAD4'}, 123.3);
+    tl.set('#c106w3', {color:'#ffffff'}, 123.8);
+    tl.fromTo('#c107', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 123.9333);
+    tl.set('#c107', {opacity:0}, 125.3333);
+    tl.set('#c107w0', {color:'#5EEAD4'}, 124.0);
+    tl.set('#c107w0', {color:'#ffffff'}, 124.8667);
+    tl.fromTo('#c108', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 125.3);
+    tl.set('#c108', {opacity:0}, 126.8667);
+    tl.set('#c108w0', {color:'#5EEAD4'}, 125.3667);
+    tl.set('#c108w0', {color:'#ffffff'}, 125.5333);
+    tl.set('#c108w1', {color:'#5EEAD4'}, 125.4667);
+    tl.set('#c108w1', {color:'#ffffff'}, 125.7333);
+    tl.set('#c108w2', {color:'#5EEAD4'}, 125.7667);
+    tl.set('#c108w2', {color:'#ffffff'}, 126.3);
+    tl.set('#c108w3', {color:'#5EEAD4'}, 126.3667);
+    tl.set('#c108w3', {color:'#ffffff'}, 126.7667);
+    tl.fromTo('#c109', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 126.8);
+    tl.set('#c109', {opacity:0}, 128.6);
+    tl.set('#c109w0', {color:'#5EEAD4'}, 126.9);
+    tl.set('#c109w0', {color:'#ffffff'}, 127.4333);
+    tl.set('#c109w1', {color:'#5EEAD4'}, 127.4667);
+    tl.set('#c109w1', {color:'#ffffff'}, 127.9667);
+    tl.set('#c109w2', {color:'#5EEAD4'}, 128.2);
+    tl.set('#c109w2', {color:'#ffffff'}, 128.6);
+    tl.fromTo('#c110', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 128.5667);
+    tl.set('#c110', {opacity:0}, 130.0);
+    tl.set('#c110w0', {color:'#5EEAD4'}, 128.6667);
+    tl.set('#c110w0', {color:'#ffffff'}, 128.8333);
+    tl.set('#c110w1', {color:'#5EEAD4'}, 128.8333);
+    tl.set('#c110w1', {color:'#ffffff'}, 129.1);
+    tl.set('#c110w2', {color:'#5EEAD4'}, 129.1);
+    tl.set('#c110w2', {color:'#ffffff'}, 129.4);
+    tl.set('#c110w3', {color:'#5EEAD4'}, 129.5667);
+    tl.set('#c110w3', {color:'#ffffff'}, 129.9);
+    tl.set('#c110w4', {color:'#5EEAD4'}, 129.9);
+    tl.set('#c110w4', {color:'#ffffff'}, 130.1);
+    tl.fromTo('#c111', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 129.9667);
+    tl.set('#c111', {opacity:0}, 130.9333);
+    tl.set('#c111w0', {color:'#5EEAD4'}, 130.0667);
+    tl.set('#c111w0', {color:'#ffffff'}, 130.4);
+    tl.set('#c111w1', {color:'#5EEAD4'}, 130.3667);
+    tl.set('#c111w1', {color:'#ffffff'}, 130.5667);
+    tl.set('#c111w2', {color:'#5EEAD4'}, 130.5333);
+    tl.set('#c111w2', {color:'#ffffff'}, 130.9667);
+    tl.fromTo('#c112', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 130.9);
+    tl.set('#c112', {opacity:0}, 132.4);
+    tl.set('#c112w0', {color:'#5EEAD4'}, 130.9667);
+    tl.set('#c112w0', {color:'#ffffff'}, 131.4);
+    tl.set('#c112w1', {color:'#5EEAD4'}, 131.6);
+    tl.set('#c112w1', {color:'#ffffff'}, 131.9333);
+    tl.set('#c112w2', {color:'#5EEAD4'}, 131.9333);
+    tl.set('#c112w2', {color:'#ffffff'}, 132.2333);
+    tl.fromTo('#c113', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 132.3667);
+    tl.set('#c113', {opacity:0}, 133.7);
+    tl.set('#c113w0', {color:'#5EEAD4'}, 132.4333);
+    tl.set('#c113w0', {color:'#ffffff'}, 132.6667);
+    tl.set('#c113w1', {color:'#5EEAD4'}, 132.6667);
+    tl.set('#c113w1', {color:'#ffffff'}, 133.1667);
+    tl.set('#c113w2', {color:'#5EEAD4'}, 133.2667);
+    tl.set('#c113w2', {color:'#ffffff'}, 133.4667);
+    tl.set('#c113w3', {color:'#5EEAD4'}, 133.4);
+    tl.set('#c113w3', {color:'#ffffff'}, 133.7667);
+    tl.fromTo('#c114', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 133.6667);
+    tl.set('#c114', {opacity:0}, 134.2);
+    tl.set('#c114w0', {color:'#5EEAD4'}, 133.7333);
+    tl.set('#c114w0', {color:'#ffffff'}, 134.1);
+    tl.fromTo('#c115', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 134.1333);
+    tl.set('#c115', {opacity:0}, 135.1333);
+    tl.set('#c115w0', {color:'#5EEAD4'}, 134.2333);
+    tl.set('#c115w0', {color:'#ffffff'}, 134.4333);
+    tl.set('#c115w1', {color:'#5EEAD4'}, 134.4);
+    tl.set('#c115w1', {color:'#ffffff'}, 134.7333);
+    tl.set('#c115w2', {color:'#5EEAD4'}, 134.7);
+    tl.set('#c115w2', {color:'#ffffff'}, 134.8333);
+    tl.set('#c115w3', {color:'#5EEAD4'}, 134.8);
+    tl.set('#c115w3', {color:'#ffffff'}, 135.1667);
+    tl.fromTo('#c116', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 135.1);
+    tl.set('#c116', {opacity:0}, 136.2667);
+    tl.set('#c116w0', {color:'#5EEAD4'}, 135.2);
+    tl.set('#c116w0', {color:'#ffffff'}, 135.6);
+    tl.set('#c116w1', {color:'#5EEAD4'}, 135.6);
+    tl.set('#c116w1', {color:'#ffffff'}, 135.9333);
+    tl.set('#c116w2', {color:'#5EEAD4'}, 135.9);
+    tl.set('#c116w2', {color:'#ffffff'}, 136.2333);
+    tl.set('#c116w3', {color:'#5EEAD4'}, 136.2);
+    tl.set('#c116w3', {color:'#ffffff'}, 136.3333);
+    tl.fromTo('#c117', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 136.2);
+    tl.set('#c117', {opacity:0}, 136.9);
+    tl.set('#c117w0', {color:'#5EEAD4'}, 136.3);
+    tl.set('#c117w0', {color:'#ffffff'}, 136.5333);
+    tl.set('#c117w1', {color:'#5EEAD4'}, 136.5);
+    tl.set('#c117w1', {color:'#ffffff'}, 136.8);
+    tl.fromTo('#c118', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 136.8667);
+    tl.set('#c118', {opacity:0}, 138.0333);
+    tl.set('#c118w0', {color:'#5EEAD4'}, 136.9333);
+    tl.set('#c118w0', {color:'#ffffff'}, 137.1333);
+    tl.set('#c118w1', {color:'#5EEAD4'}, 137.1333);
+    tl.set('#c118w1', {color:'#ffffff'}, 137.5);
+    tl.set('#c118w2', {color:'#5EEAD4'}, 137.4667);
+    tl.set('#c118w2', {color:'#ffffff'}, 137.8);
+    tl.set('#c118w3', {color:'#5EEAD4'}, 137.8333);
+    tl.set('#c118w3', {color:'#ffffff'}, 138.1);
+    tl.fromTo('#c119', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 138.0);
+    tl.set('#c119', {opacity:0}, 139.1333);
+    tl.set('#c119w0', {color:'#5EEAD4'}, 138.0667);
+    tl.set('#c119w0', {color:'#ffffff'}, 138.5);
+    tl.set('#c119w1', {color:'#5EEAD4'}, 138.5);
+    tl.set('#c119w1', {color:'#ffffff'}, 138.6667);
+    tl.set('#c119w2', {color:'#5EEAD4'}, 138.6333);
+    tl.set('#c119w2', {color:'#ffffff'}, 138.9667);
+    tl.set('#c119w3', {color:'#5EEAD4'}, 138.9333);
+    tl.set('#c119w3', {color:'#ffffff'}, 139.2333);
+    tl.fromTo('#c120', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 139.1);
+    tl.set('#c120', {opacity:0}, 139.6333);
+    tl.set('#c120w0', {color:'#5EEAD4'}, 139.1667);
+    tl.set('#c120w0', {color:'#ffffff'}, 139.4);
+    tl.set('#c120w1', {color:'#5EEAD4'}, 139.3333);
+    tl.set('#c120w1', {color:'#ffffff'}, 139.5333);
+    tl.fromTo('#c121', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 139.5667);
+    tl.set('#c121', {opacity:0}, 140.4333);
+    tl.set('#c121w0', {color:'#5EEAD4'}, 139.6667);
+    tl.set('#c121w0', {color:'#ffffff'}, 139.7667);
+    tl.set('#c121w1', {color:'#5EEAD4'}, 139.7333);
+    tl.set('#c121w1', {color:'#ffffff'}, 140.0667);
+    tl.set('#c121w2', {color:'#5EEAD4'}, 140.0333);
+    tl.set('#c121w2', {color:'#ffffff'}, 140.2);
+    tl.set('#c121w3', {color:'#5EEAD4'}, 140.2333);
+    tl.set('#c121w3', {color:'#ffffff'}, 140.4333);
+    tl.fromTo('#c122', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 140.4);
+    tl.set('#c122', {opacity:0}, 140.7333);
+    tl.set('#c122w0', {color:'#5EEAD4'}, 140.4667);
+    tl.set('#c122w0', {color:'#ffffff'}, 140.7667);
+    tl.fromTo('#c123', {opacity:0, y:18, scale:0.96}, {opacity:1, y:0, scale:1, duration:0.16, ease:'power3.out'}, 140.7);
+    tl.set('#c123', {opacity:0}, 142.0333);
+    tl.set('#c123w0', {color:'#5EEAD4'}, 140.8);
+    tl.set('#c123w0', {color:'#ffffff'}, 141.0667);
+    tl.set('#c123w1', {color:'#5EEAD4'}, 141.0);
+    tl.set('#c123w1', {color:'#ffffff'}, 141.3);
+    window.__timelines = window.__timelines || {};
+    window.__timelines["ward-yt"] = tl;
+  })();
+  </script>
+</div>
+</body></html>

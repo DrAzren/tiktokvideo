@@ -23,3 +23,5 @@ videos/**
 !videos/*/captions_src/large_v3_v4.json
 !videos/*/captions/make_fg_alpha.sh
 !videos/*/assemble.sh
+!videos/*/yt/assemble_yt.sh
+!videos/*/yt/public/index.html
