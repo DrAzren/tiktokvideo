@@ -89,7 +89,7 @@ SHOTS = [  # (id, kind, src, start-anchor, transition-in, ken-burns / options)
     ("s01", "s", "03_ipoh_1911", T("Waktu tu tak"), "cut", "right"),
     ("s02", "s", "02_mother_son", T("Tiba-tiba"), "cut", "in"),
     ("s03", "s", "06_alone_steps", T("Dia bercakap"), "cut", "out"),
-    ("s04", "s", "04_villagers", T("Keluarga dah macam"), "cut", "left"),
+    ("s04", "s", "04_villagers", T("Keluarga tak tahu"), "cut", "left"),
     ("s05", "s", "05_incense", T("Ada yang kata dia kena rasuk"), "cut", "in"),
     ("g01", "g", "fact", T("Tapi sebenarnya dia mungkin"), "fade", None),
     ("s06", "s", "18_empty_ward", T("Pada masa itu pilihan"), "cut", "in"),
@@ -97,7 +97,7 @@ SHOTS = [  # (id, kind, src, start-anchor, transition-in, ken-burns / options)
     ("g03", "g", "mappen", T("Ramai orang ingat"), "ink", None),
     ("s07", "s", "32_register", T("tapi sebenarnya sejarah penjagaan"), "cut", "in"),
     ("s08", "s", "09_early_asylum", T("Seawal abad"), "cut", "right"),
-    ("s09", "s", "07_penang_1880", T("seperti di kawasan seperti"), "cut", "left"),
+    ("s09", "s", "07_penang_1880", T("di kawasan seperti"), "cut", "left"),
     ("s10", "s", "08_taiping_1890", T("dan juga Taiping"), "cut", "in"),
     ("g04", "g", "conditions", T("Penyakit seperti skizofrenia"), "tear", None),
     ("s11", "s", "11_attendant", T("Rawatan pun waktu"), "cut", "in"),
@@ -107,7 +107,7 @@ SHOTS = [  # (id, kind, src, start-anchor, transition-in, ken-burns / options)
     ("s13", "s", "18_empty_ward", T("Tapi belum ada rawatan"), "cut", "out"),
     ("k2", "v", "k2_tanjung_rambutan", T("Kemudian pada tahun"), "ink", None),
     ("s14", "s", "12_tanjung_rambutan", T("semasa zaman pemerintahan"), "cut", "in"),
-    ("g05", "g", "asylum", T("nama asal dia"), "tear", None),
+    ("g05", "g", "asylum", T("nama asal adalah"), "tear", None),
     ("s15", "s", "10_desk_ledger", T("Tapi pada waktu itu istilah"), "cut", "right"),
     ("g06", "g", "wards", T("Menariknya institusi"), "fade", None),
     ("s16", "s", "14_female_ward", T("Bayangkan institusi yang"), "cut", "in"),
@@ -343,7 +343,7 @@ def g_grow(t0, t1, sid):
     def an():
         A(f"#{sid}-h", t0 + 0.1, {"opacity": 0, "y": -10}, {"opacity": 1, "y": 0}, 0.5)
         A(f"#{sid}-i0", t0 + 0.3, {"opacity": 0, "y": 20}, {"opacity": 1, "y": 0}, 0.5)
-        for i, key in ((1, "ubat antidepressant"), (2, "rawatan psikotik")):
+        for i, key in ((1, "ubat antidepressant"), (2, "rawatan psikiatri yang lain")):
             A(f"#{sid}-a{i - 1}", T(key, after=t0 - 0.5) - 0.3, {"opacity": 0, "x": -10}, {"opacity": 1, "x": 0}, 0.3)
             A(f"#{sid}-i{i}", T(key, after=t0 - 0.5) - 0.15, {"opacity": 0, "y": 20}, {"opacity": 1, "y": 0}, 0.5)
     return h, an
@@ -435,15 +435,20 @@ def g_stay(t0, t1, sid):
 
 @gfx("book")
 def g_book(t0, t1, sid):
-    h = bg("teal") + f"""<div class="book" id="{sid}-bk"><div class="bspine"></div><div class="bcover">
-<div class="bt1">Doktor,</div><div class="bt2">Saya Boleh<br/>Sembuh Ke?</div><div class="bau">Dr. Azren</div><div class="bpub">White Coat Books</div></div></div>
-<div class="btxt" id="{sid}-t"><div class="bk1">Buku oleh Dr. Azren</div><div class="bk2">“Doktor, Saya Boleh Sembuh Ke?”</div>
-<div class="bk3">Penyakit mental &amp; perjalanan pemulihan, dalam bahasa yang mudah difahami</div><div class="bk4">Terbitan White Coat Books</div></div>
-<div class="bnote2">Ilustrasi kulit buku</div>"""
+    pages = "".join(f'<i style="top:{4 + k * 4}px"></i>' for k in range(12))
+    h = bg("teal") + f"""<div class="bkstage"><div class="bshadow" id="{sid}-sh"></div>
+<div class="book3d" id="{sid}-bk"><div class="bf bfront"><img src="img/book_cover.jpg"/><div class="bsheen" id="{sid}-sn"></div></div>
+<div class="bf bback"></div><div class="bf bspine3"><span>DR, SAYA BOLEH SEMBUH KE?</span><b>DR AZREN</b></div>
+<div class="bf bpages"></div><div class="bf btop">{pages}</div><div class="bf bbot"></div></div></div>
+<div class="btxt" id="{sid}-t"><div class="bk1">Buku oleh Dr. Azren</div><div class="bk2">“Dr, Saya Boleh Sembuh Ke?”</div>
+<div class="bk3">Manual Survival Kesihatan Mental — menjawab persoalan &amp; menangkis mitos</div><div class="bk4">Terbitan White Coat Books</div></div>"""
     def an():
-        A(f"#{sid}-bk", t0 + 0.1, {"opacity": 0, "rotationY": -35, "x": -60, "transformPerspective": 1200}, {"opacity": 1, "rotationY": -14, "x": 0}, 1.0)
-        A(f"#{sid}-bk", t0 + 1.1, {"rotationY": -14}, {"rotationY": -6}, t1 - t0, "sine.inOut", ir=False)
-        A(f"#{sid}-t", t0 + 0.5, {"opacity": 0, "x": 30}, {"opacity": 1, "x": 0}, 0.7)
+        A(f"#{sid}-bk", t0 + 0.1, {"opacity": 0, "rotationY": 68, "rotationX": 8, "y": 60, "z": -300},
+          {"opacity": 1, "rotationY": 28, "rotationX": 4, "y": 0, "z": 0}, 1.4, "power3.out")
+        A(f"#{sid}-sh", t0 + 0.1, {"opacity": 0, "scaleX": 0.5}, {"opacity": 1, "scaleX": 1}, 1.4, "power3.out")
+        A(f"#{sid}-bk", t0 + 1.5, {"rotationY": 28, "rotationX": 4}, {"rotationY": 14, "rotationX": 2}, t1 - t0 - 1.5, "sine.inOut", ir=False)
+        A(f"#{sid}-sn", t0 + 1.2, {"x": -700}, {"x": 900}, 1.6, "power2.inOut")
+        A(f"#{sid}-t", t0 + 0.6, {"opacity": 0, "x": 30}, {"opacity": 1, "x": 0}, 0.8)
     return h, an
 
 
@@ -452,14 +457,12 @@ def g_end(t0, t1, sid):
     h = bg("teal") + f"""<div class="e1" id="{sid}-a">SEJARAH WAD PSIKIATRI DI MALAYSIA</div>
 <div class="e2" id="{sid}-b">Rawatan berubah — maruah pesakit tetap dijaga</div>
 <div class="brand" id="{sid}-c"><span class="bl"></span><span>BORAK JIWA</span><span class="bl"></span></div>
-<div class="ep" id="{sid}-d">Dr. Azren · Klinik Nissa</div>
-<div class="help" id="{sid}-e">Perlukan sokongan? Talian HEAL 15555 · Befrienders KL 03-7627 2929</div>"""
+<div class="ep" id="{sid}-d">Dr. Azren · Klinik Nissa</div>"""
     def an():
         A(f"#{sid}-a", t0 + 0.3, {"opacity": 0, "y": 24}, {"opacity": 1, "y": 0}, 0.8)
         A(f"#{sid}-b", t0 + 1.2, {"opacity": 0, "y": 14}, {"opacity": 1, "y": 0}, 0.7)
         A(f"#{sid}-c", t0 + 2.0, {"opacity": 0, "scale": 1.15}, {"opacity": 1, "scale": 1}, 0.9)
         A(f"#{sid}-d", t0 + 2.6, {"opacity": 0}, {"opacity": 1}, 0.6)
-        A(f"#{sid}-e", t0 + 3.0, {"opacity": 0}, {"opacity": 0.85}, 0.6)
     return h, an
 
 

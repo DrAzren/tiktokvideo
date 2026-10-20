@@ -88,3 +88,39 @@ Master: −14 LUFS, TP −1.2.
 - −14.0 LUFS, peak −1.1 dBFS.
 - 27 frames sampled across every chapter, transition and card.
 - The 1080p render takes 27 min here.
+
+## Session 2 — 2026-10-20 (revisions)
+
+**Asks:**
+- Put the real book cover (supplied as an image) into the video as a 3D book.
+- Remove the repeated phrases (e.g. at 3:24) and all filler words.
+- Drop the helplines.
+- Spend no Higgsfield credits.
+
+**Voice** (`edit/realign.py` → `realign.json`, then `build_voice.py`):
+- **Hidden retakes.** These were swallowed by over-long aligned words (519 "penting" 4.3 s, 672 "pada" 1.5 s).
+  Found with large-v3 on the cut voice, then re-aligned with MMS_FA and cut:
+  - "Dan penting untuk kita faham, amalan rawatan berbeza mengikut" was said twice. This was the 3:24 repeat.
+  - "pada tahun, pada tahun 1958"
+  - "filem, filem barat"
+- **Filler sounds.** Located on a 10 ms energy/voicing envelope and cut by hand (`MANUAL` in `realign.py`):
+  - "Ha," after "gangguan pemikiran." and after "semakin berkembang."
+  - "lah" after "rawatan perubatan"
+  - "Ha," before "Kalau anda"
+- **Lexical fillers dropped** (`FILLERS`): dah/dah macam, sentence-final lah/je/ni/sebenarnya, the doubled "seperti",
+  "dia" in "nama (asal) dia", "suasana dia", "lunatik ni", "sejarah psikiatri ini".
+- **Fillers kept:** "ni"/"tu" fused into the next word (mental ni masih, kemurungan ni, seseorang tu, filem barat tu,
+  seram tu). A cut there clipped both words; large-v3 heard the remains and heard "filem-filem" as "bukannya".
+- **Gaps from dropped words** are filled with real room tone (the quietest 0.5 s of the take), not digital silence.
+- **Verified:** large-v3 (plain and filler-prompted) on the new cut hears no repeat, and none of the cut fillers. The
+  filler-prompted model also reports "Ha" at spots that are word onsets ("pa" of pada, "me" of mereka); those were
+  checked on the envelope and left alone.
+- **Result:** 6:09 of speech, down from 6:19. Video 6:16.
+
+**Visuals:**
+- Book card: a CSS 3D book built from the real cover (`doc/public/img/book_cover.jpg`, from
+  `stills/book_cover_src.jpg`). It has a yellow spine with the title, page block, contact shadow and a sheen sweep.
+  The card text uses the real title "Dr, Saya Boleh Sembuh Ke?" and subtitle "Manual Survival Kesihatan Mental".
+- End card: helpline line removed.
+
+**Credits:** none spent this session.

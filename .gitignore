@@ -37,3 +37,4 @@ videos/**
 !videos/*/doc/*.css
 !videos/*/stills/jobs.txt
 !videos/*/edit/cut_words.json
+!videos/*/edit/realign.json

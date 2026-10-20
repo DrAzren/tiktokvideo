@@ -1,6 +1,6 @@
 {
  "fps": 24,
- "duration": 386.377,
+ "duration": 376.359,
  "voice_offset": 1.5,
  "shots": [
   {
@@ -42,413 +42,413 @@
    "id": "s05",
    "kind": "s",
    "src": "05_incense",
-   "t0": 27.188,
+   "t0": 26.613,
    "in": "cut"
   },
   {
    "id": "g01",
    "kind": "g",
    "src": "fact",
-   "t0": 32.869,
+   "t0": 32.294,
    "in": "fade"
   },
   {
    "id": "s06",
    "kind": "s",
    "src": "18_empty_ward",
-   "t0": 36.77,
+   "t0": 36.195,
    "in": "cut"
   },
   {
    "id": "g02",
    "kind": "g",
    "src": "title",
-   "t0": 40.231,
+   "t0": 39.656,
    "in": "fade"
   },
   {
    "id": "g03",
    "kind": "g",
    "src": "mappen",
-   "t0": 46.794,
+   "t0": 45.969,
    "in": "ink"
   },
   {
    "id": "s07",
    "kind": "s",
    "src": "32_register",
-   "t0": 51.837,
+   "t0": 50.922,
    "in": "cut"
   },
   {
    "id": "s08",
    "kind": "s",
    "src": "09_early_asylum",
-   "t0": 57.098,
+   "t0": 56.073,
    "in": "cut"
   },
   {
    "id": "s09",
    "kind": "s",
    "src": "07_penang_1880",
-   "t0": 63.44,
+   "t0": 62.51,
    "in": "cut"
   },
   {
    "id": "s10",
    "kind": "s",
    "src": "08_taiping_1890",
-   "t0": 65.74,
+   "t0": 64.11,
    "in": "cut"
   },
   {
    "id": "g04",
    "kind": "g",
    "src": "conditions",
-   "t0": 71.064,
+   "t0": 69.254,
    "in": "tear"
   },
   {
    "id": "s11",
    "kind": "s",
    "src": "11_attendant",
-   "t0": 76.748,
+   "t0": 74.938,
    "in": "cut"
   },
   {
    "id": "s12",
    "kind": "s",
    "src": "13_ward_ext",
-   "t0": 82.512,
+   "t0": 80.702,
    "in": "cut"
   },
   {
    "id": "e01",
    "kind": "v",
    "src": "e1_15_room",
-   "t0": 86.135,
+   "t0": 84.325,
    "in": "cut"
   },
   {
    "id": "e02",
    "kind": "v",
    "src": "e1_14_corridor",
-   "t0": 92.339,
+   "t0": 90.529,
    "in": "cut"
   },
   {
    "id": "s13",
    "kind": "s",
    "src": "18_empty_ward",
-   "t0": 94.5,
+   "t0": 92.69,
    "in": "cut"
   },
   {
    "id": "k2",
    "kind": "v",
    "src": "k2_tanjung_rambutan",
-   "t0": 98.223,
+   "t0": 96.413,
    "in": "ink"
   },
   {
    "id": "s14",
    "kind": "s",
    "src": "12_tanjung_rambutan",
-   "t0": 105.086,
+   "t0": 103.276,
    "in": "cut"
   },
   {
    "id": "g05",
    "kind": "g",
    "src": "asylum",
-   "t0": 106.767,
+   "t0": 104.957,
    "in": "tear"
   },
   {
    "id": "s15",
    "kind": "s",
    "src": "10_desk_ledger",
-   "t0": 120.917,
+   "t0": 118.832,
    "in": "cut"
   },
   {
    "id": "g06",
    "kind": "g",
    "src": "wards",
-   "t0": 125.939,
+   "t0": 123.854,
    "in": "fade"
   },
   {
    "id": "s16",
    "kind": "s",
    "src": "14_female_ward",
-   "t0": 131.242,
+   "t0": 129.057,
    "in": "cut"
   },
   {
    "id": "s17",
    "kind": "s",
    "src": "33_veranda",
-   "t0": 135.284,
+   "t0": 133.099,
    "in": "cut"
   },
   {
    "id": "g07",
    "kind": "g",
    "src": "names",
-   "t0": 139.585,
+   "t0": 137.4,
    "in": "tear"
   },
   {
    "id": "s18",
    "kind": "s",
    "src": "16_feeding",
-   "t0": 152.05,
+   "t0": 150.015,
    "in": "cut"
   },
   {
    "id": "g08",
    "kind": "g",
    "src": "meds",
-   "t0": 155.131,
+   "t0": 152.991,
    "in": "ink"
   },
   {
    "id": "e03",
    "kind": "v",
    "src": "e1_13_asylum_ext",
-   "t0": 171.881,
+   "t0": 169.741,
    "in": "cut"
   },
   {
    "id": "e04",
    "kind": "v",
    "src": "e1_16_garden",
-   "t0": 178.903,
+   "t0": 176.763,
    "in": "cut"
   },
   {
    "id": "s19",
    "kind": "s",
    "src": "16_feeding",
-   "t0": 182.363,
+   "t0": 180.223,
    "in": "cut"
   },
   {
    "id": "s20",
    "kind": "s",
    "src": "17_garden_work",
-   "t0": 186.303,
+   "t0": 184.163,
    "in": "cut"
   },
   {
    "id": "g09",
    "kind": "g",
    "src": "imperfect",
-   "t0": 193.284,
+   "t0": 191.144,
    "in": "tear"
   },
   {
    "id": "s21",
    "kind": "s",
    "src": "13_ward_ext",
-   "t0": 203.585,
+   "t0": 201.445,
    "in": "cut"
   },
   {
    "id": "s22",
    "kind": "s",
    "src": "33_veranda",
-   "t0": 211.106,
+   "t0": 204.912,
    "in": "cut"
   },
   {
    "id": "e05",
    "kind": "v",
    "src": "e1_11_brain_morph",
-   "t0": 214.127,
+   "t0": 207.933,
    "in": "cut"
   },
   {
    "id": "e06",
    "kind": "v",
    "src": "e1_17_lab",
-   "t0": 219.628,
+   "t0": 213.434,
    "in": "ink"
   },
   {
    "id": "e07",
    "kind": "v",
    "src": "e1_18_glassware",
-   "t0": 223.33,
+   "t0": 217.136,
    "in": "cut"
   },
   {
    "id": "s23",
    "kind": "s",
    "src": "19_dispensary",
-   "t0": 228.613,
+   "t0": 222.419,
    "in": "cut"
   },
   {
    "id": "s24",
    "kind": "s",
    "src": "10_desk_ledger",
-   "t0": 233.815,
+   "t0": 227.336,
    "in": "cut"
   },
   {
    "id": "e08",
    "kind": "v",
    "src": "e1_19_neurons",
-   "t0": 237.776,
+   "t0": 231.297,
    "in": "cut"
   },
   {
    "id": "g10",
    "kind": "g",
    "src": "grow",
-   "t0": 246.259,
+   "t0": 239.793,
    "in": "fade"
   },
   {
    "id": "g11",
    "kind": "g",
    "src": "balance",
-   "t0": 251.441,
+   "t0": 245.073,
    "in": "cut"
   },
   {
    "id": "s25",
    "kind": "s",
    "src": "22_corridor_1960",
-   "t0": 258.123,
+   "t0": 251.761,
    "in": "cut"
   },
   {
    "id": "s26",
    "kind": "s",
    "src": "20_penang_gh_1958",
-   "t0": 262.404,
+   "t0": 255.662,
    "in": "ink"
   },
   {
    "id": "s27",
    "kind": "s",
    "src": "21_ward_1958",
-   "t0": 268.226,
+   "t0": 259.999,
    "in": "cut"
   },
   {
    "id": "g12",
    "kind": "g",
    "src": "general",
-   "t0": 274.227,
+   "t0": 266.0,
    "in": "tear"
   },
   {
    "id": "g13",
    "kind": "g",
    "src": "depts",
-   "t0": 290.473,
+   "t0": 282.246,
    "in": "cut"
   },
   {
    "id": "g14",
    "kind": "g",
    "src": "mapmy",
-   "t0": 295.895,
+   "t0": 287.668,
    "in": "fade"
   },
   {
    "id": "s28",
    "kind": "s",
    "src": "31_horror_set",
-   "t0": 303.498,
+   "t0": 294.911,
    "in": "ink"
   },
   {
    "id": "k3",
    "kind": "v",
    "src": "k3_modern_ward",
-   "t0": 310.86,
+   "t0": 301.532,
    "in": "cut"
   },
   {
    "id": "s29",
    "kind": "s",
    "src": "24_doctor_nurse",
-   "t0": 315.362,
+   "t0": 306.034,
    "in": "cut"
   },
   {
    "id": "s30",
    "kind": "s",
    "src": "25_mdt",
-   "t0": 318.082,
+   "t0": 308.754,
    "in": "cut"
   },
   {
    "id": "g15",
    "kind": "g",
    "src": "reasons",
-   "t0": 324.464,
+   "t0": 315.016,
    "in": "fade"
   },
   {
    "id": "g16",
    "kind": "g",
    "src": "stay",
-   "t0": 336.407,
+   "t0": 326.959,
    "in": "cut"
   },
   {
    "id": "s31",
    "kind": "s",
    "src": "28_family_visit",
-   "t0": 344.211,
+   "t0": 334.553,
    "in": "ink"
   },
   {
    "id": "s32",
    "kind": "s",
    "src": "26_ot",
-   "t0": 349.254,
+   "t0": 339.596,
    "in": "cut"
   },
   {
    "id": "e09",
    "kind": "v",
    "src": "e1_21_family",
-   "t0": 352.856,
+   "t0": 342.838,
    "in": "cut"
   },
   {
    "id": "s33",
    "kind": "s",
    "src": "29_clinic_room",
-   "t0": 358.98,
+   "t0": 348.962,
    "in": "cut"
   },
   {
    "id": "g17",
    "kind": "g",
    "src": "book",
-   "t0": 363.282,
+   "t0": 353.264,
    "in": "fade"
   },
   {
    "id": "k4",
    "kind": "v",
    "src": "k4_kinta_sunrise",
-   "t0": 372.607,
+   "t0": 362.589,
    "in": "ink"
   },
   {
    "id": "g18",
    "kind": "g",
    "src": "end",
-   "t0": 380.877,
+   "t0": 370.859,
    "in": "fade"
   }
  ]
