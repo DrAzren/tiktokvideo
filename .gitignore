@@ -42,3 +42,9 @@ videos/**
 !videos/*/youtube/*.html
 !videos/*/youtube/*.jpg
 !videos/*/youtube/*.png
+!videos/*/tiktok/*.py
+!videos/*/tiktok/*.sh
+!videos/*/tiktok/*.ass
+!videos/*/tiktok/*.md
+!videos/*/tiktok/*.html
+!videos/*/tiktok/*.jpg

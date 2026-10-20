@@ -1,0 +1,984 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Brand,Plus Jakarta Sans ExtraBold,30,&H00BEC85C,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+Style: Title,Cinzel SemiBold,62,&H00D8EBF4,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,1,0,1,0,3,5,0,0,0,1
+Style: Chip,Plus Jakarta Sans,34,&H0041A4D9,&H00FFFFFF,&H40554F0E,&H00000000,-1,0,0,0,100,100,1,0,3,14,0,5,0,0,0,1
+Style: Note,Plus Jakarta Sans Medium,22,&H66D8EBF4,&H00FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,7,0,0,0,1
+Style: Cap,Plus Jakarta Sans ExtraBold,62,&H00FFFFFF,&H00FFFFFF,&H00000000,&H99000000,0,0,0,0,100,100,0,0,1,5,3,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:06:16.36,Brand,,0,0,0,,{\an5\pos(540,196)}B O R A K   J I W A
+Dialogue: 1,0:00:00.00,0:06:16.36,Title,,0,0,0,,{\an5\pos(540,268)}SEJARAH WAD PSIKIATRI
+Dialogue: 1,0:00:00.00,0:06:16.36,Title,,0,0,0,,{\an5\pos(540,334)}DI MALAYSIA
+Dialogue: 1,0:00:00.00,0:06:16.36,Note,,0,0,0,,{\an7\pos(40,1092)}Visual sejarah: dramatisasi dijana AI
+Dialogue: 2,0:00:00.50,0:00:45.77,Chip,,0,0,0,,{\an5\pos(540,410)\fad(250,200)}BAYANGKAN TAHUN 1911
+Dialogue: 2,0:00:45.82,0:01:36.21,Chip,,0,0,0,,{\an5\pos(540,410)\fad(250,200)}ABAD KE-19 · PULAU PINANG & TAIPING
+Dialogue: 2,0:01:36.26,0:02:17.20,Chip,,0,0,0,,{\an5\pos(540,410)\fad(250,200)}1911 · TANJUNG RAMBUTAN
+Dialogue: 2,0:02:17.25,0:02:28.79,Chip,,0,0,0,,{\an5\pos(540,410)\fad(250,200)}1928 → 1970-AN · NAMA BERTUKAR
+Dialogue: 2,0:02:28.84,0:03:33.23,Chip,,0,0,0,,{\an5\pos(540,410)\fad(250,200)}KEHIDUPAN PESAKIT ZAMAN DULU
+Dialogue: 2,0:03:33.28,0:04:15.46,Chip,,0,0,0,,{\an5\pos(540,410)\fad(250,200)}1950-AN · UBAT ANTIPSIKOTIK
+Dialogue: 2,0:04:15.51,0:04:54.71,Chip,,0,0,0,,{\an5\pos(540,410)\fad(250,200)}1958 · WAD DI HOSPITAL UMUM
+Dialogue: 2,0:04:54.76,0:05:34.35,Chip,,0,0,0,,{\an5\pos(540,410)\fad(250,200)}HARI INI · BETUL KE MENAKUTKAN?
+Dialogue: 2,0:05:34.40,0:05:53.06,Chip,,0,0,0,,{\an5\pos(540,410)\fad(250,200)}PENGALAMAN DOKTOR PSIKIATRI
+Dialogue: 2,0:05:53.11,0:06:10.66,Chip,,0,0,0,,{\an5\pos(540,410)\fad(250,200)}BUKU · DR, SAYA BOLEH SEMBUH KE?
+Dialogue: 3,0:00:01.56,0:00:02.41,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Bayangkan {\c&HFFFFFF&}anda {\c&HFFFFFF&}hidup\N{\c&HFFFFFF&}pada {\c&HFFFFFF&}tahun {\c&H41A4D9&}1911
+Dialogue: 3,0:00:02.41,0:00:02.67,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Bayangkan {\c&H1FD2FF&}anda {\c&HFFFFFF&}hidup\N{\c&HFFFFFF&}pada {\c&HFFFFFF&}tahun {\c&H41A4D9&}1911
+Dialogue: 3,0:00:02.67,0:00:03.19,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Bayangkan {\c&HFFFFFF&}anda {\c&H1FD2FF&}hidup\N{\c&HFFFFFF&}pada {\c&HFFFFFF&}tahun {\c&H41A4D9&}1911
+Dialogue: 3,0:00:03.19,0:00:03.45,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Bayangkan {\c&HFFFFFF&}anda {\c&HFFFFFF&}hidup\N{\c&H1FD2FF&}pada {\c&HFFFFFF&}tahun {\c&H41A4D9&}1911
+Dialogue: 3,0:00:03.45,0:00:04.03,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Bayangkan {\c&HFFFFFF&}anda {\c&HFFFFFF&}hidup\N{\c&HFFFFFF&}pada {\c&H1FD2FF&}tahun {\c&H41A4D9&}1911
+Dialogue: 3,0:00:04.03,0:00:05.62,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Bayangkan {\c&HFFFFFF&}anda {\c&HFFFFFF&}hidup\N{\c&HFFFFFF&}pada {\c&HFFFFFF&}tahun {\c&H1FD2FF&}1911
+Dialogue: 3,0:00:05.62,0:00:06.01,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Waktu {\c&HFFFFFF&}tu {\c&HFFFFFF&}tak {\c&HFFFFFF&}ada\N{\c&HFFFFFF&}smartphone {\c&HFFFFFF&}pun
+Dialogue: 3,0:00:06.01,0:00:06.17,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Waktu {\c&H1FD2FF&}tu {\c&HFFFFFF&}tak {\c&HFFFFFF&}ada\N{\c&HFFFFFF&}smartphone {\c&HFFFFFF&}pun
+Dialogue: 3,0:00:06.17,0:00:06.31,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Waktu {\c&HFFFFFF&}tu {\c&H1FD2FF&}tak {\c&HFFFFFF&}ada\N{\c&HFFFFFF&}smartphone {\c&HFFFFFF&}pun
+Dialogue: 3,0:00:06.31,0:00:06.81,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Waktu {\c&HFFFFFF&}tu {\c&HFFFFFF&}tak {\c&H1FD2FF&}ada\N{\c&HFFFFFF&}smartphone {\c&HFFFFFF&}pun
+Dialogue: 3,0:00:06.81,0:00:07.35,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Waktu {\c&HFFFFFF&}tu {\c&HFFFFFF&}tak {\c&HFFFFFF&}ada\N{\c&H1FD2FF&}smartphone {\c&HFFFFFF&}pun
+Dialogue: 3,0:00:07.35,0:00:07.58,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Waktu {\c&HFFFFFF&}tu {\c&HFFFFFF&}tak {\c&HFFFFFF&}ada\N{\c&HFFFFFF&}smartphone {\c&H1FD2FF&}pun
+Dialogue: 3,0:00:07.58,0:00:07.73,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Tak {\c&HFFFFFF&}ada {\c&HFFFFFF&}internet
+Dialogue: 3,0:00:07.73,0:00:07.93,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tak {\c&H1FD2FF&}ada {\c&HFFFFFF&}internet
+Dialogue: 3,0:00:07.93,0:00:08.66,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tak {\c&HFFFFFF&}ada {\c&H1FD2FF&}internet
+Dialogue: 3,0:00:08.72,0:00:09.29,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Malaysia {\c&HFFFFFF&}pun {\c&HFFFFFF&}belum\N{\c&HFFFFFF&}merdeka {\c&HFFFFFF&}lagi
+Dialogue: 3,0:00:09.29,0:00:09.43,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Malaysia {\c&H1FD2FF&}pun {\c&HFFFFFF&}belum\N{\c&HFFFFFF&}merdeka {\c&HFFFFFF&}lagi
+Dialogue: 3,0:00:09.43,0:00:09.63,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Malaysia {\c&HFFFFFF&}pun {\c&H1FD2FF&}belum\N{\c&HFFFFFF&}merdeka {\c&HFFFFFF&}lagi
+Dialogue: 3,0:00:09.63,0:00:10.07,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Malaysia {\c&HFFFFFF&}pun {\c&HFFFFFF&}belum\N{\c&H1FD2FF&}merdeka {\c&HFFFFFF&}lagi
+Dialogue: 3,0:00:10.07,0:00:10.58,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Malaysia {\c&HFFFFFF&}pun {\c&HFFFFFF&}belum\N{\c&HFFFFFF&}merdeka {\c&H1FD2FF&}lagi
+Dialogue: 3,0:00:10.68,0:00:11.35,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Tiba-tiba {\c&HFFFFFF&}ada\N{\c&HFFFFFF&}seorang {\c&HFFFFFF&}ahli {\c&HFFFFFF&}keluarga
+Dialogue: 3,0:00:11.35,0:00:11.77,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tiba-tiba {\c&H1FD2FF&}ada\N{\c&HFFFFFF&}seorang {\c&HFFFFFF&}ahli {\c&HFFFFFF&}keluarga
+Dialogue: 3,0:00:11.77,0:00:12.21,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tiba-tiba {\c&HFFFFFF&}ada\N{\c&H1FD2FF&}seorang {\c&HFFFFFF&}ahli {\c&HFFFFFF&}keluarga
+Dialogue: 3,0:00:12.21,0:00:12.47,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tiba-tiba {\c&HFFFFFF&}ada\N{\c&HFFFFFF&}seorang {\c&H1FD2FF&}ahli {\c&HFFFFFF&}keluarga
+Dialogue: 3,0:00:12.47,0:00:13.08,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tiba-tiba {\c&HFFFFFF&}ada\N{\c&HFFFFFF&}seorang {\c&HFFFFFF&}ahli {\c&H1FD2FF&}keluarga
+Dialogue: 3,0:00:13.08,0:00:13.59,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}anda {\c&HFFFFFF&}yang\N{\c&HFFFFFF&}mula {\c&HFFFFFF&}berubah
+Dialogue: 3,0:00:13.59,0:00:13.77,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}anda {\c&H1FD2FF&}yang\N{\c&HFFFFFF&}mula {\c&HFFFFFF&}berubah
+Dialogue: 3,0:00:13.77,0:00:13.99,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}anda {\c&HFFFFFF&}yang\N{\c&H1FD2FF&}mula {\c&HFFFFFF&}berubah
+Dialogue: 3,0:00:13.99,0:00:14.70,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}anda {\c&HFFFFFF&}yang\N{\c&HFFFFFF&}mula {\c&H1FD2FF&}berubah
+Dialogue: 3,0:00:14.80,0:00:15.01,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Dia {\c&HFFFFFF&}bercakap\N{\c&HFFFFFF&}seorang {\c&HFFFFFF&}diri
+Dialogue: 3,0:00:15.01,0:00:15.37,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dia {\c&H1FD2FF&}bercakap\N{\c&HFFFFFF&}seorang {\c&HFFFFFF&}diri
+Dialogue: 3,0:00:15.37,0:00:15.71,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dia {\c&HFFFFFF&}bercakap\N{\c&H1FD2FF&}seorang {\c&HFFFFFF&}diri
+Dialogue: 3,0:00:15.71,0:00:16.30,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dia {\c&HFFFFFF&}bercakap\N{\c&HFFFFFF&}seorang {\c&H1FD2FF&}diri
+Dialogue: 3,0:00:16.42,0:00:16.59,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Dia {\c&HFFFFFF&}dengar {\c&HFFFFFF&}suara
+Dialogue: 3,0:00:16.59,0:00:16.89,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dia {\c&H1FD2FF&}dengar {\c&HFFFFFF&}suara
+Dialogue: 3,0:00:16.89,0:00:17.12,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dia {\c&HFFFFFF&}dengar {\c&H1FD2FF&}suara
+Dialogue: 3,0:00:17.12,0:00:17.25,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}orang {\c&HFFFFFF&}tak\N{\c&HFFFFFF&}boleh {\c&HFFFFFF&}dengar
+Dialogue: 3,0:00:17.25,0:00:17.41,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}orang {\c&HFFFFFF&}tak\N{\c&HFFFFFF&}boleh {\c&HFFFFFF&}dengar
+Dialogue: 3,0:00:17.41,0:00:17.49,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}orang {\c&H1FD2FF&}tak\N{\c&HFFFFFF&}boleh {\c&HFFFFFF&}dengar
+Dialogue: 3,0:00:17.49,0:00:17.67,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}orang {\c&HFFFFFF&}tak\N{\c&H1FD2FF&}boleh {\c&HFFFFFF&}dengar
+Dialogue: 3,0:00:17.67,0:00:18.12,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}orang {\c&HFFFFFF&}tak\N{\c&HFFFFFF&}boleh {\c&H1FD2FF&}dengar
+Dialogue: 3,0:00:18.12,0:00:18.67,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Kadang-kadang {\c&HFFFFFF&}dia\N{\c&HFFFFFF&}ketawa {\c&HFFFFFF&}sendiri
+Dialogue: 3,0:00:18.67,0:00:18.86,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kadang-kadang {\c&H1FD2FF&}dia\N{\c&HFFFFFF&}ketawa {\c&HFFFFFF&}sendiri
+Dialogue: 3,0:00:18.86,0:00:19.31,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kadang-kadang {\c&HFFFFFF&}dia\N{\c&H1FD2FF&}ketawa {\c&HFFFFFF&}sendiri
+Dialogue: 3,0:00:19.31,0:00:20.00,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kadang-kadang {\c&HFFFFFF&}dia\N{\c&HFFFFFF&}ketawa {\c&H1FD2FF&}sendiri
+Dialogue: 3,0:00:20.07,0:00:20.52,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Kadang-kadang {\c&HFFFFFF&}dia\N{\c&HFFFFFF&}jadi {\c&HFFFFFF&}ketakutan
+Dialogue: 3,0:00:20.52,0:00:20.70,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kadang-kadang {\c&H1FD2FF&}dia\N{\c&HFFFFFF&}jadi {\c&HFFFFFF&}ketakutan
+Dialogue: 3,0:00:20.70,0:00:20.93,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kadang-kadang {\c&HFFFFFF&}dia\N{\c&H1FD2FF&}jadi {\c&HFFFFFF&}ketakutan
+Dialogue: 3,0:00:20.93,0:00:21.81,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kadang-kadang {\c&HFFFFFF&}dia\N{\c&HFFFFFF&}jadi {\c&H1FD2FF&}ketakutan
+Dialogue: 3,0:00:21.81,0:00:22.69,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Paranoid
+Dialogue: 3,0:00:22.75,0:00:23.31,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Keluarga {\c&HFFFFFF&}tak {\c&HFFFFFF&}tahu\N{\c&HFFFFFF&}nak {\c&HFFFFFF&}buat {\c&HFFFFFF&}apa
+Dialogue: 3,0:00:23.31,0:00:23.43,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Keluarga {\c&H1FD2FF&}tak {\c&HFFFFFF&}tahu\N{\c&HFFFFFF&}nak {\c&HFFFFFF&}buat {\c&HFFFFFF&}apa
+Dialogue: 3,0:00:23.43,0:00:23.53,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Keluarga {\c&HFFFFFF&}tak {\c&H1FD2FF&}tahu\N{\c&HFFFFFF&}nak {\c&HFFFFFF&}buat {\c&HFFFFFF&}apa
+Dialogue: 3,0:00:23.53,0:00:23.65,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Keluarga {\c&HFFFFFF&}tak {\c&HFFFFFF&}tahu\N{\c&H1FD2FF&}nak {\c&HFFFFFF&}buat {\c&HFFFFFF&}apa
+Dialogue: 3,0:00:23.65,0:00:23.75,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Keluarga {\c&HFFFFFF&}tak {\c&HFFFFFF&}tahu\N{\c&HFFFFFF&}nak {\c&H1FD2FF&}buat {\c&HFFFFFF&}apa
+Dialogue: 3,0:00:23.75,0:00:24.28,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Keluarga {\c&HFFFFFF&}tak {\c&HFFFFFF&}tahu\N{\c&HFFFFFF&}nak {\c&HFFFFFF&}buat {\c&H1FD2FF&}apa
+Dialogue: 3,0:00:24.34,0:00:24.93,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Masyarakat {\c&HFFFFFF&}pula {\c&HFFFFFF&}mula\N{\c&HFFFFFF&}cakap {\c&HFFFFFF&}macam-macam
+Dialogue: 3,0:00:24.93,0:00:25.32,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Masyarakat {\c&H1FD2FF&}pula {\c&HFFFFFF&}mula\N{\c&HFFFFFF&}cakap {\c&HFFFFFF&}macam-macam
+Dialogue: 3,0:00:25.32,0:00:25.60,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Masyarakat {\c&HFFFFFF&}pula {\c&H1FD2FF&}mula\N{\c&HFFFFFF&}cakap {\c&HFFFFFF&}macam-macam
+Dialogue: 3,0:00:25.60,0:00:25.88,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Masyarakat {\c&HFFFFFF&}pula {\c&HFFFFFF&}mula\N{\c&H1FD2FF&}cakap {\c&HFFFFFF&}macam-macam
+Dialogue: 3,0:00:25.88,0:00:26.55,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Masyarakat {\c&HFFFFFF&}pula {\c&HFFFFFF&}mula\N{\c&HFFFFFF&}cakap {\c&H1FD2FF&}macam-macam
+Dialogue: 3,0:00:26.55,0:00:26.78,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Ada {\c&HFFFFFF&}yang {\c&HFFFFFF&}kata\N{\c&HFFFFFF&}dia {\c&HFFFFFF&}kena {\c&HFFFFFF&}rasuk
+Dialogue: 3,0:00:26.78,0:00:26.92,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&H1FD2FF&}yang {\c&HFFFFFF&}kata\N{\c&HFFFFFF&}dia {\c&HFFFFFF&}kena {\c&HFFFFFF&}rasuk
+Dialogue: 3,0:00:26.92,0:00:27.22,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&HFFFFFF&}yang {\c&H1FD2FF&}kata\N{\c&HFFFFFF&}dia {\c&HFFFFFF&}kena {\c&HFFFFFF&}rasuk
+Dialogue: 3,0:00:27.22,0:00:27.36,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&HFFFFFF&}yang {\c&HFFFFFF&}kata\N{\c&H1FD2FF&}dia {\c&HFFFFFF&}kena {\c&HFFFFFF&}rasuk
+Dialogue: 3,0:00:27.36,0:00:27.54,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&HFFFFFF&}yang {\c&HFFFFFF&}kata\N{\c&HFFFFFF&}dia {\c&H1FD2FF&}kena {\c&HFFFFFF&}rasuk
+Dialogue: 3,0:00:27.54,0:00:28.09,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&HFFFFFF&}yang {\c&HFFFFFF&}kata\N{\c&HFFFFFF&}dia {\c&HFFFFFF&}kena {\c&H1FD2FF&}rasuk
+Dialogue: 3,0:00:28.09,0:00:28.26,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Ada {\c&HFFFFFF&}yang {\c&HFFFFFF&}kata {\c&HFFFFFF&}dia\N{\c&HFFFFFF&}kena {\c&HFFFFFF&}gangguan
+Dialogue: 3,0:00:28.26,0:00:28.64,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&H1FD2FF&}yang {\c&HFFFFFF&}kata {\c&HFFFFFF&}dia\N{\c&HFFFFFF&}kena {\c&HFFFFFF&}gangguan
+Dialogue: 3,0:00:28.64,0:00:29.00,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&HFFFFFF&}yang {\c&H1FD2FF&}kata {\c&HFFFFFF&}dia\N{\c&HFFFFFF&}kena {\c&HFFFFFF&}gangguan
+Dialogue: 3,0:00:29.00,0:00:29.12,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&HFFFFFF&}yang {\c&HFFFFFF&}kata {\c&H1FD2FF&}dia\N{\c&HFFFFFF&}kena {\c&HFFFFFF&}gangguan
+Dialogue: 3,0:00:29.12,0:00:29.34,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&HFFFFFF&}yang {\c&HFFFFFF&}kata {\c&HFFFFFF&}dia\N{\c&H1FD2FF&}kena {\c&HFFFFFF&}gangguan
+Dialogue: 3,0:00:29.34,0:00:30.13,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&HFFFFFF&}yang {\c&HFFFFFF&}kata {\c&HFFFFFF&}dia\N{\c&HFFFFFF&}kena {\c&H1FD2FF&}gangguan
+Dialogue: 3,0:00:30.19,0:00:30.38,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Ada {\c&HFFFFFF&}juga
+Dialogue: 3,0:00:30.38,0:00:30.61,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&H1FD2FF&}juga
+Dialogue: 3,0:00:30.61,0:00:30.78,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}takut {\c&HFFFFFF&}nak\N{\c&HFFFFFF&}dekat {\c&HFFFFFF&}dengan {\c&HFFFFFF&}dia
+Dialogue: 3,0:00:30.78,0:00:31.16,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}takut {\c&HFFFFFF&}nak\N{\c&HFFFFFF&}dekat {\c&HFFFFFF&}dengan {\c&HFFFFFF&}dia
+Dialogue: 3,0:00:31.16,0:00:31.28,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}takut {\c&H1FD2FF&}nak\N{\c&HFFFFFF&}dekat {\c&HFFFFFF&}dengan {\c&HFFFFFF&}dia
+Dialogue: 3,0:00:31.28,0:00:31.56,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}takut {\c&HFFFFFF&}nak\N{\c&H1FD2FF&}dekat {\c&HFFFFFF&}dengan {\c&HFFFFFF&}dia
+Dialogue: 3,0:00:31.56,0:00:31.78,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}takut {\c&HFFFFFF&}nak\N{\c&HFFFFFF&}dekat {\c&H1FD2FF&}dengan {\c&HFFFFFF&}dia
+Dialogue: 3,0:00:31.78,0:00:32.21,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}takut {\c&HFFFFFF&}nak\N{\c&HFFFFFF&}dekat {\c&HFFFFFF&}dengan {\c&H1FD2FF&}dia
+Dialogue: 3,0:00:32.23,0:00:32.50,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Tapi {\c&HFFFFFF&}sebenarnya {\c&HFFFFFF&}dia
+Dialogue: 3,0:00:32.50,0:00:32.92,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&H1FD2FF&}sebenarnya {\c&HFFFFFF&}dia
+Dialogue: 3,0:00:32.92,0:00:33.21,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&HFFFFFF&}sebenarnya {\c&H1FD2FF&}dia
+Dialogue: 3,0:00:33.21,0:00:33.72,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}mungkin {\c&HFFFFFF&}sedang\N{\c&HFFFFFF&}mengalami {\c&HFFFFFF&}penyakit
+Dialogue: 3,0:00:33.72,0:00:34.04,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mungkin {\c&H1FD2FF&}sedang\N{\c&HFFFFFF&}mengalami {\c&HFFFFFF&}penyakit
+Dialogue: 3,0:00:34.04,0:00:34.48,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mungkin {\c&HFFFFFF&}sedang\N{\c&H1FD2FF&}mengalami {\c&HFFFFFF&}penyakit
+Dialogue: 3,0:00:34.48,0:00:34.83,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mungkin {\c&HFFFFFF&}sedang\N{\c&HFFFFFF&}mengalami {\c&H1FD2FF&}penyakit
+Dialogue: 3,0:00:34.83,0:00:35.22,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}mental {\c&HFFFFFF&}yang {\c&HFFFFFF&}serius
+Dialogue: 3,0:00:35.22,0:00:35.40,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mental {\c&H1FD2FF&}yang {\c&HFFFFFF&}serius
+Dialogue: 3,0:00:35.40,0:00:36.07,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mental {\c&HFFFFFF&}yang {\c&H1FD2FF&}serius
+Dialogue: 3,0:00:36.13,0:00:36.48,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Pada {\c&HFFFFFF&}masa {\c&HFFFFFF&}itu {\c&HFFFFFF&}pilihan\N{\c&HFFFFFF&}rawatan {\c&HFFFFFF&}memang
+Dialogue: 3,0:00:36.48,0:00:36.80,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pada {\c&H1FD2FF&}masa {\c&HFFFFFF&}itu {\c&HFFFFFF&}pilihan\N{\c&HFFFFFF&}rawatan {\c&HFFFFFF&}memang
+Dialogue: 3,0:00:36.80,0:00:37.23,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pada {\c&HFFFFFF&}masa {\c&H1FD2FF&}itu {\c&HFFFFFF&}pilihan\N{\c&HFFFFFF&}rawatan {\c&HFFFFFF&}memang
+Dialogue: 3,0:00:37.23,0:00:37.73,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pada {\c&HFFFFFF&}masa {\c&HFFFFFF&}itu {\c&H1FD2FF&}pilihan\N{\c&HFFFFFF&}rawatan {\c&HFFFFFF&}memang
+Dialogue: 3,0:00:37.73,0:00:38.31,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pada {\c&HFFFFFF&}masa {\c&HFFFFFF&}itu {\c&HFFFFFF&}pilihan\N{\c&H1FD2FF&}rawatan {\c&HFFFFFF&}memang
+Dialogue: 3,0:00:38.31,0:00:38.58,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pada {\c&HFFFFFF&}masa {\c&HFFFFFF&}itu {\c&HFFFFFF&}pilihan\N{\c&HFFFFFF&}rawatan {\c&H1FD2FF&}memang
+Dialogue: 3,0:00:38.58,0:00:38.85,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}sangat {\c&HFFFFFF&}terhad
+Dialogue: 3,0:00:38.85,0:00:39.48,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sangat {\c&H1FD2FF&}terhad
+Dialogue: 3,0:00:39.60,0:00:39.87,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Jadi {\c&HFFFFFF&}ke {\c&HFFFFFF&}mana\N{\c&HFFFFFF&}mereka {\c&HFFFFFF&}dihantar?
+Dialogue: 3,0:00:39.87,0:00:39.97,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Jadi {\c&H1FD2FF&}ke {\c&HFFFFFF&}mana\N{\c&HFFFFFF&}mereka {\c&HFFFFFF&}dihantar?
+Dialogue: 3,0:00:39.97,0:00:40.19,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Jadi {\c&HFFFFFF&}ke {\c&H1FD2FF&}mana\N{\c&HFFFFFF&}mereka {\c&HFFFFFF&}dihantar?
+Dialogue: 3,0:00:40.19,0:00:40.52,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Jadi {\c&HFFFFFF&}ke {\c&HFFFFFF&}mana\N{\c&H1FD2FF&}mereka {\c&HFFFFFF&}dihantar?
+Dialogue: 3,0:00:40.52,0:00:41.15,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Jadi {\c&HFFFFFF&}ke {\c&HFFFFFF&}mana\N{\c&HFFFFFF&}mereka {\c&H1FD2FF&}dihantar?
+Dialogue: 3,0:00:41.15,0:00:41.36,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Dan {\c&HFFFFFF&}di {\c&HFFFFFF&}sinilah\N{\c&HFFFFFF&}bermula {\c&HFFFFFF&}satu {\c&HFFFFFF&}sejarah
+Dialogue: 3,0:00:41.36,0:00:41.46,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dan {\c&H1FD2FF&}di {\c&HFFFFFF&}sinilah\N{\c&HFFFFFF&}bermula {\c&HFFFFFF&}satu {\c&HFFFFFF&}sejarah
+Dialogue: 3,0:00:41.46,0:00:41.80,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dan {\c&HFFFFFF&}di {\c&H1FD2FF&}sinilah\N{\c&HFFFFFF&}bermula {\c&HFFFFFF&}satu {\c&HFFFFFF&}sejarah
+Dialogue: 3,0:00:41.80,0:00:42.18,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dan {\c&HFFFFFF&}di {\c&HFFFFFF&}sinilah\N{\c&H1FD2FF&}bermula {\c&HFFFFFF&}satu {\c&HFFFFFF&}sejarah
+Dialogue: 3,0:00:42.18,0:00:42.52,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dan {\c&HFFFFFF&}di {\c&HFFFFFF&}sinilah\N{\c&HFFFFFF&}bermula {\c&H1FD2FF&}satu {\c&HFFFFFF&}sejarah
+Dialogue: 3,0:00:42.52,0:00:43.01,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dan {\c&HFFFFFF&}di {\c&HFFFFFF&}sinilah\N{\c&HFFFFFF&}bermula {\c&HFFFFFF&}satu {\c&H1FD2FF&}sejarah
+Dialogue: 3,0:00:43.01,0:00:43.30,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}sangat {\c&HFFFFFF&}menarik\N{\c&HFFFFFF&}tentang {\c&HFFFFFF&}rawatan
+Dialogue: 3,0:00:43.30,0:00:43.64,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}sangat {\c&HFFFFFF&}menarik\N{\c&HFFFFFF&}tentang {\c&HFFFFFF&}rawatan
+Dialogue: 3,0:00:43.64,0:00:43.96,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}sangat {\c&H1FD2FF&}menarik\N{\c&HFFFFFF&}tentang {\c&HFFFFFF&}rawatan
+Dialogue: 3,0:00:43.96,0:00:44.28,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}sangat {\c&HFFFFFF&}menarik\N{\c&H1FD2FF&}tentang {\c&HFFFFFF&}rawatan
+Dialogue: 3,0:00:44.28,0:00:44.53,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}sangat {\c&HFFFFFF&}menarik\N{\c&HFFFFFF&}tentang {\c&H1FD2FF&}rawatan
+Dialogue: 3,0:00:44.53,0:00:45.02,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}psikiatri\N{\c&HFFFFFF&}dekat {\c&HFFFFFF&}Malaysia
+Dialogue: 3,0:00:45.02,0:00:45.22,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}psikiatri\N{\c&H1FD2FF&}dekat {\c&HFFFFFF&}Malaysia
+Dialogue: 3,0:00:45.22,0:00:45.85,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}psikiatri\N{\c&HFFFFFF&}dekat {\c&H1FD2FF&}Malaysia
+Dialogue: 3,0:00:45.91,0:00:46.28,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Ramai {\c&HFFFFFF&}orang {\c&HFFFFFF&}ingat\N{\c&HFFFFFF&}sejarah {\c&HFFFFFF&}hospital
+Dialogue: 3,0:00:46.28,0:00:46.46,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ramai {\c&H1FD2FF&}orang {\c&HFFFFFF&}ingat\N{\c&HFFFFFF&}sejarah {\c&HFFFFFF&}hospital
+Dialogue: 3,0:00:46.46,0:00:46.98,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ramai {\c&HFFFFFF&}orang {\c&H1FD2FF&}ingat\N{\c&HFFFFFF&}sejarah {\c&HFFFFFF&}hospital
+Dialogue: 3,0:00:46.98,0:00:47.74,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ramai {\c&HFFFFFF&}orang {\c&HFFFFFF&}ingat\N{\c&H1FD2FF&}sejarah {\c&HFFFFFF&}hospital
+Dialogue: 3,0:00:47.74,0:00:48.29,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ramai {\c&HFFFFFF&}orang {\c&HFFFFFF&}ingat\N{\c&HFFFFFF&}sejarah {\c&H1FD2FF&}hospital
+Dialogue: 3,0:00:48.29,0:00:49.00,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}psikiatri {\c&HFFFFFF&}di {\c&HFFFFFF&}Malaysia\N{\c&HFFFFFF&}bermula {\c&HFFFFFF&}dekat
+Dialogue: 3,0:00:49.00,0:00:49.12,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}psikiatri {\c&H1FD2FF&}di {\c&HFFFFFF&}Malaysia\N{\c&HFFFFFF&}bermula {\c&HFFFFFF&}dekat
+Dialogue: 3,0:00:49.12,0:00:49.53,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}psikiatri {\c&HFFFFFF&}di {\c&H1FD2FF&}Malaysia\N{\c&HFFFFFF&}bermula {\c&HFFFFFF&}dekat
+Dialogue: 3,0:00:49.53,0:00:49.95,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}psikiatri {\c&HFFFFFF&}di {\c&HFFFFFF&}Malaysia\N{\c&H1FD2FF&}bermula {\c&HFFFFFF&}dekat
+Dialogue: 3,0:00:49.95,0:00:50.10,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}psikiatri {\c&HFFFFFF&}di {\c&HFFFFFF&}Malaysia\N{\c&HFFFFFF&}bermula {\c&H1FD2FF&}dekat
+Dialogue: 3,0:00:50.10,0:00:50.33,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Tanjung {\c&H41A4D9&}Rambutan
+Dialogue: 3,0:00:50.33,0:00:50.86,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&H41A4D9&}Tanjung {\c&H1FD2FF&}Rambutan
+Dialogue: 3,0:00:50.86,0:00:51.13,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}tapi {\c&HFFFFFF&}sebenarnya\N{\c&HFFFFFF&}sejarah {\c&HFFFFFF&}penjagaan
+Dialogue: 3,0:00:51.13,0:00:51.51,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}tapi {\c&H1FD2FF&}sebenarnya\N{\c&HFFFFFF&}sejarah {\c&HFFFFFF&}penjagaan
+Dialogue: 3,0:00:51.51,0:00:51.95,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}tapi {\c&HFFFFFF&}sebenarnya\N{\c&H1FD2FF&}sejarah {\c&HFFFFFF&}penjagaan
+Dialogue: 3,0:00:51.95,0:00:52.88,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}tapi {\c&HFFFFFF&}sebenarnya\N{\c&HFFFFFF&}sejarah {\c&H1FD2FF&}penjagaan
+Dialogue: 3,0:00:52.88,0:00:53.31,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}pesakit {\c&HFFFFFF&}mental
+Dialogue: 3,0:00:53.31,0:00:53.54,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pesakit {\c&H1FD2FF&}mental
+Dialogue: 3,0:00:53.54,0:00:53.65,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}di {\c&HFFFFFF&}Tanah {\c&HFFFFFF&}Melayu {\c&HFFFFFF&}bermula\N{\c&HFFFFFF&}lebih {\c&HFFFFFF&}awal {\c&HFFFFFF&}lagi
+Dialogue: 3,0:00:53.65,0:00:53.85,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&H1FD2FF&}Tanah {\c&HFFFFFF&}Melayu {\c&HFFFFFF&}bermula\N{\c&HFFFFFF&}lebih {\c&HFFFFFF&}awal {\c&HFFFFFF&}lagi
+Dialogue: 3,0:00:53.85,0:00:54.28,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&HFFFFFF&}Tanah {\c&H1FD2FF&}Melayu {\c&HFFFFFF&}bermula\N{\c&HFFFFFF&}lebih {\c&HFFFFFF&}awal {\c&HFFFFFF&}lagi
+Dialogue: 3,0:00:54.28,0:00:54.94,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&HFFFFFF&}Tanah {\c&HFFFFFF&}Melayu {\c&H1FD2FF&}bermula\N{\c&HFFFFFF&}lebih {\c&HFFFFFF&}awal {\c&HFFFFFF&}lagi
+Dialogue: 3,0:00:54.94,0:00:55.16,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&HFFFFFF&}Tanah {\c&HFFFFFF&}Melayu {\c&HFFFFFF&}bermula\N{\c&H1FD2FF&}lebih {\c&HFFFFFF&}awal {\c&HFFFFFF&}lagi
+Dialogue: 3,0:00:55.16,0:00:55.40,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&HFFFFFF&}Tanah {\c&HFFFFFF&}Melayu {\c&HFFFFFF&}bermula\N{\c&HFFFFFF&}lebih {\c&H1FD2FF&}awal {\c&HFFFFFF&}lagi
+Dialogue: 3,0:00:55.40,0:00:55.91,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&HFFFFFF&}Tanah {\c&HFFFFFF&}Melayu {\c&HFFFFFF&}bermula\N{\c&HFFFFFF&}lebih {\c&HFFFFFF&}awal {\c&H1FD2FF&}lagi
+Dialogue: 3,0:00:56.01,0:00:56.50,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Seawal {\c&HFFFFFF&}abad\N{\c&H41A4D9&}ke-19 {\c&HFFFFFF&}sudah {\c&HFFFFFF&}wujud
+Dialogue: 3,0:00:56.50,0:00:56.90,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Seawal {\c&H1FD2FF&}abad\N{\c&H41A4D9&}ke-19 {\c&HFFFFFF&}sudah {\c&HFFFFFF&}wujud
+Dialogue: 3,0:00:56.90,0:00:57.78,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Seawal {\c&HFFFFFF&}abad\N{\c&H1FD2FF&}ke-19 {\c&HFFFFFF&}sudah {\c&HFFFFFF&}wujud
+Dialogue: 3,0:00:57.78,0:00:58.08,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Seawal {\c&HFFFFFF&}abad\N{\c&H41A4D9&}ke-19 {\c&H1FD2FF&}sudah {\c&HFFFFFF&}wujud
+Dialogue: 3,0:00:58.08,0:00:58.49,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Seawal {\c&HFFFFFF&}abad\N{\c&H41A4D9&}ke-19 {\c&HFFFFFF&}sudah {\c&H1FD2FF&}wujud
+Dialogue: 3,0:00:58.49,0:00:59.37,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}kemudahan {\c&HFFFFFF&}yang\N{\c&HFFFFFF&}menempatkan {\c&HFFFFFF&}individu
+Dialogue: 3,0:00:59.37,0:00:59.59,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kemudahan {\c&H1FD2FF&}yang\N{\c&HFFFFFF&}menempatkan {\c&HFFFFFF&}individu
+Dialogue: 3,0:00:59.59,0:01:00.70,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kemudahan {\c&HFFFFFF&}yang\N{\c&H1FD2FF&}menempatkan {\c&HFFFFFF&}individu
+Dialogue: 3,0:01:00.70,0:01:01.11,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kemudahan {\c&HFFFFFF&}yang\N{\c&HFFFFFF&}menempatkan {\c&H1FD2FF&}individu
+Dialogue: 3,0:01:01.11,0:01:01.24,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}mengalami\N{\c&HFFFFFF&}gangguan {\c&HFFFFFF&}mental
+Dialogue: 3,0:01:01.24,0:01:01.64,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}mengalami\N{\c&HFFFFFF&}gangguan {\c&HFFFFFF&}mental
+Dialogue: 3,0:01:01.64,0:01:01.98,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}mengalami\N{\c&H1FD2FF&}gangguan {\c&HFFFFFF&}mental
+Dialogue: 3,0:01:01.98,0:01:02.45,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}mengalami\N{\c&HFFFFFF&}gangguan {\c&H1FD2FF&}mental
+Dialogue: 3,0:01:02.45,0:01:02.62,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}di {\c&HFFFFFF&}kawasan {\c&HFFFFFF&}seperti\N{\c&H41A4D9&}Pulau {\c&H41A4D9&}Pinang
+Dialogue: 3,0:01:02.62,0:01:03.20,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&H1FD2FF&}kawasan {\c&HFFFFFF&}seperti\N{\c&H41A4D9&}Pulau {\c&H41A4D9&}Pinang
+Dialogue: 3,0:01:03.20,0:01:03.48,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&HFFFFFF&}kawasan {\c&H1FD2FF&}seperti\N{\c&H41A4D9&}Pulau {\c&H41A4D9&}Pinang
+Dialogue: 3,0:01:03.48,0:01:03.68,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&HFFFFFF&}kawasan {\c&HFFFFFF&}seperti\N{\c&H1FD2FF&}Pulau {\c&H41A4D9&}Pinang
+Dialogue: 3,0:01:03.68,0:01:04.05,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&HFFFFFF&}kawasan {\c&HFFFFFF&}seperti\N{\c&H41A4D9&}Pulau {\c&H1FD2FF&}Pinang
+Dialogue: 3,0:01:04.05,0:01:04.20,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dan {\c&HFFFFFF&}juga {\c&H41A4D9&}Taiping
+Dialogue: 3,0:01:04.20,0:01:04.40,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&H1FD2FF&}juga {\c&H41A4D9&}Taiping
+Dialogue: 3,0:01:04.40,0:01:05.11,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}juga {\c&H1FD2FF&}Taiping
+Dialogue: 3,0:01:05.17,0:01:05.54,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Tapi {\c&HFFFFFF&}pada {\c&HFFFFFF&}zaman\N{\c&HFFFFFF&}tu {\c&HFFFFFF&}ilmu {\c&HFFFFFF&}tentang
+Dialogue: 3,0:01:05.54,0:01:05.76,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&H1FD2FF&}pada {\c&HFFFFFF&}zaman\N{\c&HFFFFFF&}tu {\c&HFFFFFF&}ilmu {\c&HFFFFFF&}tentang
+Dialogue: 3,0:01:05.76,0:01:06.16,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&HFFFFFF&}pada {\c&H1FD2FF&}zaman\N{\c&HFFFFFF&}tu {\c&HFFFFFF&}ilmu {\c&HFFFFFF&}tentang
+Dialogue: 3,0:01:06.16,0:01:06.42,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&HFFFFFF&}pada {\c&HFFFFFF&}zaman\N{\c&H1FD2FF&}tu {\c&HFFFFFF&}ilmu {\c&HFFFFFF&}tentang
+Dialogue: 3,0:01:06.42,0:01:06.76,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&HFFFFFF&}pada {\c&HFFFFFF&}zaman\N{\c&HFFFFFF&}tu {\c&H1FD2FF&}ilmu {\c&HFFFFFF&}tentang
+Dialogue: 3,0:01:06.76,0:01:07.11,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&HFFFFFF&}pada {\c&HFFFFFF&}zaman\N{\c&HFFFFFF&}tu {\c&HFFFFFF&}ilmu {\c&H1FD2FF&}tentang
+Dialogue: 3,0:01:07.11,0:01:07.46,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}penyakit {\c&HFFFFFF&}mental {\c&HFFFFFF&}ni\N{\c&HFFFFFF&}masih {\c&HFFFFFF&}lagi {\c&HFFFFFF&}terhad
+Dialogue: 3,0:01:07.46,0:01:07.80,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}penyakit {\c&H1FD2FF&}mental {\c&HFFFFFF&}ni\N{\c&HFFFFFF&}masih {\c&HFFFFFF&}lagi {\c&HFFFFFF&}terhad
+Dialogue: 3,0:01:07.80,0:01:08.02,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}penyakit {\c&HFFFFFF&}mental {\c&H1FD2FF&}ni\N{\c&HFFFFFF&}masih {\c&HFFFFFF&}lagi {\c&HFFFFFF&}terhad
+Dialogue: 3,0:01:08.02,0:01:08.32,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}penyakit {\c&HFFFFFF&}mental {\c&HFFFFFF&}ni\N{\c&H1FD2FF&}masih {\c&HFFFFFF&}lagi {\c&HFFFFFF&}terhad
+Dialogue: 3,0:01:08.32,0:01:08.52,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}penyakit {\c&HFFFFFF&}mental {\c&HFFFFFF&}ni\N{\c&HFFFFFF&}masih {\c&H1FD2FF&}lagi {\c&HFFFFFF&}terhad
+Dialogue: 3,0:01:08.52,0:01:09.13,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}penyakit {\c&HFFFFFF&}mental {\c&HFFFFFF&}ni\N{\c&HFFFFFF&}masih {\c&HFFFFFF&}lagi {\c&H1FD2FF&}terhad
+Dialogue: 3,0:01:09.19,0:01:09.66,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Penyakit {\c&HFFFFFF&}seperti\N{\c&HBEC85C&}skizofrenia
+Dialogue: 3,0:01:09.66,0:01:09.97,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Penyakit {\c&H1FD2FF&}seperti\N{\c&HBEC85C&}skizofrenia
+Dialogue: 3,0:01:09.97,0:01:10.73,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Penyakit {\c&HFFFFFF&}seperti\N{\c&H1FD2FF&}skizofrenia
+Dialogue: 3,0:01:10.73,0:01:11.35,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}bipolar, {\c&HBEC85C&}kemurungan\N{\c&HFFFFFF&}ni {\c&HFFFFFF&}belum {\c&HFFFFFF&}difahami
+Dialogue: 3,0:01:11.35,0:01:11.87,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}bipolar, {\c&H1FD2FF&}kemurungan\N{\c&HFFFFFF&}ni {\c&HFFFFFF&}belum {\c&HFFFFFF&}difahami
+Dialogue: 3,0:01:11.87,0:01:12.11,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}bipolar, {\c&HBEC85C&}kemurungan\N{\c&H1FD2FF&}ni {\c&HFFFFFF&}belum {\c&HFFFFFF&}difahami
+Dialogue: 3,0:01:12.11,0:01:12.71,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}bipolar, {\c&HBEC85C&}kemurungan\N{\c&HFFFFFF&}ni {\c&H1FD2FF&}belum {\c&HFFFFFF&}difahami
+Dialogue: 3,0:01:12.71,0:01:13.06,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}bipolar, {\c&HBEC85C&}kemurungan\N{\c&HFFFFFF&}ni {\c&HFFFFFF&}belum {\c&H1FD2FF&}difahami
+Dialogue: 3,0:01:13.06,0:01:13.77,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}sepenuhnya\N{\c&HFFFFFF&}seperti {\c&HFFFFFF&}sekarang
+Dialogue: 3,0:01:13.77,0:01:14.13,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sepenuhnya\N{\c&H1FD2FF&}seperti {\c&HFFFFFF&}sekarang
+Dialogue: 3,0:01:14.13,0:01:14.82,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sepenuhnya\N{\c&HFFFFFF&}seperti {\c&H1FD2FF&}sekarang
+Dialogue: 3,0:01:14.88,0:01:15.53,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Rawatan {\c&HFFFFFF&}pun {\c&HFFFFFF&}waktu\N{\c&HFFFFFF&}dulu {\c&HFFFFFF&}tertumpu {\c&HFFFFFF&}kepada
+Dialogue: 3,0:01:15.53,0:01:15.77,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Rawatan {\c&H1FD2FF&}pun {\c&HFFFFFF&}waktu\N{\c&HFFFFFF&}dulu {\c&HFFFFFF&}tertumpu {\c&HFFFFFF&}kepada
+Dialogue: 3,0:01:15.77,0:01:16.03,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Rawatan {\c&HFFFFFF&}pun {\c&H1FD2FF&}waktu\N{\c&HFFFFFF&}dulu {\c&HFFFFFF&}tertumpu {\c&HFFFFFF&}kepada
+Dialogue: 3,0:01:16.03,0:01:16.27,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Rawatan {\c&HFFFFFF&}pun {\c&HFFFFFF&}waktu\N{\c&H1FD2FF&}dulu {\c&HFFFFFF&}tertumpu {\c&HFFFFFF&}kepada
+Dialogue: 3,0:01:16.27,0:01:16.75,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Rawatan {\c&HFFFFFF&}pun {\c&HFFFFFF&}waktu\N{\c&HFFFFFF&}dulu {\c&H1FD2FF&}tertumpu {\c&HFFFFFF&}kepada
+Dialogue: 3,0:01:16.75,0:01:17.18,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Rawatan {\c&HFFFFFF&}pun {\c&HFFFFFF&}waktu\N{\c&HFFFFFF&}dulu {\c&HFFFFFF&}tertumpu {\c&H1FD2FF&}kepada
+Dialogue: 3,0:01:17.18,0:01:18.05,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}penjagaan,\N{\c&HFFFFFF&}keselamatan
+Dialogue: 3,0:01:18.05,0:01:18.76,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}penjagaan,\N{\c&H1FD2FF&}keselamatan
+Dialogue: 3,0:01:18.76,0:01:18.95,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dan {\c&HFFFFFF&}juga\N{\c&HFFFFFF&}pengawasan {\c&HFFFFFF&}pesakit
+Dialogue: 3,0:01:18.95,0:01:19.27,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&H1FD2FF&}juga\N{\c&HFFFFFF&}pengawasan {\c&HFFFFFF&}pesakit
+Dialogue: 3,0:01:19.27,0:01:19.83,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}juga\N{\c&H1FD2FF&}pengawasan {\c&HFFFFFF&}pesakit
+Dialogue: 3,0:01:19.83,0:01:20.58,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}juga\N{\c&HFFFFFF&}pengawasan {\c&H1FD2FF&}pesakit
+Dialogue: 3,0:01:20.64,0:01:20.93,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Dalam {\c&HFFFFFF&}sesetengah\N{\c&HFFFFFF&}keadaan
+Dialogue: 3,0:01:20.93,0:01:21.35,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dalam {\c&H1FD2FF&}sesetengah\N{\c&HFFFFFF&}keadaan
+Dialogue: 3,0:01:21.35,0:01:21.70,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dalam {\c&HFFFFFF&}sesetengah\N{\c&H1FD2FF&}keadaan
+Dialogue: 3,0:01:21.70,0:01:22.11,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}pesakit {\c&HFFFFFF&}ditempatkan\N{\c&HFFFFFF&}jauh {\c&HFFFFFF&}daripada
+Dialogue: 3,0:01:22.11,0:01:22.77,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pesakit {\c&H1FD2FF&}ditempatkan\N{\c&HFFFFFF&}jauh {\c&HFFFFFF&}daripada
+Dialogue: 3,0:01:22.77,0:01:23.15,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pesakit {\c&HFFFFFF&}ditempatkan\N{\c&H1FD2FF&}jauh {\c&HFFFFFF&}daripada
+Dialogue: 3,0:01:23.15,0:01:23.40,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pesakit {\c&HFFFFFF&}ditempatkan\N{\c&HFFFFFF&}jauh {\c&H1FD2FF&}daripada
+Dialogue: 3,0:01:23.40,0:01:24.20,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}masyarakat
+Dialogue: 3,0:01:24.27,0:01:25.09,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Bayangkan\N{\c&HFFFFFF&}seseorang {\c&HFFFFFF&}tu
+Dialogue: 3,0:01:25.09,0:01:25.67,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Bayangkan\N{\c&H1FD2FF&}seseorang {\c&HFFFFFF&}tu
+Dialogue: 3,0:01:25.67,0:01:25.83,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Bayangkan\N{\c&HFFFFFF&}seseorang {\c&H1FD2FF&}tu
+Dialogue: 3,0:01:25.83,0:01:26.02,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}mengalami\N{\c&HBEC85C&}halusinasi, {\c&HBEC85C&}dilusi
+Dialogue: 3,0:01:26.02,0:01:26.46,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}mengalami\N{\c&HBEC85C&}halusinasi, {\c&HBEC85C&}dilusi
+Dialogue: 3,0:01:26.46,0:01:27.12,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}mengalami\N{\c&H1FD2FF&}halusinasi, {\c&HBEC85C&}dilusi
+Dialogue: 3,0:01:27.12,0:01:27.63,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}mengalami\N{\c&HBEC85C&}halusinasi, {\c&H1FD2FF&}dilusi
+Dialogue: 3,0:01:27.63,0:01:28.02,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Mungkin {\c&HFFFFFF&}dia {\c&HFFFFFF&}tak\N{\c&HFFFFFF&}faham {\c&HFFFFFF&}pun {\c&HFFFFFF&}apa
+Dialogue: 3,0:01:28.02,0:01:28.12,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Mungkin {\c&H1FD2FF&}dia {\c&HFFFFFF&}tak\N{\c&HFFFFFF&}faham {\c&HFFFFFF&}pun {\c&HFFFFFF&}apa
+Dialogue: 3,0:01:28.12,0:01:28.26,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Mungkin {\c&HFFFFFF&}dia {\c&H1FD2FF&}tak\N{\c&HFFFFFF&}faham {\c&HFFFFFF&}pun {\c&HFFFFFF&}apa
+Dialogue: 3,0:01:28.26,0:01:28.62,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Mungkin {\c&HFFFFFF&}dia {\c&HFFFFFF&}tak\N{\c&H1FD2FF&}faham {\c&HFFFFFF&}pun {\c&HFFFFFF&}apa
+Dialogue: 3,0:01:28.62,0:01:28.84,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Mungkin {\c&HFFFFFF&}dia {\c&HFFFFFF&}tak\N{\c&HFFFFFF&}faham {\c&H1FD2FF&}pun {\c&HFFFFFF&}apa
+Dialogue: 3,0:01:28.84,0:01:29.05,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Mungkin {\c&HFFFFFF&}dia {\c&HFFFFFF&}tak\N{\c&HFFFFFF&}faham {\c&HFFFFFF&}pun {\c&H1FD2FF&}apa
+Dialogue: 3,0:01:29.05,0:01:29.18,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}berlaku\N{\c&HFFFFFF&}pada {\c&HFFFFFF&}diri {\c&HFFFFFF&}dia
+Dialogue: 3,0:01:29.18,0:01:29.50,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}berlaku\N{\c&HFFFFFF&}pada {\c&HFFFFFF&}diri {\c&HFFFFFF&}dia
+Dialogue: 3,0:01:29.50,0:01:29.72,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}berlaku\N{\c&H1FD2FF&}pada {\c&HFFFFFF&}diri {\c&HFFFFFF&}dia
+Dialogue: 3,0:01:29.72,0:01:29.96,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}berlaku\N{\c&HFFFFFF&}pada {\c&H1FD2FF&}diri {\c&HFFFFFF&}dia
+Dialogue: 3,0:01:29.96,0:01:30.43,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}berlaku\N{\c&HFFFFFF&}pada {\c&HFFFFFF&}diri {\c&H1FD2FF&}dia
+Dialogue: 3,0:01:30.47,0:01:30.66,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Dia {\c&HFFFFFF&}takut
+Dialogue: 3,0:01:30.66,0:01:31.35,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dia {\c&H1FD2FF&}takut
+Dialogue: 3,0:01:31.35,0:01:31.72,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Keluarga {\c&HFFFFFF&}pun\N{\c&HFFFFFF&}jadi {\c&HFFFFFF&}takut
+Dialogue: 3,0:01:31.72,0:01:31.82,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Keluarga {\c&H1FD2FF&}pun\N{\c&HFFFFFF&}jadi {\c&HFFFFFF&}takut
+Dialogue: 3,0:01:31.82,0:01:32.00,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Keluarga {\c&HFFFFFF&}pun\N{\c&H1FD2FF&}jadi {\c&HFFFFFF&}takut
+Dialogue: 3,0:01:32.00,0:01:32.63,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Keluarga {\c&HFFFFFF&}pun\N{\c&HFFFFFF&}jadi {\c&H1FD2FF&}takut
+Dialogue: 3,0:01:32.63,0:01:32.96,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Tapi {\c&HFFFFFF&}belum\N{\c&HFFFFFF&}ada {\c&HFFFFFF&}rawatan
+Dialogue: 3,0:01:32.96,0:01:33.40,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&H1FD2FF&}belum\N{\c&HFFFFFF&}ada {\c&HFFFFFF&}rawatan
+Dialogue: 3,0:01:33.40,0:01:33.58,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&HFFFFFF&}belum\N{\c&H1FD2FF&}ada {\c&HFFFFFF&}rawatan
+Dialogue: 3,0:01:33.58,0:01:33.97,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&HFFFFFF&}belum\N{\c&HFFFFFF&}ada {\c&H1FD2FF&}rawatan
+Dialogue: 3,0:01:33.97,0:01:34.38,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}modern {\c&HFFFFFF&}seperti
+Dialogue: 3,0:01:34.38,0:01:34.80,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}modern {\c&HFFFFFF&}seperti
+Dialogue: 3,0:01:34.80,0:01:35.05,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}modern {\c&H1FD2FF&}seperti
+Dialogue: 3,0:01:35.05,0:01:35.28,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}kita {\c&HFFFFFF&}gunakan\N{\c&HFFFFFF&}hari {\c&HFFFFFF&}ini
+Dialogue: 3,0:01:35.28,0:01:35.64,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kita {\c&H1FD2FF&}gunakan\N{\c&HFFFFFF&}hari {\c&HFFFFFF&}ini
+Dialogue: 3,0:01:35.64,0:01:35.84,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kita {\c&HFFFFFF&}gunakan\N{\c&H1FD2FF&}hari {\c&HFFFFFF&}ini
+Dialogue: 3,0:01:35.84,0:01:36.29,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kita {\c&HFFFFFF&}gunakan\N{\c&HFFFFFF&}hari {\c&H1FD2FF&}ini
+Dialogue: 3,0:01:36.35,0:01:36.94,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Kemudian {\c&HFFFFFF&}pada\N{\c&HFFFFFF&}tahun {\c&H41A4D9&}1911
+Dialogue: 3,0:01:36.94,0:01:37.18,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kemudian {\c&H1FD2FF&}pada\N{\c&HFFFFFF&}tahun {\c&H41A4D9&}1911
+Dialogue: 3,0:01:37.18,0:01:37.48,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kemudian {\c&HFFFFFF&}pada\N{\c&H1FD2FF&}tahun {\c&H41A4D9&}1911
+Dialogue: 3,0:01:37.48,0:01:38.51,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kemudian {\c&HFFFFFF&}pada\N{\c&HFFFFFF&}tahun {\c&H1FD2FF&}1911
+Dialogue: 3,0:01:38.51,0:01:38.68,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}di {\c&HFFFFFF&}sebuah {\c&HFFFFFF&}kawasan\N{\c&HFFFFFF&}bernama {\c&H41A4D9&}Tanjung
+Dialogue: 3,0:01:38.68,0:01:38.98,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&H1FD2FF&}sebuah {\c&HFFFFFF&}kawasan\N{\c&HFFFFFF&}bernama {\c&H41A4D9&}Tanjung
+Dialogue: 3,0:01:38.98,0:01:39.56,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&HFFFFFF&}sebuah {\c&H1FD2FF&}kawasan\N{\c&HFFFFFF&}bernama {\c&H41A4D9&}Tanjung
+Dialogue: 3,0:01:39.56,0:01:39.98,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&HFFFFFF&}sebuah {\c&HFFFFFF&}kawasan\N{\c&H1FD2FF&}bernama {\c&H41A4D9&}Tanjung
+Dialogue: 3,0:01:39.98,0:01:40.16,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&HFFFFFF&}sebuah {\c&HFFFFFF&}kawasan\N{\c&HFFFFFF&}bernama {\c&H1FD2FF&}Tanjung
+Dialogue: 3,0:01:40.16,0:01:40.83,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Rambutan {\c&HFFFFFF&}sebuah\N{\c&HFFFFFF&}institusi {\c&HBEC85C&}psikiatri
+Dialogue: 3,0:01:40.83,0:01:41.28,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&H41A4D9&}Rambutan {\c&H1FD2FF&}sebuah\N{\c&HFFFFFF&}institusi {\c&HBEC85C&}psikiatri
+Dialogue: 3,0:01:41.28,0:01:41.91,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&H41A4D9&}Rambutan {\c&HFFFFFF&}sebuah\N{\c&H1FD2FF&}institusi {\c&HBEC85C&}psikiatri
+Dialogue: 3,0:01:41.91,0:01:42.32,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&H41A4D9&}Rambutan {\c&HFFFFFF&}sebuah\N{\c&HFFFFFF&}institusi {\c&H1FD2FF&}psikiatri
+Dialogue: 3,0:01:42.32,0:01:43.25,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dibangunkan {\c&HFFFFFF&}semasa\N{\c&HFFFFFF&}zaman {\c&HFFFFFF&}pemerintahan
+Dialogue: 3,0:01:43.25,0:01:43.63,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dibangunkan {\c&H1FD2FF&}semasa\N{\c&HFFFFFF&}zaman {\c&HFFFFFF&}pemerintahan
+Dialogue: 3,0:01:43.63,0:01:43.89,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dibangunkan {\c&HFFFFFF&}semasa\N{\c&H1FD2FF&}zaman {\c&HFFFFFF&}pemerintahan
+Dialogue: 3,0:01:43.89,0:01:44.26,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dibangunkan {\c&HFFFFFF&}semasa\N{\c&HFFFFFF&}zaman {\c&H1FD2FF&}pemerintahan
+Dialogue: 3,0:01:44.26,0:01:44.90,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}British
+Dialogue: 3,0:01:44.90,0:01:45.29,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Nama {\c&HFFFFFF&}asal {\c&HFFFFFF&}adalah\N{\c&H41A4D9&}Federal {\c&H41A4D9&}Lunatic {\c&H41A4D9&}Asylum
+Dialogue: 3,0:01:45.29,0:01:45.68,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Nama {\c&H1FD2FF&}asal {\c&HFFFFFF&}adalah\N{\c&H41A4D9&}Federal {\c&H41A4D9&}Lunatic {\c&H41A4D9&}Asylum
+Dialogue: 3,0:01:45.68,0:01:46.08,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Nama {\c&HFFFFFF&}asal {\c&H1FD2FF&}adalah\N{\c&H41A4D9&}Federal {\c&H41A4D9&}Lunatic {\c&H41A4D9&}Asylum
+Dialogue: 3,0:01:46.08,0:01:46.58,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Nama {\c&HFFFFFF&}asal {\c&HFFFFFF&}adalah\N{\c&H1FD2FF&}Federal {\c&H41A4D9&}Lunatic {\c&H41A4D9&}Asylum
+Dialogue: 3,0:01:46.58,0:01:47.32,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Nama {\c&HFFFFFF&}asal {\c&HFFFFFF&}adalah\N{\c&H41A4D9&}Federal {\c&H1FD2FF&}Lunatic {\c&H41A4D9&}Asylum
+Dialogue: 3,0:01:47.32,0:01:48.11,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Nama {\c&HFFFFFF&}asal {\c&HFFFFFF&}adalah\N{\c&H41A4D9&}Federal {\c&H41A4D9&}Lunatic {\c&H1FD2FF&}Asylum
+Dialogue: 3,0:01:48.17,0:01:48.64,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Perkataan {\c&HFFFFFF&}lunatik\N{\c&HFFFFFF&}memang {\c&HFFFFFF&}digunakan
+Dialogue: 3,0:01:48.64,0:01:49.30,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Perkataan {\c&H1FD2FF&}lunatik\N{\c&HFFFFFF&}memang {\c&HFFFFFF&}digunakan
+Dialogue: 3,0:01:49.30,0:01:49.66,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Perkataan {\c&HFFFFFF&}lunatik\N{\c&H1FD2FF&}memang {\c&HFFFFFF&}digunakan
+Dialogue: 3,0:01:49.66,0:01:50.15,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Perkataan {\c&HFFFFFF&}lunatik\N{\c&HFFFFFF&}memang {\c&H1FD2FF&}digunakan
+Dialogue: 3,0:01:50.15,0:01:50.46,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}secara {\c&HFFFFFF&}rasmi {\c&HFFFFFF&}pada\N{\c&HFFFFFF&}zaman {\c&HFFFFFF&}tersebut
+Dialogue: 3,0:01:50.46,0:01:50.80,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}secara {\c&H1FD2FF&}rasmi {\c&HFFFFFF&}pada\N{\c&HFFFFFF&}zaman {\c&HFFFFFF&}tersebut
+Dialogue: 3,0:01:50.80,0:01:50.98,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}secara {\c&HFFFFFF&}rasmi {\c&H1FD2FF&}pada\N{\c&HFFFFFF&}zaman {\c&HFFFFFF&}tersebut
+Dialogue: 3,0:01:50.98,0:01:51.22,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}secara {\c&HFFFFFF&}rasmi {\c&HFFFFFF&}pada\N{\c&H1FD2FF&}zaman {\c&HFFFFFF&}tersebut
+Dialogue: 3,0:01:51.22,0:01:51.77,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}secara {\c&HFFFFFF&}rasmi {\c&HFFFFFF&}pada\N{\c&HFFFFFF&}zaman {\c&H1FD2FF&}tersebut
+Dialogue: 3,0:01:51.77,0:01:51.98,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dan {\c&HFFFFFF&}hari {\c&HFFFFFF&}ini\N{\c&HFFFFFF&}perkataan {\c&HFFFFFF&}tersebut
+Dialogue: 3,0:01:51.98,0:01:52.26,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&H1FD2FF&}hari {\c&HFFFFFF&}ini\N{\c&HFFFFFF&}perkataan {\c&HFFFFFF&}tersebut
+Dialogue: 3,0:01:52.26,0:01:52.54,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}hari {\c&H1FD2FF&}ini\N{\c&HFFFFFF&}perkataan {\c&HFFFFFF&}tersebut
+Dialogue: 3,0:01:52.54,0:01:52.98,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}hari {\c&HFFFFFF&}ini\N{\c&H1FD2FF&}perkataan {\c&HFFFFFF&}tersebut
+Dialogue: 3,0:01:52.98,0:01:53.51,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}hari {\c&HFFFFFF&}ini\N{\c&HFFFFFF&}perkataan {\c&H1FD2FF&}tersebut
+Dialogue: 3,0:01:53.51,0:01:54.06,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dianggap {\c&HFFFFFF&}sebagai\N{\c&HFFFFFF&}penghinaan
+Dialogue: 3,0:01:54.06,0:01:54.46,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dianggap {\c&H1FD2FF&}sebagai\N{\c&HFFFFFF&}penghinaan
+Dialogue: 3,0:01:54.46,0:01:55.19,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dianggap {\c&HFFFFFF&}sebagai\N{\c&H1FD2FF&}penghinaan
+Dialogue: 3,0:01:55.19,0:01:55.36,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dan {\c&HFFFFFF&}tidak\N{\c&HFFFFFF&}sesuai {\c&HFFFFFF&}digunakan
+Dialogue: 3,0:01:55.36,0:01:55.58,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&H1FD2FF&}tidak\N{\c&HFFFFFF&}sesuai {\c&HFFFFFF&}digunakan
+Dialogue: 3,0:01:55.58,0:01:56.26,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}tidak\N{\c&H1FD2FF&}sesuai {\c&HFFFFFF&}digunakan
+Dialogue: 3,0:01:56.26,0:01:56.99,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}tidak\N{\c&HFFFFFF&}sesuai {\c&H1FD2FF&}digunakan
+Dialogue: 3,0:01:56.99,0:01:57.20,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}untuk {\c&HFFFFFF&}menggambarkan\N{\c&HFFFFFF&}pesakit {\c&HFFFFFF&}mental
+Dialogue: 3,0:01:57.20,0:01:57.70,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&H1FD2FF&}menggambarkan\N{\c&HFFFFFF&}pesakit {\c&HFFFFFF&}mental
+Dialogue: 3,0:01:57.70,0:01:58.02,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&HFFFFFF&}menggambarkan\N{\c&H1FD2FF&}pesakit {\c&HFFFFFF&}mental
+Dialogue: 3,0:01:58.02,0:01:58.71,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&HFFFFFF&}menggambarkan\N{\c&HFFFFFF&}pesakit {\c&H1FD2FF&}mental
+Dialogue: 3,0:01:58.77,0:01:59.16,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Tapi {\c&HFFFFFF&}pada {\c&HFFFFFF&}waktu {\c&HFFFFFF&}itu\N{\c&HFFFFFF&}istilah {\c&HFFFFFF&}tersebut
+Dialogue: 3,0:01:59.16,0:01:59.32,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&H1FD2FF&}pada {\c&HFFFFFF&}waktu {\c&HFFFFFF&}itu\N{\c&HFFFFFF&}istilah {\c&HFFFFFF&}tersebut
+Dialogue: 3,0:01:59.32,0:01:59.58,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&HFFFFFF&}pada {\c&H1FD2FF&}waktu {\c&HFFFFFF&}itu\N{\c&HFFFFFF&}istilah {\c&HFFFFFF&}tersebut
+Dialogue: 3,0:01:59.58,0:01:59.80,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&HFFFFFF&}pada {\c&HFFFFFF&}waktu {\c&H1FD2FF&}itu\N{\c&HFFFFFF&}istilah {\c&HFFFFFF&}tersebut
+Dialogue: 3,0:01:59.80,0:02:00.28,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&HFFFFFF&}pada {\c&HFFFFFF&}waktu {\c&HFFFFFF&}itu\N{\c&H1FD2FF&}istilah {\c&HFFFFFF&}tersebut
+Dialogue: 3,0:02:00.28,0:02:00.75,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&HFFFFFF&}pada {\c&HFFFFFF&}waktu {\c&HFFFFFF&}itu\N{\c&HFFFFFF&}istilah {\c&H1FD2FF&}tersebut
+Dialogue: 3,0:02:00.75,0:02:01.14,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}masih {\c&HFFFFFF&}digunakan {\c&HFFFFFF&}dalam\N{\c&HFFFFFF&}sistem {\c&HFFFFFF&}perubatan
+Dialogue: 3,0:02:01.14,0:02:01.66,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}masih {\c&H1FD2FF&}digunakan {\c&HFFFFFF&}dalam\N{\c&HFFFFFF&}sistem {\c&HFFFFFF&}perubatan
+Dialogue: 3,0:02:01.66,0:02:01.90,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}masih {\c&HFFFFFF&}digunakan {\c&H1FD2FF&}dalam\N{\c&HFFFFFF&}sistem {\c&HFFFFFF&}perubatan
+Dialogue: 3,0:02:01.90,0:02:02.30,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}masih {\c&HFFFFFF&}digunakan {\c&HFFFFFF&}dalam\N{\c&H1FD2FF&}sistem {\c&HFFFFFF&}perubatan
+Dialogue: 3,0:02:02.30,0:02:02.79,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}masih {\c&HFFFFFF&}digunakan {\c&HFFFFFF&}dalam\N{\c&HFFFFFF&}sistem {\c&H1FD2FF&}perubatan
+Dialogue: 3,0:02:02.79,0:02:02.92,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dan {\c&HFFFFFF&}pentadbiran
+Dialogue: 3,0:02:02.92,0:02:03.73,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&H1FD2FF&}pentadbiran
+Dialogue: 3,0:02:03.79,0:02:04.70,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Menariknya\N{\c&HFFFFFF&}institusi {\c&HFFFFFF&}ini
+Dialogue: 3,0:02:04.70,0:02:05.25,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Menariknya\N{\c&H1FD2FF&}institusi {\c&HFFFFFF&}ini
+Dialogue: 3,0:02:05.25,0:02:05.38,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Menariknya\N{\c&HFFFFFF&}institusi {\c&H1FD2FF&}ini
+Dialogue: 3,0:02:05.38,0:02:05.61,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}pada {\c&HFFFFFF&}peringkat {\c&HFFFFFF&}awal\N{\c&HFFFFFF&}hanyalah {\c&HFFFFFF&}mempunyai
+Dialogue: 3,0:02:05.61,0:02:05.99,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&H1FD2FF&}peringkat {\c&HFFFFFF&}awal\N{\c&HFFFFFF&}hanyalah {\c&HFFFFFF&}mempunyai
+Dialogue: 3,0:02:05.99,0:02:06.27,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&HFFFFFF&}peringkat {\c&H1FD2FF&}awal\N{\c&HFFFFFF&}hanyalah {\c&HFFFFFF&}mempunyai
+Dialogue: 3,0:02:06.27,0:02:06.61,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&HFFFFFF&}peringkat {\c&HFFFFFF&}awal\N{\c&H1FD2FF&}hanyalah {\c&HFFFFFF&}mempunyai
+Dialogue: 3,0:02:06.61,0:02:07.04,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&HFFFFFF&}peringkat {\c&HFFFFFF&}awal\N{\c&HFFFFFF&}hanyalah {\c&H1FD2FF&}mempunyai
+Dialogue: 3,0:02:07.04,0:02:07.39,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}tiga {\c&HFFFFFF&}wad {\c&HFFFFFF&}lelaki
+Dialogue: 3,0:02:07.39,0:02:07.53,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}tiga {\c&H1FD2FF&}wad {\c&HFFFFFF&}lelaki
+Dialogue: 3,0:02:07.53,0:02:07.84,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}tiga {\c&HFFFFFF&}wad {\c&H1FD2FF&}lelaki
+Dialogue: 3,0:02:07.84,0:02:07.99,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dan {\c&HFFFFFF&}satu {\c&HFFFFFF&}wad\N{\c&HFFFFFF&}perempuan
+Dialogue: 3,0:02:07.99,0:02:08.11,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&H1FD2FF&}satu {\c&HFFFFFF&}wad\N{\c&HFFFFFF&}perempuan
+Dialogue: 3,0:02:08.11,0:02:08.23,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}satu {\c&H1FD2FF&}wad\N{\c&HFFFFFF&}perempuan
+Dialogue: 3,0:02:08.23,0:02:08.94,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}satu {\c&HFFFFFF&}wad\N{\c&H1FD2FF&}perempuan
+Dialogue: 3,0:02:09.00,0:02:09.79,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Bayangkan {\c&HFFFFFF&}institusi
+Dialogue: 3,0:02:09.79,0:02:10.34,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Bayangkan {\c&H1FD2FF&}institusi
+Dialogue: 3,0:02:10.34,0:02:10.53,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}bermula {\c&HFFFFFF&}dengan\N{\c&HFFFFFF&}beberapa {\c&HFFFFFF&}wad-wad
+Dialogue: 3,0:02:10.53,0:02:11.33,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}bermula {\c&HFFFFFF&}dengan\N{\c&HFFFFFF&}beberapa {\c&HFFFFFF&}wad-wad
+Dialogue: 3,0:02:11.33,0:02:11.59,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}bermula {\c&H1FD2FF&}dengan\N{\c&HFFFFFF&}beberapa {\c&HFFFFFF&}wad-wad
+Dialogue: 3,0:02:11.59,0:02:12.23,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}bermula {\c&HFFFFFF&}dengan\N{\c&H1FD2FF&}beberapa {\c&HFFFFFF&}wad-wad
+Dialogue: 3,0:02:12.23,0:02:12.64,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}bermula {\c&HFFFFFF&}dengan\N{\c&HFFFFFF&}beberapa {\c&H1FD2FF&}wad-wad
+Dialogue: 3,0:02:12.64,0:02:13.07,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}sahaja {\c&HFFFFFF&}akhirnya\N{\c&HFFFFFF&}menjadi {\c&HFFFFFF&}sebuah
+Dialogue: 3,0:02:13.07,0:02:13.41,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sahaja {\c&H1FD2FF&}akhirnya\N{\c&HFFFFFF&}menjadi {\c&HFFFFFF&}sebuah
+Dialogue: 3,0:02:13.41,0:02:13.81,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sahaja {\c&HFFFFFF&}akhirnya\N{\c&H1FD2FF&}menjadi {\c&HFFFFFF&}sebuah
+Dialogue: 3,0:02:13.81,0:02:14.22,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sahaja {\c&HFFFFFF&}akhirnya\N{\c&HFFFFFF&}menjadi {\c&H1FD2FF&}sebuah
+Dialogue: 3,0:02:14.22,0:02:14.59,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}hospital {\c&HBEC85C&}psikiatri
+Dialogue: 3,0:02:14.59,0:02:15.06,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}hospital {\c&H1FD2FF&}psikiatri
+Dialogue: 3,0:02:15.06,0:02:15.35,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}paling {\c&HFFFFFF&}terkenal\N{\c&HFFFFFF&}dalam {\c&HFFFFFF&}sejarah
+Dialogue: 3,0:02:15.35,0:02:15.73,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}paling {\c&HFFFFFF&}terkenal\N{\c&HFFFFFF&}dalam {\c&HFFFFFF&}sejarah
+Dialogue: 3,0:02:15.73,0:02:16.13,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}paling {\c&H1FD2FF&}terkenal\N{\c&HFFFFFF&}dalam {\c&HFFFFFF&}sejarah
+Dialogue: 3,0:02:16.13,0:02:16.33,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}paling {\c&HFFFFFF&}terkenal\N{\c&H1FD2FF&}dalam {\c&HFFFFFF&}sejarah
+Dialogue: 3,0:02:16.33,0:02:16.60,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}paling {\c&HFFFFFF&}terkenal\N{\c&HFFFFFF&}dalam {\c&H1FD2FF&}sejarah
+Dialogue: 3,0:02:16.60,0:02:17.28,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Malaysia
+Dialogue: 3,0:02:17.34,0:02:17.55,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Pada {\c&HFFFFFF&}tahun {\c&H41A4D9&}1928
+Dialogue: 3,0:02:17.55,0:02:17.79,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pada {\c&H1FD2FF&}tahun {\c&H41A4D9&}1928
+Dialogue: 3,0:02:17.79,0:02:18.56,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pada {\c&HFFFFFF&}tahun {\c&H1FD2FF&}1928
+Dialogue: 3,0:02:18.56,0:02:18.88,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}nama {\c&HFFFFFF&}berubah {\c&HFFFFFF&}menjadi\N{\c&H41A4D9&}Central {\c&H41A4D9&}Mental
+Dialogue: 3,0:02:18.88,0:02:19.24,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}nama {\c&H1FD2FF&}berubah {\c&HFFFFFF&}menjadi\N{\c&H41A4D9&}Central {\c&H41A4D9&}Mental
+Dialogue: 3,0:02:19.24,0:02:19.56,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}nama {\c&HFFFFFF&}berubah {\c&H1FD2FF&}menjadi\N{\c&H41A4D9&}Central {\c&H41A4D9&}Mental
+Dialogue: 3,0:02:19.56,0:02:20.22,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}nama {\c&HFFFFFF&}berubah {\c&HFFFFFF&}menjadi\N{\c&H1FD2FF&}Central {\c&H41A4D9&}Mental
+Dialogue: 3,0:02:20.22,0:02:20.53,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}nama {\c&HFFFFFF&}berubah {\c&HFFFFFF&}menjadi\N{\c&H41A4D9&}Central {\c&H1FD2FF&}Mental
+Dialogue: 3,0:02:20.53,0:02:21.10,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Hospital\N{\c&HFFFFFF&}dan {\c&HFFFFFF&}kemudian
+Dialogue: 3,0:02:21.10,0:02:21.38,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&H41A4D9&}Hospital\N{\c&H1FD2FF&}dan {\c&HFFFFFF&}kemudian
+Dialogue: 3,0:02:21.38,0:02:21.69,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&H41A4D9&}Hospital\N{\c&HFFFFFF&}dan {\c&H1FD2FF&}kemudian
+Dialogue: 3,0:02:21.69,0:02:22.02,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}pada {\c&HFFFFFF&}era {\c&H41A4D9&}1970-an\N{\c&HFFFFFF&}hospital {\c&HFFFFFF&}ini {\c&HFFFFFF&}dikenali
+Dialogue: 3,0:02:22.02,0:02:22.40,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&H1FD2FF&}era {\c&H41A4D9&}1970-an\N{\c&HFFFFFF&}hospital {\c&HFFFFFF&}ini {\c&HFFFFFF&}dikenali
+Dialogue: 3,0:02:22.40,0:02:23.62,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&HFFFFFF&}era {\c&H1FD2FF&}1970-an\N{\c&HFFFFFF&}hospital {\c&HFFFFFF&}ini {\c&HFFFFFF&}dikenali
+Dialogue: 3,0:02:23.62,0:02:24.04,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&HFFFFFF&}era {\c&H41A4D9&}1970-an\N{\c&H1FD2FF&}hospital {\c&HFFFFFF&}ini {\c&HFFFFFF&}dikenali
+Dialogue: 3,0:02:24.04,0:02:24.22,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&HFFFFFF&}era {\c&H41A4D9&}1970-an\N{\c&HFFFFFF&}hospital {\c&H1FD2FF&}ini {\c&HFFFFFF&}dikenali
+Dialogue: 3,0:02:24.22,0:02:24.55,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&HFFFFFF&}era {\c&H41A4D9&}1970-an\N{\c&HFFFFFF&}hospital {\c&HFFFFFF&}ini {\c&H1FD2FF&}dikenali
+Dialogue: 3,0:02:24.55,0:02:24.94,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}sebagai {\c&H41A4D9&}Hospital\N{\c&HFFFFFF&}Bahagia {\c&H41A4D9&}Ulu {\c&H41A4D9&}Kinta
+Dialogue: 3,0:02:24.94,0:02:25.44,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sebagai {\c&H1FD2FF&}Hospital\N{\c&HFFFFFF&}Bahagia {\c&H41A4D9&}Ulu {\c&H41A4D9&}Kinta
+Dialogue: 3,0:02:25.44,0:02:25.78,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sebagai {\c&H41A4D9&}Hospital\N{\c&H1FD2FF&}Bahagia {\c&H41A4D9&}Ulu {\c&H41A4D9&}Kinta
+Dialogue: 3,0:02:25.78,0:02:25.94,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sebagai {\c&H41A4D9&}Hospital\N{\c&HFFFFFF&}Bahagia {\c&H1FD2FF&}Ulu {\c&H41A4D9&}Kinta
+Dialogue: 3,0:02:25.94,0:02:26.41,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sebagai {\c&H41A4D9&}Hospital\N{\c&HFFFFFF&}Bahagia {\c&H41A4D9&}Ulu {\c&H1FD2FF&}Kinta
+Dialogue: 3,0:02:26.41,0:02:26.84,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}nama {\c&HFFFFFF&}yang {\c&HFFFFFF&}mungkin
+Dialogue: 3,0:02:26.84,0:02:26.98,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}nama {\c&H1FD2FF&}yang {\c&HFFFFFF&}mungkin
+Dialogue: 3,0:02:26.98,0:02:27.35,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}nama {\c&HFFFFFF&}yang {\c&H1FD2FF&}mungkin
+Dialogue: 3,0:02:27.35,0:02:27.66,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}ramai {\c&HFFFFFF&}rakyat {\c&HFFFFFF&}Malaysia\N{\c&HFFFFFF&}pernah {\c&HFFFFFF&}dengar
+Dialogue: 3,0:02:27.66,0:02:27.88,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ramai {\c&H1FD2FF&}rakyat {\c&HFFFFFF&}Malaysia\N{\c&HFFFFFF&}pernah {\c&HFFFFFF&}dengar
+Dialogue: 3,0:02:27.88,0:02:28.19,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ramai {\c&HFFFFFF&}rakyat {\c&H1FD2FF&}Malaysia\N{\c&HFFFFFF&}pernah {\c&HFFFFFF&}dengar
+Dialogue: 3,0:02:28.19,0:02:28.34,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ramai {\c&HFFFFFF&}rakyat {\c&HFFFFFF&}Malaysia\N{\c&H1FD2FF&}pernah {\c&HFFFFFF&}dengar
+Dialogue: 3,0:02:28.34,0:02:28.88,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ramai {\c&HFFFFFF&}rakyat {\c&HFFFFFF&}Malaysia\N{\c&HFFFFFF&}pernah {\c&H1FD2FF&}dengar
+Dialogue: 3,0:02:28.94,0:02:29.21,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Tapi {\c&HFFFFFF&}persoalannya\N{\c&HFFFFFF&}macam {\c&HFFFFFF&}mana {\c&HFFFFFF&}kehidupan
+Dialogue: 3,0:02:29.21,0:02:29.98,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&H1FD2FF&}persoalannya\N{\c&HFFFFFF&}macam {\c&HFFFFFF&}mana {\c&HFFFFFF&}kehidupan
+Dialogue: 3,0:02:29.98,0:02:30.19,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&HFFFFFF&}persoalannya\N{\c&H1FD2FF&}macam {\c&HFFFFFF&}mana {\c&HFFFFFF&}kehidupan
+Dialogue: 3,0:02:30.19,0:02:30.37,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&HFFFFFF&}persoalannya\N{\c&HFFFFFF&}macam {\c&H1FD2FF&}mana {\c&HFFFFFF&}kehidupan
+Dialogue: 3,0:02:30.37,0:02:30.78,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&HFFFFFF&}persoalannya\N{\c&HFFFFFF&}macam {\c&HFFFFFF&}mana {\c&H1FD2FF&}kehidupan
+Dialogue: 3,0:02:30.78,0:02:31.26,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}pesakit {\c&HFFFFFF&}dalam\N{\c&HFFFFFF&}hospital {\c&HBEC85C&}psikiatri
+Dialogue: 3,0:02:31.26,0:02:31.46,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pesakit {\c&H1FD2FF&}dalam\N{\c&HFFFFFF&}hospital {\c&HBEC85C&}psikiatri
+Dialogue: 3,0:02:31.46,0:02:31.74,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pesakit {\c&HFFFFFF&}dalam\N{\c&H1FD2FF&}hospital {\c&HBEC85C&}psikiatri
+Dialogue: 3,0:02:31.74,0:02:32.13,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pesakit {\c&HFFFFFF&}dalam\N{\c&HFFFFFF&}hospital {\c&H1FD2FF&}psikiatri
+Dialogue: 3,0:02:32.13,0:02:32.32,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}pada {\c&HFFFFFF&}zaman {\c&HFFFFFF&}dulu?
+Dialogue: 3,0:02:32.32,0:02:32.54,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&H1FD2FF&}zaman {\c&HFFFFFF&}dulu?
+Dialogue: 3,0:02:32.54,0:02:32.93,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&HFFFFFF&}zaman {\c&H1FD2FF&}dulu?
+Dialogue: 3,0:02:32.93,0:02:33.47,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Sekarang {\c&HFFFFFF&}kalau\N{\c&HFFFFFF&}pesakit {\c&HFFFFFF&}mengalami
+Dialogue: 3,0:02:33.47,0:02:34.09,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Sekarang {\c&H1FD2FF&}kalau\N{\c&HFFFFFF&}pesakit {\c&HFFFFFF&}mengalami
+Dialogue: 3,0:02:34.09,0:02:34.39,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Sekarang {\c&HFFFFFF&}kalau\N{\c&H1FD2FF&}pesakit {\c&HFFFFFF&}mengalami
+Dialogue: 3,0:02:34.39,0:02:34.74,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Sekarang {\c&HFFFFFF&}kalau\N{\c&HFFFFFF&}pesakit {\c&H1FD2FF&}mengalami
+Dialogue: 3,0:02:34.74,0:02:35.37,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}skizofrenia {\c&HFFFFFF&}kita
+Dialogue: 3,0:02:35.37,0:02:35.58,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}skizofrenia {\c&H1FD2FF&}kita
+Dialogue: 3,0:02:35.58,0:02:35.79,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}ada\N{\c&HFFFFFF&}ubat {\c&HBEC85C&}antipsikotik
+Dialogue: 3,0:02:35.79,0:02:36.17,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ada\N{\c&H1FD2FF&}ubat {\c&HBEC85C&}antipsikotik
+Dialogue: 3,0:02:36.17,0:02:36.88,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ada\N{\c&HFFFFFF&}ubat {\c&H1FD2FF&}antipsikotik
+Dialogue: 3,0:02:36.88,0:02:37.11,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}kalau {\c&HFFFFFF&}kita\N{\c&HFFFFFF&}mengalami {\c&HBEC85C&}kemurungan
+Dialogue: 3,0:02:37.11,0:02:37.35,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kalau {\c&H1FD2FF&}kita\N{\c&HFFFFFF&}mengalami {\c&HBEC85C&}kemurungan
+Dialogue: 3,0:02:37.35,0:02:37.87,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kalau {\c&HFFFFFF&}kita\N{\c&H1FD2FF&}mengalami {\c&HBEC85C&}kemurungan
+Dialogue: 3,0:02:37.87,0:02:38.52,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kalau {\c&HFFFFFF&}kita\N{\c&HFFFFFF&}mengalami {\c&H1FD2FF&}kemurungan
+Dialogue: 3,0:02:38.52,0:02:38.81,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}kita {\c&HFFFFFF&}ada {\c&HFFFFFF&}ubat\N{\c&HBEC85C&}antidepressant
+Dialogue: 3,0:02:38.81,0:02:39.01,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kita {\c&H1FD2FF&}ada {\c&HFFFFFF&}ubat\N{\c&HBEC85C&}antidepressant
+Dialogue: 3,0:02:39.01,0:02:39.21,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kita {\c&HFFFFFF&}ada {\c&H1FD2FF&}ubat\N{\c&HBEC85C&}antidepressant
+Dialogue: 3,0:02:39.21,0:02:39.90,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kita {\c&HFFFFFF&}ada {\c&HFFFFFF&}ubat\N{\c&H1FD2FF&}antidepressant
+Dialogue: 3,0:02:39.90,0:02:40.09,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}kalau {\c&HFFFFFF&}kita {\c&HFFFFFF&}ada\N{\c&HBEC85C&}bipolar {\c&HFFFFFF&}kita
+Dialogue: 3,0:02:40.09,0:02:40.45,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kalau {\c&H1FD2FF&}kita {\c&HFFFFFF&}ada\N{\c&HBEC85C&}bipolar {\c&HFFFFFF&}kita
+Dialogue: 3,0:02:40.45,0:02:40.61,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kalau {\c&HFFFFFF&}kita {\c&H1FD2FF&}ada\N{\c&HBEC85C&}bipolar {\c&HFFFFFF&}kita
+Dialogue: 3,0:02:40.61,0:02:41.25,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kalau {\c&HFFFFFF&}kita {\c&HFFFFFF&}ada\N{\c&H1FD2FF&}bipolar {\c&HFFFFFF&}kita
+Dialogue: 3,0:02:41.25,0:02:41.58,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kalau {\c&HFFFFFF&}kita {\c&HFFFFFF&}ada\N{\c&HBEC85C&}bipolar {\c&H1FD2FF&}kita
+Dialogue: 3,0:02:41.58,0:02:42.05,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}ada {\c&HFFFFFF&}ubat {\c&HFFFFFF&}mood\N{\c&HFFFFFF&}stabilizer
+Dialogue: 3,0:02:42.05,0:02:42.29,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ada {\c&H1FD2FF&}ubat {\c&HFFFFFF&}mood\N{\c&HFFFFFF&}stabilizer
+Dialogue: 3,0:02:42.29,0:02:42.47,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ada {\c&HFFFFFF&}ubat {\c&H1FD2FF&}mood\N{\c&HFFFFFF&}stabilizer
+Dialogue: 3,0:02:42.47,0:02:43.24,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ada {\c&HFFFFFF&}ubat {\c&HFFFFFF&}mood\N{\c&H1FD2FF&}stabilizer
+Dialogue: 3,0:02:43.24,0:02:43.55,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Tapi {\c&HFFFFFF&}cuba {\c&HFFFFFF&}bayangkan
+Dialogue: 3,0:02:43.55,0:02:43.77,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&H1FD2FF&}cuba {\c&HFFFFFF&}bayangkan
+Dialogue: 3,0:02:43.77,0:02:44.22,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tapi {\c&HFFFFFF&}cuba {\c&H1FD2FF&}bayangkan
+Dialogue: 3,0:02:44.22,0:02:44.49,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}pada {\c&HFFFFFF&}zaman {\c&H41A4D9&}1911
+Dialogue: 3,0:02:44.49,0:02:44.83,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&H1FD2FF&}zaman {\c&H41A4D9&}1911
+Dialogue: 3,0:02:44.83,0:02:45.48,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&HFFFFFF&}zaman {\c&H1FD2FF&}1911
+Dialogue: 3,0:02:45.48,0:02:45.67,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}untuk {\c&HFFFFFF&}buat {\c&HFFFFFF&}ubat {\c&HFFFFFF&}ni\N{\c&HFFFFFF&}semua {\c&HFFFFFF&}tak {\c&HFFFFFF&}ada {\c&HFFFFFF&}pun
+Dialogue: 3,0:02:45.67,0:02:45.81,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&H1FD2FF&}buat {\c&HFFFFFF&}ubat {\c&HFFFFFF&}ni\N{\c&HFFFFFF&}semua {\c&HFFFFFF&}tak {\c&HFFFFFF&}ada {\c&HFFFFFF&}pun
+Dialogue: 3,0:02:45.81,0:02:46.05,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&HFFFFFF&}buat {\c&H1FD2FF&}ubat {\c&HFFFFFF&}ni\N{\c&HFFFFFF&}semua {\c&HFFFFFF&}tak {\c&HFFFFFF&}ada {\c&HFFFFFF&}pun
+Dialogue: 3,0:02:46.05,0:02:46.15,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&HFFFFFF&}buat {\c&HFFFFFF&}ubat {\c&H1FD2FF&}ni\N{\c&HFFFFFF&}semua {\c&HFFFFFF&}tak {\c&HFFFFFF&}ada {\c&HFFFFFF&}pun
+Dialogue: 3,0:02:46.15,0:02:46.33,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&HFFFFFF&}buat {\c&HFFFFFF&}ubat {\c&HFFFFFF&}ni\N{\c&H1FD2FF&}semua {\c&HFFFFFF&}tak {\c&HFFFFFF&}ada {\c&HFFFFFF&}pun
+Dialogue: 3,0:02:46.33,0:02:46.45,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&HFFFFFF&}buat {\c&HFFFFFF&}ubat {\c&HFFFFFF&}ni\N{\c&HFFFFFF&}semua {\c&H1FD2FF&}tak {\c&HFFFFFF&}ada {\c&HFFFFFF&}pun
+Dialogue: 3,0:02:46.45,0:02:46.73,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&HFFFFFF&}buat {\c&HFFFFFF&}ubat {\c&HFFFFFF&}ni\N{\c&HFFFFFF&}semua {\c&HFFFFFF&}tak {\c&H1FD2FF&}ada {\c&HFFFFFF&}pun
+Dialogue: 3,0:02:46.73,0:02:47.12,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&HFFFFFF&}buat {\c&HFFFFFF&}ubat {\c&HFFFFFF&}ni\N{\c&HFFFFFF&}semua {\c&HFFFFFF&}tak {\c&HFFFFFF&}ada {\c&H1FD2FF&}pun
+Dialogue: 3,0:02:47.12,0:02:47.31,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dan {\c&HFFFFFF&}rawatan {\c&HFFFFFF&}ketika\N{\c&HFFFFFF&}tu {\c&HFFFFFF&}sangat-sangat
+Dialogue: 3,0:02:47.31,0:02:47.81,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&H1FD2FF&}rawatan {\c&HFFFFFF&}ketika\N{\c&HFFFFFF&}tu {\c&HFFFFFF&}sangat-sangat
+Dialogue: 3,0:02:47.81,0:02:48.27,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}rawatan {\c&H1FD2FF&}ketika\N{\c&HFFFFFF&}tu {\c&HFFFFFF&}sangat-sangat
+Dialogue: 3,0:02:48.27,0:02:48.63,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}rawatan {\c&HFFFFFF&}ketika\N{\c&H1FD2FF&}tu {\c&HFFFFFF&}sangat-sangat
+Dialogue: 3,0:02:48.63,0:02:49.08,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}rawatan {\c&HFFFFFF&}ketika\N{\c&HFFFFFF&}tu {\c&H1FD2FF&}sangat-sangat
+Dialogue: 3,0:02:49.08,0:02:49.68,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}berbeza
+Dialogue: 3,0:02:49.68,0:02:49.87,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Di {\c&HFFFFFF&}seluruh {\c&HFFFFFF&}dunia
+Dialogue: 3,0:02:49.87,0:02:50.61,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Di {\c&H1FD2FF&}seluruh {\c&HFFFFFF&}dunia
+Dialogue: 3,0:02:50.61,0:02:51.20,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Di {\c&HFFFFFF&}seluruh {\c&H1FD2FF&}dunia
+Dialogue: 3,0:02:51.20,0:02:51.59,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}hospital {\c&HBEC85C&}psikiatri
+Dialogue: 3,0:02:51.59,0:02:52.00,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}hospital {\c&H1FD2FF&}psikiatri
+Dialogue: 3,0:02:52.00,0:02:52.23,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}pada {\c&HFFFFFF&}zaman {\c&HFFFFFF&}tersebut\N{\c&HFFFFFF&}banyak {\c&HFFFFFF&}menggunakan
+Dialogue: 3,0:02:52.23,0:02:52.61,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&H1FD2FF&}zaman {\c&HFFFFFF&}tersebut\N{\c&HFFFFFF&}banyak {\c&HFFFFFF&}menggunakan
+Dialogue: 3,0:02:52.61,0:02:53.31,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&HFFFFFF&}zaman {\c&H1FD2FF&}tersebut\N{\c&HFFFFFF&}banyak {\c&HFFFFFF&}menggunakan
+Dialogue: 3,0:02:53.31,0:02:53.65,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&HFFFFFF&}zaman {\c&HFFFFFF&}tersebut\N{\c&H1FD2FF&}banyak {\c&HFFFFFF&}menggunakan
+Dialogue: 3,0:02:53.65,0:02:54.04,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&HFFFFFF&}zaman {\c&HFFFFFF&}tersebut\N{\c&HFFFFFF&}banyak {\c&H1FD2FF&}menggunakan
+Dialogue: 3,0:02:54.04,0:02:54.85,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}pendekatan\N{\c&HFFFFFF&}berasaskan {\c&HFFFFFF&}institusi
+Dialogue: 3,0:02:54.85,0:02:55.75,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pendekatan\N{\c&H1FD2FF&}berasaskan {\c&HFFFFFF&}institusi
+Dialogue: 3,0:02:55.75,0:02:56.64,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pendekatan\N{\c&HFFFFFF&}berasaskan {\c&H1FD2FF&}institusi
+Dialogue: 3,0:02:56.70,0:02:57.21,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Pesakit {\c&HFFFFFF&}mungkin\N{\c&HFFFFFF&}tinggal {\c&HFFFFFF&}untuk {\c&HFFFFFF&}tempoh
+Dialogue: 3,0:02:57.21,0:02:57.53,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pesakit {\c&H1FD2FF&}mungkin\N{\c&HFFFFFF&}tinggal {\c&HFFFFFF&}untuk {\c&HFFFFFF&}tempoh
+Dialogue: 3,0:02:57.53,0:02:58.13,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pesakit {\c&HFFFFFF&}mungkin\N{\c&H1FD2FF&}tinggal {\c&HFFFFFF&}untuk {\c&HFFFFFF&}tempoh
+Dialogue: 3,0:02:58.13,0:02:58.45,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pesakit {\c&HFFFFFF&}mungkin\N{\c&HFFFFFF&}tinggal {\c&H1FD2FF&}untuk {\c&HFFFFFF&}tempoh
+Dialogue: 3,0:02:58.45,0:02:59.20,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pesakit {\c&HFFFFFF&}mungkin\N{\c&HFFFFFF&}tinggal {\c&HFFFFFF&}untuk {\c&H1FD2FF&}tempoh
+Dialogue: 3,0:02:59.20,0:02:59.55,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}masa {\c&HFFFFFF&}yang {\c&HFFFFFF&}panjang
+Dialogue: 3,0:02:59.55,0:02:59.67,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}masa {\c&H1FD2FF&}yang {\c&HFFFFFF&}panjang
+Dialogue: 3,0:02:59.67,0:03:00.16,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}masa {\c&HFFFFFF&}yang {\c&H1FD2FF&}panjang
+Dialogue: 3,0:03:00.16,0:03:00.33,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Ada {\c&HFFFFFF&}yang\N{\c&HFFFFFF&}memerlukan {\c&HBEC85C&}bantuan
+Dialogue: 3,0:03:00.33,0:03:00.43,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&H1FD2FF&}yang\N{\c&HFFFFFF&}memerlukan {\c&HBEC85C&}bantuan
+Dialogue: 3,0:03:00.43,0:03:00.83,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&HFFFFFF&}yang\N{\c&H1FD2FF&}memerlukan {\c&HBEC85C&}bantuan
+Dialogue: 3,0:03:00.83,0:03:01.24,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&HFFFFFF&}yang\N{\c&HFFFFFF&}memerlukan {\c&H1FD2FF&}bantuan
+Dialogue: 3,0:03:01.24,0:03:01.47,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}untuk {\c&HFFFFFF&}makan, {\c&HFFFFFF&}mandi
+Dialogue: 3,0:03:01.47,0:03:01.99,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&H1FD2FF&}makan, {\c&HFFFFFF&}mandi
+Dialogue: 3,0:03:01.99,0:03:02.60,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&HFFFFFF&}makan, {\c&H1FD2FF&}mandi
+Dialogue: 3,0:03:02.60,0:03:03.15,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}menguruskan\N{\c&HFFFFFF&}kehidupan {\c&HFFFFFF&}harian
+Dialogue: 3,0:03:03.15,0:03:03.51,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}menguruskan\N{\c&H1FD2FF&}kehidupan {\c&HFFFFFF&}harian
+Dialogue: 3,0:03:03.51,0:03:04.10,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}menguruskan\N{\c&HFFFFFF&}kehidupan {\c&H1FD2FF&}harian
+Dialogue: 3,0:03:04.10,0:03:04.59,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}aktiviti {\c&HFFFFFF&}rutin
+Dialogue: 3,0:03:04.59,0:03:05.08,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}aktiviti {\c&H1FD2FF&}rutin
+Dialogue: 3,0:03:05.08,0:03:05.49,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dan {\c&HFFFFFF&}pekerjaan {\c&HFFFFFF&}tertentu\N{\c&HFFFFFF&}juga {\c&HFFFFFF&}digunakan
+Dialogue: 3,0:03:05.49,0:03:06.15,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&H1FD2FF&}pekerjaan {\c&HFFFFFF&}tertentu\N{\c&HFFFFFF&}juga {\c&HFFFFFF&}digunakan
+Dialogue: 3,0:03:06.15,0:03:06.71,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}pekerjaan {\c&H1FD2FF&}tertentu\N{\c&HFFFFFF&}juga {\c&HFFFFFF&}digunakan
+Dialogue: 3,0:03:06.71,0:03:07.17,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}pekerjaan {\c&HFFFFFF&}tertentu\N{\c&H1FD2FF&}juga {\c&HFFFFFF&}digunakan
+Dialogue: 3,0:03:07.17,0:03:07.66,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}pekerjaan {\c&HFFFFFF&}tertentu\N{\c&HFFFFFF&}juga {\c&H1FD2FF&}digunakan
+Dialogue: 3,0:03:07.66,0:03:07.95,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dalam {\c&HFFFFFF&}setengah\N{\c&HFFFFFF&}institusi
+Dialogue: 3,0:03:07.95,0:03:08.43,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dalam {\c&H1FD2FF&}setengah\N{\c&HFFFFFF&}institusi
+Dialogue: 3,0:03:08.43,0:03:09.00,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dalam {\c&HFFFFFF&}setengah\N{\c&H1FD2FF&}institusi
+Dialogue: 3,0:03:09.00,0:03:09.71,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}sebagai {\c&HFFFFFF&}sebahagian\N{\c&HFFFFFF&}daripada {\c&HFFFFFF&}perjagaan
+Dialogue: 3,0:03:09.71,0:03:10.11,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sebagai {\c&H1FD2FF&}sebahagian\N{\c&HFFFFFF&}daripada {\c&HFFFFFF&}perjagaan
+Dialogue: 3,0:03:10.11,0:03:10.35,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sebagai {\c&HFFFFFF&}sebahagian\N{\c&H1FD2FF&}daripada {\c&HFFFFFF&}perjagaan
+Dialogue: 3,0:03:10.35,0:03:11.08,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sebagai {\c&HFFFFFF&}sebahagian\N{\c&HFFFFFF&}daripada {\c&H1FD2FF&}perjagaan
+Dialogue: 3,0:03:11.08,0:03:11.55,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Namun {\c&HFFFFFF&}pendekatan\N{\c&HBEC85C&}psikiatri
+Dialogue: 3,0:03:11.55,0:03:12.33,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Namun {\c&H1FD2FF&}pendekatan\N{\c&HBEC85C&}psikiatri
+Dialogue: 3,0:03:12.33,0:03:12.80,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Namun {\c&HFFFFFF&}pendekatan\N{\c&H1FD2FF&}psikiatri
+Dialogue: 3,0:03:12.80,0:03:12.99,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}pada {\c&HFFFFFF&}zaman {\c&HFFFFFF&}dulu\N{\c&HFFFFFF&}bukannya {\c&HFFFFFF&}semuanya
+Dialogue: 3,0:03:12.99,0:03:13.25,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&H1FD2FF&}zaman {\c&HFFFFFF&}dulu\N{\c&HFFFFFF&}bukannya {\c&HFFFFFF&}semuanya
+Dialogue: 3,0:03:13.25,0:03:13.67,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&HFFFFFF&}zaman {\c&H1FD2FF&}dulu\N{\c&HFFFFFF&}bukannya {\c&HFFFFFF&}semuanya
+Dialogue: 3,0:03:13.67,0:03:14.07,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&HFFFFFF&}zaman {\c&HFFFFFF&}dulu\N{\c&H1FD2FF&}bukannya {\c&HFFFFFF&}semuanya
+Dialogue: 3,0:03:14.07,0:03:14.42,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pada {\c&HFFFFFF&}zaman {\c&HFFFFFF&}dulu\N{\c&HFFFFFF&}bukannya {\c&H1FD2FF&}semuanya
+Dialogue: 3,0:03:14.42,0:03:15.02,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}sempurna
+Dialogue: 3,0:03:15.02,0:03:15.23,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Ada {\c&HFFFFFF&}kaedah\N{\c&HFFFFFF&}rawatan {\c&HFFFFFF&}lama
+Dialogue: 3,0:03:15.23,0:03:15.88,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&H1FD2FF&}kaedah\N{\c&HFFFFFF&}rawatan {\c&HFFFFFF&}lama
+Dialogue: 3,0:03:15.88,0:03:16.19,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&HFFFFFF&}kaedah\N{\c&H1FD2FF&}rawatan {\c&HFFFFFF&}lama
+Dialogue: 3,0:03:16.19,0:03:16.65,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&HFFFFFF&}kaedah\N{\c&HFFFFFF&}rawatan {\c&H1FD2FF&}lama
+Dialogue: 3,0:03:16.65,0:03:17.01,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}kemudiannya\N{\c&HFFFFFF&}ditinggalkan {\c&HFFFFFF&}sebab
+Dialogue: 3,0:03:17.01,0:03:17.51,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}kemudiannya\N{\c&HFFFFFF&}ditinggalkan {\c&HFFFFFF&}sebab
+Dialogue: 3,0:03:17.51,0:03:18.01,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}kemudiannya\N{\c&H1FD2FF&}ditinggalkan {\c&HFFFFFF&}sebab
+Dialogue: 3,0:03:18.01,0:03:18.20,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}kemudiannya\N{\c&HFFFFFF&}ditinggalkan {\c&H1FD2FF&}sebab
+Dialogue: 3,0:03:18.20,0:03:18.56,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}bukti {\c&HFFFFFF&}keberkesanan
+Dialogue: 3,0:03:18.56,0:03:19.20,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}bukti {\c&H1FD2FF&}keberkesanan
+Dialogue: 3,0:03:19.20,0:03:19.50,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}lemah {\c&HFFFFFF&}ataupun\N{\c&HFFFFFF&}risiko {\c&HFFFFFF&}yang {\c&HFFFFFF&}tinggi
+Dialogue: 3,0:03:19.50,0:03:20.00,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}lemah {\c&HFFFFFF&}ataupun\N{\c&HFFFFFF&}risiko {\c&HFFFFFF&}yang {\c&HFFFFFF&}tinggi
+Dialogue: 3,0:03:20.00,0:03:20.29,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}lemah {\c&H1FD2FF&}ataupun\N{\c&HFFFFFF&}risiko {\c&HFFFFFF&}yang {\c&HFFFFFF&}tinggi
+Dialogue: 3,0:03:20.29,0:03:20.63,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}lemah {\c&HFFFFFF&}ataupun\N{\c&H1FD2FF&}risiko {\c&HFFFFFF&}yang {\c&HFFFFFF&}tinggi
+Dialogue: 3,0:03:20.63,0:03:20.73,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}lemah {\c&HFFFFFF&}ataupun\N{\c&HFFFFFF&}risiko {\c&H1FD2FF&}yang {\c&HFFFFFF&}tinggi
+Dialogue: 3,0:03:20.73,0:03:21.33,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}lemah {\c&HFFFFFF&}ataupun\N{\c&HFFFFFF&}risiko {\c&HFFFFFF&}yang {\c&H1FD2FF&}tinggi
+Dialogue: 3,0:03:21.38,0:03:21.56,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Dan {\c&HFFFFFF&}penting {\c&HFFFFFF&}untuk
+Dialogue: 3,0:03:21.56,0:03:21.90,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dan {\c&H1FD2FF&}penting {\c&HFFFFFF&}untuk
+Dialogue: 3,0:03:21.90,0:03:22.05,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dan {\c&HFFFFFF&}penting {\c&H1FD2FF&}untuk
+Dialogue: 3,0:03:22.05,0:03:22.26,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}kita {\c&HFFFFFF&}faham {\c&HFFFFFF&}amalan\N{\c&HFFFFFF&}rawatan {\c&HFFFFFF&}berbeza
+Dialogue: 3,0:03:22.26,0:03:22.66,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kita {\c&H1FD2FF&}faham {\c&HFFFFFF&}amalan\N{\c&HFFFFFF&}rawatan {\c&HFFFFFF&}berbeza
+Dialogue: 3,0:03:22.66,0:03:22.94,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kita {\c&HFFFFFF&}faham {\c&H1FD2FF&}amalan\N{\c&HFFFFFF&}rawatan {\c&HFFFFFF&}berbeza
+Dialogue: 3,0:03:22.94,0:03:23.32,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kita {\c&HFFFFFF&}faham {\c&HFFFFFF&}amalan\N{\c&H1FD2FF&}rawatan {\c&HFFFFFF&}berbeza
+Dialogue: 3,0:03:23.32,0:03:23.79,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kita {\c&HFFFFFF&}faham {\c&HFFFFFF&}amalan\N{\c&HFFFFFF&}rawatan {\c&H1FD2FF&}berbeza
+Dialogue: 3,0:03:23.79,0:03:24.16,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}mengikut {\c&HFFFFFF&}hospital\N{\c&HFFFFFF&}dan {\c&HFFFFFF&}zaman
+Dialogue: 3,0:03:24.16,0:03:24.50,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mengikut {\c&H1FD2FF&}hospital\N{\c&HFFFFFF&}dan {\c&HFFFFFF&}zaman
+Dialogue: 3,0:03:24.50,0:03:24.62,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mengikut {\c&HFFFFFF&}hospital\N{\c&H1FD2FF&}dan {\c&HFFFFFF&}zaman
+Dialogue: 3,0:03:24.62,0:03:24.85,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mengikut {\c&HFFFFFF&}hospital\N{\c&HFFFFFF&}dan {\c&H1FD2FF&}zaman
+Dialogue: 3,0:03:24.85,0:03:25.04,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Kita {\c&HFFFFFF&}tak {\c&HFFFFFF&}boleh\N{\c&HFFFFFF&}anggap {\c&HFFFFFF&}semua {\c&HFFFFFF&}pesakit
+Dialogue: 3,0:03:25.04,0:03:25.14,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kita {\c&H1FD2FF&}tak {\c&HFFFFFF&}boleh\N{\c&HFFFFFF&}anggap {\c&HFFFFFF&}semua {\c&HFFFFFF&}pesakit
+Dialogue: 3,0:03:25.14,0:03:25.36,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kita {\c&HFFFFFF&}tak {\c&H1FD2FF&}boleh\N{\c&HFFFFFF&}anggap {\c&HFFFFFF&}semua {\c&HFFFFFF&}pesakit
+Dialogue: 3,0:03:25.36,0:03:25.72,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kita {\c&HFFFFFF&}tak {\c&HFFFFFF&}boleh\N{\c&H1FD2FF&}anggap {\c&HFFFFFF&}semua {\c&HFFFFFF&}pesakit
+Dialogue: 3,0:03:25.72,0:03:25.94,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kita {\c&HFFFFFF&}tak {\c&HFFFFFF&}boleh\N{\c&HFFFFFF&}anggap {\c&H1FD2FF&}semua {\c&HFFFFFF&}pesakit
+Dialogue: 3,0:03:25.94,0:03:26.31,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kita {\c&HFFFFFF&}tak {\c&HFFFFFF&}boleh\N{\c&HFFFFFF&}anggap {\c&HFFFFFF&}semua {\c&H1FD2FF&}pesakit
+Dialogue: 3,0:03:26.31,0:03:26.52,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}ini {\c&HFFFFFF&}mengalami\N{\c&HFFFFFF&}perkara {\c&HFFFFFF&}yang {\c&HFFFFFF&}sama
+Dialogue: 3,0:03:26.52,0:03:26.88,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ini {\c&H1FD2FF&}mengalami\N{\c&HFFFFFF&}perkara {\c&HFFFFFF&}yang {\c&HFFFFFF&}sama
+Dialogue: 3,0:03:26.88,0:03:27.12,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ini {\c&HFFFFFF&}mengalami\N{\c&H1FD2FF&}perkara {\c&HFFFFFF&}yang {\c&HFFFFFF&}sama
+Dialogue: 3,0:03:27.12,0:03:27.24,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ini {\c&HFFFFFF&}mengalami\N{\c&HFFFFFF&}perkara {\c&H1FD2FF&}yang {\c&HFFFFFF&}sama
+Dialogue: 3,0:03:27.24,0:03:27.81,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ini {\c&HFFFFFF&}mengalami\N{\c&HFFFFFF&}perkara {\c&HFFFFFF&}yang {\c&H1FD2FF&}sama
+Dialogue: 3,0:03:27.87,0:03:28.02,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Dan {\c&HFFFFFF&}satu {\c&HFFFFFF&}perkara\N{\c&HFFFFFF&}yang {\c&HFFFFFF&}penting
+Dialogue: 3,0:03:28.02,0:03:28.20,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dan {\c&H1FD2FF&}satu {\c&HFFFFFF&}perkara\N{\c&HFFFFFF&}yang {\c&HFFFFFF&}penting
+Dialogue: 3,0:03:28.20,0:03:28.58,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dan {\c&HFFFFFF&}satu {\c&H1FD2FF&}perkara\N{\c&HFFFFFF&}yang {\c&HFFFFFF&}penting
+Dialogue: 3,0:03:28.58,0:03:28.72,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dan {\c&HFFFFFF&}satu {\c&HFFFFFF&}perkara\N{\c&H1FD2FF&}yang {\c&HFFFFFF&}penting
+Dialogue: 3,0:03:28.72,0:03:29.43,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dan {\c&HFFFFFF&}satu {\c&HFFFFFF&}perkara\N{\c&HFFFFFF&}yang {\c&H1FD2FF&}penting
+Dialogue: 3,0:03:29.43,0:03:29.72,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}rawatan {\c&HBEC85C&}psikiatri\N{\c&HFFFFFF&}waktu {\c&HFFFFFF&}itu {\c&HFFFFFF&}jauh
+Dialogue: 3,0:03:29.72,0:03:30.36,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}rawatan {\c&H1FD2FF&}psikiatri\N{\c&HFFFFFF&}waktu {\c&HFFFFFF&}itu {\c&HFFFFFF&}jauh
+Dialogue: 3,0:03:30.36,0:03:30.64,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}rawatan {\c&HBEC85C&}psikiatri\N{\c&H1FD2FF&}waktu {\c&HFFFFFF&}itu {\c&HFFFFFF&}jauh
+Dialogue: 3,0:03:30.64,0:03:30.96,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}rawatan {\c&HBEC85C&}psikiatri\N{\c&HFFFFFF&}waktu {\c&H1FD2FF&}itu {\c&HFFFFFF&}jauh
+Dialogue: 3,0:03:30.96,0:03:31.29,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}rawatan {\c&HBEC85C&}psikiatri\N{\c&HFFFFFF&}waktu {\c&HFFFFFF&}itu {\c&H1FD2FF&}jauh
+Dialogue: 3,0:03:31.29,0:03:31.74,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}daripada {\c&HFFFFFF&}apa {\c&HFFFFFF&}yang\N{\c&HFFFFFF&}kita {\c&HFFFFFF&}kenal {\c&HFFFFFF&}hari {\c&HFFFFFF&}ini
+Dialogue: 3,0:03:31.74,0:03:32.02,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}daripada {\c&H1FD2FF&}apa {\c&HFFFFFF&}yang\N{\c&HFFFFFF&}kita {\c&HFFFFFF&}kenal {\c&HFFFFFF&}hari {\c&HFFFFFF&}ini
+Dialogue: 3,0:03:32.02,0:03:32.16,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}daripada {\c&HFFFFFF&}apa {\c&H1FD2FF&}yang\N{\c&HFFFFFF&}kita {\c&HFFFFFF&}kenal {\c&HFFFFFF&}hari {\c&HFFFFFF&}ini
+Dialogue: 3,0:03:32.16,0:03:32.36,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}daripada {\c&HFFFFFF&}apa {\c&HFFFFFF&}yang\N{\c&H1FD2FF&}kita {\c&HFFFFFF&}kenal {\c&HFFFFFF&}hari {\c&HFFFFFF&}ini
+Dialogue: 3,0:03:32.36,0:03:32.68,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}daripada {\c&HFFFFFF&}apa {\c&HFFFFFF&}yang\N{\c&HFFFFFF&}kita {\c&H1FD2FF&}kenal {\c&HFFFFFF&}hari {\c&HFFFFFF&}ini
+Dialogue: 3,0:03:32.68,0:03:32.86,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}daripada {\c&HFFFFFF&}apa {\c&HFFFFFF&}yang\N{\c&HFFFFFF&}kita {\c&HFFFFFF&}kenal {\c&H1FD2FF&}hari {\c&HFFFFFF&}ini
+Dialogue: 3,0:03:32.86,0:03:33.31,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}daripada {\c&HFFFFFF&}apa {\c&HFFFFFF&}yang\N{\c&HFFFFFF&}kita {\c&HFFFFFF&}kenal {\c&HFFFFFF&}hari {\c&H1FD2FF&}ini
+Dialogue: 3,0:03:33.37,0:03:33.82,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Mulalah {\c&HFFFFFF&}satu\N{\c&HFFFFFF&}perubahan {\c&HFFFFFF&}besar
+Dialogue: 3,0:03:33.82,0:03:34.12,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Mulalah {\c&H1FD2FF&}satu\N{\c&HFFFFFF&}perubahan {\c&HFFFFFF&}besar
+Dialogue: 3,0:03:34.12,0:03:34.59,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Mulalah {\c&HFFFFFF&}satu\N{\c&H1FD2FF&}perubahan {\c&HFFFFFF&}besar
+Dialogue: 3,0:03:34.59,0:03:35.09,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Mulalah {\c&HFFFFFF&}satu\N{\c&HFFFFFF&}perubahan {\c&H1FD2FF&}besar
+Dialogue: 3,0:03:35.09,0:03:35.25,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}berlaku {\c&HFFFFFF&}dalam\N{\c&HFFFFFF&}sejarah {\c&HFFFFFF&}perubatan
+Dialogue: 3,0:03:35.25,0:03:35.66,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}berlaku {\c&HFFFFFF&}dalam\N{\c&HFFFFFF&}sejarah {\c&HFFFFFF&}perubatan
+Dialogue: 3,0:03:35.66,0:03:35.87,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}berlaku {\c&H1FD2FF&}dalam\N{\c&HFFFFFF&}sejarah {\c&HFFFFFF&}perubatan
+Dialogue: 3,0:03:35.87,0:03:36.31,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}berlaku {\c&HFFFFFF&}dalam\N{\c&H1FD2FF&}sejarah {\c&HFFFFFF&}perubatan
+Dialogue: 3,0:03:36.31,0:03:36.68,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}berlaku {\c&HFFFFFF&}dalam\N{\c&HFFFFFF&}sejarah {\c&H1FD2FF&}perubatan
+Dialogue: 3,0:03:36.68,0:03:37.08,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dunia
+Dialogue: 3,0:03:37.08,0:03:37.45,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Sekitar {\c&HFFFFFF&}tahun\N{\c&H41A4D9&}1950-an
+Dialogue: 3,0:03:37.45,0:03:37.79,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Sekitar {\c&H1FD2FF&}tahun\N{\c&H41A4D9&}1950-an
+Dialogue: 3,0:03:37.79,0:03:38.96,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Sekitar {\c&HFFFFFF&}tahun\N{\c&H1FD2FF&}1950-an
+Dialogue: 3,0:03:38.96,0:03:39.27,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}ubat {\c&HBEC85C&}antipsikotik\N{\c&HFFFFFF&}seperti
+Dialogue: 3,0:03:39.27,0:03:39.97,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ubat {\c&H1FD2FF&}antipsikotik\N{\c&HFFFFFF&}seperti
+Dialogue: 3,0:03:39.97,0:03:40.44,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ubat {\c&HBEC85C&}antipsikotik\N{\c&H1FD2FF&}seperti
+Dialogue: 3,0:03:40.44,0:03:41.29,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}chlorpromazine\N{\c&HFFFFFF&}mula {\c&HFFFFFF&}diperkenalkan
+Dialogue: 3,0:03:41.29,0:03:41.49,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}chlorpromazine\N{\c&H1FD2FF&}mula {\c&HFFFFFF&}diperkenalkan
+Dialogue: 3,0:03:41.49,0:03:42.36,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}chlorpromazine\N{\c&HFFFFFF&}mula {\c&H1FD2FF&}diperkenalkan
+Dialogue: 3,0:03:42.36,0:03:42.57,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Ini {\c&HFFFFFF&}merupakan\N{\c&HFFFFFF&}salah {\c&HFFFFFF&}satu {\c&HFFFFFF&}titik
+Dialogue: 3,0:03:42.57,0:03:42.93,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ini {\c&H1FD2FF&}merupakan\N{\c&HFFFFFF&}salah {\c&HFFFFFF&}satu {\c&HFFFFFF&}titik
+Dialogue: 3,0:03:42.93,0:03:43.11,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ini {\c&HFFFFFF&}merupakan\N{\c&H1FD2FF&}salah {\c&HFFFFFF&}satu {\c&HFFFFFF&}titik
+Dialogue: 3,0:03:43.11,0:03:43.45,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ini {\c&HFFFFFF&}merupakan\N{\c&HFFFFFF&}salah {\c&H1FD2FF&}satu {\c&HFFFFFF&}titik
+Dialogue: 3,0:03:43.45,0:03:44.06,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ini {\c&HFFFFFF&}merupakan\N{\c&HFFFFFF&}salah {\c&HFFFFFF&}satu {\c&H1FD2FF&}titik
+Dialogue: 3,0:03:44.06,0:03:44.69,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}perubahan {\c&HFFFFFF&}paling\N{\c&HFFFFFF&}penting {\c&HFFFFFF&}dalam {\c&HFFFFFF&}sejarah
+Dialogue: 3,0:03:44.69,0:03:44.93,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}perubahan {\c&H1FD2FF&}paling\N{\c&HFFFFFF&}penting {\c&HFFFFFF&}dalam {\c&HFFFFFF&}sejarah
+Dialogue: 3,0:03:44.93,0:03:45.35,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}perubahan {\c&HFFFFFF&}paling\N{\c&H1FD2FF&}penting {\c&HFFFFFF&}dalam {\c&HFFFFFF&}sejarah
+Dialogue: 3,0:03:45.35,0:03:45.53,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}perubahan {\c&HFFFFFF&}paling\N{\c&HFFFFFF&}penting {\c&H1FD2FF&}dalam {\c&HFFFFFF&}sejarah
+Dialogue: 3,0:03:45.53,0:03:45.86,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}perubahan {\c&HFFFFFF&}paling\N{\c&HFFFFFF&}penting {\c&HFFFFFF&}dalam {\c&H1FD2FF&}sejarah
+Dialogue: 3,0:03:45.86,0:03:46.41,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}psikiatri\N{\c&HFFFFFF&}dekat {\c&HFFFFFF&}Malaysia
+Dialogue: 3,0:03:46.41,0:03:46.61,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}psikiatri\N{\c&H1FD2FF&}dekat {\c&HFFFFFF&}Malaysia
+Dialogue: 3,0:03:46.61,0:03:47.22,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}psikiatri\N{\c&HFFFFFF&}dekat {\c&H1FD2FF&}Malaysia
+Dialogue: 3,0:03:47.28,0:03:47.65,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Sebelum {\c&HFFFFFF&}tu {\c&HFFFFFF&}doktor\N{\c&HFFFFFF&}punya {\c&HFFFFFF&}pilihan {\c&HFFFFFF&}sangat
+Dialogue: 3,0:03:47.65,0:03:47.89,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Sebelum {\c&H1FD2FF&}tu {\c&HFFFFFF&}doktor\N{\c&HFFFFFF&}punya {\c&HFFFFFF&}pilihan {\c&HFFFFFF&}sangat
+Dialogue: 3,0:03:47.89,0:03:48.47,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Sebelum {\c&HFFFFFF&}tu {\c&H1FD2FF&}doktor\N{\c&HFFFFFF&}punya {\c&HFFFFFF&}pilihan {\c&HFFFFFF&}sangat
+Dialogue: 3,0:03:48.47,0:03:48.73,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Sebelum {\c&HFFFFFF&}tu {\c&HFFFFFF&}doktor\N{\c&H1FD2FF&}punya {\c&HFFFFFF&}pilihan {\c&HFFFFFF&}sangat
+Dialogue: 3,0:03:48.73,0:03:49.09,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Sebelum {\c&HFFFFFF&}tu {\c&HFFFFFF&}doktor\N{\c&HFFFFFF&}punya {\c&H1FD2FF&}pilihan {\c&HFFFFFF&}sangat
+Dialogue: 3,0:03:49.09,0:03:49.30,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Sebelum {\c&HFFFFFF&}tu {\c&HFFFFFF&}doktor\N{\c&HFFFFFF&}punya {\c&HFFFFFF&}pilihan {\c&H1FD2FF&}sangat
+Dialogue: 3,0:03:49.30,0:03:49.77,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}terhad {\c&HFFFFFF&}kalau {\c&HFFFFFF&}nak {\c&HFFFFFF&}kawal\N{\c&HFFFFFF&}simptom {\c&HFFFFFF&}psikosis
+Dialogue: 3,0:03:49.77,0:03:49.91,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}terhad {\c&H1FD2FF&}kalau {\c&HFFFFFF&}nak {\c&HFFFFFF&}kawal\N{\c&HFFFFFF&}simptom {\c&HFFFFFF&}psikosis
+Dialogue: 3,0:03:49.91,0:03:50.05,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}terhad {\c&HFFFFFF&}kalau {\c&H1FD2FF&}nak {\c&HFFFFFF&}kawal\N{\c&HFFFFFF&}simptom {\c&HFFFFFF&}psikosis
+Dialogue: 3,0:03:50.05,0:03:50.29,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}terhad {\c&HFFFFFF&}kalau {\c&HFFFFFF&}nak {\c&H1FD2FF&}kawal\N{\c&HFFFFFF&}simptom {\c&HFFFFFF&}psikosis
+Dialogue: 3,0:03:50.29,0:03:50.57,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}terhad {\c&HFFFFFF&}kalau {\c&HFFFFFF&}nak {\c&HFFFFFF&}kawal\N{\c&H1FD2FF&}simptom {\c&HFFFFFF&}psikosis
+Dialogue: 3,0:03:50.57,0:03:51.24,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}terhad {\c&HFFFFFF&}kalau {\c&HFFFFFF&}nak {\c&HFFFFFF&}kawal\N{\c&HFFFFFF&}simptom {\c&H1FD2FF&}psikosis
+Dialogue: 3,0:03:51.24,0:03:51.71,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Dengan {\c&HFFFFFF&}adanya\N{\c&HFFFFFF&}ubat {\c&HBEC85C&}antipsikotik
+Dialogue: 3,0:03:51.71,0:03:52.17,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dengan {\c&H1FD2FF&}adanya\N{\c&HFFFFFF&}ubat {\c&HBEC85C&}antipsikotik
+Dialogue: 3,0:03:52.17,0:03:52.39,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dengan {\c&HFFFFFF&}adanya\N{\c&H1FD2FF&}ubat {\c&HBEC85C&}antipsikotik
+Dialogue: 3,0:03:52.39,0:03:53.28,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dengan {\c&HFFFFFF&}adanya\N{\c&HFFFFFF&}ubat {\c&H1FD2FF&}antipsikotik
+Dialogue: 3,0:03:53.28,0:03:53.61,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}ramai {\c&HFFFFFF&}pesakit\N{\c&HFFFFFF&}mempunyai {\c&HFFFFFF&}peluang
+Dialogue: 3,0:03:53.61,0:03:54.25,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ramai {\c&H1FD2FF&}pesakit\N{\c&HFFFFFF&}mempunyai {\c&HFFFFFF&}peluang
+Dialogue: 3,0:03:54.25,0:03:54.77,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ramai {\c&HFFFFFF&}pesakit\N{\c&H1FD2FF&}mempunyai {\c&HFFFFFF&}peluang
+Dialogue: 3,0:03:54.77,0:03:55.20,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ramai {\c&HFFFFFF&}pesakit\N{\c&HFFFFFF&}mempunyai {\c&H1FD2FF&}peluang
+Dialogue: 3,0:03:55.20,0:03:55.43,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}lebih {\c&HFFFFFF&}baik
+Dialogue: 3,0:03:55.43,0:03:56.01,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}lebih {\c&HFFFFFF&}baik
+Dialogue: 3,0:03:56.01,0:03:56.38,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}lebih {\c&H1FD2FF&}baik
+Dialogue: 3,0:03:56.38,0:03:56.69,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}untuk {\c&HFFFFFF&}mengawal\N{\c&HBEC85C&}halusinasi
+Dialogue: 3,0:03:56.69,0:03:57.01,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&H1FD2FF&}mengawal\N{\c&HBEC85C&}halusinasi
+Dialogue: 3,0:03:57.01,0:03:57.68,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&HFFFFFF&}mengawal\N{\c&H1FD2FF&}halusinasi
+Dialogue: 3,0:03:57.68,0:03:58.27,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dilusi {\c&HFFFFFF&}dan {\c&HFFFFFF&}juga\N{\c&HFFFFFF&}gangguan {\c&HFFFFFF&}pemikiran
+Dialogue: 3,0:03:58.27,0:03:58.39,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}dilusi {\c&H1FD2FF&}dan {\c&HFFFFFF&}juga\N{\c&HFFFFFF&}gangguan {\c&HFFFFFF&}pemikiran
+Dialogue: 3,0:03:58.39,0:03:58.48,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}dilusi {\c&HFFFFFF&}dan {\c&H1FD2FF&}juga\N{\c&HFFFFFF&}gangguan {\c&HFFFFFF&}pemikiran
+Dialogue: 3,0:03:58.48,0:03:58.88,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}dilusi {\c&HFFFFFF&}dan {\c&HFFFFFF&}juga\N{\c&H1FD2FF&}gangguan {\c&HFFFFFF&}pemikiran
+Dialogue: 3,0:03:58.88,0:03:59.67,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HBEC85C&}dilusi {\c&HFFFFFF&}dan {\c&HFFFFFF&}juga\N{\c&HFFFFFF&}gangguan {\c&H1FD2FF&}pemikiran
+Dialogue: 3,0:03:59.73,0:03:59.96,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Pada {\c&HFFFFFF&}masa {\c&HFFFFFF&}yang\N{\c&HFFFFFF&}sama {\c&HFFFFFF&}juga
+Dialogue: 3,0:03:59.96,0:04:00.10,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pada {\c&H1FD2FF&}masa {\c&HFFFFFF&}yang\N{\c&HFFFFFF&}sama {\c&HFFFFFF&}juga
+Dialogue: 3,0:04:00.10,0:04:00.21,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pada {\c&HFFFFFF&}masa {\c&H1FD2FF&}yang\N{\c&HFFFFFF&}sama {\c&HFFFFFF&}juga
+Dialogue: 3,0:04:00.21,0:04:00.47,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pada {\c&HFFFFFF&}masa {\c&HFFFFFF&}yang\N{\c&H1FD2FF&}sama {\c&HFFFFFF&}juga
+Dialogue: 3,0:04:00.47,0:04:00.88,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pada {\c&HFFFFFF&}masa {\c&HFFFFFF&}yang\N{\c&HFFFFFF&}sama {\c&H1FD2FF&}juga
+Dialogue: 3,0:04:00.88,0:04:01.23,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}ubat {\c&HBEC85C&}antidepressant
+Dialogue: 3,0:04:01.23,0:04:02.38,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ubat {\c&H1FD2FF&}antidepressant
+Dialogue: 3,0:04:02.38,0:04:02.73,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}rawatan {\c&HBEC85C&}psikiatri
+Dialogue: 3,0:04:02.73,0:04:03.10,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}rawatan {\c&H1FD2FF&}psikiatri
+Dialogue: 3,0:04:03.10,0:04:03.30,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}lain {\c&HFFFFFF&}semakin\N{\c&HFFFFFF&}berkembang
+Dialogue: 3,0:04:03.30,0:04:03.80,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}lain {\c&HFFFFFF&}semakin\N{\c&HFFFFFF&}berkembang
+Dialogue: 3,0:04:03.80,0:04:04.18,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}lain {\c&H1FD2FF&}semakin\N{\c&HFFFFFF&}berkembang
+Dialogue: 3,0:04:04.18,0:04:04.95,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}lain {\c&HFFFFFF&}semakin\N{\c&H1FD2FF&}berkembang
+Dialogue: 3,0:04:05.01,0:04:05.63,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Rawatan {\c&HFFFFFF&}masih\N{\c&HFFFFFF&}mempunyai {\c&HFFFFFF&}risiko
+Dialogue: 3,0:04:05.63,0:04:06.07,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Rawatan {\c&H1FD2FF&}masih\N{\c&HFFFFFF&}mempunyai {\c&HFFFFFF&}risiko
+Dialogue: 3,0:04:06.07,0:04:06.53,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Rawatan {\c&HFFFFFF&}masih\N{\c&H1FD2FF&}mempunyai {\c&HFFFFFF&}risiko
+Dialogue: 3,0:04:06.53,0:04:07.12,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Rawatan {\c&HFFFFFF&}masih\N{\c&HFFFFFF&}mempunyai {\c&H1FD2FF&}risiko
+Dialogue: 3,0:04:07.12,0:04:07.33,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dan {\c&HFFFFFF&}kesan {\c&HFFFFFF&}sampingan\N{\c&HFFFFFF&}tapi {\c&HFFFFFF&}pilihan
+Dialogue: 3,0:04:07.33,0:04:07.55,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&H1FD2FF&}kesan {\c&HFFFFFF&}sampingan\N{\c&HFFFFFF&}tapi {\c&HFFFFFF&}pilihan
+Dialogue: 3,0:04:07.55,0:04:07.93,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}kesan {\c&H1FD2FF&}sampingan\N{\c&HFFFFFF&}tapi {\c&HFFFFFF&}pilihan
+Dialogue: 3,0:04:07.93,0:04:08.27,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}kesan {\c&HFFFFFF&}sampingan\N{\c&H1FD2FF&}tapi {\c&HFFFFFF&}pilihan
+Dialogue: 3,0:04:08.27,0:04:08.98,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}kesan {\c&HFFFFFF&}sampingan\N{\c&HFFFFFF&}tapi {\c&H1FD2FF&}pilihan
+Dialogue: 3,0:04:08.98,0:04:09.41,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}untuk {\c&HFFFFFF&}bantu {\c&HFFFFFF&}pesakit\N{\c&HFFFFFF&}semakin {\c&HFFFFFF&}berkembang
+Dialogue: 3,0:04:09.41,0:04:09.89,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&H1FD2FF&}bantu {\c&HFFFFFF&}pesakit\N{\c&HFFFFFF&}semakin {\c&HFFFFFF&}berkembang
+Dialogue: 3,0:04:09.89,0:04:10.67,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&HFFFFFF&}bantu {\c&H1FD2FF&}pesakit\N{\c&HFFFFFF&}semakin {\c&HFFFFFF&}berkembang
+Dialogue: 3,0:04:10.67,0:04:11.15,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&HFFFFFF&}bantu {\c&HFFFFFF&}pesakit\N{\c&H1FD2FF&}semakin {\c&HFFFFFF&}berkembang
+Dialogue: 3,0:04:11.15,0:04:11.70,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}untuk {\c&HFFFFFF&}bantu {\c&HFFFFFF&}pesakit\N{\c&HFFFFFF&}semakin {\c&H1FD2FF&}berkembang
+Dialogue: 3,0:04:11.70,0:04:11.85,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dan {\c&HFFFFFF&}perkembangan\N{\c&HFFFFFF&}inilah {\c&HFFFFFF&}membuka {\c&HFFFFFF&}jalan
+Dialogue: 3,0:04:11.85,0:04:12.35,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&H1FD2FF&}perkembangan\N{\c&HFFFFFF&}inilah {\c&HFFFFFF&}membuka {\c&HFFFFFF&}jalan
+Dialogue: 3,0:04:12.35,0:04:12.73,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}perkembangan\N{\c&H1FD2FF&}inilah {\c&HFFFFFF&}membuka {\c&HFFFFFF&}jalan
+Dialogue: 3,0:04:12.73,0:04:13.19,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}perkembangan\N{\c&HFFFFFF&}inilah {\c&H1FD2FF&}membuka {\c&HFFFFFF&}jalan
+Dialogue: 3,0:04:13.19,0:04:13.76,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}perkembangan\N{\c&HFFFFFF&}inilah {\c&HFFFFFF&}membuka {\c&H1FD2FF&}jalan
+Dialogue: 3,0:04:13.76,0:04:14.07,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}kepada {\c&HFFFFFF&}perubahan\N{\c&HFFFFFF&}yang {\c&HFFFFFF&}lebih {\c&HFFFFFF&}besar
+Dialogue: 3,0:04:14.07,0:04:14.61,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kepada {\c&H1FD2FF&}perubahan\N{\c&HFFFFFF&}yang {\c&HFFFFFF&}lebih {\c&HFFFFFF&}besar
+Dialogue: 3,0:04:14.61,0:04:14.79,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kepada {\c&HFFFFFF&}perubahan\N{\c&H1FD2FF&}yang {\c&HFFFFFF&}lebih {\c&HFFFFFF&}besar
+Dialogue: 3,0:04:14.79,0:04:14.97,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kepada {\c&HFFFFFF&}perubahan\N{\c&HFFFFFF&}yang {\c&H1FD2FF&}lebih {\c&HFFFFFF&}besar
+Dialogue: 3,0:04:14.97,0:04:15.54,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kepada {\c&HFFFFFF&}perubahan\N{\c&HFFFFFF&}yang {\c&HFFFFFF&}lebih {\c&H1FD2FF&}besar
+Dialogue: 3,0:04:15.60,0:04:15.85,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Pada {\c&HFFFFFF&}tahun {\c&H41A4D9&}1958 {\c&HFFFFFF&}satu\N{\c&HFFFFFF&}lagi {\c&HFFFFFF&}perkembangan
+Dialogue: 3,0:04:15.85,0:04:16.13,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pada {\c&H1FD2FF&}tahun {\c&H41A4D9&}1958 {\c&HFFFFFF&}satu\N{\c&HFFFFFF&}lagi {\c&HFFFFFF&}perkembangan
+Dialogue: 3,0:04:16.13,0:04:17.16,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pada {\c&HFFFFFF&}tahun {\c&H1FD2FF&}1958 {\c&HFFFFFF&}satu\N{\c&HFFFFFF&}lagi {\c&HFFFFFF&}perkembangan
+Dialogue: 3,0:04:17.16,0:04:17.50,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pada {\c&HFFFFFF&}tahun {\c&H41A4D9&}1958 {\c&H1FD2FF&}satu\N{\c&HFFFFFF&}lagi {\c&HFFFFFF&}perkembangan
+Dialogue: 3,0:04:17.50,0:04:17.70,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pada {\c&HFFFFFF&}tahun {\c&H41A4D9&}1958 {\c&HFFFFFF&}satu\N{\c&H1FD2FF&}lagi {\c&HFFFFFF&}perkembangan
+Dialogue: 3,0:04:17.70,0:04:18.16,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Pada {\c&HFFFFFF&}tahun {\c&H41A4D9&}1958 {\c&HFFFFFF&}satu\N{\c&HFFFFFF&}lagi {\c&H1FD2FF&}perkembangan
+Dialogue: 3,0:04:18.16,0:04:18.67,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}penting {\c&HFFFFFF&}berlaku\N{\c&HFFFFFF&}dekat {\c&HFFFFFF&}Tanah {\c&HFFFFFF&}Melayu
+Dialogue: 3,0:04:18.67,0:04:19.05,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}penting {\c&H1FD2FF&}berlaku\N{\c&HFFFFFF&}dekat {\c&HFFFFFF&}Tanah {\c&HFFFFFF&}Melayu
+Dialogue: 3,0:04:19.05,0:04:19.23,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}penting {\c&HFFFFFF&}berlaku\N{\c&H1FD2FF&}dekat {\c&HFFFFFF&}Tanah {\c&HFFFFFF&}Melayu
+Dialogue: 3,0:04:19.23,0:04:19.43,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}penting {\c&HFFFFFF&}berlaku\N{\c&HFFFFFF&}dekat {\c&H1FD2FF&}Tanah {\c&HFFFFFF&}Melayu
+Dialogue: 3,0:04:19.43,0:04:19.94,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}penting {\c&HFFFFFF&}berlaku\N{\c&HFFFFFF&}dekat {\c&HFFFFFF&}Tanah {\c&H1FD2FF&}Melayu
+Dialogue: 3,0:04:19.94,0:04:20.21,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}wad {\c&HBEC85C&}psikiatri {\c&HFFFFFF&}dibuka
+Dialogue: 3,0:04:20.21,0:04:20.93,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}wad {\c&H1FD2FF&}psikiatri {\c&HFFFFFF&}dibuka
+Dialogue: 3,0:04:20.93,0:04:21.26,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}wad {\c&HBEC85C&}psikiatri {\c&H1FD2FF&}dibuka
+Dialogue: 3,0:04:21.26,0:04:21.37,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}di {\c&HFFFFFF&}hospital\N{\c&H41A4D9&}Pulau {\c&H41A4D9&}Pinang
+Dialogue: 3,0:04:21.37,0:04:21.69,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&H1FD2FF&}hospital\N{\c&H41A4D9&}Pulau {\c&H41A4D9&}Pinang
+Dialogue: 3,0:04:21.69,0:04:21.85,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&HFFFFFF&}hospital\N{\c&H1FD2FF&}Pulau {\c&H41A4D9&}Pinang
+Dialogue: 3,0:04:21.85,0:04:22.16,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&HFFFFFF&}hospital\N{\c&H41A4D9&}Pulau {\c&H1FD2FF&}Pinang
+Dialogue: 3,0:04:22.16,0:04:22.37,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dan {\c&HFFFFFF&}direkodkan
+Dialogue: 3,0:04:22.37,0:04:23.06,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&H1FD2FF&}direkodkan
+Dialogue: 3,0:04:23.06,0:04:23.41,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}sebagai {\c&HFFFFFF&}wad {\c&HBEC85C&}psikiatri\N{\c&HFFFFFF&}pertama {\c&HFFFFFF&}dalam
+Dialogue: 3,0:04:23.41,0:04:23.55,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sebagai {\c&H1FD2FF&}wad {\c&HBEC85C&}psikiatri\N{\c&HFFFFFF&}pertama {\c&HFFFFFF&}dalam
+Dialogue: 3,0:04:23.55,0:04:24.05,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sebagai {\c&HFFFFFF&}wad {\c&H1FD2FF&}psikiatri\N{\c&HFFFFFF&}pertama {\c&HFFFFFF&}dalam
+Dialogue: 3,0:04:24.05,0:04:24.83,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sebagai {\c&HFFFFFF&}wad {\c&HBEC85C&}psikiatri\N{\c&H1FD2FF&}pertama {\c&HFFFFFF&}dalam
+Dialogue: 3,0:04:24.83,0:04:25.04,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sebagai {\c&HFFFFFF&}wad {\c&HBEC85C&}psikiatri\N{\c&HFFFFFF&}pertama {\c&H1FD2FF&}dalam
+Dialogue: 3,0:04:25.04,0:04:25.49,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}hospital {\c&HFFFFFF&}umum
+Dialogue: 3,0:04:25.49,0:04:25.94,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}hospital {\c&H1FD2FF&}umum
+Dialogue: 3,0:04:25.94,0:04:26.17,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Benda {\c&HFFFFFF&}ni\N{\c&HFFFFFF&}penting {\c&HFFFFFF&}sebab
+Dialogue: 3,0:04:26.17,0:04:26.27,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Benda {\c&H1FD2FF&}ni\N{\c&HFFFFFF&}penting {\c&HFFFFFF&}sebab
+Dialogue: 3,0:04:26.27,0:04:26.81,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Benda {\c&HFFFFFF&}ni\N{\c&H1FD2FF&}penting {\c&HFFFFFF&}sebab
+Dialogue: 3,0:04:26.81,0:04:27.28,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Benda {\c&HFFFFFF&}ni\N{\c&HFFFFFF&}penting {\c&H1FD2FF&}sebab
+Dialogue: 3,0:04:27.28,0:04:27.51,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}kalau {\c&HFFFFFF&}sebelum {\c&HFFFFFF&}ni\N{\c&HFFFFFF&}rawatan {\c&HBEC85C&}psikiatri
+Dialogue: 3,0:04:27.51,0:04:27.83,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kalau {\c&H1FD2FF&}sebelum {\c&HFFFFFF&}ni\N{\c&HFFFFFF&}rawatan {\c&HBEC85C&}psikiatri
+Dialogue: 3,0:04:27.83,0:04:28.01,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kalau {\c&HFFFFFF&}sebelum {\c&H1FD2FF&}ni\N{\c&HFFFFFF&}rawatan {\c&HBEC85C&}psikiatri
+Dialogue: 3,0:04:28.01,0:04:28.27,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kalau {\c&HFFFFFF&}sebelum {\c&HFFFFFF&}ni\N{\c&H1FD2FF&}rawatan {\c&HBEC85C&}psikiatri
+Dialogue: 3,0:04:28.27,0:04:28.68,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kalau {\c&HFFFFFF&}sebelum {\c&HFFFFFF&}ni\N{\c&HFFFFFF&}rawatan {\c&H1FD2FF&}psikiatri
+Dialogue: 3,0:04:28.68,0:04:29.17,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dikaitkan {\c&HFFFFFF&}dengan\N{\c&HFFFFFF&}hospital {\c&HFFFFFF&}khusus
+Dialogue: 3,0:04:29.17,0:04:29.79,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dikaitkan {\c&H1FD2FF&}dengan\N{\c&HFFFFFF&}hospital {\c&HFFFFFF&}khusus
+Dialogue: 3,0:04:29.79,0:04:30.27,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dikaitkan {\c&HFFFFFF&}dengan\N{\c&H1FD2FF&}hospital {\c&HFFFFFF&}khusus
+Dialogue: 3,0:04:30.27,0:04:30.82,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dikaitkan {\c&HFFFFFF&}dengan\N{\c&HFFFFFF&}hospital {\c&H1FD2FF&}khusus
+Dialogue: 3,0:04:30.82,0:04:30.99,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}terpisah\N{\c&HFFFFFF&}daripada {\c&HFFFFFF&}perkhidmatan
+Dialogue: 3,0:04:30.99,0:04:31.57,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}terpisah\N{\c&HFFFFFF&}daripada {\c&HFFFFFF&}perkhidmatan
+Dialogue: 3,0:04:31.57,0:04:32.25,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}terpisah\N{\c&H1FD2FF&}daripada {\c&HFFFFFF&}perkhidmatan
+Dialogue: 3,0:04:32.25,0:04:32.60,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}terpisah\N{\c&HFFFFFF&}daripada {\c&H1FD2FF&}perkhidmatan
+Dialogue: 3,0:04:32.60,0:04:32.95,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}perubatan {\c&HFFFFFF&}lain
+Dialogue: 3,0:04:32.95,0:04:33.14,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}perubatan {\c&H1FD2FF&}lain
+Dialogue: 3,0:04:33.14,0:04:33.67,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}tapi {\c&HFFFFFF&}apabila\N{\c&HFFFFFF&}wad {\c&HBEC85C&}psikiatri {\c&HFFFFFF&}mula
+Dialogue: 3,0:04:33.67,0:04:34.03,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}tapi {\c&H1FD2FF&}apabila\N{\c&HFFFFFF&}wad {\c&HBEC85C&}psikiatri {\c&HFFFFFF&}mula
+Dialogue: 3,0:04:34.03,0:04:34.17,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}tapi {\c&HFFFFFF&}apabila\N{\c&H1FD2FF&}wad {\c&HBEC85C&}psikiatri {\c&HFFFFFF&}mula
+Dialogue: 3,0:04:34.17,0:04:34.63,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}tapi {\c&HFFFFFF&}apabila\N{\c&HFFFFFF&}wad {\c&H1FD2FF&}psikiatri {\c&HFFFFFF&}mula
+Dialogue: 3,0:04:34.63,0:04:34.82,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}tapi {\c&HFFFFFF&}apabila\N{\c&HFFFFFF&}wad {\c&HBEC85C&}psikiatri {\c&H1FD2FF&}mula
+Dialogue: 3,0:04:34.82,0:04:35.41,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}diwujudkan {\c&HFFFFFF&}di\N{\c&HFFFFFF&}hospital {\c&HFFFFFF&}umum
+Dialogue: 3,0:04:35.41,0:04:35.51,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}diwujudkan {\c&H1FD2FF&}di\N{\c&HFFFFFF&}hospital {\c&HFFFFFF&}umum
+Dialogue: 3,0:04:35.51,0:04:35.87,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}diwujudkan {\c&HFFFFFF&}di\N{\c&H1FD2FF&}hospital {\c&HFFFFFF&}umum
+Dialogue: 3,0:04:35.87,0:04:36.20,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}diwujudkan {\c&HFFFFFF&}di\N{\c&HFFFFFF&}hospital {\c&H1FD2FF&}umum
+Dialogue: 3,0:04:36.20,0:04:36.39,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}ia {\c&HFFFFFF&}membantu {\c&HFFFFFF&}membawa\N{\c&HFFFFFF&}rawatan {\c&HFFFFFF&}kesihatan
+Dialogue: 3,0:04:36.39,0:04:37.15,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ia {\c&H1FD2FF&}membantu {\c&HFFFFFF&}membawa\N{\c&HFFFFFF&}rawatan {\c&HFFFFFF&}kesihatan
+Dialogue: 3,0:04:37.15,0:04:37.53,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ia {\c&HFFFFFF&}membantu {\c&H1FD2FF&}membawa\N{\c&HFFFFFF&}rawatan {\c&HFFFFFF&}kesihatan
+Dialogue: 3,0:04:37.53,0:04:37.91,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ia {\c&HFFFFFF&}membantu {\c&HFFFFFF&}membawa\N{\c&H1FD2FF&}rawatan {\c&HFFFFFF&}kesihatan
+Dialogue: 3,0:04:37.91,0:04:38.20,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ia {\c&HFFFFFF&}membantu {\c&HFFFFFF&}membawa\N{\c&HFFFFFF&}rawatan {\c&H1FD2FF&}kesihatan
+Dialogue: 3,0:04:38.20,0:04:38.65,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}mental {\c&HFFFFFF&}lebih {\c&HFFFFFF&}dekat\N{\c&HFFFFFF&}kepada {\c&HFFFFFF&}sistem
+Dialogue: 3,0:04:38.65,0:04:39.01,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mental {\c&H1FD2FF&}lebih {\c&HFFFFFF&}dekat\N{\c&HFFFFFF&}kepada {\c&HFFFFFF&}sistem
+Dialogue: 3,0:04:39.01,0:04:39.55,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mental {\c&HFFFFFF&}lebih {\c&H1FD2FF&}dekat\N{\c&HFFFFFF&}kepada {\c&HFFFFFF&}sistem
+Dialogue: 3,0:04:39.55,0:04:40.16,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mental {\c&HFFFFFF&}lebih {\c&HFFFFFF&}dekat\N{\c&H1FD2FF&}kepada {\c&HFFFFFF&}sistem
+Dialogue: 3,0:04:40.16,0:04:40.87,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mental {\c&HFFFFFF&}lebih {\c&HFFFFFF&}dekat\N{\c&HFFFFFF&}kepada {\c&H1FD2FF&}sistem
+Dialogue: 3,0:04:40.87,0:04:41.36,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}penjagaan\N{\c&HFFFFFF&}kesihatan {\c&HFFFFFF&}biasa
+Dialogue: 3,0:04:41.36,0:04:41.68,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}penjagaan\N{\c&H1FD2FF&}kesihatan {\c&HFFFFFF&}biasa
+Dialogue: 3,0:04:41.68,0:04:42.19,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}penjagaan\N{\c&HFFFFFF&}kesihatan {\c&H1FD2FF&}biasa
+Dialogue: 3,0:04:42.19,0:04:42.76,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}sama {\c&HFFFFFF&}macam {\c&HFFFFFF&}pesakit
+Dialogue: 3,0:04:42.76,0:04:43.18,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sama {\c&H1FD2FF&}macam {\c&HFFFFFF&}pesakit
+Dialogue: 3,0:04:43.18,0:04:43.73,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sama {\c&HFFFFFF&}macam {\c&H1FD2FF&}pesakit
+Dialogue: 3,0:04:43.73,0:04:43.90,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}memerlukan\N{\c&HFFFFFF&}rawatan {\c&HFFFFFF&}jantung
+Dialogue: 3,0:04:43.90,0:04:44.84,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}memerlukan\N{\c&HFFFFFF&}rawatan {\c&HFFFFFF&}jantung
+Dialogue: 3,0:04:44.84,0:04:45.14,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}memerlukan\N{\c&H1FD2FF&}rawatan {\c&HFFFFFF&}jantung
+Dialogue: 3,0:04:45.14,0:04:45.65,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}memerlukan\N{\c&HFFFFFF&}rawatan {\c&H1FD2FF&}jantung
+Dialogue: 3,0:04:45.65,0:04:45.82,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}buah {\c&HFFFFFF&}pinggang {\c&HFFFFFF&}dan\N{\c&HFFFFFF&}penyakit {\c&HFFFFFF&}lain
+Dialogue: 3,0:04:45.82,0:04:46.36,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}buah {\c&H1FD2FF&}pinggang {\c&HFFFFFF&}dan\N{\c&HFFFFFF&}penyakit {\c&HFFFFFF&}lain
+Dialogue: 3,0:04:46.36,0:04:46.68,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}buah {\c&HFFFFFF&}pinggang {\c&H1FD2FF&}dan\N{\c&HFFFFFF&}penyakit {\c&HFFFFFF&}lain
+Dialogue: 3,0:04:46.68,0:04:47.00,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}buah {\c&HFFFFFF&}pinggang {\c&HFFFFFF&}dan\N{\c&H1FD2FF&}penyakit {\c&HFFFFFF&}lain
+Dialogue: 3,0:04:47.00,0:04:47.55,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}buah {\c&HFFFFFF&}pinggang {\c&HFFFFFF&}dan\N{\c&HFFFFFF&}penyakit {\c&H1FD2FF&}lain
+Dialogue: 3,0:04:47.61,0:04:47.94,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Ramai {\c&HFFFFFF&}yang {\c&HFFFFFF&}mengalami\N{\c&HFFFFFF&}penyakit {\c&HFFFFFF&}mental
+Dialogue: 3,0:04:47.94,0:04:48.02,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ramai {\c&H1FD2FF&}yang {\c&HFFFFFF&}mengalami\N{\c&HFFFFFF&}penyakit {\c&HFFFFFF&}mental
+Dialogue: 3,0:04:48.02,0:04:48.34,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ramai {\c&HFFFFFF&}yang {\c&H1FD2FF&}mengalami\N{\c&HFFFFFF&}penyakit {\c&HFFFFFF&}mental
+Dialogue: 3,0:04:48.34,0:04:48.60,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ramai {\c&HFFFFFF&}yang {\c&HFFFFFF&}mengalami\N{\c&H1FD2FF&}penyakit {\c&HFFFFFF&}mental
+Dialogue: 3,0:04:48.60,0:04:48.79,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ramai {\c&HFFFFFF&}yang {\c&HFFFFFF&}mengalami\N{\c&HFFFFFF&}penyakit {\c&H1FD2FF&}mental
+Dialogue: 3,0:04:48.79,0:04:49.20,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}juga {\c&HFFFFFF&}yang {\c&HFFFFFF&}memerlukan\N{\c&HFFFFFF&}rawatan {\c&HFFFFFF&}perubatan
+Dialogue: 3,0:04:49.20,0:04:49.42,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}juga {\c&H1FD2FF&}yang {\c&HFFFFFF&}memerlukan\N{\c&HFFFFFF&}rawatan {\c&HFFFFFF&}perubatan
+Dialogue: 3,0:04:49.42,0:04:49.84,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}juga {\c&HFFFFFF&}yang {\c&H1FD2FF&}memerlukan\N{\c&HFFFFFF&}rawatan {\c&HFFFFFF&}perubatan
+Dialogue: 3,0:04:49.84,0:04:50.08,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}juga {\c&HFFFFFF&}yang {\c&HFFFFFF&}memerlukan\N{\c&H1FD2FF&}rawatan {\c&HFFFFFF&}perubatan
+Dialogue: 3,0:04:50.08,0:04:50.60,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}juga {\c&HFFFFFF&}yang {\c&HFFFFFF&}memerlukan\N{\c&HFFFFFF&}rawatan {\c&H1FD2FF&}perubatan
+Dialogue: 3,0:04:50.60,0:04:50.77,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}kat {\c&HFFFFFF&}sinilah\N{\c&HFFFFFF&}perkhidmatan {\c&HBEC85C&}psikiatri
+Dialogue: 3,0:04:50.77,0:04:51.13,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kat {\c&H1FD2FF&}sinilah\N{\c&HFFFFFF&}perkhidmatan {\c&HBEC85C&}psikiatri
+Dialogue: 3,0:04:51.13,0:04:51.61,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kat {\c&HFFFFFF&}sinilah\N{\c&H1FD2FF&}perkhidmatan {\c&HBEC85C&}psikiatri
+Dialogue: 3,0:04:51.61,0:04:51.95,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kat {\c&HFFFFFF&}sinilah\N{\c&HFFFFFF&}perkhidmatan {\c&H1FD2FF&}psikiatri
+Dialogue: 3,0:04:51.95,0:04:52.26,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}terus {\c&HFFFFFF&}berkembang
+Dialogue: 3,0:04:52.26,0:04:52.71,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}terus {\c&H1FD2FF&}berkembang
+Dialogue: 3,0:04:52.71,0:04:52.86,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}di {\c&HFFFFFF&}hospital-hospital\N{\c&HFFFFFF&}seluruh {\c&HFFFFFF&}Malaysia
+Dialogue: 3,0:04:52.86,0:04:53.96,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&H1FD2FF&}hospital-hospital\N{\c&HFFFFFF&}seluruh {\c&HFFFFFF&}Malaysia
+Dialogue: 3,0:04:53.96,0:04:54.14,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&HFFFFFF&}hospital-hospital\N{\c&H1FD2FF&}seluruh {\c&HFFFFFF&}Malaysia
+Dialogue: 3,0:04:54.14,0:04:54.79,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}di {\c&HFFFFFF&}hospital-hospital\N{\c&HFFFFFF&}seluruh {\c&H1FD2FF&}Malaysia
+Dialogue: 3,0:04:54.85,0:04:55.22,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Sekarang {\c&HFFFFFF&}kalau\N{\c&HFFFFFF&}kita {\c&HFFFFFF&}tengok
+Dialogue: 3,0:04:55.22,0:04:55.40,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Sekarang {\c&H1FD2FF&}kalau\N{\c&HFFFFFF&}kita {\c&HFFFFFF&}tengok
+Dialogue: 3,0:04:55.40,0:04:55.58,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Sekarang {\c&HFFFFFF&}kalau\N{\c&H1FD2FF&}kita {\c&HFFFFFF&}tengok
+Dialogue: 3,0:04:55.58,0:04:56.15,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Sekarang {\c&HFFFFFF&}kalau\N{\c&HFFFFFF&}kita {\c&H1FD2FF&}tengok
+Dialogue: 3,0:04:56.15,0:04:56.46,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}kita {\c&HFFFFFF&}masuk {\c&HFFFFFF&}ke\N{\c&HFFFFFF&}zaman {\c&HFFFFFF&}modern
+Dialogue: 3,0:04:56.46,0:04:56.70,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kita {\c&H1FD2FF&}masuk {\c&HFFFFFF&}ke\N{\c&HFFFFFF&}zaman {\c&HFFFFFF&}modern
+Dialogue: 3,0:04:56.70,0:04:56.78,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kita {\c&HFFFFFF&}masuk {\c&H1FD2FF&}ke\N{\c&HFFFFFF&}zaman {\c&HFFFFFF&}modern
+Dialogue: 3,0:04:56.78,0:04:57.02,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kita {\c&HFFFFFF&}masuk {\c&HFFFFFF&}ke\N{\c&H1FD2FF&}zaman {\c&HFFFFFF&}modern
+Dialogue: 3,0:04:57.02,0:04:57.61,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}kita {\c&HFFFFFF&}masuk {\c&HFFFFFF&}ke\N{\c&HFFFFFF&}zaman {\c&H1FD2FF&}modern
+Dialogue: 3,0:04:57.61,0:04:58.21,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}suasana {\c&HFFFFFF&}tak {\c&HFFFFFF&}macam
+Dialogue: 3,0:04:58.21,0:04:58.39,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}suasana {\c&H1FD2FF&}tak {\c&HFFFFFF&}macam
+Dialogue: 3,0:04:58.39,0:04:58.78,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}suasana {\c&HFFFFFF&}tak {\c&H1FD2FF&}macam
+Dialogue: 3,0:04:58.78,0:04:59.09,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}digambarkan\N{\c&HFFFFFF&}dalam {\c&HFFFFFF&}filem {\c&HFFFFFF&}barat {\c&HFFFFFF&}tu
+Dialogue: 3,0:04:59.09,0:04:59.44,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}digambarkan\N{\c&HFFFFFF&}dalam {\c&HFFFFFF&}filem {\c&HFFFFFF&}barat {\c&HFFFFFF&}tu
+Dialogue: 3,0:04:59.44,0:04:59.75,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}digambarkan\N{\c&H1FD2FF&}dalam {\c&HFFFFFF&}filem {\c&HFFFFFF&}barat {\c&HFFFFFF&}tu
+Dialogue: 3,0:04:59.75,0:05:00.20,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}digambarkan\N{\c&HFFFFFF&}dalam {\c&H1FD2FF&}filem {\c&HFFFFFF&}barat {\c&HFFFFFF&}tu
+Dialogue: 3,0:05:00.20,0:05:00.54,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}digambarkan\N{\c&HFFFFFF&}dalam {\c&HFFFFFF&}filem {\c&H1FD2FF&}barat {\c&HFFFFFF&}tu
+Dialogue: 3,0:05:00.54,0:05:00.65,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}digambarkan\N{\c&HFFFFFF&}dalam {\c&HFFFFFF&}filem {\c&HFFFFFF&}barat {\c&H1FD2FF&}tu
+Dialogue: 3,0:05:00.65,0:05:01.02,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}filem-filem\N{\c&HFFFFFF&}seram {\c&HFFFFFF&}tu
+Dialogue: 3,0:05:01.02,0:05:01.28,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}filem-filem\N{\c&H1FD2FF&}seram {\c&HFFFFFF&}tu
+Dialogue: 3,0:05:01.28,0:05:01.47,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}filem-filem\N{\c&HFFFFFF&}seram {\c&H1FD2FF&}tu
+Dialogue: 3,0:05:01.47,0:05:01.60,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Kat {\c&HFFFFFF&}dalam {\c&HFFFFFF&}wad
+Dialogue: 3,0:05:01.60,0:05:01.92,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kat {\c&H1FD2FF&}dalam {\c&HFFFFFF&}wad
+Dialogue: 3,0:05:01.92,0:05:02.41,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kat {\c&HFFFFFF&}dalam {\c&H1FD2FF&}wad
+Dialogue: 3,0:05:02.41,0:05:02.78,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}pesakit {\c&HFFFFFF&}akan\N{\c&HFFFFFF&}dinilai {\c&HFFFFFF&}oleh {\c&HFFFFFF&}doktor
+Dialogue: 3,0:05:02.78,0:05:03.02,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pesakit {\c&H1FD2FF&}akan\N{\c&HFFFFFF&}dinilai {\c&HFFFFFF&}oleh {\c&HFFFFFF&}doktor
+Dialogue: 3,0:05:03.02,0:05:03.74,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pesakit {\c&HFFFFFF&}akan\N{\c&H1FD2FF&}dinilai {\c&HFFFFFF&}oleh {\c&HFFFFFF&}doktor
+Dialogue: 3,0:05:03.74,0:05:03.98,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pesakit {\c&HFFFFFF&}akan\N{\c&HFFFFFF&}dinilai {\c&H1FD2FF&}oleh {\c&HFFFFFF&}doktor
+Dialogue: 3,0:05:03.98,0:05:04.43,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}pesakit {\c&HFFFFFF&}akan\N{\c&HFFFFFF&}dinilai {\c&HFFFFFF&}oleh {\c&H1FD2FF&}doktor
+Dialogue: 3,0:05:04.43,0:05:04.88,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dipantau {\c&HFFFFFF&}oleh\N{\c&HFFFFFF&}jururawat
+Dialogue: 3,0:05:04.88,0:05:05.02,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dipantau {\c&H1FD2FF&}oleh\N{\c&HFFFFFF&}jururawat
+Dialogue: 3,0:05:05.02,0:05:05.91,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dipantau {\c&HFFFFFF&}oleh\N{\c&H1FD2FF&}jururawat
+Dialogue: 3,0:05:05.97,0:05:06.44,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Mereka {\c&HFFFFFF&}diberikan {\c&HFFFFFF&}ubat\N{\c&HFFFFFF&}mengikut {\c&HFFFFFF&}keperluan
+Dialogue: 3,0:05:06.44,0:05:07.04,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Mereka {\c&H1FD2FF&}diberikan {\c&HFFFFFF&}ubat\N{\c&HFFFFFF&}mengikut {\c&HFFFFFF&}keperluan
+Dialogue: 3,0:05:07.04,0:05:07.36,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Mereka {\c&HFFFFFF&}diberikan {\c&H1FD2FF&}ubat\N{\c&HFFFFFF&}mengikut {\c&HFFFFFF&}keperluan
+Dialogue: 3,0:05:07.36,0:05:07.68,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Mereka {\c&HFFFFFF&}diberikan {\c&HFFFFFF&}ubat\N{\c&H1FD2FF&}mengikut {\c&HFFFFFF&}keperluan
+Dialogue: 3,0:05:07.68,0:05:08.55,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Mereka {\c&HFFFFFF&}diberikan {\c&HFFFFFF&}ubat\N{\c&HFFFFFF&}mengikut {\c&H1FD2FF&}keperluan
+Dialogue: 3,0:05:08.69,0:05:08.88,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Ada {\c&HFFFFFF&}pesakit {\c&HFFFFFF&}yang\N{\c&HFFFFFF&}menjalani {\c&HBEC85C&}terapi
+Dialogue: 3,0:05:08.88,0:05:09.40,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&H1FD2FF&}pesakit {\c&HFFFFFF&}yang\N{\c&HFFFFFF&}menjalani {\c&HBEC85C&}terapi
+Dialogue: 3,0:05:09.40,0:05:09.48,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&HFFFFFF&}pesakit {\c&H1FD2FF&}yang\N{\c&HFFFFFF&}menjalani {\c&HBEC85C&}terapi
+Dialogue: 3,0:05:09.48,0:05:09.81,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&HFFFFFF&}pesakit {\c&HFFFFFF&}yang\N{\c&H1FD2FF&}menjalani {\c&HBEC85C&}terapi
+Dialogue: 3,0:05:09.81,0:05:10.44,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&HFFFFFF&}pesakit {\c&HFFFFFF&}yang\N{\c&HFFFFFF&}menjalani {\c&H1FD2FF&}terapi
+Dialogue: 3,0:05:10.44,0:05:10.91,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}aktiviti {\c&HBEC85C&}pemulihan
+Dialogue: 3,0:05:10.91,0:05:11.63,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}aktiviti {\c&H1FD2FF&}pemulihan
+Dialogue: 3,0:05:11.63,0:05:12.71,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}penilaian, {\c&HFFFFFF&}by\N{\c&HFFFFFF&}multidisciplinary {\c&HFFFFFF&}punya
+Dialogue: 3,0:05:12.71,0:05:13.17,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}penilaian, {\c&H1FD2FF&}by\N{\c&HFFFFFF&}multidisciplinary {\c&HFFFFFF&}punya
+Dialogue: 3,0:05:13.17,0:05:14.13,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}penilaian, {\c&HFFFFFF&}by\N{\c&H1FD2FF&}multidisciplinary {\c&HFFFFFF&}punya
+Dialogue: 3,0:05:14.13,0:05:14.38,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}penilaian, {\c&HFFFFFF&}by\N{\c&HFFFFFF&}multidisciplinary {\c&H1FD2FF&}punya
+Dialogue: 3,0:05:14.38,0:05:14.90,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}team
+Dialogue: 3,0:05:14.96,0:05:15.13,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Ada {\c&HFFFFFF&}juga
+Dialogue: 3,0:05:15.13,0:05:15.38,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Ada {\c&H1FD2FF&}juga
+Dialogue: 3,0:05:15.38,0:05:15.55,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}masuk\N{\c&HFFFFFF&}sebab {\c&HBEC85C&}kemurungan
+Dialogue: 3,0:05:15.55,0:05:15.89,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}masuk\N{\c&HFFFFFF&}sebab {\c&HBEC85C&}kemurungan
+Dialogue: 3,0:05:15.89,0:05:16.07,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}masuk\N{\c&H1FD2FF&}sebab {\c&HBEC85C&}kemurungan
+Dialogue: 3,0:05:16.07,0:05:16.38,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}masuk\N{\c&HFFFFFF&}sebab {\c&H1FD2FF&}kemurungan
+Dialogue: 3,0:05:16.38,0:05:16.51,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}teruk, {\c&HFFFFFF&}ada
+Dialogue: 3,0:05:16.51,0:05:16.97,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}teruk, {\c&HFFFFFF&}ada
+Dialogue: 3,0:05:16.97,0:05:17.16,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}teruk, {\c&H1FD2FF&}ada
+Dialogue: 3,0:05:17.16,0:05:17.31,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}masuk {\c&HFFFFFF&}sebab\N{\c&HFFFFFF&}tengah {\c&HFFFFFF&}full {\c&HFFFFFF&}blown
+Dialogue: 3,0:05:17.31,0:05:17.61,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}masuk {\c&HFFFFFF&}sebab\N{\c&HFFFFFF&}tengah {\c&HFFFFFF&}full {\c&HFFFFFF&}blown
+Dialogue: 3,0:05:17.61,0:05:18.05,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}masuk {\c&H1FD2FF&}sebab\N{\c&HFFFFFF&}tengah {\c&HFFFFFF&}full {\c&HFFFFFF&}blown
+Dialogue: 3,0:05:18.05,0:05:18.39,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}masuk {\c&HFFFFFF&}sebab\N{\c&H1FD2FF&}tengah {\c&HFFFFFF&}full {\c&HFFFFFF&}blown
+Dialogue: 3,0:05:18.39,0:05:18.59,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}masuk {\c&HFFFFFF&}sebab\N{\c&HFFFFFF&}tengah {\c&H1FD2FF&}full {\c&HFFFFFF&}blown
+Dialogue: 3,0:05:18.59,0:05:18.78,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}masuk {\c&HFFFFFF&}sebab\N{\c&HFFFFFF&}tengah {\c&HFFFFFF&}full {\c&H1FD2FF&}blown
+Dialogue: 3,0:05:18.78,0:05:19.39,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}manik, {\c&HFFFFFF&}ada
+Dialogue: 3,0:05:19.39,0:05:19.52,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}manik, {\c&H1FD2FF&}ada
+Dialogue: 3,0:05:19.52,0:05:19.71,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}mengalami\N{\c&HFFFFFF&}psikotik {\c&HFFFFFF&}sehingga {\c&HFFFFFF&}tak
+Dialogue: 3,0:05:19.71,0:05:20.33,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}mengalami\N{\c&HFFFFFF&}psikotik {\c&HFFFFFF&}sehingga {\c&HFFFFFF&}tak
+Dialogue: 3,0:05:20.33,0:05:21.29,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}mengalami\N{\c&H1FD2FF&}psikotik {\c&HFFFFFF&}sehingga {\c&HFFFFFF&}tak
+Dialogue: 3,0:05:21.29,0:05:21.65,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}mengalami\N{\c&HFFFFFF&}psikotik {\c&H1FD2FF&}sehingga {\c&HFFFFFF&}tak
+Dialogue: 3,0:05:21.65,0:05:21.74,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}mengalami\N{\c&HFFFFFF&}psikotik {\c&HFFFFFF&}sehingga {\c&H1FD2FF&}tak
+Dialogue: 3,0:05:21.74,0:05:22.31,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}mampu {\c&HFFFFFF&}nak {\c&HFFFFFF&}jaga\N{\c&HFFFFFF&}keselamatan {\c&HFFFFFF&}diri
+Dialogue: 3,0:05:22.31,0:05:22.69,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mampu {\c&H1FD2FF&}nak {\c&HFFFFFF&}jaga\N{\c&HFFFFFF&}keselamatan {\c&HFFFFFF&}diri
+Dialogue: 3,0:05:22.69,0:05:22.95,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mampu {\c&HFFFFFF&}nak {\c&H1FD2FF&}jaga\N{\c&HFFFFFF&}keselamatan {\c&HFFFFFF&}diri
+Dialogue: 3,0:05:22.95,0:05:23.39,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mampu {\c&HFFFFFF&}nak {\c&HFFFFFF&}jaga\N{\c&H1FD2FF&}keselamatan {\c&HFFFFFF&}diri
+Dialogue: 3,0:05:23.39,0:05:23.70,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mampu {\c&HFFFFFF&}nak {\c&HFFFFFF&}jaga\N{\c&HFFFFFF&}keselamatan {\c&H1FD2FF&}diri
+Dialogue: 3,0:05:23.70,0:05:23.89,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dan {\c&HFFFFFF&}ada {\c&HFFFFFF&}juga
+Dialogue: 3,0:05:23.89,0:05:24.01,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&H1FD2FF&}ada {\c&HFFFFFF&}juga
+Dialogue: 3,0:05:24.01,0:05:24.22,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}ada {\c&H1FD2FF&}juga
+Dialogue: 3,0:05:24.22,0:05:24.33,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}memerlukan\N{\c&HFFFFFF&}pemantauan {\c&HFFFFFF&}sebab
+Dialogue: 3,0:05:24.33,0:05:24.69,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}memerlukan\N{\c&HFFFFFF&}pemantauan {\c&HFFFFFF&}sebab
+Dialogue: 3,0:05:24.69,0:05:25.31,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}memerlukan\N{\c&H1FD2FF&}pemantauan {\c&HFFFFFF&}sebab
+Dialogue: 3,0:05:25.31,0:05:25.48,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}memerlukan\N{\c&HFFFFFF&}pemantauan {\c&H1FD2FF&}sebab
+Dialogue: 3,0:05:25.48,0:05:25.95,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}risiko\N{\c&HFFFFFF&}mencederakan {\c&HFFFFFF&}diri
+Dialogue: 3,0:05:25.95,0:05:26.45,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}risiko\N{\c&H1FD2FF&}mencederakan {\c&HFFFFFF&}diri
+Dialogue: 3,0:05:26.45,0:05:26.90,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}risiko\N{\c&HFFFFFF&}mencederakan {\c&H1FD2FF&}diri
+Dialogue: 3,0:05:26.90,0:05:27.37,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Tempoh {\c&HFFFFFF&}kemasukan\N{\c&HFFFFFF&}berbeza {\c&HFFFFFF&}mengikut
+Dialogue: 3,0:05:27.37,0:05:27.96,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tempoh {\c&H1FD2FF&}kemasukan\N{\c&HFFFFFF&}berbeza {\c&HFFFFFF&}mengikut
+Dialogue: 3,0:05:27.96,0:05:28.36,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tempoh {\c&HFFFFFF&}kemasukan\N{\c&H1FD2FF&}berbeza {\c&HFFFFFF&}mengikut
+Dialogue: 3,0:05:28.36,0:05:28.61,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Tempoh {\c&HFFFFFF&}kemasukan\N{\c&HFFFFFF&}berbeza {\c&H1FD2FF&}mengikut
+Dialogue: 3,0:05:28.61,0:05:28.90,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}keadaan {\c&HFFFFFF&}pesakit
+Dialogue: 3,0:05:28.90,0:05:29.51,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}keadaan {\c&H1FD2FF&}pesakit
+Dialogue: 3,0:05:29.51,0:05:29.68,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}ada {\c&HFFFFFF&}yang {\c&HFFFFFF&}memerlukan\N{\c&HFFFFFF&}beberapa {\c&HFFFFFF&}hari
+Dialogue: 3,0:05:29.68,0:05:29.76,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ada {\c&H1FD2FF&}yang {\c&HFFFFFF&}memerlukan\N{\c&HFFFFFF&}beberapa {\c&HFFFFFF&}hari
+Dialogue: 3,0:05:29.76,0:05:30.08,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ada {\c&HFFFFFF&}yang {\c&H1FD2FF&}memerlukan\N{\c&HFFFFFF&}beberapa {\c&HFFFFFF&}hari
+Dialogue: 3,0:05:30.08,0:05:30.28,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ada {\c&HFFFFFF&}yang {\c&HFFFFFF&}memerlukan\N{\c&H1FD2FF&}beberapa {\c&HFFFFFF&}hari
+Dialogue: 3,0:05:30.28,0:05:30.71,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ada {\c&HFFFFFF&}yang {\c&HFFFFFF&}memerlukan\N{\c&HFFFFFF&}beberapa {\c&H1FD2FF&}hari
+Dialogue: 3,0:05:30.71,0:05:30.82,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}ada {\c&HFFFFFF&}yang {\c&HFFFFFF&}memerlukan\N{\c&HFFFFFF&}beberapa {\c&HFFFFFF&}minggu
+Dialogue: 3,0:05:30.82,0:05:30.90,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ada {\c&H1FD2FF&}yang {\c&HFFFFFF&}memerlukan\N{\c&HFFFFFF&}beberapa {\c&HFFFFFF&}minggu
+Dialogue: 3,0:05:30.90,0:05:31.12,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ada {\c&HFFFFFF&}yang {\c&H1FD2FF&}memerlukan\N{\c&HFFFFFF&}beberapa {\c&HFFFFFF&}minggu
+Dialogue: 3,0:05:31.12,0:05:31.34,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ada {\c&HFFFFFF&}yang {\c&HFFFFFF&}memerlukan\N{\c&H1FD2FF&}beberapa {\c&HFFFFFF&}minggu
+Dialogue: 3,0:05:31.34,0:05:31.77,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}ada {\c&HFFFFFF&}yang {\c&HFFFFFF&}memerlukan\N{\c&HFFFFFF&}beberapa {\c&H1FD2FF&}minggu
+Dialogue: 3,0:05:31.77,0:05:32.10,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}mungkin {\c&HFFFFFF&}ada {\c&HFFFFFF&}juga
+Dialogue: 3,0:05:32.10,0:05:32.28,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mungkin {\c&H1FD2FF&}ada {\c&HFFFFFF&}juga
+Dialogue: 3,0:05:32.28,0:05:32.43,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mungkin {\c&HFFFFFF&}ada {\c&H1FD2FF&}juga
+Dialogue: 3,0:05:32.43,0:05:32.54,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}memerlukan\N{\c&HFFFFFF&}penjagaan
+Dialogue: 3,0:05:32.54,0:05:33.26,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}memerlukan\N{\c&HFFFFFF&}penjagaan
+Dialogue: 3,0:05:33.26,0:05:33.53,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}memerlukan\N{\c&H1FD2FF&}penjagaan
+Dialogue: 3,0:05:33.53,0:05:33.64,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}lebih {\c&HFFFFFF&}lama
+Dialogue: 3,0:05:33.64,0:05:33.82,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}lebih {\c&HFFFFFF&}lama
+Dialogue: 3,0:05:33.82,0:05:34.43,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}lebih {\c&H1FD2FF&}lama
+Dialogue: 3,0:05:34.49,0:05:35.04,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Sebagai {\c&HFFFFFF&}doktor\N{\c&HBEC85C&}psikiatri
+Dialogue: 3,0:05:35.04,0:05:35.36,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Sebagai {\c&H1FD2FF&}doktor\N{\c&HBEC85C&}psikiatri
+Dialogue: 3,0:05:35.36,0:05:35.93,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Sebagai {\c&HFFFFFF&}doktor\N{\c&H1FD2FF&}psikiatri
+Dialogue: 3,0:05:35.93,0:05:36.18,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}pernah\N{\c&HFFFFFF&}terlibat {\c&HFFFFFF&}dalam
+Dialogue: 3,0:05:36.18,0:05:36.52,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}pernah\N{\c&HFFFFFF&}terlibat {\c&HFFFFFF&}dalam
+Dialogue: 3,0:05:36.52,0:05:36.92,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}pernah\N{\c&H1FD2FF&}terlibat {\c&HFFFFFF&}dalam
+Dialogue: 3,0:05:36.92,0:05:37.12,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}pernah\N{\c&HFFFFFF&}terlibat {\c&H1FD2FF&}dalam
+Dialogue: 3,0:05:37.12,0:05:37.51,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}perkhidmatan\N{\c&HBEC85C&}psikiatri
+Dialogue: 3,0:05:37.51,0:05:38.13,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}perkhidmatan\N{\c&H1FD2FF&}psikiatri
+Dialogue: 3,0:05:38.13,0:05:38.45,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}saya {\c&HFFFFFF&}sendiri {\c&HFFFFFF&}melihat\N{\c&HFFFFFF&}bagaimana {\c&HFFFFFF&}rawatan
+Dialogue: 3,0:05:38.45,0:05:38.77,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}saya {\c&H1FD2FF&}sendiri {\c&HFFFFFF&}melihat\N{\c&HFFFFFF&}bagaimana {\c&HFFFFFF&}rawatan
+Dialogue: 3,0:05:38.77,0:05:39.19,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}saya {\c&HFFFFFF&}sendiri {\c&H1FD2FF&}melihat\N{\c&HFFFFFF&}bagaimana {\c&HFFFFFF&}rawatan
+Dialogue: 3,0:05:39.19,0:05:39.57,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}saya {\c&HFFFFFF&}sendiri {\c&HFFFFFF&}melihat\N{\c&H1FD2FF&}bagaimana {\c&HFFFFFF&}rawatan
+Dialogue: 3,0:05:39.57,0:05:40.24,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}saya {\c&HFFFFFF&}sendiri {\c&HFFFFFF&}melihat\N{\c&HFFFFFF&}bagaimana {\c&H1FD2FF&}rawatan
+Dialogue: 3,0:05:40.24,0:05:40.41,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}sesuai {\c&HFFFFFF&}boleh\N{\c&HFFFFFF&}mengubah {\c&HFFFFFF&}kehidupan
+Dialogue: 3,0:05:40.41,0:05:40.85,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}sesuai {\c&HFFFFFF&}boleh\N{\c&HFFFFFF&}mengubah {\c&HFFFFFF&}kehidupan
+Dialogue: 3,0:05:40.85,0:05:41.19,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}sesuai {\c&H1FD2FF&}boleh\N{\c&HFFFFFF&}mengubah {\c&HFFFFFF&}kehidupan
+Dialogue: 3,0:05:41.19,0:05:41.61,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}sesuai {\c&HFFFFFF&}boleh\N{\c&H1FD2FF&}mengubah {\c&HFFFFFF&}kehidupan
+Dialogue: 3,0:05:41.61,0:05:42.00,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}sesuai {\c&HFFFFFF&}boleh\N{\c&HFFFFFF&}mengubah {\c&H1FD2FF&}kehidupan
+Dialogue: 3,0:05:42.00,0:05:42.72,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}seorang
+Dialogue: 3,0:05:42.78,0:05:43.19,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Kalau {\c&HFFFFFF&}anda {\c&HFFFFFF&}ataupun\N{\c&HFFFFFF&}ahli {\c&HFFFFFF&}keluarga
+Dialogue: 3,0:05:43.19,0:05:43.47,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kalau {\c&H1FD2FF&}anda {\c&HFFFFFF&}ataupun\N{\c&HFFFFFF&}ahli {\c&HFFFFFF&}keluarga
+Dialogue: 3,0:05:43.47,0:05:43.73,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kalau {\c&HFFFFFF&}anda {\c&H1FD2FF&}ataupun\N{\c&HFFFFFF&}ahli {\c&HFFFFFF&}keluarga
+Dialogue: 3,0:05:43.73,0:05:43.87,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kalau {\c&HFFFFFF&}anda {\c&HFFFFFF&}ataupun\N{\c&H1FD2FF&}ahli {\c&HFFFFFF&}keluarga
+Dialogue: 3,0:05:43.87,0:05:44.24,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kalau {\c&HFFFFFF&}anda {\c&HFFFFFF&}ataupun\N{\c&HFFFFFF&}ahli {\c&H1FD2FF&}keluarga
+Dialogue: 3,0:05:44.24,0:05:44.61,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}sedang {\c&HFFFFFF&}mengalami\N{\c&HFFFFFF&}masalah {\c&HFFFFFF&}kesihatan
+Dialogue: 3,0:05:44.61,0:05:44.95,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sedang {\c&H1FD2FF&}mengalami\N{\c&HFFFFFF&}masalah {\c&HFFFFFF&}kesihatan
+Dialogue: 3,0:05:44.95,0:05:45.47,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sedang {\c&HFFFFFF&}mengalami\N{\c&H1FD2FF&}masalah {\c&HFFFFFF&}kesihatan
+Dialogue: 3,0:05:45.47,0:05:45.76,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}sedang {\c&HFFFFFF&}mengalami\N{\c&HFFFFFF&}masalah {\c&H1FD2FF&}kesihatan
+Dialogue: 3,0:05:45.76,0:05:46.41,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}mental, {\c&HFFFFFF&}cepat-cepat\N{\c&HFFFFFF&}dapatkan {\c&HBEC85C&}bantuan
+Dialogue: 3,0:05:46.41,0:05:46.85,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mental, {\c&H1FD2FF&}cepat-cepat\N{\c&HFFFFFF&}dapatkan {\c&HBEC85C&}bantuan
+Dialogue: 3,0:05:46.85,0:05:47.19,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mental, {\c&HFFFFFF&}cepat-cepat\N{\c&H1FD2FF&}dapatkan {\c&HBEC85C&}bantuan
+Dialogue: 3,0:05:47.19,0:05:47.38,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mental, {\c&HFFFFFF&}cepat-cepat\N{\c&HFFFFFF&}dapatkan {\c&H1FD2FF&}bantuan
+Dialogue: 3,0:05:47.38,0:05:47.81,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}daripada {\c&HFFFFFF&}profesional\N{\c&HFFFFFF&}kesihatan {\c&HFFFFFF&}mental
+Dialogue: 3,0:05:47.81,0:05:48.25,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}daripada {\c&H1FD2FF&}profesional\N{\c&HFFFFFF&}kesihatan {\c&HFFFFFF&}mental
+Dialogue: 3,0:05:48.25,0:05:48.55,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}daripada {\c&HFFFFFF&}profesional\N{\c&H1FD2FF&}kesihatan {\c&HFFFFFF&}mental
+Dialogue: 3,0:05:48.55,0:05:48.90,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}daripada {\c&HFFFFFF&}profesional\N{\c&HFFFFFF&}kesihatan {\c&H1FD2FF&}mental
+Dialogue: 3,0:05:48.90,0:05:49.15,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Boleh {\c&HFFFFFF&}bawa {\c&HFFFFFF&}datang\N{\c&HFFFFFF&}buat {\c&HFFFFFF&}saringan
+Dialogue: 3,0:05:49.15,0:05:49.43,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Boleh {\c&H1FD2FF&}bawa {\c&HFFFFFF&}datang\N{\c&HFFFFFF&}buat {\c&HFFFFFF&}saringan
+Dialogue: 3,0:05:49.43,0:05:49.95,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Boleh {\c&HFFFFFF&}bawa {\c&H1FD2FF&}datang\N{\c&HFFFFFF&}buat {\c&HFFFFFF&}saringan
+Dialogue: 3,0:05:49.95,0:05:50.11,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Boleh {\c&HFFFFFF&}bawa {\c&HFFFFFF&}datang\N{\c&H1FD2FF&}buat {\c&HFFFFFF&}saringan
+Dialogue: 3,0:05:50.11,0:05:50.36,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Boleh {\c&HFFFFFF&}bawa {\c&HFFFFFF&}datang\N{\c&HFFFFFF&}buat {\c&H1FD2FF&}saringan
+Dialogue: 3,0:05:50.36,0:05:50.47,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}dan {\c&HFFFFFF&}konsultasi\N{\c&HFFFFFF&}bersama {\c&HFFFFFF&}saya
+Dialogue: 3,0:05:50.47,0:05:50.91,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&H1FD2FF&}konsultasi\N{\c&HFFFFFF&}bersama {\c&HFFFFFF&}saya
+Dialogue: 3,0:05:50.91,0:05:51.17,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}konsultasi\N{\c&H1FD2FF&}bersama {\c&HFFFFFF&}saya
+Dialogue: 3,0:05:51.17,0:05:51.66,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}dan {\c&HFFFFFF&}konsultasi\N{\c&HFFFFFF&}bersama {\c&H1FD2FF&}saya
+Dialogue: 3,0:05:51.66,0:05:51.97,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Dr. {\c&H41A4D9&}Azren {\c&HFFFFFF&}di\N{\c&H41A4D9&}Klinik {\c&H41A4D9&}Nissa
+Dialogue: 3,0:05:51.97,0:05:52.25,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dr. {\c&H1FD2FF&}Azren {\c&HFFFFFF&}di\N{\c&H41A4D9&}Klinik {\c&H41A4D9&}Nissa
+Dialogue: 3,0:05:52.25,0:05:52.33,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dr. {\c&H41A4D9&}Azren {\c&H1FD2FF&}di\N{\c&H41A4D9&}Klinik {\c&H41A4D9&}Nissa
+Dialogue: 3,0:05:52.33,0:05:52.55,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dr. {\c&H41A4D9&}Azren {\c&HFFFFFF&}di\N{\c&H1FD2FF&}Klinik {\c&H41A4D9&}Nissa
+Dialogue: 3,0:05:52.55,0:05:53.20,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Dr. {\c&H41A4D9&}Azren {\c&HFFFFFF&}di\N{\c&H41A4D9&}Klinik {\c&H1FD2FF&}Nissa
+Dialogue: 3,0:05:53.20,0:05:53.35,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Saya {\c&HFFFFFF&}juga {\c&HFFFFFF&}ada\N{\c&HFFFFFF&}tulis {\c&HFFFFFF&}buku
+Dialogue: 3,0:05:53.35,0:05:53.51,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Saya {\c&H1FD2FF&}juga {\c&HFFFFFF&}ada\N{\c&HFFFFFF&}tulis {\c&HFFFFFF&}buku
+Dialogue: 3,0:05:53.51,0:05:53.63,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Saya {\c&HFFFFFF&}juga {\c&H1FD2FF&}ada\N{\c&HFFFFFF&}tulis {\c&HFFFFFF&}buku
+Dialogue: 3,0:05:53.63,0:05:53.85,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Saya {\c&HFFFFFF&}juga {\c&HFFFFFF&}ada\N{\c&H1FD2FF&}tulis {\c&HFFFFFF&}buku
+Dialogue: 3,0:05:53.85,0:05:54.18,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Saya {\c&HFFFFFF&}juga {\c&HFFFFFF&}ada\N{\c&HFFFFFF&}tulis {\c&H1FD2FF&}buku
+Dialogue: 3,0:05:54.18,0:05:54.31,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}yang {\c&HFFFFFF&}bertajuk\N{\c&HFFFFFF&}Doktor
+Dialogue: 3,0:05:54.31,0:05:54.64,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&H1FD2FF&}bertajuk\N{\c&HFFFFFF&}Doktor
+Dialogue: 3,0:05:54.64,0:05:54.93,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}yang {\c&HFFFFFF&}bertajuk\N{\c&H1FD2FF&}Doktor
+Dialogue: 3,0:05:54.93,0:05:55.08,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}saya {\c&HFFFFFF&}boleh\N{\c&HFFFFFF&}sembuh {\c&HFFFFFF&}Ke?
+Dialogue: 3,0:05:55.08,0:05:55.24,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}saya {\c&H1FD2FF&}boleh\N{\c&HFFFFFF&}sembuh {\c&HFFFFFF&}Ke?
+Dialogue: 3,0:05:55.24,0:05:55.58,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}saya {\c&HFFFFFF&}boleh\N{\c&H1FD2FF&}sembuh {\c&HFFFFFF&}Ke?
+Dialogue: 3,0:05:55.58,0:05:55.73,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}saya {\c&HFFFFFF&}boleh\N{\c&HFFFFFF&}sembuh {\c&H1FD2FF&}Ke?
+Dialogue: 3,0:05:55.73,0:05:56.18,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Terbitan\N{\c&HFFFFFF&}White {\c&HFFFFFF&}Coat {\c&HFFFFFF&}Books
+Dialogue: 3,0:05:56.18,0:05:56.38,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Terbitan\N{\c&H1FD2FF&}White {\c&HFFFFFF&}Coat {\c&HFFFFFF&}Books
+Dialogue: 3,0:05:56.38,0:05:56.60,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Terbitan\N{\c&HFFFFFF&}White {\c&H1FD2FF&}Coat {\c&HFFFFFF&}Books
+Dialogue: 3,0:05:56.60,0:05:57.25,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Terbitan\N{\c&HFFFFFF&}White {\c&HFFFFFF&}Coat {\c&H1FD2FF&}Books
+Dialogue: 3,0:05:57.31,0:05:57.44,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Yang {\c&HFFFFFF&}membincangkan\N{\c&HFFFFFF&}tentang {\c&HFFFFFF&}penyakit
+Dialogue: 3,0:05:57.44,0:05:58.06,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Yang {\c&H1FD2FF&}membincangkan\N{\c&HFFFFFF&}tentang {\c&HFFFFFF&}penyakit
+Dialogue: 3,0:05:58.06,0:05:58.32,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Yang {\c&HFFFFFF&}membincangkan\N{\c&H1FD2FF&}tentang {\c&HFFFFFF&}penyakit
+Dialogue: 3,0:05:58.32,0:05:58.59,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Yang {\c&HFFFFFF&}membincangkan\N{\c&HFFFFFF&}tentang {\c&H1FD2FF&}penyakit
+Dialogue: 3,0:05:58.59,0:05:59.02,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}mental {\c&HFFFFFF&}dan {\c&HFFFFFF&}perjalanan\N{\c&HBEC85C&}pemulihan {\c&HFFFFFF&}dengan
+Dialogue: 3,0:05:59.02,0:05:59.18,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mental {\c&H1FD2FF&}dan {\c&HFFFFFF&}perjalanan\N{\c&HBEC85C&}pemulihan {\c&HFFFFFF&}dengan
+Dialogue: 3,0:05:59.18,0:05:59.74,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mental {\c&HFFFFFF&}dan {\c&H1FD2FF&}perjalanan\N{\c&HBEC85C&}pemulihan {\c&HFFFFFF&}dengan
+Dialogue: 3,0:05:59.74,0:06:00.38,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mental {\c&HFFFFFF&}dan {\c&HFFFFFF&}perjalanan\N{\c&H1FD2FF&}pemulihan {\c&HFFFFFF&}dengan
+Dialogue: 3,0:06:00.38,0:06:00.57,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mental {\c&HFFFFFF&}dan {\c&HFFFFFF&}perjalanan\N{\c&HBEC85C&}pemulihan {\c&H1FD2FF&}dengan
+Dialogue: 3,0:06:00.57,0:06:00.98,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}bahasa {\c&HFFFFFF&}yang {\c&HFFFFFF&}mudah\N{\c&HFFFFFF&}untuk {\c&HFFFFFF&}difahami
+Dialogue: 3,0:06:00.98,0:06:01.16,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}bahasa {\c&H1FD2FF&}yang {\c&HFFFFFF&}mudah\N{\c&HFFFFFF&}untuk {\c&HFFFFFF&}difahami
+Dialogue: 3,0:06:01.16,0:06:01.54,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}bahasa {\c&HFFFFFF&}yang {\c&H1FD2FF&}mudah\N{\c&HFFFFFF&}untuk {\c&HFFFFFF&}difahami
+Dialogue: 3,0:06:01.54,0:06:01.72,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}bahasa {\c&HFFFFFF&}yang {\c&HFFFFFF&}mudah\N{\c&H1FD2FF&}untuk {\c&HFFFFFF&}difahami
+Dialogue: 3,0:06:01.72,0:06:02.47,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}bahasa {\c&HFFFFFF&}yang {\c&HFFFFFF&}mudah\N{\c&HFFFFFF&}untuk {\c&H1FD2FF&}difahami
+Dialogue: 3,0:06:02.53,0:06:02.88,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Kalau {\c&HFFFFFF&}anda {\c&HFFFFFF&}pernah\N{\c&HFFFFFF&}dimasukkan {\c&HFFFFFF&}ke {\c&HFFFFFF&}dalam
+Dialogue: 3,0:06:02.88,0:06:03.26,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kalau {\c&H1FD2FF&}anda {\c&HFFFFFF&}pernah\N{\c&HFFFFFF&}dimasukkan {\c&HFFFFFF&}ke {\c&HFFFFFF&}dalam
+Dialogue: 3,0:06:03.26,0:06:03.90,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kalau {\c&HFFFFFF&}anda {\c&H1FD2FF&}pernah\N{\c&HFFFFFF&}dimasukkan {\c&HFFFFFF&}ke {\c&HFFFFFF&}dalam
+Dialogue: 3,0:06:03.90,0:06:04.42,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kalau {\c&HFFFFFF&}anda {\c&HFFFFFF&}pernah\N{\c&H1FD2FF&}dimasukkan {\c&HFFFFFF&}ke {\c&HFFFFFF&}dalam
+Dialogue: 3,0:06:04.42,0:06:04.50,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kalau {\c&HFFFFFF&}anda {\c&HFFFFFF&}pernah\N{\c&HFFFFFF&}dimasukkan {\c&H1FD2FF&}ke {\c&HFFFFFF&}dalam
+Dialogue: 3,0:06:04.50,0:06:05.03,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Kalau {\c&HFFFFFF&}anda {\c&HFFFFFF&}pernah\N{\c&HFFFFFF&}dimasukkan {\c&HFFFFFF&}ke {\c&H1FD2FF&}dalam
+Dialogue: 3,0:06:05.03,0:06:05.24,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}wad {\c&HBEC85C&}psikiatri
+Dialogue: 3,0:06:05.24,0:06:05.89,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}wad {\c&H1FD2FF&}psikiatri
+Dialogue: 3,0:06:05.89,0:06:06.23,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}mungkin {\c&HFFFFFF&}boleh\N{\c&HFFFFFF&}kongsikan {\c&HFFFFFF&}pengalaman
+Dialogue: 3,0:06:06.23,0:06:06.41,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mungkin {\c&H1FD2FF&}boleh\N{\c&HFFFFFF&}kongsikan {\c&HFFFFFF&}pengalaman
+Dialogue: 3,0:06:06.41,0:06:06.91,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mungkin {\c&HFFFFFF&}boleh\N{\c&H1FD2FF&}kongsikan {\c&HFFFFFF&}pengalaman
+Dialogue: 3,0:06:06.91,0:06:07.36,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}mungkin {\c&HFFFFFF&}boleh\N{\c&HFFFFFF&}kongsikan {\c&H1FD2FF&}pengalaman
+Dialogue: 3,0:06:07.36,0:06:07.87,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}anda {\c&HFFFFFF&}di {\c&HFFFFFF&}dalam {\c&HFFFFFF&}komen
+Dialogue: 3,0:06:07.87,0:06:07.95,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}anda {\c&H1FD2FF&}di {\c&HFFFFFF&}dalam {\c&HFFFFFF&}komen
+Dialogue: 3,0:06:07.95,0:06:08.19,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}anda {\c&HFFFFFF&}di {\c&H1FD2FF&}dalam {\c&HFFFFFF&}komen
+Dialogue: 3,0:06:08.19,0:06:08.66,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}anda {\c&HFFFFFF&}di {\c&HFFFFFF&}dalam {\c&H1FD2FF&}komen
+Dialogue: 3,0:06:08.66,0:06:08.93,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Apa {\c&HFFFFFF&}soalan {\c&HFFFFFF&}boleh\N{\c&HFFFFFF&}tanya {\c&HFFFFFF&}di {\c&HFFFFFF&}dalam {\c&HFFFFFF&}komen
+Dialogue: 3,0:06:08.93,0:06:09.25,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Apa {\c&H1FD2FF&}soalan {\c&HFFFFFF&}boleh\N{\c&HFFFFFF&}tanya {\c&HFFFFFF&}di {\c&HFFFFFF&}dalam {\c&HFFFFFF&}komen
+Dialogue: 3,0:06:09.25,0:06:09.37,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Apa {\c&HFFFFFF&}soalan {\c&H1FD2FF&}boleh\N{\c&HFFFFFF&}tanya {\c&HFFFFFF&}di {\c&HFFFFFF&}dalam {\c&HFFFFFF&}komen
+Dialogue: 3,0:06:09.37,0:06:09.49,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Apa {\c&HFFFFFF&}soalan {\c&HFFFFFF&}boleh\N{\c&H1FD2FF&}tanya {\c&HFFFFFF&}di {\c&HFFFFFF&}dalam {\c&HFFFFFF&}komen
+Dialogue: 3,0:06:09.49,0:06:09.55,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Apa {\c&HFFFFFF&}soalan {\c&HFFFFFF&}boleh\N{\c&HFFFFFF&}tanya {\c&H1FD2FF&}di {\c&HFFFFFF&}dalam {\c&HFFFFFF&}komen
+Dialogue: 3,0:06:09.55,0:06:09.71,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Apa {\c&HFFFFFF&}soalan {\c&HFFFFFF&}boleh\N{\c&HFFFFFF&}tanya {\c&HFFFFFF&}di {\c&H1FD2FF&}dalam {\c&HFFFFFF&}komen
+Dialogue: 3,0:06:09.71,0:06:10.02,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Apa {\c&HFFFFFF&}soalan {\c&HFFFFFF&}boleh\N{\c&HFFFFFF&}tanya {\c&HFFFFFF&}di {\c&HFFFFFF&}dalam {\c&H1FD2FF&}komen
+Dialogue: 3,0:06:10.02,0:06:10.21,Cap,,0,0,0,,{\an5\pos(490,1250)\fad(90,0)}{\c&H1FD2FF&}Take {\c&HFFFFFF&}care
+Dialogue: 3,0:06:10.21,0:06:10.66,Cap,,0,0,0,,{\an5\pos(490,1250)}{\c&HFFFFFF&}Take {\c&H1FD2FF&}care

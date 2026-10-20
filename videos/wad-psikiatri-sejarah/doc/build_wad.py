@@ -10,6 +10,7 @@ Run: ../../../.venv/bin/python build_wad.py   →  public/index.html
 import html
 import itertools
 import json
+import os
 import re
 from pathlib import Path
 
@@ -752,6 +753,8 @@ def subtitles():
             if w is s[0] and (k == 0 or re.search(r"[.?!]$", segs[k - 1][-1]["text"])):
                 word = word[0].upper() + word[1:]
             txt.append(f'<span class="{cls}">{word}</span>' if cls else word)
+        if NOSUBS:
+            continue
         body.append(f'<div class="sub" id="sub{k}"><span class="subin">{" ".join(txt)}</span></div>')
         A(f"#sub{k}", a, {"opacity": 0, "y": 6}, {"opacity": 1, "y": 0}, 0.14, "power2.out")
         TO(f"#sub{k}", b - 0.1, {"opacity": 0}, 0.1, "power1.in")
@@ -760,6 +763,7 @@ def subtitles():
 
 
 CSS = (Path(__file__).parent / "style.css").read_text()
+NOSUBS = bool(os.environ.get("NOSUBS"))   # 9:16 version: captions are drawn outside the 16:9 frame
 
 
 def main():
