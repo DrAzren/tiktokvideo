@@ -1,0 +1,455 @@
+{
+ "fps": 24,
+ "duration": 386.377,
+ "voice_offset": 1.5,
+ "shots": [
+  {
+   "id": "k1",
+   "kind": "v",
+   "src": "k1_kampung_rain",
+   "t0": 0.0,
+   "in": "black"
+  },
+  {
+   "id": "s01",
+   "kind": "s",
+   "src": "03_ipoh_1911",
+   "t0": 5.681,
+   "in": "cut"
+  },
+  {
+   "id": "s02",
+   "kind": "s",
+   "src": "02_mother_son",
+   "t0": 10.741,
+   "in": "cut"
+  },
+  {
+   "id": "s03",
+   "kind": "s",
+   "src": "06_alone_steps",
+   "t0": 14.863,
+   "in": "cut"
+  },
+  {
+   "id": "s04",
+   "kind": "s",
+   "src": "04_villagers",
+   "t0": 22.806,
+   "in": "cut"
+  },
+  {
+   "id": "s05",
+   "kind": "s",
+   "src": "05_incense",
+   "t0": 27.188,
+   "in": "cut"
+  },
+  {
+   "id": "g01",
+   "kind": "g",
+   "src": "fact",
+   "t0": 32.869,
+   "in": "fade"
+  },
+  {
+   "id": "s06",
+   "kind": "s",
+   "src": "18_empty_ward",
+   "t0": 36.77,
+   "in": "cut"
+  },
+  {
+   "id": "g02",
+   "kind": "g",
+   "src": "title",
+   "t0": 40.231,
+   "in": "fade"
+  },
+  {
+   "id": "g03",
+   "kind": "g",
+   "src": "mappen",
+   "t0": 46.794,
+   "in": "ink"
+  },
+  {
+   "id": "s07",
+   "kind": "s",
+   "src": "32_register",
+   "t0": 51.837,
+   "in": "cut"
+  },
+  {
+   "id": "s08",
+   "kind": "s",
+   "src": "09_early_asylum",
+   "t0": 57.098,
+   "in": "cut"
+  },
+  {
+   "id": "s09",
+   "kind": "s",
+   "src": "07_penang_1880",
+   "t0": 63.44,
+   "in": "cut"
+  },
+  {
+   "id": "s10",
+   "kind": "s",
+   "src": "08_taiping_1890",
+   "t0": 65.74,
+   "in": "cut"
+  },
+  {
+   "id": "g04",
+   "kind": "g",
+   "src": "conditions",
+   "t0": 71.064,
+   "in": "tear"
+  },
+  {
+   "id": "s11",
+   "kind": "s",
+   "src": "11_attendant",
+   "t0": 76.748,
+   "in": "cut"
+  },
+  {
+   "id": "s12",
+   "kind": "s",
+   "src": "13_ward_ext",
+   "t0": 82.512,
+   "in": "cut"
+  },
+  {
+   "id": "e01",
+   "kind": "v",
+   "src": "e1_15_room",
+   "t0": 86.135,
+   "in": "cut"
+  },
+  {
+   "id": "e02",
+   "kind": "v",
+   "src": "e1_14_corridor",
+   "t0": 92.339,
+   "in": "cut"
+  },
+  {
+   "id": "s13",
+   "kind": "s",
+   "src": "18_empty_ward",
+   "t0": 94.5,
+   "in": "cut"
+  },
+  {
+   "id": "k2",
+   "kind": "v",
+   "src": "k2_tanjung_rambutan",
+   "t0": 98.223,
+   "in": "ink"
+  },
+  {
+   "id": "s14",
+   "kind": "s",
+   "src": "12_tanjung_rambutan",
+   "t0": 105.086,
+   "in": "cut"
+  },
+  {
+   "id": "g05",
+   "kind": "g",
+   "src": "asylum",
+   "t0": 106.767,
+   "in": "tear"
+  },
+  {
+   "id": "s15",
+   "kind": "s",
+   "src": "10_desk_ledger",
+   "t0": 120.917,
+   "in": "cut"
+  },
+  {
+   "id": "g06",
+   "kind": "g",
+   "src": "wards",
+   "t0": 125.939,
+   "in": "fade"
+  },
+  {
+   "id": "s16",
+   "kind": "s",
+   "src": "14_female_ward",
+   "t0": 131.242,
+   "in": "cut"
+  },
+  {
+   "id": "s17",
+   "kind": "s",
+   "src": "33_veranda",
+   "t0": 135.284,
+   "in": "cut"
+  },
+  {
+   "id": "g07",
+   "kind": "g",
+   "src": "names",
+   "t0": 139.585,
+   "in": "tear"
+  },
+  {
+   "id": "s18",
+   "kind": "s",
+   "src": "16_feeding",
+   "t0": 152.05,
+   "in": "cut"
+  },
+  {
+   "id": "g08",
+   "kind": "g",
+   "src": "meds",
+   "t0": 155.131,
+   "in": "ink"
+  },
+  {
+   "id": "e03",
+   "kind": "v",
+   "src": "e1_13_asylum_ext",
+   "t0": 171.881,
+   "in": "cut"
+  },
+  {
+   "id": "e04",
+   "kind": "v",
+   "src": "e1_16_garden",
+   "t0": 178.903,
+   "in": "cut"
+  },
+  {
+   "id": "s19",
+   "kind": "s",
+   "src": "16_feeding",
+   "t0": 182.363,
+   "in": "cut"
+  },
+  {
+   "id": "s20",
+   "kind": "s",
+   "src": "17_garden_work",
+   "t0": 186.303,
+   "in": "cut"
+  },
+  {
+   "id": "g09",
+   "kind": "g",
+   "src": "imperfect",
+   "t0": 193.284,
+   "in": "tear"
+  },
+  {
+   "id": "s21",
+   "kind": "s",
+   "src": "13_ward_ext",
+   "t0": 203.585,
+   "in": "cut"
+  },
+  {
+   "id": "s22",
+   "kind": "s",
+   "src": "33_veranda",
+   "t0": 211.106,
+   "in": "cut"
+  },
+  {
+   "id": "e05",
+   "kind": "v",
+   "src": "e1_11_brain_morph",
+   "t0": 214.127,
+   "in": "cut"
+  },
+  {
+   "id": "e06",
+   "kind": "v",
+   "src": "e1_17_lab",
+   "t0": 219.628,
+   "in": "ink"
+  },
+  {
+   "id": "e07",
+   "kind": "v",
+   "src": "e1_18_glassware",
+   "t0": 223.33,
+   "in": "cut"
+  },
+  {
+   "id": "s23",
+   "kind": "s",
+   "src": "19_dispensary",
+   "t0": 228.613,
+   "in": "cut"
+  },
+  {
+   "id": "s24",
+   "kind": "s",
+   "src": "10_desk_ledger",
+   "t0": 233.815,
+   "in": "cut"
+  },
+  {
+   "id": "e08",
+   "kind": "v",
+   "src": "e1_19_neurons",
+   "t0": 237.776,
+   "in": "cut"
+  },
+  {
+   "id": "g10",
+   "kind": "g",
+   "src": "grow",
+   "t0": 246.259,
+   "in": "fade"
+  },
+  {
+   "id": "g11",
+   "kind": "g",
+   "src": "balance",
+   "t0": 251.441,
+   "in": "cut"
+  },
+  {
+   "id": "s25",
+   "kind": "s",
+   "src": "22_corridor_1960",
+   "t0": 258.123,
+   "in": "cut"
+  },
+  {
+   "id": "s26",
+   "kind": "s",
+   "src": "20_penang_gh_1958",
+   "t0": 262.404,
+   "in": "ink"
+  },
+  {
+   "id": "s27",
+   "kind": "s",
+   "src": "21_ward_1958",
+   "t0": 268.226,
+   "in": "cut"
+  },
+  {
+   "id": "g12",
+   "kind": "g",
+   "src": "general",
+   "t0": 274.227,
+   "in": "tear"
+  },
+  {
+   "id": "g13",
+   "kind": "g",
+   "src": "depts",
+   "t0": 290.473,
+   "in": "cut"
+  },
+  {
+   "id": "g14",
+   "kind": "g",
+   "src": "mapmy",
+   "t0": 295.895,
+   "in": "fade"
+  },
+  {
+   "id": "s28",
+   "kind": "s",
+   "src": "31_horror_set",
+   "t0": 303.498,
+   "in": "ink"
+  },
+  {
+   "id": "k3",
+   "kind": "v",
+   "src": "k3_modern_ward",
+   "t0": 310.86,
+   "in": "cut"
+  },
+  {
+   "id": "s29",
+   "kind": "s",
+   "src": "24_doctor_nurse",
+   "t0": 315.362,
+   "in": "cut"
+  },
+  {
+   "id": "s30",
+   "kind": "s",
+   "src": "25_mdt",
+   "t0": 318.082,
+   "in": "cut"
+  },
+  {
+   "id": "g15",
+   "kind": "g",
+   "src": "reasons",
+   "t0": 324.464,
+   "in": "fade"
+  },
+  {
+   "id": "g16",
+   "kind": "g",
+   "src": "stay",
+   "t0": 336.407,
+   "in": "cut"
+  },
+  {
+   "id": "s31",
+   "kind": "s",
+   "src": "28_family_visit",
+   "t0": 344.211,
+   "in": "ink"
+  },
+  {
+   "id": "s32",
+   "kind": "s",
+   "src": "26_ot",
+   "t0": 349.254,
+   "in": "cut"
+  },
+  {
+   "id": "e09",
+   "kind": "v",
+   "src": "e1_21_family",
+   "t0": 352.856,
+   "in": "cut"
+  },
+  {
+   "id": "s33",
+   "kind": "s",
+   "src": "29_clinic_room",
+   "t0": 358.98,
+   "in": "cut"
+  },
+  {
+   "id": "g17",
+   "kind": "g",
+   "src": "book",
+   "t0": 363.282,
+   "in": "fade"
+  },
+  {
+   "id": "k4",
+   "kind": "v",
+   "src": "k4_kinta_sunrise",
+   "t0": 372.607,
+   "in": "ink"
+  },
+  {
+   "id": "g18",
+   "kind": "g",
+   "src": "end",
+   "t0": 380.877,
+   "in": "fade"
+  }
+ ]
+}

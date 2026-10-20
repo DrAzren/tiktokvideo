@@ -1,0 +1,1719 @@
+<!doctype html>
+<html lang="ms"><head><meta charset="utf-8" />
+<style>@font-face{font-family:"Cinzel";src:url("fonts/Cinzel-600.woff2") format("woff2");font-weight:600;font-display:block}
+@font-face{font-family:"Corm";src:url("fonts/CormorantGaramond-600.woff2") format("woff2");font-weight:600;font-display:block}
+@font-face{font-family:"CormI";src:url("fonts/CormorantGaramond-500i.woff2") format("woff2");font-weight:500;font-style:italic;font-display:block}
+@font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-500.woff2") format("woff2");font-weight:500;font-display:block}
+@font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-700.woff2") format("woff2");font-weight:700;font-display:block}
+@font-face{font-family:"PJS";src:url("fonts/PlusJakartaSans-800.woff2") format("woff2");font-weight:800;font-display:block}
+:root{--cream:#F4EBD8;--gold:#D9A441;--teal:#0E4F55;--tealL:#5CC8BE;--sepia:#3B2A1A;--navy:#0A1A2F;--red:#B3352B;}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;width:1920px;height:1080px;overflow:hidden;background:#000;font-family:"PJS",sans-serif;}
+#stage{position:relative;width:100%;height:100%;overflow:hidden;background:#000;}
+.shot{position:absolute;inset:0;opacity:0;overflow:hidden;}
+.shin{position:absolute;inset:0;--r:140%;}
+.inkm{-webkit-mask-image:radial-gradient(circle at 50% 55%,#000 calc(var(--r) - 18%),rgba(0,0,0,.55) calc(var(--r) - 9%),transparent var(--r));
+  mask-image:radial-gradient(circle at 50% 55%,#000 calc(var(--r) - 18%),rgba(0,0,0,.55) calc(var(--r) - 9%),transparent var(--r));}
+.kb{position:absolute;inset:0;}
+.shotv,.shotimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.gfx{position:absolute;inset:0;overflow:hidden;}
+.tear{position:absolute;top:0;left:0;width:60px;height:1080px;opacity:0;}
+.tear svg{width:60px;height:1080px;}
+/* backgrounds (linear gradients + inset shadows keep the heavy-overlay count low) */
+.bgdark{position:absolute;inset:0;background:linear-gradient(180deg,#17110c 0%,#070504 100%);}
+.bgnavy{position:absolute;inset:0;background:linear-gradient(160deg,#143766 0%,#0A1A2F 75%);}
+.bgteal{position:absolute;inset:0;background:linear-gradient(160deg,#145a60 0%,#072528 80%);}
+.bgslate{position:absolute;inset:0;background:linear-gradient(180deg,#2c3540 0%,#1b222b 100%);}
+.tex{position:absolute;inset:0;background:url("img/parchment.png") center/cover no-repeat;}
+.vg{position:absolute;inset:0;box-shadow:inset 0 0 260px 60px rgba(0,0,0,.6);}
+.vgw{position:absolute;inset:0;box-shadow:inset 0 0 240px 50px rgba(60,35,10,.38);}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(92,200,190,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(92,200,190,.07) 1px,transparent 1px);background-size:60px 60px;}
+/* fact */
+.fk{position:absolute;left:0;right:0;top:330px;text-align:center;font-family:"CormI";font-style:italic;font-size:54px;color:var(--gold);opacity:0;}
+.fbig{position:absolute;left:0;right:0;top:410px;text-align:center;font-family:"Cinzel";font-weight:600;font-size:130px;letter-spacing:.06em;color:var(--cream);opacity:0;}
+.fsub{position:absolute;left:0;right:0;top:580px;text-align:center;font-family:"PJS";font-weight:700;font-size:44px;color:rgba(244,235,216,.85);opacity:0;}
+/* title */
+.ttl,.ttl2{position:absolute;left:0;right:0;text-align:center;font-family:"Cinzel";font-weight:600;letter-spacing:.07em;color:var(--cream);white-space:nowrap;
+  text-shadow:0 0 40px rgba(217,164,65,.25),0 6px 30px rgba(0,0,0,.6);}
+.ttl{top:330px;font-size:100px;} .ttl2{top:450px;font-size:84px;color:var(--gold);}
+.ttl .ch,.ttl2 .ch{display:inline-block;}
+.ttl-sub{position:absolute;left:0;right:0;top:580px;text-align:center;font-family:"CormI";font-style:italic;font-size:58px;color:var(--cream);opacity:0;}
+.ttl-line{position:absolute;left:360px;top:680px;width:1200px;height:40px;}
+/* maps */
+.mapwrap{position:absolute;}
+.mapwrap img{display:block;}
+.pin{position:absolute;width:28px;height:28px;opacity:0;}
+.pin .pdot{position:absolute;inset:4px;border-radius:50%;background:var(--red);box-shadow:0 0 0 5px rgba(179,53,43,.25);}
+.pin .plab{position:absolute;left:36px;top:-6px;font-family:"Cinzel";font-weight:600;font-size:34px;color:var(--sepia);white-space:nowrap;}
+.pin.dot{width:18px;height:18px;} .pin.dot .pdot{inset:2px;background:var(--tealL);box-shadow:0 0 0 5px rgba(92,200,190,.25);}
+.mph{position:absolute;left:150px;top:150px;font-family:"Cinzel";font-weight:600;font-size:70px;letter-spacing:.1em;color:var(--sepia);opacity:0;}
+.mcredit{position:absolute;right:40px;bottom:24px;font-family:"PJS";font-size:16px;color:rgba(59,42,26,.6);}
+.mcredit.l{color:rgba(244,235,216,.55);}
+.myhd{position:absolute;left:0;right:0;top:90px;text-align:center;font-family:"PJS";font-weight:800;font-size:44px;color:var(--cream);opacity:0;}
+/* conditions */
+.chd{position:absolute;left:0;right:0;top:170px;text-align:center;font-family:"CormI";font-style:italic;font-size:64px;color:var(--sepia);opacity:0;}
+.crow{position:absolute;left:0;right:0;top:360px;display:flex;justify-content:center;gap:70px;}
+.ccard{width:420px;height:300px;border:3px solid rgba(59,42,26,.55);border-radius:18px;background:rgba(255,250,240,.45);display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;}
+.cq{font-family:"Cinzel";font-size:110px;color:rgba(179,53,43,.75);line-height:1;}
+.cn{font-family:"Corm";font-weight:600;font-size:52px;color:var(--sepia);}
+.cfoot{position:absolute;left:0;right:0;top:720px;text-align:center;font-family:"PJS";font-weight:800;font-size:40px;letter-spacing:.12em;color:var(--red);opacity:0;}
+/* asylum name */
+.ak{position:absolute;left:0;right:0;top:230px;text-align:center;font-family:"Cinzel";font-weight:600;font-size:34px;letter-spacing:.25em;color:#7a5a2e;opacity:0;}
+.aname{position:absolute;left:0;right:0;top:330px;text-align:center;font-family:"Cinzel";font-weight:600;font-size:104px;letter-spacing:.05em;color:var(--sepia);white-space:nowrap;}
+.aname span{display:inline-block;opacity:0;position:relative;}
+.strike{position:absolute;left:-2%;right:-2%;top:52%;height:9px;background:var(--red);border-radius:4px;transform:scaleX(0);}
+.aplace{position:absolute;left:0;right:0;top:480px;text-align:center;font-family:"CormI";font-style:italic;font-size:52px;color:#5d4527;opacity:0;}
+.anote{position:absolute;left:260px;right:260px;top:640px;text-align:center;font-family:"PJS";font-weight:700;font-size:38px;color:var(--red);opacity:0;
+  border:3px solid rgba(179,53,43,.6);border-radius:14px;padding:16px 24px;background:rgba(255,248,236,.55);}
+/* wards */
+.wk{position:absolute;left:0;right:0;top:160px;text-align:center;font-family:"Cinzel";font-weight:600;font-size:40px;letter-spacing:.2em;color:#7a5a2e;opacity:0;}
+.wrow{position:absolute;left:0;right:0;top:330px;display:flex;justify-content:center;align-items:flex-end;gap:46px;}
+.wb{width:330px;height:240px;position:relative;opacity:0;border:3px solid rgba(59,42,26,.6);border-radius:8px 8px 4px 4px;background:rgba(255,250,240,.55);
+  display:flex;align-items:flex-end;justify-content:center;padding-bottom:26px;}
+.wb .roof{position:absolute;left:-14px;right:-14px;top:-56px;height:56px;background:#8E3B2C;clip-path:polygon(0 100%,50% 0,100% 100%);}
+.wb.f{background:rgba(217,164,65,.28);}
+.wl{font-family:"Corm";font-weight:600;font-size:40px;color:var(--sepia);}
+.wsum{position:absolute;left:0;right:0;top:720px;text-align:center;font-family:"PJS";font-weight:700;font-size:48px;color:var(--sepia);opacity:0;}
+.wsum b{font-family:"Cinzel";font-size:64px;color:var(--red);}
+/* names */
+.nhd{position:absolute;left:0;right:0;top:120px;text-align:center;font-family:"CormI";font-style:italic;font-size:62px;color:var(--gold);opacity:0;}
+.nrail{position:absolute;left:640px;top:300px;width:4px;height:560px;background:rgba(217,164,65,.6);}
+.nrow{position:absolute;left:330px;display:flex;align-items:center;gap:40px;opacity:0;}
+#g07-r0{top:290px;} #g07-r1{top:500px;} #g07-r2{top:710px;}
+.ny{width:270px;text-align:right;font-family:"Cinzel";font-weight:600;font-size:64px;color:var(--gold);}
+.ndot{width:28px;height:28px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 6px rgba(217,164,65,.25);}
+.nn{font-family:"Cinzel";font-weight:600;font-size:58px;color:var(--cream);white-space:nowrap;}
+/* meds */
+.mhd{position:absolute;left:0;right:0;top:140px;text-align:center;font-family:"PJS";font-weight:800;font-size:70px;letter-spacing:.2em;color:var(--cream);opacity:0;z-index:3;}
+.mhd.sep{color:#3a2614;font-family:"Cinzel";}
+.mgrid{position:absolute;left:0;right:0;top:330px;display:flex;flex-direction:column;align-items:center;gap:44px;z-index:3;}
+.mrow{display:flex;align-items:center;gap:40px;opacity:0;}
+.mc{width:460px;text-align:right;font-family:"PJS";font-weight:700;font-size:54px;color:var(--cream);}
+.marr{font-size:54px;color:var(--gold);}
+.mm{position:relative;width:520px;padding:14px 30px;border-radius:40px;border:3px solid var(--tealL);background:rgba(14,79,85,.6);font-family:"PJS";font-weight:800;font-size:46px;color:var(--cream);}
+.mnone{position:absolute;left:0;right:0;top:820px;text-align:center;font-family:"PJS";font-weight:800;font-size:48px;color:#3a2614;opacity:0;z-index:3;}
+.sepia{position:absolute;inset:0;background:url("img/parchment.png") center/cover;opacity:0;z-index:2;}
+.sepia ~ .mgrid .mc{color:var(--cream);}
+/* imperfect */
+.ihd{position:absolute;left:0;right:0;top:250px;text-align:center;font-family:"Cinzel";font-weight:600;font-size:88px;color:var(--sepia);opacity:0;}
+.isub{position:absolute;left:0;right:0;top:420px;text-align:center;font-family:"CormI";font-style:italic;font-size:50px;color:#5d4527;opacity:0;}
+.irow{position:absolute;left:0;right:0;top:560px;display:flex;justify-content:center;gap:50px;}
+.ichip{padding:20px 40px;border-radius:50px;border:3px solid var(--red);color:var(--red);background:rgba(255,248,236,.6);font-family:"PJS";font-weight:800;font-size:44px;opacity:0;}
+/* grow */
+.ghd{position:absolute;left:0;right:0;top:220px;text-align:center;font-family:"PJS";font-weight:800;font-size:60px;color:var(--cream);opacity:0;}
+.grow{position:absolute;left:0;right:0;top:450px;display:flex;justify-content:center;align-items:center;gap:30px;}
+.gi{width:400px;height:200px;border-radius:24px;border:3px solid var(--tealL);background:rgba(14,79,85,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;}
+.gn{font-family:"PJS";font-weight:800;font-size:46px;color:var(--cream);} .gy{font-family:"Cinzel";font-size:34px;color:var(--gold);margin-top:6px;}
+.ga{font-size:64px;color:var(--gold);opacity:0;}
+/* balance */
+.bcol{position:absolute;top:300px;width:700px;opacity:0;}
+.bcol.l{left:180px;} .bcol.r{left:1040px;}
+.bt{font-family:"PJS";font-weight:800;font-size:46px;color:var(--cream);}
+.bbar{margin-top:40px;height:60px;border-radius:30px;width:100%;}
+.bbar.amber{background:linear-gradient(90deg,#c07a2a,#e2a24a);} .bbar.teal{background:linear-gradient(90deg,#2f8f86,#5CC8BE);}
+.bnote{margin-top:24px;font-family:"CormI";font-style:italic;font-size:46px;color:var(--gold);}
+/* general hospital */
+.gcol{position:absolute;top:200px;width:720px;display:flex;flex-direction:column;align-items:center;opacity:0;}
+.gcol.l{left:150px;} .gcol.r{left:1050px;}
+.gk{font-family:"Cinzel";font-weight:600;font-size:44px;letter-spacing:.15em;color:#7a5a2e;margin-bottom:70px;}
+.bld{position:relative;border:3px solid rgba(59,42,26,.6);background:rgba(255,250,240,.6);border-radius:6px;}
+.bld.solo{width:360px;height:250px;} .bld.big{width:600px;height:300px;}
+.bl-roof{position:absolute;left:-16px;right:-16px;top:-60px;height:60px;background:#8E3B2C;clip-path:polygon(0 100%,50% 0,100% 100%);}
+.bl-body{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:"Corm";font-weight:600;font-size:46px;color:var(--sepia);}
+.wing{position:absolute;right:-30px;bottom:-30px;padding:14px 26px;border-radius:14px;background:var(--teal);color:var(--cream);font-family:"PJS";font-weight:800;font-size:32px;opacity:0;}
+.gd{margin-top:60px;width:620px;text-align:center;font-family:"CormI";font-style:italic;font-size:42px;color:#5d4527;}
+/* departments */
+.dhd{position:absolute;left:0;right:0;top:250px;text-align:center;font-family:"Cinzel";font-weight:600;font-size:80px;letter-spacing:.1em;color:var(--cream);opacity:0;}
+.drow{position:absolute;left:0;right:0;top:470px;display:flex;justify-content:center;gap:34px;flex-wrap:wrap;padding:0 160px;}
+.dchip{padding:20px 40px;border-radius:50px;border:3px solid rgba(244,235,216,.55);color:var(--cream);background:rgba(10,26,47,.5);font-family:"PJS";font-weight:700;font-size:44px;opacity:0;}
+.dchip.hi{border-color:var(--gold);background:rgba(217,164,65,.25);color:#fff;font-weight:800;}
+/* reasons */
+.rhd{position:absolute;left:150px;top:180px;font-family:"PJS";font-weight:800;font-size:56px;color:var(--cream);opacity:0;}
+.rlist{position:absolute;left:150px;top:320px;display:flex;flex-direction:column;gap:30px;}
+.ri{display:flex;align-items:center;gap:22px;padding:18px 36px 18px 26px;border-radius:18px;background:rgba(10,26,47,.7);border-left:6px solid var(--tealL);
+  font-family:"PJS";font-weight:700;font-size:44px;color:var(--cream);opacity:0;width:max-content;}
+.rd{width:16px;height:16px;border-radius:50%;background:var(--gold);}
+/* stay */
+.shd{position:absolute;left:0;right:0;top:200px;text-align:center;font-family:"PJS";font-weight:800;font-size:52px;color:var(--cream);opacity:0;}
+.sbox{position:absolute;left:300px;right:300px;top:380px;display:flex;flex-direction:column;gap:46px;}
+.srow{display:flex;align-items:center;gap:30px;opacity:0;}
+.sl{width:380px;font-family:"PJS";font-weight:700;font-size:42px;color:var(--cream);text-align:right;}
+.sbar{flex:1;height:44px;border-radius:22px;background:rgba(244,235,216,.15);overflow:hidden;}
+.sbar i{display:block;height:100%;width:100%;background:linear-gradient(90deg,#2f8f86,#5CC8BE);border-radius:22px;transform:scaleX(0);}
+/* book */
+.book{position:absolute;left:260px;top:180px;width:470px;height:660px;transform-style:preserve-3d;opacity:0;}
+.bcover{position:absolute;inset:0;border-radius:6px 14px 14px 6px;background:linear-gradient(160deg,#F4EBD8 0%,#e7d7b7 100%);box-shadow:0 30px 60px rgba(0,0,0,.5);
+  padding:70px 50px;display:flex;flex-direction:column;}
+.bspine{position:absolute;left:-26px;top:6px;bottom:6px;width:26px;background:#0E4F55;border-radius:6px 0 0 6px;}
+.bt1{font-family:"Corm";font-weight:600;font-size:64px;color:#0E4F55;}
+.bt2{font-family:"Cinzel";font-weight:600;font-size:58px;line-height:1.15;color:#0B1418;margin-top:10px;}
+.bau{margin-top:auto;font-family:"PJS";font-weight:800;font-size:34px;color:#0E4F55;letter-spacing:.08em;}
+.bpub{font-family:"PJS";font-weight:500;font-size:22px;color:#5d4527;margin-top:8px;}
+.btxt{position:absolute;left:860px;right:140px;top:280px;opacity:0;}
+.bk1{font-family:"PJS";font-weight:700;font-size:36px;color:var(--tealL);letter-spacing:.06em;}
+.bk2{font-family:"Cinzel";font-weight:600;font-size:60px;line-height:1.2;color:var(--cream);margin-top:18px;}
+.bk3{font-family:"CormI";font-style:italic;font-size:42px;color:rgba(244,235,216,.9);margin-top:26px;}
+.bk4{font-family:"PJS";font-weight:700;font-size:30px;color:var(--gold);margin-top:26px;}
+.bnote2{position:absolute;left:265px;top:860px;font-family:"PJS";font-size:18px;color:rgba(244,235,216,.55);}
+/* end */
+.e1{position:absolute;left:0;right:0;top:320px;text-align:center;font-family:"Cinzel";font-weight:600;font-size:76px;letter-spacing:.05em;color:var(--cream);white-space:nowrap;opacity:0;}
+.e2{position:absolute;left:0;right:0;top:440px;text-align:center;font-family:"CormI";font-style:italic;font-size:56px;color:var(--gold);opacity:0;}
+.brand{position:absolute;left:0;right:0;top:590px;display:flex;align-items:center;justify-content:center;gap:28px;opacity:0;font-family:"PJS";font-weight:800;font-size:44px;letter-spacing:.3em;color:var(--tealL);}
+.brand .bl{width:120px;height:2px;background:var(--tealL);opacity:.7;}
+.ep{position:absolute;left:0;right:0;top:680px;text-align:center;font-family:"PJS";font-weight:700;font-size:32px;color:rgba(244,235,216,.85);opacity:0;}
+.help{position:absolute;left:0;right:0;top:770px;text-align:center;font-family:"PJS";font-weight:500;font-size:24px;color:rgba(244,235,216,.85);opacity:0;}
+/* overlays */
+.yr{position:absolute;left:0;right:0;top:250px;z-index:72;text-align:center;font-family:"Cinzel";font-weight:600;font-size:230px;letter-spacing:.06em;color:var(--cream);text-shadow:0 10px 60px rgba(0,0,0,.65);opacity:0;}
+.drug{position:absolute;left:0;right:0;top:560px;z-index:72;text-align:center;font-family:"PJS";font-weight:800;font-size:58px;color:var(--tealL);letter-spacing:.28em;text-shadow:0 4px 24px rgba(0,0,0,.85);opacity:0;}
+.drug2{position:absolute;left:0;right:0;top:650px;z-index:72;text-align:center;font-family:"CormI";font-style:italic;font-size:38px;color:var(--cream);text-shadow:0 3px 16px rgba(0,0,0,.9);opacity:0;}
+.tx{position:absolute;left:110px;top:240px;z-index:72;display:flex;flex-direction:column;gap:16px;}
+.txi{display:flex;align-items:center;gap:18px;padding:14px 30px 14px 22px;border-radius:16px;background:rgba(10,26,47,.66);border-left:4px solid var(--tealL);
+  font-family:"PJS";font-weight:700;font-size:36px;color:var(--cream);opacity:0;white-space:nowrap;width:max-content;}
+.tx.myth .txi{border-left-color:var(--red);font-family:"CormI";font-style:italic;font-weight:500;font-size:42px;}
+.txd{width:14px;height:14px;border-radius:50%;background:var(--gold);}
+.humane{position:absolute;left:0;right:0;top:700px;z-index:72;text-align:center;font-family:"CormI";font-style:italic;font-size:58px;color:var(--cream);text-shadow:0 4px 26px rgba(0,0,0,.85);opacity:0;}
+.chap{position:absolute;left:140px;top:330px;z-index:72;font-family:"Cinzel";font-weight:600;font-size:120px;letter-spacing:.1em;color:var(--cream);text-shadow:0 6px 40px rgba(0,0,0,.65);opacity:0;}
+.place{position:absolute;left:146px;top:478px;z-index:72;font-family:"CormI";font-style:italic;font-size:38px;color:var(--gold);text-shadow:0 3px 18px rgba(0,0,0,.8);opacity:0;}
+.placebig{position:absolute;left:140px;top:640px;z-index:72;font-family:"Cinzel";font-weight:600;font-size:72px;letter-spacing:.06em;color:var(--cream);text-shadow:0 6px 30px rgba(0,0,0,.8);opacity:0;}
+.place2{position:absolute;left:0;right:0;top:520px;z-index:72;text-align:center;font-family:"CormI";font-style:italic;font-size:46px;color:var(--cream);text-shadow:0 3px 18px rgba(0,0,0,.9);opacity:0;}
+.l3{position:absolute;left:120px;top:620px;z-index:72;padding-left:30px;opacity:0;}
+.l3rule{position:absolute;left:0;top:6px;width:4px;height:150px;background:var(--gold);}
+.l3n{font-family:"Cinzel";font-weight:600;font-size:64px;letter-spacing:.06em;color:var(--cream);text-shadow:0 4px 24px rgba(0,0,0,.75);}
+.l3m{font-family:"CormI";font-style:italic;font-size:40px;color:var(--gold);text-shadow:0 3px 16px rgba(0,0,0,.85);}
+.l3chip{display:inline-block;margin-top:12px;padding:8px 22px;border-radius:30px;background:rgba(14,79,85,.85);border:2px solid var(--tealL);font-family:"PJS";font-weight:700;font-size:26px;color:var(--cream);}
+.stamp2{position:absolute;left:560px;top:420px;width:800px;height:150px;z-index:72;display:flex;align-items:center;justify-content:center;border:8px solid #d0453a;border-radius:14px;
+  color:#ff6b5d;font-family:"PJS";font-weight:800;font-size:60px;letter-spacing:.1em;background:rgba(20,10,10,.35);opacity:0;}
+.real{position:absolute;left:120px;top:150px;z-index:72;padding:12px 28px;border-radius:12px;background:rgba(14,79,85,.85);border:2px solid var(--tealL);
+  font-family:"PJS";font-weight:800;font-size:34px;letter-spacing:.12em;color:var(--cream);opacity:0;}
+.cmt{position:absolute;left:220px;right:220px;top:620px;z-index:72;text-align:center;padding:22px 40px;border-radius:20px;background:rgba(10,26,47,.62);border:2px solid var(--gold);
+  font-family:"PJS";font-weight:700;font-size:40px;color:var(--cream);opacity:0;}
+.era{position:absolute;inset:0;z-index:70;opacity:0;pointer-events:none;}
+.era::before{content:"";position:absolute;left:0;right:0;top:0;height:160px;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,0));}
+.tlrail{position:absolute;height:3px;background:rgba(244,235,216,.35);border-radius:2px;}
+.tlprog{position:absolute;height:3px;background:var(--gold);border-radius:2px;transform:scaleX(0);transform-origin:0% 50%;}
+.tlnode{position:absolute;border-radius:50%;background:rgba(244,235,216,.35);box-shadow:0 0 0 3px rgba(0,0,0,.25);}
+.tllab{position:absolute;width:400px;text-align:center;font-family:"PJS";font-weight:700;letter-spacing:.1em;color:var(--cream);white-space:nowrap;text-shadow:0 2px 10px rgba(0,0,0,.7);}
+.tag{position:absolute;right:44px;top:34px;z-index:80;font-family:"PJS";font-weight:500;font-size:18px;letter-spacing:.06em;color:var(--cream);text-shadow:0 1px 6px rgba(0,0,0,.8);opacity:0;}
+.vig{position:absolute;inset:0;z-index:60;pointer-events:none;box-shadow:inset 0 0 280px 40px rgba(0,0,0,.42);}
+.grain{position:absolute;inset:-20px;z-index:61;pointer-events:none;background-image:url("img/grain.png");background-size:512px 512px;opacity:.07;mix-blend-mode:overlay;}
+.sub{position:absolute;left:0;right:0;bottom:96px;z-index:90;text-align:center;opacity:0;pointer-events:none;}
+.subin{display:inline-block;max-width:1500px;padding:10px 28px 12px;border-radius:12px;background:rgba(6,12,16,.45);font-family:"PJS";font-weight:700;font-size:46px;line-height:1.25;color:#F7F0E2;text-shadow:0 2px 10px rgba(0,0,0,.75);}
+.subin .g{color:var(--gold);} .subin .t{color:var(--tealL);}
+</style></head>
+<body>
+<div id="stage" data-composition-id="wad-psikiatri" data-start="0" data-duration="386.377" data-fps="24" data-width="1920" data-height="1080">
+  <div class="shot" id="k1" style="z-index:10"><div class="shin" id="k1-in"><div class="kb" id="k1-kb"><video class="clip shotv" id="k1-v" src="broll/k1_kampung_rain.mp4" muted playsinline data-start="0.0" data-duration="5.832" data-track-index="1"></video></div></div></div>
+<div class="shot" id="s01" style="z-index:11"><div class="shin" id="s01-in"><div class="kb" id="s01-kb"><img class="shotimg" src="img/03_ipoh_1911.jpg" /></div></div></div>
+<div class="shot" id="s02" style="z-index:12"><div class="shin" id="s02-in"><div class="kb" id="s02-kb"><img class="shotimg" src="img/02_mother_son.jpg" /></div></div></div>
+<div class="shot" id="s03" style="z-index:13"><div class="shin" id="s03-in"><div class="kb" id="s03-kb"><img class="shotimg" src="img/06_alone_steps.jpg" /></div></div></div>
+<div class="shot" id="s04" style="z-index:14"><div class="shin" id="s04-in"><div class="kb" id="s04-kb"><img class="shotimg" src="img/04_villagers.jpg" /></div></div></div>
+<div class="shot" id="s05" style="z-index:15"><div class="shin" id="s05-in"><div class="kb" id="s05-kb"><img class="shotimg" src="img/05_incense.jpg" /></div></div></div>
+<div class="shot" id="g01" style="z-index:16"><div class="shin" id="g01-in"><div class="gfx" id="g01-g"><div class="bgdark"></div><div class="tex" style="opacity:.10;mix-blend-mode:screen"></div><div class="vg"></div><div class="fk" id="g01-k">Sebenarnya…</div>
+<div class="fbig" id="g01-b">PENYAKIT MENTAL</div><div class="fsub" id="g01-s">yang serius — bukan sekadar “rasuk”</div></div></div></div>
+<div class="shot" id="s06" style="z-index:17"><div class="shin" id="s06-in"><div class="kb" id="s06-kb"><img class="shotimg" src="img/18_empty_ward.jpg" /></div></div></div>
+<div class="shot" id="g02" style="z-index:18"><div class="shin" id="g02-in"><div class="gfx" id="g02-g"><div class="bgdark"></div><div class="tex" style="opacity:.10;mix-blend-mode:screen"></div><div class="vg"></div><div class="ttl" id="g02-t"><span class="ch">S</span><span class="ch">E</span><span class="ch">J</span><span class="ch">A</span><span class="ch">R</span><span class="ch">A</span><span class="ch">H</span><span class="ch">&nbsp;</span><span class="ch">W</span><span class="ch">A</span><span class="ch">D</span><span class="ch">&nbsp;</span><span class="ch">P</span><span class="ch">S</span><span class="ch">I</span><span class="ch">K</span><span class="ch">I</span><span class="ch">A</span><span class="ch">T</span><span class="ch">R</span><span class="ch">I</span></div>
+<div class="ttl2" id="g02-t2"><span class="ch">D</span><span class="ch">I</span><span class="ch">&nbsp;</span><span class="ch">M</span><span class="ch">A</span><span class="ch">L</span><span class="ch">A</span><span class="ch">Y</span><span class="ch">S</span><span class="ch">I</span><span class="ch">A</span></div>
+<div class="ttl-sub" id="g02-s">Adakah ia menakutkan?</div>
+<svg class="ttl-line" viewBox="0 0 1200 40"><path id="g02-p" d="M10 20 L1190 20" stroke="#D9A441" stroke-width="2" fill="none" stroke-dasharray="1200"/>
+<circle id="g02-d0" cx="10" cy="20" r="6" fill="#D9A441"/><circle id="g02-d1" cx="246" cy="20" r="6" fill="#D9A441"/><circle id="g02-d2" cx="482" cy="20" r="6" fill="#D9A441"/><circle id="g02-d3" cx="718" cy="20" r="6" fill="#D9A441"/><circle id="g02-d4" cx="954" cy="20" r="6" fill="#D9A441"/><circle id="g02-d5" cx="1190" cy="20" r="6" fill="#D9A441"/></svg></div></div></div>
+<div class="shot" id="g03" style="z-index:19"><div class="shin inkm" id="g03-in"><div class="gfx" id="g03-g"><div class="tex"></div><div class="vgw"></div><div class="mapwrap" id="g03-m" style="width:1100px;height:1000px;left:530px;top:60px">
+<img src="img/map_pen.svg" style="width:100%;height:100%"/><div class="pin" id="g03-p0" style="left:391.2px;top:368.8px"><span class="pdot"></span><span class="plab">Tanjung Rambutan, Perak</span></div><div class="pin" id="g03-p1" style="left:248.10000000000002px;top:242.89999999999998px"><span class="pdot"></span><span class="plab">Pulau Pinang</span></div><div class="pin" id="g03-p2" style="left:318.8px;top:339.4px"><span class="pdot"></span><span class="plab">Taiping</span></div></div>
+<div class="mph" id="g03-h">Tanah Melayu</div><div class="mcredit">Peta: Natural Earth</div></div></div></div>
+<div class="shot" id="s07" style="z-index:20"><div class="shin" id="s07-in"><div class="kb" id="s07-kb"><img class="shotimg" src="img/32_register.jpg" /></div></div></div>
+<div class="shot" id="s08" style="z-index:21"><div class="shin" id="s08-in"><div class="kb" id="s08-kb"><img class="shotimg" src="img/09_early_asylum.jpg" /></div></div></div>
+<div class="shot" id="s09" style="z-index:22"><div class="shin" id="s09-in"><div class="kb" id="s09-kb"><img class="shotimg" src="img/07_penang_1880.jpg" /></div></div></div>
+<div class="shot" id="s10" style="z-index:23"><div class="shin" id="s10-in"><div class="kb" id="s10-kb"><img class="shotimg" src="img/08_taiping_1890.jpg" /></div></div></div>
+<div class="shot" id="g04" style="z-index:24"><div class="shin" id="g04-in"><div class="gfx" id="g04-g"><div class="tex"></div><div class="vgw"></div><div class="chd" id="g04-h">Ilmu pada zaman itu masih terhad</div><div class="crow"><div class="ccard" id="g04-c0"><div class="cq">?</div><div class="cn">Skizofrenia</div></div><div class="ccard" id="g04-c1"><div class="cq">?</div><div class="cn">Bipolar</div></div><div class="ccard" id="g04-c2"><div class="cq">?</div><div class="cn">Kemurungan</div></div></div>
+<div class="cfoot" id="g04-f">Belum difahami sepenuhnya</div></div></div></div>
+<div class="tear" id="g04-tear" style="z-index:24"><svg viewBox="0 0 60 1080" preserveAspectRatio="none"><path d="M0 0 L34 37 L40 78 L51 118 L47 136 L33 178 L21 216 L25 239 L48 268 L42 293 L24 328 L33 364 L31 382 L35 413 L42 436 L22 459 L46 481 L26 503 L18 521 L31 545 L28 568 L38 595 L52 619 L31 658 L30 681 L37 711 L41 729 L28 760 L34 782 L39 802 L18 829 L39 866 L37 886 L37 915 L38 948 L48 971 L29 1004 L34 1023 L40 1041 L19 1071 L44 1080 L0 1080 Z" fill="#E9DCC0"/></svg></div>
+<div class="shot" id="s11" style="z-index:25"><div class="shin" id="s11-in"><div class="kb" id="s11-kb"><img class="shotimg" src="img/11_attendant.jpg" /></div></div></div>
+<div class="shot" id="s12" style="z-index:26"><div class="shin" id="s12-in"><div class="kb" id="s12-kb"><img class="shotimg" src="img/13_ward_ext.jpg" /></div></div></div>
+<div class="shot" id="e01" style="z-index:27"><div class="shin" id="e01-in"><div class="kb" id="e01-kb"><video class="clip shotv" id="e01-v" src="broll/e1_15_room.mp4" muted playsinline data-start="86.125" data-duration="6.373" data-track-index="2"></video></div></div></div>
+<div class="shot" id="e02" style="z-index:28"><div class="shin" id="e02-in"><div class="kb" id="e02-kb"><video class="clip shotv" id="e02-v" src="broll/e1_14_corridor.mp4" muted playsinline data-start="92.3333" data-duration="2.29" data-track-index="1"></video></div></div></div>
+<div class="shot" id="s13" style="z-index:29"><div class="shin" id="s13-in"><div class="kb" id="s13-kb"><img class="shotimg" src="img/18_empty_ward.jpg" /></div></div></div>
+<div class="shot" id="k2" style="z-index:30"><div class="shin inkm" id="k2-in"><div class="kb" id="k2-kb"><video class="clip shotv" id="k2-v" src="broll/k2_tanjung_rambutan.mp4" muted playsinline data-start="98.2083" data-duration="6.998" data-track-index="1"></video></div></div></div>
+<div class="shot" id="s14" style="z-index:31"><div class="shin" id="s14-in"><div class="kb" id="s14-kb"><img class="shotimg" src="img/12_tanjung_rambutan.jpg" /></div></div></div>
+<div class="shot" id="g05" style="z-index:32"><div class="shin" id="g05-in"><div class="gfx" id="g05-g"><div class="tex"></div><div class="vgw"></div><div class="ak" id="g05-k">Nama asal · 1911</div>
+<div class="aname"><span id="g05-w0">FEDERAL</span> <span class="lun" id="g05-w1">LUNATIC<i class="strike" id="g05-x"></i></span> <span id="g05-w2">ASYLUM</span></div>
+<div class="aplace" id="g05-pl">Tanjung Rambutan, Perak</div>
+<div class="anote" id="g05-n">“Lunatic” — istilah rasmi zaman itu, kini dianggap menghina</div></div></div></div>
+<div class="tear" id="g05-tear" style="z-index:32"><svg viewBox="0 0 60 1080" preserveAspectRatio="none"><path d="M0 0 L34 37 L40 78 L51 118 L47 136 L33 178 L21 216 L25 239 L48 268 L42 293 L24 328 L33 364 L31 382 L35 413 L42 436 L22 459 L46 481 L26 503 L18 521 L31 545 L28 568 L38 595 L52 619 L31 658 L30 681 L37 711 L41 729 L28 760 L34 782 L39 802 L18 829 L39 866 L37 886 L37 915 L38 948 L48 971 L29 1004 L34 1023 L40 1041 L19 1071 L44 1080 L0 1080 Z" fill="#E9DCC0"/></svg></div>
+<div class="shot" id="s15" style="z-index:33"><div class="shin" id="s15-in"><div class="kb" id="s15-kb"><img class="shotimg" src="img/10_desk_ledger.jpg" /></div></div></div>
+<div class="shot" id="g06" style="z-index:34"><div class="shin" id="g06-in"><div class="gfx" id="g06-g"><div class="tex"></div><div class="vgw"></div><div class="wk" id="g06-k">Peringkat awal · 1911</div><div class="wrow"><div class="wb m" id="g06-b0"><div class="roof"></div><div class="wl">Wad Lelaki</div></div><div class="wb m" id="g06-b1"><div class="roof"></div><div class="wl">Wad Lelaki</div></div><div class="wb m" id="g06-b2"><div class="roof"></div><div class="wl">Wad Lelaki</div></div><div class="wb f" id="g06-b3"><div class="roof"></div><div class="wl">Wad Perempuan</div></div></div>
+<div class="wsum" id="g06-s"><b>3</b> wad lelaki &nbsp;·&nbsp; <b>1</b> wad perempuan</div></div></div></div>
+<div class="shot" id="s16" style="z-index:35"><div class="shin" id="s16-in"><div class="kb" id="s16-kb"><img class="shotimg" src="img/14_female_ward.jpg" /></div></div></div>
+<div class="shot" id="s17" style="z-index:36"><div class="shin" id="s17-in"><div class="kb" id="s17-kb"><img class="shotimg" src="img/33_veranda.jpg" /></div></div></div>
+<div class="shot" id="g07" style="z-index:37"><div class="shin" id="g07-in"><div class="gfx" id="g07-g"><div class="bgslate"></div><div class="tex" style="opacity:.14;mix-blend-mode:multiply"></div><div class="vg"></div><div class="nhd" id="g07-h">Satu institusi, tiga nama</div><div class="nrail" id="g07-l"></div><div class="nrow" id="g07-r0"><div class="ny">1911</div><div class="ndot"></div><div class="nn">Federal Lunatic Asylum</div></div><div class="nrow" id="g07-r1"><div class="ny">1928</div><div class="ndot"></div><div class="nn">Central Mental Hospital</div></div><div class="nrow" id="g07-r2"><div class="ny">1970-an</div><div class="ndot"></div><div class="nn">Hospital Bahagia Ulu Kinta</div></div></div></div></div>
+<div class="tear" id="g07-tear" style="z-index:37"><svg viewBox="0 0 60 1080" preserveAspectRatio="none"><path d="M0 0 L34 37 L40 78 L51 118 L47 136 L33 178 L21 216 L25 239 L48 268 L42 293 L24 328 L33 364 L31 382 L35 413 L42 436 L22 459 L46 481 L26 503 L18 521 L31 545 L28 568 L38 595 L52 619 L31 658 L30 681 L37 711 L41 729 L28 760 L34 782 L39 802 L18 829 L39 866 L37 886 L37 915 L38 948 L48 971 L29 1004 L34 1023 L40 1041 L19 1071 L44 1080 L0 1080 Z" fill="#E9DCC0"/></svg></div>
+<div class="shot" id="s18" style="z-index:38"><div class="shin" id="s18-in"><div class="kb" id="s18-kb"><img class="shotimg" src="img/16_feeding.jpg" /></div></div></div>
+<div class="shot" id="g08" style="z-index:39"><div class="shin inkm" id="g08-in"><div class="gfx" id="g08-g"><div class="bgteal"></div><div class="vg"></div><div class="mhd" id="g08-h">Hari ini</div><div class="mhd sep" id="g08-h2">1911</div><div class="mgrid"><div class="mrow" id="g08-r0"><div class="mc">Skizofrenia</div><div class="marr">→</div><div class="mm" id="g08-m0">Antipsikotik<i class="strike" id="g08-x0"></i></div></div><div class="mrow" id="g08-r1"><div class="mc">Kemurungan</div><div class="marr">→</div><div class="mm" id="g08-m1">Antidepresan<i class="strike" id="g08-x1"></i></div></div><div class="mrow" id="g08-r2"><div class="mc">Bipolar</div><div class="marr">→</div><div class="mm" id="g08-m2">Penstabil mood<i class="strike" id="g08-x2"></i></div></div></div>
+<div class="mnone" id="g08-n">Ubat-ubat ini belum wujud</div><div class="sepia" id="g08-sp"></div></div></div></div>
+<div class="shot" id="e03" style="z-index:40"><div class="shin" id="e03-in"><div class="kb" id="e03-kb"><video class="clip shotv" id="e03-v" src="broll/e1_13_asylum_ext.mp4" muted playsinline data-start="171.875" data-duration="7.165" data-track-index="1"></video></div></div></div>
+<div class="shot" id="e04" style="z-index:41"><div class="shin" id="e04-in"><div class="kb" id="e04-kb"><video class="clip shotv" id="e04-v" src="broll/e1_16_garden.mp4" muted playsinline data-start="178.9167" data-duration="3.582" data-track-index="2"></video></div></div></div>
+<div class="shot" id="s19" style="z-index:42"><div class="shin" id="s19-in"><div class="kb" id="s19-kb"><img class="shotimg" src="img/16_feeding.jpg" /></div></div></div>
+<div class="shot" id="s20" style="z-index:43"><div class="shin" id="s20-in"><div class="kb" id="s20-kb"><img class="shotimg" src="img/17_garden_work.jpg" /></div></div></div>
+<div class="shot" id="g09" style="z-index:44"><div class="shin" id="g09-in"><div class="gfx" id="g09-g"><div class="tex"></div><div class="vgw"></div><div class="ihd" id="g09-h">Tidak semuanya sempurna</div>
+<div class="isub" id="g09-s">Ada kaedah rawatan lama yang kemudiannya ditinggalkan kerana:</div>
+<div class="irow"><div class="ichip" id="g09-c0">Bukti keberkesanan lemah</div><div class="ichip" id="g09-c1">Risiko tinggi</div></div></div></div></div>
+<div class="tear" id="g09-tear" style="z-index:44"><svg viewBox="0 0 60 1080" preserveAspectRatio="none"><path d="M0 0 L34 37 L40 78 L51 118 L47 136 L33 178 L21 216 L25 239 L48 268 L42 293 L24 328 L33 364 L31 382 L35 413 L42 436 L22 459 L46 481 L26 503 L18 521 L31 545 L28 568 L38 595 L52 619 L31 658 L30 681 L37 711 L41 729 L28 760 L34 782 L39 802 L18 829 L39 866 L37 886 L37 915 L38 948 L48 971 L29 1004 L34 1023 L40 1041 L19 1071 L44 1080 L0 1080 Z" fill="#E9DCC0"/></svg></div>
+<div class="shot" id="s21" style="z-index:45"><div class="shin" id="s21-in"><div class="kb" id="s21-kb"><img class="shotimg" src="img/13_ward_ext.jpg" /></div></div></div>
+<div class="shot" id="s22" style="z-index:46"><div class="shin" id="s22-in"><div class="kb" id="s22-kb"><img class="shotimg" src="img/33_veranda.jpg" /></div></div></div>
+<div class="shot" id="e05" style="z-index:47"><div class="shin" id="e05-in"><div class="kb" id="e05-kb"><video class="clip shotv" id="e05-v" src="broll/e1_11_brain_morph.mp4" muted playsinline data-start="214.125" data-duration="5.957" data-track-index="2"></video></div></div></div>
+<div class="shot" id="e06" style="z-index:48"><div class="shin inkm" id="e06-in"><div class="kb" id="e06-kb"><video class="clip shotv" id="e06-v" src="broll/e1_17_lab.mp4" muted playsinline data-start="219.625" data-duration="3.832" data-track-index="1"></video></div></div></div>
+<div class="shot" id="e07" style="z-index:49"><div class="shin" id="e07-in"><div class="kb" id="e07-kb"><video class="clip shotv" id="e07-v" src="broll/e1_18_glassware.mp4" muted playsinline data-start="223.3333" data-duration="5.415" data-track-index="2"></video></div></div></div>
+<div class="shot" id="s23" style="z-index:50"><div class="shin" id="s23-in"><div class="kb" id="s23-kb"><img class="shotimg" src="img/19_dispensary.jpg" /></div></div></div>
+<div class="shot" id="s24" style="z-index:51"><div class="shin" id="s24-in"><div class="kb" id="s24-kb"><img class="shotimg" src="img/10_desk_ledger.jpg" /></div></div></div>
+<div class="shot" id="e08" style="z-index:52"><div class="shin" id="e08-in"><div class="kb" id="e08-kb"><video class="clip shotv" id="e08-v" src="broll/e1_19_neurons.mp4" muted playsinline data-start="237.7917" data-duration="9.165" data-track-index="1"></video></div></div></div>
+<div class="shot" id="g10" style="z-index:53"><div class="shin" id="g10-in"><div class="gfx" id="g10-g"><div class="bgnavy"></div><div class="grid"></div><div class="vg"></div><div class="ghd" id="g10-h">Pilihan rawatan semakin berkembang</div><div class="grow"><div class="gi" id="g10-i0"><div class="gn">Antipsikotik</div><div class="gy">1950-an</div></div><div class="ga" id="g10-a0">→</div><div class="gi" id="g10-i1"><div class="gn">Antidepresan</div><div class="gy"></div></div><div class="ga" id="g10-a1">→</div><div class="gi" id="g10-i2"><div class="gn">Rawatan lain</div><div class="gy"></div></div></div></div></div></div>
+<div class="shot" id="g11" style="z-index:54"><div class="shin" id="g11-in"><div class="gfx" id="g11-g"><div class="bgnavy"></div><div class="grid"></div><div class="vg"></div><div class="bcol l" id="g11-l"><div class="bt">Risiko &amp; kesan sampingan</div><div class="bbar amber" id="g11-bl"></div><div class="bnote">masih wujud</div></div>
+<div class="bcol r" id="g11-r"><div class="bt">Pilihan untuk membantu pesakit</div><div class="bbar teal" id="g11-br"></div><div class="bnote">semakin berkembang</div></div></div></div></div>
+<div class="shot" id="s25" style="z-index:55"><div class="shin" id="s25-in"><div class="kb" id="s25-kb"><img class="shotimg" src="img/22_corridor_1960.jpg" /></div></div></div>
+<div class="shot" id="s26" style="z-index:56"><div class="shin inkm" id="s26-in"><div class="kb" id="s26-kb"><img class="shotimg" src="img/20_penang_gh_1958.jpg" /></div></div></div>
+<div class="shot" id="s27" style="z-index:57"><div class="shin" id="s27-in"><div class="kb" id="s27-kb"><img class="shotimg" src="img/21_ward_1958.jpg" /></div></div></div>
+<div class="shot" id="g12" style="z-index:58"><div class="shin" id="g12-in"><div class="gfx" id="g12-g"><div class="tex"></div><div class="vgw"></div><div class="gcol l" id="g12-l"><div class="gk">Sebelum</div><div class="bld solo"><div class="bl-roof"></div><div class="bl-body">Hospital khusus</div></div>
+<div class="gd">terpisah daripada perkhidmatan perubatan lain</div></div>
+<div class="gcol r" id="g12-r"><div class="gk">Mulai 1958</div><div class="bld big"><div class="bl-roof"></div><div class="bl-body">Hospital umum<span class="wing" id="g12-w">Wad psikiatri</span></div></div>
+<div class="gd">lebih dekat dengan sistem penjagaan kesihatan biasa</div></div></div></div></div>
+<div class="tear" id="g12-tear" style="z-index:58"><svg viewBox="0 0 60 1080" preserveAspectRatio="none"><path d="M0 0 L34 37 L40 78 L51 118 L47 136 L33 178 L21 216 L25 239 L48 268 L42 293 L24 328 L33 364 L31 382 L35 413 L42 436 L22 459 L46 481 L26 503 L18 521 L31 545 L28 568 L38 595 L52 619 L31 658 L30 681 L37 711 L41 729 L28 760 L34 782 L39 802 L18 829 L39 866 L37 886 L37 915 L38 948 L48 971 L29 1004 L34 1023 L40 1041 L19 1071 L44 1080 L0 1080 Z" fill="#E9DCC0"/></svg></div>
+<div class="shot" id="g13" style="z-index:59"><div class="shin" id="g13-in"><div class="gfx" id="g13-g"><div class="bgnavy"></div><div class="grid"></div><div class="vg"></div><div class="dhd" id="g13-h">Hospital Umum</div><div class="drow"><div class="dchip" id="g13-d0">Jantung</div><div class="dchip" id="g13-d1">Buah pinggang</div><div class="dchip" id="g13-d2">Penyakit lain</div><div class="dchip hi" id="g13-d3">Kesihatan mental</div></div></div></div></div>
+<div class="shot" id="g14" style="z-index:60"><div class="shin" id="g14-in"><div class="gfx" id="g14-g"><div class="bgnavy"></div><div class="grid"></div><div class="vg"></div><div class="mapwrap my" id="g14-m" style="width:1800px;height:820px;left:60px;top:170px">
+<img src="img/map_my.svg" style="width:100%;height:100%"/><div class="pin dot" id="g14-p0" style="left:82.8px;top:284.3px"><span class="pdot"></span></div><div class="pin dot" id="g14-p1" style="left:86.3px;top:221.0px"><span class="pdot"></span></div><div class="pin dot" id="g14-p2" style="left:149.6px;top:356.4px"><span class="pdot"></span></div><div class="pin dot" id="g14-p3" style="left:204.0px;top:486.5px"><span class="pdot"></span></div><div class="pin dot" id="g14-p4" style="left:226.2px;top:523.1px"><span class="pdot"></span></div><div class="pin dot" id="g14-p5" style="left:253.89999999999998px;top:571.2px"><span class="pdot"></span></div><div class="pin dot" id="g14-p6" style="left:388.4px;top:633.6px"><span class="pdot"></span></div><div class="pin dot" id="g14-p7" style="left:350.1px;top:426.8px"><span class="pdot"></span></div><div class="pin dot" id="g14-p8" style="left:333.2px;top:291.4px"><span class="pdot"></span></div><div class="pin dot" id="g14-p9" style="left:253.0px;top:220.1px"><span class="pdot"></span></div><div class="pin dot" id="g14-p10" style="left:974.8px;top:628.2px"><span class="pdot"></span></div><div class="pin dot" id="g14-p11" style="left:1485.4px;top:233.5px"><span class="pdot"></span></div><div class="pin dot" id="g14-p12" style="left:1106.6px;top:562.3px"><span class="pdot"></span></div><div class="pin dot" id="g14-p13" style="left:1647.5px;top:387.6px"><span class="pdot"></span></div></div>
+<div class="myhd" id="g14-h">Perkhidmatan psikiatri berkembang ke hospital seluruh Malaysia</div><div class="mcredit l">Ilustrasi · Peta: Natural Earth</div></div></div></div>
+<div class="shot" id="s28" style="z-index:61"><div class="shin inkm" id="s28-in"><div class="kb" id="s28-kb"><img class="shotimg" src="img/31_horror_set.jpg" /></div></div></div>
+<div class="shot" id="k3" style="z-index:62"><div class="shin" id="k3-in"><div class="kb" id="k3-kb"><video class="clip shotv" id="k3-v" src="broll/k3_modern_ward.mp4" muted playsinline data-start="310.875" data-duration="4.623" data-track-index="1"></video></div></div></div>
+<div class="shot" id="s29" style="z-index:63"><div class="shin" id="s29-in"><div class="kb" id="s29-kb"><img class="shotimg" src="img/24_doctor_nurse.jpg" /></div></div></div>
+<div class="shot" id="s30" style="z-index:64"><div class="shin" id="s30-in"><div class="kb" id="s30-kb"><img class="shotimg" src="img/25_mdt.jpg" /></div></div></div>
+<div class="shot" id="g15" style="z-index:65"><div class="shin" id="g15-in"><div class="gfx" id="g15-g"><div class="kb"><img class="shotimg" src="img/23_modern_ward.jpg" style="filter:brightness(.45) saturate(.8)"/></div><div class="vg"></div>
+<div class="rhd" id="g15-h">Antara sebab kemasukan ke wad</div><div class="rlist"><div class="ri" id="g15-i0"><span class="rd"></span>Kemurungan yang teruk</div><div class="ri" id="g15-i1"><span class="rd"></span>Mania (full-blown)</div><div class="ri" id="g15-i2"><span class="rd"></span>Psikosis — tak mampu jaga keselamatan diri</div><div class="ri" id="g15-i3"><span class="rd"></span>Risiko mencederakan diri</div></div></div></div></div>
+<div class="shot" id="g16" style="z-index:66"><div class="shin" id="g16-in"><div class="gfx" id="g16-g"><div class="kb"><img class="shotimg" src="img/27_patient_room.jpg" style="filter:brightness(.42) saturate(.85)"/></div><div class="vg"></div>
+<div class="shd" id="g16-h">Tempoh kemasukan berbeza mengikut keadaan pesakit</div><div class="sbox"><div class="srow" id="g16-r0"><div class="sl">Beberapa hari</div><div class="sbar"><i id="g16-b0"></i></div></div><div class="srow" id="g16-r1"><div class="sl">Beberapa minggu</div><div class="sbar"><i id="g16-b1"></i></div></div><div class="srow" id="g16-r2"><div class="sl">Lebih lama</div><div class="sbar"><i id="g16-b2"></i></div></div></div></div></div></div>
+<div class="shot" id="s31" style="z-index:67"><div class="shin inkm" id="s31-in"><div class="kb" id="s31-kb"><img class="shotimg" src="img/28_family_visit.jpg" /></div></div></div>
+<div class="shot" id="s32" style="z-index:68"><div class="shin" id="s32-in"><div class="kb" id="s32-kb"><img class="shotimg" src="img/26_ot.jpg" /></div></div></div>
+<div class="shot" id="e09" style="z-index:69"><div class="shin" id="e09-in"><div class="kb" id="e09-kb"><video class="clip shotv" id="e09-v" src="broll/e1_21_family.mp4" muted playsinline data-start="352.875" data-duration="6.248" data-track-index="2"></video></div></div></div>
+<div class="shot" id="s33" style="z-index:70"><div class="shin" id="s33-in"><div class="kb" id="s33-kb"><img class="shotimg" src="img/29_clinic_room.jpg" /></div></div></div>
+<div class="shot" id="g17" style="z-index:71"><div class="shin" id="g17-in"><div class="gfx" id="g17-g"><div class="bgteal"></div><div class="vg"></div><div class="book" id="g17-bk"><div class="bspine"></div><div class="bcover">
+<div class="bt1">Doktor,</div><div class="bt2">Saya Boleh<br/>Sembuh Ke?</div><div class="bau">Dr. Azren</div><div class="bpub">White Coat Books</div></div></div>
+<div class="btxt" id="g17-t"><div class="bk1">Buku oleh Dr. Azren</div><div class="bk2">“Doktor, Saya Boleh Sembuh Ke?”</div>
+<div class="bk3">Penyakit mental &amp; perjalanan pemulihan, dalam bahasa yang mudah difahami</div><div class="bk4">Terbitan White Coat Books</div></div>
+<div class="bnote2">Ilustrasi kulit buku</div></div></div></div>
+<div class="shot" id="k4" style="z-index:72"><div class="shin inkm" id="k4-in"><div class="kb" id="k4-kb"><video class="clip shotv" id="k4-v" src="broll/k4_kinta_sunrise.mp4" muted playsinline data-start="372.625" data-duration="8.957" data-track-index="1"></video></div></div></div>
+<div class="shot" id="g18" style="z-index:73"><div class="shin" id="g18-in"><div class="gfx" id="g18-g"><div class="bgteal"></div><div class="vg"></div><div class="e1" id="g18-a">SEJARAH WAD PSIKIATRI DI MALAYSIA</div>
+<div class="e2" id="g18-b">Rawatan berubah — maruah pesakit tetap dijaga</div>
+<div class="brand" id="g18-c"><span class="bl"></span><span>BORAK JIWA</span><span class="bl"></span></div>
+<div class="ep" id="g18-d">Dr. Azren · Klinik Nissa</div>
+<div class="help" id="g18-e">Perlukan sokongan? Talian HEAL 15555 · Befrienders KL 03-7627 2929</div></div></div></div>
+<div class="era" id="et"><div class="tlrail" style="left:460px;top:72px;width:1000px"></div><div class="tlprog" id="et-prog" style="left:460px;top:72px;width:1000px"></div><div class="tlnode" id="et-n0" style="left:452px;top:65px;width:16px;height:16px"></div><div class="tllab" id="et-l0" style="left:260px;top:90px;font-size:19px">ABAD KE-19</div><div class="tlnode" id="et-n1" style="left:619px;top:65px;width:16px;height:16px"></div><div class="tllab" id="et-l1" style="left:427px;top:90px;font-size:19px">1911</div><div class="tlnode" id="et-n2" style="left:785px;top:65px;width:16px;height:16px"></div><div class="tllab" id="et-l2" style="left:593px;top:90px;font-size:19px">1928</div><div class="tlnode" id="et-n3" style="left:952px;top:65px;width:16px;height:16px"></div><div class="tllab" id="et-l3" style="left:760px;top:90px;font-size:19px">1950-an</div><div class="tlnode" id="et-n4" style="left:1119px;top:65px;width:16px;height:16px"></div><div class="tllab" id="et-l4" style="left:927px;top:90px;font-size:19px">1958</div><div class="tlnode" id="et-n5" style="left:1285px;top:65px;width:16px;height:16px"></div><div class="tllab" id="et-l5" style="left:1093px;top:90px;font-size:19px">1970-an</div><div class="tlnode" id="et-n6" style="left:1452px;top:65px;width:16px;height:16px"></div><div class="tllab" id="et-l6" style="left:1260px;top:90px;font-size:19px">HARI INI</div></div>
+<div class="yr" id="k-1911a">1911</div>
+<div class="tx" id="c-1911" style=""><div class="txi" id="c-19110"><span class="txd"></span>Tiada telefon pintar</div><div class="txi" id="c-19111"><span class="txd"></span>Tiada internet</div><div class="txi" id="c-19112"><span class="txd"></span>Malaysia belum merdeka</div></div>
+<div class="tx" id="c-sym" style="left:auto;right:110px"><div class="txi" id="c-sym0"><span class="txd"></span>Bercakap seorang diri</div><div class="txi" id="c-sym1"><span class="txd"></span>Mendengar suara</div><div class="txi" id="c-sym2"><span class="txd"></span>Ketawa sendiri</div><div class="txi" id="c-sym3"><span class="txd"></span>Ketakutan · paranoid</div></div>
+<div class="tx myth" id="c-myth" style=""><div class="txi" id="c-myth0"><span class="txd"></span>“Kena rasuk?”</div><div class="txi" id="c-myth1"><span class="txd"></span>“Kena gangguan?”</div><div class="txi" id="c-myth2"><span class="txd"></span>Ditakuti</div></div>
+<div class="humane" id="k-terhad" style="">Pilihan rawatan sangat terhad</div>
+<div class="chap" id="k-abad" style="">ABAD KE-19</div>
+<div class="place" id="k-abad2" style="">Rekaan semula · kemudahan awal di Tanah Melayu</div>
+<div class="placebig" id="k-pen" style="">Pulau Pinang</div>
+<div class="placebig" id="k-tai" style="">Taiping, Perak</div>
+<div class="tx" id="c-care" style=""><div class="txi" id="c-care0"><span class="txd"></span>Penjagaan</div><div class="txi" id="c-care1"><span class="txd"></span>Keselamatan</div><div class="txi" id="c-care2"><span class="txd"></span>Pengawasan</div></div>
+<div class="humane" id="k-jauh" style="">Ditempatkan jauh daripada masyarakat</div>
+<div class="tx" id="c-hal" style="left:auto;right:110px"><div class="txi" id="c-hal0"><span class="txd"></span>Halusinasi</div><div class="txi" id="c-hal1"><span class="txd"></span>Delusi</div></div>
+<div class="humane" id="k-modern0" style="">Belum ada rawatan moden</div>
+<div class="yr" id="k-1911b">1911</div><div class="place2" id="k-tr">Tanjung Rambutan, Perak · zaman pentadbiran British</div>
+<div class="humane" id="k-pent" style="">Istilah dalam sistem perubatan & pentadbiran</div>
+<div class="humane" id="k-famous" style="">Hospital psikiatri paling terkenal dalam sejarah Malaysia</div>
+<div class="humane" id="k-life" style="">Kehidupan pesakit pada zaman dulu?</div>
+<div class="placebig" id="k-world" style="font-size:44px">Di seluruh dunia: pendekatan berasaskan institusi</div>
+<div class="humane" id="k-long" style="">Tinggal untuk tempoh yang panjang</div>
+<div class="tx" id="c-daily" style=""><div class="txi" id="c-daily0"><span class="txd"></span>Makan</div><div class="txi" id="c-daily1"><span class="txd"></span>Mandi</div><div class="txi" id="c-daily2"><span class="txd"></span>Kehidupan harian</div></div>
+<div class="humane" id="k-work" style="">Aktiviti rutin & pekerjaan sebagai sebahagian penjagaan</div>
+<div class="humane" id="k-diff" style="">Amalan berbeza mengikut hospital & zaman</div>
+<div class="humane" id="k-same" style="">Pengalaman setiap pesakit tidak sama</div>
+<div class="yr" id="k-1950">1950-an</div><div class="drug" id="k-cpz">CHLORPROMAZINE</div><div class="drug2" id="k-cpz2">Antara ubat antipsikotik terawal</div>
+<div class="humane" id="k-turn" style="">Titik perubahan penting dalam rawatan psikiatri</div>
+<div class="humane" id="k-before" style="">Sebelum itu: pilihan sangat terhad untuk mengawal psikosis</div>
+<div class="tx" id="c-psy" style="left:auto;right:110px"><div class="txi" id="c-psy0"><span class="txd"></span>Halusinasi</div><div class="txi" id="c-psy1"><span class="txd"></span>Delusi</div><div class="txi" id="c-psy2"><span class="txd"></span>Gangguan pemikiran</div></div>
+<div class="yr" id="k-1958">1958</div>
+<div class="l3" id="l3-pg"><div class="l3rule"></div><div class="l3n" style="font-size:52px">HOSPITAL PULAU PINANG</div>
+<div class="l3m">1958 · Wad psikiatri pertama di hospital umum</div></div>
+<div class="stamp2" id="k-mitos">MITOS · FILEM SERAM</div><div class="real" id="k-real">REALITI · WAD PSIKIATRI HARI INI</div>
+<div class="tx" id="c-ward" style="left:auto;right:110px;top:300px"><div class="txi" id="c-ward0"><span class="txd"></span>Dinilai oleh doktor</div><div class="txi" id="c-ward1"><span class="txd"></span>Dipantau jururawat</div></div>
+<div class="humane" id="k-meds" style="">Ubat diberi mengikut keperluan</div>
+<div class="tx" id="c-mdt" style=""><div class="txi" id="c-mdt0"><span class="txd"></span>Terapi</div><div class="txi" id="c-mdt1"><span class="txd"></span>Aktiviti pemulihan</div><div class="txi" id="c-mdt2"><span class="txd"></span>Penilaian</div><div class="txi" id="c-mdt3"><span class="txd"></span>Pasukan pelbagai disiplin</div></div>
+<div class="humane" id="k-change" style="">Rawatan yang sesuai boleh mengubah kehidupan</div>
+<div class="humane" id="k-help" style="">Dapatkan bantuan profesional kesihatan mental</div>
+<div class="l3" id="l3-dr"><div class="l3rule"></div><div class="l3n" style="font-size:58px">DR. AZREN</div>
+<div class="l3m">Klinik Nissa</div><div class="l3chip" id="l3-dr-c" style="opacity:1">Saringan &amp; konsultasi</div></div>
+<div class="cmt" id="k-cmt" style="">Pernah dimasukkan ke wad psikiatri? Kongsikan pengalaman anda di ruangan komen</div>
+<div class="tag" id="tag-ai">Dramatisasi · visual dijana AI</div>
+<div class="vig"></div><div class="grain" id="grain"></div>
+<div class="sub" id="sub0"><span class="subin">Bayangkan anda hidup pada tahun <span class="g">1911</span></span></div>
+<div class="sub" id="sub1"><span class="subin">Waktu tu tak ada smartphone pun</span></div>
+<div class="sub" id="sub2"><span class="subin">Tak ada internet</span></div>
+<div class="sub" id="sub3"><span class="subin">Malaysia pun belum merdeka lagi</span></div>
+<div class="sub" id="sub4"><span class="subin">Tiba-tiba ada seorang ahli keluarga</span></div>
+<div class="sub" id="sub5"><span class="subin">anda yang mula berubah</span></div>
+<div class="sub" id="sub6"><span class="subin">Dia bercakap seorang diri</span></div>
+<div class="sub" id="sub7"><span class="subin">Dia dengar suara yang orang tak boleh dengar</span></div>
+<div class="sub" id="sub8"><span class="subin">Kadang-kadang dia ketawa sendiri</span></div>
+<div class="sub" id="sub9"><span class="subin">Kadang-kadang dia jadi ketakutan</span></div>
+<div class="sub" id="sub10"><span class="subin">Paranoid</span></div>
+<div class="sub" id="sub11"><span class="subin">Keluarga dah macam tak tahu nak buat apa</span></div>
+<div class="sub" id="sub12"><span class="subin">Masyarakat pula dah mula cakap macam-macam</span></div>
+<div class="sub" id="sub13"><span class="subin">Ada yang kata dia kena rasuk</span></div>
+<div class="sub" id="sub14"><span class="subin">Ada yang kata dia kena gangguan</span></div>
+<div class="sub" id="sub15"><span class="subin">Ada juga yang takut nak dekat dengan dia</span></div>
+<div class="sub" id="sub16"><span class="subin">Tapi sebenarnya dia mungkin sedang</span></div>
+<div class="sub" id="sub17"><span class="subin">mengalami penyakit mental yang serius</span></div>
+<div class="sub" id="sub18"><span class="subin">Pada masa itu pilihan</span></div>
+<div class="sub" id="sub19"><span class="subin">rawatan memang sangat terhad</span></div>
+<div class="sub" id="sub20"><span class="subin">Jadi ke mana mereka ni dihantar?</span></div>
+<div class="sub" id="sub21"><span class="subin">Dan di sinilah bermula satu sejarah yang</span></div>
+<div class="sub" id="sub22"><span class="subin">sangat menarik tentang rawatan <span class="t">psikiatri</span> dekat</span></div>
+<div class="sub" id="sub23"><span class="subin">Malaysia ni</span></div>
+<div class="sub" id="sub24"><span class="subin">Ramai orang ingat sejarah hospital <span class="t">psikiatri</span></span></div>
+<div class="sub" id="sub25"><span class="subin">di Malaysia ni bermula dekat <span class="g">Tanjung</span> <span class="g">Rambutan</span></span></div>
+<div class="sub" id="sub26"><span class="subin">tapi sebenarnya sejarah penjagaan pesakit mental</span></div>
+<div class="sub" id="sub27"><span class="subin">di Tanah Melayu ni bermula lebih awal lagi</span></div>
+<div class="sub" id="sub28"><span class="subin">Seawal abad <span class="g">ke-19</span> sudah wujud kemudahan</span></div>
+<div class="sub" id="sub29"><span class="subin">yang menempatkan individu</span></div>
+<div class="sub" id="sub30"><span class="subin">yang mengalami gangguan mental seperti</span></div>
+<div class="sub" id="sub31"><span class="subin">di kawasan seperti <span class="g">Pulau</span> <span class="g">Pinang</span> dan juga <span class="g">Taiping</span></span></div>
+<div class="sub" id="sub32"><span class="subin">Tapi pada zaman tu ilmu tentang</span></div>
+<div class="sub" id="sub33"><span class="subin">penyakit mental ni masih lagi terhad lah</span></div>
+<div class="sub" id="sub34"><span class="subin">Penyakit seperti <span class="t">skizofrenia,</span> <span class="t">bipolar</span></span></div>
+<div class="sub" id="sub35"><span class="subin"><span class="t">kemurungan</span> ni belum difahami sepenuhnya seperti</span></div>
+<div class="sub" id="sub36"><span class="subin">sekarang</span></div>
+<div class="sub" id="sub37"><span class="subin">Rawatan pun waktu dulu tertumpu kepada penjagaan</span></div>
+<div class="sub" id="sub38"><span class="subin">keselamatan dan juga pengawasan pesakit</span></div>
+<div class="sub" id="sub39"><span class="subin">Dalam sesetengah keadaan</span></div>
+<div class="sub" id="sub40"><span class="subin">pesakit ditempatkan jauh daripada masyarakat</span></div>
+<div class="sub" id="sub41"><span class="subin">Bayangkan seseorang tu yang</span></div>
+<div class="sub" id="sub42"><span class="subin">mengalami <span class="t">halusinasi,</span> <span class="t">dilusi</span></span></div>
+<div class="sub" id="sub43"><span class="subin">Mungkin dia tak faham pun apa</span></div>
+<div class="sub" id="sub44"><span class="subin">yang berlaku pada diri dia</span></div>
+<div class="sub" id="sub45"><span class="subin">Dia takut</span></div>
+<div class="sub" id="sub46"><span class="subin">Keluarga pun jadi takut</span></div>
+<div class="sub" id="sub47"><span class="subin">Tapi belum ada rawatan yang</span></div>
+<div class="sub" id="sub48"><span class="subin">modern seperti kita gunakan hari ini</span></div>
+<div class="sub" id="sub49"><span class="subin">Kemudian pada tahun <span class="g">1911</span> di sebuah kawasan</span></div>
+<div class="sub" id="sub50"><span class="subin">bernama <span class="g">Tanjung</span> <span class="g">Rambutan</span> sebuah institusi</span></div>
+<div class="sub" id="sub51"><span class="subin"><span class="t">psikiatri</span> dibangunkan</span></div>
+<div class="sub" id="sub52"><span class="subin">semasa zaman pemerintahan British</span></div>
+<div class="sub" id="sub53"><span class="subin">Nama asal dia adalah <span class="g">Federal</span> <span class="g">Lunatic</span> <span class="g">Asylum</span></span></div>
+<div class="sub" id="sub54"><span class="subin">Perkataan lunatik ni memang digunakan</span></div>
+<div class="sub" id="sub55"><span class="subin">secara rasmi pada zaman tersebut</span></div>
+<div class="sub" id="sub56"><span class="subin">dan hari ini perkataan tersebut dianggap</span></div>
+<div class="sub" id="sub57"><span class="subin">sebagai penghinaan dan tidak sesuai digunakan</span></div>
+<div class="sub" id="sub58"><span class="subin">untuk menggambarkan pesakit mental</span></div>
+<div class="sub" id="sub59"><span class="subin">Tapi pada waktu itu istilah tersebut masih</span></div>
+<div class="sub" id="sub60"><span class="subin">digunakan dalam sistem perubatan dan pentadbiran</span></div>
+<div class="sub" id="sub61"><span class="subin">Menariknya institusi ini pada peringkat</span></div>
+<div class="sub" id="sub62"><span class="subin">awal hanyalah mempunyai tiga wad lelaki</span></div>
+<div class="sub" id="sub63"><span class="subin">dan satu wad perempuan je</span></div>
+<div class="sub" id="sub64"><span class="subin">Bayangkan institusi yang bermula dengan beberapa</span></div>
+<div class="sub" id="sub65"><span class="subin">wad-wad sahaja akhirnya menjadi sebuah</span></div>
+<div class="sub" id="sub66"><span class="subin">hospital <span class="t">psikiatri</span> yang paling</span></div>
+<div class="sub" id="sub67"><span class="subin">terkenal dalam sejarah Malaysia</span></div>
+<div class="sub" id="sub68"><span class="subin">Pada tahun <span class="g">1928</span> nama dia berubah menjadi</span></div>
+<div class="sub" id="sub69"><span class="subin"><span class="g">Central</span> <span class="g">Mental</span> <span class="g">Hospital</span> dan kemudian</span></div>
+<div class="sub" id="sub70"><span class="subin">pada era <span class="g">1970-an</span> hospital ini dikenali</span></div>
+<div class="sub" id="sub71"><span class="subin">sebagai <span class="g">Hospital</span> Bahagia <span class="g">Ulu</span> <span class="g">Kinta,</span> nama yang</span></div>
+<div class="sub" id="sub72"><span class="subin">mungkin ramai rakyat Malaysia pernah dengar lah</span></div>
+<div class="sub" id="sub73"><span class="subin">Tapi persoalannya macam mana kehidupan pesakit</span></div>
+<div class="sub" id="sub74"><span class="subin">dalam hospital <span class="t">psikiatri</span> pada zaman dulu?</span></div>
+<div class="sub" id="sub75"><span class="subin">Sekarang kalau pesakit mengalami <span class="t">skizofrenia</span></span></div>
+<div class="sub" id="sub76"><span class="subin">kita ada ubat <span class="t">antipsikotik,</span> kalau</span></div>
+<div class="sub" id="sub77"><span class="subin">kita mengalami <span class="t">kemurungan</span></span></div>
+<div class="sub" id="sub78"><span class="subin">kita ada ubat <span class="t">antidepressant</span></span></div>
+<div class="sub" id="sub79"><span class="subin">kalau kita ada <span class="t">bipolar</span> kita</span></div>
+<div class="sub" id="sub80"><span class="subin">ada ubat mood stabilizer</span></div>
+<div class="sub" id="sub81"><span class="subin">Tapi cuba bayangkan pada zaman <span class="g">1911</span></span></div>
+<div class="sub" id="sub82"><span class="subin">untuk buat ubat ni semua tak ada pun</span></div>
+<div class="sub" id="sub83"><span class="subin">dan rawatan ketika tu sangat-sangat berbeza</span></div>
+<div class="sub" id="sub84"><span class="subin">Di seluruh dunia</span></div>
+<div class="sub" id="sub85"><span class="subin">hospital <span class="t">psikiatri</span> pada zaman tersebut</span></div>
+<div class="sub" id="sub86"><span class="subin">banyak menggunakan pendekatan</span></div>
+<div class="sub" id="sub87"><span class="subin">berasaskan institusi</span></div>
+<div class="sub" id="sub88"><span class="subin">Pesakit mungkin tinggal untuk tempoh</span></div>
+<div class="sub" id="sub89"><span class="subin">masa yang panjang</span></div>
+<div class="sub" id="sub90"><span class="subin">Ada yang memerlukan <span class="t">bantuan</span> untuk makan, mandi</span></div>
+<div class="sub" id="sub91"><span class="subin">menguruskan kehidupan harian</span></div>
+<div class="sub" id="sub92"><span class="subin">aktiviti rutin dan pekerjaan tertentu juga</span></div>
+<div class="sub" id="sub93"><span class="subin">digunakan dalam setengah institusi</span></div>
+<div class="sub" id="sub94"><span class="subin">sebagai sebahagian daripada perjagaan</span></div>
+<div class="sub" id="sub95"><span class="subin">Namun pendekatan <span class="t">psikiatri</span> pada zaman dulu</span></div>
+<div class="sub" id="sub96"><span class="subin">bukannya semuanya sempurna</span></div>
+<div class="sub" id="sub97"><span class="subin">Ada kaedah rawatan lama yang kemudiannya</span></div>
+<div class="sub" id="sub98"><span class="subin">ditinggalkan sebab bukti keberkesanan</span></div>
+<div class="sub" id="sub99"><span class="subin">yang lemah ataupun risiko yang tinggi</span></div>
+<div class="sub" id="sub100"><span class="subin">Dan penting untuk kita faham amalan rawatan</span></div>
+<div class="sub" id="sub101"><span class="subin">berbeza mengikut hospital dan zaman</span></div>
+<div class="sub" id="sub102"><span class="subin">Kita tak boleh anggap semua pesakit</span></div>
+<div class="sub" id="sub103"><span class="subin">ini mengalami perkara yang sama</span></div>
+<div class="sub" id="sub104"><span class="subin">Dan satu perkara yang penting</span></div>
+<div class="sub" id="sub105"><span class="subin">rawatan <span class="t">psikiatri</span> waktu itu</span></div>
+<div class="sub" id="sub106"><span class="subin">jauh daripada apa yang</span></div>
+<div class="sub" id="sub107"><span class="subin">kita kenal hari ini</span></div>
+<div class="sub" id="sub108"><span class="subin">Mulalah satu perubahan besar yang</span></div>
+<div class="sub" id="sub109"><span class="subin">berlaku dalam sejarah perubatan dunia</span></div>
+<div class="sub" id="sub110"><span class="subin">Sekitar tahun <span class="g">1950-an</span></span></div>
+<div class="sub" id="sub111"><span class="subin">ubat <span class="t">antipsikotik</span> seperti</span></div>
+<div class="sub" id="sub112"><span class="subin"><span class="t">chlorpromazine</span> mula diperkenalkan</span></div>
+<div class="sub" id="sub113"><span class="subin">Ini merupakan salah satu titik perubahan paling</span></div>
+<div class="sub" id="sub114"><span class="subin">penting dalam sejarah <span class="t">psikiatri</span> ini dekat</span></div>
+<div class="sub" id="sub115"><span class="subin">Malaysia</span></div>
+<div class="sub" id="sub116"><span class="subin">Sebelum tu doktor punya pilihan sangat</span></div>
+<div class="sub" id="sub117"><span class="subin">terhad kalau nak kawal simptom psikosis</span></div>
+<div class="sub" id="sub118"><span class="subin">Dengan adanya ubat <span class="t">antipsikotik</span></span></div>
+<div class="sub" id="sub119"><span class="subin">ramai pesakit mempunyai peluang yang lebih baik</span></div>
+<div class="sub" id="sub120"><span class="subin">untuk mengawal <span class="t">halusinasi</span></span></div>
+<div class="sub" id="sub121"><span class="subin"><span class="t">dilusi</span> dan juga gangguan pemikiran</span></div>
+<div class="sub" id="sub122"><span class="subin">Pada masa yang sama juga</span></div>
+<div class="sub" id="sub123"><span class="subin">ubat <span class="t">antidepressant</span></span></div>
+<div class="sub" id="sub124"><span class="subin">rawatan psikotik</span></div>
+<div class="sub" id="sub125"><span class="subin">yang lain semakin berkembang</span></div>
+<div class="sub" id="sub126"><span class="subin">Rawatan masih mempunyai risiko</span></div>
+<div class="sub" id="sub127"><span class="subin">dan kesan sampingan tapi pilihan</span></div>
+<div class="sub" id="sub128"><span class="subin">untuk bantu pesakit semakin berkembang dan</span></div>
+<div class="sub" id="sub129"><span class="subin">perkembangan inilah membuka jalan kepada</span></div>
+<div class="sub" id="sub130"><span class="subin">perubahan yang lebih besar sebenarnya</span></div>
+<div class="sub" id="sub131"><span class="subin">Pada tahun <span class="g">1958</span> satu lagi perkembangan penting</span></div>
+<div class="sub" id="sub132"><span class="subin">berlaku dekat tanah Melayu ni wad <span class="t">psikiatri</span></span></div>
+<div class="sub" id="sub133"><span class="subin">dibuka di hospital <span class="g">Pulau</span> <span class="g">Pinang</span> dan direkodkan</span></div>
+<div class="sub" id="sub134"><span class="subin">sebagai wad <span class="t">psikiatri</span> pertama dalam hospital umum</span></div>
+<div class="sub" id="sub135"><span class="subin">Benda ni penting sebab kalau sebelum ni</span></div>
+<div class="sub" id="sub136"><span class="subin">rawatan <span class="t">psikiatri</span> dikaitkan dengan hospital khusus</span></div>
+<div class="sub" id="sub137"><span class="subin">yang terpisah daripada</span></div>
+<div class="sub" id="sub138"><span class="subin">perkhidmatan perubatan lain</span></div>
+<div class="sub" id="sub139"><span class="subin">tapi apabila wad <span class="t">psikiatri</span> mula</span></div>
+<div class="sub" id="sub140"><span class="subin">diwujudkan di hospital umum</span></div>
+<div class="sub" id="sub141"><span class="subin">ia membantu membawa rawatan kesihatan mental</span></div>
+<div class="sub" id="sub142"><span class="subin">lebih dekat kepada sistem penjagaan kesihatan</span></div>
+<div class="sub" id="sub143"><span class="subin">biasa sama macam pesakit yang memerlukan</span></div>
+<div class="sub" id="sub144"><span class="subin">rawatan jantung, buah pinggang dan penyakit lain</span></div>
+<div class="sub" id="sub145"><span class="subin">Ramai yang mengalami penyakit mental juga</span></div>
+<div class="sub" id="sub146"><span class="subin">yang memerlukan rawatan perubatan</span></div>
+<div class="sub" id="sub147"><span class="subin">kat sinilah perkhidmatan</span></div>
+<div class="sub" id="sub148"><span class="subin"><span class="t">psikiatri</span> terus berkembang</span></div>
+<div class="sub" id="sub149"><span class="subin">di hospital-hospital seluruh Malaysia lah</span></div>
+<div class="sub" id="sub150"><span class="subin">Sekarang kalau kita tengok</span></div>
+<div class="sub" id="sub151"><span class="subin">kita masuk ke zaman modern ni</span></div>
+<div class="sub" id="sub152"><span class="subin">suasana dia tak macam</span></div>
+<div class="sub" id="sub153"><span class="subin">yang digambarkan dalam filem-filem barat tu</span></div>
+<div class="sub" id="sub154"><span class="subin">filem-filem seram tu, kat dalam wad</span></div>
+<div class="sub" id="sub155"><span class="subin">pesakit akan dinilai oleh doktor</span></div>
+<div class="sub" id="sub156"><span class="subin">dipantau oleh jururawat</span></div>
+<div class="sub" id="sub157"><span class="subin">Mereka diberikan ubat mengikut keperluan</span></div>
+<div class="sub" id="sub158"><span class="subin">Ada pesakit yang menjalani <span class="t">terapi</span></span></div>
+<div class="sub" id="sub159"><span class="subin">aktiviti <span class="t">pemulihan,</span> penilaian</span></div>
+<div class="sub" id="sub160"><span class="subin">by multidisciplinary punya team lah</span></div>
+<div class="sub" id="sub161"><span class="subin">Ada juga yang masuk sebab</span></div>
+<div class="sub" id="sub162"><span class="subin"><span class="t">kemurungan</span> yang teruk, ada</span></div>
+<div class="sub" id="sub163"><span class="subin">yang masuk sebab tengah full blown manik, ada</span></div>
+<div class="sub" id="sub164"><span class="subin">yang mengalami psikotik sehingga tak mampu</span></div>
+<div class="sub" id="sub165"><span class="subin">nak jaga keselamatan diri dan ada juga</span></div>
+<div class="sub" id="sub166"><span class="subin">yang memerlukan pemantauan</span></div>
+<div class="sub" id="sub167"><span class="subin">sebab risiko mencederakan diri</span></div>
+<div class="sub" id="sub168"><span class="subin">Tempoh kemasukan ni berbeza</span></div>
+<div class="sub" id="sub169"><span class="subin">mengikut keadaan pesakit lah, ada</span></div>
+<div class="sub" id="sub170"><span class="subin">yang memerlukan beberapa hari je</span></div>
+<div class="sub" id="sub171"><span class="subin">ada yang memerlukan beberapa minggu</span></div>
+<div class="sub" id="sub172"><span class="subin">mungkin ada juga</span></div>
+<div class="sub" id="sub173"><span class="subin">yang memerlukan penjagaan yang lebih lama</span></div>
+<div class="sub" id="sub174"><span class="subin">Sebagai doktor <span class="t">psikiatri</span> yang pernah</span></div>
+<div class="sub" id="sub175"><span class="subin">terlibat dalam perkhidmatan <span class="t">psikiatri</span></span></div>
+<div class="sub" id="sub176"><span class="subin">saya sendiri melihat bagaimana rawatan</span></div>
+<div class="sub" id="sub177"><span class="subin">yang sesuai boleh mengubah kehidupan seorang</span></div>
+<div class="sub" id="sub178"><span class="subin">sebenarnya</span></div>
+<div class="sub" id="sub179"><span class="subin">Kalau anda ataupun ahli keluarga sedang</span></div>
+<div class="sub" id="sub180"><span class="subin">mengalami masalah kesihatan mental</span></div>
+<div class="sub" id="sub181"><span class="subin">cepat-cepat dapatkan <span class="t">bantuan</span> daripada</span></div>
+<div class="sub" id="sub182"><span class="subin">profesional kesihatan mental</span></div>
+<div class="sub" id="sub183"><span class="subin">Boleh bawa datang buat saringan</span></div>
+<div class="sub" id="sub184"><span class="subin">dan konsultasi bersama saya</span></div>
+<div class="sub" id="sub185"><span class="subin">Dr. <span class="g">Azren</span> di <span class="g">Klinik</span> <span class="g">Nissa</span></span></div>
+<div class="sub" id="sub186"><span class="subin">Saya juga ada tulis buku yang bertajuk Doktor</span></div>
+<div class="sub" id="sub187"><span class="subin">saya boleh sembuh Ke?</span></div>
+<div class="sub" id="sub188"><span class="subin">Terbitan White Coat Books</span></div>
+<div class="sub" id="sub189"><span class="subin">Yang membincangkan tentang penyakit mental</span></div>
+<div class="sub" id="sub190"><span class="subin">dan perjalanan <span class="t">pemulihan</span> dengan bahasa</span></div>
+<div class="sub" id="sub191"><span class="subin">yang mudah untuk difahami</span></div>
+<div class="sub" id="sub192"><span class="subin">Kalau anda pernah</span></div>
+<div class="sub" id="sub193"><span class="subin">dimasukkan ke dalam</span></div>
+<div class="sub" id="sub194"><span class="subin">wad <span class="t">psikiatri</span></span></div>
+<div class="sub" id="sub195"><span class="subin">mungkin boleh kongsikan</span></div>
+<div class="sub" id="sub196"><span class="subin">pengalaman anda di dalam komen</span></div>
+<div class="sub" id="sub197"><span class="subin">Apa soalan boleh tanya di dalam komen</span></div>
+<div class="sub" id="sub198"><span class="subin">Take care</span></div>
+  <audio id="mix" src="audio/mix.wav" data-start="0" data-duration="386.377" data-track-index="10" data-volume="1"></audio>
+  <script src="vendor/gsap.min.js"></script>
+  <script>
+  (function () {
+    const tl = window.gsap.timeline({ paused: true });
+    tl.fromTo('#k1-kb', {"scale": 1.0}, {...{"scale": 1.035}, duration:5.792, ease:'sine.inOut'}, 0.0);
+    tl.set('#k1', {"opacity": 1}, -0.0417);
+    tl.fromTo('#k1-in', {"opacity": 0}, {...{"opacity": 1}, duration:1.4, ease:'power2.out'}, 0.0);
+    tl.set('#k1', {"opacity": 0}, 5.7917);
+    tl.fromTo('#s01-kb', {"scale": 1.1, "xPercent": -2.5}, {...{"scale": 1.1, "xPercent": 2.5}, duration:5.467, ease:'sine.inOut'}, 5.6667);
+    tl.set('#s01', {"opacity": 1}, 5.375);
+    tl.fromTo('#s01-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 5.4167);
+    tl.set('#s01', {"opacity": 0}, 10.8333);
+    tl.fromTo('#s02-kb', {"scale": 1.0, "xPercent": 0}, {...{"scale": 1.09, "xPercent": 0}, duration:4.508, ease:'sine.inOut'}, 10.75);
+    tl.set('#s02', {"opacity": 1}, 10.4583);
+    tl.fromTo('#s02-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 10.5);
+    tl.set('#s02', {"opacity": 0}, 14.9583);
+    tl.fromTo('#s03-kb', {"scale": 1.12, "xPercent": 0}, {...{"scale": 1.02, "xPercent": 0}, duration:8.342, ease:'sine.inOut'}, 14.875);
+    tl.set('#s03', {"opacity": 1}, 14.5833);
+    tl.fromTo('#s03-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 14.625);
+    tl.set('#s03', {"opacity": 0}, 22.9167);
+    tl.fromTo('#s04-kb', {"scale": 1.1, "xPercent": 2.5}, {...{"scale": 1.1, "xPercent": -2.5}, duration:4.8, ease:'sine.inOut'}, 22.7917);
+    tl.set('#s04', {"opacity": 1}, 22.5);
+    tl.fromTo('#s04-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 22.5417);
+    tl.set('#s04', {"opacity": 0}, 27.2917);
+    tl.fromTo('#s05-kb', {"scale": 1.0, "xPercent": 0}, {...{"scale": 1.09, "xPercent": 0}, duration:6.592, ease:'sine.inOut'}, 27.2083);
+    tl.set('#s05', {"opacity": 1}, 26.9167);
+    tl.fromTo('#s05-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 26.9583);
+    tl.set('#s05', {"opacity": 0}, 33.5);
+    tl.set('#g01', {"opacity": 1}, 32.4167);
+    tl.fromTo('#g01-in', {"opacity": 0}, {...{"opacity": 1}, duration:1.0, ease:'power2.inOut'}, 32.4583);
+    tl.set('#g01', {"opacity": 0}, 36.875);
+    tl.fromTo('#s06-kb', {"scale": 1.0, "xPercent": 0}, {...{"scale": 1.09, "xPercent": 0}, duration:4.425, ease:'sine.inOut'}, 36.75);
+    tl.set('#s06', {"opacity": 1}, 36.4583);
+    tl.fromTo('#s06-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 36.5);
+    tl.set('#s06', {"opacity": 0}, 40.875);
+    tl.set('#g02', {"opacity": 1}, 39.7917);
+    tl.fromTo('#g02-in', {"opacity": 0}, {...{"opacity": 1}, duration:1.0, ease:'power2.inOut'}, 39.8333);
+    tl.set('#g02', {"opacity": 0}, 47.2083);
+    tl.set('#g03', {"opacity": 1}, 46.25);
+    tl.fromTo('#g03-in', {'--r':'0%'}, {'--r':'140%', duration:0.85, ease:'power2.inOut'}, 46.2917);
+    tl.set('#g03', {"opacity": 0}, 51.9167);
+    tl.fromTo('#s07-kb', {"scale": 1.0, "xPercent": 0}, {...{"scale": 1.09, "xPercent": 0}, duration:5.675, ease:'sine.inOut'}, 51.8333);
+    tl.set('#s07', {"opacity": 1}, 51.5417);
+    tl.fromTo('#s07-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 51.5833);
+    tl.set('#s07', {"opacity": 0}, 57.2083);
+    tl.fromTo('#s08-kb', {"scale": 1.1, "xPercent": -2.5}, {...{"scale": 1.1, "xPercent": 2.5}, duration:6.758, ease:'sine.inOut'}, 57.0833);
+    tl.set('#s08', {"opacity": 1}, 56.7917);
+    tl.fromTo('#s08-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 56.8333);
+    tl.set('#s08', {"opacity": 0}, 63.5417);
+    tl.fromTo('#s09-kb', {"scale": 1.1, "xPercent": 2.5}, {...{"scale": 1.1, "xPercent": -2.5}, duration:2.675, ease:'sine.inOut'}, 63.4583);
+    tl.set('#s09', {"opacity": 1}, 63.1667);
+    tl.fromTo('#s09-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 63.2083);
+    tl.set('#s09', {"opacity": 0}, 65.8333);
+    tl.fromTo('#s10-kb', {"scale": 1.0, "xPercent": 0}, {...{"scale": 1.09, "xPercent": 0}, duration:5.967, ease:'sine.inOut'}, 65.75);
+    tl.set('#s10', {"opacity": 1}, 65.4583);
+    tl.fromTo('#s10-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 65.5);
+    tl.set('#s10', {"opacity": 0}, 71.4167);
+    tl.set('#g04', {"opacity": 1}, 70.5417);
+    tl.fromTo('#g04-in', {clipPath:'inset(0% 100% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.8, ease:'power3.inOut'}, 70.5833);
+    tl.fromTo('#g04-tear', {x:-40, opacity:1}, {x:1940, duration:0.8, ease:'power3.inOut'}, 70.5833);
+    tl.set('#g04-tear', {"opacity": 0}, 71.4167);
+    tl.set('#g04', {"opacity": 0}, 76.8333);
+    tl.fromTo('#s11-kb', {"scale": 1.0, "xPercent": 0}, {...{"scale": 1.09, "xPercent": 0}, duration:6.175, ease:'sine.inOut'}, 76.75);
+    tl.set('#s11', {"opacity": 1}, 76.4583);
+    tl.fromTo('#s11-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 76.5);
+    tl.set('#s11', {"opacity": 0}, 82.625);
+    tl.fromTo('#s12-kb', {"scale": 1.1, "xPercent": 2.5}, {...{"scale": 1.1, "xPercent": -2.5}, duration:4.05, ease:'sine.inOut'}, 82.5);
+    tl.set('#s12', {"opacity": 1}, 82.2083);
+    tl.fromTo('#s12-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 82.25);
+    tl.set('#s12', {"opacity": 0}, 86.25);
+    tl.fromTo('#e01-kb', {"scale": 1.0}, {...{"scale": 1.035}, duration:6.333, ease:'sine.inOut'}, 86.125);
+    tl.set('#e01', {"opacity": 1}, 85.8333);
+    tl.fromTo('#e01-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 85.875);
+    tl.set('#e01', {"opacity": 0}, 92.4583);
+    tl.fromTo('#e02-kb', {"scale": 1.0}, {...{"scale": 1.035}, duration:2.25, ease:'sine.inOut'}, 92.3333);
+    tl.set('#e02', {"opacity": 1}, 92.0417);
+    tl.fromTo('#e02-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 92.0833);
+    tl.set('#e02', {"opacity": 0}, 94.5833);
+    tl.fromTo('#s13-kb', {"scale": 1.12, "xPercent": 0}, {...{"scale": 1.02, "xPercent": 0}, duration:4.425, ease:'sine.inOut'}, 94.5);
+    tl.set('#s13', {"opacity": 1}, 94.2083);
+    tl.fromTo('#s13-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 94.25);
+    tl.set('#s13', {"opacity": 0}, 98.625);
+    tl.fromTo('#k2-kb', {"scale": 1.0}, {...{"scale": 1.035}, duration:6.958, ease:'sine.inOut'}, 98.2083);
+    tl.set('#k2', {"opacity": 1}, 97.6667);
+    tl.fromTo('#k2-in', {'--r':'0%'}, {'--r':'140%', duration:0.85, ease:'power2.inOut'}, 97.7083);
+    tl.set('#k2', {"opacity": 0}, 105.1667);
+    tl.fromTo('#s14-kb', {"scale": 1.0, "xPercent": 0}, {...{"scale": 1.09, "xPercent": 0}, duration:2.342, ease:'sine.inOut'}, 105.0833);
+    tl.set('#s14', {"opacity": 1}, 104.7917);
+    tl.fromTo('#s14-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 104.8333);
+    tl.set('#s14', {"opacity": 0}, 107.125);
+    tl.set('#g05', {"opacity": 1}, 106.2083);
+    tl.fromTo('#g05-in', {clipPath:'inset(0% 100% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.8, ease:'power3.inOut'}, 106.25);
+    tl.fromTo('#g05-tear', {x:-40, opacity:1}, {x:1940, duration:0.8, ease:'power3.inOut'}, 106.25);
+    tl.set('#g05-tear', {"opacity": 0}, 107.0833);
+    tl.set('#g05', {"opacity": 0}, 121.0);
+    tl.fromTo('#s15-kb', {"scale": 1.1, "xPercent": -2.5}, {...{"scale": 1.1, "xPercent": 2.5}, duration:5.967, ease:'sine.inOut'}, 120.9167);
+    tl.set('#s15', {"opacity": 1}, 120.625);
+    tl.fromTo('#s15-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 120.6667);
+    tl.set('#s15', {"opacity": 0}, 126.5833);
+    tl.set('#g06', {"opacity": 1}, 125.5);
+    tl.fromTo('#g06-in', {"opacity": 0}, {...{"opacity": 1}, duration:1.0, ease:'power2.inOut'}, 125.5417);
+    tl.set('#g06', {"opacity": 0}, 131.3333);
+    tl.fromTo('#s16-kb', {"scale": 1.0, "xPercent": 0}, {...{"scale": 1.09, "xPercent": 0}, duration:4.425, ease:'sine.inOut'}, 131.25);
+    tl.set('#s16', {"opacity": 1}, 130.9583);
+    tl.fromTo('#s16-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 131.0);
+    tl.set('#s16', {"opacity": 0}, 135.375);
+    tl.fromTo('#s17-kb', {"scale": 1.1, "xPercent": 2.5}, {...{"scale": 1.1, "xPercent": -2.5}, duration:4.925, ease:'sine.inOut'}, 135.2917);
+    tl.set('#s17', {"opacity": 1}, 135.0);
+    tl.fromTo('#s17-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 135.0417);
+    tl.set('#s17', {"opacity": 0}, 139.9167);
+    tl.set('#g07', {"opacity": 1}, 139.0417);
+    tl.fromTo('#g07-in', {clipPath:'inset(0% 100% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.8, ease:'power3.inOut'}, 139.0833);
+    tl.fromTo('#g07-tear', {x:-40, opacity:1}, {x:1940, duration:0.8, ease:'power3.inOut'}, 139.0833);
+    tl.set('#g07-tear', {"opacity": 0}, 139.9167);
+    tl.set('#g07', {"opacity": 0}, 152.1667);
+    tl.fromTo('#s18-kb', {"scale": 1.0, "xPercent": 0}, {...{"scale": 1.09, "xPercent": 0}, duration:3.8, ease:'sine.inOut'}, 152.0417);
+    tl.set('#s18', {"opacity": 1}, 151.75);
+    tl.fromTo('#s18-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 151.7917);
+    tl.set('#s18', {"opacity": 0}, 155.5417);
+    tl.set('#g08', {"opacity": 1}, 154.5833);
+    tl.fromTo('#g08-in', {'--r':'0%'}, {'--r':'140%', duration:0.85, ease:'power2.inOut'}, 154.625);
+    tl.set('#g08', {"opacity": 0}, 172.0);
+    tl.fromTo('#e03-kb', {"scale": 1.0}, {...{"scale": 1.035}, duration:7.125, ease:'sine.inOut'}, 171.875);
+    tl.set('#e03', {"opacity": 1}, 171.5833);
+    tl.fromTo('#e03-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 171.625);
+    tl.set('#e03', {"opacity": 0}, 179.0);
+    tl.fromTo('#e04-kb', {"scale": 1.0}, {...{"scale": 1.035}, duration:3.542, ease:'sine.inOut'}, 178.9167);
+    tl.set('#e04', {"opacity": 1}, 178.625);
+    tl.fromTo('#e04-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 178.6667);
+    tl.set('#e04', {"opacity": 0}, 182.4583);
+    tl.fromTo('#s19-kb', {"scale": 1.12, "xPercent": 0}, {...{"scale": 1.02, "xPercent": 0}, duration:4.342, ease:'sine.inOut'}, 182.375);
+    tl.set('#s19', {"opacity": 1}, 182.0833);
+    tl.fromTo('#s19-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 182.125);
+    tl.set('#s19', {"opacity": 0}, 186.4167);
+    tl.fromTo('#s20-kb', {"scale": 1.1, "xPercent": -2.5}, {...{"scale": 1.1, "xPercent": 2.5}, duration:7.633, ease:'sine.inOut'}, 186.2917);
+    tl.set('#s20', {"opacity": 1}, 186.0);
+    tl.fromTo('#s20-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 186.0417);
+    tl.set('#s20', {"opacity": 0}, 193.625);
+    tl.set('#g09', {"opacity": 1}, 192.75);
+    tl.fromTo('#g09-in', {clipPath:'inset(0% 100% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.8, ease:'power3.inOut'}, 192.7917);
+    tl.fromTo('#g09-tear', {x:-40, opacity:1}, {x:1940, duration:0.8, ease:'power3.inOut'}, 192.7917);
+    tl.set('#g09-tear', {"opacity": 0}, 193.625);
+    tl.set('#g09', {"opacity": 0}, 203.6667);
+    tl.fromTo('#s21-kb', {"scale": 1.12, "xPercent": 0}, {...{"scale": 1.02, "xPercent": 0}, duration:7.925, ease:'sine.inOut'}, 203.5833);
+    tl.set('#s21', {"opacity": 1}, 203.2917);
+    tl.fromTo('#s21-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 203.3333);
+    tl.set('#s21', {"opacity": 0}, 211.2083);
+    tl.fromTo('#s22-kb', {"scale": 1.1, "xPercent": -2.5}, {...{"scale": 1.1, "xPercent": 2.5}, duration:3.383, ease:'sine.inOut'}, 211.125);
+    tl.set('#s22', {"opacity": 1}, 210.8333);
+    tl.fromTo('#s22-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 210.875);
+    tl.set('#s22', {"opacity": 0}, 214.2083);
+    tl.fromTo('#e05-kb', {"scale": 1.0}, {...{"scale": 1.035}, duration:5.917, ease:'sine.inOut'}, 214.125);
+    tl.set('#e05', {"opacity": 1}, 213.8333);
+    tl.fromTo('#e05-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 213.875);
+    tl.set('#e05', {"opacity": 0}, 220.0417);
+    tl.fromTo('#e06-kb', {"scale": 1.0}, {...{"scale": 1.035}, duration:3.792, ease:'sine.inOut'}, 219.625);
+    tl.set('#e06', {"opacity": 1}, 219.0833);
+    tl.fromTo('#e06-in', {'--r':'0%'}, {'--r':'140%', duration:0.85, ease:'power2.inOut'}, 219.125);
+    tl.set('#e06', {"opacity": 0}, 223.4167);
+    tl.fromTo('#e07-kb', {"scale": 1.0}, {...{"scale": 1.035}, duration:5.375, ease:'sine.inOut'}, 223.3333);
+    tl.set('#e07', {"opacity": 1}, 223.0417);
+    tl.fromTo('#e07-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 223.0833);
+    tl.set('#e07', {"opacity": 0}, 228.7083);
+    tl.fromTo('#s23-kb', {"scale": 1.0, "xPercent": 0}, {...{"scale": 1.09, "xPercent": 0}, duration:5.592, ease:'sine.inOut'}, 228.625);
+    tl.set('#s23', {"opacity": 1}, 228.3333);
+    tl.fromTo('#s23-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 228.375);
+    tl.set('#s23', {"opacity": 0}, 233.9167);
+    tl.fromTo('#s24-kb', {"scale": 1.1, "xPercent": 2.5}, {...{"scale": 1.1, "xPercent": -2.5}, duration:4.342, ease:'sine.inOut'}, 233.8333);
+    tl.set('#s24', {"opacity": 1}, 233.5417);
+    tl.fromTo('#s24-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 233.5833);
+    tl.set('#s24', {"opacity": 0}, 237.875);
+    tl.fromTo('#e08-kb', {"scale": 1.0}, {...{"scale": 1.035}, duration:9.125, ease:'sine.inOut'}, 237.7917);
+    tl.set('#e08', {"opacity": 1}, 237.5);
+    tl.fromTo('#e08-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 237.5417);
+    tl.set('#e08', {"opacity": 0}, 246.9167);
+    tl.set('#g10', {"opacity": 1}, 245.7917);
+    tl.fromTo('#g10-in', {"opacity": 0}, {...{"opacity": 1}, duration:1.0, ease:'power2.inOut'}, 245.8333);
+    tl.set('#g10', {"opacity": 0}, 251.5417);
+    tl.set('#g11', {"opacity": 1}, 251.1667);
+    tl.fromTo('#g11-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 251.2083);
+    tl.set('#g11', {"opacity": 0}, 258.2083);
+    tl.fromTo('#s25-kb', {"scale": 1.0, "xPercent": 0}, {...{"scale": 1.09, "xPercent": 0}, duration:4.967, ease:'sine.inOut'}, 258.125);
+    tl.set('#s25', {"opacity": 1}, 257.8333);
+    tl.fromTo('#s25-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 257.875);
+    tl.set('#s25', {"opacity": 0}, 262.7917);
+    tl.fromTo('#s26-kb', {"scale": 1.1, "xPercent": -2.5}, {...{"scale": 1.1, "xPercent": 2.5}, duration:6.217, ease:'sine.inOut'}, 262.4167);
+    tl.set('#s26', {"opacity": 1}, 261.875);
+    tl.fromTo('#s26-in', {'--r':'0%'}, {'--r':'140%', duration:0.85, ease:'power2.inOut'}, 261.9167);
+    tl.set('#s26', {"opacity": 0}, 268.3333);
+    tl.fromTo('#s27-kb', {"scale": 1.0, "xPercent": 0}, {...{"scale": 1.09, "xPercent": 0}, duration:6.675, ease:'sine.inOut'}, 268.2083);
+    tl.set('#s27', {"opacity": 1}, 267.9167);
+    tl.fromTo('#s27-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 267.9583);
+    tl.set('#s27', {"opacity": 0}, 274.5833);
+    tl.set('#g12', {"opacity": 1}, 273.6667);
+    tl.fromTo('#g12-in', {clipPath:'inset(0% 100% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.8, ease:'power3.inOut'}, 273.7083);
+    tl.fromTo('#g12-tear', {x:-40, opacity:1}, {x:1940, duration:0.8, ease:'power3.inOut'}, 273.7083);
+    tl.set('#g12-tear', {"opacity": 0}, 274.5417);
+    tl.set('#g12', {"opacity": 0}, 290.5833);
+    tl.set('#g13', {"opacity": 1}, 290.1667);
+    tl.fromTo('#g13-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 290.2083);
+    tl.set('#g13', {"opacity": 0}, 296.5417);
+    tl.set('#g14', {"opacity": 1}, 295.4167);
+    tl.fromTo('#g14-in', {"opacity": 0}, {...{"opacity": 1}, duration:1.0, ease:'power2.inOut'}, 295.4583);
+    tl.set('#g14', {"opacity": 0}, 303.9167);
+    tl.fromTo('#s28-kb', {"scale": 1.0, "xPercent": 0}, {...{"scale": 1.09, "xPercent": 0}, duration:7.758, ease:'sine.inOut'}, 303.5);
+    tl.set('#s28', {"opacity": 1}, 302.9583);
+    tl.fromTo('#s28-in', {'--r':'0%'}, {'--r':'140%', duration:0.85, ease:'power2.inOut'}, 303.0);
+    tl.set('#s28', {"opacity": 0}, 310.9583);
+    tl.fromTo('#k3-kb', {"scale": 1.0}, {...{"scale": 1.035}, duration:4.583, ease:'sine.inOut'}, 310.875);
+    tl.set('#k3', {"opacity": 1}, 310.5833);
+    tl.fromTo('#k3-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 310.625);
+    tl.set('#k3', {"opacity": 0}, 315.4583);
+    tl.fromTo('#s29-kb', {"scale": 1.0, "xPercent": 0}, {...{"scale": 1.09, "xPercent": 0}, duration:3.092, ease:'sine.inOut'}, 315.375);
+    tl.set('#s29', {"opacity": 1}, 315.0833);
+    tl.fromTo('#s29-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 315.125);
+    tl.set('#s29', {"opacity": 0}, 318.1667);
+    tl.fromTo('#s30-kb', {"scale": 1.1, "xPercent": 2.5}, {...{"scale": 1.1, "xPercent": -2.5}, duration:7.342, ease:'sine.inOut'}, 318.0833);
+    tl.set('#s30', {"opacity": 1}, 317.7917);
+    tl.fromTo('#s30-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 317.8333);
+    tl.set('#s30', {"opacity": 0}, 325.125);
+    tl.set('#g15', {"opacity": 1}, 324.0);
+    tl.fromTo('#g15-in', {"opacity": 0}, {...{"opacity": 1}, duration:1.0, ease:'power2.inOut'}, 324.0417);
+    tl.set('#g15', {"opacity": 0}, 336.5);
+    tl.set('#g16', {"opacity": 1}, 336.125);
+    tl.fromTo('#g16-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 336.1667);
+    tl.set('#g16', {"opacity": 0}, 344.625);
+    tl.fromTo('#s31-kb', {"scale": 1.0, "xPercent": 0}, {...{"scale": 1.09, "xPercent": 0}, duration:5.425, ease:'sine.inOut'}, 344.2083);
+    tl.set('#s31', {"opacity": 1}, 343.6667);
+    tl.fromTo('#s31-in', {'--r':'0%'}, {'--r':'140%', duration:0.85, ease:'power2.inOut'}, 343.7083);
+    tl.set('#s31', {"opacity": 0}, 349.3333);
+    tl.fromTo('#s32-kb', {"scale": 1.1, "xPercent": -2.5}, {...{"scale": 1.1, "xPercent": 2.5}, duration:4.008, ease:'sine.inOut'}, 349.25);
+    tl.set('#s32', {"opacity": 1}, 348.9583);
+    tl.fromTo('#s32-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 349.0);
+    tl.set('#s32', {"opacity": 0}, 352.9583);
+    tl.fromTo('#e09-kb', {"scale": 1.0}, {...{"scale": 1.035}, duration:6.208, ease:'sine.inOut'}, 352.875);
+    tl.set('#e09', {"opacity": 1}, 352.5833);
+    tl.fromTo('#e09-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 352.625);
+    tl.set('#e09', {"opacity": 0}, 359.0833);
+    tl.fromTo('#s33-kb', {"scale": 1.0, "xPercent": 0}, {...{"scale": 1.09, "xPercent": 0}, duration:5.217, ease:'sine.inOut'}, 359.0);
+    tl.set('#s33', {"opacity": 1}, 358.7083);
+    tl.fromTo('#s33-in', {"opacity": 0}, {...{"opacity": 1}, duration:0.3, ease:'power1.inOut'}, 358.75);
+    tl.set('#s33', {"opacity": 0}, 363.9167);
+    tl.set('#g17', {"opacity": 1}, 362.8333);
+    tl.fromTo('#g17-in', {"opacity": 0}, {...{"opacity": 1}, duration:1.0, ease:'power2.inOut'}, 362.875);
+    tl.set('#g17', {"opacity": 0}, 373.0);
+    tl.fromTo('#k4-kb', {"scale": 1.0}, {...{"scale": 1.035}, duration:8.917, ease:'sine.inOut'}, 372.625);
+    tl.set('#k4', {"opacity": 1}, 372.0833);
+    tl.fromTo('#k4-in', {'--r':'0%'}, {'--r':'140%', duration:0.85, ease:'power2.inOut'}, 372.125);
+    tl.set('#k4', {"opacity": 0}, 381.5417);
+    tl.set('#g18', {"opacity": 1}, 380.4167);
+    tl.fromTo('#g18-in', {"opacity": 0}, {...{"opacity": 1}, duration:1.0, ease:'power2.inOut'}, 380.4583);
+    tl.set('#g18', {"opacity": 0}, 386.375);
+    tl.fromTo('#g01-k', {"opacity": 0, "y": 12}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 33.0833);
+    tl.fromTo('#g01-b', {"opacity": 0, "scale": 1.15}, {...{"opacity": 1, "scale": 1}, duration:0.7, ease:'power3.out'}, 35.0);
+    tl.fromTo('#g01-s', {"opacity": 0, "y": 14}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 35.9583);
+    tl.fromTo('#g02-t .ch', {opacity:0, y:14, scale:1.25}, {opacity:1, y:0, scale:1, duration:1.0, ease:'power3.out', stagger:0.03}, 40.5417);
+    tl.fromTo('#g02-t2 .ch', {opacity:0, y:14, scale:1.25}, {opacity:1, y:0, scale:1, duration:1.0, ease:'power3.out', stagger:0.04}, 41.25);
+    tl.fromTo('#g02-s', {"opacity": 0, "y": 16}, {...{"opacity": 1, "y": 0}, duration:0.8, ease:'power3.out'}, 42.0417);
+    tl.fromTo('#g02-p', {strokeDashoffset:1200}, {strokeDashoffset:0, duration:1.6, ease:'power2.inOut'}, 41.8333);
+    tl.fromTo('#g02-d0', {"opacity": 0, "scale": 0, "transformOrigin": "50% 50%"}, {...{"opacity": 1, "scale": 1}, duration:0.35, ease:'back.out(2)'}, 41.9583);
+    tl.fromTo('#g02-d1', {"opacity": 0, "scale": 0, "transformOrigin": "50% 50%"}, {...{"opacity": 1, "scale": 1}, duration:0.35, ease:'back.out(2)'}, 42.2083);
+    tl.fromTo('#g02-d2', {"opacity": 0, "scale": 0, "transformOrigin": "50% 50%"}, {...{"opacity": 1, "scale": 1}, duration:0.35, ease:'back.out(2)'}, 42.4583);
+    tl.fromTo('#g02-d3', {"opacity": 0, "scale": 0, "transformOrigin": "50% 50%"}, {...{"opacity": 1, "scale": 1}, duration:0.35, ease:'back.out(2)'}, 42.7083);
+    tl.fromTo('#g02-d4', {"opacity": 0, "scale": 0, "transformOrigin": "50% 50%"}, {...{"opacity": 1, "scale": 1}, duration:0.35, ease:'back.out(2)'}, 42.9583);
+    tl.fromTo('#g02-d5', {"opacity": 0, "scale": 0, "transformOrigin": "50% 50%"}, {...{"opacity": 1, "scale": 1}, duration:0.35, ease:'back.out(2)'}, 43.2083);
+    tl.fromTo('#g03-m', {"scale": 1.0, "transformOrigin": "40% 40%"}, {...{"scale": 1.12}, duration:5.625, ease:'sine.inOut'}, 46.7917);
+    tl.fromTo('#g03-h', {"opacity": 0, "x": -20}, {...{"opacity": 1, "x": 0}, duration:0.6, ease:'power3.out'}, 47.0);
+    tl.fromTo('#g03-p0', {"opacity": 0, "scale": 0.3}, {...{"opacity": 1, "scale": 1}, duration:0.5, ease:'back.out(2)'}, 50.9583);
+    tl.fromTo('#g04-h', {"opacity": 0, "y": -12}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 71.25);
+    tl.fromTo('#g04-c0', {"opacity": 0, "y": 30}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 71.6667);
+    tl.fromTo('#g04-c1', {"opacity": 0, "y": 30}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 72.4583);
+    tl.fromTo('#g04-c2', {"opacity": 0, "y": 30}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 73.0417);
+    tl.fromTo('#g04-f', {"opacity": 0, "y": 10}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 73.8333);
+    tl.fromTo('#g05-k', {"opacity": 0}, {...{"opacity": 1}, duration:0.5, ease:'power3.out'}, 106.9167);
+    tl.fromTo('#g05-w0', {"opacity": 0, "y": 20}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 107.9583);
+    tl.fromTo('#g05-w1', {"opacity": 0, "y": 20}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 108.4583);
+    tl.fromTo('#g05-w2', {"opacity": 0, "y": 20}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 109.1667);
+    tl.fromTo('#g05-pl', {"opacity": 0}, {...{"opacity": 1}, duration:0.6, ease:'power3.out'}, 109.625);
+    tl.fromTo('#g05-w1', {"color": "#3B2A1A"}, {...{"color": "#B3352B"}, duration:0.4, ease:'power2.out'}, 110.125);
+    tl.fromTo('#g05-x', {"scaleX": 0, "transformOrigin": "0% 50%"}, {...{"scaleX": 1}, duration:0.45, ease:'power3.inOut'}, 116.4583);
+    tl.fromTo('#g05-n', {"opacity": 0, "y": 12}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 116.7917);
+    tl.fromTo('#g06-k', {"opacity": 0}, {...{"opacity": 1}, duration:0.5, ease:'power3.out'}, 126.0417);
+    tl.fromTo('#g06-b0', {"opacity": 0, "y": 40}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'back.out(1.5)'}, 129.0833);
+    tl.fromTo('#g06-b1', {"opacity": 0, "y": 40}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'back.out(1.5)'}, 129.25);
+    tl.fromTo('#g06-b2', {"opacity": 0, "y": 40}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'back.out(1.5)'}, 129.4583);
+    tl.fromTo('#g06-b3', {"opacity": 0, "y": 40}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'back.out(1.5)'}, 130.0);
+    tl.fromTo('#g06-s', {"opacity": 0, "y": 10}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 130.5833);
+    tl.fromTo('#g07-h', {"opacity": 0, "y": -10}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 139.6667);
+    tl.fromTo('#g07-l', {"scaleY": 0, "transformOrigin": "50% 0%"}, {...{"scaleY": 1}, duration:2.0, ease:'power2.inOut'}, 139.7917);
+    tl.fromTo('#g07-r0', {"opacity": 0, "x": -30}, {...{"opacity": 1, "x": 0}, duration:0.5, ease:'power3.out'}, 139.875);
+    tl.fromTo('#g07-r1', {"opacity": 0, "x": -30}, {...{"opacity": 1, "x": 0}, duration:0.5, ease:'power3.out'}, 141.6667);
+    tl.fromTo('#g07-r2', {"opacity": 0, "x": -30}, {...{"opacity": 1, "x": 0}, duration:0.5, ease:'power3.out'}, 147.0417);
+    tl.fromTo('#g07-r0, #g07-r1', {"opacity": 1}, {...{"opacity": 0.45}, duration:0.5, ease:'power2.out', immediateRender:false}, 147.0417);
+    tl.fromTo('#g08-h', {"opacity": 0, "y": -10}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 155.2083);
+    tl.fromTo('#g08-r0', {"opacity": 0, "x": -30}, {...{"opacity": 1, "x": 0}, duration:0.5, ease:'power3.out'}, 156.7917);
+    tl.fromTo('#g08-r1', {"opacity": 0, "x": -30}, {...{"opacity": 1, "x": 0}, duration:0.5, ease:'power3.out'}, 159.875);
+    tl.fromTo('#g08-r2', {"opacity": 0, "x": -30}, {...{"opacity": 1, "x": 0}, duration:0.5, ease:'power3.out'}, 162.625);
+    tl.fromTo('#g08-sp', {"opacity": 0}, {...{"opacity": 1}, duration:0.8, ease:'power2.inOut'}, 166.4167);
+    tl.fromTo('#g08-h', {"opacity": 1}, {...{"opacity": 0}, duration:0.3, ease:'power2.in', immediateRender:false}, 166.4167);
+    tl.fromTo('#g08-h2', {"opacity": 0, "y": -10}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 166.625);
+    tl.fromTo('#g08-x0', {"scaleX": 0, "transformOrigin": "0% 50%"}, {...{"scaleX": 1}, duration:0.4, ease:'power3.inOut'}, 167.3333);
+    tl.fromTo('#g08-x1', {"scaleX": 0, "transformOrigin": "0% 50%"}, {...{"scaleX": 1}, duration:0.4, ease:'power3.inOut'}, 167.5417);
+    tl.fromTo('#g08-x2', {"scaleX": 0, "transformOrigin": "0% 50%"}, {...{"scaleX": 1}, duration:0.4, ease:'power3.inOut'}, 167.7083);
+    tl.fromTo('#g08-n', {"opacity": 0, "y": 12}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 168.0417);
+    tl.fromTo('#g09-h', {"opacity": 0, "y": 14}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 193.4583);
+    tl.fromTo('#g09-s', {"opacity": 0}, {...{"opacity": 1}, duration:0.5, ease:'power3.out'}, 197.125);
+    tl.fromTo('#g09-c0', {"opacity": 0, "y": 20}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 200.2917);
+    tl.fromTo('#g09-c1', {"opacity": 0, "y": 20}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 202.375);
+    tl.fromTo('#g10-h', {"opacity": 0, "y": -10}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 246.3333);
+    tl.fromTo('#g10-i0', {"opacity": 0, "y": 20}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 246.5417);
+    tl.fromTo('#g10-a0', {"opacity": 0, "x": -10}, {...{"opacity": 1, "x": 0}, duration:0.3, ease:'power3.out'}, 247.0833);
+    tl.fromTo('#g10-i1', {"opacity": 0, "y": 20}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 247.25);
+    tl.fromTo('#g10-a1', {"opacity": 0, "x": -10}, {...{"opacity": 1, "x": 0}, duration:0.3, ease:'power3.out'}, 248.5833);
+    tl.fromTo('#g10-i2', {"opacity": 0, "y": 20}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 248.75);
+    tl.fromTo('#g11-l', {"opacity": 0, "y": 20}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 251.5417);
+    tl.fromTo('#g11-bl', {"scaleX": 0, "transformOrigin": "0% 50%"}, {...{"scaleX": 0.45}, duration:0.9, ease:'power2.out'}, 251.75);
+    tl.fromTo('#g11-r', {"opacity": 0, "y": 20}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 254.2083);
+    tl.fromTo('#g11-br', {"scaleX": 0, "transformOrigin": "0% 50%"}, {...{"scaleX": 1}, duration:1.6, ease:'power2.out'}, 254.4167);
+    tl.fromTo('#g12-l', {"opacity": 0, "x": -30}, {...{"opacity": 1, "x": 0}, duration:0.6, ease:'power3.out'}, 274.2917);
+    tl.fromTo('#g12-r', {"opacity": 0, "x": 30}, {...{"opacity": 1, "x": 0}, duration:0.6, ease:'power3.out'}, 281.3333);
+    tl.fromTo('#g12-w', {"opacity": 0, "scale": 0.6}, {...{"opacity": 1, "scale": 1}, duration:0.5, ease:'back.out(1.8)'}, 282.0417);
+    tl.fromTo('#g12-l', {"opacity": 1}, {...{"opacity": 0.45}, duration:0.5, ease:'power2.out', immediateRender:false}, 281.4167);
+    tl.fromTo('#g13-h', {"opacity": 0, "y": -10}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 290.5417);
+    tl.fromTo('#g13-d0', {"opacity": 0, "y": 20}, {...{"opacity": 1, "y": 0}, duration:0.45, ease:'power3.out'}, 293.2917);
+    tl.fromTo('#g13-d1', {"opacity": 0, "y": 20}, {...{"opacity": 1, "y": 0}, duration:0.45, ease:'power3.out'}, 293.8333);
+    tl.fromTo('#g13-d2', {"opacity": 0, "y": 20}, {...{"opacity": 1, "y": 0}, duration:0.45, ease:'power3.out'}, 294.8333);
+    tl.fromTo('#g13-d3', {"opacity": 0, "scale": 0.7}, {...{"opacity": 1, "scale": 1}, duration:0.5, ease:'back.out(1.8)'}, 295.5417);
+    tl.fromTo('#g14-h', {"opacity": 0, "y": -10}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 296.0833);
+    tl.fromTo('#g14-p0', {"opacity": 0, "scale": 0.2}, {...{"opacity": 1, "scale": 1}, duration:0.4, ease:'back.out(2.2)'}, 296.6667);
+    tl.fromTo('#g14-p1', {"opacity": 0, "scale": 0.2}, {...{"opacity": 1, "scale": 1}, duration:0.4, ease:'back.out(2.2)'}, 296.9583);
+    tl.fromTo('#g14-p2', {"opacity": 0, "scale": 0.2}, {...{"opacity": 1, "scale": 1}, duration:0.4, ease:'back.out(2.2)'}, 297.25);
+    tl.fromTo('#g14-p3', {"opacity": 0, "scale": 0.2}, {...{"opacity": 1, "scale": 1}, duration:0.4, ease:'back.out(2.2)'}, 297.5);
+    tl.fromTo('#g14-p4', {"opacity": 0, "scale": 0.2}, {...{"opacity": 1, "scale": 1}, duration:0.4, ease:'back.out(2.2)'}, 297.7917);
+    tl.fromTo('#g14-p5', {"opacity": 0, "scale": 0.2}, {...{"opacity": 1, "scale": 1}, duration:0.4, ease:'back.out(2.2)'}, 298.0833);
+    tl.fromTo('#g14-p6', {"opacity": 0, "scale": 0.2}, {...{"opacity": 1, "scale": 1}, duration:0.4, ease:'back.out(2.2)'}, 298.375);
+    tl.fromTo('#g14-p7', {"opacity": 0, "scale": 0.2}, {...{"opacity": 1, "scale": 1}, duration:0.4, ease:'back.out(2.2)'}, 298.625);
+    tl.fromTo('#g14-p8', {"opacity": 0, "scale": 0.2}, {...{"opacity": 1, "scale": 1}, duration:0.4, ease:'back.out(2.2)'}, 298.9167);
+    tl.fromTo('#g14-p9', {"opacity": 0, "scale": 0.2}, {...{"opacity": 1, "scale": 1}, duration:0.4, ease:'back.out(2.2)'}, 299.2083);
+    tl.fromTo('#g14-p10', {"opacity": 0, "scale": 0.2}, {...{"opacity": 1, "scale": 1}, duration:0.4, ease:'back.out(2.2)'}, 299.4583);
+    tl.fromTo('#g14-p11', {"opacity": 0, "scale": 0.2}, {...{"opacity": 1, "scale": 1}, duration:0.4, ease:'back.out(2.2)'}, 299.75);
+    tl.fromTo('#g14-p12', {"opacity": 0, "scale": 0.2}, {...{"opacity": 1, "scale": 1}, duration:0.4, ease:'back.out(2.2)'}, 300.0417);
+    tl.fromTo('#g14-p13', {"opacity": 0, "scale": 0.2}, {...{"opacity": 1, "scale": 1}, duration:0.4, ease:'back.out(2.2)'}, 300.3333);
+    tl.fromTo('#g15-h', {"opacity": 0, "y": -10}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 324.5417);
+    tl.fromTo('#g15-i0', {"opacity": 0, "x": -30}, {...{"opacity": 1, "x": 0}, duration:0.5, ease:'power3.out'}, 325.375);
+    tl.fromTo('#g15-i1', {"opacity": 0, "x": -30}, {...{"opacity": 1, "x": 0}, duration:0.5, ease:'power3.out'}, 327.7083);
+    tl.fromTo('#g15-i2', {"opacity": 0, "x": -30}, {...{"opacity": 1, "x": 0}, duration:0.5, ease:'power3.out'}, 329.0417);
+    tl.fromTo('#g15-i3', {"opacity": 0, "x": -30}, {...{"opacity": 1, "x": 0}, duration:0.5, ease:'power3.out'}, 334.8333);
+    tl.fromTo('#g16-h', {"opacity": 0, "y": -10}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 336.5);
+    tl.fromTo('#g16-r0', {"opacity": 0}, {...{"opacity": 1}, duration:0.35, ease:'power3.out'}, 339.5);
+    tl.fromTo('#g16-b0', {"scaleX": 0, "transformOrigin": "0% 50%"}, {...{"scaleX": 0.22}, duration:0.9, ease:'power2.out'}, 339.5);
+    tl.fromTo('#g16-r1', {"opacity": 0}, {...{"opacity": 1}, duration:0.35, ease:'power3.out'}, 340.6667);
+    tl.fromTo('#g16-b1', {"scaleX": 0, "transformOrigin": "0% 50%"}, {...{"scaleX": 0.55}, duration:0.9, ease:'power2.out'}, 340.6667);
+    tl.fromTo('#g16-r2', {"opacity": 0}, {...{"opacity": 1}, duration:0.35, ease:'power3.out'}, 342.7917);
+    tl.fromTo('#g16-b2', {"scaleX": 0, "transformOrigin": "0% 50%"}, {...{"scaleX": 0.95}, duration:0.9, ease:'power2.out'}, 342.7917);
+    tl.fromTo('#g17-bk', {"opacity": 0, "rotationY": -35, "x": -60, "transformPerspective": 1200}, {...{"opacity": 1, "rotationY": -14, "x": 0}, duration:1.0, ease:'power3.out'}, 363.375);
+    tl.fromTo('#g17-bk', {"rotationY": -14}, {...{"rotationY": -6}, duration:9.708, ease:'sine.inOut', immediateRender:false}, 364.375);
+    tl.fromTo('#g17-t', {"opacity": 0, "x": 30}, {...{"opacity": 1, "x": 0}, duration:0.7, ease:'power3.out'}, 363.7917);
+    tl.fromTo('#g18-a', {"opacity": 0, "y": 24}, {...{"opacity": 1, "y": 0}, duration:0.8, ease:'power3.out'}, 381.1667);
+    tl.fromTo('#g18-b', {"opacity": 0, "y": 14}, {...{"opacity": 1, "y": 0}, duration:0.7, ease:'power3.out'}, 382.0833);
+    tl.fromTo('#g18-c', {"opacity": 0, "scale": 1.15}, {...{"opacity": 1, "scale": 1}, duration:0.9, ease:'power3.out'}, 382.875);
+    tl.fromTo('#g18-d', {"opacity": 0}, {...{"opacity": 1}, duration:0.6, ease:'power3.out'}, 383.4583);
+    tl.fromTo('#g18-e', {"opacity": 0}, {...{"opacity": 0.85}, duration:0.6, ease:'power3.out'}, 383.875);
+    tl.fromTo('#et', {"opacity": 0}, {...{"opacity": 1}, duration:0.5, ease:'power2.out'}, 57.0);
+    tl.fromTo('#et-prog', {"scaleX": 0.0, "transformOrigin": "0% 50%"}, {...{"scaleX": 0.0}, duration:1.0, ease:'power2.inOut'}, 57.2917);
+    tl.set('#et-n0', {backgroundColor:'#D9A441', scale:1.4}, 57.9167);
+    tl.set('#et-l0', {opacity:1, color:'#D9A441'}, 57.9167);
+    tl.set('#et-n1', {backgroundColor:'rgba(244,235,216,.35)', scale:1}, 57.2917);
+    tl.set('#et-l1', {opacity:0.45, color:'#F4EBD8'}, 57.2917);
+    tl.set('#et-n2', {backgroundColor:'rgba(244,235,216,.35)', scale:1}, 57.2917);
+    tl.set('#et-l2', {opacity:0.45, color:'#F4EBD8'}, 57.2917);
+    tl.set('#et-n3', {backgroundColor:'rgba(244,235,216,.35)', scale:1}, 57.2917);
+    tl.set('#et-l3', {opacity:0.45, color:'#F4EBD8'}, 57.2917);
+    tl.set('#et-n4', {backgroundColor:'rgba(244,235,216,.35)', scale:1}, 57.2917);
+    tl.set('#et-l4', {opacity:0.45, color:'#F4EBD8'}, 57.2917);
+    tl.set('#et-n5', {backgroundColor:'rgba(244,235,216,.35)', scale:1}, 57.2917);
+    tl.set('#et-l5', {opacity:0.45, color:'#F4EBD8'}, 57.2917);
+    tl.set('#et-n6', {backgroundColor:'rgba(244,235,216,.35)', scale:1}, 57.2917);
+    tl.set('#et-l6', {opacity:0.45, color:'#F4EBD8'}, 57.2917);
+    tl.to('#et', {...{"opacity": 0}, duration:0.5, ease:'power2.in'}, 60.7083);
+    tl.fromTo('#et', {"opacity": 0}, {...{"opacity": 1}, duration:0.5, ease:'power2.out', immediateRender:false}, 98.125);
+    tl.fromTo('#et-prog', {"scaleX": 0.0, "transformOrigin": "0% 50%"}, {...{"scaleX": 0.16666666666666666}, duration:1.0, ease:'power2.inOut', immediateRender:false}, 98.4167);
+    tl.set('#et-n0', {backgroundColor:'#D9A441', scale:1}, 98.4167);
+    tl.set('#et-l0', {opacity:0.45, color:'#F4EBD8'}, 98.4167);
+    tl.set('#et-n1', {backgroundColor:'#D9A441', scale:1.4}, 99.0417);
+    tl.set('#et-l1', {opacity:1, color:'#D9A441'}, 99.0417);
+    tl.set('#et-n2', {backgroundColor:'rgba(244,235,216,.35)', scale:1}, 98.4167);
+    tl.set('#et-l2', {opacity:0.45, color:'#F4EBD8'}, 98.4167);
+    tl.set('#et-n3', {backgroundColor:'rgba(244,235,216,.35)', scale:1}, 98.4167);
+    tl.set('#et-l3', {opacity:0.45, color:'#F4EBD8'}, 98.4167);
+    tl.set('#et-n4', {backgroundColor:'rgba(244,235,216,.35)', scale:1}, 98.4167);
+    tl.set('#et-l4', {opacity:0.45, color:'#F4EBD8'}, 98.4167);
+    tl.set('#et-n5', {backgroundColor:'rgba(244,235,216,.35)', scale:1}, 98.4167);
+    tl.set('#et-l5', {opacity:0.45, color:'#F4EBD8'}, 98.4167);
+    tl.set('#et-n6', {backgroundColor:'rgba(244,235,216,.35)', scale:1}, 98.4167);
+    tl.set('#et-l6', {opacity:0.45, color:'#F4EBD8'}, 98.4167);
+    tl.to('#et', {...{"opacity": 0}, duration:0.5, ease:'power2.in'}, 101.8333);
+    tl.fromTo('#et', {"opacity": 0}, {...{"opacity": 1}, duration:0.5, ease:'power2.out', immediateRender:false}, 223.25);
+    tl.fromTo('#et-prog', {"scaleX": 0.16666666666666666, "transformOrigin": "0% 50%"}, {...{"scaleX": 0.5}, duration:1.0, ease:'power2.inOut', immediateRender:false}, 223.5417);
+    tl.set('#et-n0', {backgroundColor:'#D9A441', scale:1}, 223.5417);
+    tl.set('#et-l0', {opacity:0.45, color:'#F4EBD8'}, 223.5417);
+    tl.set('#et-n1', {backgroundColor:'#D9A441', scale:1}, 223.5417);
+    tl.set('#et-l1', {opacity:0.45, color:'#F4EBD8'}, 223.5417);
+    tl.set('#et-n2', {backgroundColor:'#D9A441', scale:1}, 223.5417);
+    tl.set('#et-l2', {opacity:0.45, color:'#F4EBD8'}, 223.5417);
+    tl.set('#et-n3', {backgroundColor:'#D9A441', scale:1.4}, 224.125);
+    tl.set('#et-l3', {opacity:1, color:'#D9A441'}, 224.125);
+    tl.set('#et-n4', {backgroundColor:'rgba(244,235,216,.35)', scale:1}, 223.5417);
+    tl.set('#et-l4', {opacity:0.45, color:'#F4EBD8'}, 223.5417);
+    tl.set('#et-n5', {backgroundColor:'rgba(244,235,216,.35)', scale:1}, 223.5417);
+    tl.set('#et-l5', {opacity:0.45, color:'#F4EBD8'}, 223.5417);
+    tl.set('#et-n6', {backgroundColor:'rgba(244,235,216,.35)', scale:1}, 223.5417);
+    tl.set('#et-l6', {opacity:0.45, color:'#F4EBD8'}, 223.5417);
+    tl.to('#et', {...{"opacity": 0}, duration:0.5, ease:'power2.in'}, 226.9167);
+    tl.fromTo('#et', {"opacity": 0}, {...{"opacity": 1}, duration:0.5, ease:'power2.out', immediateRender:false}, 262.2917);
+    tl.fromTo('#et-prog', {"scaleX": 0.5, "transformOrigin": "0% 50%"}, {...{"scaleX": 0.6666666666666666}, duration:1.0, ease:'power2.inOut', immediateRender:false}, 262.5833);
+    tl.set('#et-n0', {backgroundColor:'#D9A441', scale:1}, 262.5833);
+    tl.set('#et-l0', {opacity:0.45, color:'#F4EBD8'}, 262.5833);
+    tl.set('#et-n1', {backgroundColor:'#D9A441', scale:1}, 262.5833);
+    tl.set('#et-l1', {opacity:0.45, color:'#F4EBD8'}, 262.5833);
+    tl.set('#et-n2', {backgroundColor:'#D9A441', scale:1}, 262.5833);
+    tl.set('#et-l2', {opacity:0.45, color:'#F4EBD8'}, 262.5833);
+    tl.set('#et-n3', {backgroundColor:'#D9A441', scale:1}, 262.5833);
+    tl.set('#et-l3', {opacity:0.45, color:'#F4EBD8'}, 262.5833);
+    tl.set('#et-n4', {backgroundColor:'#D9A441', scale:1.4}, 263.2083);
+    tl.set('#et-l4', {opacity:1, color:'#D9A441'}, 263.2083);
+    tl.set('#et-n5', {backgroundColor:'rgba(244,235,216,.35)', scale:1}, 262.5833);
+    tl.set('#et-l5', {opacity:0.45, color:'#F4EBD8'}, 262.5833);
+    tl.set('#et-n6', {backgroundColor:'rgba(244,235,216,.35)', scale:1}, 262.5833);
+    tl.set('#et-l6', {opacity:0.45, color:'#F4EBD8'}, 262.5833);
+    tl.to('#et', {...{"opacity": 0}, duration:0.5, ease:'power2.in'}, 266.0);
+    tl.fromTo('#et', {"opacity": 0}, {...{"opacity": 1}, duration:0.5, ease:'power2.out', immediateRender:false}, 304.7083);
+    tl.fromTo('#et-prog', {"scaleX": 0.6666666666666666, "transformOrigin": "0% 50%"}, {...{"scaleX": 1.0}, duration:1.0, ease:'power2.inOut', immediateRender:false}, 305.0);
+    tl.set('#et-n0', {backgroundColor:'#D9A441', scale:1}, 305.0);
+    tl.set('#et-l0', {opacity:0.45, color:'#F4EBD8'}, 305.0);
+    tl.set('#et-n1', {backgroundColor:'#D9A441', scale:1}, 305.0);
+    tl.set('#et-l1', {opacity:0.45, color:'#F4EBD8'}, 305.0);
+    tl.set('#et-n2', {backgroundColor:'#D9A441', scale:1}, 305.0);
+    tl.set('#et-l2', {opacity:0.45, color:'#F4EBD8'}, 305.0);
+    tl.set('#et-n3', {backgroundColor:'#D9A441', scale:1}, 305.0);
+    tl.set('#et-l3', {opacity:0.45, color:'#F4EBD8'}, 305.0);
+    tl.set('#et-n4', {backgroundColor:'#D9A441', scale:1}, 305.0);
+    tl.set('#et-l4', {opacity:0.45, color:'#F4EBD8'}, 305.0);
+    tl.set('#et-n5', {backgroundColor:'#D9A441', scale:1}, 305.0);
+    tl.set('#et-l5', {opacity:0.45, color:'#F4EBD8'}, 305.0);
+    tl.set('#et-n6', {backgroundColor:'#D9A441', scale:1.4}, 305.5833);
+    tl.set('#et-l6', {opacity:1, color:'#D9A441'}, 305.5833);
+    tl.to('#et', {...{"opacity": 0}, duration:0.5, ease:'power2.in'}, 308.4167);
+    tl.fromTo('#k-1911a', {"opacity": 0, "scale": 1.2}, {...{"opacity": 1, "scale": 1}, duration:0.8, ease:'power3.out'}, 3.9583);
+    tl.to('#k-1911a', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 5.2917);
+    tl.fromTo('#c-19110', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 6.75);
+    tl.fromTo('#c-19111', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 7.5417);
+    tl.fromTo('#c-19112', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 9.375);
+    tl.to('#c-1911', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 10.2917);
+    tl.fromTo('#c-sym0', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 14.9583);
+    tl.fromTo('#c-sym1', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 16.5417);
+    tl.fromTo('#c-sym2', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 18.625);
+    tl.fromTo('#c-sym3', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 20.625);
+    tl.to('#c-sym', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 22.375);
+    tl.fromTo('#c-myth0', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 27.875);
+    tl.fromTo('#c-myth1', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 29.625);
+    tl.fromTo('#c-myth2', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 31.2917);
+    tl.to('#c-myth', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 32.4167);
+    tl.fromTo('#k-terhad', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 38.0417);
+    tl.to('#k-terhad', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 39.7917);
+    tl.fromTo('#k-abad', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 57.2083);
+    tl.to('#k-abad', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 63.0);
+    tl.fromTo('#k-abad2', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 57.7083);
+    tl.to('#k-abad2', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 63.0);
+    tl.fromTo('#k-pen', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 65.0417);
+    tl.to('#k-pen', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 65.2917);
+    tl.fromTo('#k-tai', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 65.9583);
+    tl.to('#k-tai', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 67.625);
+    tl.fromTo('#c-care0', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 78.9583);
+    tl.fromTo('#c-care1', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 79.7917);
+    tl.fromTo('#c-care2', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 81.0);
+    tl.to('#c-care', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 82.0417);
+    tl.fromTo('#k-jauh', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 84.0417);
+    tl.to('#k-jauh', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 85.6667);
+    tl.fromTo('#c-hal0', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 88.2083);
+    tl.fromTo('#c-hal1', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 88.875);
+    tl.to('#c-hal', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 91.875);
+    tl.fromTo('#k-modern0', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 95.0);
+    tl.to('#k-modern0', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 97.7917);
+    tl.fromTo('#k-1911b', {"opacity": 0, "scale": 1.2}, {...{"opacity": 1, "scale": 1}, duration:0.8, ease:'power3.out'}, 99.2083);
+    tl.fromTo('#k-tr', {"opacity": 0, "y": 12}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 101.7083);
+    tl.to('#k-1911b, #k-tr', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 104.6667);
+    tl.fromTo('#k-pent', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 122.125);
+    tl.to('#k-pent', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 125.5);
+    tl.fromTo('#k-famous', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 137.25);
+    tl.to('#k-famous', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 139.125);
+    tl.fromTo('#k-life', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 152.25);
+    tl.to('#k-life', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 154.6667);
+    tl.fromTo('#k-world', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 171.875);
+    tl.to('#k-world', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 178.4583);
+    tl.fromTo('#k-long', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 180.0417);
+    tl.to('#k-long', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 181.9167);
+    tl.fromTo('#c-daily0', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 183.5417);
+    tl.fromTo('#c-daily1', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 184.0833);
+    tl.fromTo('#c-daily2', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 184.7083);
+    tl.to('#c-daily', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 185.8333);
+    tl.fromTo('#k-work', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 186.2917);
+    tl.to('#k-work', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 192.8333);
+    tl.fromTo('#k-diff', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 208.6667);
+    tl.to('#k-diff', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 210.6667);
+    tl.fromTo('#k-same', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 211.4167);
+    tl.to('#k-same', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 213.6667);
+    tl.fromTo('#k-1950', {"opacity": 0, "scale": 1.2}, {...{"opacity": 1, "scale": 1}, duration:0.8, ease:'power3.out'}, 223.625);
+    tl.fromTo('#k-cpz', {"opacity": 0, "scale": 1.18}, {...{"opacity": 1, "scale": 1}, duration:0.7, ease:'power3.out'}, 226.5833);
+    tl.fromTo('#k-cpz2', {"opacity": 0}, {...{"opacity": 1}, duration:0.4, ease:'power3.out'}, 227.0833);
+    tl.to('#k-1950, #k-cpz, #k-cpz2', {...{"opacity": 0}, duration:0.3, ease:'power2.in'}, 228.25);
+    tl.fromTo('#k-turn', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 229.4583);
+    tl.to('#k-turn', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 233.375);
+    tl.fromTo('#k-before', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 234.0);
+    tl.to('#k-before', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 237.3333);
+    tl.fromTo('#c-psy0', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 243.5);
+    tl.fromTo('#c-psy1', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 244.125);
+    tl.fromTo('#c-psy2', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 245.0);
+    tl.to('#c-psy', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 245.7917);
+    tl.fromTo('#k-1958', {"opacity": 0, "scale": 1.2}, {...{"opacity": 1, "scale": 1}, duration:0.8, ease:'power3.out'}, 262.7917);
+    tl.to('#k-1958', {...{"opacity": 0}, duration:0.3, ease:'power2.in'}, 267.875);
+    tl.fromTo('#l3-pg', {"opacity": 0, "x": -30}, {...{"opacity": 1, "x": 0}, duration:0.6, ease:'power3.out'}, 268.4167);
+    tl.to('#l3-pg', {...{"opacity": 0, "x": -20}, duration:0.35, ease:'power2.in'}, 273.8333);
+    tl.fromTo('#k-mitos', {"opacity": 0, "scale": 2.0, "rotation": -12}, {...{"opacity": 1, "scale": 1, "rotation": -7}, duration:0.3, ease:'power4.in'}, 309.9583);
+    tl.to('#k-mitos', {...{"opacity": 0}, duration:0.25, ease:'power2.in'}, 310.5417);
+    tl.fromTo('#k-real', {"opacity": 0, "y": 14}, {...{"opacity": 1, "y": 0}, duration:0.5, ease:'power3.out'}, 310.9583);
+    tl.to('#k-real', {...{"opacity": 0}, duration:0.3, ease:'power2.in'}, 314.9583);
+    tl.fromTo('#c-ward0', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 312.2917);
+    tl.fromTo('#c-ward1', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 313.7083);
+    tl.to('#c-ward', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 314.9167);
+    tl.fromTo('#k-meds', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 315.9167);
+    tl.to('#k-meds', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 317.625);
+    tl.fromTo('#c-mdt0', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 318.75);
+    tl.fromTo('#c-mdt1', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 319.7083);
+    tl.fromTo('#c-mdt2', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 320.9167);
+    tl.fromTo('#c-mdt3', {"opacity": 0, "x": -24}, {...{"opacity": 1, "x": 0}, duration:0.45, ease:'power3.out'}, 322.4167);
+    tl.to('#c-mdt', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 324.0);
+    tl.fromTo('#k-change', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 350.25);
+    tl.to('#k-change', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 352.4167);
+    tl.fromTo('#k-help', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 356.375);
+    tl.to('#k-help', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 358.5417);
+    tl.fromTo('#l3-dr', {"opacity": 0, "x": -30}, {...{"opacity": 1, "x": 0}, duration:0.6, ease:'power3.out'}, 359.1667);
+    tl.to('#l3-dr', {...{"opacity": 0, "x": -20}, duration:0.35, ease:'power2.in'}, 362.875);
+    tl.fromTo('#k-cmt', {"opacity": 0, "y": 18}, {...{"opacity": 1, "y": 0}, duration:0.6, ease:'power3.out'}, 375.8333);
+    tl.to('#k-cmt', {...{"opacity": 0}, duration:0.4, ease:'power2.in'}, 380.7083);
+    tl.fromTo('#tag-ai', {"opacity": 0}, {...{"opacity": 0.6}, duration:0.4, ease:'power1.out'}, 0.2917);
+    tl.to('#tag-ai', {...{"opacity": 0}, duration:0.3, ease:'power1.in'}, 32.5833);
+    tl.fromTo('#tag-ai', {"opacity": 0}, {...{"opacity": 0.6}, duration:0.4, ease:'power1.out', immediateRender:false}, 37.0833);
+    tl.to('#tag-ai', {...{"opacity": 0}, duration:0.3, ease:'power1.in'}, 39.9167);
+    tl.fromTo('#tag-ai', {"opacity": 0}, {...{"opacity": 0.6}, duration:0.4, ease:'power1.out', immediateRender:false}, 52.125);
+    tl.to('#tag-ai', {...{"opacity": 0}, duration:0.3, ease:'power1.in'}, 70.75);
+    tl.fromTo('#tag-ai', {"opacity": 0}, {...{"opacity": 0.6}, duration:0.4, ease:'power1.out', immediateRender:false}, 77.0417);
+    tl.to('#tag-ai', {...{"opacity": 0}, duration:0.3, ease:'power1.in'}, 106.4583);
+    tl.fromTo('#tag-ai', {"opacity": 0}, {...{"opacity": 0.6}, duration:0.4, ease:'power1.out', immediateRender:false}, 121.2083);
+    tl.to('#tag-ai', {...{"opacity": 0}, duration:0.3, ease:'power1.in'}, 125.625);
+    tl.fromTo('#tag-ai', {"opacity": 0}, {...{"opacity": 0.6}, duration:0.4, ease:'power1.out', immediateRender:false}, 131.5417);
+    tl.to('#tag-ai', {...{"opacity": 0}, duration:0.3, ease:'power1.in'}, 139.2917);
+    tl.fromTo('#tag-ai', {"opacity": 0}, {...{"opacity": 0.6}, duration:0.4, ease:'power1.out', immediateRender:false}, 152.3333);
+    tl.to('#tag-ai', {...{"opacity": 0}, duration:0.3, ease:'power1.in'}, 154.8333);
+    tl.fromTo('#tag-ai', {"opacity": 0}, {...{"opacity": 0.6}, duration:0.4, ease:'power1.out', immediateRender:false}, 172.1667);
+    tl.to('#tag-ai', {...{"opacity": 0}, duration:0.3, ease:'power1.in'}, 193.0);
+    tl.fromTo('#tag-ai', {"opacity": 0}, {...{"opacity": 0.6}, duration:0.4, ease:'power1.out', immediateRender:false}, 203.875);
+    tl.to('#tag-ai', {...{"opacity": 0}, duration:0.3, ease:'power1.in'}, 245.9583);
+    tl.fromTo('#tag-ai', {"opacity": 0}, {...{"opacity": 0.6}, duration:0.4, ease:'power1.out', immediateRender:false}, 258.4167);
+    tl.to('#tag-ai', {...{"opacity": 0}, duration:0.3, ease:'power1.in'}, 273.9167);
+    tl.fromTo('#tag-ai', {"opacity": 0}, {...{"opacity": 0.6}, duration:0.4, ease:'power1.out', immediateRender:false}, 303.7917);
+    tl.to('#tag-ai', {...{"opacity": 0}, duration:0.3, ease:'power1.in'}, 324.1667);
+    tl.fromTo('#tag-ai', {"opacity": 0}, {...{"opacity": 0.6}, duration:0.4, ease:'power1.out', immediateRender:false}, 344.5);
+    tl.to('#tag-ai', {...{"opacity": 0}, duration:0.3, ease:'power1.in'}, 363.0);
+    tl.fromTo('#tag-ai', {"opacity": 0}, {...{"opacity": 0.6}, duration:0.4, ease:'power1.out', immediateRender:false}, 372.9167);
+    tl.to('#tag-ai', {...{"opacity": 0}, duration:0.3, ease:'power1.in'}, 380.5833);
+    tl.fromTo('#grain', {backgroundPosition:'0px 0px'}, {backgroundPosition:'-9300px -6100px', duration:386.377, ease:'steps(4636)'}, 0);
+    tl.fromTo('#sub0', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 1.5417);
+    tl.to('#sub0', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 5.5);
+    tl.set('#sub0', {"opacity": 0}, 5.5833);
+    tl.fromTo('#sub1', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 5.5833);
+    tl.to('#sub1', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 7.4583);
+    tl.set('#sub1', {"opacity": 0}, 7.5417);
+    tl.fromTo('#sub2', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 7.5417);
+    tl.to('#sub2', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 8.5833);
+    tl.set('#sub2', {"opacity": 0}, 8.6667);
+    tl.fromTo('#sub3', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 8.7083);
+    tl.to('#sub3', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 10.5417);
+    tl.set('#sub3', {"opacity": 0}, 10.625);
+    tl.fromTo('#sub4', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 10.6667);
+    tl.to('#sub4', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 12.9583);
+    tl.set('#sub4', {"opacity": 0}, 13.0417);
+    tl.fromTo('#sub5', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 13.0417);
+    tl.to('#sub5', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 14.6667);
+    tl.set('#sub5', {"opacity": 0}, 14.75);
+    tl.fromTo('#sub6', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 14.7917);
+    tl.to('#sub6', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 16.25);
+    tl.set('#sub6', {"opacity": 0}, 16.3333);
+    tl.fromTo('#sub7', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 16.4167);
+    tl.to('#sub7', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 18.0);
+    tl.set('#sub7', {"opacity": 0}, 18.0833);
+    tl.fromTo('#sub8', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 18.0833);
+    tl.to('#sub8', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 19.9167);
+    tl.set('#sub8', {"opacity": 0}, 20.0417);
+    tl.fromTo('#sub9', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 20.0417);
+    tl.to('#sub9', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 21.6667);
+    tl.set('#sub9', {"opacity": 0}, 21.75);
+    tl.fromTo('#sub10', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 21.7917);
+    tl.to('#sub10', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 22.625);
+    tl.set('#sub10', {"opacity": 0}, 22.7083);
+    tl.fromTo('#sub11', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 22.7083);
+    tl.to('#sub11', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 24.5417);
+    tl.set('#sub11', {"opacity": 0}, 24.6667);
+    tl.fromTo('#sub12', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 24.6667);
+    tl.to('#sub12', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 27.0);
+    tl.set('#sub12', {"opacity": 0}, 27.0833);
+    tl.fromTo('#sub13', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 27.125);
+    tl.to('#sub13', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 28.5417);
+    tl.set('#sub13', {"opacity": 0}, 28.625);
+    tl.fromTo('#sub14', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 28.6667);
+    tl.to('#sub14', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 30.625);
+    tl.set('#sub14', {"opacity": 0}, 30.7083);
+    tl.fromTo('#sub15', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 30.75);
+    tl.to('#sub15', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 32.6667);
+    tl.set('#sub15', {"opacity": 0}, 32.75);
+    tl.fromTo('#sub16', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 32.7917);
+    tl.to('#sub16', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 34.4583);
+    tl.set('#sub16', {"opacity": 0}, 34.5417);
+    tl.fromTo('#sub17', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 34.5833);
+    tl.to('#sub17', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 36.5833);
+    tl.set('#sub17', {"opacity": 0}, 36.6667);
+    tl.fromTo('#sub18', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 36.7083);
+    tl.to('#sub18', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 38.125);
+    tl.set('#sub18', {"opacity": 0}, 38.25);
+    tl.fromTo('#sub19', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 38.25);
+    tl.to('#sub19', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 40.0);
+    tl.set('#sub19', {"opacity": 0}, 40.0833);
+    tl.fromTo('#sub20', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 40.1667);
+    tl.to('#sub20', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 41.6667);
+    tl.set('#sub20', {"opacity": 0}, 41.75);
+    tl.fromTo('#sub21', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 41.7917);
+    tl.to('#sub21', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 43.7917);
+    tl.set('#sub21', {"opacity": 0}, 43.875);
+    tl.fromTo('#sub22', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 43.875);
+    tl.to('#sub22', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 45.7083);
+    tl.set('#sub22', {"opacity": 0}, 45.7917);
+    tl.fromTo('#sub23', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 45.8333);
+    tl.to('#sub23', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 46.5833);
+    tl.set('#sub23', {"opacity": 0}, 46.7083);
+    tl.fromTo('#sub24', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 46.7083);
+    tl.to('#sub24', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 49.6667);
+    tl.set('#sub24', {"opacity": 0}, 49.75);
+    tl.fromTo('#sub25', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 49.7917);
+    tl.to('#sub25', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 51.625);
+    tl.set('#sub25', {"opacity": 0}, 51.75);
+    tl.fromTo('#sub26', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 51.75);
+    tl.to('#sub26', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 54.3333);
+    tl.set('#sub26', {"opacity": 0}, 54.4167);
+    tl.fromTo('#sub27', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 54.4167);
+    tl.to('#sub27', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 56.875);
+    tl.set('#sub27', {"opacity": 0}, 57.0);
+    tl.fromTo('#sub28', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 57.0);
+    tl.to('#sub28', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 60.2083);
+    tl.set('#sub28', {"opacity": 0}, 60.3333);
+    tl.fromTo('#sub29', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 60.3333);
+    tl.to('#sub29', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 62.0);
+    tl.set('#sub29', {"opacity": 0}, 62.0833);
+    tl.fromTo('#sub30', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 62.125);
+    tl.to('#sub30', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 63.9583);
+    tl.set('#sub30', {"opacity": 0}, 64.0417);
+    tl.fromTo('#sub31', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 64.0417);
+    tl.to('#sub31', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 66.6667);
+    tl.set('#sub31', {"opacity": 0}, 66.75);
+    tl.fromTo('#sub32', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 66.7917);
+    tl.to('#sub32', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 68.5833);
+    tl.set('#sub32', {"opacity": 0}, 68.7083);
+    tl.fromTo('#sub33', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 68.7083);
+    tl.to('#sub33', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 70.875);
+    tl.set('#sub33', {"opacity": 0}, 70.9583);
+    tl.fromTo('#sub34', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 71.0);
+    tl.to('#sub34', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 73.0);
+    tl.set('#sub34', {"opacity": 0}, 73.0833);
+    tl.fromTo('#sub35', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 73.125);
+    tl.to('#sub35', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 75.75);
+    tl.set('#sub35', {"opacity": 0}, 75.875);
+    tl.fromTo('#sub36', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 75.875);
+    tl.to('#sub36', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 76.5417);
+    tl.set('#sub36', {"opacity": 0}, 76.6667);
+    tl.fromTo('#sub37', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 76.6667);
+    tl.to('#sub37', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 79.7083);
+    tl.set('#sub37', {"opacity": 0}, 79.7917);
+    tl.fromTo('#sub38', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 79.7917);
+    tl.to('#sub38', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 82.2917);
+    tl.set('#sub38', {"opacity": 0}, 82.4167);
+    tl.fromTo('#sub39', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 82.4167);
+    tl.to('#sub39', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 83.375);
+    tl.set('#sub39', {"opacity": 0}, 83.4583);
+    tl.fromTo('#sub40', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 83.5);
+    tl.to('#sub40', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 85.9167);
+    tl.set('#sub40', {"opacity": 0}, 86.0417);
+    tl.fromTo('#sub41', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 86.0417);
+    tl.to('#sub41', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 87.6667);
+    tl.set('#sub41', {"opacity": 0}, 87.75);
+    tl.fromTo('#sub42', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 87.7917);
+    tl.to('#sub42', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 89.2917);
+    tl.set('#sub42', {"opacity": 0}, 89.4167);
+    tl.fromTo('#sub43', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 89.4167);
+    tl.to('#sub43', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 90.7083);
+    tl.set('#sub43', {"opacity": 0}, 90.8333);
+    tl.fromTo('#sub44', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 90.8333);
+    tl.to('#sub44', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 92.125);
+    tl.set('#sub44', {"opacity": 0}, 92.25);
+    tl.fromTo('#sub45', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 92.25);
+    tl.to('#sub45', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 93.0);
+    tl.set('#sub45', {"opacity": 0}, 93.125);
+    tl.fromTo('#sub46', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 93.125);
+    tl.to('#sub46', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 94.2917);
+    tl.set('#sub46', {"opacity": 0}, 94.4167);
+    tl.fromTo('#sub47', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 94.4167);
+    tl.to('#sub47', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 96.0417);
+    tl.set('#sub47', {"opacity": 0}, 96.125);
+    tl.fromTo('#sub48', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 96.125);
+    tl.to('#sub48', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 98.0417);
+    tl.set('#sub48', {"opacity": 0}, 98.125);
+    tl.fromTo('#sub49', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 98.125);
+    tl.to('#sub49', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 101.2083);
+    tl.set('#sub49', {"opacity": 0}, 101.2917);
+    tl.fromTo('#sub50', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 101.3333);
+    tl.to('#sub50', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 103.5417);
+    tl.set('#sub50', {"opacity": 0}, 103.6667);
+    tl.fromTo('#sub51', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 103.6667);
+    tl.to('#sub51', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 104.875);
+    tl.set('#sub51', {"opacity": 0}, 105.0);
+    tl.fromTo('#sub52', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 105.0);
+    tl.to('#sub52', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 106.5833);
+    tl.set('#sub52', {"opacity": 0}, 106.6667);
+    tl.fromTo('#sub53', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 106.6667);
+    tl.to('#sub53', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 109.9167);
+    tl.set('#sub53', {"opacity": 0}, 110.0);
+    tl.fromTo('#sub54', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 110.0417);
+    tl.to('#sub54', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 112.0833);
+    tl.set('#sub54', {"opacity": 0}, 112.2083);
+    tl.fromTo('#sub55', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 112.2083);
+    tl.to('#sub55', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 113.7083);
+    tl.set('#sub55', {"opacity": 0}, 113.7917);
+    tl.fromTo('#sub56', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 113.8333);
+    tl.to('#sub56', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 115.9583);
+    tl.set('#sub56', {"opacity": 0}, 116.0833);
+    tl.fromTo('#sub57', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 116.0833);
+    tl.to('#sub57', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 118.9167);
+    tl.set('#sub57', {"opacity": 0}, 119.0417);
+    tl.fromTo('#sub58', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 119.0417);
+    tl.to('#sub58', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 120.7083);
+    tl.set('#sub58', {"opacity": 0}, 120.8333);
+    tl.fromTo('#sub59', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 120.8333);
+    tl.to('#sub59', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 123.0417);
+    tl.set('#sub59', {"opacity": 0}, 123.1667);
+    tl.fromTo('#sub60', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 123.1667);
+    tl.to('#sub60', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 125.75);
+    tl.set('#sub60', {"opacity": 0}, 125.8333);
+    tl.fromTo('#sub61', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 125.875);
+    tl.to('#sub61', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 127.9167);
+    tl.set('#sub61', {"opacity": 0}, 128.0);
+    tl.fromTo('#sub62', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 128.0417);
+    tl.to('#sub62', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 129.7917);
+    tl.set('#sub62', {"opacity": 0}, 129.875);
+    tl.fromTo('#sub63', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 129.9167);
+    tl.to('#sub63', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 131.0417);
+    tl.set('#sub63', {"opacity": 0}, 131.125);
+    tl.fromTo('#sub64', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 131.1667);
+    tl.to('#sub64', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 134.25);
+    tl.set('#sub64', {"opacity": 0}, 134.3333);
+    tl.fromTo('#sub65', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 134.375);
+    tl.to('#sub65', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 136.25);
+    tl.set('#sub65', {"opacity": 0}, 136.375);
+    tl.fromTo('#sub66', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 136.375);
+    tl.to('#sub66', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 137.75);
+    tl.set('#sub66', {"opacity": 0}, 137.8333);
+    tl.fromTo('#sub67', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 137.875);
+    tl.to('#sub67', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 139.375);
+    tl.set('#sub67', {"opacity": 0}, 139.5);
+    tl.fromTo('#sub68', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 139.5);
+    tl.to('#sub68', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 141.6667);
+    tl.set('#sub68', {"opacity": 0}, 141.75);
+    tl.fromTo('#sub69', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 141.7917);
+    tl.to('#sub69', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 143.8333);
+    tl.set('#sub69', {"opacity": 0}, 143.9167);
+    tl.fromTo('#sub70', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 143.9583);
+    tl.to('#sub70', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 146.7083);
+    tl.set('#sub70', {"opacity": 0}, 146.7917);
+    tl.fromTo('#sub71', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 146.7917);
+    tl.to('#sub71', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 149.0833);
+    tl.set('#sub71', {"opacity": 0}, 149.2083);
+    tl.fromTo('#sub72', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 149.2083);
+    tl.to('#sub72', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 150.8333);
+    tl.set('#sub72', {"opacity": 0}, 150.9167);
+    tl.fromTo('#sub73', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 150.9583);
+    tl.to('#sub73', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 153.25);
+    tl.set('#sub73', {"opacity": 0}, 153.3333);
+    tl.fromTo('#sub74', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 153.3333);
+    tl.to('#sub74', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 154.9167);
+    tl.set('#sub74', {"opacity": 0}, 155.0417);
+    tl.fromTo('#sub75', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 155.0417);
+    tl.to('#sub75', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 157.3333);
+    tl.set('#sub75', {"opacity": 0}, 157.4583);
+    tl.fromTo('#sub76', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 157.4583);
+    tl.to('#sub76', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 159.0833);
+    tl.set('#sub76', {"opacity": 0}, 159.1667);
+    tl.fromTo('#sub77', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 159.2083);
+    tl.to('#sub77', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 160.5);
+    tl.set('#sub77', {"opacity": 0}, 160.625);
+    tl.fromTo('#sub78', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 160.625);
+    tl.to('#sub78', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 161.9167);
+    tl.set('#sub78', {"opacity": 0}, 162.0);
+    tl.fromTo('#sub79', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 162.0);
+    tl.to('#sub79', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 163.5833);
+    tl.set('#sub79', {"opacity": 0}, 163.6667);
+    tl.fromTo('#sub80', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 163.7083);
+    tl.to('#sub80', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 165.25);
+    tl.set('#sub80', {"opacity": 0}, 165.3333);
+    tl.fromTo('#sub81', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 165.375);
+    tl.to('#sub81', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 167.5);
+    tl.set('#sub81', {"opacity": 0}, 167.5833);
+    tl.fromTo('#sub82', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 167.5833);
+    tl.to('#sub82', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 169.125);
+    tl.set('#sub82', {"opacity": 0}, 169.2083);
+    tl.fromTo('#sub83', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 169.25);
+    tl.to('#sub83', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 171.6667);
+    tl.set('#sub83', {"opacity": 0}, 171.7917);
+    tl.fromTo('#sub84', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 171.7917);
+    tl.to('#sub84', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 173.2083);
+    tl.set('#sub84', {"opacity": 0}, 173.2917);
+    tl.fromTo('#sub85', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 173.3333);
+    tl.to('#sub85', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 175.2917);
+    tl.set('#sub85', {"opacity": 0}, 175.375);
+    tl.fromTo('#sub86', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 175.4167);
+    tl.to('#sub86', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 176.8333);
+    tl.set('#sub86', {"opacity": 0}, 176.9167);
+    tl.fromTo('#sub87', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 176.9583);
+    tl.to('#sub87', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 178.7083);
+    tl.set('#sub87', {"opacity": 0}, 178.7917);
+    tl.fromTo('#sub88', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 178.8333);
+    tl.to('#sub88', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 181.2083);
+    tl.set('#sub88', {"opacity": 0}, 181.2917);
+    tl.fromTo('#sub89', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 181.3333);
+    tl.to('#sub89', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 182.1667);
+    tl.set('#sub89', {"opacity": 0}, 182.25);
+    tl.fromTo('#sub90', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 182.2917);
+    tl.to('#sub90', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 184.5833);
+    tl.set('#sub90', {"opacity": 0}, 184.7083);
+    tl.fromTo('#sub91', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 184.7083);
+    tl.to('#sub91', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 186.0833);
+    tl.set('#sub91', {"opacity": 0}, 186.2083);
+    tl.fromTo('#sub92', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 186.2083);
+    tl.to('#sub92', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 189.125);
+    tl.set('#sub92', {"opacity": 0}, 189.25);
+    tl.fromTo('#sub93', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 189.25);
+    tl.to('#sub93', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 191.0);
+    tl.set('#sub93', {"opacity": 0}, 191.0833);
+    tl.fromTo('#sub94', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 191.125);
+    tl.to('#sub94', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 193.0833);
+    tl.set('#sub94', {"opacity": 0}, 193.1667);
+    tl.fromTo('#sub95', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 193.2083);
+    tl.to('#sub95', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 195.625);
+    tl.set('#sub95', {"opacity": 0}, 195.75);
+    tl.fromTo('#sub96', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 195.75);
+    tl.to('#sub96', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 197.0417);
+    tl.set('#sub96', {"opacity": 0}, 197.125);
+    tl.fromTo('#sub97', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 197.125);
+    tl.to('#sub97', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 199.5);
+    tl.set('#sub97', {"opacity": 0}, 199.5833);
+    tl.fromTo('#sub98', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 199.625);
+    tl.to('#sub98', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 201.2083);
+    tl.set('#sub98', {"opacity": 0}, 201.2917);
+    tl.fromTo('#sub99', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 201.3333);
+    tl.to('#sub99', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 203.375);
+    tl.set('#sub99', {"opacity": 0}, 203.5);
+    tl.fromTo('#sub100', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 203.5);
+    tl.to('#sub100', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 209.3333);
+    tl.set('#sub100', {"opacity": 0}, 209.4167);
+    tl.fromTo('#sub101', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 209.4583);
+    tl.to('#sub101', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 210.9167);
+    tl.set('#sub101', {"opacity": 0}, 211.0);
+    tl.fromTo('#sub102', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 211.0417);
+    tl.to('#sub102', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 212.375);
+    tl.set('#sub102', {"opacity": 0}, 212.4583);
+    tl.fromTo('#sub103', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 212.5);
+    tl.to('#sub103', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 213.9167);
+    tl.set('#sub103', {"opacity": 0}, 214.0417);
+    tl.fromTo('#sub104', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 214.0417);
+    tl.to('#sub104', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 215.5);
+    tl.set('#sub104', {"opacity": 0}, 215.5833);
+    tl.fromTo('#sub105', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 215.625);
+    tl.to('#sub105', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 217.0);
+    tl.set('#sub105', {"opacity": 0}, 217.0833);
+    tl.fromTo('#sub106', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 217.125);
+    tl.to('#sub106', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 218.2083);
+    tl.set('#sub106', {"opacity": 0}, 218.2917);
+    tl.fromTo('#sub107', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 218.2917);
+    tl.to('#sub107', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 219.4167);
+    tl.set('#sub107', {"opacity": 0}, 219.5417);
+    tl.fromTo('#sub108', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 219.5417);
+    tl.to('#sub108', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 221.25);
+    tl.set('#sub108', {"opacity": 0}, 221.375);
+    tl.fromTo('#sub109', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 221.375);
+    tl.to('#sub109', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 223.125);
+    tl.set('#sub109', {"opacity": 0}, 223.25);
+    tl.fromTo('#sub110', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 223.25);
+    tl.to('#sub110', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 225.0);
+    tl.set('#sub110', {"opacity": 0}, 225.125);
+    tl.fromTo('#sub111', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 225.125);
+    tl.to('#sub111', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 226.5);
+    tl.set('#sub111', {"opacity": 0}, 226.5833);
+    tl.fromTo('#sub112', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 226.625);
+    tl.to('#sub112', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 228.4167);
+    tl.set('#sub112', {"opacity": 0}, 228.5);
+    tl.fromTo('#sub113', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 228.5417);
+    tl.to('#sub113', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 230.9583);
+    tl.set('#sub113', {"opacity": 0}, 231.0417);
+    tl.fromTo('#sub114', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 231.0833);
+    tl.to('#sub114', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 232.9167);
+    tl.set('#sub114', {"opacity": 0}, 233.0);
+    tl.fromTo('#sub115', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 233.0417);
+    tl.to('#sub115', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 233.625);
+    tl.set('#sub115', {"opacity": 0}, 233.7083);
+    tl.fromTo('#sub116', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 233.75);
+    tl.to('#sub116', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 235.625);
+    tl.set('#sub116', {"opacity": 0}, 235.75);
+    tl.fromTo('#sub117', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 235.75);
+    tl.to('#sub117', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 237.5833);
+    tl.set('#sub117', {"opacity": 0}, 237.6667);
+    tl.fromTo('#sub118', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 237.7083);
+    tl.to('#sub118', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 239.625);
+    tl.set('#sub118', {"opacity": 0}, 239.7083);
+    tl.fromTo('#sub119', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 239.75);
+    tl.to('#sub119', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 242.7083);
+    tl.set('#sub119', {"opacity": 0}, 242.8333);
+    tl.fromTo('#sub120', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 242.8333);
+    tl.to('#sub120', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 244.0);
+    tl.set('#sub120', {"opacity": 0}, 244.125);
+    tl.fromTo('#sub121', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 244.125);
+    tl.to('#sub121', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 246.0417);
+    tl.set('#sub121', {"opacity": 0}, 246.1667);
+    tl.fromTo('#sub122', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 246.1667);
+    tl.to('#sub122', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 247.2083);
+    tl.set('#sub122', {"opacity": 0}, 247.2917);
+    tl.fromTo('#sub123', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 247.3333);
+    tl.to('#sub123', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 248.7083);
+    tl.set('#sub123', {"opacity": 0}, 248.7917);
+    tl.fromTo('#sub124', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 248.8333);
+    tl.to('#sub124', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 249.4167);
+    tl.set('#sub124', {"opacity": 0}, 249.5);
+    tl.fromTo('#sub125', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 249.5417);
+    tl.to('#sub125', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 251.25);
+    tl.set('#sub125', {"opacity": 0}, 251.3333);
+    tl.fromTo('#sub126', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 251.375);
+    tl.to('#sub126', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 253.3333);
+    tl.set('#sub126', {"opacity": 0}, 253.4583);
+    tl.fromTo('#sub127', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 253.4583);
+    tl.to('#sub127', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 255.2083);
+    tl.set('#sub127', {"opacity": 0}, 255.2917);
+    tl.fromTo('#sub128', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 255.3333);
+    tl.to('#sub128', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 258.0417);
+    tl.set('#sub128', {"opacity": 0}, 258.125);
+    tl.fromTo('#sub129', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 258.1667);
+    tl.to('#sub129', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 260.25);
+    tl.set('#sub129', {"opacity": 0}, 260.375);
+    tl.fromTo('#sub130', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 260.375);
+    tl.to('#sub130', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 262.2083);
+    tl.set('#sub130', {"opacity": 0}, 262.2917);
+    tl.fromTo('#sub131', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 262.3333);
+    tl.to('#sub131', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 266.5833);
+    tl.set('#sub131', {"opacity": 0}, 266.6667);
+    tl.fromTo('#sub132', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 266.6667);
+    tl.to('#sub132', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 269.0);
+    tl.set('#sub132', {"opacity": 0}, 269.0833);
+    tl.fromTo('#sub133', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 269.125);
+    tl.to('#sub133', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 271.1667);
+    tl.set('#sub133', {"opacity": 0}, 271.25);
+    tl.fromTo('#sub134', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 271.25);
+    tl.to('#sub134', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 274.0417);
+    tl.set('#sub134', {"opacity": 0}, 274.125);
+    tl.fromTo('#sub135', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 274.1667);
+    tl.to('#sub135', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 276.0833);
+    tl.set('#sub135', {"opacity": 0}, 276.1667);
+    tl.fromTo('#sub136', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 276.2083);
+    tl.to('#sub136', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 278.9167);
+    tl.set('#sub136', {"opacity": 0}, 279.0);
+    tl.fromTo('#sub137', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 279.0417);
+    tl.to('#sub137', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 280.2917);
+    tl.set('#sub137', {"opacity": 0}, 280.4167);
+    tl.fromTo('#sub138', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 280.4167);
+    tl.to('#sub138', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 281.25);
+    tl.set('#sub138', {"opacity": 0}, 281.3333);
+    tl.fromTo('#sub139', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 281.3333);
+    tl.to('#sub139', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 282.9167);
+    tl.set('#sub139', {"opacity": 0}, 283.0);
+    tl.fromTo('#sub140', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 283.0417);
+    tl.to('#sub140', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 284.2917);
+    tl.set('#sub140', {"opacity": 0}, 284.375);
+    tl.fromTo('#sub141', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 284.4167);
+    tl.to('#sub141', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 286.7083);
+    tl.set('#sub141', {"opacity": 0}, 286.7917);
+    tl.fromTo('#sub142', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 286.8333);
+    tl.to('#sub142', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 289.75);
+    tl.set('#sub142', {"opacity": 0}, 289.8333);
+    tl.fromTo('#sub143', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 289.8333);
+    tl.to('#sub143', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 292.875);
+    tl.set('#sub143', {"opacity": 0}, 293.0);
+    tl.fromTo('#sub144', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 293.0);
+    tl.to('#sub144', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 295.7083);
+    tl.set('#sub144', {"opacity": 0}, 295.7917);
+    tl.fromTo('#sub145', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 295.8333);
+    tl.to('#sub145', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 297.25);
+    tl.set('#sub145', {"opacity": 0}, 297.375);
+    tl.fromTo('#sub146', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 297.375);
+    tl.to('#sub146', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 298.7917);
+    tl.set('#sub146', {"opacity": 0}, 298.875);
+    tl.fromTo('#sub147', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 298.9167);
+    tl.to('#sub147', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 299.75);
+    tl.set('#sub147', {"opacity": 0}, 299.875);
+    tl.fromTo('#sub148', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 299.875);
+    tl.to('#sub148', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 300.9583);
+    tl.set('#sub148', {"opacity": 0}, 301.0833);
+    tl.fromTo('#sub149', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 301.0833);
+    tl.to('#sub149', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 303.2917);
+    tl.set('#sub149', {"opacity": 0}, 303.4167);
+    tl.fromTo('#sub150', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 303.4167);
+    tl.to('#sub150', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 304.5833);
+    tl.set('#sub150', {"opacity": 0}, 304.7083);
+    tl.fromTo('#sub151', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 304.7083);
+    tl.to('#sub151', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 306.125);
+    tl.set('#sub151', {"opacity": 0}, 306.2083);
+    tl.fromTo('#sub152', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 306.25);
+    tl.to('#sub152', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 307.4167);
+    tl.set('#sub152', {"opacity": 0}, 307.5);
+    tl.fromTo('#sub153', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 307.5417);
+    tl.to('#sub153', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 309.8333);
+    tl.set('#sub153', {"opacity": 0}, 309.9583);
+    tl.fromTo('#sub154', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 309.9583);
+    tl.to('#sub154', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 311.5833);
+    tl.set('#sub154', {"opacity": 0}, 311.7083);
+    tl.fromTo('#sub155', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 311.7083);
+    tl.to('#sub155', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 313.625);
+    tl.set('#sub155', {"opacity": 0}, 313.7083);
+    tl.fromTo('#sub156', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 313.75);
+    tl.to('#sub156', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 315.1667);
+    tl.set('#sub156', {"opacity": 0}, 315.25);
+    tl.fromTo('#sub157', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 315.2917);
+    tl.to('#sub157', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 317.8333);
+    tl.set('#sub157', {"opacity": 0}, 317.9167);
+    tl.fromTo('#sub158', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 318.0);
+    tl.to('#sub158', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 319.625);
+    tl.set('#sub158', {"opacity": 0}, 319.7083);
+    tl.fromTo('#sub159', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 319.75);
+    tl.to('#sub159', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 321.875);
+    tl.set('#sub159', {"opacity": 0}, 321.9583);
+    tl.fromTo('#sub160', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 322.0);
+    tl.to('#sub160', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 324.25);
+    tl.set('#sub160', {"opacity": 0}, 324.375);
+    tl.fromTo('#sub161', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 324.375);
+    tl.to('#sub161', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 325.3333);
+    tl.set('#sub161', {"opacity": 0}, 325.4583);
+    tl.fromTo('#sub162', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 325.4583);
+    tl.to('#sub162', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 326.4583);
+    tl.set('#sub162', {"opacity": 0}, 326.5833);
+    tl.fromTo('#sub163', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 326.5833);
+    tl.to('#sub163', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 328.8333);
+    tl.set('#sub163', {"opacity": 0}, 328.9167);
+    tl.fromTo('#sub164', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 328.9583);
+    tl.to('#sub164', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 331.5833);
+    tl.set('#sub164', {"opacity": 0}, 331.6667);
+    tl.fromTo('#sub165', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 331.7083);
+    tl.to('#sub165', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 333.5417);
+    tl.set('#sub165', {"opacity": 0}, 333.625);
+    tl.fromTo('#sub166', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 333.6667);
+    tl.to('#sub166', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 334.5833);
+    tl.set('#sub166', {"opacity": 0}, 334.6667);
+    tl.fromTo('#sub167', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 334.7083);
+    tl.to('#sub167', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 336.2083);
+    tl.set('#sub167', {"opacity": 0}, 336.2917);
+    tl.fromTo('#sub168', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 336.3333);
+    tl.to('#sub168', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 337.7083);
+    tl.set('#sub168', {"opacity": 0}, 337.7917);
+    tl.fromTo('#sub169', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 337.7917);
+    tl.to('#sub169', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 339.0417);
+    tl.set('#sub169', {"opacity": 0}, 339.1667);
+    tl.fromTo('#sub170', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 339.1667);
+    tl.to('#sub170', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 340.2083);
+    tl.set('#sub170', {"opacity": 0}, 340.3333);
+    tl.fromTo('#sub171', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 340.3333);
+    tl.to('#sub171', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 341.2917);
+    tl.set('#sub171', {"opacity": 0}, 341.375);
+    tl.fromTo('#sub172', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 341.4167);
+    tl.to('#sub172', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 341.9583);
+    tl.set('#sub172', {"opacity": 0}, 342.0417);
+    tl.fromTo('#sub173', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 342.0833);
+    tl.to('#sub173', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 344.0);
+    tl.set('#sub173', {"opacity": 0}, 344.125);
+    tl.fromTo('#sub174', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 344.125);
+    tl.to('#sub174', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 346.0);
+    tl.set('#sub174', {"opacity": 0}, 346.125);
+    tl.fromTo('#sub175', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 346.125);
+    tl.to('#sub175', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 347.6667);
+    tl.set('#sub175', {"opacity": 0}, 347.75);
+    tl.fromTo('#sub176', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 347.7917);
+    tl.to('#sub176', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 349.75);
+    tl.set('#sub176', {"opacity": 0}, 349.875);
+    tl.fromTo('#sub177', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 349.875);
+    tl.to('#sub177', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 351.9167);
+    tl.set('#sub177', {"opacity": 0}, 352.0);
+    tl.fromTo('#sub178', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 352.0);
+    tl.to('#sub178', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 352.6667);
+    tl.set('#sub178', {"opacity": 0}, 352.75);
+    tl.fromTo('#sub179', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 352.7917);
+    tl.to('#sub179', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 354.4583);
+    tl.set('#sub179', {"opacity": 0}, 354.5417);
+    tl.fromTo('#sub180', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 354.5833);
+    tl.to('#sub180', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 356.25);
+    tl.set('#sub180', {"opacity": 0}, 356.375);
+    tl.fromTo('#sub181', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 356.375);
+    tl.to('#sub181', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 357.6667);
+    tl.set('#sub181', {"opacity": 0}, 357.75);
+    tl.fromTo('#sub182', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 357.7917);
+    tl.to('#sub182', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 358.7917);
+    tl.set('#sub182', {"opacity": 0}, 358.875);
+    tl.fromTo('#sub183', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 358.9167);
+    tl.to('#sub183', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 360.25);
+    tl.set('#sub183', {"opacity": 0}, 360.3333);
+    tl.fromTo('#sub184', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 360.375);
+    tl.to('#sub184', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 361.5417);
+    tl.set('#sub184', {"opacity": 0}, 361.625);
+    tl.fromTo('#sub185', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 361.6667);
+    tl.to('#sub185', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 363.0833);
+    tl.set('#sub185', {"opacity": 0}, 363.1667);
+    tl.fromTo('#sub186', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 363.2083);
+    tl.to('#sub186', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 364.7917);
+    tl.set('#sub186', {"opacity": 0}, 364.9167);
+    tl.fromTo('#sub187', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 364.9167);
+    tl.to('#sub187', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 365.5833);
+    tl.set('#sub187', {"opacity": 0}, 365.7083);
+    tl.fromTo('#sub188', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 365.7083);
+    tl.to('#sub188', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 367.1667);
+    tl.set('#sub188', {"opacity": 0}, 367.2917);
+    tl.fromTo('#sub189', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 367.2917);
+    tl.to('#sub189', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 368.875);
+    tl.set('#sub189', {"opacity": 0}, 368.9583);
+    tl.fromTo('#sub190', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 369.0);
+    tl.to('#sub190', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 370.8333);
+    tl.set('#sub190', {"opacity": 0}, 370.9167);
+    tl.fromTo('#sub191', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 370.9583);
+    tl.to('#sub191', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 372.4167);
+    tl.set('#sub191', {"opacity": 0}, 372.5);
+    tl.fromTo('#sub192', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 372.5417);
+    tl.to('#sub192', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 373.75);
+    tl.set('#sub192', {"opacity": 0}, 373.8333);
+    tl.fromTo('#sub193', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 373.875);
+    tl.to('#sub193', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 374.9167);
+    tl.set('#sub193', {"opacity": 0}, 375.0);
+    tl.fromTo('#sub194', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 375.0417);
+    tl.to('#sub194', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 375.7917);
+    tl.set('#sub194', {"opacity": 0}, 375.875);
+    tl.fromTo('#sub195', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 375.875);
+    tl.to('#sub195', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 376.75);
+    tl.set('#sub195', {"opacity": 0}, 376.8333);
+    tl.fromTo('#sub196', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 376.875);
+    tl.to('#sub196', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 378.5417);
+    tl.set('#sub196', {"opacity": 0}, 378.625);
+    tl.fromTo('#sub197', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 378.6667);
+    tl.to('#sub197', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 379.9167);
+    tl.set('#sub197', {"opacity": 0}, 380.0);
+    tl.fromTo('#sub198', {"opacity": 0, "y": 6}, {...{"opacity": 1, "y": 0}, duration:0.14, ease:'power2.out'}, 380.0);
+    tl.to('#sub198', {...{"opacity": 0}, duration:0.1, ease:'power1.in'}, 380.625);
+    tl.set('#sub198', {"opacity": 0}, 380.7083);
+    window.__timelines["wad-psikiatri"] = tl;
+  })();
+  </script>
+</div>
+</body></html>

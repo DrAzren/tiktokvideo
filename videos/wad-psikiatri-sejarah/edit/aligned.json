@@ -1,0 +1,8026 @@
+[
+ {
+  "text": "Bayangkan",
+  "norm": "bayangkan",
+  "start": 4.581,
+  "end": 5.261,
+  "score": 0.978,
+  "island": 0
+ },
+ {
+  "text": "anda",
+  "norm": "anda",
+  "start": 5.401,
+  "end": 5.581,
+  "score": 0.995,
+  "island": 0
+ },
+ {
+  "text": "hidup",
+  "norm": "hidup",
+  "start": 5.661,
+  "end": 6.001,
+  "score": 0.989,
+  "island": 0
+ },
+ {
+  "text": "pada",
+  "norm": "pada",
+  "start": 6.181,
+  "end": 6.381,
+  "score": 0.998,
+  "island": 0
+ },
+ {
+  "text": "tahun",
+  "norm": "tahun",
+  "start": 6.441,
+  "end": 6.861,
+  "score": 0.999,
+  "island": 0
+ },
+ {
+  "text": "1911.",
+  "norm": "sembilan belas sebelas",
+  "start": 7.022,
+  "end": 8.282,
+  "score": 0.049,
+  "island": 0
+ },
+ {
+  "text": "Waktu",
+  "norm": "waktu",
+  "start": 8.642,
+  "end": 8.902,
+  "score": 0.983,
+  "island": 0
+ },
+ {
+  "text": "tu",
+  "norm": "tu",
+  "start": 9.002,
+  "end": 9.082,
+  "score": 0.99,
+  "island": 0
+ },
+ {
+  "text": "tak",
+  "norm": "tak",
+  "start": 9.162,
+  "end": 9.282,
+  "score": 0.601,
+  "island": 0
+ },
+ {
+  "text": "ada",
+  "norm": "ada",
+  "start": 9.302,
+  "end": 9.582,
+  "score": 0.964,
+  "island": 0
+ },
+ {
+  "text": "smartphone",
+  "norm": "smartphone",
+  "start": 10.523,
+  "end": 11.023,
+  "score": 0.417,
+  "island": 0
+ },
+ {
+  "text": "pun.",
+  "norm": "pun",
+  "start": 11.063,
+  "end": 11.203,
+  "score": 0.995,
+  "island": 0
+ },
+ {
+  "text": "Tak",
+  "norm": "tak",
+  "start": 11.323,
+  "end": 11.423,
+  "score": 0.497,
+  "island": 0
+ },
+ {
+  "text": "ada",
+  "norm": "ada",
+  "start": 11.443,
+  "end": 11.563,
+  "score": 0.837,
+  "island": 0
+ },
+ {
+  "text": "internet.",
+  "norm": "internet",
+  "start": 11.643,
+  "end": 12.043,
+  "score": 0.91,
+  "island": 0
+ },
+ {
+  "text": "Malaysia",
+  "norm": "malaysia",
+  "start": 12.604,
+  "end": 13.004,
+  "score": 0.655,
+  "island": 0
+ },
+ {
+  "text": "pun",
+  "norm": "pun",
+  "start": 13.144,
+  "end": 13.264,
+  "score": 0.721,
+  "island": 0
+ },
+ {
+  "text": "belum",
+  "norm": "belum",
+  "start": 13.284,
+  "end": 13.464,
+  "score": 0.976,
+  "island": 0
+ },
+ {
+  "text": "merdeka",
+  "norm": "merdeka",
+  "start": 13.484,
+  "end": 13.824,
+  "score": 0.853,
+  "island": 0
+ },
+ {
+  "text": "lagi.",
+  "norm": "lagi",
+  "start": 13.924,
+  "end": 14.104,
+  "score": 0.999,
+  "island": 0
+ },
+ {
+  "text": "Tiba-tiba",
+  "norm": "tibatiba",
+  "start": 14.564,
+  "end": 15.024,
+  "score": 0.806,
+  "island": 0
+ },
+ {
+  "text": "ada",
+  "norm": "ada",
+  "start": 15.204,
+  "end": 15.445,
+  "score": 0.999,
+  "island": 0
+ },
+ {
+  "text": "seorang",
+  "norm": "seorang",
+  "start": 15.625,
+  "end": 16.025,
+  "score": 0.993,
+  "island": 0
+ },
+ {
+  "text": "ahli",
+  "norm": "ahli",
+  "start": 16.065,
+  "end": 16.265,
+  "score": 0.832,
+  "island": 0
+ },
+ {
+  "text": "keluarga",
+  "norm": "keluarga",
+  "start": 16.325,
+  "end": 16.745,
+  "score": 0.943,
+  "island": 0
+ },
+ {
+  "text": "anda",
+  "norm": "anda",
+  "start": 18.065,
+  "end": 18.326,
+  "score": 0.979,
+  "island": 0
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 18.786,
+  "end": 18.926,
+  "score": 0.959,
+  "island": 0
+ },
+ {
+  "text": "mula",
+  "norm": "mula",
+  "start": 18.966,
+  "end": 19.146,
+  "score": 0.998,
+  "island": 0
+ },
+ {
+  "text": "berubah.",
+  "norm": "berubah",
+  "start": 19.186,
+  "end": 19.566,
+  "score": 0.926,
+  "island": 0
+ },
+ {
+  "text": "Dia",
+  "norm": "dia",
+  "start": 20.026,
+  "end": 20.146,
+  "score": 0.997,
+  "island": 0
+ },
+ {
+  "text": "bercakap",
+  "norm": "bercakap",
+  "start": 20.206,
+  "end": 20.526,
+  "score": 0.79,
+  "island": 0
+ },
+ {
+  "text": "seorang",
+  "norm": "seorang",
+  "start": 20.566,
+  "end": 20.886,
+  "score": 0.987,
+  "island": 0
+ },
+ {
+  "text": "diri.",
+  "norm": "diri",
+  "start": 20.906,
+  "end": 21.167,
+  "score": 0.999,
+  "island": 0
+ },
+ {
+  "text": "Dia",
+  "norm": "dia",
+  "start": 21.647,
+  "end": 21.747,
+  "score": 0.998,
+  "island": 0
+ },
+ {
+  "text": "dengar",
+  "norm": "dengar",
+  "start": 21.787,
+  "end": 22.027,
+  "score": 0.995,
+  "island": 0
+ },
+ {
+  "text": "suara",
+  "norm": "suara",
+  "start": 22.087,
+  "end": 22.307,
+  "score": 0.852,
+  "island": 0
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 22.347,
+  "end": 22.427,
+  "score": 0.961,
+  "island": 0
+ },
+ {
+  "text": "orang",
+  "norm": "orang",
+  "start": 22.447,
+  "end": 22.607,
+  "score": 0.952,
+  "island": 0
+ },
+ {
+  "text": "tak",
+  "norm": "tak",
+  "start": 22.607,
+  "end": 22.687,
+  "score": 0.006,
+  "island": 0
+ },
+ {
+  "text": "boleh",
+  "norm": "boleh",
+  "start": 22.687,
+  "end": 22.847,
+  "score": 0.094,
+  "island": 0
+ },
+ {
+  "text": "dengar.",
+  "norm": "dengar",
+  "start": 22.867,
+  "end": 23.187,
+  "score": 0.979,
+  "island": 0
+ },
+ {
+  "text": "Kadang-kadang",
+  "norm": "kadangkadang",
+  "start": 23.347,
+  "end": 23.828,
+  "score": 0.943,
+  "island": 0
+ },
+ {
+  "text": "dia",
+  "norm": "dia",
+  "start": 23.868,
+  "end": 23.988,
+  "score": 0.995,
+  "island": 0
+ },
+ {
+  "text": "ketawa",
+  "norm": "ketawa",
+  "start": 24.048,
+  "end": 24.408,
+  "score": 0.923,
+  "island": 0
+ },
+ {
+  "text": "sendiri.",
+  "norm": "sendiri",
+  "start": 24.508,
+  "end": 24.868,
+  "score": 0.983,
+  "island": 0
+ },
+ {
+  "text": "Kadang-kadang",
+  "norm": "kadangkadang",
+  "start": 25.648,
+  "end": 26.048,
+  "score": 0.879,
+  "island": 0
+ },
+ {
+  "text": "dia",
+  "norm": "dia",
+  "start": 26.068,
+  "end": 26.188,
+  "score": 0.995,
+  "island": 0
+ },
+ {
+  "text": "jadi",
+  "norm": "jadi",
+  "start": 26.248,
+  "end": 26.428,
+  "score": 0.997,
+  "island": 0
+ },
+ {
+  "text": "ketakutan.",
+  "norm": "ketakutan",
+  "start": 26.488,
+  "end": 27.149,
+  "score": 0.889,
+  "island": 0
+ },
+ {
+  "text": "Paranoid.",
+  "norm": "paranoid",
+  "start": 27.389,
+  "end": 27.909,
+  "score": 0.473,
+  "island": 0
+ },
+ {
+  "text": "Keluarga",
+  "norm": "keluarga",
+  "start": 28.789,
+  "end": 29.209,
+  "score": 0.968,
+  "island": 0
+ },
+ {
+  "text": "dah",
+  "norm": "dah",
+  "start": 29.33,
+  "end": 29.43,
+  "score": 0.888,
+  "island": 0
+ },
+ {
+  "text": "macam",
+  "norm": "macam",
+  "start": 29.47,
+  "end": 29.65,
+  "score": 0.786,
+  "island": 0
+ },
+ {
+  "text": "tak",
+  "norm": "tak",
+  "start": 29.67,
+  "end": 29.77,
+  "score": 0.804,
+  "island": 0
+ },
+ {
+  "text": "tahu",
+  "norm": "tahu",
+  "start": 29.79,
+  "end": 29.89,
+  "score": 0.708,
+  "island": 0
+ },
+ {
+  "text": "nak",
+  "norm": "nak",
+  "start": 29.89,
+  "end": 29.99,
+  "score": 0.615,
+  "island": 0
+ },
+ {
+  "text": "buat",
+  "norm": "buat",
+  "start": 30.01,
+  "end": 30.09,
+  "score": 0.036,
+  "island": 0
+ },
+ {
+  "text": "apa.",
+  "norm": "apa",
+  "start": 30.11,
+  "end": 30.31,
+  "score": 0.977,
+  "island": 0
+ },
+ {
+  "text": "Masyarakat",
+  "norm": "masyarakat",
+  "start": 30.84,
+  "end": 31.34,
+  "score": 0.496,
+  "island": 1
+ },
+ {
+  "text": "pula",
+  "norm": "pula",
+  "start": 31.4,
+  "end": 31.64,
+  "score": 0.606,
+  "island": 1
+ },
+ {
+  "text": "dah",
+  "norm": "dah",
+  "start": 32.981,
+  "end": 33.081,
+  "score": 0.596,
+  "island": 1
+ },
+ {
+  "text": "mula",
+  "norm": "mula",
+  "start": 33.141,
+  "end": 33.361,
+  "score": 0.968,
+  "island": 1
+ },
+ {
+  "text": "cakap",
+  "norm": "cakap",
+  "start": 33.421,
+  "end": 33.701,
+  "score": 0.9,
+  "island": 1
+ },
+ {
+  "text": "macam-macam.",
+  "norm": "macammacam",
+  "start": 33.701,
+  "end": 34.201,
+  "score": 0.703,
+  "island": 1
+ },
+ {
+  "text": "Ada",
+  "norm": "ada",
+  "start": 34.402,
+  "end": 34.542,
+  "score": 0.982,
+  "island": 1
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 34.602,
+  "end": 34.722,
+  "score": 0.953,
+  "island": 1
+ },
+ {
+  "text": "kata",
+  "norm": "kata",
+  "start": 34.742,
+  "end": 34.982,
+  "score": 0.985,
+  "island": 1
+ },
+ {
+  "text": "dia",
+  "norm": "dia",
+  "start": 35.042,
+  "end": 35.142,
+  "score": 0.933,
+  "island": 1
+ },
+ {
+  "text": "kena",
+  "norm": "kena",
+  "start": 35.182,
+  "end": 35.302,
+  "score": 0.967,
+  "island": 1
+ },
+ {
+  "text": "rasuk.",
+  "norm": "rasuk",
+  "start": 35.362,
+  "end": 35.802,
+  "score": 0.683,
+  "island": 1
+ },
+ {
+  "text": "Ada",
+  "norm": "ada",
+  "start": 35.942,
+  "end": 36.062,
+  "score": 0.877,
+  "island": 1
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 36.082,
+  "end": 36.242,
+  "score": 0.305,
+  "island": 1
+ },
+ {
+  "text": "kata",
+  "norm": "kata",
+  "start": 36.763,
+  "end": 37.043,
+  "score": 0.994,
+  "island": 1
+ },
+ {
+  "text": "dia",
+  "norm": "dia",
+  "start": 37.123,
+  "end": 37.203,
+  "score": 0.923,
+  "island": 1
+ },
+ {
+  "text": "kena",
+  "norm": "kena",
+  "start": 37.243,
+  "end": 37.383,
+  "score": 0.984,
+  "island": 1
+ },
+ {
+  "text": "gangguan.",
+  "norm": "gangguan",
+  "start": 37.463,
+  "end": 37.923,
+  "score": 0.99,
+  "island": 1
+ },
+ {
+  "text": "Ada",
+  "norm": "ada",
+  "start": 38.463,
+  "end": 38.583,
+  "score": 0.996,
+  "island": 1
+ },
+ {
+  "text": "juga",
+  "norm": "juga",
+  "start": 38.623,
+  "end": 38.803,
+  "score": 0.998,
+  "island": 1
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 38.883,
+  "end": 39.003,
+  "score": 0.93,
+  "island": 1
+ },
+ {
+  "text": "takut",
+  "norm": "takut",
+  "start": 39.023,
+  "end": 39.404,
+  "score": 0.977,
+  "island": 1
+ },
+ {
+  "text": "nak",
+  "norm": "nak",
+  "start": 39.404,
+  "end": 39.504,
+  "score": 0.398,
+  "island": 1
+ },
+ {
+  "text": "dekat",
+  "norm": "dekat",
+  "start": 39.524,
+  "end": 39.764,
+  "score": 0.829,
+  "island": 1
+ },
+ {
+  "text": "dengan",
+  "norm": "dengan",
+  "start": 39.804,
+  "end": 39.984,
+  "score": 0.985,
+  "island": 1
+ },
+ {
+  "text": "dia.",
+  "norm": "dia",
+  "start": 40.024,
+  "end": 40.124,
+  "score": 0.713,
+  "island": 1
+ },
+ {
+  "text": "Tapi",
+  "norm": "tapi",
+  "start": 40.504,
+  "end": 40.704,
+  "score": 0.999,
+  "island": 1
+ },
+ {
+  "text": "sebenarnya",
+  "norm": "sebenarnya",
+  "start": 40.744,
+  "end": 41.084,
+  "score": 0.905,
+  "island": 1
+ },
+ {
+  "text": "dia",
+  "norm": "dia",
+  "start": 41.164,
+  "end": 41.264,
+  "score": 0.764,
+  "island": 1
+ },
+ {
+  "text": "mungkin",
+  "norm": "mungkin",
+  "start": 41.625,
+  "end": 42.045,
+  "score": 0.967,
+  "island": 1
+ },
+ {
+  "text": "sedang",
+  "norm": "sedang",
+  "start": 42.105,
+  "end": 42.405,
+  "score": 0.986,
+  "island": 1
+ },
+ {
+  "text": "mengalami",
+  "norm": "mengalami",
+  "start": 42.425,
+  "end": 42.805,
+  "score": 0.96,
+  "island": 1
+ },
+ {
+  "text": "penyakit",
+  "norm": "penyakit",
+  "start": 42.865,
+  "end": 43.225,
+  "score": 0.913,
+  "island": 1
+ },
+ {
+  "text": "mental",
+  "norm": "mental",
+  "start": 43.245,
+  "end": 43.565,
+  "score": 0.836,
+  "island": 1
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 43.605,
+  "end": 43.745,
+  "score": 0.97,
+  "island": 1
+ },
+ {
+  "text": "serius.",
+  "norm": "serius",
+  "start": 43.785,
+  "end": 44.126,
+  "score": 0.79,
+  "island": 1
+ },
+ {
+  "text": "Pada",
+  "norm": "pada",
+  "start": 44.666,
+  "end": 44.926,
+  "score": 0.993,
+  "island": 1
+ },
+ {
+  "text": "masa",
+  "norm": "masa",
+  "start": 44.986,
+  "end": 45.206,
+  "score": 0.922,
+  "island": 1
+ },
+ {
+  "text": "itu",
+  "norm": "itu",
+  "start": 45.306,
+  "end": 45.526,
+  "score": 0.999,
+  "island": 1
+ },
+ {
+  "text": "pilihan",
+  "norm": "pilihan",
+  "start": 45.726,
+  "end": 46.146,
+  "score": 0.993,
+  "island": 1
+ },
+ {
+  "text": "rawatan",
+  "norm": "rawatan",
+  "start": 46.226,
+  "end": 46.707,
+  "score": 0.998,
+  "island": 1
+ },
+ {
+  "text": "memang",
+  "norm": "memang",
+  "start": 46.807,
+  "end": 47.087,
+  "score": 0.998,
+  "island": 1
+ },
+ {
+  "text": "sangat",
+  "norm": "sangat",
+  "start": 47.107,
+  "end": 47.307,
+  "score": 0.989,
+  "island": 1
+ },
+ {
+  "text": "terhad.",
+  "norm": "terhad",
+  "start": 47.347,
+  "end": 47.647,
+  "score": 0.832,
+  "island": 1
+ },
+ {
+  "text": "Jadi",
+  "norm": "jadi",
+  "start": 48.127,
+  "end": 48.307,
+  "score": 1.0,
+  "island": 1
+ },
+ {
+  "text": "ke",
+  "norm": "ke",
+  "start": 48.367,
+  "end": 48.427,
+  "score": 0.998,
+  "island": 1
+ },
+ {
+  "text": "mana",
+  "norm": "mana",
+  "start": 48.467,
+  "end": 48.647,
+  "score": 0.998,
+  "island": 1
+ },
+ {
+  "text": "mereka",
+  "norm": "mereka",
+  "start": 48.688,
+  "end": 48.928,
+  "score": 0.999,
+  "island": 1
+ },
+ {
+  "text": "ni",
+  "norm": "ni",
+  "start": 48.968,
+  "end": 49.048,
+  "score": 0.946,
+  "island": 1
+ },
+ {
+  "text": "dihantar",
+  "norm": "dihantar",
+  "start": 49.088,
+  "end": 49.528,
+  "score": 0.839,
+  "island": 1
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 50.008,
+  "end": 50.128,
+  "score": 0.999,
+  "island": 1
+ },
+ {
+  "text": "di",
+  "norm": "di",
+  "start": 50.188,
+  "end": 50.248,
+  "score": 0.998,
+  "island": 1
+ },
+ {
+  "text": "sinilah",
+  "norm": "sinilah",
+  "start": 50.288,
+  "end": 50.588,
+  "score": 0.999,
+  "island": 1
+ },
+ {
+  "text": "bermula",
+  "norm": "bermula",
+  "start": 50.628,
+  "end": 50.948,
+  "score": 0.845,
+  "island": 1
+ },
+ {
+  "text": "satu",
+  "norm": "satu",
+  "start": 51.008,
+  "end": 51.269,
+  "score": 0.997,
+  "island": 1
+ },
+ {
+  "text": "sejarah",
+  "norm": "sejarah",
+  "start": 51.349,
+  "end": 51.789,
+  "score": 0.993,
+  "island": 1
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 51.869,
+  "end": 52.009,
+  "score": 0.996,
+  "island": 1
+ },
+ {
+  "text": "sangat",
+  "norm": "sangat",
+  "start": 52.129,
+  "end": 52.429,
+  "score": 0.958,
+  "island": 1
+ },
+ {
+  "text": "menarik",
+  "norm": "menarik",
+  "start": 52.469,
+  "end": 52.769,
+  "score": 0.966,
+  "island": 1
+ },
+ {
+  "text": "tentang",
+  "norm": "tentang",
+  "start": 52.789,
+  "end": 53.089,
+  "score": 0.993,
+  "island": 1
+ },
+ {
+  "text": "rawatan",
+  "norm": "rawatan",
+  "start": 53.109,
+  "end": 53.389,
+  "score": 0.996,
+  "island": 1
+ },
+ {
+  "text": "psikiatri",
+  "norm": "psikiatri",
+  "start": 53.389,
+  "end": 53.79,
+  "score": 0.685,
+  "island": 1
+ },
+ {
+  "text": "dekat",
+  "norm": "dekat",
+  "start": 53.85,
+  "end": 54.03,
+  "score": 0.75,
+  "island": 1
+ },
+ {
+  "text": "Malaysia",
+  "norm": "malaysia",
+  "start": 54.05,
+  "end": 54.35,
+  "score": 0.576,
+  "island": 1
+ },
+ {
+  "text": "ni.",
+  "norm": "ni",
+  "start": 54.45,
+  "end": 54.53,
+  "score": 0.977,
+  "island": 1
+ },
+ {
+  "text": "Ramai",
+  "norm": "ramai",
+  "start": 55.29,
+  "end": 55.57,
+  "score": 0.987,
+  "island": 1
+ },
+ {
+  "text": "orang",
+  "norm": "orang",
+  "start": 55.63,
+  "end": 55.791,
+  "score": 0.981,
+  "island": 1
+ },
+ {
+  "text": "ingat",
+  "norm": "ingat",
+  "start": 55.811,
+  "end": 56.091,
+  "score": 0.904,
+  "island": 1
+ },
+ {
+  "text": "sejarah",
+  "norm": "sejarah",
+  "start": 56.331,
+  "end": 56.871,
+  "score": 0.974,
+  "island": 1
+ },
+ {
+  "text": "hospital",
+  "norm": "hospital",
+  "start": 57.651,
+  "end": 58.232,
+  "score": 0.939,
+  "island": 1
+ },
+ {
+  "text": "psikiatri",
+  "norm": "psikiatri",
+  "start": 58.232,
+  "end": 58.792,
+  "score": 0.7,
+  "island": 1
+ },
+ {
+  "text": "di",
+  "norm": "di",
+  "start": 58.912,
+  "end": 58.972,
+  "score": 0.989,
+  "island": 1
+ },
+ {
+  "text": "Malaysia",
+  "norm": "malaysia",
+  "start": 59.032,
+  "end": 59.332,
+  "score": 0.562,
+  "island": 1
+ },
+ {
+  "text": "ni",
+  "norm": "ni",
+  "start": 59.412,
+  "end": 59.472,
+  "score": 0.994,
+  "island": 1
+ },
+ {
+  "text": "bermula",
+  "norm": "bermula",
+  "start": 59.532,
+  "end": 59.912,
+  "score": 0.996,
+  "island": 1
+ },
+ {
+  "text": "dekat",
+  "norm": "dekat",
+  "start": 59.952,
+  "end": 60.112,
+  "score": 0.639,
+  "island": 1
+ },
+ {
+  "text": "Tanjung",
+  "norm": "tanjung",
+  "start": 60.132,
+  "end": 60.332,
+  "score": 0.463,
+  "island": 1
+ },
+ {
+  "text": "Rambutan",
+  "norm": "rambutan",
+  "start": 60.332,
+  "end": 60.773,
+  "score": 0.792,
+  "island": 1
+ },
+ {
+  "text": "tapi",
+  "norm": "tapi",
+  "start": 60.893,
+  "end": 61.093,
+  "score": 0.999,
+  "island": 1
+ },
+ {
+  "text": "sebenarnya",
+  "norm": "sebenarnya",
+  "start": 61.133,
+  "end": 61.453,
+  "score": 0.861,
+  "island": 1
+ },
+ {
+  "text": "sejarah",
+  "norm": "sejarah",
+  "start": 61.513,
+  "end": 61.913,
+  "score": 0.996,
+  "island": 1
+ },
+ {
+  "text": "penjagaan",
+  "norm": "penjagaan",
+  "start": 61.953,
+  "end": 62.693,
+  "score": 0.979,
+  "island": 1
+ },
+ {
+  "text": "pesakit",
+  "norm": "pesakit",
+  "start": 63.294,
+  "end": 63.674,
+  "score": 0.888,
+  "island": 1
+ },
+ {
+  "text": "mental",
+  "norm": "mental",
+  "start": 63.694,
+  "end": 63.934,
+  "score": 0.836,
+  "island": 1
+ },
+ {
+  "text": "di",
+  "norm": "di",
+  "start": 63.954,
+  "end": 63.994,
+  "score": 0.989,
+  "island": 1
+ },
+ {
+  "text": "Tanah",
+  "norm": "tanah",
+  "start": 64.034,
+  "end": 64.194,
+  "score": 0.788,
+  "island": 1
+ },
+ {
+  "text": "Melayu",
+  "norm": "melayu",
+  "start": 64.234,
+  "end": 64.494,
+  "score": 0.828,
+  "island": 1
+ },
+ {
+  "text": "ni",
+  "norm": "ni",
+  "start": 64.614,
+  "end": 64.694,
+  "score": 0.946,
+  "island": 1
+ },
+ {
+  "text": "bermula",
+  "norm": "bermula",
+  "start": 64.774,
+  "end": 65.254,
+  "score": 0.997,
+  "island": 1
+ },
+ {
+  "text": "lebih",
+  "norm": "lebih",
+  "start": 65.435,
+  "end": 65.615,
+  "score": 0.99,
+  "island": 1
+ },
+ {
+  "text": "awal",
+  "norm": "awal",
+  "start": 65.655,
+  "end": 65.855,
+  "score": 0.995,
+  "island": 1
+ },
+ {
+  "text": "lagi.",
+  "norm": "lagi",
+  "start": 65.895,
+  "end": 66.075,
+  "score": 0.998,
+  "island": 1
+ },
+ {
+  "text": "Seawal",
+  "norm": "seawal",
+  "start": 66.535,
+  "end": 66.895,
+  "score": 0.989,
+  "island": 1
+ },
+ {
+  "text": "abad",
+  "norm": "abad",
+  "start": 66.995,
+  "end": 67.275,
+  "score": 0.793,
+  "island": 1
+ },
+ {
+  "text": "ke-19",
+  "norm": "kesembilan belas",
+  "start": 67.395,
+  "end": 68.056,
+  "score": 0.142,
+  "island": 1
+ },
+ {
+  "text": "sudah",
+  "norm": "sudah",
+  "start": 68.816,
+  "end": 69.056,
+  "score": 0.996,
+  "island": 1
+ },
+ {
+  "text": "wujud",
+  "norm": "wujud",
+  "start": 69.116,
+  "end": 69.456,
+  "score": 0.985,
+  "island": 1
+ },
+ {
+  "text": "kemudahan",
+  "norm": "kemudahan",
+  "start": 69.556,
+  "end": 70.177,
+  "score": 0.98,
+  "island": 1
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 70.977,
+  "end": 71.157,
+  "score": 0.991,
+  "island": 1
+ },
+ {
+  "text": "menempatkan",
+  "norm": "menempatkan",
+  "start": 71.197,
+  "end": 72.097,
+  "score": 0.983,
+  "island": 1
+ },
+ {
+  "text": "individu",
+  "norm": "individu",
+  "start": 72.498,
+  "end": 72.878,
+  "score": 0.97,
+  "island": 1
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 72.938,
+  "end": 73.018,
+  "score": 0.997,
+  "island": 1
+ },
+ {
+  "text": "mengalami",
+  "norm": "mengalami",
+  "start": 73.038,
+  "end": 73.358,
+  "score": 0.992,
+  "island": 1
+ },
+ {
+  "text": "gangguan",
+  "norm": "gangguan",
+  "start": 73.438,
+  "end": 73.738,
+  "score": 0.956,
+  "island": 1
+ },
+ {
+  "text": "mental",
+  "norm": "mental",
+  "start": 73.778,
+  "end": 74.098,
+  "score": 0.836,
+  "island": 1
+ },
+ {
+  "text": "seperti",
+  "norm": "seperti",
+  "start": 74.178,
+  "end": 74.658,
+  "score": 0.998,
+  "island": 1
+ },
+ {
+  "text": "di",
+  "norm": "di",
+  "start": 75.039,
+  "end": 75.119,
+  "score": 0.977,
+  "island": 1
+ },
+ {
+  "text": "kawasan",
+  "norm": "kawasan",
+  "start": 75.179,
+  "end": 75.659,
+  "score": 0.994,
+  "island": 1
+ },
+ {
+  "text": "seperti",
+  "norm": "seperti",
+  "start": 75.759,
+  "end": 76.019,
+  "score": 0.997,
+  "island": 1
+ },
+ {
+  "text": "Pulau",
+  "norm": "pulau",
+  "start": 76.039,
+  "end": 76.199,
+  "score": 0.735,
+  "island": 1
+ },
+ {
+  "text": "Pinang",
+  "norm": "pinang",
+  "start": 76.239,
+  "end": 76.599,
+  "score": 0.997,
+  "island": 1
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 76.639,
+  "end": 76.719,
+  "score": 0.997,
+  "island": 1
+ },
+ {
+  "text": "juga",
+  "norm": "juga",
+  "start": 76.759,
+  "end": 76.899,
+  "score": 0.998,
+  "island": 1
+ },
+ {
+  "text": "Taiping.",
+  "norm": "taiping",
+  "start": 76.959,
+  "end": 77.34,
+  "score": 0.942,
+  "island": 1
+ },
+ {
+  "text": "Tapi",
+  "norm": "tapi",
+  "start": 80.242,
+  "end": 80.482,
+  "score": 0.989,
+  "island": 2
+ },
+ {
+  "text": "pada",
+  "norm": "pada",
+  "start": 80.582,
+  "end": 80.762,
+  "score": 0.999,
+  "island": 2
+ },
+ {
+  "text": "zaman",
+  "norm": "zaman",
+  "start": 80.802,
+  "end": 81.102,
+  "score": 0.976,
+  "island": 2
+ },
+ {
+  "text": "tu",
+  "norm": "tu",
+  "start": 81.202,
+  "end": 81.282,
+  "score": 0.988,
+  "island": 2
+ },
+ {
+  "text": "ilmu",
+  "norm": "ilmu",
+  "start": 81.463,
+  "end": 81.703,
+  "score": 0.74,
+  "island": 2
+ },
+ {
+  "text": "tentang",
+  "norm": "tentang",
+  "start": 81.803,
+  "end": 82.163,
+  "score": 0.942,
+  "island": 2
+ },
+ {
+  "text": "penyakit",
+  "norm": "penyakit",
+  "start": 82.183,
+  "end": 82.483,
+  "score": 0.99,
+  "island": 2
+ },
+ {
+  "text": "mental",
+  "norm": "mental",
+  "start": 82.503,
+  "end": 82.844,
+  "score": 0.813,
+  "island": 2
+ },
+ {
+  "text": "ni",
+  "norm": "ni",
+  "start": 82.844,
+  "end": 82.924,
+  "score": 0.739,
+  "island": 2
+ },
+ {
+  "text": "masih",
+  "norm": "masih",
+  "start": 83.064,
+  "end": 83.344,
+  "score": 0.967,
+  "island": 2
+ },
+ {
+  "text": "lagi",
+  "norm": "lagi",
+  "start": 83.364,
+  "end": 83.524,
+  "score": 0.999,
+  "island": 2
+ },
+ {
+  "text": "terhad",
+  "norm": "terhad",
+  "start": 83.564,
+  "end": 83.845,
+  "score": 0.832,
+  "island": 2
+ },
+ {
+  "text": "lah.",
+  "norm": "lah",
+  "start": 83.905,
+  "end": 84.025,
+  "score": 0.943,
+  "island": 2
+ },
+ {
+  "text": "Penyakit",
+  "norm": "penyakit",
+  "start": 84.565,
+  "end": 84.985,
+  "score": 0.966,
+  "island": 2
+ },
+ {
+  "text": "seperti",
+  "norm": "seperti",
+  "start": 85.006,
+  "end": 85.246,
+  "score": 0.994,
+  "island": 2
+ },
+ {
+  "text": "skizofrenia,",
+  "norm": "skizofrenia",
+  "start": 85.306,
+  "end": 85.926,
+  "score": 0.819,
+  "island": 2
+ },
+ {
+  "text": "bipolar,",
+  "norm": "bipolar",
+  "start": 86.106,
+  "end": 86.627,
+  "score": 0.783,
+  "island": 2
+ },
+ {
+  "text": "kemurungan",
+  "norm": "kemurungan",
+  "start": 86.687,
+  "end": 87.167,
+  "score": 0.969,
+  "island": 2
+ },
+ {
+  "text": "ni",
+  "norm": "ni",
+  "start": 87.207,
+  "end": 87.307,
+  "score": 0.595,
+  "island": 2
+ },
+ {
+  "text": "belum",
+  "norm": "belum",
+  "start": 87.448,
+  "end": 87.928,
+  "score": 0.94,
+  "island": 2
+ },
+ {
+  "text": "difahami",
+  "norm": "difahami",
+  "start": 88.048,
+  "end": 88.428,
+  "score": 0.733,
+  "island": 2
+ },
+ {
+  "text": "mis",
+  "norm": "mis",
+  "start": 88.428,
+  "end": 88.588,
+  "score": 0.994,
+  "island": 2
+ },
+ {
+  "text": "penuhnya",
+  "norm": "penuhnya",
+  "start": 88.649,
+  "end": 89.029,
+  "score": 0.847,
+  "island": 2
+ },
+ {
+  "text": "seperti",
+  "norm": "seperti",
+  "start": 89.109,
+  "end": 89.429,
+  "score": 0.997,
+  "island": 2
+ },
+ {
+  "text": "sekarang.",
+  "norm": "sekarang",
+  "start": 89.469,
+  "end": 89.829,
+  "score": 0.998,
+  "island": 2
+ },
+ {
+  "text": "Rawatan",
+  "norm": "rawatan",
+  "start": 90.49,
+  "end": 91.03,
+  "score": 0.342,
+  "island": 2
+ },
+ {
+  "text": "-rawatan",
+  "norm": "rawatan",
+  "start": 91.591,
+  "end": 92.091,
+  "score": 0.971,
+  "island": 2
+ },
+ {
+  "text": "pun",
+  "norm": "pun",
+  "start": 92.211,
+  "end": 92.392,
+  "score": 0.997,
+  "island": 2
+ },
+ {
+  "text": "waktu",
+  "norm": "waktu",
+  "start": 92.452,
+  "end": 92.672,
+  "score": 0.995,
+  "island": 2
+ },
+ {
+  "text": "dulu",
+  "norm": "dulu",
+  "start": 92.712,
+  "end": 92.892,
+  "score": 0.895,
+  "island": 2
+ },
+ {
+  "text": "tertumpu",
+  "norm": "tertumpu",
+  "start": 92.952,
+  "end": 93.352,
+  "score": 0.983,
+  "island": 2
+ },
+ {
+  "text": "kepada",
+  "norm": "kepada",
+  "start": 93.432,
+  "end": 93.773,
+  "score": 0.999,
+  "island": 2
+ },
+ {
+  "text": "penjagaan,",
+  "norm": "penjagaan",
+  "start": 93.893,
+  "end": 94.633,
+  "score": 0.997,
+  "island": 2
+ },
+ {
+  "text": "keselamatan",
+  "norm": "keselamatan",
+  "start": 94.734,
+  "end": 95.414,
+  "score": 0.996,
+  "island": 2
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 95.474,
+  "end": 95.594,
+  "score": 0.999,
+  "island": 2
+ },
+ {
+  "text": "juga",
+  "norm": "juga",
+  "start": 95.634,
+  "end": 95.854,
+  "score": 1.0,
+  "island": 2
+ },
+ {
+  "text": "pengawasan",
+  "norm": "pengawasan",
+  "start": 95.955,
+  "end": 96.475,
+  "score": 0.97,
+  "island": 2
+ },
+ {
+  "text": "pesakit.",
+  "norm": "pesakit",
+  "start": 96.515,
+  "end": 96.935,
+  "score": 0.996,
+  "island": 2
+ },
+ {
+  "text": "Dalam",
+  "norm": "dalam",
+  "start": 97.596,
+  "end": 97.816,
+  "score": 0.851,
+  "island": 2
+ },
+ {
+  "text": "sesetengah",
+  "norm": "sesetengah",
+  "start": 97.856,
+  "end": 98.236,
+  "score": 0.953,
+  "island": 2
+ },
+ {
+  "text": "keadaan,",
+  "norm": "keadaan",
+  "start": 98.276,
+  "end": 98.617,
+  "score": 0.986,
+  "island": 2
+ },
+ {
+  "text": "pesakit",
+  "norm": "pesakit",
+  "start": 98.657,
+  "end": 99.017,
+  "score": 0.998,
+  "island": 2
+ },
+ {
+  "text": "ditempatkan",
+  "norm": "ditempatkan",
+  "start": 99.037,
+  "end": 99.618,
+  "score": 0.995,
+  "island": 2
+ },
+ {
+  "text": "jauh",
+  "norm": "jauh",
+  "start": 99.698,
+  "end": 100.018,
+  "score": 0.868,
+  "island": 2
+ },
+ {
+  "text": "daripada",
+  "norm": "daripada",
+  "start": 100.078,
+  "end": 100.338,
+  "score": 0.727,
+  "island": 2
+ },
+ {
+  "text": "masyarakat.",
+  "norm": "masyarakat",
+  "start": 100.358,
+  "end": 100.799,
+  "score": 0.917,
+  "island": 2
+ },
+ {
+  "text": "Bayangkan.",
+  "norm": "bayangkan",
+  "start": 100.939,
+  "end": 101.559,
+  "score": 0.945,
+  "island": 2
+ },
+ {
+  "text": "Bayangkan",
+  "norm": "bayangkan",
+  "start": 104.921,
+  "end": 105.501,
+  "score": 0.952,
+  "island": 3
+ },
+ {
+  "text": "seseorang",
+  "norm": "seseorang",
+  "start": 106.522,
+  "end": 107.042,
+  "score": 0.767,
+  "island": 3
+ },
+ {
+  "text": "tu",
+  "norm": "tu",
+  "start": 107.102,
+  "end": 107.163,
+  "score": 1.0,
+  "island": 3
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 107.283,
+  "end": 107.423,
+  "score": 0.991,
+  "island": 3
+ },
+ {
+  "text": "mengalami",
+  "norm": "mengalami",
+  "start": 107.443,
+  "end": 107.823,
+  "score": 0.995,
+  "island": 3
+ },
+ {
+  "text": "halusinasi,",
+  "norm": "halusinasi",
+  "start": 107.883,
+  "end": 108.463,
+  "score": 0.981,
+  "island": 3
+ },
+ {
+  "text": "dilusi.",
+  "norm": "dilusi",
+  "start": 108.543,
+  "end": 108.944,
+  "score": 0.999,
+  "island": 3
+ },
+ {
+  "text": "Mungkin",
+  "norm": "mungkin",
+  "start": 109.084,
+  "end": 109.404,
+  "score": 0.999,
+  "island": 3
+ },
+ {
+  "text": "dia",
+  "norm": "dia",
+  "start": 109.444,
+  "end": 109.524,
+  "score": 0.989,
+  "island": 3
+ },
+ {
+  "text": "tak",
+  "norm": "tak",
+  "start": 109.544,
+  "end": 109.644,
+  "score": 0.983,
+  "island": 3
+ },
+ {
+  "text": "faham",
+  "norm": "faham",
+  "start": 109.684,
+  "end": 109.984,
+  "score": 0.797,
+  "island": 3
+ },
+ {
+  "text": "pun",
+  "norm": "pun",
+  "start": 110.045,
+  "end": 110.185,
+  "score": 0.999,
+  "island": 3
+ },
+ {
+  "text": "apa",
+  "norm": "apa",
+  "start": 110.265,
+  "end": 110.465,
+  "score": 0.999,
+  "island": 3
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 110.505,
+  "end": 110.605,
+  "score": 0.99,
+  "island": 3
+ },
+ {
+  "text": "berlaku",
+  "norm": "berlaku",
+  "start": 110.605,
+  "end": 110.885,
+  "score": 0.889,
+  "island": 3
+ },
+ {
+  "text": "pada",
+  "norm": "pada",
+  "start": 110.925,
+  "end": 111.105,
+  "score": 0.999,
+  "island": 3
+ },
+ {
+  "text": "diri",
+  "norm": "diri",
+  "start": 111.145,
+  "end": 111.345,
+  "score": 0.91,
+  "island": 3
+ },
+ {
+  "text": "dia.",
+  "norm": "dia",
+  "start": 111.385,
+  "end": 111.526,
+  "score": 0.978,
+  "island": 3
+ },
+ {
+  "text": "Dia",
+  "norm": "dia",
+  "start": 111.926,
+  "end": 112.046,
+  "score": 0.999,
+  "island": 3
+ },
+ {
+  "text": "takut.",
+  "norm": "takut",
+  "start": 112.086,
+  "end": 112.566,
+  "score": 1.0,
+  "island": 3
+ },
+ {
+  "text": "Keluarga",
+  "norm": "keluarga",
+  "start": 112.806,
+  "end": 113.127,
+  "score": 0.961,
+  "island": 3
+ },
+ {
+  "text": "pun",
+  "norm": "pun",
+  "start": 113.147,
+  "end": 113.227,
+  "score": 0.573,
+  "island": 3
+ },
+ {
+  "text": "jadi",
+  "norm": "jadi",
+  "start": 113.247,
+  "end": 113.387,
+  "score": 0.95,
+  "island": 3
+ },
+ {
+  "text": "takut.",
+  "norm": "takut",
+  "start": 113.427,
+  "end": 113.807,
+  "score": 0.999,
+  "island": 3
+ },
+ {
+  "text": "Tapi",
+  "norm": "tapi",
+  "start": 114.087,
+  "end": 114.307,
+  "score": 0.999,
+  "island": 3
+ },
+ {
+  "text": "belum",
+  "norm": "belum",
+  "start": 114.388,
+  "end": 114.728,
+  "score": 0.999,
+  "island": 3
+ },
+ {
+  "text": "ada",
+  "norm": "ada",
+  "start": 114.828,
+  "end": 114.968,
+  "score": 1.0,
+  "island": 3
+ },
+ {
+  "text": "rawatan",
+  "norm": "rawatan",
+  "start": 115.008,
+  "end": 115.368,
+  "score": 0.998,
+  "island": 3
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 115.428,
+  "end": 115.628,
+  "score": 0.992,
+  "island": 3
+ },
+ {
+  "text": "modern",
+  "norm": "modern",
+  "start": 115.809,
+  "end": 116.189,
+  "score": 0.913,
+  "island": 3
+ },
+ {
+  "text": "seperti",
+  "norm": "seperti",
+  "start": 116.229,
+  "end": 116.489,
+  "score": 0.96,
+  "island": 3
+ },
+ {
+  "text": "kita",
+  "norm": "kita",
+  "start": 116.509,
+  "end": 116.669,
+  "score": 0.999,
+  "island": 3
+ },
+ {
+  "text": "gunakan",
+  "norm": "gunakan",
+  "start": 116.709,
+  "end": 117.049,
+  "score": 0.967,
+  "island": 3
+ },
+ {
+  "text": "hari",
+  "norm": "hari",
+  "start": 117.069,
+  "end": 117.229,
+  "score": 0.999,
+  "island": 3
+ },
+ {
+  "text": "ini.",
+  "norm": "ini",
+  "start": 117.27,
+  "end": 117.39,
+  "score": 0.763,
+  "island": 3
+ },
+ {
+  "text": "Kemudian",
+  "norm": "kemudian",
+  "start": 118.491,
+  "end": 118.931,
+  "score": 0.997,
+  "island": 4
+ },
+ {
+  "text": "pada",
+  "norm": "pada",
+  "start": 119.051,
+  "end": 119.231,
+  "score": 0.999,
+  "island": 4
+ },
+ {
+  "text": "tahun",
+  "norm": "tahun",
+  "start": 119.291,
+  "end": 119.532,
+  "score": 0.998,
+  "island": 4
+ },
+ {
+  "text": "1911",
+  "norm": "sembilan belas sebelas",
+  "start": 119.592,
+  "end": 120.432,
+  "score": 0.259,
+  "island": 4
+ },
+ {
+  "text": "di",
+  "norm": "di",
+  "start": 121.453,
+  "end": 121.513,
+  "score": 0.985,
+  "island": 4
+ },
+ {
+  "text": "sebuah",
+  "norm": "sebuah",
+  "start": 121.593,
+  "end": 121.853,
+  "score": 0.996,
+  "island": 4
+ },
+ {
+  "text": "kawasan",
+  "norm": "kawasan",
+  "start": 121.893,
+  "end": 122.334,
+  "score": 0.997,
+  "island": 4
+ },
+ {
+  "text": "bernama",
+  "norm": "bernama",
+  "start": 122.474,
+  "end": 122.834,
+  "score": 0.998,
+  "island": 4
+ },
+ {
+  "text": "Tanjung",
+  "norm": "tanjung",
+  "start": 122.894,
+  "end": 123.094,
+  "score": 0.453,
+  "island": 4
+ },
+ {
+  "text": "Rambutan",
+  "norm": "rambutan",
+  "start": 123.094,
+  "end": 123.514,
+  "score": 0.819,
+  "island": 4
+ },
+ {
+  "text": "sebuah",
+  "norm": "sebuah",
+  "start": 124.035,
+  "end": 124.355,
+  "score": 0.997,
+  "island": 4
+ },
+ {
+  "text": "institusi",
+  "norm": "institusi",
+  "start": 124.495,
+  "end": 125.036,
+  "score": 0.997,
+  "island": 4
+ },
+ {
+  "text": "sekretari",
+  "norm": "sekretari",
+  "start": 125.116,
+  "end": 125.496,
+  "score": 0.549,
+  "island": 4
+ },
+ {
+  "text": "dibangunkan",
+  "norm": "dibangunkan",
+  "start": 125.556,
+  "end": 126.236,
+  "score": 0.964,
+  "island": 4
+ },
+ {
+  "text": "semasa",
+  "norm": "semasa",
+  "start": 126.977,
+  "end": 127.297,
+  "score": 0.994,
+  "island": 4
+ },
+ {
+  "text": "zaman",
+  "norm": "zaman",
+  "start": 127.357,
+  "end": 127.597,
+  "score": 0.789,
+  "island": 4
+ },
+ {
+  "text": "pemerintahan",
+  "norm": "pemerintahan",
+  "start": 127.617,
+  "end": 127.978,
+  "score": 0.61,
+  "island": 4
+ },
+ {
+  "text": "British",
+  "norm": "british",
+  "start": 128.018,
+  "end": 128.438,
+  "score": 0.996,
+  "island": 4
+ },
+ {
+  "text": "nama",
+  "norm": "nama",
+  "start": 128.738,
+  "end": 128.998,
+  "score": 0.997,
+  "island": 4
+ },
+ {
+  "text": "asal",
+  "norm": "asal",
+  "start": 129.099,
+  "end": 129.399,
+  "score": 0.996,
+  "island": 4
+ },
+ {
+  "text": "dia",
+  "norm": "dia",
+  "start": 129.439,
+  "end": 129.499,
+  "score": 0.66,
+  "island": 4
+ },
+ {
+  "text": "adalah",
+  "norm": "adalah",
+  "start": 129.559,
+  "end": 129.839,
+  "score": 0.995,
+  "island": 4
+ },
+ {
+  "text": "Federal",
+  "norm": "federal",
+  "start": 129.959,
+  "end": 130.379,
+  "score": 0.991,
+  "island": 4
+ },
+ {
+  "text": "Lunatic",
+  "norm": "lunatic",
+  "start": 130.459,
+  "end": 130.94,
+  "score": 0.815,
+  "island": 4
+ },
+ {
+  "text": "Asylum.",
+  "norm": "asylum",
+  "start": 131.2,
+  "end": 131.66,
+  "score": 0.531,
+  "island": 4
+ },
+ {
+  "text": "Ha",
+  "norm": "ha",
+  "start": 132.401,
+  "end": 132.501,
+  "score": 0.243,
+  "island": 4
+ },
+ {
+  "text": "perkataan",
+  "norm": "perkataan",
+  "start": 132.961,
+  "end": 133.362,
+  "score": 0.982,
+  "island": 4
+ },
+ {
+  "text": "lunatik",
+  "norm": "lunatik",
+  "start": 133.402,
+  "end": 133.882,
+  "score": 0.963,
+  "island": 4
+ },
+ {
+  "text": "ni",
+  "norm": "ni",
+  "start": 133.962,
+  "end": 134.042,
+  "score": 0.917,
+  "island": 4
+ },
+ {
+  "text": "memang",
+  "norm": "memang",
+  "start": 134.462,
+  "end": 134.803,
+  "score": 0.981,
+  "island": 4
+ },
+ {
+  "text": "digunakan",
+  "norm": "digunakan",
+  "start": 134.823,
+  "end": 135.303,
+  "score": 0.999,
+  "island": 4
+ },
+ {
+  "text": "secara",
+  "norm": "secara",
+  "start": 135.343,
+  "end": 135.563,
+  "score": 0.999,
+  "island": 4
+ },
+ {
+  "text": "rasmi",
+  "norm": "rasmi",
+  "start": 135.623,
+  "end": 135.903,
+  "score": 0.999,
+  "island": 4
+ },
+ {
+  "text": "pada",
+  "norm": "pada",
+  "start": 135.963,
+  "end": 136.104,
+  "score": 0.999,
+  "island": 4
+ },
+ {
+  "text": "zaman",
+  "norm": "zaman",
+  "start": 136.144,
+  "end": 136.364,
+  "score": 0.8,
+  "island": 4
+ },
+ {
+  "text": "tersebut",
+  "norm": "tersebut",
+  "start": 136.384,
+  "end": 136.744,
+  "score": 0.998,
+  "island": 4
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 137.104,
+  "end": 137.224,
+  "score": 0.999,
+  "island": 4
+ },
+ {
+  "text": "hari",
+  "norm": "hari",
+  "start": 137.284,
+  "end": 137.485,
+  "score": 0.996,
+  "island": 4
+ },
+ {
+  "text": "ini",
+  "norm": "ini",
+  "start": 137.565,
+  "end": 137.685,
+  "score": 0.662,
+  "island": 4
+ },
+ {
+  "text": "perkataan",
+  "norm": "perkataan",
+  "start": 137.845,
+  "end": 138.265,
+  "score": 0.964,
+  "island": 4
+ },
+ {
+  "text": "tersebut",
+  "norm": "tersebut",
+  "start": 138.285,
+  "end": 138.685,
+  "score": 0.998,
+  "island": 4
+ },
+ {
+  "text": "dianggap",
+  "norm": "dianggap",
+  "start": 138.846,
+  "end": 139.306,
+  "score": 0.991,
+  "island": 4
+ },
+ {
+  "text": "sebagai",
+  "norm": "sebagai",
+  "start": 139.366,
+  "end": 139.666,
+  "score": 0.999,
+  "island": 4
+ },
+ {
+  "text": "penghinaan",
+  "norm": "penghinaan",
+  "start": 139.766,
+  "end": 140.307,
+  "score": 0.994,
+  "island": 4
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 140.787,
+  "end": 140.907,
+  "score": 0.983,
+  "island": 4
+ },
+ {
+  "text": "tidak",
+  "norm": "tidak",
+  "start": 140.927,
+  "end": 141.107,
+  "score": 0.999,
+  "island": 4
+ },
+ {
+  "text": "sesuai",
+  "norm": "sesuai",
+  "start": 141.147,
+  "end": 141.688,
+  "score": 0.993,
+  "island": 4
+ },
+ {
+  "text": "digunakan",
+  "norm": "digunakan",
+  "start": 141.828,
+  "end": 142.428,
+  "score": 0.998,
+  "island": 4
+ },
+ {
+  "text": "untuk",
+  "norm": "untuk",
+  "start": 142.588,
+  "end": 142.748,
+  "score": 0.999,
+  "island": 4
+ },
+ {
+  "text": "bergambar",
+  "norm": "bergambar",
+  "start": 142.768,
+  "end": 143.109,
+  "score": 0.88,
+  "island": 4
+ },
+ {
+  "text": "dengan",
+  "norm": "dengan",
+  "start": 143.109,
+  "end": 143.249,
+  "score": 0.496,
+  "island": 4
+ },
+ {
+  "text": "pesakit",
+  "norm": "pesakit",
+  "start": 143.269,
+  "end": 143.589,
+  "score": 0.949,
+  "island": 4
+ },
+ {
+  "text": "mental.",
+  "norm": "mental",
+  "start": 143.589,
+  "end": 143.949,
+  "score": 0.629,
+  "island": 4
+ },
+ {
+  "text": "Tapi",
+  "norm": "tapi",
+  "start": 145.491,
+  "end": 145.771,
+  "score": 0.999,
+  "island": 5
+ },
+ {
+  "text": "pada",
+  "norm": "pada",
+  "start": 145.851,
+  "end": 145.991,
+  "score": 0.999,
+  "island": 5
+ },
+ {
+  "text": "waktu",
+  "norm": "waktu",
+  "start": 146.011,
+  "end": 146.231,
+  "score": 0.936,
+  "island": 5
+ },
+ {
+  "text": "itu",
+  "norm": "itu",
+  "start": 146.271,
+  "end": 146.371,
+  "score": 0.665,
+  "island": 5
+ },
+ {
+  "text": "istilah",
+  "norm": "istilah",
+  "start": 146.491,
+  "end": 146.932,
+  "score": 0.996,
+  "island": 5
+ },
+ {
+  "text": "tersebut",
+  "norm": "tersebut",
+  "start": 146.972,
+  "end": 147.392,
+  "score": 0.996,
+  "island": 5
+ },
+ {
+  "text": "masih",
+  "norm": "masih",
+  "start": 147.472,
+  "end": 147.772,
+  "score": 0.999,
+  "island": 5
+ },
+ {
+  "text": "digunakan",
+  "norm": "digunakan",
+  "start": 147.832,
+  "end": 148.312,
+  "score": 0.998,
+  "island": 5
+ },
+ {
+  "text": "dalam",
+  "norm": "dalam",
+  "start": 148.352,
+  "end": 148.532,
+  "score": 0.997,
+  "island": 5
+ },
+ {
+  "text": "sistem",
+  "norm": "sistem",
+  "start": 148.592,
+  "end": 148.933,
+  "score": 0.999,
+  "island": 5
+ },
+ {
+  "text": "perubatan",
+  "norm": "perubatan",
+  "start": 148.993,
+  "end": 149.473,
+  "score": 0.975,
+  "island": 5
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 149.513,
+  "end": 149.613,
+  "score": 0.942,
+  "island": 5
+ },
+ {
+  "text": "pentadbiran.",
+  "norm": "pentadbiran",
+  "start": 149.613,
+  "end": 150.093,
+  "score": 0.774,
+  "island": 5
+ },
+ {
+  "text": "Menariknya",
+  "norm": "menariknya",
+  "start": 150.513,
+  "end": 151.174,
+  "score": 0.905,
+  "island": 5
+ },
+ {
+  "text": "institusi",
+  "norm": "institusi",
+  "start": 151.494,
+  "end": 151.974,
+  "score": 0.999,
+  "island": 5
+ },
+ {
+  "text": "ini",
+  "norm": "ini",
+  "start": 152.034,
+  "end": 152.134,
+  "score": 0.863,
+  "island": 5
+ },
+ {
+  "text": "pada",
+  "norm": "pada",
+  "start": 152.194,
+  "end": 152.354,
+  "score": 0.999,
+  "island": 5
+ },
+ {
+  "text": "peringkat",
+  "norm": "peringkat",
+  "start": 152.394,
+  "end": 152.734,
+  "score": 0.83,
+  "island": 5
+ },
+ {
+  "text": "awal",
+  "norm": "awal",
+  "start": 152.775,
+  "end": 153.015,
+  "score": 0.995,
+  "island": 5
+ },
+ {
+  "text": "hanyalah",
+  "norm": "hanyalah",
+  "start": 153.055,
+  "end": 153.375,
+  "score": 0.982,
+  "island": 5
+ },
+ {
+  "text": "mempunyai",
+  "norm": "mempunyai",
+  "start": 153.395,
+  "end": 153.775,
+  "score": 0.972,
+  "island": 5
+ },
+ {
+  "text": "tiga",
+  "norm": "tiga",
+  "start": 153.855,
+  "end": 154.115,
+  "score": 0.99,
+  "island": 5
+ },
+ {
+  "text": "wad",
+  "norm": "wad",
+  "start": 154.175,
+  "end": 154.295,
+  "score": 0.682,
+  "island": 5
+ },
+ {
+  "text": "lelaki",
+  "norm": "lelaki",
+  "start": 154.315,
+  "end": 154.615,
+  "score": 0.67,
+  "island": 5
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 154.655,
+  "end": 154.735,
+  "score": 0.385,
+  "island": 5
+ },
+ {
+  "text": "satu",
+  "norm": "satu",
+  "start": 154.776,
+  "end": 154.896,
+  "score": 0.715,
+  "island": 5
+ },
+ {
+  "text": "wad",
+  "norm": "wad",
+  "start": 154.896,
+  "end": 154.996,
+  "score": 0.377,
+  "island": 5
+ },
+ {
+  "text": "perempuan",
+  "norm": "perempuan",
+  "start": 155.016,
+  "end": 155.396,
+  "score": 0.762,
+  "island": 5
+ },
+ {
+  "text": "je.",
+  "norm": "je",
+  "start": 155.436,
+  "end": 155.496,
+  "score": 0.463,
+  "island": 5
+ },
+ {
+  "text": "Bayangkan",
+  "norm": "bayangkan",
+  "start": 156.056,
+  "end": 156.596,
+  "score": 0.965,
+  "island": 5
+ },
+ {
+  "text": "institusi",
+  "norm": "institusi",
+  "start": 157.237,
+  "end": 157.737,
+  "score": 0.979,
+  "island": 5
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 157.817,
+  "end": 157.957,
+  "score": 0.992,
+  "island": 5
+ },
+ {
+  "text": "bermula",
+  "norm": "bermula",
+  "start": 157.977,
+  "end": 158.537,
+  "score": 0.998,
+  "island": 5
+ },
+ {
+  "text": "dengan",
+  "norm": "dengan",
+  "start": 158.778,
+  "end": 158.998,
+  "score": 0.986,
+  "island": 5
+ },
+ {
+  "text": "beberapa",
+  "norm": "beberapa",
+  "start": 159.038,
+  "end": 159.458,
+  "score": 0.977,
+  "island": 5
+ },
+ {
+  "text": "wad-wad",
+  "norm": "wadwad",
+  "start": 159.938,
+  "end": 160.318,
+  "score": 0.497,
+  "island": 5
+ },
+ {
+  "text": "sahaja",
+  "norm": "sahaja",
+  "start": 160.378,
+  "end": 160.678,
+  "score": 0.988,
+  "island": 5
+ },
+ {
+  "text": "akhirnya",
+  "norm": "akhirnya",
+  "start": 160.779,
+  "end": 161.079,
+  "score": 0.846,
+  "island": 5
+ },
+ {
+  "text": "menjadi",
+  "norm": "menjadi",
+  "start": 161.119,
+  "end": 161.339,
+  "score": 0.993,
+  "island": 5
+ },
+ {
+  "text": "sebuah",
+  "norm": "sebuah",
+  "start": 161.519,
+  "end": 161.919,
+  "score": 0.998,
+  "island": 5
+ },
+ {
+  "text": "hospital",
+  "norm": "hospital",
+  "start": 161.959,
+  "end": 162.299,
+  "score": 0.977,
+  "island": 5
+ },
+ {
+  "text": "psychiatry",
+  "norm": "psychiatry",
+  "start": 162.299,
+  "end": 162.739,
+  "score": 0.342,
+  "island": 5
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 162.8,
+  "end": 162.94,
+  "score": 0.973,
+  "island": 5
+ },
+ {
+  "text": "paling",
+  "norm": "paling",
+  "start": 163.06,
+  "end": 163.42,
+  "score": 0.994,
+  "island": 5
+ },
+ {
+  "text": "terkenal",
+  "norm": "terkenal",
+  "start": 163.44,
+  "end": 163.84,
+  "score": 0.96,
+  "island": 5
+ },
+ {
+  "text": "dalam",
+  "norm": "dalam",
+  "start": 163.84,
+  "end": 163.98,
+  "score": 0.389,
+  "island": 5
+ },
+ {
+  "text": "sejarah",
+  "norm": "sejarah",
+  "start": 164.04,
+  "end": 164.32,
+  "score": 0.991,
+  "island": 5
+ },
+ {
+  "text": "Malaysia.",
+  "norm": "malaysia",
+  "start": 164.34,
+  "end": 164.66,
+  "score": 0.621,
+  "island": 5
+ },
+ {
+  "text": "Pada",
+  "norm": "pada",
+  "start": 165.401,
+  "end": 165.541,
+  "score": 0.964,
+  "island": 5
+ },
+ {
+  "text": "tahun",
+  "norm": "tahun",
+  "start": 165.581,
+  "end": 165.781,
+  "score": 0.969,
+  "island": 5
+ },
+ {
+  "text": "1928",
+  "norm": "sembilan belas dua puluh lapan",
+  "start": 165.821,
+  "end": 166.581,
+  "score": 0.008,
+  "island": 5
+ },
+ {
+  "text": "nama",
+  "norm": "nama",
+  "start": 166.621,
+  "end": 166.822,
+  "score": 0.988,
+  "island": 5
+ },
+ {
+  "text": "dia",
+  "norm": "dia",
+  "start": 166.882,
+  "end": 166.962,
+  "score": 0.713,
+  "island": 5
+ },
+ {
+  "text": "berubah",
+  "norm": "berubah",
+  "start": 167.002,
+  "end": 167.342,
+  "score": 0.973,
+  "island": 5
+ },
+ {
+  "text": "menjadi",
+  "norm": "menjadi",
+  "start": 167.362,
+  "end": 167.602,
+  "score": 0.998,
+  "island": 5
+ },
+ {
+  "text": "Central",
+  "norm": "central",
+  "start": 167.682,
+  "end": 168.122,
+  "score": 0.84,
+  "island": 5
+ },
+ {
+  "text": "Mental",
+  "norm": "mental",
+  "start": 168.482,
+  "end": 168.782,
+  "score": 0.957,
+  "island": 5
+ },
+ {
+  "text": "Hospital",
+  "norm": "hospital",
+  "start": 168.823,
+  "end": 169.283,
+  "score": 0.979,
+  "island": 5
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 169.363,
+  "end": 169.503,
+  "score": 0.998,
+  "island": 5
+ },
+ {
+  "text": "kemudian",
+  "norm": "kemudian",
+  "start": 169.643,
+  "end": 169.963,
+  "score": 0.988,
+  "island": 5
+ },
+ {
+  "text": "pada",
+  "norm": "pada",
+  "start": 169.983,
+  "end": 170.163,
+  "score": 0.998,
+  "island": 5
+ },
+ {
+  "text": "era",
+  "norm": "era",
+  "start": 170.283,
+  "end": 170.543,
+  "score": 0.995,
+  "island": 5
+ },
+ {
+  "text": "1970-an",
+  "norm": "sembilan belas tujuh puluhan",
+  "start": 170.663,
+  "end": 171.664,
+  "score": 0.208,
+  "island": 5
+ },
+ {
+  "text": "hospital",
+  "norm": "hospital",
+  "start": 172.104,
+  "end": 172.484,
+  "score": 0.936,
+  "island": 5
+ },
+ {
+  "text": "ini",
+  "norm": "ini",
+  "start": 172.524,
+  "end": 172.644,
+  "score": 0.997,
+  "island": 5
+ },
+ {
+  "text": "dikenali",
+  "norm": "dikenali",
+  "start": 172.704,
+  "end": 173.025,
+  "score": 0.997,
+  "island": 5
+ },
+ {
+  "text": "sebagai",
+  "norm": "sebagai",
+  "start": 173.065,
+  "end": 173.365,
+  "score": 0.996,
+  "island": 5
+ },
+ {
+  "text": "hospital",
+  "norm": "hospital",
+  "start": 173.425,
+  "end": 173.885,
+  "score": 0.959,
+  "island": 5
+ },
+ {
+  "text": "bahagia",
+  "norm": "bahagia",
+  "start": 173.925,
+  "end": 174.225,
+  "score": 0.913,
+  "island": 5
+ },
+ {
+  "text": "Ulu",
+  "norm": "ulu",
+  "start": 174.265,
+  "end": 174.365,
+  "score": 0.96,
+  "island": 5
+ },
+ {
+  "text": "Kinta",
+  "norm": "kinta",
+  "start": 174.425,
+  "end": 174.705,
+  "score": 0.996,
+  "island": 5
+ },
+ {
+  "text": "nama",
+  "norm": "nama",
+  "start": 175.466,
+  "end": 175.766,
+  "score": 0.972,
+  "island": 5
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 175.866,
+  "end": 175.986,
+  "score": 0.997,
+  "island": 5
+ },
+ {
+  "text": "mungkin",
+  "norm": "mungkin",
+  "start": 176.006,
+  "end": 176.306,
+  "score": 0.993,
+  "island": 5
+ },
+ {
+  "text": "ramai",
+  "norm": "ramai",
+  "start": 176.406,
+  "end": 176.666,
+  "score": 0.607,
+  "island": 5
+ },
+ {
+  "text": "rakyat",
+  "norm": "rakyat",
+  "start": 176.686,
+  "end": 176.887,
+  "score": 0.608,
+  "island": 5
+ },
+ {
+  "text": "Malaysia",
+  "norm": "malaysia",
+  "start": 176.907,
+  "end": 177.167,
+  "score": 0.618,
+  "island": 5
+ },
+ {
+  "text": "pernah",
+  "norm": "pernah",
+  "start": 177.207,
+  "end": 177.347,
+  "score": 0.658,
+  "island": 5
+ },
+ {
+  "text": "dengar",
+  "norm": "dengar",
+  "start": 177.367,
+  "end": 177.567,
+  "score": 0.762,
+  "island": 5
+ },
+ {
+  "text": "lah",
+  "norm": "lah",
+  "start": 177.587,
+  "end": 177.687,
+  "score": 0.92,
+  "island": 5
+ },
+ {
+  "text": "tapi",
+  "norm": "tapi",
+  "start": 177.747,
+  "end": 177.927,
+  "score": 0.997,
+  "island": 5
+ },
+ {
+  "text": "persoalannya",
+  "norm": "persoalannya",
+  "start": 177.987,
+  "end": 178.547,
+  "score": 0.796,
+  "island": 5
+ },
+ {
+  "text": "macam",
+  "norm": "macam",
+  "start": 179.288,
+  "end": 179.468,
+  "score": 0.624,
+  "island": 5
+ },
+ {
+  "text": "mana",
+  "norm": "mana",
+  "start": 179.488,
+  "end": 179.628,
+  "score": 0.931,
+  "island": 5
+ },
+ {
+  "text": "kehidupan",
+  "norm": "kehidupan",
+  "start": 179.668,
+  "end": 180.088,
+  "score": 0.97,
+  "island": 5
+ },
+ {
+  "text": "bersakit",
+  "norm": "bersakit",
+  "start": 180.108,
+  "end": 180.448,
+  "score": 0.87,
+  "island": 5
+ },
+ {
+  "text": "dalam",
+  "norm": "dalam",
+  "start": 180.468,
+  "end": 180.728,
+  "score": 0.91,
+  "island": 5
+ },
+ {
+  "text": "buat",
+  "norm": "buat",
+  "start": 180.848,
+  "end": 181.049,
+  "score": 0.666,
+  "island": 5
+ },
+ {
+  "text": "psikiatri",
+  "norm": "psikiatri",
+  "start": 181.109,
+  "end": 181.609,
+  "score": 0.574,
+  "island": 5
+ },
+ {
+  "text": "dalam",
+  "norm": "dalam",
+  "start": 181.849,
+  "end": 182.029,
+  "score": 0.784,
+  "island": 5
+ },
+ {
+  "text": "hospital",
+  "norm": "hospital",
+  "start": 182.049,
+  "end": 182.329,
+  "score": 0.853,
+  "island": 5
+ },
+ {
+  "text": "psikiatri",
+  "norm": "psikiatri",
+  "start": 182.329,
+  "end": 182.689,
+  "score": 0.577,
+  "island": 5
+ },
+ {
+  "text": "pada",
+  "norm": "pada",
+  "start": 182.749,
+  "end": 182.889,
+  "score": 0.951,
+  "island": 5
+ },
+ {
+  "text": "zaman",
+  "norm": "zaman",
+  "start": 182.91,
+  "end": 183.11,
+  "score": 0.798,
+  "island": 5
+ },
+ {
+  "text": "dulu",
+  "norm": "dulu",
+  "start": 183.13,
+  "end": 183.33,
+  "score": 0.984,
+  "island": 5
+ },
+ {
+  "text": "sekarang",
+  "norm": "sekarang",
+  "start": 184.299,
+  "end": 184.723,
+  "score": 0.996,
+  "island": 6
+ },
+ {
+  "text": "kalau",
+  "norm": "kalau",
+  "start": 184.803,
+  "end": 185.207,
+  "score": 0.929,
+  "island": 6
+ },
+ {
+  "text": "sakit",
+  "norm": "sakit",
+  "start": 185.95,
+  "end": 186.23,
+  "score": 0.504,
+  "island": 7
+ },
+ {
+  "text": "mengalami",
+  "norm": "mengalami",
+  "start": 186.25,
+  "end": 186.57,
+  "score": 0.721,
+  "island": 7
+ },
+ {
+  "text": "skizofrenia",
+  "norm": "skizofrenia",
+  "start": 186.63,
+  "end": 187.15,
+  "score": 0.381,
+  "island": 7
+ },
+ {
+  "text": "kita",
+  "norm": "kita",
+  "start": 187.23,
+  "end": 187.43,
+  "score": 0.822,
+  "island": 7
+ },
+ {
+  "text": "ada",
+  "norm": "ada",
+  "start": 187.47,
+  "end": 187.59,
+  "score": 0.877,
+  "island": 7
+ },
+ {
+  "text": "ubat",
+  "norm": "ubat",
+  "start": 187.65,
+  "end": 187.93,
+  "score": 0.672,
+  "island": 7
+ },
+ {
+  "text": "antipsikotik",
+  "norm": "antipsikotik",
+  "start": 188.03,
+  "end": 188.67,
+  "score": 0.796,
+  "island": 7
+ },
+ {
+  "text": "kalau",
+  "norm": "kalau",
+  "start": 188.771,
+  "end": 188.951,
+  "score": 0.914,
+  "island": 7
+ },
+ {
+  "text": "kita",
+  "norm": "kita",
+  "start": 188.971,
+  "end": 189.171,
+  "score": 0.991,
+  "island": 7
+ },
+ {
+  "text": "mengalami",
+  "norm": "mengalami",
+  "start": 189.211,
+  "end": 189.631,
+  "score": 0.869,
+  "island": 7
+ },
+ {
+  "text": "kemurungan",
+  "norm": "kemurungan",
+  "start": 189.731,
+  "end": 190.191,
+  "score": 0.964,
+  "island": 7
+ },
+ {
+  "text": "kita",
+  "norm": "kita",
+  "start": 190.511,
+  "end": 190.711,
+  "score": 0.996,
+  "island": 7
+ },
+ {
+  "text": "ada",
+  "norm": "ada",
+  "start": 190.771,
+  "end": 190.911,
+  "score": 0.991,
+  "island": 7
+ },
+ {
+  "text": "ubat",
+  "norm": "ubat",
+  "start": 190.971,
+  "end": 191.131,
+  "score": 0.862,
+  "island": 7
+ },
+ {
+  "text": "antidepressant",
+  "norm": "antidepressant",
+  "start": 191.171,
+  "end": 191.891,
+  "score": 0.661,
+  "island": 7
+ },
+ {
+  "text": "kalau",
+  "norm": "kalau",
+  "start": 191.891,
+  "end": 192.031,
+  "score": 0.762,
+  "island": 7
+ },
+ {
+  "text": "kita",
+  "norm": "kita",
+  "start": 192.051,
+  "end": 192.251,
+  "score": 0.989,
+  "island": 7
+ },
+ {
+  "text": "ada",
+  "norm": "ada",
+  "start": 192.411,
+  "end": 192.531,
+  "score": 0.986,
+  "island": 7
+ },
+ {
+  "text": "bipolar",
+  "norm": "bipolar",
+  "start": 192.571,
+  "end": 192.991,
+  "score": 0.751,
+  "island": 7
+ },
+ {
+  "text": "kita",
+  "norm": "kita",
+  "start": 193.391,
+  "end": 193.631,
+  "score": 0.967,
+  "island": 7
+ },
+ {
+  "text": "ada",
+  "norm": "ada",
+  "start": 193.751,
+  "end": 193.971,
+  "score": 0.967,
+  "island": 7
+ },
+ {
+  "text": "ubat",
+  "norm": "ubat",
+  "start": 194.471,
+  "end": 194.651,
+  "score": 0.906,
+  "island": 7
+ },
+ {
+  "text": "mode",
+  "norm": "mode",
+  "start": 194.711,
+  "end": 194.891,
+  "score": 0.258,
+  "island": 7
+ },
+ {
+  "text": "stabilizer",
+  "norm": "stabilizer",
+  "start": 194.891,
+  "end": 195.471,
+  "score": 0.576,
+  "island": 7
+ },
+ {
+  "text": "tapi",
+  "norm": "tapi",
+  "start": 196.011,
+  "end": 196.232,
+  "score": 0.997,
+  "island": 7
+ },
+ {
+  "text": "cuba",
+  "norm": "cuba",
+  "start": 196.292,
+  "end": 196.452,
+  "score": 0.969,
+  "island": 7
+ },
+ {
+  "text": "bayangkan",
+  "norm": "bayangkan",
+  "start": 196.512,
+  "end": 196.932,
+  "score": 0.966,
+  "island": 7
+ },
+ {
+  "text": "pada",
+  "norm": "pada",
+  "start": 196.992,
+  "end": 197.172,
+  "score": 0.994,
+  "island": 7
+ },
+ {
+  "text": "zaman",
+  "norm": "zaman",
+  "start": 197.232,
+  "end": 197.532,
+  "score": 0.985,
+  "island": 7
+ },
+ {
+  "text": "1911",
+  "norm": "sembilan belas sebelas",
+  "start": 197.572,
+  "end": 198.252,
+  "score": 0.439,
+  "island": 7
+ },
+ {
+  "text": "untuk",
+  "norm": "untuk",
+  "start": 198.252,
+  "end": 198.392,
+  "score": 0.208,
+  "island": 7
+ },
+ {
+  "text": "buat",
+  "norm": "buat",
+  "start": 198.412,
+  "end": 198.512,
+  "score": 0.492,
+  "island": 7
+ },
+ {
+  "text": "ubat",
+  "norm": "ubat",
+  "start": 198.552,
+  "end": 198.752,
+  "score": 0.844,
+  "island": 7
+ },
+ {
+  "text": "ni",
+  "norm": "ni",
+  "start": 198.792,
+  "end": 198.852,
+  "score": 0.965,
+  "island": 7
+ },
+ {
+  "text": "semua",
+  "norm": "semua",
+  "start": 198.892,
+  "end": 199.052,
+  "score": 0.888,
+  "island": 7
+ },
+ {
+  "text": "tak",
+  "norm": "tak",
+  "start": 199.072,
+  "end": 199.152,
+  "score": 0.625,
+  "island": 7
+ },
+ {
+  "text": "ada",
+  "norm": "ada",
+  "start": 199.192,
+  "end": 199.352,
+  "score": 0.929,
+  "island": 7
+ },
+ {
+  "text": "pun",
+  "norm": "pun",
+  "start": 199.472,
+  "end": 199.672,
+  "score": 0.875,
+  "island": 7
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 200.512,
+  "end": 200.612,
+  "score": 0.951,
+  "island": 7
+ },
+ {
+  "text": "rawatan",
+  "norm": "rawatan",
+  "start": 200.672,
+  "end": 201.112,
+  "score": 0.962,
+  "island": 7
+ },
+ {
+  "text": "ketika",
+  "norm": "ketika",
+  "start": 201.172,
+  "end": 201.532,
+  "score": 0.97,
+  "island": 7
+ },
+ {
+  "text": "tu",
+  "norm": "tu",
+  "start": 201.632,
+  "end": 201.732,
+  "score": 0.966,
+  "island": 7
+ },
+ {
+  "text": "sangat-sangat",
+  "norm": "sangatsangat",
+  "start": 201.992,
+  "end": 202.452,
+  "score": 0.916,
+  "island": 7
+ },
+ {
+  "text": "berbeza",
+  "norm": "berbeza",
+  "start": 202.472,
+  "end": 202.852,
+  "score": 0.936,
+  "island": 7
+ },
+ {
+  "text": "Di",
+  "norm": "di",
+  "start": 203.492,
+  "end": 203.572,
+  "score": 0.929,
+  "island": 7
+ },
+ {
+  "text": "seluruh",
+  "norm": "seluruh",
+  "start": 203.652,
+  "end": 204.173,
+  "score": 0.879,
+  "island": 7
+ },
+ {
+  "text": "dunia,",
+  "norm": "dunia",
+  "start": 204.993,
+  "end": 205.333,
+  "score": 0.803,
+  "island": 7
+ },
+ {
+  "text": "hospital",
+  "norm": "hospital",
+  "start": 206.113,
+  "end": 206.473,
+  "score": 0.763,
+  "island": 7
+ },
+ {
+  "text": "psychiatry",
+  "norm": "psychiatry",
+  "start": 206.473,
+  "end": 206.853,
+  "score": 0.299,
+  "island": 7
+ },
+ {
+  "text": "pada",
+  "norm": "pada",
+  "start": 206.913,
+  "end": 207.073,
+  "score": 0.899,
+  "island": 7
+ },
+ {
+  "text": "zaman",
+  "norm": "zaman",
+  "start": 207.113,
+  "end": 207.433,
+  "score": 0.891,
+  "island": 7
+ },
+ {
+  "text": "tersebut",
+  "norm": "tersebut",
+  "start": 207.493,
+  "end": 207.973,
+  "score": 0.952,
+  "island": 7
+ },
+ {
+  "text": "banyak",
+  "norm": "banyak",
+  "start": 208.553,
+  "end": 208.853,
+  "score": 0.951,
+  "island": 7
+ },
+ {
+  "text": "menggunakan",
+  "norm": "menggunakan",
+  "start": 208.893,
+  "end": 209.293,
+  "score": 0.884,
+  "island": 7
+ },
+ {
+  "text": "pendekatan",
+  "norm": "pendekatan",
+  "start": 209.313,
+  "end": 209.873,
+  "score": 0.856,
+  "island": 7
+ },
+ {
+  "text": "berasaskan",
+  "norm": "berasaskan",
+  "start": 210.413,
+  "end": 211.193,
+  "score": 0.975,
+  "island": 7
+ },
+ {
+  "text": "institusi.",
+  "norm": "institusi",
+  "start": 211.314,
+  "end": 211.874,
+  "score": 0.969,
+  "island": 7
+ },
+ {
+  "text": "Pesakit",
+  "norm": "pesakit",
+  "start": 212.594,
+  "end": 213.014,
+  "score": 0.936,
+  "island": 7
+ },
+ {
+  "text": "mungkin",
+  "norm": "mungkin",
+  "start": 213.074,
+  "end": 213.334,
+  "score": 0.997,
+  "island": 7
+ },
+ {
+  "text": "tinggal",
+  "norm": "tinggal",
+  "start": 213.394,
+  "end": 213.834,
+  "score": 0.991,
+  "island": 7
+ },
+ {
+  "text": "untuk",
+  "norm": "untuk",
+  "start": 213.994,
+  "end": 214.234,
+  "score": 0.992,
+  "island": 7
+ },
+ {
+  "text": "tempoh",
+  "norm": "tempoh",
+  "start": 214.314,
+  "end": 214.794,
+  "score": 0.891,
+  "island": 7
+ },
+ {
+  "text": "masa",
+  "norm": "masa",
+  "start": 215.094,
+  "end": 215.354,
+  "score": 0.991,
+  "island": 7
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 215.414,
+  "end": 215.534,
+  "score": 0.895,
+  "island": 7
+ },
+ {
+  "text": "panjang.",
+  "norm": "panjang",
+  "start": 215.534,
+  "end": 215.934,
+  "score": 0.996,
+  "island": 7
+ },
+ {
+  "text": "Ada",
+  "norm": "ada",
+  "start": 216.054,
+  "end": 216.194,
+  "score": 0.985,
+  "island": 7
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 216.194,
+  "end": 216.294,
+  "score": 0.025,
+  "island": 7
+ },
+ {
+  "text": "memerlukan",
+  "norm": "memerlukan",
+  "start": 216.294,
+  "end": 216.654,
+  "score": 0.701,
+  "island": 7
+ },
+ {
+  "text": "bantuan",
+  "norm": "bantuan",
+  "start": 216.694,
+  "end": 217.074,
+  "score": 0.995,
+  "island": 7
+ },
+ {
+  "text": "untuk",
+  "norm": "untuk",
+  "start": 217.134,
+  "end": 217.294,
+  "score": 0.984,
+  "island": 7
+ },
+ {
+  "text": "makan,",
+  "norm": "makan",
+  "start": 217.334,
+  "end": 217.814,
+  "score": 0.99,
+  "island": 7
+ },
+ {
+  "text": "mandi,",
+  "norm": "mandi",
+  "start": 217.854,
+  "end": 218.214,
+  "score": 0.996,
+  "island": 7
+ },
+ {
+  "text": "menguruskan",
+  "norm": "menguruskan",
+  "start": 218.895,
+  "end": 219.355,
+  "score": 0.989,
+  "island": 7
+ },
+ {
+  "text": "kehidupan",
+  "norm": "kehidupan",
+  "start": 219.415,
+  "end": 219.735,
+  "score": 0.765,
+  "island": 7
+ },
+ {
+  "text": "harian,",
+  "norm": "harian",
+  "start": 219.775,
+  "end": 220.175,
+  "score": 0.971,
+  "island": 7
+ },
+ {
+  "text": "aktiviti",
+  "norm": "aktiviti",
+  "start": 220.395,
+  "end": 220.795,
+  "score": 0.709,
+  "island": 7
+ },
+ {
+  "text": "rutin",
+  "norm": "rutin",
+  "start": 220.855,
+  "end": 221.295,
+  "score": 0.941,
+  "island": 7
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 221.375,
+  "end": 221.535,
+  "score": 0.99,
+  "island": 7
+ },
+ {
+  "text": "pekerjaan",
+  "norm": "pekerjaan",
+  "start": 222.295,
+  "end": 222.915,
+  "score": 0.972,
+  "island": 7
+ },
+ {
+  "text": "tertentu",
+  "norm": "tertentu",
+  "start": 222.955,
+  "end": 223.415,
+  "score": 0.944,
+  "island": 7
+ },
+ {
+  "text": "juga",
+  "norm": "juga",
+  "start": 223.515,
+  "end": 223.755,
+  "score": 0.992,
+  "island": 7
+ },
+ {
+  "text": "digunakan",
+  "norm": "digunakan",
+  "start": 224.355,
+  "end": 224.855,
+  "score": 0.99,
+  "island": 7
+ },
+ {
+  "text": "dalam",
+  "norm": "dalam",
+  "start": 224.875,
+  "end": 225.075,
+  "score": 0.819,
+  "island": 7
+ },
+ {
+  "text": "setengah",
+  "norm": "setengah",
+  "start": 225.135,
+  "end": 225.555,
+  "score": 0.812,
+  "island": 7
+ },
+ {
+  "text": "institusi",
+  "norm": "institusi",
+  "start": 225.615,
+  "end": 226.115,
+  "score": 0.993,
+  "island": 7
+ },
+ {
+  "text": "sebagai",
+  "norm": "sebagai",
+  "start": 226.215,
+  "end": 226.696,
+  "score": 0.993,
+  "island": 7
+ },
+ {
+  "text": "sebahagian",
+  "norm": "sebahagian",
+  "start": 226.896,
+  "end": 227.296,
+  "score": 0.959,
+  "island": 7
+ },
+ {
+  "text": "daripada",
+  "norm": "daripada",
+  "start": 227.296,
+  "end": 227.496,
+  "score": 0.62,
+  "island": 7
+ },
+ {
+  "text": "perjagaan.",
+  "norm": "perjagaan",
+  "start": 227.536,
+  "end": 228.016,
+  "score": 0.951,
+  "island": 7
+ },
+ {
+  "text": "Namun",
+  "norm": "namun",
+  "start": 228.296,
+  "end": 228.656,
+  "score": 0.811,
+  "island": 7
+ },
+ {
+  "text": "pendekatan",
+  "norm": "pendekatan",
+  "start": 228.736,
+  "end": 229.296,
+  "score": 0.916,
+  "island": 7
+ },
+ {
+  "text": "psikiatri",
+  "norm": "psikiatri",
+  "start": 230.016,
+  "end": 230.456,
+  "score": 0.624,
+  "island": 7
+ },
+ {
+  "text": "pada",
+  "norm": "pada",
+  "start": 230.516,
+  "end": 230.636,
+  "score": 0.989,
+  "island": 7
+ },
+ {
+  "text": "zaman",
+  "norm": "zaman",
+  "start": 230.676,
+  "end": 230.896,
+  "score": 0.985,
+  "island": 7
+ },
+ {
+  "text": "dulu",
+  "norm": "dulu",
+  "start": 230.936,
+  "end": 231.136,
+  "score": 0.773,
+  "island": 7
+ },
+ {
+  "text": "bukannya",
+  "norm": "bukannya",
+  "start": 231.976,
+  "end": 232.316,
+  "score": 0.961,
+  "island": 7
+ },
+ {
+  "text": "semuanya",
+  "norm": "semuanya",
+  "start": 232.376,
+  "end": 232.716,
+  "score": 0.949,
+  "island": 7
+ },
+ {
+  "text": "sempurna.",
+  "norm": "sempurna",
+  "start": 232.756,
+  "end": 233.136,
+  "score": 0.976,
+  "island": 7
+ },
+ {
+  "text": "Ada",
+  "norm": "ada",
+  "start": 233.356,
+  "end": 233.496,
+  "score": 0.992,
+  "island": 7
+ },
+ {
+  "text": "kaedah",
+  "norm": "kaedah",
+  "start": 233.536,
+  "end": 233.957,
+  "score": 0.963,
+  "island": 7
+ },
+ {
+  "text": "rawatan",
+  "norm": "rawatan",
+  "start": 234.277,
+  "end": 234.557,
+  "score": 0.99,
+  "island": 7
+ },
+ {
+  "text": "lama",
+  "norm": "lama",
+  "start": 234.597,
+  "end": 234.877,
+  "score": 0.85,
+  "island": 7
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 235.077,
+  "end": 235.277,
+  "score": 0.985,
+  "island": 7
+ },
+ {
+  "text": "kemudiannya",
+  "norm": "kemudiannya",
+  "start": 235.417,
+  "end": 235.877,
+  "score": 0.942,
+  "island": 7
+ },
+ {
+  "text": "ditinggalkan",
+  "norm": "ditinggalkan",
+  "start": 235.917,
+  "end": 236.357,
+  "score": 0.962,
+  "island": 7
+ },
+ {
+  "text": "sebab",
+  "norm": "sebab",
+  "start": 236.417,
+  "end": 236.597,
+  "score": 0.989,
+  "island": 7
+ },
+ {
+  "text": "bukti",
+  "norm": "bukti",
+  "start": 236.637,
+  "end": 236.897,
+  "score": 0.881,
+  "island": 7
+ },
+ {
+  "text": "keberkesanan",
+  "norm": "keberkesanan",
+  "start": 236.957,
+  "end": 237.557,
+  "score": 0.955,
+  "island": 7
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 237.637,
+  "end": 237.817,
+  "score": 0.949,
+  "island": 7
+ },
+ {
+  "text": "lemah",
+  "norm": "lemah",
+  "start": 237.897,
+  "end": 238.237,
+  "score": 0.998,
+  "island": 7
+ },
+ {
+  "text": "ataupun",
+  "norm": "ataupun",
+  "start": 238.397,
+  "end": 238.677,
+  "score": 0.796,
+  "island": 7
+ },
+ {
+  "text": "risiko",
+  "norm": "risiko",
+  "start": 238.697,
+  "end": 238.997,
+  "score": 0.933,
+  "island": 7
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 239.037,
+  "end": 239.137,
+  "score": 0.958,
+  "island": 7
+ },
+ {
+  "text": "tinggi.",
+  "norm": "tinggi",
+  "start": 239.137,
+  "end": 239.397,
+  "score": 0.998,
+  "island": 7
+ },
+ {
+  "text": "Dan",
+  "norm": "dan",
+  "start": 240.217,
+  "end": 240.377,
+  "score": 0.992,
+  "island": 7
+ },
+ {
+  "text": "penting",
+  "norm": "penting",
+  "start": 240.437,
+  "end": 244.718,
+  "score": 0.981,
+  "island": 7
+ },
+ {
+  "text": "untuk",
+  "norm": "untuk",
+  "start": 244.738,
+  "end": 244.898,
+  "score": 0.953,
+  "island": 7
+ },
+ {
+  "text": "kita",
+  "norm": "kita",
+  "start": 244.918,
+  "end": 245.058,
+  "score": 0.992,
+  "island": 7
+ },
+ {
+  "text": "faham",
+  "norm": "faham",
+  "start": 245.098,
+  "end": 245.378,
+  "score": 0.98,
+  "island": 7
+ },
+ {
+  "text": "amalan",
+  "norm": "amalan",
+  "start": 245.518,
+  "end": 245.758,
+  "score": 0.82,
+  "island": 7
+ },
+ {
+  "text": "rawatan",
+  "norm": "rawatan",
+  "start": 245.798,
+  "end": 246.138,
+  "score": 0.985,
+  "island": 7
+ },
+ {
+  "text": "berbeza",
+  "norm": "berbeza",
+  "start": 246.158,
+  "end": 246.518,
+  "score": 0.985,
+  "island": 7
+ },
+ {
+  "text": "mengikut",
+  "norm": "mengikut",
+  "start": 246.678,
+  "end": 246.978,
+  "score": 0.928,
+  "island": 7
+ },
+ {
+  "text": "hospital",
+  "norm": "hospital",
+  "start": 247.018,
+  "end": 247.318,
+  "score": 0.944,
+  "island": 7
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 247.338,
+  "end": 247.438,
+  "score": 0.968,
+  "island": 7
+ },
+ {
+  "text": "zaman.",
+  "norm": "zaman",
+  "start": 247.458,
+  "end": 247.698,
+  "score": 0.995,
+  "island": 7
+ },
+ {
+  "text": "Kita",
+  "norm": "kita",
+  "start": 247.738,
+  "end": 247.858,
+  "score": 0.993,
+  "island": 7
+ },
+ {
+  "text": "tak",
+  "norm": "tak",
+  "start": 247.898,
+  "end": 247.978,
+  "score": 0.771,
+  "island": 7
+ },
+ {
+  "text": "boleh",
+  "norm": "boleh",
+  "start": 247.998,
+  "end": 248.158,
+  "score": 0.875,
+  "island": 7
+ },
+ {
+  "text": "anggap",
+  "norm": "anggap",
+  "start": 248.218,
+  "end": 248.518,
+  "score": 0.95,
+  "island": 7
+ },
+ {
+  "text": "semua",
+  "norm": "semua",
+  "start": 248.578,
+  "end": 248.759,
+  "score": 0.961,
+  "island": 7
+ },
+ {
+  "text": "pesakit",
+  "norm": "pesakit",
+  "start": 248.799,
+  "end": 249.179,
+  "score": 0.965,
+  "island": 7
+ },
+ {
+  "text": "ini",
+  "norm": "ini",
+  "start": 249.199,
+  "end": 249.299,
+  "score": 0.592,
+  "island": 7
+ },
+ {
+  "text": "mengalami",
+  "norm": "mengalami",
+  "start": 249.379,
+  "end": 249.699,
+  "score": 0.987,
+  "island": 7
+ },
+ {
+  "text": "perkara",
+  "norm": "perkara",
+  "start": 249.739,
+  "end": 249.979,
+  "score": 0.907,
+  "island": 7
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 249.979,
+  "end": 250.079,
+  "score": 0.677,
+  "island": 7
+ },
+ {
+  "text": "sama.",
+  "norm": "sama",
+  "start": 250.099,
+  "end": 250.339,
+  "score": 0.995,
+  "island": 7
+ },
+ {
+  "text": "Dan",
+  "norm": "dan",
+  "start": 250.839,
+  "end": 250.959,
+  "score": 0.962,
+  "island": 7
+ },
+ {
+  "text": "satu",
+  "norm": "satu",
+  "start": 250.999,
+  "end": 251.179,
+  "score": 0.84,
+  "island": 7
+ },
+ {
+  "text": "perkara",
+  "norm": "perkara",
+  "start": 251.239,
+  "end": 251.619,
+  "score": 0.726,
+  "island": 7
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 251.659,
+  "end": 251.759,
+  "score": 0.881,
+  "island": 7
+ },
+ {
+  "text": "jelas",
+  "norm": "jelas",
+  "start": 251.779,
+  "end": 252.159,
+  "score": 0.953,
+  "island": 7
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 253.099,
+  "end": 253.199,
+  "score": 0.938,
+  "island": 7
+ },
+ {
+  "text": "satu",
+  "norm": "satu",
+  "start": 253.219,
+  "end": 253.379,
+  "score": 0.984,
+  "island": 7
+ },
+ {
+  "text": "perkara",
+  "norm": "perkara",
+  "start": 253.399,
+  "end": 253.739,
+  "score": 0.936,
+  "island": 7
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 253.779,
+  "end": 253.899,
+  "score": 0.972,
+  "island": 7
+ },
+ {
+  "text": "penting,",
+  "norm": "penting",
+  "start": 253.919,
+  "end": 254.379,
+  "score": 0.964,
+  "island": 7
+ },
+ {
+  "text": "rawatan",
+  "norm": "rawatan",
+  "start": 255.019,
+  "end": 255.279,
+  "score": 0.969,
+  "island": 7
+ },
+ {
+  "text": "psikiatri",
+  "norm": "psikiatri",
+  "start": 255.279,
+  "end": 255.699,
+  "score": 0.61,
+  "island": 7
+ },
+ {
+  "text": "waktu",
+  "norm": "waktu",
+  "start": 256.039,
+  "end": 256.28,
+  "score": 0.932,
+  "island": 7
+ },
+ {
+  "text": "itu",
+  "norm": "itu",
+  "start": 256.32,
+  "end": 256.42,
+  "score": 0.611,
+  "island": 7
+ },
+ {
+  "text": "jauh",
+  "norm": "jauh",
+  "start": 256.82,
+  "end": 257.14,
+  "score": 0.736,
+  "island": 7
+ },
+ {
+  "text": "daripada",
+  "norm": "daripada",
+  "start": 257.18,
+  "end": 257.52,
+  "score": 0.934,
+  "island": 7
+ },
+ {
+  "text": "apa",
+  "norm": "apa",
+  "start": 257.6,
+  "end": 257.84,
+  "score": 0.974,
+  "island": 7
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 257.88,
+  "end": 258.0,
+  "score": 0.958,
+  "island": 7
+ },
+ {
+  "text": "kita",
+  "norm": "kita",
+  "start": 258.02,
+  "end": 258.18,
+  "score": 0.853,
+  "island": 7
+ },
+ {
+  "text": "kenal",
+  "norm": "kenal",
+  "start": 258.22,
+  "end": 258.5,
+  "score": 0.944,
+  "island": 7
+ },
+ {
+  "text": "hari",
+  "norm": "hari",
+  "start": 258.54,
+  "end": 258.7,
+  "score": 0.987,
+  "island": 7
+ },
+ {
+  "text": "ini.",
+  "norm": "ini",
+  "start": 258.72,
+  "end": 258.84,
+  "score": 0.659,
+  "island": 7
+ },
+ {
+  "text": "And",
+  "norm": "and",
+  "start": 261.021,
+  "end": 261.141,
+  "score": 0.491,
+  "island": 8
+ },
+ {
+  "text": "then,",
+  "norm": "then",
+  "start": 261.141,
+  "end": 261.321,
+  "score": 0.406,
+  "island": 8
+ },
+ {
+  "text": "mulalah",
+  "norm": "mulalah",
+  "start": 262.822,
+  "end": 263.182,
+  "score": 0.996,
+  "island": 8
+ },
+ {
+  "text": "satu",
+  "norm": "satu",
+  "start": 263.242,
+  "end": 263.482,
+  "score": 0.998,
+  "island": 8
+ },
+ {
+  "text": "perubahan",
+  "norm": "perubahan",
+  "start": 263.542,
+  "end": 263.922,
+  "score": 0.961,
+  "island": 8
+ },
+ {
+  "text": "besar",
+  "norm": "besar",
+  "start": 264.003,
+  "end": 264.403,
+  "score": 0.927,
+  "island": 8
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 264.543,
+  "end": 264.643,
+  "score": 0.997,
+  "island": 8
+ },
+ {
+  "text": "berlaku",
+  "norm": "berlaku",
+  "start": 264.663,
+  "end": 265.023,
+  "score": 0.986,
+  "island": 8
+ },
+ {
+  "text": "dalam",
+  "norm": "dalam",
+  "start": 265.083,
+  "end": 265.243,
+  "score": 0.974,
+  "island": 8
+ },
+ {
+  "text": "sejarah",
+  "norm": "sejarah",
+  "start": 265.283,
+  "end": 265.683,
+  "score": 0.997,
+  "island": 8
+ },
+ {
+  "text": "perubatan",
+  "norm": "perubatan",
+  "start": 265.723,
+  "end": 266.104,
+  "score": 0.956,
+  "island": 8
+ },
+ {
+  "text": "dunia.",
+  "norm": "dunia",
+  "start": 266.124,
+  "end": 266.384,
+  "score": 0.947,
+  "island": 8
+ },
+ {
+  "text": "Sekitar",
+  "norm": "sekitar",
+  "start": 266.524,
+  "end": 266.824,
+  "score": 0.889,
+  "island": 8
+ },
+ {
+  "text": "tahun",
+  "norm": "tahun",
+  "start": 266.864,
+  "end": 267.144,
+  "score": 0.999,
+  "island": 8
+ },
+ {
+  "text": "1950-an,",
+  "norm": "sembilan belas lima puluhan",
+  "start": 267.204,
+  "end": 268.125,
+  "score": 0.134,
+  "island": 8
+ },
+ {
+  "text": "ubat",
+  "norm": "ubat",
+  "start": 268.785,
+  "end": 269.025,
+  "score": 0.984,
+  "island": 8
+ },
+ {
+  "text": "antipsikotik",
+  "norm": "antipsikotik",
+  "start": 269.065,
+  "end": 269.685,
+  "score": 0.74,
+  "island": 8
+ },
+ {
+  "text": "seperti",
+  "norm": "seperti",
+  "start": 269.765,
+  "end": 270.126,
+  "score": 0.872,
+  "island": 8
+ },
+ {
+  "text": "clopramazine",
+  "norm": "clopramazine",
+  "start": 270.266,
+  "end": 271.086,
+  "score": 0.641,
+  "island": 8
+ },
+ {
+  "text": "mula",
+  "norm": "mula",
+  "start": 271.086,
+  "end": 271.246,
+  "score": 0.999,
+  "island": 8
+ },
+ {
+  "text": "diperkenalkan.",
+  "norm": "diperkenalkan",
+  "start": 271.286,
+  "end": 272.067,
+  "score": 0.944,
+  "island": 8
+ },
+ {
+  "text": "Ini",
+  "norm": "ini",
+  "start": 272.187,
+  "end": 272.327,
+  "score": 0.998,
+  "island": 8
+ },
+ {
+  "text": "merupakan",
+  "norm": "merupakan",
+  "start": 272.367,
+  "end": 272.687,
+  "score": 0.75,
+  "island": 8
+ },
+ {
+  "text": "salah",
+  "norm": "salah",
+  "start": 272.727,
+  "end": 272.887,
+  "score": 0.961,
+  "island": 8
+ },
+ {
+  "text": "satu",
+  "norm": "satu",
+  "start": 272.907,
+  "end": 273.107,
+  "score": 0.996,
+  "island": 8
+ },
+ {
+  "text": "titik",
+  "norm": "titik",
+  "start": 273.247,
+  "end": 273.667,
+  "score": 0.885,
+  "island": 8
+ },
+ {
+  "text": "perubahan",
+  "norm": "perubahan",
+  "start": 273.888,
+  "end": 274.428,
+  "score": 0.965,
+  "island": 8
+ },
+ {
+  "text": "paling",
+  "norm": "paling",
+  "start": 274.488,
+  "end": 274.688,
+  "score": 0.974,
+  "island": 8
+ },
+ {
+  "text": "penting",
+  "norm": "penting",
+  "start": 274.728,
+  "end": 275.108,
+  "score": 0.993,
+  "island": 8
+ },
+ {
+  "text": "dalam",
+  "norm": "dalam",
+  "start": 275.148,
+  "end": 275.308,
+  "score": 0.944,
+  "island": 8
+ },
+ {
+  "text": "sejarah",
+  "norm": "sejarah",
+  "start": 275.328,
+  "end": 275.669,
+  "score": 0.995,
+  "island": 8
+ },
+ {
+  "text": "psikiatri",
+  "norm": "psikiatri",
+  "start": 275.689,
+  "end": 276.089,
+  "score": 0.462,
+  "island": 8
+ },
+ {
+  "text": "ini",
+  "norm": "ini",
+  "start": 276.109,
+  "end": 276.269,
+  "score": 0.746,
+  "island": 8
+ },
+ {
+  "text": "dekat",
+  "norm": "dekat",
+  "start": 277.029,
+  "end": 277.209,
+  "score": 0.529,
+  "island": 8
+ },
+ {
+  "text": "Malaysia.",
+  "norm": "malaysia",
+  "start": 277.229,
+  "end": 277.509,
+  "score": 0.369,
+  "island": 8
+ },
+ {
+  "text": "Malaysia.",
+  "norm": "malaysia",
+  "start": 277.509,
+  "end": 278.49,
+  "score": 0.12,
+  "island": 8
+ },
+ {
+  "text": "Sebelum",
+  "norm": "sebelum",
+  "start": 281.411,
+  "end": 281.691,
+  "score": 0.354,
+  "island": 9
+ },
+ {
+  "text": "tu",
+  "norm": "tu",
+  "start": 281.751,
+  "end": 281.831,
+  "score": 0.362,
+  "island": 9
+ },
+ {
+  "text": "doktor",
+  "norm": "doktor",
+  "start": 281.991,
+  "end": 282.431,
+  "score": 0.399,
+  "island": 9
+ },
+ {
+  "text": "punya",
+  "norm": "punya",
+  "start": 282.571,
+  "end": 282.751,
+  "score": 0.798,
+  "island": 9
+ },
+ {
+  "text": "pilihan",
+  "norm": "pilihan",
+  "start": 282.831,
+  "end": 283.152,
+  "score": 0.943,
+  "island": 9
+ },
+ {
+  "text": "sangat",
+  "norm": "sangat",
+  "start": 283.192,
+  "end": 283.412,
+  "score": 0.974,
+  "island": 9
+ },
+ {
+  "text": "terhad",
+  "norm": "terhad",
+  "start": 283.432,
+  "end": 283.792,
+  "score": 0.813,
+  "island": 9
+ },
+ {
+  "text": "kalau",
+  "norm": "kalau",
+  "start": 283.872,
+  "end": 284.012,
+  "score": 0.433,
+  "island": 9
+ },
+ {
+  "text": "nak",
+  "norm": "nak",
+  "start": 284.012,
+  "end": 284.112,
+  "score": 0.948,
+  "island": 9
+ },
+ {
+  "text": "kawal",
+  "norm": "kawal",
+  "start": 284.152,
+  "end": 284.372,
+  "score": 0.782,
+  "island": 9
+ },
+ {
+  "text": "simptom",
+  "norm": "simptom",
+  "start": 284.392,
+  "end": 284.672,
+  "score": 0.835,
+  "island": 9
+ },
+ {
+  "text": "psikosis.",
+  "norm": "psikosis",
+  "start": 284.672,
+  "end": 285.152,
+  "score": 0.678,
+  "island": 9
+ },
+ {
+  "text": "Dengan",
+  "norm": "dengan",
+  "start": 285.372,
+  "end": 285.592,
+  "score": 0.963,
+  "island": 9
+ },
+ {
+  "text": "adanya",
+  "norm": "adanya",
+  "start": 286.172,
+  "end": 286.573,
+  "score": 0.985,
+  "island": 9
+ },
+ {
+  "text": "ubat",
+  "norm": "ubat",
+  "start": 286.633,
+  "end": 286.813,
+  "score": 0.983,
+  "island": 9
+ },
+ {
+  "text": "antipsikotik,",
+  "norm": "antipsikotik",
+  "start": 286.853,
+  "end": 287.493,
+  "score": 0.744,
+  "island": 9
+ },
+ {
+  "text": "ramai",
+  "norm": "ramai",
+  "start": 287.933,
+  "end": 288.193,
+  "score": 0.871,
+  "island": 9
+ },
+ {
+  "text": "pesakit",
+  "norm": "pesakit",
+  "start": 288.233,
+  "end": 288.653,
+  "score": 0.988,
+  "island": 9
+ },
+ {
+  "text": "mempunyai",
+  "norm": "mempunyai",
+  "start": 289.353,
+  "end": 289.793,
+  "score": 0.97,
+  "island": 9
+ },
+ {
+  "text": "peluang",
+  "norm": "peluang",
+  "start": 289.873,
+  "end": 290.274,
+  "score": 0.986,
+  "island": 9
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 290.334,
+  "end": 290.474,
+  "score": 0.991,
+  "island": 9
+ },
+ {
+  "text": "lebih",
+  "norm": "lebih",
+  "start": 290.534,
+  "end": 290.894,
+  "score": 0.989,
+  "island": 9
+ },
+ {
+  "text": "baik",
+  "norm": "baik",
+  "start": 291.294,
+  "end": 291.574,
+  "score": 0.997,
+  "island": 9
+ },
+ {
+  "text": "untuk",
+  "norm": "untuk",
+  "start": 291.694,
+  "end": 291.954,
+  "score": 0.999,
+  "island": 9
+ },
+ {
+  "text": "mengawal",
+  "norm": "mengawal",
+  "start": 291.974,
+  "end": 292.274,
+  "score": 0.967,
+  "island": 9
+ },
+ {
+  "text": "halusinasi,",
+  "norm": "halusinasi",
+  "start": 292.294,
+  "end": 292.834,
+  "score": 0.886,
+  "island": 9
+ },
+ {
+  "text": "dilusi",
+  "norm": "dilusi",
+  "start": 292.994,
+  "end": 293.394,
+  "score": 0.997,
+  "island": 9
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 293.554,
+  "end": 293.634,
+  "score": 0.998,
+  "island": 9
+ },
+ {
+  "text": "juga",
+  "norm": "juga",
+  "start": 293.674,
+  "end": 293.815,
+  "score": 0.956,
+  "island": 9
+ },
+ {
+  "text": "gangguan",
+  "norm": "gangguan",
+  "start": 293.875,
+  "end": 294.135,
+  "score": 0.724,
+  "island": 9
+ },
+ {
+  "text": "pemikiran.",
+  "norm": "pemikiran",
+  "start": 294.155,
+  "end": 294.615,
+  "score": 0.997,
+  "island": 9
+ },
+ {
+  "text": "Pada",
+  "norm": "pada",
+  "start": 295.195,
+  "end": 295.355,
+  "score": 0.719,
+  "island": 9
+ },
+ {
+  "text": "masa",
+  "norm": "masa",
+  "start": 295.375,
+  "end": 295.555,
+  "score": 0.831,
+  "island": 9
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 295.555,
+  "end": 295.635,
+  "score": 0.929,
+  "island": 9
+ },
+ {
+  "text": "sama",
+  "norm": "sama",
+  "start": 295.635,
+  "end": 295.835,
+  "score": 0.9,
+  "island": 9
+ },
+ {
+  "text": "juga,",
+  "norm": "juga",
+  "start": 295.895,
+  "end": 296.055,
+  "score": 0.995,
+  "island": 9
+ },
+ {
+  "text": "ubat",
+  "norm": "ubat",
+  "start": 296.755,
+  "end": 296.995,
+  "score": 0.989,
+  "island": 9
+ },
+ {
+  "text": "antidepressant,",
+  "norm": "antidepressant",
+  "start": 297.075,
+  "end": 297.976,
+  "score": 0.673,
+  "island": 9
+ },
+ {
+  "text": "rawatan",
+  "norm": "rawatan",
+  "start": 298.436,
+  "end": 298.736,
+  "score": 0.979,
+  "island": 9
+ },
+ {
+  "text": "psikotik",
+  "norm": "psikotik",
+  "start": 298.756,
+  "end": 299.136,
+  "score": 0.361,
+  "island": 9
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 299.156,
+  "end": 299.316,
+  "score": 0.393,
+  "island": 9
+ },
+ {
+  "text": "lain",
+  "norm": "lain",
+  "start": 299.336,
+  "end": 299.576,
+  "score": 0.984,
+  "island": 9
+ },
+ {
+  "text": "semakin",
+  "norm": "semakin",
+  "start": 299.836,
+  "end": 300.176,
+  "score": 0.96,
+  "island": 9
+ },
+ {
+  "text": "berkembang.",
+  "norm": "berkembang",
+  "start": 300.216,
+  "end": 300.656,
+  "score": 0.968,
+  "island": 9
+ },
+ {
+  "text": "Rawatan",
+  "norm": "rawatan",
+  "start": 300.977,
+  "end": 301.497,
+  "score": 0.971,
+  "island": 9
+ },
+ {
+  "text": "masih",
+  "norm": "masih",
+  "start": 301.537,
+  "end": 301.917,
+  "score": 0.984,
+  "island": 9
+ },
+ {
+  "text": "mempunyai",
+  "norm": "mempunyai",
+  "start": 301.977,
+  "end": 302.377,
+  "score": 0.992,
+  "island": 9
+ },
+ {
+  "text": "risiko",
+  "norm": "risiko",
+  "start": 302.457,
+  "end": 302.857,
+  "score": 0.978,
+  "island": 9
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 303.577,
+  "end": 303.697,
+  "score": 0.997,
+  "island": 9
+ },
+ {
+  "text": "kesan",
+  "norm": "kesan",
+  "start": 303.757,
+  "end": 303.937,
+  "score": 0.917,
+  "island": 9
+ },
+ {
+  "text": "sampingan",
+  "norm": "sampingan",
+  "start": 303.977,
+  "end": 304.317,
+  "score": 0.819,
+  "island": 9
+ },
+ {
+  "text": "tapi",
+  "norm": "tapi",
+  "start": 304.357,
+  "end": 304.598,
+  "score": 0.997,
+  "island": 9
+ },
+ {
+  "text": "pilihan",
+  "norm": "pilihan",
+  "start": 304.698,
+  "end": 305.298,
+  "score": 0.988,
+  "island": 9
+ },
+ {
+  "text": "untuk",
+  "norm": "untuk",
+  "start": 305.438,
+  "end": 305.778,
+  "score": 0.995,
+  "island": 9
+ },
+ {
+  "text": "bantu",
+  "norm": "bantu",
+  "start": 305.838,
+  "end": 306.218,
+  "score": 0.996,
+  "island": 9
+ },
+ {
+  "text": "pesakit",
+  "norm": "pesakit",
+  "start": 306.318,
+  "end": 306.878,
+  "score": 0.961,
+  "island": 9
+ },
+ {
+  "text": "semakin",
+  "norm": "semakin",
+  "start": 307.418,
+  "end": 307.858,
+  "score": 0.971,
+  "island": 9
+ },
+ {
+  "text": "berkembang",
+  "norm": "berkembang",
+  "start": 307.898,
+  "end": 308.419,
+  "score": 0.995,
+  "island": 9
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 308.479,
+  "end": 308.579,
+  "score": 0.996,
+  "island": 9
+ },
+ {
+  "text": "perkembangan",
+  "norm": "perkembangan",
+  "start": 308.599,
+  "end": 309.019,
+  "score": 0.924,
+  "island": 9
+ },
+ {
+  "text": "inilah",
+  "norm": "inilah",
+  "start": 309.099,
+  "end": 309.419,
+  "score": 0.997,
+  "island": 9
+ },
+ {
+  "text": "membuka",
+  "norm": "membuka",
+  "start": 309.479,
+  "end": 309.859,
+  "score": 0.963,
+  "island": 9
+ },
+ {
+  "text": "jalan",
+  "norm": "jalan",
+  "start": 309.939,
+  "end": 310.379,
+  "score": 0.993,
+  "island": 9
+ },
+ {
+  "text": "kepada",
+  "norm": "kepada",
+  "start": 310.539,
+  "end": 310.779,
+  "score": 0.998,
+  "island": 9
+ },
+ {
+  "text": "perubahan",
+  "norm": "perubahan",
+  "start": 310.819,
+  "end": 311.279,
+  "score": 0.971,
+  "island": 9
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 311.359,
+  "end": 311.519,
+  "score": 0.953,
+  "island": 9
+ },
+ {
+  "text": "lebih",
+  "norm": "lebih",
+  "start": 311.539,
+  "end": 311.7,
+  "score": 0.957,
+  "island": 9
+ },
+ {
+  "text": "besar",
+  "norm": "besar",
+  "start": 311.72,
+  "end": 311.96,
+  "score": 0.909,
+  "island": 9
+ },
+ {
+  "text": "sebenarnya",
+  "norm": "sebenarnya",
+  "start": 312.04,
+  "end": 312.34,
+  "score": 0.684,
+  "island": 9
+ },
+ {
+  "text": "pesakit",
+  "norm": "pesakit",
+  "start": 314.208,
+  "end": 314.751,
+  "score": 0.384,
+  "island": 10
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 314.871,
+  "end": 314.992,
+  "score": 0.812,
+  "island": 10
+ },
+ {
+  "text": "sebelum",
+  "norm": "sebelum",
+  "start": 315.012,
+  "end": 315.233,
+  "score": 0.507,
+  "island": 10
+ },
+ {
+  "text": "ini",
+  "norm": "ini",
+  "start": 315.273,
+  "end": 315.394,
+  "score": 0.743,
+  "island": 10
+ },
+ {
+  "text": "pada",
+  "norm": "pada",
+  "start": 318.221,
+  "end": 319.721,
+  "score": 0.894,
+  "island": 11
+ },
+ {
+  "text": "tahun",
+  "norm": "tahun",
+  "start": 319.761,
+  "end": 320.001,
+  "score": 0.899,
+  "island": 11
+ },
+ {
+  "text": "1958",
+  "norm": "sembilan belas lima puluh lapan",
+  "start": 320.042,
+  "end": 320.962,
+  "score": 0.024,
+  "island": 11
+ },
+ {
+  "text": "satu",
+  "norm": "satu",
+  "start": 321.062,
+  "end": 321.362,
+  "score": 0.498,
+  "island": 11
+ },
+ {
+  "text": "lagi",
+  "norm": "lagi",
+  "start": 321.402,
+  "end": 321.542,
+  "score": 0.924,
+  "island": 11
+ },
+ {
+  "text": "perkembangan",
+  "norm": "perkembangan",
+  "start": 321.602,
+  "end": 322.062,
+  "score": 0.869,
+  "island": 11
+ },
+ {
+  "text": "penting",
+  "norm": "penting",
+  "start": 322.102,
+  "end": 322.522,
+  "score": 0.936,
+  "island": 11
+ },
+ {
+  "text": "berlaku",
+  "norm": "berlaku",
+  "start": 322.583,
+  "end": 322.903,
+  "score": 0.818,
+  "island": 11
+ },
+ {
+  "text": "dekat",
+  "norm": "dekat",
+  "start": 322.963,
+  "end": 323.123,
+  "score": 0.564,
+  "island": 11
+ },
+ {
+  "text": "tanah",
+  "norm": "tanah",
+  "start": 323.143,
+  "end": 323.323,
+  "score": 0.737,
+  "island": 11
+ },
+ {
+  "text": "Melayu",
+  "norm": "melayu",
+  "start": 323.343,
+  "end": 323.603,
+  "score": 0.705,
+  "island": 11
+ },
+ {
+  "text": "ni",
+  "norm": "ni",
+  "start": 323.743,
+  "end": 323.823,
+  "score": 0.825,
+  "island": 11
+ },
+ {
+  "text": "wad",
+  "norm": "wad",
+  "start": 324.123,
+  "end": 324.263,
+  "score": 0.565,
+  "island": 11
+ },
+ {
+  "text": "sekretari",
+  "norm": "sekretari",
+  "start": 324.363,
+  "end": 324.863,
+  "score": 0.643,
+  "island": 11
+ },
+ {
+  "text": "dibuka",
+  "norm": "dibuka",
+  "start": 325.244,
+  "end": 325.544,
+  "score": 0.871,
+  "island": 11
+ },
+ {
+  "text": "di",
+  "norm": "di",
+  "start": 325.604,
+  "end": 325.644,
+  "score": 0.913,
+  "island": 11
+ },
+ {
+  "text": "hospital",
+  "norm": "hospital",
+  "start": 325.684,
+  "end": 326.004,
+  "score": 0.92,
+  "island": 11
+ },
+ {
+  "text": "Pulau",
+  "norm": "pulau",
+  "start": 326.004,
+  "end": 326.144,
+  "score": 0.366,
+  "island": 11
+ },
+ {
+  "text": "Pinang",
+  "norm": "pinang",
+  "start": 326.164,
+  "end": 326.464,
+  "score": 0.777,
+  "island": 11
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 326.504,
+  "end": 326.624,
+  "score": 0.931,
+  "island": 11
+ },
+ {
+  "text": "direkan",
+  "norm": "direkan",
+  "start": 326.684,
+  "end": 327.364,
+  "score": 0.907,
+  "island": 11
+ },
+ {
+  "text": "sebagai",
+  "norm": "sebagai",
+  "start": 327.404,
+  "end": 327.685,
+  "score": 0.933,
+  "island": 11
+ },
+ {
+  "text": "wad",
+  "norm": "wad",
+  "start": 327.725,
+  "end": 327.825,
+  "score": 0.659,
+  "island": 11
+ },
+ {
+  "text": "sekretari",
+  "norm": "sekretari",
+  "start": 327.865,
+  "end": 328.305,
+  "score": 0.695,
+  "island": 11
+ },
+ {
+  "text": "pertama",
+  "norm": "pertama",
+  "start": 328.365,
+  "end": 328.885,
+  "score": 0.99,
+  "island": 11
+ },
+ {
+  "text": "dalam",
+  "norm": "dalam",
+  "start": 329.145,
+  "end": 329.345,
+  "score": 0.996,
+  "island": 11
+ },
+ {
+  "text": "hospital",
+  "norm": "hospital",
+  "start": 329.385,
+  "end": 329.745,
+  "score": 0.989,
+  "island": 11
+ },
+ {
+  "text": "umum",
+  "norm": "umum",
+  "start": 329.805,
+  "end": 330.065,
+  "score": 0.994,
+  "island": 11
+ },
+ {
+  "text": "benda",
+  "norm": "benda",
+  "start": 330.446,
+  "end": 330.606,
+  "score": 0.549,
+  "island": 11
+ },
+ {
+  "text": "ni",
+  "norm": "ni",
+  "start": 330.646,
+  "end": 330.706,
+  "score": 0.989,
+  "island": 11
+ },
+ {
+  "text": "penting",
+  "norm": "penting",
+  "start": 330.746,
+  "end": 331.146,
+  "score": 0.998,
+  "island": 11
+ },
+ {
+  "text": "sebab",
+  "norm": "sebab",
+  "start": 331.286,
+  "end": 331.566,
+  "score": 0.999,
+  "island": 11
+ },
+ {
+  "text": "kalau",
+  "norm": "kalau",
+  "start": 332.126,
+  "end": 332.286,
+  "score": 0.624,
+  "island": 11
+ },
+ {
+  "text": "sebelum",
+  "norm": "sebelum",
+  "start": 332.326,
+  "end": 332.586,
+  "score": 0.989,
+  "island": 11
+ },
+ {
+  "text": "ni",
+  "norm": "ni",
+  "start": 332.646,
+  "end": 332.727,
+  "score": 0.982,
+  "island": 11
+ },
+ {
+  "text": "rawatan",
+  "norm": "rawatan",
+  "start": 332.827,
+  "end": 333.087,
+  "score": 0.983,
+  "island": 11
+ },
+ {
+  "text": "psikiatri",
+  "norm": "psikiatri",
+  "start": 333.087,
+  "end": 333.467,
+  "score": 0.589,
+  "island": 11
+ },
+ {
+  "text": "dikaitkan",
+  "norm": "dikaitkan",
+  "start": 333.527,
+  "end": 333.947,
+  "score": 0.908,
+  "island": 11
+ },
+ {
+  "text": "dengan",
+  "norm": "dengan",
+  "start": 333.987,
+  "end": 334.387,
+  "score": 0.996,
+  "island": 11
+ },
+ {
+  "text": "hospital",
+  "norm": "hospital",
+  "start": 334.687,
+  "end": 335.107,
+  "score": 0.985,
+  "island": 11
+ },
+ {
+  "text": "khusus",
+  "norm": "khusus",
+  "start": 335.167,
+  "end": 335.568,
+  "score": 0.867,
+  "island": 11
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 335.748,
+  "end": 335.848,
+  "score": 0.983,
+  "island": 11
+ },
+ {
+  "text": "terpisah",
+  "norm": "terpisah",
+  "start": 335.888,
+  "end": 336.408,
+  "score": 0.995,
+  "island": 11
+ },
+ {
+  "text": "daripada",
+  "norm": "daripada",
+  "start": 336.468,
+  "end": 336.928,
+  "score": 0.722,
+  "island": 11
+ },
+ {
+  "text": "perkhidmatan",
+  "norm": "perkhidmatan",
+  "start": 337.248,
+  "end": 337.608,
+  "score": 0.694,
+  "island": 11
+ },
+ {
+  "text": "perubatan",
+  "norm": "perubatan",
+  "start": 337.628,
+  "end": 337.909,
+  "score": 0.933,
+  "island": 11
+ },
+ {
+  "text": "lain",
+  "norm": "lain",
+  "start": 337.949,
+  "end": 338.129,
+  "score": 0.951,
+  "island": 11
+ },
+ {
+  "text": "tapi",
+  "norm": "tapi",
+  "start": 338.169,
+  "end": 338.449,
+  "score": 0.941,
+  "island": 11
+ },
+ {
+  "text": "apabila",
+  "norm": "apabila",
+  "start": 338.809,
+  "end": 339.089,
+  "score": 0.996,
+  "island": 11
+ },
+ {
+  "text": "wad",
+  "norm": "wad",
+  "start": 339.169,
+  "end": 339.289,
+  "score": 0.672,
+  "island": 11
+ },
+ {
+  "text": "psikiatri",
+  "norm": "psikiatri",
+  "start": 339.309,
+  "end": 339.689,
+  "score": 0.606,
+  "island": 11
+ },
+ {
+  "text": "mula",
+  "norm": "mula",
+  "start": 339.769,
+  "end": 339.949,
+  "score": 0.998,
+  "island": 11
+ },
+ {
+  "text": "diwujudkan",
+  "norm": "diwujudkan",
+  "start": 339.989,
+  "end": 340.53,
+  "score": 0.988,
+  "island": 11
+ },
+ {
+  "text": "di",
+  "norm": "di",
+  "start": 340.55,
+  "end": 340.61,
+  "score": 0.996,
+  "island": 11
+ },
+ {
+  "text": "hospital",
+  "norm": "hospital",
+  "start": 340.65,
+  "end": 340.97,
+  "score": 0.994,
+  "island": 11
+ },
+ {
+  "text": "umum,",
+  "norm": "umum",
+  "start": 341.01,
+  "end": 341.25,
+  "score": 0.996,
+  "island": 11
+ },
+ {
+  "text": "ia",
+  "norm": "ia",
+  "start": 341.37,
+  "end": 341.47,
+  "score": 0.996,
+  "island": 11
+ },
+ {
+  "text": "membantu",
+  "norm": "membantu",
+  "start": 341.53,
+  "end": 342.07,
+  "score": 0.995,
+  "island": 11
+ },
+ {
+  "text": "membawa",
+  "norm": "membawa",
+  "start": 342.851,
+  "end": 343.171,
+  "score": 0.994,
+  "island": 11
+ },
+ {
+  "text": "rawatan",
+  "norm": "rawatan",
+  "start": 343.231,
+  "end": 343.571,
+  "score": 0.995,
+  "island": 11
+ },
+ {
+  "text": "kesihatan",
+  "norm": "kesihatan",
+  "start": 343.611,
+  "end": 343.891,
+  "score": 0.678,
+  "island": 11
+ },
+ {
+  "text": "mental",
+  "norm": "mental",
+  "start": 343.931,
+  "end": 344.311,
+  "score": 0.842,
+  "island": 11
+ },
+ {
+  "text": "lebih",
+  "norm": "lebih",
+  "start": 344.351,
+  "end": 344.651,
+  "score": 0.922,
+  "island": 11
+ },
+ {
+  "text": "dekat",
+  "norm": "dekat",
+  "start": 344.711,
+  "end": 345.111,
+  "score": 0.986,
+  "island": 11
+ },
+ {
+  "text": "kepada",
+  "norm": "kepada",
+  "start": 345.251,
+  "end": 345.692,
+  "score": 0.996,
+  "island": 11
+ },
+ {
+  "text": "sistem",
+  "norm": "sistem",
+  "start": 345.852,
+  "end": 346.372,
+  "score": 0.996,
+  "island": 11
+ },
+ {
+  "text": "penjagaan",
+  "norm": "penjagaan",
+  "start": 346.932,
+  "end": 347.352,
+  "score": 0.993,
+  "island": 11
+ },
+ {
+  "text": "kesihatan",
+  "norm": "kesihatan",
+  "start": 347.392,
+  "end": 347.692,
+  "score": 0.586,
+  "island": 11
+ },
+ {
+  "text": "biasa",
+  "norm": "biasa",
+  "start": 347.712,
+  "end": 348.033,
+  "score": 0.971,
+  "island": 11
+ },
+ {
+  "text": "sama",
+  "norm": "sama",
+  "start": 348.893,
+  "end": 349.213,
+  "score": 0.997,
+  "island": 11
+ },
+ {
+  "text": "macam",
+  "norm": "macam",
+  "start": 349.773,
+  "end": 350.133,
+  "score": 0.996,
+  "island": 11
+ },
+ {
+  "text": "pesakit",
+  "norm": "pesakit",
+  "start": 350.193,
+  "end": 350.654,
+  "score": 0.99,
+  "island": 11
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 350.774,
+  "end": 350.894,
+  "score": 0.935,
+  "island": 11
+ },
+ {
+  "text": "memerlukan",
+  "norm": "memerlukan",
+  "start": 350.914,
+  "end": 351.634,
+  "score": 0.98,
+  "island": 11
+ },
+ {
+  "text": "rawatan",
+  "norm": "rawatan",
+  "start": 352.394,
+  "end": 352.674,
+  "score": 0.99,
+  "island": 11
+ },
+ {
+  "text": "jantung,",
+  "norm": "jantung",
+  "start": 352.694,
+  "end": 353.215,
+  "score": 0.834,
+  "island": 11
+ },
+ {
+  "text": "buah",
+  "norm": "buah",
+  "start": 353.235,
+  "end": 353.355,
+  "score": 0.79,
+  "island": 11
+ },
+ {
+  "text": "pinggang",
+  "norm": "pinggang",
+  "start": 353.375,
+  "end": 353.855,
+  "score": 0.962,
+  "island": 11
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 353.915,
+  "end": 354.075,
+  "score": 0.932,
+  "island": 11
+ },
+ {
+  "text": "penyakit",
+  "norm": "penyakit",
+  "start": 354.235,
+  "end": 354.535,
+  "score": 0.987,
+  "island": 11
+ },
+ {
+  "text": "lain.",
+  "norm": "lain",
+  "start": 354.555,
+  "end": 354.775,
+  "score": 0.973,
+  "island": 11
+ },
+ {
+  "text": "Ramai",
+  "norm": "ramai",
+  "start": 355.375,
+  "end": 355.636,
+  "score": 0.799,
+  "island": 11
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 355.676,
+  "end": 355.756,
+  "score": 0.995,
+  "island": 11
+ },
+ {
+  "text": "mengalami",
+  "norm": "mengalami",
+  "start": 355.756,
+  "end": 356.036,
+  "score": 0.965,
+  "island": 11
+ },
+ {
+  "text": "penyakit",
+  "norm": "penyakit",
+  "start": 356.076,
+  "end": 356.296,
+  "score": 0.979,
+  "island": 11
+ },
+ {
+  "text": "mental",
+  "norm": "mental",
+  "start": 356.336,
+  "end": 356.536,
+  "score": 0.75,
+  "island": 11
+ },
+ {
+  "text": "juga",
+  "norm": "juga",
+  "start": 356.556,
+  "end": 356.716,
+  "score": 0.967,
+  "island": 11
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 356.936,
+  "end": 357.076,
+  "score": 0.98,
+  "island": 11
+ },
+ {
+  "text": "memerlukan",
+  "norm": "memerlukan",
+  "start": 357.156,
+  "end": 357.576,
+  "score": 0.934,
+  "island": 11
+ },
+ {
+  "text": "rawatan",
+  "norm": "rawatan",
+  "start": 357.576,
+  "end": 357.796,
+  "score": 0.968,
+  "island": 11
+ },
+ {
+  "text": "perubatan",
+  "norm": "perubatan",
+  "start": 357.816,
+  "end": 358.277,
+  "score": 0.848,
+  "island": 11
+ },
+ {
+  "text": "kat",
+  "norm": "kat",
+  "start": 358.457,
+  "end": 358.577,
+  "score": 0.528,
+  "island": 11
+ },
+ {
+  "text": "sinilah",
+  "norm": "sinilah",
+  "start": 358.597,
+  "end": 358.917,
+  "score": 0.971,
+  "island": 11
+ },
+ {
+  "text": "perkhidmatan",
+  "norm": "perkhidmatan",
+  "start": 358.957,
+  "end": 359.437,
+  "score": 0.566,
+  "island": 11
+ },
+ {
+  "text": "psikiatri",
+  "norm": "psikiatri",
+  "start": 359.437,
+  "end": 359.717,
+  "score": 0.256,
+  "island": 11
+ },
+ {
+  "text": "terus",
+  "norm": "terus",
+  "start": 359.717,
+  "end": 359.877,
+  "score": 0.469,
+  "island": 11
+ },
+ {
+  "text": "terus",
+  "norm": "terus",
+  "start": 359.897,
+  "end": 360.117,
+  "score": 0.987,
+  "island": 11
+ },
+ {
+  "text": "berkembang",
+  "norm": "berkembang",
+  "start": 360.177,
+  "end": 360.638,
+  "score": 0.828,
+  "island": 11
+ },
+ {
+  "text": "di",
+  "norm": "di",
+  "start": 360.658,
+  "end": 360.718,
+  "score": 0.972,
+  "island": 11
+ },
+ {
+  "text": "hospital-hospital",
+  "norm": "hospitalhospital",
+  "start": 360.778,
+  "end": 361.718,
+  "score": 0.949,
+  "island": 11
+ },
+ {
+  "text": "seluruh",
+  "norm": "seluruh",
+  "start": 361.878,
+  "end": 362.058,
+  "score": 0.402,
+  "island": 11
+ },
+ {
+  "text": "Malaysia",
+  "norm": "malaysia",
+  "start": 362.058,
+  "end": 362.378,
+  "score": 0.521,
+  "island": 11
+ },
+ {
+  "text": "lah.",
+  "norm": "lah",
+  "start": 362.458,
+  "end": 362.558,
+  "score": 0.966,
+  "island": 11
+ },
+ {
+  "text": "Sekarang",
+  "norm": "sekarang",
+  "start": 363.119,
+  "end": 363.439,
+  "score": 0.974,
+  "island": 11
+ },
+ {
+  "text": "kalau",
+  "norm": "kalau",
+  "start": 363.459,
+  "end": 363.599,
+  "score": 0.656,
+  "island": 11
+ },
+ {
+  "text": "kita",
+  "norm": "kita",
+  "start": 363.639,
+  "end": 363.759,
+  "score": 0.959,
+  "island": 11
+ },
+ {
+  "text": "tengok,",
+  "norm": "tengok",
+  "start": 363.819,
+  "end": 364.139,
+  "score": 0.834,
+  "island": 11
+ },
+ {
+  "text": "kita",
+  "norm": "kita",
+  "start": 364.499,
+  "end": 364.739,
+  "score": 0.273,
+  "island": 11
+ },
+ {
+  "text": "masuk",
+  "norm": "masuk",
+  "start": 364.779,
+  "end": 364.999,
+  "score": 0.902,
+  "island": 11
+ },
+ {
+  "text": "ke",
+  "norm": "ke",
+  "start": 365.019,
+  "end": 365.079,
+  "score": 0.348,
+  "island": 11
+ },
+ {
+  "text": "zaman",
+  "norm": "zaman",
+  "start": 365.099,
+  "end": 365.279,
+  "score": 0.547,
+  "island": 11
+ },
+ {
+  "text": "modern",
+  "norm": "modern",
+  "start": 365.339,
+  "end": 365.68,
+  "score": 0.713,
+  "island": 11
+ },
+ {
+  "text": "ni,",
+  "norm": "ni",
+  "start": 365.7,
+  "end": 365.74,
+  "score": 0.469,
+  "island": 11
+ },
+ {
+  "text": "suasana",
+  "norm": "suasana",
+  "start": 368.32,
+  "end": 368.76,
+  "score": 0.922,
+  "island": 12
+ },
+ {
+  "text": "dia",
+  "norm": "dia",
+  "start": 368.84,
+  "end": 368.94,
+  "score": 0.883,
+  "island": 12
+ },
+ {
+  "text": "tak",
+  "norm": "tak",
+  "start": 369.021,
+  "end": 369.141,
+  "score": 0.991,
+  "island": 12
+ },
+ {
+  "text": "macam",
+  "norm": "macam",
+  "start": 369.201,
+  "end": 369.581,
+  "score": 0.997,
+  "island": 12
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 369.621,
+  "end": 369.701,
+  "score": 0.996,
+  "island": 12
+ },
+ {
+  "text": "digambarkan",
+  "norm": "digambarkan",
+  "start": 369.701,
+  "end": 370.201,
+  "score": 0.906,
+  "island": 12
+ },
+ {
+  "text": "dalam",
+  "norm": "dalam",
+  "start": 370.241,
+  "end": 370.421,
+  "score": 0.993,
+  "island": 12
+ },
+ {
+  "text": "filem-filem",
+  "norm": "filemfilem",
+  "start": 370.461,
+  "end": 371.361,
+  "score": 0.944,
+  "island": 12
+ },
+ {
+  "text": "barat",
+  "norm": "barat",
+  "start": 371.541,
+  "end": 371.841,
+  "score": 0.925,
+  "island": 12
+ },
+ {
+  "text": "tu,",
+  "norm": "tu",
+  "start": 371.881,
+  "end": 371.961,
+  "score": 0.912,
+  "island": 12
+ },
+ {
+  "text": "filem-filem",
+  "norm": "filemfilem",
+  "start": 372.041,
+  "end": 372.361,
+  "score": 0.715,
+  "island": 12
+ },
+ {
+  "text": "seram",
+  "norm": "seram",
+  "start": 372.381,
+  "end": 372.601,
+  "score": 0.89,
+  "island": 12
+ },
+ {
+  "text": "tu,",
+  "norm": "tu",
+  "start": 372.641,
+  "end": 372.701,
+  "score": 0.89,
+  "island": 12
+ },
+ {
+  "text": "kat",
+  "norm": "kat",
+  "start": 372.861,
+  "end": 372.941,
+  "score": 0.597,
+  "island": 12
+ },
+ {
+  "text": "dalam",
+  "norm": "dalam",
+  "start": 372.961,
+  "end": 373.182,
+  "score": 0.74,
+  "island": 12
+ },
+ {
+  "text": "wad,",
+  "norm": "wad",
+  "start": 373.282,
+  "end": 373.522,
+  "score": 0.655,
+  "island": 12
+ },
+ {
+  "text": "pesakit",
+  "norm": "pesakit",
+  "start": 374.002,
+  "end": 374.322,
+  "score": 0.911,
+  "island": 12
+ },
+ {
+  "text": "akan",
+  "norm": "akan",
+  "start": 374.342,
+  "end": 374.562,
+  "score": 0.915,
+  "island": 12
+ },
+ {
+  "text": "dinilai",
+  "norm": "dinilai",
+  "start": 374.582,
+  "end": 375.082,
+  "score": 0.936,
+  "island": 12
+ },
+ {
+  "text": "oleh",
+  "norm": "oleh",
+  "start": 375.502,
+  "end": 375.702,
+  "score": 0.999,
+  "island": 12
+ },
+ {
+  "text": "doktor,",
+  "norm": "doktor",
+  "start": 375.742,
+  "end": 376.162,
+  "score": 0.563,
+  "island": 12
+ },
+ {
+  "text": "dipantau",
+  "norm": "dipantau",
+  "start": 376.222,
+  "end": 376.622,
+  "score": 0.781,
+  "island": 12
+ },
+ {
+  "text": "oleh",
+  "norm": "oleh",
+  "start": 376.642,
+  "end": 376.762,
+  "score": 0.991,
+  "island": 12
+ },
+ {
+  "text": "jururawat.",
+  "norm": "jururawat",
+  "start": 376.782,
+  "end": 377.343,
+  "score": 0.906,
+  "island": 12
+ },
+ {
+  "text": "Mereka",
+  "norm": "mereka",
+  "start": 377.763,
+  "end": 378.123,
+  "score": 0.994,
+  "island": 12
+ },
+ {
+  "text": "diberikan",
+  "norm": "diberikan",
+  "start": 378.203,
+  "end": 378.683,
+  "score": 0.992,
+  "island": 12
+ },
+ {
+  "text": "ubat",
+  "norm": "ubat",
+  "start": 378.803,
+  "end": 379.083,
+  "score": 0.991,
+  "island": 12
+ },
+ {
+  "text": "mengikut",
+  "norm": "mengikut",
+  "start": 379.123,
+  "end": 379.423,
+  "score": 0.812,
+  "island": 12
+ },
+ {
+  "text": "keperluan.",
+  "norm": "keperluan",
+  "start": 379.443,
+  "end": 379.983,
+  "score": 0.954,
+  "island": 12
+ },
+ {
+  "text": "Ada",
+  "norm": "ada",
+  "start": 380.483,
+  "end": 380.623,
+  "score": 0.997,
+  "island": 12
+ },
+ {
+  "text": "pesakit",
+  "norm": "pesakit",
+  "start": 380.643,
+  "end": 381.083,
+  "score": 0.962,
+  "island": 12
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 381.163,
+  "end": 381.243,
+  "score": 0.996,
+  "island": 12
+ },
+ {
+  "text": "menjalani",
+  "norm": "menjalani",
+  "start": 381.243,
+  "end": 381.564,
+  "score": 0.625,
+  "island": 12
+ },
+ {
+  "text": "terapi,",
+  "norm": "terapi",
+  "start": 381.564,
+  "end": 381.964,
+  "score": 0.994,
+  "island": 12
+ },
+ {
+  "text": "aktiviti",
+  "norm": "aktiviti",
+  "start": 382.224,
+  "end": 382.624,
+  "score": 0.893,
+  "island": 12
+ },
+ {
+  "text": "pemulihan,",
+  "norm": "pemulihan",
+  "start": 382.664,
+  "end": 383.344,
+  "score": 0.981,
+  "island": 12
+ },
+ {
+  "text": "penilaian,",
+  "norm": "penilaian",
+  "start": 383.424,
+  "end": 384.144,
+  "score": 0.838,
+  "island": 12
+ },
+ {
+  "text": "by",
+  "norm": "by",
+  "start": 384.464,
+  "end": 384.724,
+  "score": 0.593,
+  "island": 12
+ },
+ {
+  "text": "multidisciplinary",
+  "norm": "multidisciplinary",
+  "start": 384.924,
+  "end": 385.805,
+  "score": 0.781,
+  "island": 12
+ },
+ {
+  "text": "punya",
+  "norm": "punya",
+  "start": 385.885,
+  "end": 386.065,
+  "score": 0.643,
+  "island": 12
+ },
+ {
+  "text": "tim",
+  "norm": "tim",
+  "start": 386.165,
+  "end": 386.325,
+  "score": 0.995,
+  "island": 12
+ },
+ {
+  "text": "lah.",
+  "norm": "lah",
+  "start": 386.365,
+  "end": 386.465,
+  "score": 0.992,
+  "island": 12
+ },
+ {
+  "text": "Ada",
+  "norm": "ada",
+  "start": 386.865,
+  "end": 386.985,
+  "score": 0.997,
+  "island": 12
+ },
+ {
+  "text": "juga",
+  "norm": "juga",
+  "start": 387.005,
+  "end": 387.165,
+  "score": 0.998,
+  "island": 12
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 387.285,
+  "end": 387.405,
+  "score": 0.945,
+  "island": 12
+ },
+ {
+  "text": "masuk",
+  "norm": "masuk",
+  "start": 387.425,
+  "end": 387.725,
+  "score": 0.873,
+  "island": 12
+ },
+ {
+  "text": "sebab",
+  "norm": "sebab",
+  "start": 387.765,
+  "end": 387.905,
+  "score": 0.985,
+  "island": 12
+ },
+ {
+  "text": "kemurungan",
+  "norm": "kemurungan",
+  "start": 387.945,
+  "end": 388.265,
+  "score": 0.946,
+  "island": 12
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 388.285,
+  "end": 388.365,
+  "score": 0.986,
+  "island": 12
+ },
+ {
+  "text": "teruk,",
+  "norm": "teruk",
+  "start": 388.385,
+  "end": 388.685,
+  "score": 0.727,
+  "island": 12
+ },
+ {
+  "text": "ada",
+  "norm": "ada",
+  "start": 388.845,
+  "end": 389.025,
+  "score": 0.997,
+  "island": 12
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 389.065,
+  "end": 389.165,
+  "score": 0.962,
+  "island": 12
+ },
+ {
+  "text": "masuk",
+  "norm": "masuk",
+  "start": 389.185,
+  "end": 389.445,
+  "score": 0.865,
+  "island": 12
+ },
+ {
+  "text": "sebab",
+  "norm": "sebab",
+  "start": 389.486,
+  "end": 389.706,
+  "score": 0.988,
+  "island": 12
+ },
+ {
+  "text": "tengah",
+  "norm": "tengah",
+  "start": 390.326,
+  "end": 390.606,
+  "score": 0.937,
+  "island": 12
+ },
+ {
+  "text": "full",
+  "norm": "full",
+  "start": 390.666,
+  "end": 390.806,
+  "score": 0.636,
+  "island": 12
+ },
+ {
+  "text": "blown",
+  "norm": "blown",
+  "start": 390.866,
+  "end": 391.046,
+  "score": 0.643,
+  "island": 12
+ },
+ {
+  "text": "manik",
+  "norm": "manik",
+  "start": 391.086,
+  "end": 391.446,
+  "score": 0.789,
+  "island": 12
+ },
+ {
+  "text": "ada",
+  "norm": "ada",
+  "start": 391.906,
+  "end": 392.026,
+  "score": 0.996,
+  "island": 12
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 392.066,
+  "end": 392.186,
+  "score": 0.972,
+  "island": 12
+ },
+ {
+  "text": "mengalami",
+  "norm": "mengalami",
+  "start": 392.226,
+  "end": 392.626,
+  "score": 0.986,
+  "island": 12
+ },
+ {
+  "text": "psikotik",
+  "norm": "psikotik",
+  "start": 392.926,
+  "end": 393.667,
+  "score": 0.773,
+  "island": 12
+ },
+ {
+  "text": "sehingga",
+  "norm": "sehingga",
+  "start": 394.287,
+  "end": 394.587,
+  "score": 0.921,
+  "island": 12
+ },
+ {
+  "text": "tak",
+  "norm": "tak",
+  "start": 394.647,
+  "end": 394.747,
+  "score": 0.952,
+  "island": 12
+ },
+ {
+  "text": "mampu",
+  "norm": "mampu",
+  "start": 394.767,
+  "end": 395.087,
+  "score": 0.993,
+  "island": 12
+ },
+ {
+  "text": "nak",
+  "norm": "nak",
+  "start": 395.307,
+  "end": 395.627,
+  "score": 0.989,
+  "island": 12
+ },
+ {
+  "text": "jaga",
+  "norm": "jaga",
+  "start": 395.687,
+  "end": 395.907,
+  "score": 0.997,
+  "island": 12
+ },
+ {
+  "text": "keselamatan",
+  "norm": "keselamatan",
+  "start": 395.947,
+  "end": 396.367,
+  "score": 0.965,
+  "island": 12
+ },
+ {
+  "text": "diri",
+  "norm": "diri",
+  "start": 396.387,
+  "end": 396.567,
+  "score": 0.999,
+  "island": 12
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 396.727,
+  "end": 396.827,
+  "score": 0.997,
+  "island": 12
+ },
+ {
+  "text": "ada",
+  "norm": "ada",
+  "start": 396.887,
+  "end": 396.987,
+  "score": 0.997,
+  "island": 12
+ },
+ {
+  "text": "juga",
+  "norm": "juga",
+  "start": 397.007,
+  "end": 397.187,
+  "score": 0.999,
+  "island": 12
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 397.247,
+  "end": 397.327,
+  "score": 0.945,
+  "island": 12
+ },
+ {
+  "text": "memerlukan",
+  "norm": "memerlukan",
+  "start": 397.327,
+  "end": 397.667,
+  "score": 0.851,
+  "island": 12
+ },
+ {
+  "text": "pembantauan",
+  "norm": "pembantauan",
+  "start": 397.688,
+  "end": 398.268,
+  "score": 0.788,
+  "island": 12
+ },
+ {
+  "text": "sebab",
+  "norm": "sebab",
+  "start": 398.308,
+  "end": 398.468,
+  "score": 0.82,
+  "island": 12
+ },
+ {
+  "text": "risiko",
+  "norm": "risiko",
+  "start": 398.508,
+  "end": 398.868,
+  "score": 0.772,
+  "island": 12
+ },
+ {
+  "text": "mencederakan",
+  "norm": "mencederakan",
+  "start": 398.948,
+  "end": 399.408,
+  "score": 0.847,
+  "island": 12
+ },
+ {
+  "text": "diri",
+  "norm": "diri",
+  "start": 399.448,
+  "end": 399.708,
+  "score": 0.999,
+  "island": 12
+ },
+ {
+  "text": "tempoh",
+  "norm": "tempoh",
+  "start": 400.528,
+  "end": 400.908,
+  "score": 0.881,
+  "island": 12
+ },
+ {
+  "text": "kemasukan",
+  "norm": "kemasukan",
+  "start": 400.968,
+  "end": 401.468,
+  "score": 0.925,
+  "island": 12
+ },
+ {
+  "text": "ni",
+  "norm": "ni",
+  "start": 401.488,
+  "end": 401.548,
+  "score": 0.756,
+  "island": 12
+ },
+ {
+  "text": "berbeza",
+  "norm": "berbeza",
+  "start": 401.608,
+  "end": 401.969,
+  "score": 0.882,
+  "island": 12
+ },
+ {
+  "text": "mengikut",
+  "norm": "mengikut",
+  "start": 402.009,
+  "end": 402.249,
+  "score": 0.859,
+  "island": 12
+ },
+ {
+  "text": "keadaan",
+  "norm": "keadaan",
+  "start": 402.289,
+  "end": 402.529,
+  "score": 0.81,
+  "island": 12
+ },
+ {
+  "text": "pesakit",
+  "norm": "pesakit",
+  "start": 402.549,
+  "end": 402.909,
+  "score": 0.857,
+  "island": 12
+ },
+ {
+  "text": "lah",
+  "norm": "lah",
+  "start": 402.949,
+  "end": 403.069,
+  "score": 0.992,
+  "island": 12
+ },
+ {
+  "text": "ada",
+  "norm": "ada",
+  "start": 403.229,
+  "end": 403.349,
+  "score": 0.958,
+  "island": 12
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 403.369,
+  "end": 403.449,
+  "score": 0.983,
+  "island": 12
+ },
+ {
+  "text": "memerlukan",
+  "norm": "memerlukan",
+  "start": 403.449,
+  "end": 403.749,
+  "score": 0.811,
+  "island": 12
+ },
+ {
+  "text": "beberapa",
+  "norm": "beberapa",
+  "start": 403.769,
+  "end": 403.969,
+  "score": 0.195,
+  "island": 12
+ },
+ {
+  "text": "hari",
+  "norm": "hari",
+  "start": 403.969,
+  "end": 404.149,
+  "score": 0.746,
+  "island": 12
+ },
+ {
+  "text": "je",
+  "norm": "je",
+  "start": 404.229,
+  "end": 404.329,
+  "score": 0.497,
+  "island": 12
+ },
+ {
+  "text": "ada",
+  "norm": "ada",
+  "start": 404.629,
+  "end": 404.709,
+  "score": 0.954,
+  "island": 12
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 404.709,
+  "end": 404.789,
+  "score": 0.324,
+  "island": 12
+ },
+ {
+  "text": "memerlukan",
+  "norm": "memerlukan",
+  "start": 404.789,
+  "end": 405.009,
+  "score": 0.355,
+  "island": 12
+ },
+ {
+  "text": "beberapa",
+  "norm": "beberapa",
+  "start": 405.009,
+  "end": 405.189,
+  "score": 0.164,
+  "island": 12
+ },
+ {
+  "text": "minggu",
+  "norm": "minggu",
+  "start": 405.229,
+  "end": 405.469,
+  "score": 0.992,
+  "island": 12
+ },
+ {
+  "text": "mungkin",
+  "norm": "mungkin",
+  "start": 406.31,
+  "end": 406.55,
+  "score": 0.961,
+  "island": 12
+ },
+ {
+  "text": "ada",
+  "norm": "ada",
+  "start": 406.61,
+  "end": 406.75,
+  "score": 0.991,
+  "island": 12
+ },
+ {
+  "text": "juga",
+  "norm": "juga",
+  "start": 406.79,
+  "end": 406.93,
+  "score": 0.995,
+  "island": 12
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 406.97,
+  "end": 407.05,
+  "score": 0.574,
+  "island": 12
+ },
+ {
+  "text": "memerlukan",
+  "norm": "memerlukan",
+  "start": 407.05,
+  "end": 407.55,
+  "score": 0.699,
+  "island": 12
+ },
+ {
+  "text": "penjagaan",
+  "norm": "penjagaan",
+  "start": 408.293,
+  "end": 408.594,
+  "score": 0.691,
+  "island": 13
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 408.594,
+  "end": 408.675,
+  "score": 0.117,
+  "island": 13
+ },
+ {
+  "text": "lebih",
+  "norm": "lebih",
+  "start": 408.675,
+  "end": 408.835,
+  "score": 0.814,
+  "island": 13
+ },
+ {
+  "text": "lama",
+  "norm": "lama",
+  "start": 408.855,
+  "end": 409.136,
+  "score": 0.741,
+  "island": 13
+ },
+ {
+  "text": "sebagai",
+  "norm": "sebagai",
+  "start": 415.001,
+  "end": 415.421,
+  "score": 0.997,
+  "island": 14
+ },
+ {
+  "text": "doktor",
+  "norm": "doktor",
+  "start": 415.521,
+  "end": 415.821,
+  "score": 0.76,
+  "island": 14
+ },
+ {
+  "text": "psikiatri",
+  "norm": "psikiatri",
+  "start": 415.841,
+  "end": 416.342,
+  "score": 0.584,
+  "island": 14
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 416.442,
+  "end": 416.582,
+  "score": 0.952,
+  "island": 14
+ },
+ {
+  "text": "pernah",
+  "norm": "pernah",
+  "start": 416.662,
+  "end": 416.962,
+  "score": 0.992,
+  "island": 14
+ },
+ {
+  "text": "terlibat",
+  "norm": "terlibat",
+  "start": 417.002,
+  "end": 417.362,
+  "score": 0.959,
+  "island": 14
+ },
+ {
+  "text": "dalam",
+  "norm": "dalam",
+  "start": 417.402,
+  "end": 417.583,
+  "score": 0.898,
+  "island": 14
+ },
+ {
+  "text": "perkhidmatan",
+  "norm": "perkhidmatan",
+  "start": 417.623,
+  "end": 417.983,
+  "score": 0.615,
+  "island": 14
+ },
+ {
+  "text": "psikiatri",
+  "norm": "psikiatri",
+  "start": 417.983,
+  "end": 418.423,
+  "score": 0.589,
+  "island": 14
+ },
+ {
+  "text": "Saya",
+  "norm": "saya",
+  "start": 418.823,
+  "end": 419.043,
+  "score": 0.933,
+  "island": 14
+ },
+ {
+  "text": "sendiri",
+  "norm": "sendiri",
+  "start": 419.104,
+  "end": 419.364,
+  "score": 0.898,
+  "island": 14
+ },
+ {
+  "text": "melihat",
+  "norm": "melihat",
+  "start": 419.424,
+  "end": 419.744,
+  "score": 0.994,
+  "island": 14
+ },
+ {
+  "text": "bagaimana",
+  "norm": "bagaimana",
+  "start": 419.844,
+  "end": 420.184,
+  "score": 0.84,
+  "island": 14
+ },
+ {
+  "text": "rawatan",
+  "norm": "rawatan",
+  "start": 420.224,
+  "end": 420.705,
+  "score": 0.866,
+  "island": 14
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 421.165,
+  "end": 421.285,
+  "score": 0.976,
+  "island": 14
+ },
+ {
+  "text": "sesuai",
+  "norm": "sesuai",
+  "start": 421.305,
+  "end": 421.685,
+  "score": 0.994,
+  "island": 14
+ },
+ {
+  "text": "boleh",
+  "norm": "boleh",
+  "start": 421.745,
+  "end": 421.985,
+  "score": 0.974,
+  "island": 14
+ },
+ {
+  "text": "mengubah",
+  "norm": "mengubah",
+  "start": 422.085,
+  "end": 422.466,
+  "score": 0.944,
+  "island": 14
+ },
+ {
+  "text": "kehidupan",
+  "norm": "kehidupan",
+  "start": 422.506,
+  "end": 422.886,
+  "score": 0.862,
+  "island": 14
+ },
+ {
+  "text": "seorang",
+  "norm": "seorang",
+  "start": 422.926,
+  "end": 423.286,
+  "score": 0.995,
+  "island": 14
+ },
+ {
+  "text": "sebenarnya",
+  "norm": "sebenarnya",
+  "start": 423.306,
+  "end": 423.646,
+  "score": 0.771,
+  "island": 14
+ },
+ {
+  "text": "Kalau",
+  "norm": "kalau",
+  "start": 424.447,
+  "end": 424.727,
+  "score": 0.932,
+  "island": 14
+ },
+ {
+  "text": "anda",
+  "norm": "anda",
+  "start": 424.827,
+  "end": 425.027,
+  "score": 0.998,
+  "island": 14
+ },
+ {
+  "text": "ataupun",
+  "norm": "ataupun",
+  "start": 425.107,
+  "end": 425.367,
+  "score": 0.711,
+  "island": 14
+ },
+ {
+  "text": "ahli",
+  "norm": "ahli",
+  "start": 425.367,
+  "end": 425.487,
+  "score": 0.697,
+  "island": 14
+ },
+ {
+  "text": "keluarga",
+  "norm": "keluarga",
+  "start": 425.507,
+  "end": 425.828,
+  "score": 0.795,
+  "island": 14
+ },
+ {
+  "text": "sedang",
+  "norm": "sedang",
+  "start": 425.908,
+  "end": 426.228,
+  "score": 0.992,
+  "island": 14
+ },
+ {
+  "text": "mengalami",
+  "norm": "mengalami",
+  "start": 426.248,
+  "end": 426.528,
+  "score": 0.926,
+  "island": 14
+ },
+ {
+  "text": "masalah",
+  "norm": "masalah",
+  "start": 426.588,
+  "end": 427.048,
+  "score": 0.984,
+  "island": 14
+ },
+ {
+  "text": "kesihatan",
+  "norm": "kesihatan",
+  "start": 427.108,
+  "end": 427.409,
+  "score": 0.554,
+  "island": 14
+ },
+ {
+  "text": "mental",
+  "norm": "mental",
+  "start": 427.429,
+  "end": 427.829,
+  "score": 0.704,
+  "island": 14
+ },
+ {
+  "text": "Cepat",
+  "norm": "cepat",
+  "start": 428.269,
+  "end": 428.409,
+  "score": 0.819,
+  "island": 14
+ },
+ {
+  "text": "-cepat",
+  "norm": "cepat",
+  "start": 428.429,
+  "end": 428.689,
+  "score": 0.991,
+  "island": 14
+ },
+ {
+  "text": "dapatkan",
+  "norm": "dapatkan",
+  "start": 428.709,
+  "end": 429.03,
+  "score": 0.977,
+  "island": 14
+ },
+ {
+  "text": "bantuan",
+  "norm": "bantuan",
+  "start": 429.05,
+  "end": 429.27,
+  "score": 0.684,
+  "island": 14
+ },
+ {
+  "text": "daripada",
+  "norm": "daripada",
+  "start": 429.27,
+  "end": 429.45,
+  "score": 0.189,
+  "island": 14
+ },
+ {
+  "text": "profesional",
+  "norm": "profesional",
+  "start": 429.87,
+  "end": 430.31,
+  "score": 0.927,
+  "island": 14
+ },
+ {
+  "text": "kesihatan",
+  "norm": "kesihatan",
+  "start": 430.31,
+  "end": 430.591,
+  "score": 0.548,
+  "island": 14
+ },
+ {
+  "text": "mental",
+  "norm": "mental",
+  "start": 430.611,
+  "end": 430.911,
+  "score": 0.713,
+  "island": 14
+ },
+ {
+  "text": "Boleh",
+  "norm": "boleh",
+  "start": 430.991,
+  "end": 431.191,
+  "score": 0.988,
+  "island": 14
+ },
+ {
+  "text": "bawa",
+  "norm": "bawa",
+  "start": 431.211,
+  "end": 431.451,
+  "score": 0.994,
+  "island": 14
+ },
+ {
+  "text": "datang",
+  "norm": "datang",
+  "start": 431.491,
+  "end": 431.931,
+  "score": 0.999,
+  "island": 14
+ },
+ {
+  "text": "buat",
+  "norm": "buat",
+  "start": 432.012,
+  "end": 432.152,
+  "score": 0.756,
+  "island": 14
+ },
+ {
+  "text": "seringan",
+  "norm": "seringan",
+  "start": 432.172,
+  "end": 432.432,
+  "score": 0.53,
+  "island": 14
+ },
+ {
+  "text": "dan",
+  "norm": "dan",
+  "start": 432.452,
+  "end": 432.512,
+  "score": 0.315,
+  "island": 14
+ },
+ {
+  "text": "konsultasi",
+  "norm": "konsultasi",
+  "start": 432.532,
+  "end": 432.912,
+  "score": 0.753,
+  "island": 14
+ },
+ {
+  "text": "bersama",
+  "norm": "bersama",
+  "start": 432.972,
+  "end": 433.192,
+  "score": 0.842,
+  "island": 14
+ },
+ {
+  "text": "saya",
+  "norm": "saya",
+  "start": 433.232,
+  "end": 433.472,
+  "score": 0.994,
+  "island": 14
+ },
+ {
+  "text": "Dr.",
+  "norm": "dr",
+  "start": 433.913,
+  "end": 433.993,
+  "score": 0.163,
+  "island": 14
+ },
+ {
+  "text": "Azri",
+  "norm": "azri",
+  "start": 434.193,
+  "end": 434.393,
+  "score": 0.78,
+  "island": 14
+ },
+ {
+  "text": "di",
+  "norm": "di",
+  "start": 434.473,
+  "end": 434.513,
+  "score": 0.481,
+  "island": 14
+ },
+ {
+  "text": "klinik",
+  "norm": "klinik",
+  "start": 434.553,
+  "end": 434.713,
+  "score": 0.573,
+  "island": 14
+ },
+ {
+  "text": "saya",
+  "norm": "saya",
+  "start": 434.773,
+  "end": 434.913,
+  "score": 0.616,
+  "island": 14
+ },
+ {
+  "text": "dinilai",
+  "norm": "dinilai",
+  "start": 434.933,
+  "end": 435.314,
+  "score": 0.987,
+  "island": 14
+ },
+ {
+  "text": "Saya",
+  "norm": "saya",
+  "start": 435.454,
+  "end": 435.554,
+  "score": 0.258,
+  "island": 14
+ },
+ {
+  "text": "juga",
+  "norm": "juga",
+  "start": 435.574,
+  "end": 435.694,
+  "score": 0.973,
+  "island": 14
+ },
+ {
+  "text": "ada",
+  "norm": "ada",
+  "start": 435.734,
+  "end": 435.814,
+  "score": 0.312,
+  "island": 14
+ },
+ {
+  "text": "tulis",
+  "norm": "tulis",
+  "start": 435.854,
+  "end": 436.034,
+  "score": 0.726,
+  "island": 14
+ },
+ {
+  "text": "buku",
+  "norm": "buku",
+  "start": 436.074,
+  "end": 436.334,
+  "score": 0.994,
+  "island": 14
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 436.434,
+  "end": 436.534,
+  "score": 0.878,
+  "island": 14
+ },
+ {
+  "text": "bertajuk",
+  "norm": "bertajuk",
+  "start": 436.534,
+  "end": 436.835,
+  "score": 0.852,
+  "island": 14
+ },
+ {
+  "text": "Doktor",
+  "norm": "doktor",
+  "start": 436.855,
+  "end": 437.135,
+  "score": 0.757,
+  "island": 14
+ },
+ {
+  "text": "saya",
+  "norm": "saya",
+  "start": 437.175,
+  "end": 437.295,
+  "score": 0.495,
+  "island": 14
+ },
+ {
+  "text": "boleh",
+  "norm": "boleh",
+  "start": 437.295,
+  "end": 437.435,
+  "score": 0.697,
+  "island": 14
+ },
+ {
+  "text": "sembuh",
+  "norm": "sembuh",
+  "start": 437.455,
+  "end": 437.735,
+  "score": 0.908,
+  "island": 14
+ },
+ {
+  "text": "ke",
+  "norm": "ke",
+  "start": 437.795,
+  "end": 437.855,
+  "score": 0.689,
+  "island": 14
+ },
+ {
+  "text": "Terbitan",
+  "norm": "terbitan",
+  "start": 437.975,
+  "end": 438.335,
+  "score": 0.943,
+  "island": 14
+ },
+ {
+  "text": "white",
+  "norm": "white",
+  "start": 438.396,
+  "end": 438.576,
+  "score": 0.788,
+  "island": 14
+ },
+ {
+  "text": "coat",
+  "norm": "coat",
+  "start": 438.596,
+  "end": 438.736,
+  "score": 0.373,
+  "island": 14
+ },
+ {
+  "text": "books",
+  "norm": "books",
+  "start": 438.816,
+  "end": 439.136,
+  "score": 0.973,
+  "island": 14
+ },
+ {
+  "text": "Yang",
+  "norm": "yang",
+  "start": 439.756,
+  "end": 439.856,
+  "score": 0.99,
+  "island": 14
+ },
+ {
+  "text": "membincangkan",
+  "norm": "membincangkan",
+  "start": 439.856,
+  "end": 440.437,
+  "score": 0.927,
+  "island": 14
+ },
+ {
+  "text": "tentang",
+  "norm": "tentang",
+  "start": 440.477,
+  "end": 440.717,
+  "score": 0.717,
+  "island": 14
+ },
+ {
+  "text": "penyakit",
+  "norm": "penyakit",
+  "start": 440.737,
+  "end": 441.017,
+  "score": 0.909,
+  "island": 14
+ },
+ {
+  "text": "mental",
+  "norm": "mental",
+  "start": 441.037,
+  "end": 441.377,
+  "score": 0.701,
+  "island": 14
+ },
+ {
+  "text": "Dan",
+  "norm": "dan",
+  "start": 441.437,
+  "end": 441.557,
+  "score": 0.693,
+  "island": 14
+ },
+ {
+  "text": "perjalanan",
+  "norm": "perjalanan",
+  "start": 441.597,
+  "end": 442.018,
+  "score": 0.899,
+  "island": 14
+ },
+ {
+  "text": "pemulihan",
+  "norm": "pemulihan",
+  "start": 442.158,
+  "end": 442.758,
+  "score": 0.993,
+  "island": 14
+ },
+ {
+  "text": "dengan",
+  "norm": "dengan",
+  "start": 442.798,
+  "end": 442.998,
+  "score": 0.957,
+  "island": 14
+ },
+ {
+  "text": "bahasa",
+  "norm": "bahasa",
+  "start": 443.018,
+  "end": 443.339,
+  "score": 0.999,
+  "island": 14
+ },
+ {
+  "text": "yang",
+  "norm": "yang",
+  "start": 443.399,
+  "end": 443.499,
+  "score": 0.991,
+  "island": 14
+ },
+ {
+  "text": "mudah",
+  "norm": "mudah",
+  "start": 443.579,
+  "end": 443.879,
+  "score": 0.998,
+  "island": 14
+ },
+ {
+  "text": "untuk",
+  "norm": "untuk",
+  "start": 443.959,
+  "end": 444.119,
+  "score": 0.989,
+  "island": 14
+ },
+ {
+  "text": "difahami",
+  "norm": "difahami",
+  "start": 444.139,
+  "end": 444.559,
+  "score": 0.987,
+  "island": 14
+ },
+ {
+  "text": "kalau",
+  "norm": "kalau",
+  "start": 460.604,
+  "end": 460.964,
+  "score": 0.701,
+  "island": 15
+ },
+ {
+  "text": "tuan-tuan",
+  "norm": "tuantuan",
+  "start": 461.165,
+  "end": 461.586,
+  "score": 0.867,
+  "island": 15
+ },
+ {
+  "text": "kalau",
+  "norm": "kalau",
+  "start": 462.347,
+  "end": 462.588,
+  "score": 0.726,
+  "island": 15
+ },
+ {
+  "text": "anda",
+  "norm": "anda",
+  "start": 462.668,
+  "end": 462.908,
+  "score": 0.993,
+  "island": 15
+ },
+ {
+  "text": "pernah",
+  "norm": "pernah",
+  "start": 463.049,
+  "end": 463.47,
+  "score": 0.961,
+  "island": 15
+ },
+ {
+  "text": "dimasukkan",
+  "norm": "dimasukkan",
+  "start": 463.931,
+  "end": 464.391,
+  "score": 0.991,
+  "island": 16
+ },
+ {
+  "text": "ke",
+  "norm": "ke",
+  "start": 464.451,
+  "end": 464.492,
+  "score": 0.997,
+  "island": 16
+ },
+ {
+  "text": "dalam",
+  "norm": "dalam",
+  "start": 464.532,
+  "end": 464.872,
+  "score": 0.813,
+  "island": 16
+ },
+ {
+  "text": "ward",
+  "norm": "ward",
+  "start": 465.252,
+  "end": 465.373,
+  "score": 0.439,
+  "island": 16
+ },
+ {
+  "text": "secretary",
+  "norm": "secretary",
+  "start": 465.433,
+  "end": 465.873,
+  "score": 0.507,
+  "island": 16
+ },
+ {
+  "text": "mungkin",
+  "norm": "mungkin",
+  "start": 466.113,
+  "end": 466.374,
+  "score": 0.965,
+  "island": 16
+ },
+ {
+  "text": "boleh",
+  "norm": "boleh",
+  "start": 466.414,
+  "end": 466.574,
+  "score": 0.993,
+  "island": 16
+ },
+ {
+  "text": "kongsikan",
+  "norm": "kongsikan",
+  "start": 466.594,
+  "end": 467.054,
+  "score": 0.96,
+  "island": 16
+ },
+ {
+  "text": "pengalaman",
+  "norm": "pengalaman",
+  "start": 467.094,
+  "end": 467.515,
+  "score": 0.942,
+  "island": 16
+ },
+ {
+  "text": "anda",
+  "norm": "anda",
+  "start": 467.575,
+  "end": 467.835,
+  "score": 0.997,
+  "island": 16
+ },
+ {
+  "text": "di",
+  "norm": "di",
+  "start": 468.296,
+  "end": 468.376,
+  "score": 0.485,
+  "island": 16
+ },
+ {
+  "text": "dalam",
+  "norm": "dalam",
+  "start": 468.376,
+  "end": 468.556,
+  "score": 0.003,
+  "island": 16
+ },
+ {
+  "text": "komen",
+  "norm": "komen",
+  "start": 468.616,
+  "end": 468.937,
+  "score": 0.944,
+  "island": 16
+ },
+ {
+  "text": "apa",
+  "norm": "apa",
+  "start": 469.117,
+  "end": 469.237,
+  "score": 0.982,
+  "island": 16
+ },
+ {
+  "text": "soalan",
+  "norm": "soalan",
+  "start": 469.357,
+  "end": 469.657,
+  "score": 0.716,
+  "island": 16
+ },
+ {
+  "text": "boleh",
+  "norm": "boleh",
+  "start": 469.677,
+  "end": 469.778,
+  "score": 0.272,
+  "island": 16
+ },
+ {
+  "text": "tanya",
+  "norm": "tanya",
+  "start": 469.798,
+  "end": 469.918,
+  "score": 0.276,
+  "island": 16
+ },
+ {
+  "text": "di",
+  "norm": "di",
+  "start": 469.918,
+  "end": 469.978,
+  "score": 0.495,
+  "island": 16
+ },
+ {
+  "text": "dalam",
+  "norm": "dalam",
+  "start": 469.978,
+  "end": 470.098,
+  "score": 0.004,
+  "island": 16
+ },
+ {
+  "text": "komen",
+  "norm": "komen",
+  "start": 470.138,
+  "end": 470.378,
+  "score": 0.969,
+  "island": 16
+ },
+ {
+  "text": "take",
+  "norm": "take",
+  "start": 470.478,
+  "end": 470.639,
+  "score": 0.355,
+  "island": 16
+ },
+ {
+  "text": "care",
+  "norm": "care",
+  "start": 470.639,
+  "end": 470.759,
+  "score": 0.239,
+  "island": 16
+ }
+]
