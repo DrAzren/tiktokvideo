@@ -2,8 +2,9 @@
 
 ## Fail
 - Video: `final_1080_youtube.mp4` (1080p, 6:16)
-- Thumbnail A, recommended: `youtube/thumbnail_a.jpg`, MITOS vs REALITI, "WAD PSIKIATRI MENAKUTKAN?"
-- Thumbnail B: `youtube/thumbnail_b.jpg`, "1911 → HARI INI · BETUL KE SERAM?"
+- Thumbnail A, recommended: `youtube/thumbnail_a.jpg`, Dr. Azren between MITOS and REALITI, "WAD PSIKIATRI MENAKUTKAN?"
+- Thumbnail B: `youtube/thumbnail_b.jpg`, Dr. Azren on the right, "1911 → HARI INI · BETUL KE SERAM?"
+- The cutout `youtube/dr_azren_cutout.png` was colour-keyed from the flat navy background of the photo supplied by the user
 - Sari kata: `sejarah-wad-psikiatri_ms.srt` (Bahasa Melayu)
 
 ## Tajuk

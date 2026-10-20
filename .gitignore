@@ -41,3 +41,4 @@ videos/**
 !videos/*/youtube/*.md
 !videos/*/youtube/*.html
 !videos/*/youtube/*.jpg
+!videos/*/youtube/*.png
