@@ -38,3 +38,6 @@ videos/**
 !videos/*/stills/jobs.txt
 !videos/*/edit/cut_words.json
 !videos/*/edit/realign.json
+!videos/*/youtube/*.md
+!videos/*/youtube/*.html
+!videos/*/youtube/*.jpg
