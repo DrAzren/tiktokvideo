@@ -124,3 +124,8 @@ Master: −14 LUFS, TP −1.2.
 - End card: helpline line removed.
 
 **Credits:** none spent this session.
+
+**Session 2 deliverables / QA:**
+- `final_1080.mp4`: 1920×1080, 24 fps, 6:16.4 (9033 frames), 585 MB. `final_share_720p.mp4`: 72 MB.
+- −14.0 LUFS, peak −1.1 dBFS; the only black is 0–0.125 s, the fade-in.
+- 14 frames sampled, including 3:23–3:25 (the old repeat), the book card and the end card.
