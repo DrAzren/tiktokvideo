@@ -129,3 +129,18 @@ Master: −14 LUFS, TP −1.2.
 - `final_1080.mp4`: 1920×1080, 24 fps, 6:16.4 (9033 frames), 585 MB. `final_share_720p.mp4`: 72 MB.
 - −14.0 LUFS, peak −1.1 dBFS; the only black is 0–0.125 s, the fade-in.
 - 14 frames sampled, including 3:23–3:25 (the old repeat), the book card and the end card.
+
+## Session 3 — TikTok 9:16 (no Higgsfield credits)
+- **Source:** `NOSUBS=1 build_wad.py` → `doc/render_nosub.mp4`. This is the 16:9 film with no burned subtitles. Afterwards
+  `build_wad.py` was re-run so `index.html` holds the normal build again.
+- **Layer:** `tiktok/make_ass.py` → `captions.ass`.
+  - Header: BORAK JIWA + title.
+  - Chapter chips at the YouTube chapter times.
+  - Captions: two lines of at most 20 chars, the spoken word in yellow, gold/teal keywords as in the 16:9 version.
+  - Captions centre on x=490, clear of TikTok's right-hand buttons. Nothing sits below y≈1330.
+- **Compose:** `tiktok/compose.sh`.
+  - Blurred backdrop of the same film, darkened (black@0.5) so cream text stays readable over parchment scenes.
+  - The film as a 1080×608 band at y 470.
+  - The ASS layer is drawn with the composition's fonts, converted from woff2 to ttf in `tiktok/fonts/`.
+- **Cover:** `tiktok/tiktok_cover.jpg` (1080×1920) uses the Dr. Azren cutout. Post copy is in `tiktok/tiktok_post.md`.
+- **Output:** `final_tiktok_9x16.mp4`: 1080×1920, 24 fps, 6:16, 74 MB, −14.0 LUFS, peak −1.1 dBFS.

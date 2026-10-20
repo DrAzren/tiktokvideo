@@ -5,7 +5,7 @@ set -euo pipefail
 cd "$(dirname "$0")"
 IN=$1; AUD=$2; OUT=$3; shift 3
 FG="[0:v]split[a][b];
-[a]scale=-2:640,crop=360:640,boxblur=14:2,scale=1080:1920,eq=brightness=-0.16:saturation=0.8[bg];
+[a]scale=-2:640,crop=360:640,boxblur=14:2,scale=1080:1920,eq=brightness=-0.1:saturation=0.8,drawbox=x=0:y=0:w=1080:h=1920:color=black@0.5:t=fill[bg];
 [b]scale=1080:608:flags=lanczos[fg];
 [bg][fg]overlay=0:470,drawbox=x=0:y=468:w=1080:h=2:color=0xD9A441@0.85:t=fill,drawbox=x=0:y=1078:w=1080:h=2:color=0xD9A441@0.85:t=fill,
 ass=captions.ass:fontsdir=fonts[v]"
