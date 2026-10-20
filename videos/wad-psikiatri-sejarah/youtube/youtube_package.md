@@ -33,13 +33,12 @@ Dalam video ini, Dr. Azren, doktor psikiatri, bawa kita menyusuri sejarah rawata
 5:34 Pengalaman sebagai doktor psikiatri
 5:53 Buku "Dr, Saya Boleh Sembuh Ke?"
 
-🩺 SARINGAN & KONSULTASI
-Dr. Azren · Klinik Nissa
-[Alamat / no. telefon / pautan temujanji]
+🩺 Tempah Konsultasi Bersama Dr Azren (Saringan & Konsultasi Kesihatan Mental, Klinik Nissa):
+https://kliniknissa.yezza.co/appointment/kesihatan-mental-(konsultasi-dan-saringan)-129685
 
 📘 BUKU: "Dr, Saya Boleh Sembuh Ke?" (Manual Survival Kesihatan Mental)
 Menjawab persoalan & menangkis mitos tentang OCD, kemurungan, ketagihan, anxiety, ADHD, bipolar, skizofrenia, PTSD dan gangguan personaliti, dalam bahasa yang mudah difahami. Terbitan White Coat Books.
-[Pautan pembelian]
+Dapatkan buku di sini: https://docs.google.com/forms/d/e/1FAIpQLScl6Dvc4PyEMdOEO005c-mnDxJPLRIQ3NBbQOv3pt9-7GEXnw/viewform
 
 💬 Pernah dimasukkan ke wad psikiatri, atau menjaga ahli keluarga yang pernah dirawat? Kongsikan pengalaman anda di ruangan komen. Ada soalan? Tanya juga di komen.
 
@@ -57,6 +56,9 @@ wad psikiatri, wad psikiatri malaysia, sejarah wad psikiatri, hospital bahagia u
 
 ## Komen untuk di-pin
 > Soalan untuk anda: sebelum tengok video ni, apa yang anda bayangkan bila dengar "wad psikiatri"? Dan kalau anda atau keluarga pernah dirawat di wad psikiatri, macam mana pengalaman sebenarnya? Kongsikan di bawah 👇
+>
+> 🩺 Tempah konsultasi bersama Dr Azren: https://kliniknissa.yezza.co/appointment/kesihatan-mental-(konsultasi-dan-saringan)-129685
+> 📘 Buku "Dr, Saya Boleh Sembuh Ke?": https://docs.google.com/forms/d/e/1FAIpQLScl6Dvc4PyEMdOEO005c-mnDxJPLRIQ3NBbQOv3pt9-7GEXnw/viewform
 
 ## Tetapan semasa muat naik (YouTube Studio)
 - **Altered or synthetic content:** pilih **Yes**. Visual sejarah dijana AI dan kelihatan realistik.
@@ -65,4 +67,4 @@ wad psikiatri, wad psikiatri malaysia, sejarah wad psikiatri, hospital bahagia u
 - **Category:** Education. **Audience:** No, it's not made for kids.
 - **Chapters:** automatik daripada cap masa dalam deskripsi. Bab pertama mesti bermula 0:00.
 - **End screen** (20 saat terakhir): video Episod 1 "Sejarah Penyakit Mental" + butang Subscribe.
-- Isi tempat bertanda [ ] dengan alamat klinik dan pautan buku sebelum diterbitkan.
+- Pautan temujanji klinik dan pembelian buku sudah diisi.
