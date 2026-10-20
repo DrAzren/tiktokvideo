@@ -77,3 +77,14 @@ Master: −14 LUFS, TP −1.2.
 - Real book cover (the cover is illustrated, not the actual one).
 - Verify the helplines (HEAL 15555, Befrienders KL 03-7627 2929).
 - Turn on YouTube's AI-content disclosure.
+
+**Deliverables:**
+- `final_1080.mp4`: 1920×1080, 24 fps, 6:26.4, AAC 320k, 606 MB.
+- `final_share_720p.mp4`: 73 MB.
+- `sejarah-wad-psikiatri_ms.srt`.
+
+**QA:**
+- 9274 frames. The only black is 0–0.125 s, the fade-in.
+- −14.0 LUFS, peak −1.1 dBFS.
+- 27 frames sampled across every chapter, transition and card.
+- The 1080p render takes 27 min here.
