@@ -168,23 +168,6 @@ def molecule_svg(iid: str, seed: int):
     return svg, pulse_ids, glint_ids
 
 
-# ---------------------------------------------------------------------------------------------
-# B-roll slots: (id, prompt id, start, end, fallback, label)
-#   fallback: "neural" | "pill" | "molecule" | None (talking head stays; the card carries the line)
-def broll_slots():
-    return [
-        ("b01", "B01", T("yang stabilkan mood") - 0.25, T("ubat litium") - 0.2, "neural"),
-        ("b02", "B02", T("kata underrated") - 0.2, T("iaitu lamotrigine") - 0.05, "pill"),
-        ("b08", "B08", T("famous untuk") - 0.15, T("especially") + 0.0, "molecule"),
-        ("b03", "B03", T("especially"), T("bipolar disorder") - 0.15, None),
-        ("b04", "B04", T("jadi ramai orang") - 0.15, T("dan sesuai untuk") - 0.1, None),
-        ("b05", "B05", T("tapi dengan monitoring") - 0.15, T("seperti biasa setiap") - 0.1, None),
-        ("b06", "B06", T("ubat ni dia kena start") - 0.15, T("perlahan lahan") - 0.25, None),
-        ("b07", "B07", T("tapi kena ingat") - 0.15, T("kalau anda rasa") - 0.12, None),
-        ("b09", "B09", T("kalau anda rasa") - 0.12, T("boleh set appointment") - 0.15, None),
-    ]
-
-
 def probe_dur(p: Path) -> float:
     return float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration",
                                           "-of", "csv=p=0", str(p)], text=True))
@@ -220,84 +203,24 @@ def pulses_js(pulse_ids, glint_ids, st, en):
                   f"yoyo:true, repeat:1}}, {q(t0)});")
 
 
-def add_broll():
-    styles = ["circle", "left", "up"]
-    for k, (iid, pid, st, en, fb) in enumerate(broll_slots()):
-        st, en = q(st), q(en)
-        clip = PUB / "broll" / f"{pid}.mp4"
-        host = f"{iid}-in"
-        STORY.append({"id": iid, "kind": "broll", "prompt": pid, "start": st, "end": en,
-                      "source": clip.name if clip.exists() else (f"fallback:{fb}" if fb else "talking head")})
-        if clip.exists():
-            d = probe_dur(clip)
-            ms = round(max(0.0, (d - (en - st)) / 2), 3)       # the middle of the generation
-            INS_HOSTS.append(
-                f'<div class="ins" id="{host}" style="z-index:{20 + k}">'
-                f'<video id="{iid}-v" class="clip kbv" src="broll/{pid}.mp4" muted playsinline data-start="{st}" '
-                f'data-duration="{round(en - st, 4)}" data-media-start="{ms}" data-track-index="{3 + k % 2}"></video>'
-                f'<div class="ins-shade"></div><div class="ai-tag">Ilustrasi AI</div></div>')
-            JS.append(f"// B-roll {iid} ({pid}) {st:.2f}-{en:.2f}")
-            JS.append(f"tl.fromTo('#{host}', {{opacity:0}}, {{opacity:1, duration:0.01}}, {st});")
-            reveal(f"#{host}", st, styles[k % 3])
-            JS.append(f"tl.fromTo('#{iid}-v', {{scale:1.06}}, {{scale:1.0, duration:{round(en - st, 3)}, ease:'power1.out'}}, {st});")
-            JS.append(f"tl.to('#{host}', {{opacity:0, duration:0.2, ease:'power2.in'}}, {q(en - 0.2)});")
-            sfx(st, "whoosh", -4)
-            continue
-        if fb is None:
-            continue
-        if fb == "neural":
-            svg, pids, gids = neural_svg(iid, 7)
-            body = f'<div class="mg-bg"></div>{svg}<div class="mg-vig"></div>'
-        elif fb == "molecule":
-            svg, pids, gids = molecule_svg(iid, 11)
-            body = f'<div class="mg-bg"></div>{svg}<div class="mg-vig"></div>'
-        else:  # pill
-            pids, gids = [], []
-            body = (f'<div class="mg-bg"></div><div class="floor"></div>'
-                    f'<div class="tab-wrap" id="{iid}-tab"><div class="tab-shadow"></div><div class="tab"><div class="tab-sweep" id="{iid}-sw"></div></div>'
-                    f'<div class="tab-refl"></div></div>'
-                    f'<div class="kin" id="{iid}-k1">Underrated</div><div class="kin gold" id="{iid}-k2">Tapi power</div>'
-                    f'<div class="mg-vig"></div>')
-        INS_HOSTS.append(f'<div class="ins clip" id="ins-{iid}" data-start="{st}" data-duration="{round(en - st, 4)}" '
-                         f'data-track-index="{3 + k % 2}" style="z-index:{20 + k}"><div class="ins-in" id="{host}">{body}</div></div>')
-        JS.append(f"// fallback {fb} for {iid} ({pid} not delivered yet) {st:.2f}-{en:.2f}")
-        reveal(f"#{host}", st, styles[k % 3])
-        if fb in ("neural", "molecule"):
-            JS.append(f"tl.fromTo('#{iid}-net', {{scale:1.0, rotation:-3, transformOrigin:'50% 45%'}}, {{scale:1.14, rotation:3, "
-                      f"duration:{round(en - st, 3)}, ease:'power1.inOut'}}, {st});")
-            pulses_js(pids, gids, st, en)
-            sfx(st, "pulse", -6)
-        else:
-            JS.append(f"tl.fromTo('#{iid}-tab', {{scale:0.94, y:30}}, {{scale:1.06, y:0, duration:{round(en - st, 3)}, ease:'power1.out'}}, {st});")
-            JS.append(f"tl.fromTo('#{iid}-sw', {{xPercent:-160}}, {{xPercent:160, duration:1.4, ease:'power2.inOut'}}, {q(st + 0.25)});")
-            t1, t2 = T("underrated") - LEAD, T("tapi power") - LEAD
-            JS.append(f"tl.fromTo('#{iid}-k1', {{opacity:0, y:40, scaleX:1.18}}, {{opacity:1, y:0, scaleX:1, duration:0.5, ease:'power3.out'}}, {q(t1)});")
-            JS.append(f"tl.to('#{iid}-k1', {{opacity:0.35, duration:0.3, ease:'power2.out'}}, {q(t2 - 0.1)});")
-            JS.append(f"tl.fromTo('#{iid}-k2', {{opacity:0, scale:1.4}}, {{opacity:1, scale:1, duration:0.32, ease:'power4.out'}}, {q(t2)});")
-            sfx(t2, "impact", -8)
-        JS.append(f"tl.to('#{host}', {{opacity:0, duration:0.22, ease:'power2.in'}}, {q(en - 0.22)});")
-        sfx(st, "whoosh", -6)
-
-
 # ---------------------------------------------------------------------------------------------
 # full-screen motion graphics
+MG_LEGACY = {}   # name -> (a, b) -> (html, anims); used by scenes_v2.add_scenes
+
+
 def mg(iid, st, en, body, anims, reveal_style="up"):
-    st, en = q(st), q(en)
-    host = f"{iid}-in"
-    INS_HOSTS.append(f'<div class="ins clip" id="ins-{iid}" data-start="{st}" data-duration="{round(en - st, 4)}" '
-                     f'data-track-index="5" style="z-index:40"><div class="ins-in" id="{host}"><div class="mg-bg"></div>'
-                     f'<div class="mg-grid"></div>{body}<div class="mg-vig"></div></div></div>')
-    STORY.append({"id": iid, "kind": "motion-graphic", "start": st, "end": en})
-    JS.append(f"// motion graphic {iid} {st:.2f}-{en:.2f}")
-    reveal(f"#{host}", st, reveal_style)
-    sfx(st, "whoosh", -5)
+    """Register a motion graphic by name (iid 'mg-weight' -> 'weight'); the scene list places and times it."""
+    MG_LEGACY[iid.removeprefix("mg-")] = lambda a, b: (body, anims)
+
+
+def mg_anims(anims, st):
     for sel, t, kind in anims:
         t = q(max(t, st + 0.15))
         if kind == "rise":
             JS.append(f"tl.fromTo('{sel}', {{opacity:0, y:46}}, {{opacity:1, y:0, duration:0.45, ease:'power3.out'}}, {t});")
         elif kind == "pop":
             JS.append(f"tl.fromTo('{sel}', {{opacity:0, scale:0.6}}, {{opacity:1, scale:1, duration:0.36, ease:'back.out(1.7)'}}, {t});")
-            sfx(t, "tick", -12)
+            sfx(t, "pop", -10)
         elif kind == "slide":
             JS.append(f"tl.fromTo('{sel}', {{opacity:0, x:-70}}, {{opacity:1, x:0, duration:0.42, ease:'power3.out'}}, {t});")
             sfx(t, "tick", -12)
@@ -310,7 +233,8 @@ def mg(iid, st, en, body, anims, reveal_style="up"):
             JS.append(f"tl.fromTo('{sel}', {{clipPath:'inset(0% 100% 0% 0%)'}}, {{clipPath:'inset(0% 0% 0% 0%)', duration:0.5, ease:'power3.inOut'}}, {t});")
         elif isinstance(kind, tuple) and kind[0] == "js":
             JS.append(kind[1].replace("@T", str(t)))
-    JS.append(f"tl.to('#{host}', {{opacity:0, duration:0.22, ease:'power2.in'}}, {q(en - 0.22)});")
+        elif isinstance(kind, tuple) and kind[0] == "sfx":
+            sfx(t, kind[1], kind[2])
 
 
 def add_mgs():
@@ -413,62 +337,46 @@ def row(rid, ic, text, color=WHITE, cls="row"):
     return f'<div class="{cls}" id="{rid}">{icon(ic, "ico", color)}<span>{text}</span></div>'
 
 
-def add_cards(slots):
-    sl = {iid: (q(a), q(b)) for iid, _, a, b, _ in slots}
+def add_cards(sc):
+    S = {x["id"]: (x["a"], x["b"]) for x in sc}
 
-    card("k00", 0, sl["b01"][0] + 0.25,
+    card("k00", 0, S["s01"][0] + 0.25,
          '<div class="kick" id="k00-k">Ubat psikiatri</div>'
          '<div class="ttl" id="k00-t">Ubat mood yang <span class="gold">underrated</span></div>'
          '<div class="uline" id="k00-u"></div>',
          [("#k00-k", 0, "fade"), ("#k00-t", 0, "fade"), ("#k00-u", 0.25, "under")],
          "Hook headline on frame 0 (his words: ubat, mood, underrated)")
 
-    s = T("ramai yang tahu") - 0.2
-    card("k01", s, sl["b02"][0] + 0.25,
-         row("k01-r1", "check", 'Ubat <b class="gold">litium</b>: ramai tahu', BLUE_S, "row big")
-         + row("k01-r2", "pill", 'Satu lagi ubat<span class="gold">?</span>', GOLD, "row big"),
-         [("#k01-r1", T("litium") - LEAD, "slide"), ("#k01-r1", T("satu lagi") - 0.2, "dim"),
-          ("#k01-r2", T("satu lagi") - LEAD, "slide")],
-         "Lithium is the one people know; there is one more")
-
-    card("k05", T("bipolar disorder") - 0.2, T("dan risiko") - 0.2,
-         '<div class="kick" id="k05-k">Especially dalam</div>'
-         '<div class="ttl" id="k05-t">Bipolar <span class="gold">disorder</span></div>'
-         + row("k05-r", "check", 'Terutamanya: <b class="gold">episod kemurungan</b>', BLUE_S),
-         [("#k05-k", T("bipolar") - 0.25, "fade"), ("#k05-t", T("bipolar") - LEAD, "rise"),
-          ("#k05-r", T("episod") - LEAD, "slide")],
-         "Bipolar disorder, especially depressive episodes (his wording)")
+    s = T("terutamanya") - 0.1
+    card("k05", s, T("dan risiko") - 0.2,
+         '<div class="kick" id="k05-k">Bipolar disorder · terutamanya</div>'
+         '<div class="ttl" id="k05-t">Episod <span class="gold">kemurungan</span></div><div class="uline" id="k05-u"></div>',
+         [("#k05-k", s + 0.05, "fade"), ("#k05-t", T("episod") - LEAD, "rise"), ("#k05-u", T("kemurungan") - LEAD, "under")],
+         "Especially depressive episodes (his wording)")
 
     s = T("ubat ni juga dia tak")
-    card("k06", s, sl["b04"][0] + 0.2,
+    card("k06", s, S["s04"][0] + 0.2,
          '<div class="big-row" id="k06-r">' + icon("sleep", "ico xl", GOLD) +
          '<span>Tak buat rasa <b class="gold">mengantuk</b> sangat</span></div>',
          [("#k06-r", T("tak buat") - LEAD, "rise")],
          "Not very sedating")
 
-    card("k07", sl["b04"][0] + 0.1, sl["b04"][1] + 0.05,
-         row("k07-r1", "sun", 'Boleh <b class="gold">function</b> macam biasa', GOLD, "row big")
-         + '<div class="sub" id="k07-s">pada siang hari</div>',
-         [("#k07-r1", T("function") - LEAD, "slide"), ("#k07-s", T("siang hari") - LEAD, "fade")],
-         "Daytime functioning (label over B04 or the talking head)")
-
-    card("k08", T("dan sesuai untuk") - 0.1, sl["b05"][1] + 0.05,
-         row("k08-r1", "infinity", 'Sesuai untuk <b class="gold">long-term use</b>', BLUE_S, "row big")
-         + row("k08-r2", "steth", 'Dengan <b class="gold">monitoring doktor</b>', GOLD, "row big"),
-         [("#k08-r1", T("long term") - LEAD - 0.4, "slide"), ("#k08-r2", T("monitoring") - LEAD, "slide")],
-         "Long-term use, with doctor monitoring")
+    card("k08", S["s05"][0] + 0.15, S["s05"][1] - 0.3,
+         row("k08-r2", "steth", 'Dengan <b class="gold">monitoring doktor</b>', GOLD, "row big"),
+         [("#k08-r2", T("monitoring") - LEAD, "slide")],
+         "With doctor monitoring (over the consultation clip)")
 
     s = T("setiap ubat pun") - 0.15
-    card("k10", s, sl["b06"][0] + 0.2,
+    card("k10", s, S["s06"][0] + 0.2,
          '<div class="ttl" id="k10-t">Setiap ubat ada</div>'
          '<div class="ttl xl gold" id="k10-w">Side effect</div><div class="uline" id="k10-u"></div>',
          [("#k10-t", s + 0.05, "rise"), ("#k10-w", T("side effect") - LEAD, "pop"), ("#k10-u", T("side effect") + 0.1, "under")],
          "Every medicine has side effects")
 
-    card("k11", sl["b06"][0] + 0.1, sl["b06"][1],
+    card("k11", S["s06"][0] + 0.15, T("perlahan lahan") - 0.2,   # s06 runs on under the cube; the label leaves first
          row("k11-r", "pill", 'Mula dengan <b class="gold">dos yang rendah</b>', GOLD, "row big"),
          [("#k11-r", T("dos yang rendah") - LEAD, "slide")],
-         "Start with a low dose (label over B06 or the talking head)")
+         "Start with a low dose (over the pill-organizer clip)")
 
     # serious rash: calm, non-graphic, no B-roll
     s = T("sebab ada risiko") - 0.1
@@ -485,29 +393,24 @@ def add_cards(slots):
          "Serious rash risk, SJS: rare but possible; approved safety line")
 
     s = T("dan ubat ni juga dia tak")
-    card("k13", s, T("sama seperti ubat lain") - 0.1,
+    card("k13", s, S["s07"][1] - 0.3,
          '<div class="kick" id="k13-k">Lamotrigine</div>'
          + row("k13-r1", "cross", 'Tak begitu kuat untuk <b>fasa mania</b>', CORAL)
          + row("k13-r2", "check", 'Lebih untuk <b class="gold">elak kemurungan</b> datang balik', BLUE_S),
          [("#k13-k", s + 0.05, "fade"), ("#k13-r1", T("tak begitu kuat") - LEAD, "slide"),
           ("#k13-r1", T("dia lebih kepada") - 0.1, "dim"), ("#k13-r2", T("elak kemurungan") - LEAD, "slide")],
-         "Not strong for mania; more for preventing depression from returning")
+         "Not strong for mania; more for preventing depression from returning (stays over the sunrise clip)")
 
     s = T("sama seperti ubat lain") - 0.05
-    card("k14", s, sl["b07"][0] + 0.2,
+    card("k14", s, S["m07"][0] + 0.2,
          '<div class="big-row" id="k14-r">' + icon("stop", "ico xl", GOLD) +
          '<span>Jangan <b class="gold">stop sendiri</b></span></div>'
          '<div class="sub" id="k14-s">tanpa advice doktor</div>',
          [("#k14-r", T("jangan stop") - LEAD, "rise"), ("#k14-s", T("tanpa advice") - LEAD, "fade")],
          "Don't stop on your own without the doctor's advice")
 
-    card("k15", sl["b07"][0] + 0.1, sl["b07"][1] + 0.05,
-         row("k15-r", "shield", 'Ada cara guna yang <b class="gold">selamat</b>', GOLD, "row big"),
-         [("#k15-r", T("cara guna") - LEAD, "slide")],
-         "There is a safe way to use it")
-
     s = T("boleh set appointment") - 0.1
-    card("k16", s, T("apa persoalan") - 0.15,
+    card("k16", s, S["s08"][0] + 0.15,
          '<div class="name" id="k16-n">Dr Fakrul Azren</div><div class="role" id="k16-r">Mental Health Education</div>'
          '<div class="uline" id="k16-u"></div>',
          [("#k16-n", s + 0.08, "rise"), ("#k16-u", s + 0.3, "under"), ("#k16-r", s + 0.35, "fade")],
@@ -522,13 +425,13 @@ def add_cards(slots):
 
 # ---------------------------------------------------------------------------------------------
 # LAMOTRIGINE title: full-screen slam on the word, then docks into the chest band
-def add_title(slots):
+def add_title(sc):
     st = q(T("lamotrigine") - 0.12)
     dock = q(T("pernah dengar") - 0.1)
-    en = q(dict((i, a) for i, _, a, b, _ in slots)["b08"] + 0.2)
+    en = q(next(x["a"] for x in sc if x["id"] == "m02") + 0.2)
     INS_HOSTS.append(f'<div class="ins clip" id="ins-title" data-start="{st}" data-duration="{round(dock + 0.4 - st, 4)}" '
                      f'data-track-index="5" style="z-index:45"><div class="ins-in" id="title-bg"><div class="mg-bg"></div>'
-                     f'<div class="beam" id="title-beam"></div><div class="mg-vig"></div></div></div>')
+                     f'<div class="beam" id="title-beam"></div></div></div>')
     letters = "LAMOTRIGINE"   # plain text: background-clip:text does not paint inline-block children
     CARD_HOSTS.append(
         f'<div class="title-host clip" id="title-host" data-start="{st}" data-duration="{round(en - st, 4)}" data-track-index="7">'
@@ -543,30 +446,31 @@ def add_title(slots):
               f"{{opacity:1, scale:1, rotationX:0, y:820, filter:'blur(0px)', duration:0.55, ease:'power3.out'}}, {st});")
     JS.append(f"tl.fromTo('#title-front', {{backgroundPosition:'-120% 0'}}, {{backgroundPosition:'220% 0', duration:1.1, ease:'power2.inOut'}}, {q(st + 0.35)});")
     JS.append(f"tl.fromTo('#title-sub', {{opacity:0, y:20}}, {{opacity:1, y:0, duration:0.4, ease:'power3.out'}}, {q(st + 0.45)});")
-    # dock: title shrinks into the chest band while the navy ground falls away to the speaker
     JS.append(f"tl.to('#title-wrap', {{y:1060, x:-55, scale:0.6, duration:0.6, ease:'power3.inOut'}}, {dock});")
     JS.append(f"tl.fromTo('#title-plate', {{opacity:0, scaleY:0.6}}, {{opacity:1, scaleY:1, duration:0.45, ease:'power3.out'}}, {q(dock + 0.2)});")
     JS.append(f"tl.to('#title-bg', {{opacity:0, duration:0.4, ease:'power2.inOut'}}, {dock});")
     JS.append(f"tl.to('#title-wrap, #title-plate', {{opacity:0, duration:0.22, ease:'power2.in'}}, {q(en - 0.22)});")
     sfx(st, "impact", -3)
-    sfx(dock, "whoosh", -9)
+    sfx(st + 0.05, "shimmer", -12)
+    sfx(dock + 0.25, "whoosh", -9)
 
 
 # ---------------------------------------------------------------------------------------------
 # camera moves on the talking-head wrapper (the EDL already carries the per-range punch-ins)
-def add_camera(slots):
-    sl = {iid: (q(a), q(b)) for iid, _, a, b, _ in slots}
+def add_camera(sc):
+    S = {x["id"]: (x["a"], x["b"]) for x in sc}
     JS.append("// camera: opening punch-in, slow pushes on key lines (transform origin at the face)")
     JS.append("tl.fromTo('#video-wrap', {scale:1.0}, {scale:1.14, duration:0.3, ease:'power3.out'}, 0.04);")
-    JS.append(f"tl.set('#video-wrap', {{scale:1.0}}, {sl['b01'][0] + 0.4});")
+    JS.append(f"tl.set('#video-wrap', {{scale:1.0}}, {q(S['s01'][0] + 0.5)});")
     d = q(T("pernah dengar") - 0.1)
-    JS.append(f"tl.fromTo('#video-wrap', {{scale:1.0}}, {{scale:1.07, duration:1.6, ease:'power2.inOut', immediateRender:false}}, {d});")
-    JS.append(f"tl.set('#video-wrap', {{scale:1.0}}, {sl['b08'][0] + 0.4});")
+    JS.append(f"tl.fromTo('#video-wrap', {{scale:1.0}}, {{scale:1.07, duration:1.4, ease:'power2.inOut', immediateRender:false}}, {d});")
+    JS.append(f"tl.set('#video-wrap', {{scale:1.0}}, {q(S['m02'][0] + 0.7)});")
     s = q(T("sama seperti ubat lain"))
-    JS.append(f"tl.fromTo('#video-wrap', {{scale:1.0}}, {{scale:1.06, duration:{round(sl['b07'][0] - s, 3)}, ease:'power2.inOut', immediateRender:false}}, {s});")
-    JS.append(f"tl.set('#video-wrap', {{scale:1.0}}, {sl['b07'][0] + 0.4});")
-    s = q(sl["b09"][1])
-    JS.append(f"tl.fromTo('#video-wrap', {{scale:1.0}}, {{scale:1.05, duration:{round(DUR - 1.6 - s, 3)}, ease:'power1.inOut', immediateRender:false}}, {s});")
+    JS.append(f"tl.fromTo('#video-wrap', {{scale:1.0}}, {{scale:1.06, duration:{round(S['m07'][0] - s, 3)}, ease:'power2.inOut', immediateRender:false}}, {s});")
+    JS.append(f"tl.set('#video-wrap', {{scale:1.0}}, {q(S['m07'][0] + 0.5)});")
+    s = q(S["m08"][1])
+    JS.append(f"tl.fromTo('#video-wrap', {{scale:1.0}}, {{scale:1.05, duration:{round(S['s08'][0] - s, 3)}, ease:'power1.inOut', immediateRender:false}}, {s});")
+    JS.append(f"tl.set('#video-wrap', {{scale:1.0}}, {q(S['s08'][0] + 0.7)});")
     sfx(0.04, "impact", -6)
 
 
@@ -682,7 +586,8 @@ b {{ font-weight:800; }}
   rgba(6,20,43,0) 52%, rgba(6,20,43,.55) 72%, rgba(6,20,43,.7) 100%); }}
 .ai-tag {{ position:absolute; left:48px; top:176px; font:700 22px 'Plus Jakarta Sans'; letter-spacing:.1em; text-transform:uppercase;
   color:rgba(255,255,255,.88); background:rgba(6,20,43,.5); padding:7px 14px 6px; border-radius:10px; }}
-.mg-bg {{ position:absolute; inset:0; background:radial-gradient(110% 70% at 70% 18%, {NAVY_L} 0%, {NAVY} 45%, {NAVY_D} 100%); }}
+.mg-bg {{ position:absolute; inset:0; background:radial-gradient(90% 70% at 50% 45%, transparent 55%, rgba(0,0,0,.45) 100%),
+  radial-gradient(110% 70% at 70% 18%, {NAVY_L} 0%, {NAVY} 45%, {NAVY_D} 100%); }}
 .mg-grid {{ position:absolute; inset:0; opacity:.5;
   background-image:linear-gradient(rgba(159,216,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(159,216,255,.06) 1px, transparent 1px);
   background-size:60px 60px; }}
@@ -782,6 +687,47 @@ b {{ font-weight:800; }}
 .end-line {{ width:360px; height:7px; margin:34px auto 26px; border-radius:4px; background:linear-gradient(90deg, {GOLD}, {GOLD_L}); }}
 .end-name {{ font-weight:700; font-size:34px; letter-spacing:.08em; color:{MUTED}; }}
 
+/* round 2: transitions, paper frames, new motion graphics */
+.ai-tag.r {{ left:auto; right:48px; }}
+.vscene {{ opacity:0; }}
+.fshade {{ position:absolute; inset:0; background:linear-gradient(90deg, rgba(0,0,0,.75), rgba(0,0,0,.15)); opacity:0; pointer-events:none; z-index:8; }}
+.tear-band {{ position:absolute; inset:0; z-index:9; pointer-events:none; clip-path:polygon(0% 0%, 0% 0%, 0% 0%);
+  background:linear-gradient(90deg, #C9BFAC 0%, #FBF8F1 45%, #EDE5D5 100%); }}
+.paper-bg {{ position:absolute; inset:0; background:radial-gradient(90% 60% at 50% 40%, {NAVY_L} 0%, {NAVY} 55%, {NAVY_D} 100%); }}
+.paper-bg::after {{ content:""; position:absolute; inset:0; opacity:.10; mix-blend-mode:overlay; background-image:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.55'/></svg>\"); }}
+.pol {{ position:absolute; left:170px; top:200px; width:740px; height:1110px; padding:30px 30px 0; border-radius:6px;
+  background:#F6F1E6; box-shadow:0 40px 90px rgba(0,0,0,.55), 0 4px 10px rgba(0,0,0,.25); }}
+.pol::after {{ content:""; position:absolute; inset:0; border-radius:6px; opacity:.16; mix-blend-mode:multiply; pointer-events:none;
+  background-image:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.55'/></svg>\"); }}
+.pol.ghost {{ background:#E4DCCB; }}
+.pol-photo {{ position:relative; width:680px; height:930px; overflow:hidden; background:#000; }}
+.pv {{ width:100%; height:100%; object-fit:cover; }}
+.pol-label {{ font-family:'Caveat', cursive; font-weight:700; font-size:76px; line-height:1; color:#14284B; text-align:center; margin-top:34px; }}
+.tape {{ position:absolute; width:190px; height:56px; top:-20px; background:rgba(236,224,190,.82); box-shadow:0 2px 8px rgba(0,0,0,.18); }}
+.tape.t1 {{ left:-50px; transform:rotate(-28deg); }}
+.tape.t2 {{ right:-50px; transform:rotate(26deg); }}
+.tile-wrap {{ position:absolute; left:290px; top:600px; width:500px; height:560px; transform-style:preserve-3d; }}
+.tile-face {{ position:absolute; inset:0; border-radius:36px; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  background:linear-gradient(160deg, {NAVY_L}, {NAVY}); border:6px solid {GOLD}; box-shadow:0 30px 70px rgba(0,0,0,.45);
+  backface-visibility:hidden; -webkit-backface-visibility:hidden; color:{WHITE}; }}
+.tile-face.back {{ transform:rotateY(180deg); }}
+.tn {{ position:absolute; left:40px; top:30px; font-weight:800; font-size:58px; color:{BLUE_S}; }}
+.ts {{ font-family:'Fraunces', serif; font-weight:800; font-size:250px; line-height:1; }}
+.tname {{ font-weight:800; font-size:52px; margin-top:10px; letter-spacing:.02em; }}
+.cal {{ position:absolute; left:190px; top:660px; width:700px; height:600px; }}
+.page {{ position:absolute; inset:0; border-radius:26px; background:#F6F1E6; box-shadow:0 26px 60px rgba(0,0,0,.4); overflow:hidden; }}
+.page-head {{ height:110px; background:linear-gradient(90deg, {GOLD}, {GOLD_L}); }}
+.page-grid {{ position:absolute; left:40px; right:40px; top:150px; bottom:40px;
+  background-image:linear-gradient(rgba(20,40,75,.18) 2px, transparent 2px), linear-gradient(90deg, rgba(20,40,75,.18) 2px, transparent 2px);
+  background-size:89px 78px; }}
+.rings {{ position:absolute; left:80px; right:80px; top:-26px; height:60px; z-index:30;
+  background:radial-gradient(circle at 20px 30px, #C9D3E0 14px, transparent 15px) 0 0/120px 60px repeat-x; }}
+.shield {{ position:absolute; left:0; top:0; width:1080px; height:1920px; }}
+.sh-word {{ position:absolute; left:0; right:0; top:1255px; text-align:center; font-weight:800; font-size:64px; color:{WHITE}; }}
+.wave {{ position:absolute; left:0; top:0; width:1080px; height:1920px; overflow:visible; }}
+.wave-line {{ fill:none; stroke:{BLUE_S}; stroke-width:9; stroke-linejoin:round; stroke-linecap:round; }}
+.wave-glow {{ fill:none; stroke:{BLUE}; stroke-width:30; opacity:.28; filter:blur(10px); }}
+
 /* captions */
 .cap {{ position:absolute; left:70px; top:1388px; width:840px; pointer-events:none; z-index:100; }}
 .cap-in {{ text-align:center; font-weight:800; font-size:58px; line-height:1.22; color:#FFFFFF; letter-spacing:-.005em;
@@ -795,14 +741,18 @@ b {{ font-weight:800; }}
 """
 
 
+exec((W / "scenes_v2.py").read_text(), globals())   # scene engine shares this module's helpers
+
+
 def main() -> None:
-    slots = broll_slots()
-    add_broll()
-    add_mgs()
-    add_title(slots)
-    add_cards(slots)
+    add_mgs()                 # registers weight / titrate / sidefx
+    sc = add_scenes()         # round 2: B-roll + motion graphics with varied transitions (scenes_v2.py)
+    add_title(sc)
+    add_cards(sc)
     add_end()
-    add_camera(slots)
+    add_camera(sc)
+    covered = sum(x["b"] - x["a"] for x in sc) + 1.1   # + the full-screen title slam
+    print(f"non-talking-head coverage: {covered:.1f}s of {DUR:.1f}s ({100 * covered / DUR:.0f}%)")
     n_js = len(JS)
     chunks = add_captions()
     out_dir = PUB
@@ -826,6 +776,8 @@ def main() -> None:
     fonts += "".join(
         f'@font-face{{font-family:"Fraunces";src:url("fonts/Fraunces-{w}.woff2") format("woff2");'
         f'font-weight:{w};font-style:normal;font-display:block;}}' for w in (600, 800))
+    fonts += ('@font-face{font-family:"Caveat";src:url("fonts/Caveat-700-latin.woff2") format("woff2");'
+              'font-weight:700;font-style:normal;font-display:block;}')
     page = f"""<!doctype html>
 <html lang="ms">
 <head>
@@ -863,7 +815,7 @@ def main() -> None:
     (W / "storyboard.json").write_text(json.dumps({"durationSeconds": DUR, "fps": FPS, "items": sorted(STORY, key=lambda x: x["start"]),
                                                    "captions": chunks}, indent=1, ensure_ascii=False))
     (W / "sfx_cues.json").write_text(json.dumps(sorted(SFX, key=lambda x: x["t"]), indent=1))
-    br = [x for x in STORY if x["kind"] == "broll"]
+    br = [x for x in STORY if x["kind"].startswith("broll")]
     print(f"duration {DUR}s | {len(br)} B-roll slots ({sum(1 for x in br if x['source'].endswith('.mp4'))} delivered) | "
           f"{sum(1 for x in STORY if x['kind'] == 'motion-graphic')} MGs | {sum(1 for x in STORY if x['kind'] == 'card')} cards | "
           f"{len(chunks)} caption chunks | {len(JS)} timeline statements | {len(SFX)} SFX cues")

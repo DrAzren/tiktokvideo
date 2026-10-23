@@ -1,5 +1,9 @@
 # Lamotrigine Reel: Seedance 2.0 manual batch (higgsfield.ai, Unlimited)
 
+> **Update (session 2):** with your 30-credit approval, B01–B06 and B09 were generated through the connector as
+> Seedance 2.0 Mini, 720p, 4 s, no audio (7 × 4 = 28 credits) and are in the v2 edit as `broll/hf/S1–S7.mp4`.
+> The prompts below still work on higgsfield.ai if you want higher-resolution Unlimited versions to swap in.
+
 **Why manual:** checked 23 Oct 2026 through the Higgsfield connector. `models_explore` reports
 `unlim.available: false` for this connection (Seedance 2.0 and Nano Banana 2.1 alike), so every
 generation from here would spend credits. Balance at check: **281.37 credits, Plus plan**. Nothing was

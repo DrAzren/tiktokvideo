@@ -18,17 +18,22 @@ E = Path(__file__).parent
 SRC = "lamo"
 SRC_PATH = str((E.parent / "raw" / "Ubat Psikiatri Lamotrigine.mp4").resolve())
 
-QUIET_DB = -40.0     # below this for QUIET_RUN frames = the word has really ended/not begun
+QUIET_DB = -46.0     # below this for QUIET_RUN frames = the word has really ended/not begun
+                     # (-40 cut audible decays: speech peaks near -6 dB here)
 QUIET_RUN = 3        # 30ms
-TAIL_OUT, LEAD_IN = 0.06, 0.07   # extra air kept after offset / before onset (soft f/s/h onsets sit
+TAIL_OUT, LEAD_IN = 0.10, 0.07   # extra air kept after offset / before onset (soft f/s/h onsets sit
                                  # 20-40 ms before the -40 dB rise, e.g. 'fasa' at 113.155)
-MIN_CUT = 0.12       # a pause-shrink that would remove less than this is skipped (jump + fade for nothing)
-MAX_SNAP = 0.35      # never move more than this from the aligned word edge
+MIN_CUT = 0.06       # a pause-shrink that would remove less than this is skipped (jump + fade for nothing)
+MAX_SNAP = 0.45      # never move more than this from the aligned word edge
 TIGHT = 0.16
-MAX_PAUSE = 0.32     # gaps between kept words longer than this get shrunk (TikTok pace)
+MAX_PAUSE = 0.20     # gaps between kept words longer than this get shrunk (round 2: user heard 0.3 s gaps as delays)
 ZOOMS = [1.0, 1.07, 1.02, 1.08, 1.035]  # punch-in levels cycled across jump cuts (varied, not ping-pong)
 PUNCH_MIN = 0.8      # ranges shorter than this keep the previous zoom (no flicker)
-MICRO = 0.7          # a pause-shrink cut that leaves a range shorter than this is undone (no stutter)
+SPEECH_DB = -30.0    # energy pass: below this = not speech (silence, breath, decayed tail)
+PAUSE_MAX = 0.17     # non-speech runs inside a range longer than this are cut down to KEEP_A + KEEP_B
+KEEP_A, KEEP_B = 0.08, 0.05
+TAIL_CAP, HEAD_CAP = 0.09, 0.07   # quiet kept after the last sound / before the first, at every join
+MICRO = 0.4         # a pause-shrink cut that leaves a range shorter than this is undone (no stutter)
 TAIL_HOLD = 1.5      # freeze the last frame so the SPREAD POSITIVITY end card can land
 FACE = [0.50, 0.38]  # zoom focus: face centre as a fraction of the frame (face sits high in this shot)
 
@@ -67,8 +72,13 @@ WORD_FIX = {
 }
 # explicit cut points where an /s/ onset defeats the energy-minimum rule (the hiss is quieter than the
 # vowel before it, so the minimum lands inside the s). Keyed by the kept word; from the 5 ms ZCR check.
-CUT_OUT = {("WEIGHT", 7): 56.255}    # "rendah" | dropped "sebenarnya" (its s starts 56.26)
-CUT_IN = {("WEIGHT", 9): 56.700}     # "sebab" (its s starts 56.708)
+CUT_OUT = {("WEIGHT", 7): 56.255,    # "rendah" | dropped "sebenarnya" (its s starts 56.26)
+           ("DROWSY", 31): 73.475,   # "doktor lah" decays to -60 dB at 73.47; the breathy "ha" filler starts 73.485
+           ("TITRATE", 29): 90.91}   # "rare" | dropped "sebenarnya": deepest dip (-27 dB) of the r->s transition
+CUT_IN = {("WEIGHT", 9): 56.700,     # "sebab" (its s starts 56.708)
+          ("FAMOUS", 5): 43.585}     # "Lamotrigine" after dropped "tadi": MMS character peaks put tadi's d/i at
+                                     # 43.45/43.51 and the l at 43.63; the bright /i/ ends ~43.59 (spectral centroid),
+                                     # so earlier starts (43.48, 43.42) kept "di" (large-v3 heard "Di"/"Jadi")
 
 
 def main() -> None:
@@ -115,6 +125,8 @@ def main() -> None:
 
     def cut_in(k: int) -> float:
         w = flat[k]
+        if (w["iid"], w["i"]) in CUT_IN:
+            return CUT_IN[(w["iid"], w["i"])]
         prev = flat[k - 1] if k > 0 else None
         if prev and w["start"] - prev["end"] < TIGHT:
             return between(prev, w)
@@ -122,6 +134,8 @@ def main() -> None:
 
     def cut_out(k: int) -> float:
         w = flat[k]
+        if (w["iid"], w["i"]) in CUT_OUT:
+            return CUT_OUT[(w["iid"], w["i"])]
         nxt = flat[k + 1] if k + 1 < len(flat) else None
         if nxt and nxt["text"] == "*":  # unknown sound follows: end where the word's energy dies
             nxt2 = next((x for x in flat[k + 2:] if x["text"] != "*"), None)
@@ -147,8 +161,14 @@ def main() -> None:
             if dropped or hes:
                 # the neighbour is a filler/voiced hesitation, so energy never goes quiet: cut at the
                 # deepest dip right at each word's own edge
-                seg.append([cur, CUT_OUT.get((a["iid"], a["i"])) or emin(a["end"] - 0.02, a["end"] + 0.07)])
-                cur = CUT_IN.get((b["iid"], b["i"])) or emin(b["start"] - 0.07, b["start"] + 0.02)
+                # CTC ends run ~0.1 s early, so a fixed +0.07 s window cut word tails ("rare" heard as "red").
+                # Search from the word's aligned end to the START of whatever follows it in the source (the
+                # dropped word / hesitation), and mirror that for the next kept word.
+                nxt, prv = flat[k + 1], flat[k2 - 1]
+                out_hi = max(nxt["start"] + 0.03, a["end"] + 0.06)
+                in_lo = min(prv["end"] - 0.03, b["start"] - 0.06)
+                seg.append([cur, CUT_OUT.get((a["iid"], a["i"])) or emin(a["end"] - 0.02, out_hi)])
+                cur = CUT_IN.get((b["iid"], b["i"])) or emin(max(in_lo, seg[-1][1] + 0.02), b["start"] + 0.02)
                 forced.append(True)
             elif b["start"] - a["end"] > MAX_PAUSE:
                 seg.append([cur, cut_out(k)])
@@ -195,6 +215,38 @@ def main() -> None:
         else:
             merged.append(r)
     ranges = merged
+
+    # round 2: energy-based pause tightening (the aligner's early word ends hid real gaps). Non-speech is
+    # < SPEECH_DB; every such run inside a range longer than PAUSE_MAX is cut to KEEP_A + KEEP_B, and at each
+    # join the quiet tail / head is capped (TAIL_CAP after the last sound, HEAD_CAP before the first).
+    tight = []
+    for r in ranges:
+        a0, b0 = int(round(r["start"] * 100)), int(round(r["end"] * 100))
+        a, b = a0, b0
+        loud = np.flatnonzero(db[a0:b0] >= SPEECH_DB)
+        if len(loud):
+            if r is not ranges[0]:
+                a = max(a0, a0 + loud[0] - int(HEAD_CAP * 100))
+            b = min(b0, a0 + loud[-1] + 1 + int(TAIL_CAP * 100))
+        pieces, cur, i = [], a, a
+        while i < b:
+            if db[i] < SPEECH_DB:
+                j = i
+                while j < b and db[j] < SPEECH_DB:
+                    j += 1
+                if (j - i) / 100 >= PAUSE_MAX and i > a and j < b:
+                    pieces.append((cur, i + int(KEEP_A * 100)))
+                    cur = j - int(KEEP_B * 100)
+                i = j
+            else:
+                i += 1
+        pieces.append((cur, b))
+        for n, (s0, e0) in enumerate(pieces):
+            q = dict(r, start=round(s0 / 100, 3), end=round(e0 / 100, 3))
+            if n < len(pieces) - 1:
+                q.pop("reason", None)
+            tight.append(q)
+    ranges = tight
 
     z, zi = ZOOMS[0], 0
     for i, r in enumerate(ranges):

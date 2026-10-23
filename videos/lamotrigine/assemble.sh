@@ -12,6 +12,8 @@ ROOT="$(cd ../.. && pwd)"
 PY="$ROOT/.venv/bin/python"
 
 "$PY" audio/sfx_mix.py edit/voice.wav graphics/sfx_cues.json -o audio/voice_sfx.wav
+DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 graphics/output.mp4)
+"$PY" "$ROOT/tools/ambient_bed.py" -o audio/bed.wav --duration "$DUR" --key F --bpm 72 --seed 5
 
 for v in "" _clean; do
   src="graphics/output$v.mp4"

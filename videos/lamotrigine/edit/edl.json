@@ -7,165 +7,221 @@
     {
       "source": "lamo",
       "start": 0.5,
-      "end": 10.945,
+      "end": 2.15,
       "beat": "HOOK",
       "zoom": 1.0
     },
     {
       "source": "lamo",
-      "start": 11.425,
-      "end": 13.93,
+      "start": 2.31,
+      "end": 9.2,
       "beat": "HOOK",
-      "reason": "Kalau cakap pasal ubat yang stabilkan mood ... Pernah dengar tak pasal ubat ni?",
       "zoom": 1.07
     },
     {
       "source": "lamo",
-      "start": 43.475,
-      "end": 49.52,
-      "beat": "WHAT",
+      "start": 9.25,
+      "end": 13.96,
+      "beat": "HOOK",
+      "reason": " | Kalau cakap pasal ubat yang stabilkan mood ... Pernah dengar tak pasal ubat ni?",
       "zoom": 1.02
     },
     {
       "source": "lamo",
-      "start": 50.23,
-      "end": 52.41,
+      "start": 43.58,
+      "end": 46.67,
       "beat": "WHAT",
-      "reason": "Lamotrigine ni dia famous ... terutamanya dalam episod kemurunganlah. — 'Okey, berbalik pada topik tadi' dropped",
       "zoom": 1.08
     },
     {
       "source": "lamo",
-      "start": 53.57,
-      "end": 56.255,
-      "beat": "WHY",
+      "start": 46.8,
+      "end": 49.49,
+      "beat": "WHAT",
       "zoom": 1.035
+    },
+    {
+      "source": "lamo",
+      "start": 50.24,
+      "end": 52.45,
+      "beat": "WHAT",
+      "reason": "Lamotrigine ni dia famous ... terutamanya dalam episod kemurunganlah. — 'Okey, berbalik pada topik tadi' dropped",
+      "zoom": 1.0
+    },
+    {
+      "source": "lamo",
+      "start": 53.58,
+      "end": 56.26,
+      "beat": "WHY",
+      "zoom": 1.07
     },
     {
       "source": "lamo",
       "start": 56.7,
-      "end": 57.015,
-      "beat": "WHY",
-      "zoom": 1.035
-    },
-    {
-      "source": "lamo",
-      "start": 59.355,
-      "end": 61.09,
-      "beat": "WHY",
-      "reason": "Dan risiko kenaikan berat badan ... ramai pasien yang suka dengan ubat ni. — false start 57.1-58.5 cut",
-      "zoom": 1.0
-    },
-    {
-      "source": "lamo",
-      "start": 63.18,
-      "end": 73.49,
+      "end": 57.02,
       "beat": "WHY",
       "zoom": 1.07
     },
     {
       "source": "lamo",
-      "start": 74.33,
-      "end": 75.44,
+      "start": 59.36,
+      "end": 61.11,
       "beat": "WHY",
+      "reason": "Dan risiko kenaikan berat badan ... ramai pasien yang suka dengan ubat ni. — false start 57.1-58.5 cut",
       "zoom": 1.02
     },
     {
       "source": "lamo",
-      "start": 76.02,
-      "end": 78.84,
+      "start": 63.18,
+      "end": 71.8,
       "beat": "WHY",
-      "reason": "Ubat ni juga dia tak buat rasa mengantuk ... side effect dia juga. — 'And ubat ni pula' dropped",
       "zoom": 1.08
     },
     {
       "source": "lamo",
+      "start": 71.85,
+      "end": 73.47,
+      "beat": "WHY",
+      "zoom": 1.035
+    },
+    {
+      "source": "lamo",
+      "start": 74.34,
+      "end": 75.43,
+      "beat": "WHY",
+      "zoom": 1.0
+    },
+    {
+      "source": "lamo",
+      "start": 76.03,
+      "end": 78.85,
+      "beat": "WHY",
+      "reason": "Ubat ni juga dia tak buat rasa mengantuk ... side effect dia juga. — 'And ubat ni pula' dropped",
+      "zoom": 1.07
+    },
+    {
+      "source": "lamo",
       "start": 79.74,
-      "end": 88.29,
+      "end": 84.15,
+      "beat": "SAFETY",
+      "zoom": 1.02
+    },
+    {
+      "source": "lamo",
+      "start": 84.3,
+      "end": 88.3,
+      "beat": "SAFETY",
+      "zoom": 1.08
+    },
+    {
+      "source": "lamo",
+      "start": 88.5,
+      "end": 89.97,
       "beat": "SAFETY",
       "zoom": 1.035
     },
     {
       "source": "lamo",
-      "start": 88.49,
-      "end": 90.785,
+      "start": 90.26,
+      "end": 90.91,
       "beat": "SAFETY",
+      "zoom": 1.035
+    },
+    {
+      "source": "lamo",
+      "start": 91.2,
+      "end": 91.72,
+      "beat": "SAFETY",
+      "zoom": 1.035
+    },
+    {
+      "source": "lamo",
+      "start": 92.13,
+      "end": 93.74,
+      "beat": "SAFETY",
+      "reason": "Ubat ni dia kena start dengan dos yang rendah ... boleh berlakulah dengan ubat ni.",
       "zoom": 1.0
     },
     {
       "source": "lamo",
-      "start": 91.205,
-      "end": 93.72,
-      "beat": "SAFETY",
-      "reason": "Ubat ni dia kena start dengan dos yang rendah ... boleh berlakulah dengan ubat ni.",
+      "start": 96.43,
+      "end": 98.0,
+      "beat": "SIDEFX",
       "zoom": 1.07
     },
     {
       "source": "lamo",
-      "start": 96.37,
-      "end": 97.995,
+      "start": 98.4,
+      "end": 100.24,
       "beat": "SIDEFX",
       "zoom": 1.02
     },
     {
       "source": "lamo",
-      "start": 98.395,
-      "end": 101.32,
+      "start": 100.36,
+      "end": 101.28,
       "beat": "SIDEFX",
       "zoom": 1.08
     },
     {
       "source": "lamo",
       "start": 101.65,
-      "end": 103.26,
+      "end": 103.28,
       "beat": "SIDEFX",
       "reason": "Dan boleh menyebabkan side effect yang biasa ... susah tidur. — false starts around it cut",
       "zoom": 1.035
     },
     {
       "source": "lamo",
-      "start": 109.855,
-      "end": 112.67,
+      "start": 109.86,
+      "end": 112.63,
       "beat": "LIMITS",
       "zoom": 1.0
     },
     {
       "source": "lamo",
-      "start": 113.12,
-      "end": 116.545,
+      "start": 113.13,
+      "end": 116.56,
       "beat": "LIMITS",
       "zoom": 1.07
     },
     {
       "source": "lamo",
-      "start": 117.075,
-      "end": 120.59,
+      "start": 117.08,
+      "end": 120.6,
       "beat": "LIMITS",
       "reason": "Dan ubat ni juga dia tak begitu kuat ... tanpa advice doktor. — first take 'dia tak begitu kuat / dan ubat ni juga' cut",
       "zoom": 1.02
     },
     {
       "source": "lamo",
-      "start": 133.785,
-      "end": 143.86,
+      "start": 133.78,
+      "end": 137.11,
       "beat": "RECAP",
-      "reason": "Tapi kena ingat, ubat ni juga ada cara guna dia yang selamat. — recap 'So Lamotrigine ni basically ... fasa kemurungan' dropped (repeats 0:13)",
       "zoom": 1.08
     },
     {
       "source": "lamo",
-      "start": 145.06,
-      "end": 146.42,
-      "beat": "CTA",
+      "start": 137.17,
+      "end": 143.88,
+      "beat": "RECAP",
+      "reason": "Tapi kena ingat, ubat ni juga ada cara guna dia yang selamat. — recap 'So Lamotrigine ni basically ... fasa kemurungan' dropped (repeats 0:13)",
       "zoom": 1.035
     },
     {
       "source": "lamo",
-      "start": 146.73,
-      "end": 148.83,
+      "start": 145.09,
+      "end": 146.44,
+      "beat": "CTA",
+      "zoom": 1.0
+    },
+    {
+      "source": "lamo",
+      "start": 146.74,
+      "end": 148.85,
       "beat": "CTA",
       "reason": "Kalau anda rasa struggle ... Take care.",
-      "zoom": 1.0
+      "zoom": 1.07
     }
   ],
   "grade": "subtle",
@@ -175,5 +231,5 @@
   ],
   "tail_hold": 1.5,
   "overlays": [],
-  "total_duration_s": 84.46
+  "total_duration_s": 83.48
 }

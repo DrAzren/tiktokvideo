@@ -1,206 +1,247 @@
 {
- "durationSeconds": 84.46666666666667,
+ "durationSeconds": 83.46666666666667,
  "fps": 30,
  "items": [
   {
    "id": "k00",
    "kind": "card",
    "start": 0.0,
-   "end": 1.9333,
+   "end": 1.7333,
    "intent": "Hook headline on frame 0 (his words: ubat, mood, underrated)"
   },
   {
-   "id": "b01",
+   "id": "s01",
    "kind": "broll",
-   "prompt": "B01",
-   "start": 1.6667,
-   "end": 3.8333,
-   "source": "fallback:neural"
+   "source": "S1.mp4",
+   "start": 1.5,
+   "end": 3.3667,
+   "in": "zoom",
+   "out": "under",
+   "rate": 1.0
   },
   {
-   "id": "k01",
-   "kind": "card",
-   "start": 3.0,
-   "end": 7.6333,
-   "intent": "Lithium is the one people know; there is one more"
+   "id": "m01",
+   "kind": "motion-graphic",
+   "mg": "litium",
+   "start": 2.9333,
+   "end": 7.8667,
+   "in": "whip",
+   "out": "under"
   },
   {
-   "id": "b02",
+   "id": "s02",
    "kind": "broll",
-   "prompt": "B02",
-   "start": 7.3667,
-   "end": 10.4333,
-   "source": "fallback:pill"
+   "source": "S2.mp4",
+   "start": 7.2,
+   "end": 11.3,
+   "in": "tear",
+   "out": "fade",
+   "rate": 0.9
   },
   {
    "id": "title",
    "kind": "3d-title",
-   "start": 10.7667,
-   "end": 14.0333
+   "start": 11.0333,
+   "end": 14.2333
   },
   {
-   "id": "b08",
-   "kind": "broll",
-   "prompt": "B08",
-   "start": 13.8333,
-   "end": 16.3667,
-   "source": "fallback:molecule"
+   "id": "m02",
+   "kind": "motion-graphic",
+   "mg": "molecule",
+   "start": 14.0333,
+   "end": 17.0667,
+   "in": "cube",
+   "out": "under"
   },
   {
-   "id": "b03",
-   "kind": "broll",
-   "prompt": "B03",
-   "start": 16.3667,
-   "end": 17.5667,
-   "source": "talking head"
+   "id": "s03",
+   "kind": "broll-paper",
+   "source": "S3.mp4",
+   "start": 16.4,
+   "end": 19.0,
+   "in": "polaroid",
+   "out": "flip",
+   "rate": 1.0
   },
   {
    "id": "k05",
    "kind": "card",
-   "start": 17.5,
-   "end": 21.0667,
-   "intent": "Bipolar disorder, especially depressive episodes (his wording)"
+   "start": 19.0,
+   "end": 21.1667,
+   "intent": "Especially depressive episodes (his wording)"
   },
   {
-   "id": "mg-weight",
+   "id": "m03",
    "kind": "motion-graphic",
-   "start": 21.1333,
-   "end": 25.9333
+   "mg": "weight",
+   "start": 21.2333,
+   "end": 26.0667,
+   "in": "flip",
+   "out": "whip"
   },
   {
    "id": "k06",
    "kind": "card",
-   "start": 26.0333,
-   "end": 28.4667,
+   "start": 26.1667,
+   "end": 28.6,
    "intent": "Not very sedating"
   },
   {
-   "id": "b04",
-   "kind": "broll",
-   "prompt": "B04",
-   "start": 28.2667,
-   "end": 32.1,
-   "source": "talking head"
+   "id": "s04",
+   "kind": "broll-paper",
+   "source": "S4.mp4",
+   "start": 28.4,
+   "end": 32.6667,
+   "in": "polaroid",
+   "out": "under",
+   "rate": 0.936
   },
   {
-   "id": "k07",
-   "kind": "card",
-   "start": 28.3667,
-   "end": 32.1333,
-   "intent": "Daytime functioning (label over B04 or the talking head)"
+   "id": "m04",
+   "kind": "motion-graphic",
+   "mg": "calendar",
+   "start": 32.2333,
+   "end": 35.3333,
+   "in": "whip",
+   "out": "under"
+  },
+  {
+   "id": "s05",
+   "kind": "broll",
+   "source": "S5.mp4",
+   "start": 34.6667,
+   "end": 36.2667,
+   "in": "flip",
+   "out": "zoom",
+   "rate": 1.0
   },
   {
    "id": "k08",
    "kind": "card",
-   "start": 32.1,
-   "end": 36.2667,
-   "intent": "Long-term use, with doctor monitoring"
-  },
-  {
-   "id": "b05",
-   "kind": "broll",
-   "prompt": "B05",
-   "start": 34.6,
-   "end": 36.2333,
-   "source": "talking head"
+   "start": 34.8333,
+   "end": 35.9667,
+   "intent": "With doctor monitoring (over the consultation clip)"
   },
   {
    "id": "k10",
    "kind": "card",
-   "start": 37.3,
-   "end": 40.4333,
+   "start": 37.3333,
+   "end": 40.5,
    "intent": "Every medicine has side effects"
   },
   {
-   "id": "b06",
+   "id": "s06",
    "kind": "broll",
-   "prompt": "B06",
-   "start": 40.2333,
-   "end": 42.4333,
-   "source": "talking head"
+   "source": "S6.mp4",
+   "start": 40.3,
+   "end": 43.1333,
+   "in": "iris",
+   "out": "under",
+   "rate": 1.0
   },
   {
    "id": "k11",
    "kind": "card",
-   "start": 40.3333,
-   "end": 42.4333,
-   "intent": "Start with a low dose (label over B06 or the talking head)"
+   "start": 40.4333,
+   "end": 42.5667,
+   "intent": "Start with a low dose (over the pill-organizer clip)"
   },
   {
-   "id": "mg-titrate",
+   "id": "m05",
    "kind": "motion-graphic",
-   "start": 42.4333,
-   "end": 44.6333
+   "mg": "titrate",
+   "start": 42.5,
+   "end": 44.5333,
+   "in": "cube",
+   "out": "fade"
   },
   {
    "id": "k12",
    "kind": "card",
-   "start": 44.6333,
-   "end": 53.4667,
+   "start": 44.5333,
+   "end": 52.7,
    "intent": "Serious rash risk, SJS: rare but possible; approved safety line"
   },
   {
-   "id": "mg-sidefx",
+   "id": "m06",
    "kind": "motion-graphic",
-   "start": 53.9667,
-   "end": 59.6667
+   "mg": "sidefx",
+   "start": 53.2,
+   "end": 58.7,
+   "in": "tear",
+   "out": "cube"
   },
   {
    "id": "k13",
    "kind": "card",
-   "start": 59.7667,
-   "end": 65.8333,
-   "intent": "Not strong for mania; more for preventing depression from returning"
+   "start": 58.8,
+   "end": 64.5667,
+   "intent": "Not strong for mania; more for preventing depression from returning (stays over the sunrise clip)"
+  },
+  {
+   "id": "s07",
+   "kind": "broll",
+   "source": "S7.mp4",
+   "start": 63.0333,
+   "end": 64.8667,
+   "in": "iris",
+   "out": "whip",
+   "rate": 1.0
   },
   {
    "id": "k14",
    "kind": "card",
-   "start": 65.8667,
-   "end": 69.5,
+   "start": 64.9,
+   "end": 68.5667,
    "intent": "Don't stop on your own without the doctor's advice"
   },
   {
-   "id": "b07",
-   "kind": "broll",
-   "prompt": "B07",
-   "start": 69.3,
-   "end": 72.7,
-   "source": "talking head"
+   "id": "m07",
+   "kind": "motion-graphic",
+   "mg": "shield",
+   "start": 68.3667,
+   "end": 72.1333,
+   "in": "zoom",
+   "out": "under"
   },
   {
-   "id": "k15",
-   "kind": "card",
-   "start": 69.4,
-   "end": 72.7333,
-   "intent": "There is a safe way to use it"
-  },
-  {
-   "id": "b09",
-   "kind": "broll",
-   "prompt": "B09",
-   "start": 72.7,
-   "end": 75.0333,
-   "source": "talking head"
+   "id": "m08",
+   "kind": "motion-graphic",
+   "mg": "wave",
+   "start": 71.7,
+   "end": 74.0333,
+   "in": "whip",
+   "out": "flip"
   },
   {
    "id": "k16",
    "kind": "card",
-   "start": 75.1,
-   "end": 80.8,
+   "start": 74.1,
+   "end": 75.8667,
    "intent": "Name strip (no clinic logo or credentials invented)"
+  },
+  {
+   "id": "s08",
+   "kind": "broll-paper",
+   "source": "S5.mp4",
+   "start": 75.7,
+   "end": 79.7667,
+   "in": "polaroid",
+   "out": "drop",
+   "rate": 0.982
   },
   {
    "id": "k17",
    "kind": "card",
-   "start": 80.9,
-   "end": 82.8667,
+   "start": 79.8667,
+   "end": 81.8333,
    "intent": "Ask in the comments"
   },
   {
    "id": "end",
    "kind": "end-card",
-   "start": 82.9333,
-   "end": 84.46666666666667
+   "start": 81.9,
+   "end": 83.46666666666667
   }
  ],
  "captions": [

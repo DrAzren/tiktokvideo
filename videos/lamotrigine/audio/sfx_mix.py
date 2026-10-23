@@ -74,7 +74,80 @@ def shimmer():
     return y, -26
 
 
-KINDS = {"whoosh": whoosh, "impact": impact, "pulse": pulse, "tick": tick, "shimmer": shimmer}
+def swish():
+    """Short, bright whoosh for whip pans."""
+    n = int(0.28 * SR)
+    noise = rng.standard_normal(n)
+    out = np.zeros(n)
+    for k in range(16):
+        a, b = k * n // 16, (k + 1) * n // 16
+        f = 1200 * (6 ** (k / 16))
+        out[a:b] = bp(noise, f, min(f * 1.8, 18000))[a:b]
+    t = np.linspace(0, 1, n)
+    return out * np.sin(np.pi * t) ** 3, -24
+
+
+def paper_rip():
+    """Torn paper: a train of short crackles under a band-limited noise body."""
+    n = int(0.5 * SR)
+    body = bp(rng.standard_normal(n), 900, 6000) * np.sin(np.pi * np.linspace(0, 1, n)) ** 0.6
+    crack = np.zeros(n)
+    t = 0
+    while t < n - 400:
+        t += int(rng.integers(150, 900))
+        m = min(300, n - t)
+        crack[t:t + m] += rng.standard_normal(m) * np.exp(-np.arange(m) / 40) * rng.uniform(0.4, 1.0)
+    return body * 0.35 + bp(crack, 1500, 9000), -24
+
+
+def page_flip():
+    """Page turn: airy swish with a fast flutter, ending in a soft paper tap."""
+    n = int(0.45 * SR)
+    t = np.arange(n) / SR
+    air = bp(rng.standard_normal(n), 500, 5000) * np.sin(np.pi * np.linspace(0, 1, n)) ** 2
+    flutter = 0.6 + 0.4 * np.sin(2 * np.pi * 22 * t)
+    tap = np.zeros(n)
+    i = int(0.36 * SR)
+    tap[i:] = bp(rng.standard_normal(n - i), 300, 3000) * np.exp(-np.arange(n - i) / (0.012 * SR))
+    return air * flutter + tap * 0.8, -24
+
+
+def cube():
+    """3D rotation: low whoosh with a gentle thump as the face lands."""
+    w, _ = whoosh()
+    y, _ = impact()
+    n = len(w) + int(0.1 * SR)
+    out = np.zeros(n)
+    out[:len(w)] += sosfilt(butter(2, 2500, fs=SR, output="sos"), w)
+    i = int(0.42 * SR)
+    m = min(len(y), n - i)
+    out[i:i + m] += y[:m] * 0.5
+    return out, -22
+
+
+def paper_drop():
+    """A photo print dropping onto a table: short flutter + soft slap."""
+    n = int(0.4 * SR)
+    t = np.arange(n) / SR
+    flutter = bp(rng.standard_normal(n), 800, 6000) * env(n, 0.05, 0.12) * (0.6 + 0.4 * np.sin(2 * np.pi * 30 * t))
+    slap = np.zeros(n)
+    i = int(0.22 * SR)
+    slap[i:] = (bp(rng.standard_normal(n - i), 200, 2500) + 0.5 * np.sin(2 * np.pi * 110 * t[:n - i])) \
+        * np.exp(-np.arange(n - i) / (0.02 * SR))
+    return flutter * 0.5 + slap, -22
+
+
+def pop():
+    n = int(0.12 * SR)
+    t = np.arange(n) / SR
+    f = 900 * np.exp(-t * 18) + 300
+    return np.sin(2 * np.pi * np.cumsum(f) / SR) * env(n, 0.002, 0.03), -28
+
+
+KINDS = {"whoosh": whoosh, "impact": impact, "pulse": pulse, "tick": tick, "shimmer": shimmer, "swish": swish,
+         "paper_rip": paper_rip, "page_flip": page_flip, "cube": cube, "paper_drop": paper_drop, "pop": pop}
+# where in the sound the transition "lands" (seconds), so the cue lines up with the visual
+ALIGN = {"whoosh": 0.3, "swish": 0.14, "paper_rip": 0.1, "page_flip": 0.1, "cube": 0.3, "paper_drop": 0.2}
 
 
 def main():
@@ -91,14 +164,13 @@ def main():
         y, peak_db = KINDS[c["kind"]]()
         y = y / (np.max(np.abs(y)) + 1e-9) * 10 ** ((peak_db + c["gain_db"]) / 20)
         i = int(round(c["t"] * SR))
-        if c["kind"] == "whoosh":
-            i -= int(0.3 * SR)        # the whoosh peaks as the transition lands
+        i -= int(ALIGN.get(c["kind"], 0.0) * SR)   # the sound peaks as the transition lands
         i = max(i, 0)
         m = min(len(y), len(bus) - i)
         if m <= 0:
             continue
         # slight stereo width: whooshes pan across, the rest sit centre
-        pan = np.linspace(-0.6, 0.6, m) if c["kind"] == "whoosh" else np.zeros(m)
+        pan = np.linspace(-0.6, 0.6, m) if c["kind"] in ("whoosh", "swish", "cube") else np.zeros(m)
         bus[i:i + m, 0] += y[:m] * np.sqrt((1 - pan) / 2) * np.sqrt(2)
         bus[i:i + m, 1] += y[:m] * np.sqrt((1 + pan) / 2) * np.sqrt(2)
     out = voice + bus
