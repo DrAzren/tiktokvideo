@@ -1,0 +1,2573 @@
+[
+  {
+    "start": 0.0,
+    "end": 5.22,
+    "text": "Kalau cakap pasal ubat yang stabilkan mood, ramai yang tahu ubat litium je",
+    "words": [
+      {
+        "text": "Kalau",
+        "start": 0.0,
+        "end": 0.66,
+        "p": 0.898
+      },
+      {
+        "text": "cakap",
+        "start": 0.66,
+        "end": 1.22,
+        "p": 0.999
+      },
+      {
+        "text": "pasal",
+        "start": 1.22,
+        "end": 1.64,
+        "p": 0.999
+      },
+      {
+        "text": "ubat",
+        "start": 1.64,
+        "end": 2.0,
+        "p": 0.998
+      },
+      {
+        "text": "yang",
+        "start": 2.0,
+        "end": 2.42,
+        "p": 0.999
+      },
+      {
+        "text": "stabilkan",
+        "start": 2.42,
+        "end": 3.12,
+        "p": 0.993
+      },
+      {
+        "text": "mood,",
+        "start": 3.12,
+        "end": 3.36,
+        "p": 0.996
+      },
+      {
+        "text": "ramai",
+        "start": 3.5,
+        "end": 3.94,
+        "p": 0.999
+      },
+      {
+        "text": "yang",
+        "start": 3.94,
+        "end": 4.04,
+        "p": 0.999
+      },
+      {
+        "text": "tahu",
+        "start": 4.04,
+        "end": 4.3,
+        "p": 0.995
+      },
+      {
+        "text": "ubat",
+        "start": 4.3,
+        "end": 4.64,
+        "p": 0.998
+      },
+      {
+        "text": "litium",
+        "start": 4.64,
+        "end": 5.12,
+        "p": 0.831
+      },
+      {
+        "text": "je",
+        "start": 5.12,
+        "end": 5.22,
+        "p": 0.985
+      }
+    ]
+  },
+  {
+    "start": 5.22,
+    "end": 8.94,
+    "text": "tapi sebenarnya ada satu lagi ubat yang kita boleh kata underrated",
+    "words": [
+      {
+        "text": "tapi",
+        "start": 5.22,
+        "end": 5.5,
+        "p": 0.325
+      },
+      {
+        "text": "sebenarnya",
+        "start": 5.5,
+        "end": 5.88,
+        "p": 1.0
+      },
+      {
+        "text": "ada",
+        "start": 5.88,
+        "end": 6.02,
+        "p": 1.0
+      },
+      {
+        "text": "satu",
+        "start": 6.02,
+        "end": 6.22,
+        "p": 0.998
+      },
+      {
+        "text": "lagi",
+        "start": 6.22,
+        "end": 6.46,
+        "p": 1.0
+      },
+      {
+        "text": "ubat",
+        "start": 6.46,
+        "end": 7.0,
+        "p": 1.0
+      },
+      {
+        "text": "yang",
+        "start": 7.0,
+        "end": 7.28,
+        "p": 1.0
+      },
+      {
+        "text": "kita",
+        "start": 7.28,
+        "end": 7.82,
+        "p": 0.989
+      },
+      {
+        "text": "boleh",
+        "start": 7.82,
+        "end": 7.98,
+        "p": 1.0
+      },
+      {
+        "text": "kata",
+        "start": 7.98,
+        "end": 8.22,
+        "p": 1.0
+      },
+      {
+        "text": "underrated",
+        "start": 8.22,
+        "end": 8.94,
+        "p": 0.996
+      }
+    ]
+  },
+  {
+    "start": 8.94,
+    "end": 12.46,
+    "text": "tapi power sebenarnya, iaitu Lamotrigine.",
+    "words": [
+      {
+        "text": "tapi",
+        "start": 8.94,
+        "end": 9.44,
+        "p": 0.958
+      },
+      {
+        "text": "power",
+        "start": 9.44,
+        "end": 10.3,
+        "p": 0.989
+      },
+      {
+        "text": "sebenarnya,",
+        "start": 10.3,
+        "end": 10.76,
+        "p": 1.0
+      },
+      {
+        "text": "iaitu",
+        "start": 10.88,
+        "end": 11.72,
+        "p": 0.995
+      },
+      {
+        "text": "Lamotrigine.",
+        "start": 11.72,
+        "end": 12.46,
+        "p": 0.868
+      }
+    ]
+  },
+  {
+    "start": 12.6,
+    "end": 13.78,
+    "text": "Pernah dengar tak pasal ubat ni?",
+    "words": [
+      {
+        "text": "Pernah",
+        "start": 12.6,
+        "end": 12.96,
+        "p": 0.997
+      },
+      {
+        "text": "dengar",
+        "start": 12.96,
+        "end": 13.14,
+        "p": 0.999
+      },
+      {
+        "text": "tak",
+        "start": 13.14,
+        "end": 13.26,
+        "p": 0.999
+      },
+      {
+        "text": "pasal",
+        "start": 13.26,
+        "end": 13.44,
+        "p": 1.0
+      },
+      {
+        "text": "ubat",
+        "start": 13.44,
+        "end": 13.66,
+        "p": 1.0
+      },
+      {
+        "text": "ni?",
+        "start": 13.66,
+        "end": 13.78,
+        "p": 0.976
+      }
+    ]
+  },
+  {
+    "start": 14.04,
+    "end": 19.02,
+    "text": "Iklan, kalau anda ada masalah mood swing yang teruk, cepat naik angin",
+    "words": [
+      {
+        "text": "Iklan,",
+        "start": 14.04,
+        "end": 14.72,
+        "p": 0.913
+      },
+      {
+        "text": "kalau",
+        "start": 14.74,
+        "end": 15.14,
+        "p": 1.0
+      },
+      {
+        "text": "anda",
+        "start": 15.14,
+        "end": 15.44,
+        "p": 1.0
+      },
+      {
+        "text": "ada",
+        "start": 15.44,
+        "end": 15.62,
+        "p": 1.0
+      },
+      {
+        "text": "masalah",
+        "start": 15.62,
+        "end": 16.02,
+        "p": 1.0
+      },
+      {
+        "text": "mood",
+        "start": 16.02,
+        "end": 16.52,
+        "p": 0.976
+      },
+      {
+        "text": "swing",
+        "start": 16.52,
+        "end": 16.96,
+        "p": 0.999
+      },
+      {
+        "text": "yang",
+        "start": 16.96,
+        "end": 17.34,
+        "p": 1.0
+      },
+      {
+        "text": "teruk,",
+        "start": 17.34,
+        "end": 17.88,
+        "p": 1.0
+      },
+      {
+        "text": "cepat",
+        "start": 17.88,
+        "end": 18.42,
+        "p": 1.0
+      },
+      {
+        "text": "naik",
+        "start": 18.42,
+        "end": 18.6,
+        "p": 1.0
+      },
+      {
+        "text": "angin",
+        "start": 18.6,
+        "end": 19.02,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 19.02,
+    "end": 25.22,
+    "text": "atau selalu mengalami fasa depression, jangan tunggu sampai ia menganggu hidup anda.",
+    "words": [
+      {
+        "text": "atau",
+        "start": 19.02,
+        "end": 19.34,
+        "p": 0.97
+      },
+      {
+        "text": "selalu",
+        "start": 19.34,
+        "end": 20.64,
+        "p": 1.0
+      },
+      {
+        "text": "mengalami",
+        "start": 20.64,
+        "end": 22.22,
+        "p": 1.0
+      },
+      {
+        "text": "fasa",
+        "start": 22.22,
+        "end": 22.48,
+        "p": 0.975
+      },
+      {
+        "text": "depression,",
+        "start": 22.48,
+        "end": 22.88,
+        "p": 0.955
+      },
+      {
+        "text": "jangan",
+        "start": 23.3,
+        "end": 23.6,
+        "p": 1.0
+      },
+      {
+        "text": "tunggu",
+        "start": 23.6,
+        "end": 23.9,
+        "p": 1.0
+      },
+      {
+        "text": "sampai",
+        "start": 23.9,
+        "end": 24.24,
+        "p": 0.999
+      },
+      {
+        "text": "ia",
+        "start": 24.24,
+        "end": 24.44,
+        "p": 0.992
+      },
+      {
+        "text": "menganggu",
+        "start": 24.44,
+        "end": 24.78,
+        "p": 0.809
+      },
+      {
+        "text": "hidup",
+        "start": 24.78,
+        "end": 25.0,
+        "p": 0.998
+      },
+      {
+        "text": "anda.",
+        "start": 25.0,
+        "end": 25.22,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 25.22,
+    "end": 29.62,
+    "text": "anda. Anda boleh dapatkan konsultasi dan saringan",
+    "words": [
+      {
+        "text": "anda.",
+        "start": 25.22,
+        "end": 25.34,
+        "p": 0.341
+      },
+      {
+        "text": "Anda",
+        "start": 25.82,
+        "end": 26.38,
+        "p": 0.992
+      },
+      {
+        "text": "boleh",
+        "start": 26.38,
+        "end": 26.58,
+        "p": 0.999
+      },
+      {
+        "text": "dapatkan",
+        "start": 26.58,
+        "end": 27.16,
+        "p": 1.0
+      },
+      {
+        "text": "konsultasi",
+        "start": 27.16,
+        "end": 29.04,
+        "p": 0.999
+      },
+      {
+        "text": "dan",
+        "start": 29.04,
+        "end": 29.22,
+        "p": 0.998
+      },
+      {
+        "text": "saringan",
+        "start": 29.22,
+        "end": 29.62,
+        "p": 0.953
+      }
+    ]
+  },
+  {
+    "start": 29.62,
+    "end": 32.0,
+    "text": "kesihatan mental dengan saya Dr. Azrin di klinik saya",
+    "words": [
+      {
+        "text": "kesihatan",
+        "start": 29.62,
+        "end": 29.9,
+        "p": 0.978
+      },
+      {
+        "text": "mental",
+        "start": 29.9,
+        "end": 30.2,
+        "p": 0.999
+      },
+      {
+        "text": "dengan",
+        "start": 30.2,
+        "end": 30.46,
+        "p": 0.999
+      },
+      {
+        "text": "saya",
+        "start": 30.46,
+        "end": 30.7,
+        "p": 0.999
+      },
+      {
+        "text": "Dr.",
+        "start": 30.7,
+        "end": 30.96,
+        "p": 0.75
+      },
+      {
+        "text": "Azrin",
+        "start": 31.08,
+        "end": 31.42,
+        "p": 0.931
+      },
+      {
+        "text": "di",
+        "start": 31.42,
+        "end": 31.62,
+        "p": 0.994
+      },
+      {
+        "text": "klinik",
+        "start": 31.62,
+        "end": 31.88,
+        "p": 0.991
+      },
+      {
+        "text": "saya",
+        "start": 31.88,
+        "end": 32.0,
+        "p": 0.998
+      }
+    ]
+  },
+  {
+    "start": 32.0,
+    "end": 34.86,
+    "text": "dinilai. Kita akan sama-sama cek apa rawatan yang sesuai",
+    "words": [
+      {
+        "text": "dinilai.",
+        "start": 32.0,
+        "end": 32.5,
+        "p": 0.82
+      },
+      {
+        "text": "Kita",
+        "start": 32.54,
+        "end": 32.7,
+        "p": 0.998
+      },
+      {
+        "text": "akan",
+        "start": 32.7,
+        "end": 32.88,
+        "p": 1.0
+      },
+      {
+        "text": "sama",
+        "start": 32.88,
+        "end": 33.1,
+        "p": 0.999
+      },
+      {
+        "text": "-sama",
+        "start": 33.1,
+        "end": 33.36,
+        "p": 0.996
+      },
+      {
+        "text": "cek",
+        "start": 33.36,
+        "end": 33.66,
+        "p": 0.743
+      },
+      {
+        "text": "apa",
+        "start": 33.66,
+        "end": 33.86,
+        "p": 0.997
+      },
+      {
+        "text": "rawatan",
+        "start": 33.86,
+        "end": 34.14,
+        "p": 0.845
+      },
+      {
+        "text": "yang",
+        "start": 34.14,
+        "end": 34.32,
+        "p": 0.999
+      },
+      {
+        "text": "sesuai",
+        "start": 34.32,
+        "end": 34.86,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 34.86,
+    "end": 35.62,
+    "text": "untuk anda.",
+    "words": [
+      {
+        "text": "untuk",
+        "start": 34.86,
+        "end": 35.4,
+        "p": 0.999
+      },
+      {
+        "text": "anda.",
+        "start": 35.4,
+        "end": 35.62,
+        "p": 0.999
+      }
+    ]
+  },
+  {
+    "start": 41.92,
+    "end": 44.74,
+    "text": "Okey berbalik pada topik tadi. Lamotrigin ni dia famous",
+    "words": [
+      {
+        "text": "Okey",
+        "start": 41.92,
+        "end": 42.48,
+        "p": 0.655
+      },
+      {
+        "text": "berbalik",
+        "start": 42.48,
+        "end": 42.82,
+        "p": 0.852
+      },
+      {
+        "text": "pada",
+        "start": 42.82,
+        "end": 42.94,
+        "p": 0.776
+      },
+      {
+        "text": "topik",
+        "start": 42.94,
+        "end": 43.26,
+        "p": 1.0
+      },
+      {
+        "text": "tadi.",
+        "start": 43.26,
+        "end": 43.42,
+        "p": 1.0
+      },
+      {
+        "text": "Lamotrigin",
+        "start": 43.56,
+        "end": 44.12,
+        "p": 0.629
+      },
+      {
+        "text": "ni",
+        "start": 44.12,
+        "end": 44.24,
+        "p": 0.858
+      },
+      {
+        "text": "dia",
+        "start": 44.24,
+        "end": 44.4,
+        "p": 0.997
+      },
+      {
+        "text": "famous",
+        "start": 44.4,
+        "end": 44.74,
+        "p": 0.991
+      }
+    ]
+  },
+  {
+    "start": 44.74,
+    "end": 48.4,
+    "text": "untuk stabilkan mood especially dalam penyakit bipolar",
+    "words": [
+      {
+        "text": "untuk",
+        "start": 44.74,
+        "end": 45.08,
+        "p": 1.0
+      },
+      {
+        "text": "stabilkan",
+        "start": 45.08,
+        "end": 46.08,
+        "p": 0.993
+      },
+      {
+        "text": "mood",
+        "start": 46.08,
+        "end": 46.46,
+        "p": 0.945
+      },
+      {
+        "text": "especially",
+        "start": 46.46,
+        "end": 47.0,
+        "p": 0.988
+      },
+      {
+        "text": "dalam",
+        "start": 47.0,
+        "end": 47.5,
+        "p": 1.0
+      },
+      {
+        "text": "penyakit",
+        "start": 47.5,
+        "end": 48.16,
+        "p": 1.0
+      },
+      {
+        "text": "bipolar",
+        "start": 48.16,
+        "end": 48.4,
+        "p": 0.991
+      }
+    ]
+  },
+  {
+    "start": 48.4,
+    "end": 53.66,
+    "text": "disorder. Terutamanya dalam episod kemurungan lah dan",
+    "words": [
+      {
+        "text": "disorder.",
+        "start": 48.4,
+        "end": 48.86,
+        "p": 0.993
+      },
+      {
+        "text": "Terutamanya",
+        "start": 50.08,
+        "end": 50.64,
+        "p": 0.867
+      },
+      {
+        "text": "dalam",
+        "start": 50.64,
+        "end": 50.82,
+        "p": 0.989
+      },
+      {
+        "text": "episod",
+        "start": 50.82,
+        "end": 51.18,
+        "p": 0.856
+      },
+      {
+        "text": "kemurungan",
+        "start": 51.18,
+        "end": 52.04,
+        "p": 0.996
+      },
+      {
+        "text": "lah",
+        "start": 52.04,
+        "end": 52.2,
+        "p": 0.886
+      },
+      {
+        "text": "dan",
+        "start": 52.2,
+        "end": 53.66,
+        "p": 0.739
+      }
+    ]
+  },
+  {
+    "start": 53.66,
+    "end": 56.52,
+    "text": "Dan risiko kenaikan berat badan dia sangat rendah sebenarnya.",
+    "words": [
+      {
+        "text": "Dan",
+        "start": 53.66,
+        "end": 53.66,
+        "p": 0.901
+      },
+      {
+        "text": "risiko",
+        "start": 53.66,
+        "end": 54.4,
+        "p": 0.995
+      },
+      {
+        "text": "kenaikan",
+        "start": 54.4,
+        "end": 54.84,
+        "p": 0.993
+      },
+      {
+        "text": "berat",
+        "start": 54.84,
+        "end": 55.16,
+        "p": 0.999
+      },
+      {
+        "text": "badan",
+        "start": 55.16,
+        "end": 55.42,
+        "p": 0.999
+      },
+      {
+        "text": "dia",
+        "start": 55.42,
+        "end": 55.54,
+        "p": 0.981
+      },
+      {
+        "text": "sangat",
+        "start": 55.54,
+        "end": 55.78,
+        "p": 0.999
+      },
+      {
+        "text": "rendah",
+        "start": 55.78,
+        "end": 56.2,
+        "p": 1.0
+      },
+      {
+        "text": "sebenarnya.",
+        "start": 56.2,
+        "end": 56.52,
+        "p": 0.999
+      }
+    ]
+  },
+  {
+    "start": 56.6,
+    "end": 60.94,
+    "text": "Sebab tu ramai pasien yang suka dengan ubat ni.",
+    "words": [
+      {
+        "text": "Sebab",
+        "start": 56.6,
+        "end": 56.88,
+        "p": 1.0
+      },
+      {
+        "text": "tu",
+        "start": 56.88,
+        "end": 57.06,
+        "p": 0.839
+      },
+      {
+        "text": "ramai",
+        "start": 57.06,
+        "end": 57.8,
+        "p": 0.984
+      },
+      {
+        "text": "pasien",
+        "start": 57.8,
+        "end": 58.14,
+        "p": 0.719
+      },
+      {
+        "text": "yang",
+        "start": 58.14,
+        "end": 58.34,
+        "p": 0.721
+      },
+      {
+        "text": "suka",
+        "start": 58.34,
+        "end": 60.2,
+        "p": 1.0
+      },
+      {
+        "text": "dengan",
+        "start": 60.2,
+        "end": 60.5,
+        "p": 0.997
+      },
+      {
+        "text": "ubat",
+        "start": 60.5,
+        "end": 60.78,
+        "p": 0.998
+      },
+      {
+        "text": "ni.",
+        "start": 60.78,
+        "end": 60.94,
+        "p": 0.982
+      }
+    ]
+  },
+  {
+    "start": 61.34,
+    "end": 65.32,
+    "text": "And ubat ni pula, ubat ni juga dia tak buat rasa mengantuk sangat.",
+    "words": [
+      {
+        "text": "And",
+        "start": 61.34,
+        "end": 61.82,
+        "p": 0.689
+      },
+      {
+        "text": "ubat",
+        "start": 61.82,
+        "end": 62.32,
+        "p": 0.999
+      },
+      {
+        "text": "ni",
+        "start": 62.32,
+        "end": 62.44,
+        "p": 1.0
+      },
+      {
+        "text": "pula,",
+        "start": 62.44,
+        "end": 62.66,
+        "p": 0.991
+      },
+      {
+        "text": "ubat",
+        "start": 62.72,
+        "end": 63.4,
+        "p": 0.999
+      },
+      {
+        "text": "ni",
+        "start": 63.4,
+        "end": 63.54,
+        "p": 1.0
+      },
+      {
+        "text": "juga",
+        "start": 63.54,
+        "end": 63.7,
+        "p": 0.999
+      },
+      {
+        "text": "dia",
+        "start": 63.7,
+        "end": 63.9,
+        "p": 0.998
+      },
+      {
+        "text": "tak",
+        "start": 63.9,
+        "end": 64.12,
+        "p": 1.0
+      },
+      {
+        "text": "buat",
+        "start": 64.12,
+        "end": 64.4,
+        "p": 1.0
+      },
+      {
+        "text": "rasa",
+        "start": 64.4,
+        "end": 64.62,
+        "p": 1.0
+      },
+      {
+        "text": "mengantuk",
+        "start": 64.62,
+        "end": 65.14,
+        "p": 0.998
+      },
+      {
+        "text": "sangat.",
+        "start": 65.14,
+        "end": 65.32,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 65.42,
+    "end": 69.3,
+    "text": "Jadi ramai orang masih lagi boleh function macam biasa pada siang hari.",
+    "words": [
+      {
+        "text": "Jadi",
+        "start": 65.42,
+        "end": 65.76,
+        "p": 1.0
+      },
+      {
+        "text": "ramai",
+        "start": 65.76,
+        "end": 66.18,
+        "p": 0.979
+      },
+      {
+        "text": "orang",
+        "start": 66.18,
+        "end": 66.36,
+        "p": 1.0
+      },
+      {
+        "text": "masih",
+        "start": 66.36,
+        "end": 66.92,
+        "p": 1.0
+      },
+      {
+        "text": "lagi",
+        "start": 66.92,
+        "end": 67.1,
+        "p": 0.998
+      },
+      {
+        "text": "boleh",
+        "start": 67.1,
+        "end": 67.28,
+        "p": 1.0
+      },
+      {
+        "text": "function",
+        "start": 67.28,
+        "end": 67.64,
+        "p": 0.984
+      },
+      {
+        "text": "macam",
+        "start": 67.64,
+        "end": 68.22,
+        "p": 0.999
+      },
+      {
+        "text": "biasa",
+        "start": 68.22,
+        "end": 68.56,
+        "p": 1.0
+      },
+      {
+        "text": "pada",
+        "start": 68.56,
+        "end": 68.8,
+        "p": 1.0
+      },
+      {
+        "text": "siang",
+        "start": 68.8,
+        "end": 69.06,
+        "p": 0.998
+      },
+      {
+        "text": "hari.",
+        "start": 69.06,
+        "end": 69.3,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 69.38,
+    "end": 71.4,
+    "text": "Dan sesuai untuk long term use.",
+    "words": [
+      {
+        "text": "Dan",
+        "start": 69.38,
+        "end": 69.52,
+        "p": 0.998
+      },
+      {
+        "text": "sesuai",
+        "start": 69.52,
+        "end": 70.22,
+        "p": 1.0
+      },
+      {
+        "text": "untuk",
+        "start": 70.22,
+        "end": 70.46,
+        "p": 1.0
+      },
+      {
+        "text": "long",
+        "start": 70.46,
+        "end": 70.82,
+        "p": 1.0
+      },
+      {
+        "text": "term",
+        "start": 70.82,
+        "end": 71.14,
+        "p": 0.992
+      },
+      {
+        "text": "use.",
+        "start": 71.14,
+        "end": 71.4,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 71.62,
+    "end": 73.3,
+    "text": "Tapi dengan monitoring doktor lah.",
+    "words": [
+      {
+        "text": "Tapi",
+        "start": 71.62,
+        "end": 72.08,
+        "p": 0.999
+      },
+      {
+        "text": "dengan",
+        "start": 72.08,
+        "end": 72.3,
+        "p": 1.0
+      },
+      {
+        "text": "monitoring",
+        "start": 72.3,
+        "end": 72.68,
+        "p": 0.999
+      },
+      {
+        "text": "doktor",
+        "start": 72.68,
+        "end": 73.14,
+        "p": 0.986
+      },
+      {
+        "text": "lah.",
+        "start": 73.14,
+        "end": 73.3,
+        "p": 0.995
+      }
+    ]
+  },
+  {
+    "start": 74.2,
+    "end": 78.6,
+    "text": "Seperti biasa, setiap ubat pun ada keburukan dan side effect dia juga.",
+    "words": [
+      {
+        "text": "Seperti",
+        "start": 74.2,
+        "end": 74.68,
+        "p": 0.974
+      },
+      {
+        "text": "biasa,",
+        "start": 74.68,
+        "end": 75.14,
+        "p": 1.0
+      },
+      {
+        "text": "setiap",
+        "start": 75.22,
+        "end": 76.26,
+        "p": 0.999
+      },
+      {
+        "text": "ubat",
+        "start": 76.26,
+        "end": 76.58,
+        "p": 1.0
+      },
+      {
+        "text": "pun",
+        "start": 76.58,
+        "end": 76.74,
+        "p": 1.0
+      },
+      {
+        "text": "ada",
+        "start": 76.74,
+        "end": 76.92,
+        "p": 1.0
+      },
+      {
+        "text": "keburukan",
+        "start": 76.92,
+        "end": 77.64,
+        "p": 0.999
+      },
+      {
+        "text": "dan",
+        "start": 77.64,
+        "end": 77.86,
+        "p": 0.997
+      },
+      {
+        "text": "side",
+        "start": 77.86,
+        "end": 78.04,
+        "p": 0.984
+      },
+      {
+        "text": "effect",
+        "start": 78.04,
+        "end": 78.28,
+        "p": 0.992
+      },
+      {
+        "text": "dia",
+        "start": 78.28,
+        "end": 78.44,
+        "p": 0.999
+      },
+      {
+        "text": "juga.",
+        "start": 78.44,
+        "end": 78.6,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 79.54,
+    "end": 81.96,
+    "text": "Ubat ni dia kena start dengan dos yang rendah.",
+    "words": [
+      {
+        "text": "Ubat",
+        "start": 79.54,
+        "end": 80.02,
+        "p": 0.821
+      },
+      {
+        "text": "ni",
+        "start": 80.02,
+        "end": 80.26,
+        "p": 0.999
+      },
+      {
+        "text": "dia",
+        "start": 80.26,
+        "end": 80.46,
+        "p": 0.987
+      },
+      {
+        "text": "kena",
+        "start": 80.46,
+        "end": 80.7,
+        "p": 1.0
+      },
+      {
+        "text": "start",
+        "start": 80.7,
+        "end": 80.88,
+        "p": 1.0
+      },
+      {
+        "text": "dengan",
+        "start": 80.88,
+        "end": 81.06,
+        "p": 1.0
+      },
+      {
+        "text": "dos",
+        "start": 81.06,
+        "end": 81.36,
+        "p": 0.972
+      },
+      {
+        "text": "yang",
+        "start": 81.36,
+        "end": 81.5,
+        "p": 0.927
+      },
+      {
+        "text": "rendah.",
+        "start": 81.5,
+        "end": 81.96,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 81.96,
+    "end": 84.0,
+    "text": "perlahan-lahan kena titrate naik",
+    "words": [
+      {
+        "text": "perlahan",
+        "start": 81.96,
+        "end": 82.54,
+        "p": 0.75
+      },
+      {
+        "text": "-lahan",
+        "start": 82.54,
+        "end": 82.8,
+        "p": 0.993
+      },
+      {
+        "text": "kena",
+        "start": 82.8,
+        "end": 83.1,
+        "p": 0.999
+      },
+      {
+        "text": "titrate",
+        "start": 83.1,
+        "end": 83.64,
+        "p": 0.957
+      },
+      {
+        "text": "naik",
+        "start": 83.64,
+        "end": 84.0,
+        "p": 0.961
+      }
+    ]
+  },
+  {
+    "start": 84.0,
+    "end": 86.92,
+    "text": "sebab ada risiko untuk ruam kulit yang serius",
+    "words": [
+      {
+        "text": "sebab",
+        "start": 84.0,
+        "end": 84.46,
+        "p": 0.989
+      },
+      {
+        "text": "ada",
+        "start": 84.46,
+        "end": 84.66,
+        "p": 1.0
+      },
+      {
+        "text": "risiko",
+        "start": 84.66,
+        "end": 85.1,
+        "p": 0.952
+      },
+      {
+        "text": "untuk",
+        "start": 85.1,
+        "end": 85.48,
+        "p": 0.999
+      },
+      {
+        "text": "ruam",
+        "start": 85.48,
+        "end": 85.94,
+        "p": 0.949
+      },
+      {
+        "text": "kulit",
+        "start": 85.94,
+        "end": 86.4,
+        "p": 1.0
+      },
+      {
+        "text": "yang",
+        "start": 86.4,
+        "end": 86.52,
+        "p": 0.999
+      },
+      {
+        "text": "serius",
+        "start": 86.52,
+        "end": 86.92,
+        "p": 0.748
+      }
+    ]
+  },
+  {
+    "start": 86.92,
+    "end": 87.84,
+    "text": "kita panggil sebagai",
+    "words": [
+      {
+        "text": "kita",
+        "start": 86.92,
+        "end": 87.14,
+        "p": 0.779
+      },
+      {
+        "text": "panggil",
+        "start": 87.14,
+        "end": 87.54,
+        "p": 1.0
+      },
+      {
+        "text": "sebagai",
+        "start": 87.54,
+        "end": 87.84,
+        "p": 0.999
+      }
+    ]
+  },
+  {
+    "start": 87.84,
+    "end": 89.58,
+    "text": "Steven Johnson Syndrome",
+    "words": [
+      {
+        "text": "Steven",
+        "start": 87.84,
+        "end": 88.76,
+        "p": 0.814
+      },
+      {
+        "text": "Johnson",
+        "start": 88.76,
+        "end": 89.08,
+        "p": 0.986
+      },
+      {
+        "text": "Syndrome",
+        "start": 89.08,
+        "end": 89.58,
+        "p": 0.785
+      }
+    ]
+  },
+  {
+    "start": 89.58,
+    "end": 91.3,
+    "text": "dia rare sebenarnya tapi",
+    "words": [
+      {
+        "text": "dia",
+        "start": 89.58,
+        "end": 90.42,
+        "p": 0.871
+      },
+      {
+        "text": "rare",
+        "start": 90.42,
+        "end": 90.74,
+        "p": 0.939
+      },
+      {
+        "text": "sebenarnya",
+        "start": 90.74,
+        "end": 91.02,
+        "p": 1.0
+      },
+      {
+        "text": "tapi",
+        "start": 91.02,
+        "end": 91.3,
+        "p": 0.992
+      }
+    ]
+  },
+  {
+    "start": 91.3,
+    "end": 93.56,
+    "text": "boleh berlakulah dengan ubat ni",
+    "words": [
+      {
+        "text": "boleh",
+        "start": 91.3,
+        "end": 92.34,
+        "p": 0.998
+      },
+      {
+        "text": "berlakulah",
+        "start": 92.34,
+        "end": 93.0,
+        "p": 0.856
+      },
+      {
+        "text": "dengan",
+        "start": 93.0,
+        "end": 93.12,
+        "p": 0.999
+      },
+      {
+        "text": "ubat",
+        "start": 93.12,
+        "end": 93.42,
+        "p": 0.997
+      },
+      {
+        "text": "ni",
+        "start": 93.42,
+        "end": 93.56,
+        "p": 0.944
+      }
+    ]
+  },
+  {
+    "start": 93.56,
+    "end": 95.88,
+    "text": "dan side effect",
+    "words": [
+      {
+        "text": "dan",
+        "start": 93.56,
+        "end": 94.82,
+        "p": 0.997
+      },
+      {
+        "text": "side",
+        "start": 94.82,
+        "end": 95.66,
+        "p": 0.921
+      },
+      {
+        "text": "effect",
+        "start": 95.66,
+        "end": 95.88,
+        "p": 0.845
+      }
+    ]
+  },
+  {
+    "start": 95.88,
+    "end": 97.84,
+    "text": "dan boleh menyebabkan side effect",
+    "words": [
+      {
+        "text": "dan",
+        "start": 95.88,
+        "end": 96.34,
+        "p": 0.785
+      },
+      {
+        "text": "boleh",
+        "start": 96.34,
+        "end": 96.9,
+        "p": 0.999
+      },
+      {
+        "text": "menyebabkan",
+        "start": 96.9,
+        "end": 97.32,
+        "p": 1.0
+      },
+      {
+        "text": "side",
+        "start": 97.32,
+        "end": 97.52,
+        "p": 0.999
+      },
+      {
+        "text": "effect",
+        "start": 97.52,
+        "end": 97.84,
+        "p": 0.999
+      }
+    ]
+  },
+  {
+    "start": 97.84,
+    "end": 99.52,
+    "text": "side effect yang biasa lah seperti ubat lain",
+    "words": [
+      {
+        "text": "side",
+        "start": 97.84,
+        "end": 98.06,
+        "p": 0.362
+      },
+      {
+        "text": "effect",
+        "start": 98.06,
+        "end": 98.28,
+        "p": 0.998
+      },
+      {
+        "text": "yang",
+        "start": 98.28,
+        "end": 98.46,
+        "p": 1.0
+      },
+      {
+        "text": "biasa",
+        "start": 98.46,
+        "end": 98.68,
+        "p": 0.9
+      },
+      {
+        "text": "lah",
+        "start": 98.68,
+        "end": 98.92,
+        "p": 0.905
+      },
+      {
+        "text": "seperti",
+        "start": 98.92,
+        "end": 99.08,
+        "p": 0.999
+      },
+      {
+        "text": "ubat",
+        "start": 99.08,
+        "end": 99.36,
+        "p": 1.0
+      },
+      {
+        "text": "lain",
+        "start": 99.36,
+        "end": 99.52,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 99.52,
+    "end": 100.92,
+    "text": "seperti pening kepala",
+    "words": [
+      {
+        "text": "seperti",
+        "start": 99.52,
+        "end": 99.76,
+        "p": 0.99
+      },
+      {
+        "text": "pening",
+        "start": 99.76,
+        "end": 100.08,
+        "p": 0.99
+      },
+      {
+        "text": "kepala",
+        "start": 100.08,
+        "end": 100.92,
+        "p": 0.996
+      }
+    ]
+  },
+  {
+    "start": 100.92,
+    "end": 103.1,
+    "text": "lawyer ataupun susah tidur",
+    "words": [
+      {
+        "text": "lawyer",
+        "start": 100.92,
+        "end": 101.82,
+        "p": 0.634
+      },
+      {
+        "text": "ataupun",
+        "start": 101.82,
+        "end": 102.54,
+        "p": 0.998
+      },
+      {
+        "text": "susah",
+        "start": 102.54,
+        "end": 102.78,
+        "p": 0.997
+      },
+      {
+        "text": "tidur",
+        "start": 102.78,
+        "end": 103.1,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 103.1,
+    "end": 105.04,
+    "text": "dia tak begitu kuat",
+    "words": [
+      {
+        "text": "dia",
+        "start": 103.1,
+        "end": 104.14,
+        "p": 0.991
+      },
+      {
+        "text": "tak",
+        "start": 104.14,
+        "end": 104.34,
+        "p": 1.0
+      },
+      {
+        "text": "begitu",
+        "start": 104.34,
+        "end": 104.52,
+        "p": 1.0
+      },
+      {
+        "text": "kuat",
+        "start": 104.52,
+        "end": 105.04,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 106.04,
+    "end": 107.24,
+    "text": "dan ubat ni juga",
+    "words": [
+      {
+        "text": "dan",
+        "start": 106.04,
+        "end": 106.68,
+        "p": 1.0
+      },
+      {
+        "text": "ubat",
+        "start": 106.68,
+        "end": 106.98,
+        "p": 1.0
+      },
+      {
+        "text": "ni",
+        "start": 106.98,
+        "end": 107.06,
+        "p": 0.994
+      },
+      {
+        "text": "juga",
+        "start": 107.06,
+        "end": 107.24,
+        "p": 0.982
+      }
+    ]
+  },
+  {
+    "start": 109.02,
+    "end": 111.74,
+    "text": "dan ubat ni juga dia tak begitu kuat",
+    "words": [
+      {
+        "text": "dan",
+        "start": 109.02,
+        "end": 109.66,
+        "p": 0.984
+      },
+      {
+        "text": "ubat",
+        "start": 109.66,
+        "end": 110.3,
+        "p": 1.0
+      },
+      {
+        "text": "ni",
+        "start": 110.3,
+        "end": 110.42,
+        "p": 0.999
+      },
+      {
+        "text": "juga",
+        "start": 110.42,
+        "end": 110.58,
+        "p": 0.999
+      },
+      {
+        "text": "dia",
+        "start": 110.58,
+        "end": 110.8,
+        "p": 0.994
+      },
+      {
+        "text": "tak",
+        "start": 110.8,
+        "end": 110.98,
+        "p": 1.0
+      },
+      {
+        "text": "begitu",
+        "start": 110.98,
+        "end": 111.28,
+        "p": 1.0
+      },
+      {
+        "text": "kuat",
+        "start": 111.28,
+        "end": 111.74,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 111.74,
+    "end": 112.52,
+    "text": "untuk rawat",
+    "words": [
+      {
+        "text": "untuk",
+        "start": 111.74,
+        "end": 111.92,
+        "p": 0.745
+      },
+      {
+        "text": "rawat",
+        "start": 111.92,
+        "end": 112.52,
+        "p": 0.999
+      }
+    ]
+  },
+  {
+    "start": 113.10000000000001,
+    "end": 113.98,
+    "text": "pasal mania tu",
+    "words": [
+      {
+        "text": "pasal",
+        "start": 113.10000000000001,
+        "end": 113.42,
+        "p": 0.675
+      },
+      {
+        "text": "mania",
+        "start": 113.42,
+        "end": 113.74,
+        "p": 0.863
+      },
+      {
+        "text": "tu",
+        "start": 113.74,
+        "end": 113.98,
+        "p": 0.94
+      }
+    ]
+  },
+  {
+    "start": 113.98,
+    "end": 114.52,
+    "text": "dia lebih kepada",
+    "words": [
+      {
+        "text": "dia",
+        "start": 113.98,
+        "end": 114.14,
+        "p": 0.764
+      },
+      {
+        "text": "lebih",
+        "start": 114.14,
+        "end": 114.32,
+        "p": 1.0
+      },
+      {
+        "text": "kepada",
+        "start": 114.32,
+        "end": 114.52,
+        "p": 0.999
+      }
+    ]
+  },
+  {
+    "start": 114.52,
+    "end": 115.26,
+    "text": "nak elak",
+    "words": [
+      {
+        "text": "nak",
+        "start": 114.52,
+        "end": 114.8,
+        "p": 0.999
+      },
+      {
+        "text": "elak",
+        "start": 114.8,
+        "end": 115.26,
+        "p": 0.998
+      }
+    ]
+  },
+  {
+    "start": 115.26,
+    "end": 116.46,
+    "text": "kemurungan tu datang balik",
+    "words": [
+      {
+        "text": "kemurungan",
+        "start": 115.26,
+        "end": 115.8,
+        "p": 0.994
+      },
+      {
+        "text": "tu",
+        "start": 115.8,
+        "end": 115.9,
+        "p": 0.998
+      },
+      {
+        "text": "datang",
+        "start": 115.9,
+        "end": 116.16,
+        "p": 0.999
+      },
+      {
+        "text": "balik",
+        "start": 116.16,
+        "end": 116.46,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 116.46,
+    "end": 117.44,
+    "text": "dia sama seperti",
+    "words": [
+      {
+        "text": "dia",
+        "start": 116.46,
+        "end": 116.98,
+        "p": 0.676
+      },
+      {
+        "text": "sama",
+        "start": 116.98,
+        "end": 117.18,
+        "p": 1.0
+      },
+      {
+        "text": "seperti",
+        "start": 117.18,
+        "end": 117.44,
+        "p": 0.998
+      }
+    ]
+  },
+  {
+    "start": 117.44,
+    "end": 118.02,
+    "text": "ubat lain",
+    "words": [
+      {
+        "text": "ubat",
+        "start": 117.44,
+        "end": 117.84,
+        "p": 0.996
+      },
+      {
+        "text": "lain",
+        "start": 117.84,
+        "end": 118.02,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 118.02,
+    "end": 119.18,
+    "text": "jangan stop sendiri",
+    "words": [
+      {
+        "text": "jangan",
+        "start": 118.02,
+        "end": 118.44,
+        "p": 0.992
+      },
+      {
+        "text": "stop",
+        "start": 118.44,
+        "end": 118.92,
+        "p": 0.996
+      },
+      {
+        "text": "sendiri",
+        "start": 118.92,
+        "end": 119.18,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 119.18,
+    "end": 120.32,
+    "text": "tanpa advice doktor",
+    "words": [
+      {
+        "text": "tanpa",
+        "start": 119.18,
+        "end": 119.6,
+        "p": 0.999
+      },
+      {
+        "text": "advice",
+        "start": 119.6,
+        "end": 119.92,
+        "p": 0.918
+      },
+      {
+        "text": "doktor",
+        "start": 119.92,
+        "end": 120.32,
+        "p": 0.902
+      }
+    ]
+  },
+  {
+    "start": 120.32,
+    "end": 121.3,
+    "text": "so",
+    "words": [
+      {
+        "text": "so",
+        "start": 120.32,
+        "end": 121.3,
+        "p": 0.955
+      }
+    ]
+  },
+  {
+    "start": 122.03999999999999,
+    "end": 122.84,
+    "text": "Lamotrigine ni",
+    "words": [
+      {
+        "text": "Lamotrigine",
+        "start": 122.03999999999999,
+        "end": 122.64,
+        "p": 0.734
+      },
+      {
+        "text": "ni",
+        "start": 122.64,
+        "end": 122.84,
+        "p": 0.997
+      }
+    ]
+  },
+  {
+    "start": 122.84,
+    "end": 123.34,
+    "text": "dia macam",
+    "words": [
+      {
+        "text": "dia",
+        "start": 122.84,
+        "end": 122.98,
+        "p": 0.998
+      },
+      {
+        "text": "macam",
+        "start": 122.98,
+        "end": 123.34,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 124.52000000000001,
+    "end": 125.12,
+    "text": "so",
+    "words": [
+      {
+        "text": "so",
+        "start": 124.52000000000001,
+        "end": 125.12,
+        "p": 0.987
+      }
+    ]
+  },
+  {
+    "start": 125.12,
+    "end": 126.24,
+    "text": "Lamotrigine ni",
+    "words": [
+      {
+        "text": "Lamotrigine",
+        "start": 125.12,
+        "end": 125.96,
+        "p": 0.999
+      },
+      {
+        "text": "ni",
+        "start": 125.96,
+        "end": 126.24,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 126.24,
+    "end": 127.26,
+    "text": "basically boleh bantu",
+    "words": [
+      {
+        "text": "basically",
+        "start": 126.24,
+        "end": 126.64,
+        "p": 0.996
+      },
+      {
+        "text": "boleh",
+        "start": 126.64,
+        "end": 126.94,
+        "p": 0.997
+      },
+      {
+        "text": "bantu",
+        "start": 126.94,
+        "end": 127.26,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 127.26,
+    "end": 128.4,
+    "text": "untuk mood kita",
+    "words": [
+      {
+        "text": "untuk",
+        "start": 127.26,
+        "end": 127.8,
+        "p": 1.0
+      },
+      {
+        "text": "mood",
+        "start": 127.8,
+        "end": 128.14,
+        "p": 0.997
+      },
+      {
+        "text": "kita",
+        "start": 128.14,
+        "end": 128.4,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 128.4,
+    "end": 129.36,
+    "text": "especially dalam orang",
+    "words": [
+      {
+        "text": "especially",
+        "start": 128.4,
+        "end": 128.66,
+        "p": 0.992
+      },
+      {
+        "text": "dalam",
+        "start": 128.66,
+        "end": 129.06,
+        "p": 0.999
+      },
+      {
+        "text": "orang",
+        "start": 129.06,
+        "end": 129.36,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 129.36,
+    "end": 130.56,
+    "text": "yang mengalami bipolar disorder",
+    "words": [
+      {
+        "text": "yang",
+        "start": 129.36,
+        "end": 129.58,
+        "p": 1.0
+      },
+      {
+        "text": "mengalami",
+        "start": 129.58,
+        "end": 129.9,
+        "p": 1.0
+      },
+      {
+        "text": "bipolar",
+        "start": 129.9,
+        "end": 130.16,
+        "p": 0.968
+      },
+      {
+        "text": "disorder",
+        "start": 130.16,
+        "end": 130.56,
+        "p": 0.999
+      }
+    ]
+  },
+  {
+    "start": 130.56,
+    "end": 131.94,
+    "text": "yang selalu",
+    "words": [
+      {
+        "text": "yang",
+        "start": 130.56,
+        "end": 131.3,
+        "p": 0.999
+      },
+      {
+        "text": "selalu",
+        "start": 131.3,
+        "end": 131.94,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 131.94,
+    "end": 133.62,
+    "text": "berada di fasal kemurungan",
+    "words": [
+      {
+        "text": "berada",
+        "start": 131.94,
+        "end": 132.68,
+        "p": 0.979
+      },
+      {
+        "text": "di",
+        "start": 132.68,
+        "end": 132.84,
+        "p": 0.998
+      },
+      {
+        "text": "fasal",
+        "start": 132.84,
+        "end": 133.14,
+        "p": 0.621
+      },
+      {
+        "text": "kemurungan",
+        "start": 133.14,
+        "end": 133.62,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 133.62,
+    "end": 134.38,
+    "text": "tapi kena ingat",
+    "words": [
+      {
+        "text": "tapi",
+        "start": 133.62,
+        "end": 133.9,
+        "p": 0.999
+      },
+      {
+        "text": "kena",
+        "start": 133.9,
+        "end": 134.1,
+        "p": 1.0
+      },
+      {
+        "text": "ingat",
+        "start": 134.1,
+        "end": 134.38,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 134.38,
+    "end": 134.98,
+    "text": "ubat ni juga",
+    "words": [
+      {
+        "text": "ubat",
+        "start": 134.38,
+        "end": 134.7,
+        "p": 0.999
+      },
+      {
+        "text": "ni",
+        "start": 134.7,
+        "end": 134.8,
+        "p": 0.997
+      },
+      {
+        "text": "juga",
+        "start": 134.8,
+        "end": 134.98,
+        "p": 0.998
+      }
+    ]
+  },
+  {
+    "start": 134.98,
+    "end": 136.4,
+    "text": "ada cara guna dia",
+    "words": [
+      {
+        "text": "ada",
+        "start": 134.98,
+        "end": 135.46,
+        "p": 1.0
+      },
+      {
+        "text": "cara",
+        "start": 135.46,
+        "end": 135.82,
+        "p": 1.0
+      },
+      {
+        "text": "guna",
+        "start": 135.82,
+        "end": 136.3,
+        "p": 0.996
+      },
+      {
+        "text": "dia",
+        "start": 136.3,
+        "end": 136.4,
+        "p": 0.997
+      }
+    ]
+  },
+  {
+    "start": 136.4,
+    "end": 136.88,
+    "text": "yang selamat",
+    "words": [
+      {
+        "text": "yang",
+        "start": 136.4,
+        "end": 136.52,
+        "p": 0.993
+      },
+      {
+        "text": "selamat",
+        "start": 136.52,
+        "end": 136.88,
+        "p": 1.0
+      }
+    ]
+  },
+  {
+    "start": 136.88,
+    "end": 138.06,
+    "text": "kalau anda rasa struggle",
+    "words": [
+      {
+        "text": "kalau",
+        "start": 136.88,
+        "end": 137.24,
+        "p": 0.995
+      },
+      {
+        "text": "anda",
+        "start": 137.24,
+        "end": 137.5,
+        "p": 0.998
+      },
+      {
+        "text": "rasa",
+        "start": 137.5,
+        "end": 137.7,
+        "p": 1.0
+      },
+      {
+        "text": "struggle",
+        "start": 137.7,
+        "end": 138.06,
+        "p": 0.996
+      }
+    ]
+  },
+  {
+    "start": 138.06,
+    "end": 138.9,
+    "text": "dengan mood swing",
+    "words": [
+      {
+        "text": "dengan",
+        "start": 138.06,
+        "end": 138.42,
+        "p": 1.0
+      },
+      {
+        "text": "mood",
+        "start": 138.42,
+        "end": 138.64,
+        "p": 1.0
+      },
+      {
+        "text": "swing",
+        "start": 138.64,
+        "end": 138.9,
+        "p": 0.995
+      }
+    ]
+  },
+  {
+    "start": 138.9,
+    "end": 140.0,
+    "text": "boleh set appointment",
+    "words": [
+      {
+        "text": "boleh",
+        "start": 138.9,
+        "end": 139.64,
+        "p": 0.998
+      },
+      {
+        "text": "set",
+        "start": 139.64,
+        "end": 139.8,
+        "p": 0.998
+      },
+      {
+        "text": "appointment",
+        "start": 139.8,
+        "end": 140.0,
+        "p": 0.999
+      }
+    ]
+  },
+  {
+    "start": 140.0,
+    "end": 141.0,
+    "text": "dengan saya dekat nilai",
+    "words": [
+      {
+        "text": "dengan",
+        "start": 140.0,
+        "end": 140.34,
+        "p": 0.999
+      },
+      {
+        "text": "saya",
+        "start": 140.34,
+        "end": 140.52,
+        "p": 1.0
+      },
+      {
+        "text": "dekat",
+        "start": 140.52,
+        "end": 140.7,
+        "p": 0.99
+      },
+      {
+        "text": "nilai",
+        "start": 140.7,
+        "end": 141.0,
+        "p": 0.822
+      }
+    ]
+  },
+  {
+    "start": 141.0,
+    "end": 142.44,
+    "text": "Kita memang santai dahulu",
+    "words": [
+      {
+        "text": "Kita",
+        "start": 141.0,
+        "end": 141.2,
+        "p": 0.454
+      },
+      {
+        "text": "memang",
+        "start": 141.2,
+        "end": 141.5,
+        "p": 0.605
+      },
+      {
+        "text": "santai",
+        "start": 141.5,
+        "end": 142.16,
+        "p": 0.99
+      },
+      {
+        "text": "dahulu",
+        "start": 142.16,
+        "end": 142.44,
+        "p": 0.995
+      }
+    ]
+  },
+  {
+    "start": 142.44,
+    "end": 143.62,
+    "text": "Sebelum kita decide",
+    "words": [
+      {
+        "text": "Sebelum",
+        "start": 142.44,
+        "end": 142.94,
+        "p": 0.819
+      },
+      {
+        "text": "kita",
+        "start": 142.94,
+        "end": 143.14,
+        "p": 0.996
+      },
+      {
+        "text": "decide",
+        "start": 143.14,
+        "end": 143.62,
+        "p": 0.999
+      }
+    ]
+  },
+  {
+    "start": 144.60000000000002,
+    "end": 146.16,
+    "text": "Plan terbaik untuk anda",
+    "words": [
+      {
+        "text": "Plan",
+        "start": 144.60000000000002,
+        "end": 145.20000000000002,
+        "p": 0.992
+      },
+      {
+        "text": "terbaik",
+        "start": 145.20000000000002,
+        "end": 145.8,
+        "p": 1.0
+      },
+      {
+        "text": "untuk",
+        "start": 145.8,
+        "end": 145.92,
+        "p": 0.736
+      },
+      {
+        "text": "anda",
+        "start": 145.92,
+        "end": 146.16,
+        "p": 0.999
+      }
+    ]
+  },
+  {
+    "start": 146.16,
+    "end": 147.18,
+    "text": "Apa persoalan",
+    "words": [
+      {
+        "text": "Apa",
+        "start": 146.16,
+        "end": 146.86,
+        "p": 0.967
+      },
+      {
+        "text": "persoalan",
+        "start": 146.86,
+        "end": 147.18,
+        "p": 0.907
+      }
+    ]
+  },
+  {
+    "start": 147.18,
+    "end": 148.06,
+    "text": "Beritanya diorang komen",
+    "words": [
+      {
+        "text": "Beritanya",
+        "start": 147.18,
+        "end": 147.58,
+        "p": 0.712
+      },
+      {
+        "text": "diorang",
+        "start": 147.58,
+        "end": 147.84,
+        "p": 0.685
+      },
+      {
+        "text": "komen",
+        "start": 147.84,
+        "end": 148.06,
+        "p": 0.934
+      }
+    ]
+  },
+  {
+    "start": 148.06,
+    "end": 148.58,
+    "text": "Take care",
+    "words": [
+      {
+        "text": "Take",
+        "start": 148.06,
+        "end": 148.36,
+        "p": 0.989
+      },
+      {
+        "text": "care",
+        "start": 148.36,
+        "end": 148.58,
+        "p": 1.0
+      }
+    ]
+  }
+]

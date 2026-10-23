@@ -28,3 +28,5 @@ videos/**
 !videos/*/yt/package/captions_ms.srt
 !videos/*/yt/package/thumb/*.html
 !videos/*/yt/package/thumb/*.cjs
+!videos/*/broll/SEEDANCE_PROMPTS.md
+!videos/*/transcript_source.md

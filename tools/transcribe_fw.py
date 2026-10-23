@@ -12,7 +12,10 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 from pathlib import Path
+
+import numpy as np
 
 from faster_whisper import WhisperModel
 
@@ -20,6 +23,13 @@ FILLER_PROMPT = {
     "ms": "Emm, err, ah, jadi, macam, kan, eh... Okay, so, emm, macam tu lah.",
     "en": "Umm, uh, like, you know, I mean... so, uh, yeah.",
 }
+
+
+def load_audio(path: Path) -> np.ndarray:
+    """16 kHz mono float32 via ffmpeg (faster-whisper's own PyAV decode breaks on PyAV >= 17)."""
+    pcm = subprocess.run(["ffmpeg", "-v", "error", "-i", str(path), "-f", "f32le", "-ac", "1", "-ar", "16000", "-"],
+                         check=True, capture_output=True).stdout
+    return np.frombuffer(pcm, dtype=np.float32)
 
 
 def main() -> None:
@@ -38,7 +48,7 @@ def main() -> None:
 
     model = WhisperModel(args.model, device="cpu", compute_type="int8")
     segments, info = model.transcribe(
-        str(args.input),
+        load_audio(args.input),
         language=args.language,
         word_timestamps=True,
         vad_filter=False,

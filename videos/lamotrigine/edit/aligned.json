@@ -1,0 +1,2186 @@
+{
+  "HOOK": {
+    "hyp": "kalau cakap pasal ubat yang stabilkan mood ramai yang tahu ubat litium je tapi sebenarnya ada satu lagi ubat yang kita boleh kata underrated tapi power sebenarnya iaitu lamotrigine pernah dengar tak pasal ubat ni",
+    "score": 0.809,
+    "words": [
+      {
+        "text": "kalau",
+        "start": 0.6,
+        "end": 0.84,
+        "score": 0.836
+      },
+      {
+        "text": "cakap",
+        "start": 0.88,
+        "end": 1.301,
+        "score": 0.947
+      },
+      {
+        "text": "pasal",
+        "start": 1.401,
+        "end": 1.701,
+        "score": 0.999
+      },
+      {
+        "text": "ubat",
+        "start": 1.781,
+        "end": 2.021,
+        "score": 0.999
+      },
+      {
+        "text": "yang",
+        "start": 2.402,
+        "end": 2.562,
+        "score": 0.983
+      },
+      {
+        "text": "stabilkan",
+        "start": 2.642,
+        "end": 3.222,
+        "score": 0.994
+      },
+      {
+        "text": "mood",
+        "start": 3.262,
+        "end": 3.482,
+        "score": 0.252
+      },
+      {
+        "text": "ramai",
+        "start": 3.703,
+        "end": 3.983,
+        "score": 0.966
+      },
+      {
+        "text": "yang",
+        "start": 4.003,
+        "end": 4.143,
+        "score": 0.992
+      },
+      {
+        "text": "tahu",
+        "start": 4.183,
+        "end": 4.383,
+        "score": 0.897
+      },
+      {
+        "text": "ubat",
+        "start": 4.523,
+        "end": 4.743,
+        "score": 0.993
+      },
+      {
+        "text": "litium",
+        "start": 4.803,
+        "end": 5.164,
+        "score": 0.825
+      },
+      {
+        "text": "je",
+        "start": 5.224,
+        "end": 5.284,
+        "score": 0.594
+      },
+      {
+        "text": "tapi",
+        "start": 5.464,
+        "end": 5.664,
+        "score": 0.996
+      },
+      {
+        "text": "sebenarnya",
+        "start": 5.704,
+        "end": 5.964,
+        "score": 0.699
+      },
+      {
+        "text": "ada",
+        "start": 5.984,
+        "end": 6.064,
+        "score": 0.456
+      },
+      {
+        "text": "satu",
+        "start": 6.104,
+        "end": 6.344,
+        "score": 0.997
+      },
+      {
+        "text": "lagi",
+        "start": 6.405,
+        "end": 6.605,
+        "score": 0.998
+      },
+      {
+        "text": "ubat",
+        "start": 6.725,
+        "end": 7.005,
+        "score": 0.998
+      },
+      {
+        "text": "yang",
+        "start": 7.165,
+        "end": 7.525,
+        "score": 0.938
+      },
+      {
+        "text": "kita",
+        "start": 7.746,
+        "end": 7.906,
+        "score": 0.994
+      },
+      {
+        "text": "boleh",
+        "start": 7.926,
+        "end": 8.066,
+        "score": 0.672
+      },
+      {
+        "text": "kata",
+        "start": 8.066,
+        "end": 8.286,
+        "score": 0.986
+      },
+      {
+        "text": "underrated",
+        "start": 8.406,
+        "end": 9.107,
+        "score": 0.557
+      },
+      {
+        "text": "tapi",
+        "start": 9.547,
+        "end": 9.847,
+        "score": 0.998
+      },
+      {
+        "text": "power",
+        "start": 10.087,
+        "end": 10.488,
+        "score": 0.32
+      },
+      {
+        "text": "sebenarnya",
+        "start": 10.548,
+        "end": 10.848,
+        "score": 0.706
+      },
+      {
+        "text": "iaitu",
+        "start": 11.468,
+        "end": 11.768,
+        "score": 0.802
+      },
+      {
+        "text": "lamotrigine",
+        "start": 11.889,
+        "end": 12.589,
+        "score": 0.8
+      },
+      {
+        "text": "pernah",
+        "start": 12.889,
+        "end": 13.049,
+        "score": 0.612
+      },
+      {
+        "text": "dengar",
+        "start": 13.069,
+        "end": 13.23,
+        "score": 0.53
+      },
+      {
+        "text": "tak",
+        "start": 13.25,
+        "end": 13.35,
+        "score": 0.888
+      },
+      {
+        "text": "pasal",
+        "start": 13.37,
+        "end": 13.53,
+        "score": 0.99
+      },
+      {
+        "text": "ubat",
+        "start": 13.57,
+        "end": 13.71,
+        "score": 0.915
+      },
+      {
+        "text": "ni",
+        "start": 13.73,
+        "end": 13.81,
+        "score": 0.626
+      }
+    ]
+  },
+  "AD": {
+    "hyp": "iklan kalau anda ada masalah mood swing yang teruk cepat naik angin atau selalu mengalami fasa depression jangan tunggu sampai ia mengganggu hidup anda anda boleh dapatkan konsultasi dan saringan kesihatan mental dengan saya doktor azren di klinik saya di nilai kita akan sama sama cek apa rawatan yang sesuai untuk anda",
+    "score": 0.892,
+    "words": [
+      {
+        "text": "iklan",
+        "start": 14.41,
+        "end": 14.71,
+        "score": 0.923
+      },
+      {
+        "text": "kalau",
+        "start": 15.07,
+        "end": 15.291,
+        "score": 0.994
+      },
+      {
+        "text": "anda",
+        "start": 15.351,
+        "end": 15.531,
+        "score": 0.999
+      },
+      {
+        "text": "ada",
+        "start": 15.611,
+        "end": 15.711,
+        "score": 0.998
+      },
+      {
+        "text": "masalah",
+        "start": 15.751,
+        "end": 16.171,
+        "score": 0.987
+      },
+      {
+        "text": "mood",
+        "start": 16.471,
+        "end": 16.651,
+        "score": 0.273
+      },
+      {
+        "text": "swing",
+        "start": 16.851,
+        "end": 17.191,
+        "score": 0.729
+      },
+      {
+        "text": "yang",
+        "start": 17.271,
+        "end": 17.512,
+        "score": 0.997
+      },
+      {
+        "text": "teruk",
+        "start": 17.592,
+        "end": 18.072,
+        "score": 0.965
+      },
+      {
+        "text": "cepat",
+        "start": 18.152,
+        "end": 18.452,
+        "score": 0.99
+      },
+      {
+        "text": "naik",
+        "start": 18.512,
+        "end": 18.712,
+        "score": 0.728
+      },
+      {
+        "text": "angin",
+        "start": 18.752,
+        "end": 19.232,
+        "score": 0.987
+      },
+      {
+        "text": "atau",
+        "start": 19.272,
+        "end": 19.633,
+        "score": 0.992
+      },
+      {
+        "text": "selalu",
+        "start": 20.213,
+        "end": 20.613,
+        "score": 0.995
+      },
+      {
+        "text": "mengalami",
+        "start": 21.814,
+        "end": 22.234,
+        "score": 0.973
+      },
+      {
+        "text": "fasa",
+        "start": 22.334,
+        "end": 22.634,
+        "score": 0.97
+      },
+      {
+        "text": "depression",
+        "start": 22.734,
+        "end": 23.414,
+        "score": 0.684
+      },
+      {
+        "text": "jangan",
+        "start": 23.534,
+        "end": 23.754,
+        "score": 0.961
+      },
+      {
+        "text": "tunggu",
+        "start": 23.774,
+        "end": 23.935,
+        "score": 0.982
+      },
+      {
+        "text": "sampai",
+        "start": 23.995,
+        "end": 24.375,
+        "score": 0.999
+      },
+      {
+        "text": "ia",
+        "start": 24.435,
+        "end": 24.515,
+        "score": 0.998
+      },
+      {
+        "text": "mengganggu",
+        "start": 24.555,
+        "end": 24.835,
+        "score": 0.791
+      },
+      {
+        "text": "hidup",
+        "start": 24.895,
+        "end": 25.075,
+        "score": 0.979
+      },
+      {
+        "text": "anda",
+        "start": 25.135,
+        "end": 25.335,
+        "score": 0.999
+      },
+      {
+        "text": "anda",
+        "start": 26.356,
+        "end": 26.496,
+        "score": 0.998
+      },
+      {
+        "text": "boleh",
+        "start": 26.536,
+        "end": 26.676,
+        "score": 0.964
+      },
+      {
+        "text": "dapatkan",
+        "start": 26.696,
+        "end": 27.336,
+        "score": 0.999
+      },
+      {
+        "text": "konsultasi",
+        "start": 28.357,
+        "end": 29.057,
+        "score": 0.955
+      },
+      {
+        "text": "dan",
+        "start": 29.177,
+        "end": 29.297,
+        "score": 0.999
+      },
+      {
+        "text": "saringan",
+        "start": 29.337,
+        "end": 29.677,
+        "score": 0.819
+      },
+      {
+        "text": "kesihatan",
+        "start": 29.697,
+        "end": 29.997,
+        "score": 0.74
+      },
+      {
+        "text": "mental",
+        "start": 30.037,
+        "end": 30.378,
+        "score": 0.769
+      },
+      {
+        "text": "dengan",
+        "start": 30.398,
+        "end": 30.578,
+        "score": 0.993
+      },
+      {
+        "text": "saya",
+        "start": 30.598,
+        "end": 30.818,
+        "score": 0.998
+      },
+      {
+        "text": "doktor",
+        "start": 30.918,
+        "end": 31.178,
+        "score": 0.626
+      },
+      {
+        "text": "azren",
+        "start": 31.218,
+        "end": 31.558,
+        "score": 0.747
+      },
+      {
+        "text": "di",
+        "start": 31.578,
+        "end": 31.638,
+        "score": 0.992
+      },
+      {
+        "text": "klinik",
+        "start": 31.678,
+        "end": 31.938,
+        "score": 0.801
+      },
+      {
+        "text": "saya",
+        "start": 31.958,
+        "end": 32.118,
+        "score": 0.997
+      },
+      {
+        "text": "di",
+        "start": 32.158,
+        "end": 32.218,
+        "score": 0.969
+      },
+      {
+        "text": "nilai",
+        "start": 32.258,
+        "end": 32.538,
+        "score": 0.978
+      },
+      {
+        "text": "kita",
+        "start": 32.619,
+        "end": 32.819,
+        "score": 0.998
+      },
+      {
+        "text": "akan",
+        "start": 32.839,
+        "end": 32.999,
+        "score": 0.763
+      },
+      {
+        "text": "sama",
+        "start": 33.039,
+        "end": 33.179,
+        "score": 0.995
+      },
+      {
+        "text": "sama",
+        "start": 33.219,
+        "end": 33.399,
+        "score": 0.99
+      },
+      {
+        "text": "cek",
+        "start": 33.519,
+        "end": 33.719,
+        "score": 0.854
+      },
+      {
+        "text": "apa",
+        "start": 33.799,
+        "end": 33.979,
+        "score": 0.964
+      },
+      {
+        "text": "rawatan",
+        "start": 34.019,
+        "end": 34.339,
+        "score": 0.653
+      },
+      {
+        "text": "yang",
+        "start": 34.339,
+        "end": 34.419,
+        "score": 0.518
+      },
+      {
+        "text": "sesuai",
+        "start": 34.439,
+        "end": 34.9,
+        "score": 0.985
+      },
+      {
+        "text": "untuk",
+        "start": 35.36,
+        "end": 35.52,
+        "score": 0.994
+      },
+      {
+        "text": "anda",
+        "start": 35.56,
+        "end": 35.72,
+        "score": 0.999
+      }
+    ]
+  },
+  "FAMOUS": {
+    "hyp": "okey berbalik pada topik tadi lamotrigine ni dia famous untuk stabilkan mood especially dalam penyakit bipolar disorder",
+    "score": 0.8,
+    "words": [
+      {
+        "text": "okey",
+        "start": 42.432,
+        "end": 42.592,
+        "score": 0.742
+      },
+      {
+        "text": "berbalik",
+        "start": 42.612,
+        "end": 42.873,
+        "score": 0.907
+      },
+      {
+        "text": "pada",
+        "start": 42.893,
+        "end": 43.033,
+        "score": 0.994
+      },
+      {
+        "text": "topik",
+        "start": 43.073,
+        "end": 43.314,
+        "score": 0.938
+      },
+      {
+        "text": "tadi",
+        "start": 43.334,
+        "end": 43.514,
+        "score": 0.931
+      },
+      {
+        "text": "lamotrigine",
+        "start": 43.635,
+        "end": 44.216,
+        "score": 0.7
+      },
+      {
+        "text": "ni",
+        "start": 44.216,
+        "end": 44.256,
+        "score": 0.438
+      },
+      {
+        "text": "dia",
+        "start": 44.356,
+        "end": 44.457,
+        "score": 0.582
+      },
+      {
+        "text": "famous",
+        "start": 44.517,
+        "end": 44.878,
+        "score": 0.525
+      },
+      {
+        "text": "untuk",
+        "start": 44.998,
+        "end": 45.419,
+        "score": 0.992
+      },
+      {
+        "text": "stabilkan",
+        "start": 45.579,
+        "end": 46.221,
+        "score": 0.987
+      },
+      {
+        "text": "mood",
+        "start": 46.361,
+        "end": 46.562,
+        "score": 0.286
+      },
+      {
+        "text": "especially",
+        "start": 46.883,
+        "end": 47.384,
+        "score": 0.662
+      },
+      {
+        "text": "dalam",
+        "start": 47.444,
+        "end": 47.725,
+        "score": 0.998
+      },
+      {
+        "text": "penyakit",
+        "start": 47.785,
+        "end": 48.206,
+        "score": 0.978
+      },
+      {
+        "text": "bipolar",
+        "start": 48.246,
+        "end": 48.727,
+        "score": 0.833
+      },
+      {
+        "text": "disorder",
+        "start": 48.747,
+        "end": 49.269,
+        "score": 0.764
+      }
+    ]
+  },
+  "EPISOD": {
+    "hyp": "terutamanya dalam episod kemurungan lah",
+    "score": 0.848,
+    "words": [
+      {
+        "text": "terutamanya",
+        "start": 50.3,
+        "end": 50.742,
+        "score": 0.597
+      },
+      {
+        "text": "dalam",
+        "start": 50.762,
+        "end": 50.943,
+        "score": 0.984
+      },
+      {
+        "text": "episod",
+        "start": 51.003,
+        "end": 51.485,
+        "score": 0.928
+      },
+      {
+        "text": "kemurungan",
+        "start": 51.625,
+        "end": 52.128,
+        "score": 0.966
+      },
+      {
+        "text": "lah",
+        "start": 52.168,
+        "end": 52.288,
+        "score": 0.992
+      }
+    ]
+  },
+  "WEIGHT": {
+    "hyp": "dan risiko kenaikan berat badan dia sangat rendah sebenarnya sebab tu * ramai pasien yang suka dengan ubat ni and ubat ni pula",
+    "score": 0.837,
+    "words": [
+      {
+        "text": "dan",
+        "start": 53.671,
+        "end": 53.791,
+        "score": 0.999
+      },
+      {
+        "text": "risiko",
+        "start": 53.851,
+        "end": 54.371,
+        "score": 0.968
+      },
+      {
+        "text": "kenaikan",
+        "start": 54.612,
+        "end": 55.012,
+        "score": 0.965
+      },
+      {
+        "text": "berat",
+        "start": 55.052,
+        "end": 55.192,
+        "score": 0.796
+      },
+      {
+        "text": "badan",
+        "start": 55.232,
+        "end": 55.493,
+        "score": 0.806
+      },
+      {
+        "text": "dia",
+        "start": 55.513,
+        "end": 55.593,
+        "score": 0.662
+      },
+      {
+        "text": "sangat",
+        "start": 55.653,
+        "end": 55.913,
+        "score": 0.993
+      },
+      {
+        "text": "rendah",
+        "start": 55.953,
+        "end": 56.213,
+        "score": 0.992
+      },
+      {
+        "text": "sebenarnya",
+        "start": 56.273,
+        "end": 56.614,
+        "score": 0.616
+      },
+      {
+        "text": "sebab",
+        "start": 56.754,
+        "end": 56.934,
+        "score": 0.617
+      },
+      {
+        "text": "tu",
+        "start": 57.014,
+        "end": 57.114,
+        "score": 0.995
+      },
+      {
+        "text": "*",
+        "start": 57.114,
+        "end": 59.396,
+        "score": 1.0
+      },
+      {
+        "text": "ramai",
+        "start": 59.396,
+        "end": 59.617,
+        "score": 0.99
+      },
+      {
+        "text": "pasien",
+        "start": 59.657,
+        "end": 59.937,
+        "score": 0.672
+      },
+      {
+        "text": "yang",
+        "start": 59.997,
+        "end": 60.117,
+        "score": 0.989
+      },
+      {
+        "text": "suka",
+        "start": 60.137,
+        "end": 60.377,
+        "score": 0.927
+      },
+      {
+        "text": "dengan",
+        "start": 60.478,
+        "end": 60.638,
+        "score": 0.671
+      },
+      {
+        "text": "ubat",
+        "start": 60.678,
+        "end": 60.858,
+        "score": 0.862
+      },
+      {
+        "text": "ni",
+        "start": 60.898,
+        "end": 60.978,
+        "score": 0.982
+      },
+      {
+        "text": "and",
+        "start": 61.759,
+        "end": 62.099,
+        "score": 0.519
+      },
+      {
+        "text": "ubat",
+        "start": 62.179,
+        "end": 62.38,
+        "score": 0.817
+      },
+      {
+        "text": "ni",
+        "start": 62.42,
+        "end": 62.48,
+        "score": 0.866
+      },
+      {
+        "text": "pula",
+        "start": 62.54,
+        "end": 62.72,
+        "score": 0.924
+      }
+    ]
+  },
+  "DROWSY": {
+    "hyp": "ubat ni juga dia tak buat rasa mengantuk sangat jadi ramai orang masih lagi boleh function macam biasa pada siang hari dan sesuai untuk long term use tapi dengan monitoring doktor lah seperti biasa setiap ubat pun ada keburukan dan side effect dia juga",
+    "score": 0.891,
+    "words": [
+      {
+        "text": "ubat",
+        "start": 63.29,
+        "end": 63.47,
+        "score": 0.853
+      },
+      {
+        "text": "ni",
+        "start": 63.51,
+        "end": 63.57,
+        "score": 0.993
+      },
+      {
+        "text": "juga",
+        "start": 63.61,
+        "end": 63.811,
+        "score": 0.999
+      },
+      {
+        "text": "dia",
+        "start": 63.891,
+        "end": 64.011,
+        "score": 0.932
+      },
+      {
+        "text": "tak",
+        "start": 64.071,
+        "end": 64.191,
+        "score": 0.986
+      },
+      {
+        "text": "buat",
+        "start": 64.291,
+        "end": 64.512,
+        "score": 0.998
+      },
+      {
+        "text": "rasa",
+        "start": 64.572,
+        "end": 64.772,
+        "score": 0.94
+      },
+      {
+        "text": "mengantuk",
+        "start": 64.812,
+        "end": 65.172,
+        "score": 0.976
+      },
+      {
+        "text": "sangat",
+        "start": 65.212,
+        "end": 65.513,
+        "score": 0.983
+      },
+      {
+        "text": "jadi",
+        "start": 65.673,
+        "end": 65.893,
+        "score": 0.999
+      },
+      {
+        "text": "ramai",
+        "start": 65.953,
+        "end": 66.214,
+        "score": 0.996
+      },
+      {
+        "text": "orang",
+        "start": 66.294,
+        "end": 66.534,
+        "score": 0.978
+      },
+      {
+        "text": "masih",
+        "start": 66.774,
+        "end": 67.055,
+        "score": 0.954
+      },
+      {
+        "text": "lagi",
+        "start": 67.055,
+        "end": 67.195,
+        "score": 0.993
+      },
+      {
+        "text": "boleh",
+        "start": 67.235,
+        "end": 67.435,
+        "score": 0.933
+      },
+      {
+        "text": "function",
+        "start": 67.455,
+        "end": 67.976,
+        "score": 0.546
+      },
+      {
+        "text": "macam",
+        "start": 68.136,
+        "end": 68.336,
+        "score": 0.986
+      },
+      {
+        "text": "biasa",
+        "start": 68.376,
+        "end": 68.677,
+        "score": 0.998
+      },
+      {
+        "text": "pada",
+        "start": 68.777,
+        "end": 68.937,
+        "score": 0.999
+      },
+      {
+        "text": "siang",
+        "start": 68.977,
+        "end": 69.197,
+        "score": 0.809
+      },
+      {
+        "text": "hari",
+        "start": 69.197,
+        "end": 69.378,
+        "score": 0.998
+      },
+      {
+        "text": "dan",
+        "start": 69.458,
+        "end": 69.578,
+        "score": 0.998
+      },
+      {
+        "text": "sesuai",
+        "start": 69.618,
+        "end": 70.259,
+        "score": 0.986
+      },
+      {
+        "text": "untuk",
+        "start": 70.419,
+        "end": 70.699,
+        "score": 0.998
+      },
+      {
+        "text": "long",
+        "start": 70.779,
+        "end": 70.98,
+        "score": 0.981
+      },
+      {
+        "text": "term",
+        "start": 71.08,
+        "end": 71.26,
+        "score": 0.775
+      },
+      {
+        "text": "use",
+        "start": 71.38,
+        "end": 71.6,
+        "score": 0.647
+      },
+      {
+        "text": "tapi",
+        "start": 72.001,
+        "end": 72.201,
+        "score": 0.995
+      },
+      {
+        "text": "dengan",
+        "start": 72.261,
+        "end": 72.441,
+        "score": 0.985
+      },
+      {
+        "text": "monitoring",
+        "start": 72.481,
+        "end": 72.902,
+        "score": 0.916
+      },
+      {
+        "text": "doktor",
+        "start": 72.942,
+        "end": 73.242,
+        "score": 0.764
+      },
+      {
+        "text": "lah",
+        "start": 73.302,
+        "end": 73.403,
+        "score": 0.983
+      },
+      {
+        "text": "seperti",
+        "start": 74.424,
+        "end": 74.784,
+        "score": 0.964
+      },
+      {
+        "text": "biasa",
+        "start": 74.824,
+        "end": 75.165,
+        "score": 0.995
+      },
+      {
+        "text": "setiap",
+        "start": 76.146,
+        "end": 76.346,
+        "score": 0.543
+      },
+      {
+        "text": "ubat",
+        "start": 76.406,
+        "end": 76.627,
+        "score": 0.938
+      },
+      {
+        "text": "pun",
+        "start": 76.687,
+        "end": 76.847,
+        "score": 0.933
+      },
+      {
+        "text": "ada",
+        "start": 76.947,
+        "end": 77.147,
+        "score": 0.998
+      },
+      {
+        "text": "keburukan",
+        "start": 77.287,
+        "end": 77.808,
+        "score": 0.998
+      },
+      {
+        "text": "dan",
+        "start": 77.848,
+        "end": 77.948,
+        "score": 0.995
+      },
+      {
+        "text": "side",
+        "start": 78.008,
+        "end": 78.108,
+        "score": 0.251
+      },
+      {
+        "text": "effect",
+        "start": 78.148,
+        "end": 78.409,
+        "score": 0.293
+      },
+      {
+        "text": "dia",
+        "start": 78.449,
+        "end": 78.529,
+        "score": 0.784
+      },
+      {
+        "text": "juga",
+        "start": 78.549,
+        "end": 78.709,
+        "score": 0.995
+      }
+    ]
+  },
+  "TITRATE": {
+    "hyp": "ubat ni dia kena start dengan dos yang rendah perlahan lahan kena titrate naik sebab ada risiko untuk ruam kulit yang serius kita panggil sebagai steven johnson syndrome dia rare sebenarnya tapi boleh berlakulah dengan ubat ni",
+    "score": 0.836,
+    "words": [
+      {
+        "text": "ubat",
+        "start": 79.97,
+        "end": 80.17,
+        "score": 0.752
+      },
+      {
+        "text": "ni",
+        "start": 80.23,
+        "end": 80.31,
+        "score": 0.98
+      },
+      {
+        "text": "dia",
+        "start": 80.43,
+        "end": 80.511,
+        "score": 0.863
+      },
+      {
+        "text": "kena",
+        "start": 80.551,
+        "end": 80.711,
+        "score": 0.944
+      },
+      {
+        "text": "start",
+        "start": 80.771,
+        "end": 80.991,
+        "score": 0.521
+      },
+      {
+        "text": "dengan",
+        "start": 81.011,
+        "end": 81.231,
+        "score": 0.946
+      },
+      {
+        "text": "dos",
+        "start": 81.311,
+        "end": 81.471,
+        "score": 0.907
+      },
+      {
+        "text": "yang",
+        "start": 81.531,
+        "end": 81.631,
+        "score": 0.996
+      },
+      {
+        "text": "rendah",
+        "start": 81.651,
+        "end": 81.952,
+        "score": 0.994
+      },
+      {
+        "text": "perlahan",
+        "start": 82.292,
+        "end": 82.592,
+        "score": 0.499
+      },
+      {
+        "text": "lahan",
+        "start": 82.592,
+        "end": 82.832,
+        "score": 0.985
+      },
+      {
+        "text": "kena",
+        "start": 82.892,
+        "end": 83.092,
+        "score": 0.987
+      },
+      {
+        "text": "titrate",
+        "start": 83.232,
+        "end": 83.733,
+        "score": 0.613
+      },
+      {
+        "text": "naik",
+        "start": 83.813,
+        "end": 84.073,
+        "score": 0.653
+      },
+      {
+        "text": "sebab",
+        "start": 84.333,
+        "end": 84.553,
+        "score": 0.995
+      },
+      {
+        "text": "ada",
+        "start": 84.633,
+        "end": 84.754,
+        "score": 0.989
+      },
+      {
+        "text": "risiko",
+        "start": 84.814,
+        "end": 85.214,
+        "score": 0.788
+      },
+      {
+        "text": "untuk",
+        "start": 85.354,
+        "end": 85.634,
+        "score": 0.913
+      },
+      {
+        "text": "ruam",
+        "start": 85.754,
+        "end": 86.014,
+        "score": 0.972
+      },
+      {
+        "text": "kulit",
+        "start": 86.135,
+        "end": 86.435,
+        "score": 0.854
+      },
+      {
+        "text": "yang",
+        "start": 86.495,
+        "end": 86.655,
+        "score": 0.95
+      },
+      {
+        "text": "serius",
+        "start": 86.695,
+        "end": 87.015,
+        "score": 0.727
+      },
+      {
+        "text": "kita",
+        "start": 87.095,
+        "end": 87.275,
+        "score": 0.998
+      },
+      {
+        "text": "panggil",
+        "start": 87.315,
+        "end": 87.636,
+        "score": 0.979
+      },
+      {
+        "text": "sebagai",
+        "start": 87.676,
+        "end": 88.116,
+        "score": 0.995
+      },
+      {
+        "text": "steven",
+        "start": 88.596,
+        "end": 88.957,
+        "score": 0.905
+      },
+      {
+        "text": "johnson",
+        "start": 88.997,
+        "end": 89.377,
+        "score": 0.947
+      },
+      {
+        "text": "syndrome",
+        "start": 89.457,
+        "end": 90.378,
+        "score": 0.62
+      },
+      {
+        "text": "dia",
+        "start": 90.478,
+        "end": 90.558,
+        "score": 0.637
+      },
+      {
+        "text": "rare",
+        "start": 90.598,
+        "end": 90.778,
+        "score": 0.529
+      },
+      {
+        "text": "sebenarnya",
+        "start": 90.878,
+        "end": 91.118,
+        "score": 0.578
+      },
+      {
+        "text": "tapi",
+        "start": 91.218,
+        "end": 91.478,
+        "score": 0.998
+      },
+      {
+        "text": "boleh",
+        "start": 92.239,
+        "end": 92.479,
+        "score": 0.996
+      },
+      {
+        "text": "berlakulah",
+        "start": 92.519,
+        "end": 93.06,
+        "score": 0.887
+      },
+      {
+        "text": "dengan",
+        "start": 93.1,
+        "end": 93.28,
+        "score": 0.96
+      },
+      {
+        "text": "ubat",
+        "start": 93.3,
+        "end": 93.48,
+        "score": 0.756
+      },
+      {
+        "text": "ni",
+        "start": 93.52,
+        "end": 93.58,
+        "score": 0.982
+      }
+    ]
+  },
+  "SIDEFX": {
+    "hyp": "dan side effect dan boleh menyebabkan side effect side effect yang biasa lah seperti ubat lain seperti pening kepala loya ataupun susah tidur dia tak begitu kuat",
+    "score": 0.733,
+    "words": [
+      {
+        "text": "dan",
+        "start": 94.74,
+        "end": 95.001,
+        "score": 0.961
+      },
+      {
+        "text": "side",
+        "start": 95.622,
+        "end": 95.722,
+        "score": 0.238
+      },
+      {
+        "text": "effect",
+        "start": 95.762,
+        "end": 96.163,
+        "score": 0.324
+      },
+      {
+        "text": "dan",
+        "start": 96.443,
+        "end": 96.664,
+        "score": 0.727
+      },
+      {
+        "text": "boleh",
+        "start": 96.824,
+        "end": 97.004,
+        "score": 0.953
+      },
+      {
+        "text": "menyebabkan",
+        "start": 97.004,
+        "end": 97.425,
+        "score": 0.734
+      },
+      {
+        "text": "side",
+        "start": 97.465,
+        "end": 97.626,
+        "score": 0.487
+      },
+      {
+        "text": "effect",
+        "start": 97.646,
+        "end": 97.966,
+        "score": 0.398
+      },
+      {
+        "text": "side",
+        "start": 98.046,
+        "end": 98.147,
+        "score": 0.247
+      },
+      {
+        "text": "effect",
+        "start": 98.167,
+        "end": 98.407,
+        "score": 0.296
+      },
+      {
+        "text": "yang",
+        "start": 98.447,
+        "end": 98.547,
+        "score": 0.758
+      },
+      {
+        "text": "biasa",
+        "start": 98.547,
+        "end": 98.848,
+        "score": 0.977
+      },
+      {
+        "text": "lah",
+        "start": 98.928,
+        "end": 99.008,
+        "score": 0.812
+      },
+      {
+        "text": "seperti",
+        "start": 99.028,
+        "end": 99.249,
+        "score": 0.993
+      },
+      {
+        "text": "ubat",
+        "start": 99.289,
+        "end": 99.449,
+        "score": 0.624
+      },
+      {
+        "text": "lain",
+        "start": 99.469,
+        "end": 99.629,
+        "score": 0.944
+      },
+      {
+        "text": "seperti",
+        "start": 99.669,
+        "end": 99.91,
+        "score": 0.976
+      },
+      {
+        "text": "pening",
+        "start": 100.371,
+        "end": 100.591,
+        "score": 0.886
+      },
+      {
+        "text": "kepala",
+        "start": 100.611,
+        "end": 100.932,
+        "score": 0.984
+      },
+      {
+        "text": "loya",
+        "start": 101.753,
+        "end": 102.054,
+        "score": 0.854
+      },
+      {
+        "text": "ataupun",
+        "start": 102.355,
+        "end": 102.695,
+        "score": 0.9
+      },
+      {
+        "text": "susah",
+        "start": 102.715,
+        "end": 102.876,
+        "score": 0.678
+      },
+      {
+        "text": "tidur",
+        "start": 102.916,
+        "end": 103.196,
+        "score": 0.678
+      },
+      {
+        "text": "dia",
+        "start": 104.158,
+        "end": 104.258,
+        "score": 0.946
+      },
+      {
+        "text": "tak",
+        "start": 104.318,
+        "end": 104.418,
+        "score": 0.684
+      },
+      {
+        "text": "begitu",
+        "start": 104.418,
+        "end": 104.759,
+        "score": 0.694
+      },
+      {
+        "text": "kuat",
+        "start": 104.879,
+        "end": 105.14,
+        "score": 0.987
+      }
+    ]
+  },
+  "RETAKE": {
+    "hyp": "dan ubat ni juga * dan ubat ni juga dia tak begitu kuat untuk rawat",
+    "score": 0.923,
+    "words": [
+      {
+        "text": "dan",
+        "start": 106.68,
+        "end": 106.8,
+        "score": 0.984
+      },
+      {
+        "text": "ubat",
+        "start": 106.861,
+        "end": 107.021,
+        "score": 0.821
+      },
+      {
+        "text": "ni",
+        "start": 107.061,
+        "end": 107.101,
+        "score": 0.978
+      },
+      {
+        "text": "juga",
+        "start": 107.141,
+        "end": 107.301,
+        "score": 0.987
+      },
+      {
+        "text": "*",
+        "start": 107.301,
+        "end": 109.946,
+        "score": 1.0
+      },
+      {
+        "text": "dan",
+        "start": 109.946,
+        "end": 110.086,
+        "score": 0.997
+      },
+      {
+        "text": "ubat",
+        "start": 110.186,
+        "end": 110.366,
+        "score": 0.95
+      },
+      {
+        "text": "ni",
+        "start": 110.406,
+        "end": 110.466,
+        "score": 0.992
+      },
+      {
+        "text": "juga",
+        "start": 110.507,
+        "end": 110.707,
+        "score": 0.995
+      },
+      {
+        "text": "dia",
+        "start": 110.787,
+        "end": 110.867,
+        "score": 0.488
+      },
+      {
+        "text": "tak",
+        "start": 110.927,
+        "end": 111.067,
+        "score": 0.991
+      },
+      {
+        "text": "begitu",
+        "start": 111.128,
+        "end": 111.488,
+        "score": 0.971
+      },
+      {
+        "text": "kuat",
+        "start": 111.608,
+        "end": 111.809,
+        "score": 0.977
+      },
+      {
+        "text": "untuk",
+        "start": 111.889,
+        "end": 112.089,
+        "score": 0.811
+      },
+      {
+        "text": "rawat",
+        "start": 112.149,
+        "end": 112.53,
+        "score": 0.964
+      }
+    ]
+  },
+  "MANIA": {
+    "hyp": "fasa mania tu dia lebih kepada nak elak kemurungan tu datang balik ada sama seperti ubat lain jangan stop sendiri tanpa advice doktor so lamotrigine ni dia macam",
+    "score": 0.861,
+    "words": [
+      {
+        "text": "fasa",
+        "start": 113.19,
+        "end": 113.43,
+        "score": 0.72
+      },
+      {
+        "text": "mania",
+        "start": 113.51,
+        "end": 113.811,
+        "score": 0.769
+      },
+      {
+        "text": "tu",
+        "start": 113.951,
+        "end": 114.031,
+        "score": 0.996
+      },
+      {
+        "text": "dia",
+        "start": 114.131,
+        "end": 114.211,
+        "score": 0.875
+      },
+      {
+        "text": "lebih",
+        "start": 114.231,
+        "end": 114.431,
+        "score": 0.995
+      },
+      {
+        "text": "kepada",
+        "start": 114.451,
+        "end": 114.711,
+        "score": 0.994
+      },
+      {
+        "text": "nak",
+        "start": 114.771,
+        "end": 114.892,
+        "score": 0.688
+      },
+      {
+        "text": "elak",
+        "start": 114.972,
+        "end": 115.252,
+        "score": 0.855
+      },
+      {
+        "text": "kemurungan",
+        "start": 115.392,
+        "end": 115.873,
+        "score": 0.942
+      },
+      {
+        "text": "tu",
+        "start": 115.893,
+        "end": 115.953,
+        "score": 0.994
+      },
+      {
+        "text": "datang",
+        "start": 115.993,
+        "end": 116.233,
+        "score": 0.98
+      },
+      {
+        "text": "balik",
+        "start": 116.253,
+        "end": 116.493,
+        "score": 0.996
+      },
+      {
+        "text": "ada",
+        "start": 116.934,
+        "end": 117.054,
+        "score": 0.997
+      },
+      {
+        "text": "sama",
+        "start": 117.094,
+        "end": 117.334,
+        "score": 0.999
+      },
+      {
+        "text": "seperti",
+        "start": 117.374,
+        "end": 117.694,
+        "score": 0.997
+      },
+      {
+        "text": "ubat",
+        "start": 117.734,
+        "end": 117.914,
+        "score": 0.758
+      },
+      {
+        "text": "lain",
+        "start": 117.954,
+        "end": 118.275,
+        "score": 0.996
+      },
+      {
+        "text": "jangan",
+        "start": 118.355,
+        "end": 118.735,
+        "score": 0.998
+      },
+      {
+        "text": "stop",
+        "start": 118.835,
+        "end": 119.076,
+        "score": 0.995
+      },
+      {
+        "text": "sendiri",
+        "start": 119.116,
+        "end": 119.396,
+        "score": 0.961
+      },
+      {
+        "text": "tanpa",
+        "start": 119.436,
+        "end": 119.696,
+        "score": 0.962
+      },
+      {
+        "text": "advice",
+        "start": 119.776,
+        "end": 120.096,
+        "score": 0.294
+      },
+      {
+        "text": "doktor",
+        "start": 120.096,
+        "end": 120.437,
+        "score": 0.671
+      },
+      {
+        "text": "so",
+        "start": 121.298,
+        "end": 121.418,
+        "score": 0.814
+      },
+      {
+        "text": "lamotrigine",
+        "start": 122.158,
+        "end": 122.759,
+        "score": 0.533
+      },
+      {
+        "text": "ni",
+        "start": 122.759,
+        "end": 122.839,
+        "score": 0.951
+      },
+      {
+        "text": "dia",
+        "start": 122.919,
+        "end": 123.039,
+        "score": 0.938
+      },
+      {
+        "text": "macam",
+        "start": 123.079,
+        "end": 123.64,
+        "score": 0.98
+      }
+    ]
+  },
+  "SUMMARY": {
+    "hyp": "so lamotrigine ni basically boleh bantu untuk mood kita especially dalam orang yang mengalami bipolar disorder yang selalu berada di fasa kemurungan tapi kena ingat ubat ni juga ada cara guna dia yang selamat kalau anda rasa struggle dengan mood swing boleh set appointment dengan saya dekat nilai kita sembang santai dahulu sebelum kita decide",
+    "score": 0.811,
+    "words": [
+      {
+        "text": "so",
+        "start": 125.121,
+        "end": 125.221,
+        "score": 0.954
+      },
+      {
+        "text": "lamotrigine",
+        "start": 125.621,
+        "end": 126.202,
+        "score": 0.639
+      },
+      {
+        "text": "ni",
+        "start": 126.202,
+        "end": 126.262,
+        "score": 0.491
+      },
+      {
+        "text": "basically",
+        "start": 126.502,
+        "end": 126.883,
+        "score": 0.381
+      },
+      {
+        "text": "boleh",
+        "start": 126.883,
+        "end": 127.043,
+        "score": 0.678
+      },
+      {
+        "text": "bantu",
+        "start": 127.043,
+        "end": 127.343,
+        "score": 0.998
+      },
+      {
+        "text": "untuk",
+        "start": 127.703,
+        "end": 127.964,
+        "score": 0.963
+      },
+      {
+        "text": "mood",
+        "start": 128.064,
+        "end": 128.204,
+        "score": 0.25
+      },
+      {
+        "text": "kita",
+        "start": 128.284,
+        "end": 128.504,
+        "score": 0.999
+      },
+      {
+        "text": "especially",
+        "start": 128.604,
+        "end": 128.965,
+        "score": 0.673
+      },
+      {
+        "text": "dalam",
+        "start": 129.005,
+        "end": 129.205,
+        "score": 0.731
+      },
+      {
+        "text": "orang",
+        "start": 129.265,
+        "end": 129.505,
+        "score": 0.999
+      },
+      {
+        "text": "yang",
+        "start": 129.565,
+        "end": 129.665,
+        "score": 0.997
+      },
+      {
+        "text": "mengalami",
+        "start": 129.665,
+        "end": 129.966,
+        "score": 0.969
+      },
+      {
+        "text": "bipolar",
+        "start": 130.026,
+        "end": 130.446,
+        "score": 0.819
+      },
+      {
+        "text": "disorder",
+        "start": 130.466,
+        "end": 130.887,
+        "score": 0.615
+      },
+      {
+        "text": "yang",
+        "start": 131.267,
+        "end": 131.407,
+        "score": 0.889
+      },
+      {
+        "text": "selalu",
+        "start": 131.447,
+        "end": 131.848,
+        "score": 0.998
+      },
+      {
+        "text": "berada",
+        "start": 132.548,
+        "end": 132.789,
+        "score": 0.716
+      },
+      {
+        "text": "di",
+        "start": 132.829,
+        "end": 132.889,
+        "score": 0.92
+      },
+      {
+        "text": "fasa",
+        "start": 132.949,
+        "end": 133.169,
+        "score": 0.983
+      },
+      {
+        "text": "kemurungan",
+        "start": 133.249,
+        "end": 133.73,
+        "score": 0.979
+      },
+      {
+        "text": "tapi",
+        "start": 133.81,
+        "end": 133.99,
+        "score": 0.999
+      },
+      {
+        "text": "kena",
+        "start": 134.05,
+        "end": 134.17,
+        "score": 0.923
+      },
+      {
+        "text": "ingat",
+        "start": 134.23,
+        "end": 134.43,
+        "score": 0.993
+      },
+      {
+        "text": "ubat",
+        "start": 134.591,
+        "end": 134.791,
+        "score": 0.777
+      },
+      {
+        "text": "ni",
+        "start": 134.811,
+        "end": 134.871,
+        "score": 0.989
+      },
+      {
+        "text": "juga",
+        "start": 134.931,
+        "end": 135.131,
+        "score": 0.999
+      },
+      {
+        "text": "ada",
+        "start": 135.391,
+        "end": 135.592,
+        "score": 0.999
+      },
+      {
+        "text": "cara",
+        "start": 135.712,
+        "end": 135.992,
+        "score": 0.998
+      },
+      {
+        "text": "guna",
+        "start": 136.092,
+        "end": 136.312,
+        "score": 0.999
+      },
+      {
+        "text": "dia",
+        "start": 136.372,
+        "end": 136.472,
+        "score": 0.893
+      },
+      {
+        "text": "yang",
+        "start": 136.533,
+        "end": 136.653,
+        "score": 0.965
+      },
+      {
+        "text": "selamat",
+        "start": 136.673,
+        "end": 137.013,
+        "score": 0.985
+      },
+      {
+        "text": "kalau",
+        "start": 137.173,
+        "end": 137.413,
+        "score": 0.944
+      },
+      {
+        "text": "anda",
+        "start": 137.453,
+        "end": 137.594,
+        "score": 0.744
+      },
+      {
+        "text": "rasa",
+        "start": 137.634,
+        "end": 137.814,
+        "score": 0.973
+      },
+      {
+        "text": "struggle",
+        "start": 137.874,
+        "end": 138.334,
+        "score": 0.614
+      },
+      {
+        "text": "dengan",
+        "start": 138.354,
+        "end": 138.555,
+        "score": 0.975
+      },
+      {
+        "text": "mood",
+        "start": 138.595,
+        "end": 138.715,
+        "score": 0.257
+      },
+      {
+        "text": "swing",
+        "start": 138.775,
+        "end": 139.175,
+        "score": 0.833
+      },
+      {
+        "text": "boleh",
+        "start": 139.556,
+        "end": 139.756,
+        "score": 0.926
+      },
+      {
+        "text": "set",
+        "start": 139.776,
+        "end": 139.856,
+        "score": 0.468
+      },
+      {
+        "text": "appointment",
+        "start": 139.856,
+        "end": 140.276,
+        "score": 0.24
+      },
+      {
+        "text": "dengan",
+        "start": 140.276,
+        "end": 140.457,
+        "score": 0.989
+      },
+      {
+        "text": "saya",
+        "start": 140.477,
+        "end": 140.617,
+        "score": 0.786
+      },
+      {
+        "text": "dekat",
+        "start": 140.657,
+        "end": 140.817,
+        "score": 0.927
+      },
+      {
+        "text": "nilai",
+        "start": 140.837,
+        "end": 141.077,
+        "score": 0.964
+      },
+      {
+        "text": "kita",
+        "start": 141.177,
+        "end": 141.317,
+        "score": 0.999
+      },
+      {
+        "text": "sembang",
+        "start": 141.357,
+        "end": 141.738,
+        "score": 0.846
+      },
+      {
+        "text": "santai",
+        "start": 141.798,
+        "end": 142.198,
+        "score": 0.974
+      },
+      {
+        "text": "dahulu",
+        "start": 142.258,
+        "end": 142.539,
+        "score": 0.966
+      },
+      {
+        "text": "sebelum",
+        "start": 142.639,
+        "end": 142.979,
+        "score": 0.996
+      },
+      {
+        "text": "kita",
+        "start": 143.099,
+        "end": 143.32,
+        "score": 0.997
+      },
+      {
+        "text": "decide",
+        "start": 143.4,
+        "end": 143.8,
+        "score": 0.332
+      }
+    ]
+  },
+  "PLAN": {
+    "hyp": "plan terbaik untuk anda",
+    "score": 0.986,
+    "words": [
+      {
+        "text": "plan",
+        "start": 145.135,
+        "end": 145.396,
+        "score": 0.989
+      },
+      {
+        "text": "terbaik",
+        "start": 145.476,
+        "end": 145.818,
+        "score": 0.98
+      },
+      {
+        "text": "untuk",
+        "start": 145.898,
+        "end": 146.059,
+        "score": 0.999
+      },
+      {
+        "text": "anda",
+        "start": 146.099,
+        "end": 146.28,
+        "score": 0.977
+      }
+    ]
+  },
+  "BYE": {
+    "hyp": "apa persoalan boleh tanya di ruang komen take care",
+    "score": 0.52,
+    "words": [
+      {
+        "text": "apa",
+        "start": 146.802,
+        "end": 146.923,
+        "score": 0.725
+      },
+      {
+        "text": "persoalan",
+        "start": 146.984,
+        "end": 147.366,
+        "score": 0.599
+      },
+      {
+        "text": "boleh",
+        "start": 147.387,
+        "end": 147.507,
+        "score": 0.063
+      },
+      {
+        "text": "tanya",
+        "start": 147.507,
+        "end": 147.689,
+        "score": 0.799
+      },
+      {
+        "text": "di",
+        "start": 147.729,
+        "end": 147.769,
+        "score": 0.488
+      },
+      {
+        "text": "ruang",
+        "start": 147.769,
+        "end": 147.931,
+        "score": 0.406
+      },
+      {
+        "text": "komen",
+        "start": 147.971,
+        "end": 148.233,
+        "score": 0.976
+      },
+      {
+        "text": "take",
+        "start": 148.334,
+        "end": 148.475,
+        "score": 0.258
+      },
+      {
+        "text": "care",
+        "start": 148.495,
+        "end": 148.596,
+        "score": 0.258
+      }
+    ]
+  }
+}
