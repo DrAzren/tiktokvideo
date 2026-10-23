@@ -1,0 +1,268 @@
+{
+ "durationSeconds": 84.46666666666667,
+ "fps": 30,
+ "items": [
+  {
+   "id": "k00",
+   "kind": "card",
+   "start": 0.0,
+   "end": 1.9333,
+   "intent": "Hook headline on frame 0 (his words: ubat, mood, underrated)"
+  },
+  {
+   "id": "b01",
+   "kind": "broll",
+   "prompt": "B01",
+   "start": 1.6667,
+   "end": 3.8333,
+   "source": "fallback:neural"
+  },
+  {
+   "id": "k01",
+   "kind": "card",
+   "start": 3.0,
+   "end": 7.6333,
+   "intent": "Lithium is the one people know; there is one more"
+  },
+  {
+   "id": "b02",
+   "kind": "broll",
+   "prompt": "B02",
+   "start": 7.3667,
+   "end": 10.4333,
+   "source": "fallback:pill"
+  },
+  {
+   "id": "title",
+   "kind": "3d-title",
+   "start": 10.7667,
+   "end": 14.0333
+  },
+  {
+   "id": "b08",
+   "kind": "broll",
+   "prompt": "B08",
+   "start": 13.8333,
+   "end": 16.3667,
+   "source": "fallback:molecule"
+  },
+  {
+   "id": "b03",
+   "kind": "broll",
+   "prompt": "B03",
+   "start": 16.3667,
+   "end": 17.5667,
+   "source": "talking head"
+  },
+  {
+   "id": "k05",
+   "kind": "card",
+   "start": 17.5,
+   "end": 21.0667,
+   "intent": "Bipolar disorder, especially depressive episodes (his wording)"
+  },
+  {
+   "id": "mg-weight",
+   "kind": "motion-graphic",
+   "start": 21.1333,
+   "end": 25.9333
+  },
+  {
+   "id": "k06",
+   "kind": "card",
+   "start": 26.0333,
+   "end": 28.4667,
+   "intent": "Not very sedating"
+  },
+  {
+   "id": "b04",
+   "kind": "broll",
+   "prompt": "B04",
+   "start": 28.2667,
+   "end": 32.1,
+   "source": "talking head"
+  },
+  {
+   "id": "k07",
+   "kind": "card",
+   "start": 28.3667,
+   "end": 32.1333,
+   "intent": "Daytime functioning (label over B04 or the talking head)"
+  },
+  {
+   "id": "k08",
+   "kind": "card",
+   "start": 32.1,
+   "end": 36.2667,
+   "intent": "Long-term use, with doctor monitoring"
+  },
+  {
+   "id": "b05",
+   "kind": "broll",
+   "prompt": "B05",
+   "start": 34.6,
+   "end": 36.2333,
+   "source": "talking head"
+  },
+  {
+   "id": "k10",
+   "kind": "card",
+   "start": 37.3,
+   "end": 40.4333,
+   "intent": "Every medicine has side effects"
+  },
+  {
+   "id": "b06",
+   "kind": "broll",
+   "prompt": "B06",
+   "start": 40.2333,
+   "end": 42.4333,
+   "source": "talking head"
+  },
+  {
+   "id": "k11",
+   "kind": "card",
+   "start": 40.3333,
+   "end": 42.4333,
+   "intent": "Start with a low dose (label over B06 or the talking head)"
+  },
+  {
+   "id": "mg-titrate",
+   "kind": "motion-graphic",
+   "start": 42.4333,
+   "end": 44.6333
+  },
+  {
+   "id": "k12",
+   "kind": "card",
+   "start": 44.6333,
+   "end": 53.4667,
+   "intent": "Serious rash risk, SJS: rare but possible; approved safety line"
+  },
+  {
+   "id": "mg-sidefx",
+   "kind": "motion-graphic",
+   "start": 53.9667,
+   "end": 59.6667
+  },
+  {
+   "id": "k13",
+   "kind": "card",
+   "start": 59.7667,
+   "end": 65.8333,
+   "intent": "Not strong for mania; more for preventing depression from returning"
+  },
+  {
+   "id": "k14",
+   "kind": "card",
+   "start": 65.8667,
+   "end": 69.5,
+   "intent": "Don't stop on your own without the doctor's advice"
+  },
+  {
+   "id": "b07",
+   "kind": "broll",
+   "prompt": "B07",
+   "start": 69.3,
+   "end": 72.7,
+   "source": "talking head"
+  },
+  {
+   "id": "k15",
+   "kind": "card",
+   "start": 69.4,
+   "end": 72.7333,
+   "intent": "There is a safe way to use it"
+  },
+  {
+   "id": "b09",
+   "kind": "broll",
+   "prompt": "B09",
+   "start": 72.7,
+   "end": 75.0333,
+   "source": "talking head"
+  },
+  {
+   "id": "k16",
+   "kind": "card",
+   "start": 75.1,
+   "end": 80.8,
+   "intent": "Name strip (no clinic logo or credentials invented)"
+  },
+  {
+   "id": "k17",
+   "kind": "card",
+   "start": 80.9,
+   "end": 82.8667,
+   "intent": "Ask in the comments"
+  },
+  {
+   "id": "end",
+   "kind": "end-card",
+   "start": 82.9333,
+   "end": 84.46666666666667
+  }
+ ],
+ "captions": [
+  "Kalau cakap pasal ubat",
+  "yang stabilkan *mood*,",
+  "ramai yang tahu ubat *litium* je.",
+  "Tapi sebenarnya ada satu lagi ubat",
+  "yang kita boleh kata *underrated*,",
+  "tapi *power* sebenarnya,",
+  "iaitu *Lamotrigine*.",
+  "Pernah dengar tak pasal ubat ni?",
+  "*Lamotrigine* ni dia famous",
+  "untuk stabilkan *mood*,",
+  "especially dalam penyakit *bipolar* *disorder*.",
+  "Terutamanya dalam *episod* *kemurungan* ~lah.",
+  "Dan risiko kenaikan *berat* *badan*",
+  "dia sangat *rendah*.",
+  "Sebab tu ramai pasien",
+  "yang suka dengan ubat ni.",
+  "Ubat ni juga dia tak buat",
+  "rasa *mengantuk* sangat.",
+  "Jadi ramai orang masih lagi",
+  "boleh *function* macam biasa",
+  "pada siang hari,",
+  "dan sesuai untuk *long* ~-*term* *use*,",
+  "tapi dengan *monitoring* *doktor* ~lah.",
+  "Seperti biasa,",
+  "setiap ubat pun ada keburukan",
+  "dan *side* *effect* dia juga.",
+  "Ubat ni dia kena start",
+  "dengan *dos* *yang* *rendah*,",
+  "*perlahan* ~-*lahan* kena *titrate* naik,",
+  "sebab ada risiko untuk",
+  "*ruam* *kulit* yang *serius*.",
+  "Kita panggil sebagai",
+  "*Stevens* ~-*Johnson* *syndrome*.",
+  "Dia *rare*, tapi",
+  "boleh berlakulah dengan ubat ni.",
+  "Dan boleh menyebabkan *side* *effect*",
+  "yang biasa ~lah, seperti ubat lain,",
+  "seperti *pening* *kepala*,",
+  "*loya* ataupun *susah* *tidur*.",
+  "Dan ubat ni juga",
+  "dia tak begitu kuat",
+  "untuk rawat *fasa* *mania* tu.",
+  "Dia lebih kepada",
+  "nak *elak* *kemurungan* tu datang balik.",
+  "Sama seperti ubat lain,",
+  "*jangan* *stop* *sendiri*",
+  "tanpa *advice* *doktor*.",
+  "Tapi kena ingat,",
+  "ubat ni juga ada",
+  "cara guna dia yang *selamat*.",
+  "Kalau anda rasa *struggle*",
+  "dengan *mood* *swing*,",
+  "boleh set *appointment*",
+  "dengan saya dekat *Nilai*.",
+  "Kita sembang santai dahulu",
+  "sebelum kita decide",
+  "*plan* terbaik untuk anda.",
+  "Apa persoalan,",
+  "boleh tanya di ruang komen.",
+  "Take care."
+ ]
+}

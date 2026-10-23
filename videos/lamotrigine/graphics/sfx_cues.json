@@ -1,0 +1,107 @@
+[
+ {
+  "t": 0.04,
+  "kind": "impact",
+  "gain_db": -6
+ },
+ {
+  "t": 1.667,
+  "kind": "pulse",
+  "gain_db": -6
+ },
+ {
+  "t": 1.667,
+  "kind": "whoosh",
+  "gain_db": -6
+ },
+ {
+  "t": 7.367,
+  "kind": "whoosh",
+  "gain_db": -6
+ },
+ {
+  "t": 8.927,
+  "kind": "impact",
+  "gain_db": -8
+ },
+ {
+  "t": 10.767,
+  "kind": "impact",
+  "gain_db": -3
+ },
+ {
+  "t": 11.8,
+  "kind": "whoosh",
+  "gain_db": -9
+ },
+ {
+  "t": 13.833,
+  "kind": "pulse",
+  "gain_db": -6
+ },
+ {
+  "t": 13.833,
+  "kind": "whoosh",
+  "gain_db": -6
+ },
+ {
+  "t": 21.133,
+  "kind": "whoosh",
+  "gain_db": -5
+ },
+ {
+  "t": 23.433,
+  "kind": "impact",
+  "gain_db": -7
+ },
+ {
+  "t": 39.2,
+  "kind": "tick",
+  "gain_db": -14
+ },
+ {
+  "t": 42.433,
+  "kind": "whoosh",
+  "gain_db": -5
+ },
+ {
+  "t": 43.5,
+  "kind": "tick",
+  "gain_db": -12
+ },
+ {
+  "t": 53.967,
+  "kind": "whoosh",
+  "gain_db": -5
+ },
+ {
+  "t": 57.033,
+  "kind": "tick",
+  "gain_db": -12
+ },
+ {
+  "t": 58.067,
+  "kind": "tick",
+  "gain_db": -12
+ },
+ {
+  "t": 59.033,
+  "kind": "tick",
+  "gain_db": -12
+ },
+ {
+  "t": 81.4,
+  "kind": "tick",
+  "gain_db": -14
+ },
+ {
+  "t": 82.933,
+  "kind": "whoosh",
+  "gain_db": -6
+ },
+ {
+  "t": 83.167,
+  "kind": "shimmer",
+  "gain_db": -8
+ }
+]

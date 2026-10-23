@@ -25,7 +25,7 @@ import soundfile as sf
 
 MUSIC_EQ = "highpass=f=120:poles=2,equalizer=f=320:t=q:w=1.2:g=-4"  # phone speakers lose <300Hz anyway
 DUCK = "sidechaincompress=threshold=0.05:ratio=4:attack=30:release=600:knee=6:makeup=1"
-TARGET = "I=-14:TP=-1:LRA=11"
+TARGET = "I=-14:TP=-1.5:LRA=11"  # -1.5: AAC encoding overshoots ~0.5 dB, so the delivered file measures <= -1 dBTP
 
 
 def ff(*args: str) -> str:

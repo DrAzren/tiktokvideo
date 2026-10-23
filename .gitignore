@@ -30,3 +30,7 @@ videos/**
 !videos/*/yt/package/thumb/*.cjs
 !videos/*/broll/SEEDANCE_PROMPTS.md
 !videos/*/transcript_source.md
+!videos/*/DELIVERABLES.md
+!videos/*/captions_ms.srt
+!videos/*/transcript_final.md
+!videos/*/graphics/sfx_cues.json
