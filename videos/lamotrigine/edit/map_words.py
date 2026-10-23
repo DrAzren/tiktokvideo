@@ -14,6 +14,9 @@ FPS = Fraction(30)
 
 edl = json.loads((E / "edl.json").read_text())
 al = json.loads((E / "aligned.json").read_text())
+from build_edl import WORD_FIX  # noqa: E402  (same corrected edges the cut used)
+for (iid, i), (s0, e0) in WORD_FIX.items():
+    al[iid]["words"][i].update(start=s0, end=e0)
 words = sorted((w for v in al.values() for w in v["words"] if w["text"] != "*"), key=lambda w: w["start"])
 
 out, t = [], 0.0

@@ -20,7 +20,9 @@ SRC_PATH = str((E.parent / "raw" / "Ubat Psikiatri Lamotrigine.mp4").resolve())
 
 QUIET_DB = -40.0     # below this for QUIET_RUN frames = the word has really ended/not begun
 QUIET_RUN = 3        # 30ms
-TAIL_OUT, LEAD_IN = 0.06, 0.04   # extra air kept after offset / before onset
+TAIL_OUT, LEAD_IN = 0.06, 0.07   # extra air kept after offset / before onset (soft f/s/h onsets sit
+                                 # 20-40 ms before the -40 dB rise, e.g. 'fasa' at 113.155)
+MIN_CUT = 0.12       # a pause-shrink that would remove less than this is skipped (jump + fade for nothing)
 MAX_SNAP = 0.35      # never move more than this from the aligned word edge
 TIGHT = 0.16
 MAX_PAUSE = 0.32     # gaps between kept words longer than this get shrunk (TikTok pace)
@@ -32,7 +34,9 @@ FACE = [0.50, 0.38]  # zoom focus: face centre as a fraction of the frame (face 
 
 # (island_a, word_a, island_b, word_b, beat, note[, {"start"/"end": override s, "gain_db": dB}])
 SEGMENTS = [
-    ("HOOK", 0, "HOOK", 34, "HOOK", "Kalau cakap pasal ubat yang stabilkan mood ... Pernah dengar tak pasal ubat ni?"),
+    # 'Kalau' onset at 0.56: start earlier so the k stays clear of the 30ms fade
+    ("HOOK", 0, "HOOK", 34, "HOOK", "Kalau cakap pasal ubat yang stabilkan mood ... Pernah dengar tak pasal ubat ni?",
+     {"start": 0.50}),
     # clinic ad 14.0-35.8 ('Iklan, kalau anda ada masalah ...') dropped: the CTA at 2:17 says the same
     ("FAMOUS", 5, "EPISOD", 4, "WHAT", "Lamotrigine ni dia famous ... terutamanya dalam episod kemurunganlah. — 'Okey, berbalik pada topik tadi' dropped"),
     ("WEIGHT", 0, "WEIGHT", 18, "WHY", "Dan risiko kenaikan berat badan ... ramai pasien yang suka dengan ubat ni. — false start 57.1-58.5 cut"),
@@ -54,13 +58,25 @@ DROP = {
 }
 # voiced hesitations ("mmm", drawn-out vowels) filling short gaps: always cut, whatever the gap length.
 # Given as the word BEFORE the gap.
-HESITATE: set = set()
+HESITATE = {("HOOK", 26)}   # "sebenarnya" -> loud "haa" burst 10.965-11.38 -> "iaitu"
+
+# aligned word edges corrected from the 5 ms envelope / zero-crossing check (MMS placed these late)
+WORD_FIX = {
+    ("WEIGHT", 10): (56.90, 57.00),   # "tu": silence 57.01-57.035, then the false-start "ramai" from 57.04
+    ("HOOK", 26): (10.50, 10.93),     # "sebenarnya": decays to -55 dB at 10.945; the burst starts at 10.965
+}
+# explicit cut points where an /s/ onset defeats the energy-minimum rule (the hiss is quieter than the
+# vowel before it, so the minimum lands inside the s). Keyed by the kept word; from the 5 ms ZCR check.
+CUT_OUT = {("WEIGHT", 7): 56.255}    # "rendah" | dropped "sebenarnya" (its s starts 56.26)
+CUT_IN = {("WEIGHT", 9): 56.700}     # "sebab" (its s starts 56.708)
 
 
 def main() -> None:
     db = np.load(E / "env_db.npy")
     dur = len(db) / 100
     al = json.loads((E / "aligned.json").read_text())
+    for (iid, i), (s0, e0) in WORD_FIX.items():
+        al[iid]["words"][i].update(start=s0, end=e0)
     flat = sorted(
         ({"iid": iid, "i": i, **w} for iid, v in al.items() for i, w in enumerate(v["words"])),
         key=lambda w: w["start"],
@@ -131,14 +147,21 @@ def main() -> None:
             if dropped or hes:
                 # the neighbour is a filler/voiced hesitation, so energy never goes quiet: cut at the
                 # deepest dip right at each word's own edge
-                seg.append([cur, emin(a["end"] - 0.02, a["end"] + 0.07)])
-                cur = emin(b["start"] - 0.07, b["start"] + 0.02)
+                seg.append([cur, CUT_OUT.get((a["iid"], a["i"])) or emin(a["end"] - 0.02, a["end"] + 0.07)])
+                cur = CUT_IN.get((b["iid"], b["i"])) or emin(b["start"] - 0.07, b["start"] + 0.02)
                 forced.append(True)
             elif b["start"] - a["end"] > MAX_PAUSE:
                 seg.append([cur, cut_out(k)])
                 cur = cut_in(k2)
                 forced.append(False)
         seg.append([cur, end])
+        k = 0
+        while k < len(seg) - 1:  # skip pause-shrinks that remove almost nothing
+            if not forced[k] and seg[k + 1][0] - seg[k][1] < MIN_CUT:
+                seg[k:k + 2] = [[seg[k][0], seg[k + 1][1]]]
+                del forced[k]
+            else:
+                k += 1
         # undo shrink-cuts that leave a micro range (a lone "dan" between two cuts reads as a stutter):
         # merge it into the neighbour it is closer to in the source, keeping that pause instead
         # (filler cuts are never undone; a micro range is only merged across a pause-shrink boundary)
@@ -161,6 +184,17 @@ def main() -> None:
             if n == len(seg) - 1:
                 r["reason"] = note
             ranges.append(r)
+
+    # ranges that touch in the source (one segment ending where the next begins) play as one: no fade dip
+    merged = []
+    for r in ranges:
+        if merged and abs(r["start"] - merged[-1]["end"]) < 1 / 30:
+            merged[-1]["end"] = r["end"]
+            if "reason" in r:
+                merged[-1]["reason"] = merged[-1].get("reason", "") + " | " + r["reason"]
+        else:
+            merged.append(r)
+    ranges = merged
 
     z, zi = ZOOMS[0], 0
     for i, r in enumerate(ranges):

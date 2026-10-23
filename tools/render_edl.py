@@ -94,15 +94,22 @@ def main() -> None:
     focus = edl.get("zoom_focus", [0.5, 0.5])
 
     inputs, chains, labels = [], [], []
+    half = float(1 / fps / 2)
     for i, r in enumerate(edl["ranges"]):
         s = Fraction(round(r["start"] * fps)) / fps          # frame-aligned edges
         e = Fraction(round(r["end"] * fps)) / fps
         d = float(e - s)
-        inputs += ["-ss", f"{float(s):.6f}", "-t", f"{d:.6f}", "-i", sources[r["source"]]]
-        chains.append(f"[{i}:v]{zoom_filter(r.get('zoom', 1.0), focus, width, height)}setpts=PTS-STARTPTS[v{i}]")
+        n = round((e - s) * fps)
+        # Seek half a frame early: sources with a coarse time base store a frame at e.g. 43.466666 while
+        # "-ss 43.466667" asks for 43.466667, which drops that frame and leaves the segment's video one
+        # frame shorter than its audio (measured +33 ms drift per occurrence). The boundary frame is now
+        # always kept; video takes exactly n frames and audio is trimmed to the same span.
+        inputs += ["-ss", f"{float(s) - half:.6f}", "-t", f"{d + 2 * half:.6f}", "-i", sources[r["source"]]]
+        chains.append(f"[{i}:v]trim=end_frame={n},{zoom_filter(r.get('zoom', 1.0), focus, width, height)}"
+                      f"setpts=PTS-STARTPTS[v{i}]")
         gain = f"volume={r['gain_db']}dB," if r.get("gain_db") else ""
-        chains.append(f"[{i}:a]aresample=48000,{gain}asetpts=PTS-STARTPTS,"
-                      f"afade=t=in:st=0:d={FADE},afade=t=out:st={d - FADE:.6f}:d={FADE}[a{i}]")
+        chains.append(f"[{i}:a]asetpts=PTS-STARTPTS,atrim=start={half:.6f}:duration={d:.6f},asetpts=PTS-STARTPTS,"
+                      f"aresample=48000,{gain}afade=t=in:st=0:d={FADE},afade=t=out:st={d - FADE:.6f}:d={FADE}[a{i}]")
         labels.append(f"[v{i}][a{i}]")
 
     hold = float(edl.get("tail_hold", 0) or 0)

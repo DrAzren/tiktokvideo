@@ -6,68 +6,47 @@
   "ranges": [
     {
       "source": "lamo",
-      "start": 0.56,
-      "end": 2.17,
+      "start": 0.5,
+      "end": 10.945,
       "beat": "HOOK",
       "zoom": 1.0
     },
     {
       "source": "lamo",
-      "start": 2.31,
-      "end": 9.22,
-      "beat": "HOOK",
-      "zoom": 1.07
-    },
-    {
-      "source": "lamo",
-      "start": 9.25,
-      "end": 10.98,
-      "beat": "HOOK",
-      "zoom": 1.02
-    },
-    {
-      "source": "lamo",
-      "start": 11.41,
+      "start": 11.425,
       "end": 13.93,
       "beat": "HOOK",
       "reason": "Kalau cakap pasal ubat yang stabilkan mood ... Pernah dengar tak pasal ubat ni?",
-      "zoom": 1.08
+      "zoom": 1.07
     },
     {
       "source": "lamo",
       "start": 43.475,
-      "end": 46.69,
+      "end": 49.52,
       "beat": "WHAT",
+      "zoom": 1.02
+    },
+    {
+      "source": "lamo",
+      "start": 50.23,
+      "end": 52.41,
+      "beat": "WHAT",
+      "reason": "Lamotrigine ni dia famous ... terutamanya dalam episod kemurunganlah. — 'Okey, berbalik pada topik tadi' dropped",
+      "zoom": 1.08
+    },
+    {
+      "source": "lamo",
+      "start": 53.57,
+      "end": 56.255,
+      "beat": "WHY",
       "zoom": 1.035
     },
     {
       "source": "lamo",
-      "start": 46.81,
-      "end": 49.52,
-      "beat": "WHAT",
-      "zoom": 1.0
-    },
-    {
-      "source": "lamo",
-      "start": 50.26,
-      "end": 52.41,
-      "beat": "WHAT",
-      "reason": "Lamotrigine ni dia famous ... terutamanya dalam episod kemurunganlah. — 'Okey, berbalik pada topik tadi' dropped",
-      "zoom": 1.07
-    },
-    {
-      "source": "lamo",
-      "start": 53.6,
-      "end": 56.275,
+      "start": 56.7,
+      "end": 57.015,
       "beat": "WHY",
-      "zoom": 1.02
-    },
-    {
-      "source": "lamo",
-      "start": 56.725,
-      "end": 57.165,
-      "beat": "WHY",
-      "zoom": 1.02
+      "zoom": 1.035
     },
     {
       "source": "lamo",
@@ -75,54 +54,40 @@
       "end": 61.09,
       "beat": "WHY",
       "reason": "Dan risiko kenaikan berat badan ... ramai pasien yang suka dengan ubat ni. — false start 57.1-58.5 cut",
-      "zoom": 1.08
-    },
-    {
-      "source": "lamo",
-      "start": 63.21,
-      "end": 71.8,
-      "beat": "WHY",
-      "zoom": 1.035
-    },
-    {
-      "source": "lamo",
-      "start": 71.84,
-      "end": 73.49,
-      "beat": "WHY",
       "zoom": 1.0
     },
     {
       "source": "lamo",
-      "start": 74.36,
-      "end": 75.44,
+      "start": 63.18,
+      "end": 73.49,
       "beat": "WHY",
       "zoom": 1.07
     },
     {
       "source": "lamo",
-      "start": 76.05,
-      "end": 78.84,
+      "start": 74.33,
+      "end": 75.44,
       "beat": "WHY",
-      "reason": "Ubat ni juga dia tak buat rasa mengantuk ... side effect dia juga. — 'And ubat ni pula' dropped",
       "zoom": 1.02
     },
     {
       "source": "lamo",
-      "start": 79.77,
-      "end": 82.12,
-      "beat": "SAFETY",
+      "start": 76.02,
+      "end": 78.84,
+      "beat": "WHY",
+      "reason": "Ubat ni juga dia tak buat rasa mengantuk ... side effect dia juga. — 'And ubat ni pula' dropped",
       "zoom": 1.08
     },
     {
       "source": "lamo",
-      "start": 82.09,
+      "start": 79.74,
       "end": 88.29,
       "beat": "SAFETY",
       "zoom": 1.035
     },
     {
       "source": "lamo",
-      "start": 88.52,
+      "start": 88.49,
       "end": 90.785,
       "beat": "SAFETY",
       "zoom": 1.0
@@ -137,7 +102,7 @@
     },
     {
       "source": "lamo",
-      "start": 96.4,
+      "start": 96.37,
       "end": 97.995,
       "beat": "SIDEFX",
       "zoom": 1.02
@@ -145,38 +110,31 @@
     {
       "source": "lamo",
       "start": 98.395,
-      "end": 100.24,
+      "end": 101.32,
       "beat": "SIDEFX",
       "zoom": 1.08
     },
     {
       "source": "lamo",
-      "start": 100.33,
-      "end": 101.32,
-      "beat": "SIDEFX",
-      "zoom": 1.035
-    },
-    {
-      "source": "lamo",
-      "start": 101.68,
+      "start": 101.65,
       "end": 103.26,
       "beat": "SIDEFX",
       "reason": "Dan boleh menyebabkan side effect yang biasa ... susah tidur. — false starts around it cut",
-      "zoom": 1.0
+      "zoom": 1.035
     },
     {
       "source": "lamo",
       "start": 109.855,
       "end": 112.67,
       "beat": "LIMITS",
-      "zoom": 1.07
+      "zoom": 1.0
     },
     {
       "source": "lamo",
-      "start": 113.15,
+      "start": 113.12,
       "end": 116.545,
       "beat": "LIMITS",
-      "zoom": 1.02
+      "zoom": 1.07
     },
     {
       "source": "lamo",
@@ -184,44 +142,30 @@
       "end": 120.59,
       "beat": "LIMITS",
       "reason": "Dan ubat ni juga dia tak begitu kuat ... tanpa advice doktor. — first take 'dia tak begitu kuat / dan ubat ni juga' cut",
-      "zoom": 1.08
-    },
-    {
-      "source": "lamo",
-      "start": 133.785,
-      "end": 137.155,
-      "beat": "RECAP",
-      "reason": "Tapi kena ingat, ubat ni juga ada cara guna dia yang selamat. — recap 'So Lamotrigine ni basically ... fasa kemurungan' dropped (repeats 0:13)",
-      "zoom": 1.035
-    },
-    {
-      "source": "lamo",
-      "start": 137.155,
-      "end": 139.51,
-      "beat": "CTA",
-      "zoom": 1.0
-    },
-    {
-      "source": "lamo",
-      "start": 139.51,
-      "end": 143.86,
-      "beat": "CTA",
-      "zoom": 1.07
-    },
-    {
-      "source": "lamo",
-      "start": 145.09,
-      "end": 146.42,
-      "beat": "CTA",
       "zoom": 1.02
     },
     {
       "source": "lamo",
-      "start": 146.76,
+      "start": 133.785,
+      "end": 143.86,
+      "beat": "RECAP",
+      "reason": "Tapi kena ingat, ubat ni juga ada cara guna dia yang selamat. — recap 'So Lamotrigine ni basically ... fasa kemurungan' dropped (repeats 0:13)",
+      "zoom": 1.08
+    },
+    {
+      "source": "lamo",
+      "start": 145.06,
+      "end": 146.42,
+      "beat": "CTA",
+      "zoom": 1.035
+    },
+    {
+      "source": "lamo",
+      "start": 146.73,
       "end": 148.83,
       "beat": "CTA",
       "reason": "Kalau anda rasa struggle ... Take care.",
-      "zoom": 1.08
+      "zoom": 1.0
     }
   ],
   "grade": "subtle",
@@ -231,5 +175,5 @@
   ],
   "tail_hold": 1.5,
   "overlays": [],
-  "total_duration_s": 83.85
+  "total_duration_s": 84.46
 }
