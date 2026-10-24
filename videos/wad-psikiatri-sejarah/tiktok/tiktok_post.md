@@ -2,7 +2,9 @@
 
 ## Fail
 - Video: `final_tiktok_9x16.mp4` (1080×1920, 24 fps, 6:16)
-- Cover: `tiktok/tiktok_cover.jpg` (1080×1920). In TikTok: Edit cover → Upload, or pick a frame.
+- Cover A: `tiktok/tiktok_cover.jpg` (1080×1920), MITOS vs REALITI, "WAD PSIKIATRI MENAKUTKAN?"
+- Cover B: `tiktok/tiktok_cover_b.jpg` (1080×1920), Dr. Azren in front of a large "1911", "WAD PSIKIATRI BETUL KE SERAM?"
+- In TikTok: Edit cover → Upload. Faces and headlines sit inside the centre 3:4 area the profile grid shows.
 
 ## Kapsyen (salin)
 Wad psikiatri = macam filem seram? 😨 Ini sejarah sebenar wad psikiatri di Malaysia, dari Federal Lunatic Asylum di Tanjung Rambutan (1911) sampai wad moden hari ini. 🏥
