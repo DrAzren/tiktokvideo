@@ -93,6 +93,7 @@ html, body { margin:0; padding:0; width:1080px; height:1920px; overflow:hidden; 
 .end-rule { position:absolute; left:390px; width:300px; top:1040px; height:6px; border-radius:3px; background:#E9B44C; transform:scaleX(0); }
 .end-brand { position:absolute; left:0; right:0; top:1090px; text-align:center; font-weight:800; font-size:48px; color:#FFF5E4; letter-spacing:.02em; opacity:0; }
 .end-brand .bar { color:#E9B44C; padding:0 10px; }
+#fadeout { position:absolute; inset:0; z-index:200; background:#000; opacity:0; pointer-events:none; }
 .cap { position:absolute; left:64px; width:850px; bottom:430px; z-index:100; text-align:center; opacity:0; pointer-events:none; }
 .capin { display:inline-block; text-wrap:balance; font-weight:800; font-size:62px; line-height:1.14; letter-spacing:-.01em; color:#FFF5E4;
   -webkit-text-stroke:3px rgba(14,26,43,.55); paint-order:stroke fill;
@@ -175,6 +176,7 @@ html, body { margin:0; padding:0; width:1080px; height:1920px; overflow:hidden; 
         <div class="end-rule" id="en-r"></div>
         <div class="end-brand" id="en-b">Dr Azren <span class="bar">|</span> Spread Positivity</div>
         <div class="ai-tag">Ilustrasi AI</div></div></div>
+<div id="fadeout"></div>
 <div class="cap" id="c0"><div class="capin"><span class="cw" id="c0w0">Satu,</span></div></div>
 <div class="cap" id="c1"><div class="capin"><span class="cw" id="c1w0">masalah</span> <span class="cw" id="c1w1">mental</span> <span class="cw" id="c1w2">ni</span> <span class="cw" id="c1w3">dia</span> <span class="cw" id="c1w4">bukan</span></div></div>
 <div class="cap" id="c2"><div class="capin"><span class="cw" id="c2w0">semata-mata</span> <span class="cw" id="c2w1"><i>overthinking</i></span></div></div>
@@ -203,7 +205,7 @@ html, body { margin:0; padding:0; width:1080px; height:1920px; overflow:hidden; 
 <div class="cap" id="c25"><div class="capin"><span class="cw" id="c25w0">kesihatan</span> <span class="cw" id="c25w1">mental</span> <span class="cw" id="c25w2">yang</span> <span class="cw" id="c25w3">keenam</span></div></div>
 <div class="cap" id="c26"><div class="capin"><span class="cw" id="c26w0">okey</span> <span class="cw" id="c26w1">rehat</span> <span class="cw" id="c26w2">penting</span> <span class="cw" id="c26w3">tapi</span></div></div>
 <div class="cap" id="c27"><div class="capin"><span class="cw" id="c27w0">ini</span> <span class="cw" id="c27w1">bukan</span> <span class="cw" id="c27w2">semudah</span> <span class="cw" id="c27w3">ambik</span> <span class="cw" id="c27w4">cuti</span> <span class="cw" id="c27w5">dan</span></div></div>
-<div class="cap" id="c28"><div class="capin"><span class="cw" id="c28w0">terus</span> <span class="cw" id="c28w1">sembuh</span> <span class="cw" id="c28w2">dia</span> <span class="cw" id="c28w3">memerlukan</span> <span class="cw" id="c28w4">Satu,</span></div></div>
+<div class="cap" id="c28"><div class="capin"><span class="cw" id="c28w0">terus</span> <span class="cw" id="c28w1">sembuh</span> <span class="cw" id="c28w2">dia</span> <span class="cw" id="c28w3">memerlukan</span> <span class="cw" id="c28w4">satu</span></div></div>
 <div class="cap" id="c29"><div class="capin"><span class="cw" id="c29w0">proses</span> <span class="cw" id="c29w1">untuk</span> <span class="cw" id="c29w2">pemulihan</span> <span class="cw" id="c29w3">masalah</span></div></div>
 <div class="cap" id="c30"><div class="capin"><span class="cw" id="c30w0">kesihatan</span> <span class="cw" id="c30w1">mental</span> <span class="cw" id="c30w2">ni</span></div></div>
 <div class="cap" id="c31"><div class="capin"><span class="cw" id="c31w0">yang</span> <span class="cw" id="c31w1">ketujuh</span></div></div>
@@ -214,8 +216,8 @@ html, body { margin:0; padding:0; width:1080px; height:1920px; overflow:hidden; 
 <div class="cap" id="c36"><div class="capin"><span class="cw" id="c36w0">seseorang</span> <span class="cw" id="c36w1">yang</span> <span class="cw" id="c36w2">kelapan</span></div></div>
 <div class="cap" id="c37"><div class="capin"><span class="cw" id="c37w0">sebenarnya</span> <span class="cw" id="c37w1">kita</span> <span class="cw" id="c37w2">menggalakkan</span></div></div>
 <div class="cap" id="c38"><div class="capin"><span class="cw" id="c38w0">mereka</span> <span class="cw" id="c38w1">untuk</span> <span class="cw" id="c38w2">pendam</span> <span class="cw" id="c38w3">perasaan</span></div></div>
-<div class="cap" id="c39"><div class="capin"><span class="cw" id="c39w0">mereka</span> <span class="cw" id="c39w1">ni</span> <span class="cw" id="c39w2">boleh</span> <span class="cw" id="c39w3">memperburukkan</span></div></div>
-<div class="cap" id="c40"><div class="capin"><span class="cw" id="c40w0">lagilah</span> <span class="cw" id="c40w1">keadaan</span> <span class="cw" id="c40w2">yang</span> <span class="cw" id="c40w3">kesembilan</span></div></div>
+<div class="cap" id="c39"><div class="capin"><span class="cw" id="c39w0">mereka</span> <span class="cw" id="c39w1">ni</span> <span class="cw" id="c39w2">boleh</span></div></div>
+<div class="cap" id="c40"><div class="capin"><span class="cw" id="c40w0">yang</span> <span class="cw" id="c40w1">kesembilan</span></div></div>
 <div class="cap" id="c41"><div class="capin"><span class="cw" id="c41w0">orang</span> <span class="cw" id="c41w1">yang</span> <span class="cw" id="c41w2">ada</span> <span class="cw" id="c41w3">masalah</span> <span class="cw" id="c41w4">mental</span> <span class="cw" id="c41w5">ni</span></div></div>
 <div class="cap" id="c42"><div class="capin"><span class="cw" id="c42w0">pun</span> <span class="cw" id="c42w1">dah</span> <span class="cw" id="c42w2">kuat</span> <span class="cw" id="c42w3">sebenarnya</span> <span class="cw" id="c42w4">sebab</span></div></div>
 <div class="cap" id="c43"><div class="capin"><span class="cw" id="c43w0">mereka</span> <span class="cw" id="c43w1">masih</span> <span class="cw" id="c43w2">berjuang</span> <span class="cw" id="c43w3">setiap</span> <span class="cw" id="c43w4">hari</span></div></div>
@@ -583,7 +585,7 @@ html, body { margin:0; padding:0; width:1080px; height:1920px; overflow:hidden; 
     tl.to('#f-stigma-in', {opacity:0, scale:0.96, duration:0.25, ease:'power2.in'}, 52.3333);
     tl.set('#f-stigma', {opacity:0}, 52.6);
     tl.fromTo('#pr-c', {opacity:0, y:-30}, {opacity:1, y:0, duration:0.35, ease:'power3.out'}, 60.8);
-    tl.fromTo('#pr-h', {opacity:0, y:50}, {opacity:1, y:0, duration:0.45, ease:'power3.out'}, 61.6);
+    tl.fromTo('#pr-h', {opacity:0, y:50}, {opacity:1, y:0, duration:0.45, ease:'power3.out'}, 60.8667);
     tl.fromTo('#pr-h2', {opacity:0, y:40}, {opacity:1, y:0, duration:0.4, ease:'power3.out'}, 62.4667);
     tl.fromTo('#pr-rail', {strokeDashoffset:760}, {strokeDashoffset:0, duration:1.92, ease:'power2.inOut'}, 62.5667);
     tl.fromTo('#pn0', {opacity:0, x:-60}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 62.5);
@@ -594,7 +596,7 @@ html, body { margin:0; padding:0; width:1080px; height:1920px; overflow:hidden; 
     tl.to('#f-proses-in', {opacity:0, scale:0.96, duration:0.25, ease:'power2.in'}, 64.9333);
     tl.set('#f-proses', {opacity:0}, 65.1667);
     tl.fromTo('#pd-c', {opacity:0, y:-30}, {opacity:1, y:0, duration:0.35, ease:'power3.out'}, 79.0333);
-    tl.fromTo('#pd-h', {opacity:0, y:50}, {opacity:1, y:0, duration:0.45, ease:'power3.out'}, 80.4333);
+    tl.fromTo('#pd-h', {opacity:0, y:50}, {opacity:1, y:0, duration:0.45, ease:'power3.out'}, 79.0667);
     tl.fromTo('#pd-f', {scaleY:0.08}, {scaleY:0.92, duration:2.84, ease:'power2.in'}, 80.5333);
     tl.fromTo('#pd-l', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 80.9333);
     tl.fromTo('#pd-w', {opacity:0, scale:1.4}, {opacity:1, scale:1, duration:0.3, ease:'power4.out'}, 82.1333);
@@ -642,7 +644,7 @@ html, body { margin:0; padding:0; width:1080px; height:1920px; overflow:hidden; 
     tl.fromTo('#en-2', {opacity:0, y:40}, {opacity:1, y:0, duration:0.6, ease:'power3.out'}, 117.1333);
     tl.fromTo('#en-r', {scaleX:0}, {scaleX:1, duration:0.6, ease:'power3.inOut'}, 117.7333);
     tl.fromTo('#en-b', {opacity:0, y:20}, {opacity:1, y:0, duration:0.5, ease:'power3.out'}, 117.9333);
-    tl.to('#f-end-in', {opacity:0, duration:0.45, ease:'power2.in'}, 119.1333);
+    tl.fromTo('#fadeout', {opacity:0}, {opacity:1, duration:0.5, ease:'power2.in'}, 119.0667);
     tl.set('#f-end', {opacity:1}, 116.5333);
     tl.fromTo('#f-end-in', {clipPath:'inset(100% 0% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.42, ease:'power3.inOut'}, 116.5333);
     tl.fromTo('#c0', {opacity:0, y:16}, {opacity:1, y:0, duration:0.14, ease:'power3.out'}, 4.9);
@@ -1032,25 +1034,19 @@ html, body { margin:0; padding:0; width:1080px; height:1920px; overflow:hidden; 
     tl.set('#c38w3', {color:'#E9B44C'}, 80.9333);
     tl.set('#c38w3', {color:'#FFF5E4'}, 81.3667);
     tl.fromTo('#c39', {opacity:0, y:16}, {opacity:1, y:0, duration:0.14, ease:'power3.out'}, 81.3);
-    tl.set('#c39', {opacity:0}, 82.9667);
+    tl.set('#c39', {opacity:0}, 82.1);
     tl.set('#c39w0', {color:'#E9B44C'}, 81.3333);
     tl.set('#c39w0', {color:'#FFF5E4'}, 81.7);
     tl.set('#c39w1', {color:'#E9B44C'}, 81.8333);
     tl.set('#c39w1', {color:'#FFF5E4'}, 82.0);
     tl.set('#c39w2', {color:'#E9B44C'}, 82.0);
     tl.set('#c39w2', {color:'#FFF5E4'}, 82.2667);
-    tl.set('#c39w3', {color:'#E9B44C'}, 82.2333);
-    tl.set('#c39w3', {color:'#FFF5E4'}, 83.0333);
-    tl.fromTo('#c40', {opacity:0, y:16}, {opacity:1, y:0, duration:0.14, ease:'power3.out'}, 82.9667);
+    tl.fromTo('#c40', {opacity:0, y:16}, {opacity:1, y:0, duration:0.14, ease:'power3.out'}, 84.0333);
     tl.set('#c40', {opacity:0}, 84.7);
-    tl.set('#c40w0', {color:'#E9B44C'}, 83.0);
-    tl.set('#c40w0', {color:'#FFF5E4'}, 83.4);
-    tl.set('#c40w1', {color:'#E9B44C'}, 83.3667);
-    tl.set('#c40w1', {color:'#FFF5E4'}, 83.8);
-    tl.set('#c40w2', {color:'#E9B44C'}, 83.9667);
-    tl.set('#c40w2', {color:'#FFF5E4'}, 84.1667);
-    tl.set('#c40w3', {color:'#E9B44C'}, 84.1333);
-    tl.set('#c40w3', {color:'#FFF5E4'}, 84.6333);
+    tl.set('#c40w0', {color:'#E9B44C'}, 84.0333);
+    tl.set('#c40w0', {color:'#FFF5E4'}, 84.1667);
+    tl.set('#c40w1', {color:'#E9B44C'}, 84.1333);
+    tl.set('#c40w1', {color:'#FFF5E4'}, 84.6333);
     tl.fromTo('#c41', {opacity:0, y:16}, {opacity:1, y:0, duration:0.14, ease:'power3.out'}, 85.9333);
     tl.set('#c41', {opacity:0}, 87.3333);
     tl.set('#c41w0', {color:'#E9B44C'}, 85.9333);

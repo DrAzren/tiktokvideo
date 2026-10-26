@@ -132,7 +132,8 @@ FS = [
 FS = [(i, k, fq(a), fq(b), s, l) for i, k, a, b, s, l in FS]
 # no caption on top of the quote card and end card (they say it), nor during the hook
 NOCAP = [(0.0, STMT[0]["t_open"] - 0.05)] + [(fq(s["t_q0"] - 0.1), fq(s["t_q1"] + 0.15)) for s in STMT] \
-    + [(a, b) for i, k, a, b, s, l in FS if s in ("quote", "endcard")]
+    + [(a, b) for i, k, a, b, s, l in FS if s in ("quote", "endcard")] \
+    + [(fq(T("memperburukkan") - 0.15), b) for i, k, a, b, s, l in FS if s == "pendam"]   # its own big type says it
 
 
 def covered(t0, t1):
@@ -141,7 +142,7 @@ def covered(t0, t1):
 
 
 # ---------------------------------------------------------------- captions
-FIX = {"kesehatan": "kesihatan", "satu": "Satu,", "okey": "okey", "judge": "<i>judge</i>",
+FIX = {"kesehatan": "kesihatan", "okey": "okey", "judge": "<i>judge</i>",
        "overthinking": "<i>overthinking</i>", "take": "Take"}
 MERGE = [("semata", "mata", "semata-mata"), ("masing", "masing", "masing-masing"), ("main", "main", "main-main"),
          ("apa", "apa", "apa-apa"), ("okey", "lah", "okeylah"), ("baik", "lah", "baiklah"), ("kena", "lah", "kenalah"),
@@ -168,6 +169,8 @@ def cap_words():
         if i > 0 and (WORDS[i - 1]["text"], WORDS[i]["text"]) in REPL:
             w["text"] = REPL[(WORDS[i - 1]["text"], WORDS[i]["text"])]
         w["text"] = FIX.get(w["text"], w["text"])
+        if w["text"] == "satu" and not any(x["text"] == "Satu," for x in out):
+            w["text"] = "Satu,"          # the first statement's number, not "satu proses"
         out.append(w)
         i += 1
     return out
@@ -274,7 +277,7 @@ def mg_body(key, st, en):
         <div class="mg-h2" id="pr-h2">untuk pemulihan</div>
         <svg class="prail" viewBox="0 0 40 760"><path id="pr-rail" d="M20 10V750"/></svg>{nodes}'''
         js += [f"tl.fromTo('#pr-c', {{opacity:0, y:-30}}, {{opacity:1, y:0, duration:0.35, ease:'power3.out'}}, {fq(st + 0.1)});",
-               f"tl.fromTo('#pr-h', {{opacity:0, y:50}}, {{opacity:1, y:0, duration:0.45, ease:'power3.out'}}, {fq(t1 - LEAD)});",
+               f"tl.fromTo('#pr-h', {{opacity:0, y:50}}, {{opacity:1, y:0, duration:0.45, ease:'power3.out'}}, {fq(min(t1 - LEAD, st + 0.15))});",
                f"tl.fromTo('#pr-h2', {{opacity:0, y:40}}, {{opacity:1, y:0, duration:0.4, ease:'power3.out'}}, {fq(t2 - LEAD)});",
                f"tl.fromTo('#pr-rail', {{strokeDashoffset:760}}, {{strokeDashoffset:0, duration:{round(t3 - t2 + 0.6, 2)}, ease:'power2.inOut'}}, {fq(t2)});"]
         for i, tt in enumerate((t2 - 0.05, t2 + 0.55, t3)):
@@ -289,7 +292,7 @@ def mg_body(key, st, en):
         <div class="vessel"><div class="fill" id="pd-f"></div><div class="vlabel" id="pd-l">tekanan</div></div>
         <div class="mg-h3" id="pd-w">memperburukkan<br/><span class="red">keadaan</span></div>'''
         js += [f"tl.fromTo('#pd-c', {{opacity:0, y:-30}}, {{opacity:1, y:0, duration:0.35, ease:'power3.out'}}, {fq(st + 0.1)});",
-               f"tl.fromTo('#pd-h', {{opacity:0, y:50}}, {{opacity:1, y:0, duration:0.45, ease:'power3.out'}}, {fq(t1 - LEAD)});",
+               f"tl.fromTo('#pd-h', {{opacity:0, y:50}}, {{opacity:1, y:0, duration:0.45, ease:'power3.out'}}, {fq(min(t1 - LEAD, st + 0.15))});",
                f"tl.fromTo('#pd-f', {{scaleY:0.08}}, {{scaleY:0.92, duration:{round(t3 - t1, 2)}, ease:'power2.in'}}, {fq(t1)});",
                f"tl.fromTo('#pd-l', {{opacity:0}}, {{opacity:1, duration:0.3, ease:'power2.out'}}, {fq(t1 + 0.4)});",
                f"tl.fromTo('#pd-w', {{opacity:0, scale:1.4}}, {{opacity:1, scale:1, duration:0.3, ease:'power4.out'}}, {fq(t2 - LEAD)});",
@@ -326,7 +329,7 @@ def mg_body(key, st, en):
                f"tl.fromTo('#en-2', {{opacity:0, y:40}}, {{opacity:1, y:0, duration:0.6, ease:'power3.out'}}, {fq(st + 0.6)});",
                f"tl.fromTo('#en-r', {{scaleX:0}}, {{scaleX:1, duration:0.6, ease:'power3.inOut'}}, {fq(st + 1.2)});",
                f"tl.fromTo('#en-b', {{opacity:0, y:20}}, {{opacity:1, y:0, duration:0.5, ease:'power3.out'}}, {fq(st + 1.4)});",
-               f"tl.to('#f-end-in', {{opacity:0, duration:0.45, ease:'power2.in'}}, {fq(DUR - 0.5)});"]
+               f"tl.fromTo('#fadeout', {{opacity:0}}, {{opacity:1, duration:0.5, ease:'power2.in'}}, {fq(DUR - 0.55)});"]
         sfx(st + 0.6, "swell", -6)
         sfx(st + 1.4, "pop", -10)
         return h, js
@@ -459,6 +462,8 @@ def build():
             js.append(f"tl.set('#{fid}', {{opacity:0}}, {en});")
             sfx(en - 0.25, "air", -14)
 
+    body.append('<div id="fadeout"></div>')   # the film ends on black, not on the frozen last frame
+
     # 6 captions (ivory, active word gold)
     caps = cap_groups()
     for n, (t0, t1, ws) in enumerate(caps):
@@ -565,6 +570,7 @@ html, body {{ margin:0; padding:0; width:{W}px; height:{H}px; overflow:hidden; b
 .end-rule {{ position:absolute; left:390px; width:300px; top:1040px; height:6px; border-radius:3px; background:{GOLD}; transform:scaleX(0); }}
 .end-brand {{ position:absolute; left:0; right:0; top:1090px; text-align:center; font-weight:800; font-size:48px; color:{IVORY}; letter-spacing:.02em; opacity:0; }}
 .end-brand .bar {{ color:{GOLD}; padding:0 10px; }}
+#fadeout {{ position:absolute; inset:0; z-index:200; background:#000; opacity:0; pointer-events:none; }}
 .cap {{ position:absolute; left:64px; width:850px; bottom:430px; z-index:100; text-align:center; opacity:0; pointer-events:none; }}
 .capin {{ display:inline-block; text-wrap:balance; font-weight:800; font-size:62px; line-height:1.14; letter-spacing:-.01em; color:{IVORY};
   -webkit-text-stroke:3px rgba(14,26,43,.55); paint-order:stroke fill;

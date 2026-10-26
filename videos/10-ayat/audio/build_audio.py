@@ -156,7 +156,7 @@ def main():
     j = json.loads(err[err.rindex("{"):err.rindex("}") + 1])
     ln = (f"loudnorm={target}:measured_I={j['input_i']}:measured_TP={j['input_tp']}:measured_LRA={j['input_lra']}:"
           f"measured_thresh={j['input_thresh']}:offset={j['target_offset']}:linear=true")
-    ff("-y", "-i", str(pre), "-af", f"{ln},alimiter=limit=0.87:attack=2:release=50:level=false", "-ar", "48000",
+    ff("-y", "-i", str(pre), "-af", f"{ln},alimiter=limit=0.87:attack=2:release=50:level=false:latency=true", "-ar", "48000",
        "-c:a", "pcm_s24le", str(A / "mix.wav"))
     pre.unlink()
     # measured balance (400 ms windows): music & sfx vs voice
