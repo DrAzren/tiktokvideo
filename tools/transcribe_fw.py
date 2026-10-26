@@ -37,8 +37,16 @@ def main() -> None:
         return
 
     model = WhisperModel(args.model, device="cpu", compute_type="int8")
+    # 16 kHz WAVs are read with soundfile: some PyAV builds reject faster-whisper's
+    # av.open(metadata_errors=...) call
+    audio = str(args.input)
+    if args.input.suffix.lower() == ".wav":
+        import soundfile as sf
+        data, sr = sf.read(audio, dtype="float32")
+        if sr == 16000 and data.ndim == 1:
+            audio = data
     segments, info = model.transcribe(
-        str(args.input),
+        audio,
         language=args.language,
         word_timestamps=True,
         vad_filter=False,

@@ -35,7 +35,8 @@ if [ "$CAPTIONS" = 1 ]; then
   fi
   echo "hyperframes checkout OK: export HYPERFRAMES_ROOT=~/hyperframes"
   # root in the cloud container: Chromium needs --no-sandbox (caption scripts launch puppeteer)
-  HS="$(ls -d /opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell 2>/dev/null | head -1)"
+  HS="$(ls -d /opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell \
+         /opt/pw-browsers/chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell 2>/dev/null | head -1)"
   if [ -n "$HS" ]; then
     mkdir -p ~/bin
     printf '#!/bin/sh\nexec %s --no-sandbox "$@"\n' "$HS" > ~/bin/headless_shell_nosandbox
