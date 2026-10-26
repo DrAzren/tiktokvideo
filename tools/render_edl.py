@@ -98,10 +98,15 @@ def main() -> None:
         s = Fraction(round(r["start"] * fps)) / fps          # frame-aligned edges
         e = Fraction(round(r["end"] * fps)) / fps
         d = float(e - s)
-        inputs += ["-ss", f"{float(s):.6f}", "-t", f"{d:.6f}", "-i", sources[r["source"]]]
-        chains.append(f"[{i}:v]{zoom_filter(r.get('zoom', 1.0), focus, width, height)}setpts=PTS-STARTPTS[v{i}]")
+        n = round((e - s) * fps)
+        # read a little past the edge, then trim to exactly n frames / d seconds: with -t alone a
+        # frame sitting on the boundary is sometimes included, and concat then pads that segment's
+        # audio with a frame of silence (audio drifts one frame later per such cut)
+        inputs += ["-ss", f"{float(s):.6f}", "-t", f"{d + 0.2:.6f}", "-i", sources[r["source"]]]
+        chains.append(f"[{i}:v]trim=end_frame={n},{zoom_filter(r.get('zoom', 1.0), focus, width, height)}"
+                      f"setpts=PTS-STARTPTS[v{i}]")
         gain = f"volume={r['gain_db']}dB," if r.get("gain_db") else ""
-        chains.append(f"[{i}:a]aresample=48000,{gain}asetpts=PTS-STARTPTS,"
+        chains.append(f"[{i}:a]aresample=48000,atrim=end_sample={round(d * 48000)},{gain}asetpts=PTS-STARTPTS,"
                       f"afade=t=in:st=0:d={FADE},afade=t=out:st={d - FADE:.6f}:d={FADE}[a{i}]")
         labels.append(f"[v{i}][a{i}]")
 

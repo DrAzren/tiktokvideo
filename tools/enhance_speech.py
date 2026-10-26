@@ -11,7 +11,10 @@ against the input by cross-correlation and trims it, so the output stays frame-l
 There is no neural de-reverb here; for heavily echoey rooms run the voice through a model-based
 enhancer first (Adobe Podcast, DeepFilterNet) and pass that file in.
 
-Usage: python tools/enhance_speech.py in.(wav|mp4) -o out.wav [--lufs -14]
+--car: for footage recorded in a car (engine/road rumble under ~300 Hz, which the default chain
+barely touches): 4th-order high-pass at 90 Hz and a stronger, higher-floor FFT denoise.
+
+Usage: python tools/enhance_speech.py in.(wav|mp4) -o out.wav [--lufs -14] [--car]
 """
 import argparse
 import json
@@ -23,7 +26,9 @@ import numpy as np
 import soundfile as sf
 from scipy.signal import correlate
 
-CHAIN = ("highpass=f=75:poles=2,afftdn=nr=14:nf=-50:tn=1,"
+DENOISE = "highpass=f=75:poles=2,afftdn=nr=14:nf=-50:tn=1,"
+DENOISE_CAR = "highpass=f=90:poles=2,highpass=f=90:poles=2,afftdn=nr=22:nf=-40:tn=1,"
+CHAIN = (DENOISE +
          "agate=threshold=0.012:ratio=2:attack=5:release=180:range=0.25,"
          "equalizer=f=300:t=q:w=1.0:g=-3,equalizer=f=3200:t=q:w=1.2:g=2.5,treble=g=2:f=10000,"
          "deesser=i=0.35,acompressor=threshold=-20dB:ratio=3:attack=8:release=120:makeup=2:knee=4")
@@ -38,16 +43,18 @@ def main():
     ap.add_argument("input")
     ap.add_argument("-o", "--output", required=True)
     ap.add_argument("--lufs", type=float, default=-14.0)
+    ap.add_argument("--car", action="store_true", help="stronger low-rumble removal (car recordings)")
     a = ap.parse_args()
+    chain = CHAIN.replace(DENOISE, DENOISE_CAR) if a.car else CHAIN
     target = f"I={a.lufs}:TP=-1:LRA=9"
-    err = ff("-i", a.input, "-vn", "-af", f"{CHAIN},loudnorm={target}:print_format=json", "-f", "null", "-")
+    err = ff("-i", a.input, "-vn", "-af", f"{chain},loudnorm={target}:print_format=json", "-f", "null", "-")
     j = json.loads(err[err.rindex("{"):err.rindex("}") + 1])
     ln = (f"loudnorm={target}:measured_I={j['input_i']}:measured_TP={j['input_tp']}:measured_LRA={j['input_lra']}:"
           f"measured_thresh={j['input_thresh']}:offset={j['target_offset']}:linear=true")
     with tempfile.TemporaryDirectory() as t:
         raw, proc = Path(t, "raw.wav"), Path(t, "proc.wav")
         ff("-y", "-i", a.input, "-vn", "-ac", "1", "-ar", "48000", str(raw))
-        ff("-y", "-i", a.input, "-vn", "-af", f"{CHAIN},{ln}", "-ar", "48000", "-c:a", "pcm_s24le", str(proc))
+        ff("-y", "-i", a.input, "-vn", "-af", f"{chain},{ln}", "-ar", "48000", "-c:a", "pcm_s24le", str(proc))
         lag = measure_lag(raw, proc)
         # trim the processing delay off the front, pad the tail back to the input length
         ff("-y", "-i", str(proc), "-af", f"atrim=start_sample={lag},asetpts=PTS-STARTPTS,apad=pad_len={lag}",

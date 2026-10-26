@@ -1,4 +1,4 @@
-"""Spectrogram + envelope + aligned words for given windows: python spec.py out.png lo-hi lo-hi ..."""
+"""Spectrogram + envelope + aligned words (+ EDL cuts: yellow=in, orange=out) for given windows: python spec.py out.png lo-hi lo-hi ..."""
 import json, sys
 import numpy as np, soundfile as sf, matplotlib
 matplotlib.use("Agg")
@@ -21,5 +21,10 @@ for ax, (lo, hi) in zip(axes[:, 0], wins):
         if w["end"] > lo and w["start"] < hi:
             ax.axvline(w["start"], color="lime", lw=.8); ax.axvline(w["end"], color="red", lw=.8, ls="--")
             ax.text((w["start"] + w["end"]) / 2, 5600, w["text"], ha="center", color="white", fontsize=9)
+    if (E / "edl.json").exists():
+        for r in json.loads((E / "edl.json").read_text())["ranges"]:
+            for t, c in ((r["start"], "yellow"), (r["end"], "orange")):
+                if lo < t < hi:
+                    ax.axvline(t, color=c, lw=2.2)
     ax.set_xticks(np.arange(lo, hi, 0.1), minor=True); ax.grid(which="minor", axis="x", alpha=.2)
 fig.tight_layout(); fig.savefig(sys.argv[1], dpi=60)
