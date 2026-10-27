@@ -31,9 +31,8 @@ clean; keep "Okey, rehat penting" and "Betul, doa tu penting"; caption the last 
 - Background removal: hyperframes `remove-background` (u2net) glued the car-seat headrest and seatbelt to the
   head. RobustVideoMatting ResNet50 via its official ONNX export (`tools/rvm_matte.py`, onnxruntime; cloning
   and running the repo's Python was blocked as external code) matted the whole source (2.3 fps, 33 min), cut
-  with the same EDL. `tools/refine_matte.py`: choke, roof-lining decontamination at the edge, and two fixed
-  zones (`--zone 140,540,262,760 --zone 488,560,610,760`) where only skin survives near the edge — the
-  driver-seat headrest wings behind the ears.
+  with the same EDL. `tools/refine_matte.py`: choke, roof-lining decontamination at the edge, fixed headrest
+  zones, skin rescue, keep-main-subject (final settings in round 2 below).
 - Speaker layer: lanczos 720→1080 + light unsharp, warm grade to match the lamps, VP9 alpha WebM.
   Punch-ins 1.0/1.15/1.30 at cuts (1.30 on the hook; capped at 1.15 while a headroom card is up); the
   background scales a quarter as much (parallax).
@@ -52,3 +51,17 @@ clean; keep "Okey, rehat penting" and "Betul, doa tu penting"; caption the last 
 **Outstanding**
 - Switch on TikTok's "AI-generated content" label (the B-roll is AI).
 - Source is 720p (upscaled); the car recording's road noise is reduced, not removed.
+
+### Session 1, round 2 — 2026-10-27: ears
+
+**Ask:** "both bahagian telinga ada terpotong dan masuk dalam background."
+
+- Cause: the round-1 headrest rule kept only bright, saturated skin inside the seat zones. Both ears sit in
+  shadow (low saturation), so they were cut with the headrest; RVM itself also only half-covers the right ear.
+- Fix in `tools/refine_matte.py`: the zones now remove only *cool* (blue >= red), unsaturated, non-white pixels
+  (leather, stitching, seatbelt) through the whole zone; a warm-skin rescue (`--rescue-rows 500,820`) gives full
+  alpha back to warm, skin-saturated pixels within 32 px of the matte (connected to it only); anything not
+  attached to the main subject is dropped. Zones stop above the collar (the dark navy shirt reads like leather):
+  `--zone 140,585,262,688 --zone 120,525,192,585:hard --zone 488,560,610,672` (the `:hard` zone, left of the
+  hair above the ear, keeps only warm skin: a lit corner of the headrest was neutral grey there).
+- Checked at 0:01, 0:30, 1:00, 1:30 (+ spot checks) against the source: both ears present, no headrest, shirt intact.
