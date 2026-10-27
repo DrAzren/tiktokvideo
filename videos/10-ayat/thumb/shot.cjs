@@ -1,0 +1,17 @@
+// Render cover_*.html to PNG at 1080x1920 (asserts the web fonts loaded; never ship fallback fonts).
+const path = require("path");
+const puppeteer = require(path.join(process.env.HYPERFRAMES_ROOT, "packages/engine/node_modules/puppeteer-core"));
+(async () => {
+  const b = await puppeteer.launch({ executablePath: process.env.PUPPETEER_EXECUTABLE_PATH, args: ["--no-sandbox"] });
+  for (const name of ["cover_a", "cover_b"]) {
+    const p = await b.newPage();
+    await p.setViewport({ width: 1080, height: 1920 });
+    await p.goto("file://" + path.join(__dirname, name + ".html"), { waitUntil: "load" });
+    await p.evaluate(() => document.fonts.ready);
+    const ok = await p.evaluate(() => document.fonts.check('80px "Anton"') && document.fonts.check('800 30px "PJS"'));
+    if (!ok) throw new Error(name + ": fonts not loaded");
+    await p.screenshot({ path: path.join(__dirname, name + ".png") });
+    await p.close();
+  }
+  await b.close();
+})();
