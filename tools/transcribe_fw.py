@@ -12,7 +12,10 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 from pathlib import Path
+
+import numpy as np
 
 from faster_whisper import WhisperModel
 
@@ -36,9 +39,14 @@ def main() -> None:
         print(f"cached: {dest}")
         return
 
+    # decode with ffmpeg ourselves: faster-whisper's PyAV path breaks on some av versions
+    pcm = subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-i", str(args.input), "-f", "s16le",
+                          "-ac", "1", "-ar", "16000", "-"], check=True, capture_output=True).stdout
+    audio = np.frombuffer(pcm, np.int16).astype(np.float32) / 32768.0
+
     model = WhisperModel(args.model, device="cpu", compute_type="int8")
     segments, info = model.transcribe(
-        str(args.input),
+        audio,
         language=args.language,
         word_timestamps=True,
         vad_filter=False,

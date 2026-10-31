@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 3,
+  "composition": {
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "durationSeconds": 84.2,
+    "layout": "portrait",
+    "themeId": "custom-teal",
+    "seed": 7
+  },
+  "videoTrack": {
+    "sourcePath": "input-video.mp4",
+    "startSec": 0,
+    "endSec": 84.2,
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1920
+    }
+  },
+  "subtitles": {
+    "enabled": false
+  },
+  "cards": [
+    {
+      "id": "c01-hook",
+      "intent": "Hook: the topic, on screen from frame 0",
+      "startSec": 0.0,
+      "endSec": 4.9333,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c02-bupropion",
+      "intent": "Drug 1: bupropion",
+      "startSec": 9.3667,
+      "endSec": 25.4,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 3
+      }
+    },
+    {
+      "id": "c03-topiramate",
+      "intent": "Drug 2: topiramate",
+      "startSec": 26.2333,
+      "endSec": 43.5667,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 3
+      }
+    },
+    {
+      "id": "c04-fluoxetine",
+      "intent": "Drug 3: fluoxetine",
+      "startSec": 44.3667,
+      "endSec": 53.2667,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 1
+      }
+    },
+    {
+      "id": "c05-penting",
+      "intent": "Takeaway: every drug acts differently",
+      "startSec": 66.0667,
+      "endSec": 74.4333,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 2
+      }
+    },
+    {
+      "id": "c06-cta",
+      "intent": "CTA: talk to your doctor; questions in the comments",
+      "startSec": 76.7667,
+      "endSec": 84.2,
+      "zone": "video-overlay",
+      "contentHints": {
+        "pages": 2
+      }
+    }
+  ],
+  "inserts": [
+    {
+      "id": "b1-pil",
+      "kind": "video",
+      "startSec": 4.5667,
+      "endSec": 8.5333
+    },
+    {
+      "id": "m1-kurva",
+      "kind": "mg",
+      "startSec": 52.9333,
+      "endSec": 65.5667
+    },
+    {
+      "id": "m2-jangan",
+      "kind": "mg",
+      "startSec": 74.0667,
+      "endSec": 76.8333
+    }
+  ]
+}

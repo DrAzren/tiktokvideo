@@ -12,7 +12,8 @@ EDL-level "zoom_focus" [x, y] (fractions of the frame, default [0.5, 0.5]) so
 that point stays fixed. Alternating zoom across jump cuts disguises them.
 
 Optional: per-range "gain_db" (level-match a softly delivered line) and EDL-level
-"tail_hold" seconds (freeze the last frame + silence so an end card can land).
+"tail_hold" seconds (freeze the last frame + silence so an end card can land), and
+EDL-level "output_size" [w, h] (e.g. [1080, 1920]: upscale a 720p source once, lanczos).
 
 Loudness: two-pass loudnorm to -14 LUFS / -1 dBTP (audio-only second pass).
 
@@ -98,17 +99,24 @@ def main() -> None:
         s = Fraction(round(r["start"] * fps)) / fps          # frame-aligned edges
         e = Fraction(round(r["end"] * fps)) / fps
         d = float(e - s)
-        inputs += ["-ss", f"{float(s):.6f}", "-t", f"{d:.6f}", "-i", sources[r["source"]]]
-        chains.append(f"[{i}:v]{zoom_filter(r.get('zoom', 1.0), focus, width, height)}setpts=PTS-STARTPTS[v{i}]")
+        n = int((e - s) * fps)                                # exact frame count of this range
+        # read half a frame long, then trim to exactly n frames / d seconds: "-t" alone can pull in
+        # one extra frame when the end lands on a grid pts (rounding of the %.6f string), and concat
+        # then pads that range's audio with a frame of silence, shifting everything after it.
+        inputs += ["-ss", f"{float(s):.6f}", "-t", f"{d + 0.5 / float(fps):.6f}", "-i", sources[r["source"]]]
+        chains.append(f"[{i}:v]trim=end_frame={n},{zoom_filter(r.get('zoom', 1.0), focus, width, height)}"
+                      f"setpts=PTS-STARTPTS[v{i}]")
         gain = f"volume={r['gain_db']}dB," if r.get("gain_db") else ""
-        chains.append(f"[{i}:a]aresample=48000,{gain}asetpts=PTS-STARTPTS,"
+        chains.append(f"[{i}:a]atrim=duration={d:.6f},aresample=48000,{gain}asetpts=PTS-STARTPTS,"
                       f"afade=t=in:st=0:d={FADE},afade=t=out:st={d - FADE:.6f}:d={FADE}[a{i}]")
         labels.append(f"[v{i}][a{i}]")
 
     hold = float(edl.get("tail_hold", 0) or 0)
     vf = [f for f in [grade_filter(edl.get("grade")),
                       f"tpad=stop_mode=clone:stop_duration={hold}" if hold else "",
-                      "scale=-2:720" if args.draft else "", "format=yuv420p"] if f]
+                      "scale=-2:720" if args.draft else
+                      ("scale={}:{}:flags=lanczos,setsar=1".format(*edl["output_size"]) if edl.get("output_size") else ""),
+                      "format=yuv420p"] if f]
     af = f"apad=pad_dur={hold}" if hold else "anull"
     graph = (";".join(chains) + ";" + "".join(labels) + f"concat=n={len(labels)}:v=1:a=1[vc][ac0];"
              f"[vc]{','.join(vf)}[v];[ac0]{af}[ac]")

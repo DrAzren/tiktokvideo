@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8" />
+<style>
+@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:block;}@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:block;}@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:block;}
+* { box-sizing:border-box; }
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; background:#000;
+  font-family:"Plus Jakarta Sans", sans-serif; }
+#stage { position:relative; width:1080px; height:1920px; overflow:hidden; }
+.video-wrapper { position:absolute; left:0; top:0; width:1080px; height:1920px; overflow:hidden; }
+.video-wrapper video { width:100%; height:100%; object-fit:cover; }
+.card-host { position:absolute; pointer-events:none; overflow:hidden; }
+.page { opacity:0; }
+
+.card-host .card { position:relative; width:100%; height:100%; }
+.panel { position:absolute; left:60px; top:150px; width:960px; display:grid; background:#FFF8EE; border-radius:34px;
+  box-shadow:0 22px 60px rgba(8,22,30,.30), 0 2px 0 rgba(255,255,255,.6) inset; padding:30px 38px 34px;
+  font-family:'Plus Jakarta Sans', sans-serif; color:#0B1F2A; overflow:hidden; }
+.panel::before { content:""; position:absolute; left:0; top:0; bottom:0; width:12px; background:#0E5E6F; }
+.page { grid-area:1/1; position:relative; align-self:start; }
+.page > * + * { margin-top:14px; }
+.chip { display:inline-block; color:#fff; font-weight:800; font-size:30px; letter-spacing:.07em; text-transform:uppercase;
+  padding:9px 20px 8px; border-radius:999px; }
+.title { font-weight:800; font-size:58px; line-height:1.08; letter-spacing:-.015em; }
+.title.sm { font-size:44px; font-weight:700; }
+.title.xl { font-size:84px; letter-spacing:-.02em; line-height:1.0; }
+.title.xl.hook { font-size:74px; }
+.sub { font-weight:700; font-size:38px; color:#44525A; }
+.sub.strong { color:#0B1F2A; display:flex; align-items:center; gap:14px; }
+.row { display:flex; align-items:center; gap:18px; font-weight:700; font-size:38px; line-height:1.15; }
+.row.big { font-size:44px; }
+.row.who { font-size:32px; color:#44525A; }
+.row + .row { margin-top:11px; }
+.ico { width:44px; height:44px; flex:none; }
+.ico.lg { width:64px; height:64px; }
+.arr { width:44px; height:44px; }
+.grid { display:flex; flex-wrap:wrap; gap:14px; }
+.pill { display:inline-block; font-weight:700; font-size:36px; padding:12px 26px; border-radius:18px; background:#E3F4F1; color:#0E5E6F;
+  border:2px solid rgba(14,94,111,.25); }
+.steps { display:flex; align-items:center; flex-wrap:wrap; gap:14px; font-weight:800; font-size:38px; }
+.step { display:inline-block; padding:10px 22px; border-radius:16px; background:#0E5E6F; color:#fff; }
+.disc-note { font-weight:600; font-size:28px; color:#6B7C85; letter-spacing:.02em; }
+
+.ins { position:absolute; left:0; top:0; width:1080px; height:1920px; overflow:hidden; pointer-events:none; }
+.ins-in { position:absolute; inset:0; overflow:hidden; background:#000; }
+.ins-in video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.vid-shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.28) 0%, rgba(0,0,0,0) 16%,
+  rgba(0,0,0,0) 60%, rgba(0,0,0,.30) 70%, rgba(0,0,0,.30) 80%, rgba(0,0,0,0) 90%); }
+.ai-tag { position:absolute; left:48px; top:160px; font:700 28px 'Plus Jakarta Sans'; letter-spacing:.08em; text-transform:uppercase;
+  color:rgba(255,255,255,.92); background:rgba(0,0,0,.38); padding:7px 14px 6px; border-radius:10px; }
+.mg { position:absolute; inset:0; background:radial-gradient(120% 80% at 80% 10%, #0E5E6F 0%, #08323C 62%, #051E25 100%);
+  font-family:'Plus Jakarta Sans', sans-serif; color:#FFF8EE; }
+.mg .mint { color:#5EEAD4; }
+.head { position:absolute; left:80px; top:160px; width:920px; }
+.mg-chip { display:inline-block; font-weight:800; font-size:30px; letter-spacing:.08em; text-transform:uppercase;
+  padding:10px 22px 9px; border-radius:999px; background:#5EEAD4; color:#08323C; }
+.mg-chip.red { background:#E5484D; color:#fff; }
+.mg-title { font-weight:800; font-size:76px; line-height:1.04; letter-spacing:-.02em; margin-top:22px; }
+.mg-sub { font-weight:700; font-size:44px; color:rgba(255,248,238,.82); margin-top:22px; }
+.mg-sub.big { font-size:60px; margin-top:10px; }
+.chart { position:absolute; overflow:visible; }
+#m1-curve { stroke-dasharray:100; stroke-dashoffset:100; }
+.axis { position:absolute; font-weight:700; font-size:30px; color:rgba(255,248,238,.7); letter-spacing:.04em; text-transform:uppercase; }
+.tag-dn, .tag-up { position:absolute; display:flex; align-items:center; gap:18px; padding:16px 26px 16px 18px; border-radius:24px;
+  background:#FFF8EE; color:#0B1F2A; font-weight:800; font-size:38px; line-height:1.12; box-shadow:0 14px 34px rgba(0,0,0,.28); }
+.note { position:absolute; font-weight:700; font-size:36px; color:rgba(255,248,238,.85); font-style:italic; }
+.stamp-lg { position:absolute; display:inline-block; transform:rotate(-6deg); border:8px solid #E5484D; color:#E5484D; border-radius:18px;
+  font-weight:800; font-size:70px; letter-spacing:.04em; padding:8px 26px 2px; background:rgba(255,248,238,.95); }
+.stamp-lg.mint-stamp { border-color:#E9A23B; color:#9A5B00; }
+.center { position:absolute; left:0; right:0; top:330px; text-align:center; }
+.huge { font-weight:800; font-size:190px; line-height:.98; letter-spacing:-.03em; margin-top:26px; }
+.huge.mint { color:#5EEAD4; font-size:210px; }
+
+</style>
+</head>
+<body>
+<div id="stage" data-composition-id="talking-head-recut" data-start="0" data-duration="84.2" data-fps="30" data-width="1080" data-height="1920">
+  <div class="video-wrapper" id="video-wrap">
+    <video id="bg-video" src="input-video.mp4" muted playsinline data-start="0" data-duration="84.2" data-track-index="1"></video>
+  </div>
+  <audio id="source-audio" src="input-video.mp4" data-start="0" data-duration="84.2" data-track-index="10" data-volume="1"></audio>
+  <div id="card-c01-hook" class="card-host clip" data-card-id="c01-hook" data-start="0.0" data-duration="4.9333" data-track-index="2" data-layout-allow-occlusion style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c01-hook"><div class="root"><div class="panel" id="c01-hook-panel"><div class="page" id="c01-hook-page0"><div id="c01-hook-kicker" data-anim="pop"><span class="chip" style="background:#0E5E6F">Ubat psikiatri</span></div><div id="c01-hook-t1" data-anim="slide"><div class="title sm">3 ubat yang dikaitkan dengan</div></div><div id="c01-hook-t2" data-anim="pop"><div class="title xl hook" style="color:#0E5E6F">PENURUNAN<br/>BERAT BADAN</div></div><div id="c01-hook-who" data-anim="slide"><div class="row who"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><g stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="3"/><path d="M6.5 18c.8-3 3-4.5 5.5-4.5s4.7 1.5 5.5 4.5"/></g></svg><span>Dr Azren · Doktor, Jabatan Psikiatri</span></div></div></div></div></div></div></div>
+<div id="card-c02-bupropion" class="card-host clip" data-card-id="c02-bupropion" data-start="9.3667" data-duration="16.0333" data-track-index="2" data-layout-allow-occlusion style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c02-bupropion"><div class="root"><div class="panel" id="c02-bupropion-panel"><div class="page" id="c02-bupropion-page0"><div id="c02-bupropion-kicker" data-anim="pop"><span class="chip" style="background:#0E5E6F">Ubat #1</span></div><div id="c02-bupropion-t" data-anim="pop"><div class="title xl" style="color:#0E5E6F">BUPROPION</div></div><div id="c02-bupropion-s" data-anim="slide"><div class="sub">Sejenis antidepresan</div></div><div id="c02-bupropion-r" data-anim="slide"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><g stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5v11M7.5 13l4.5 4.5 4.5-4.5"/></g></svg><span>Boleh kurangkan selera makan</span></div></div></div><div class="page" id="c02-bupropion-page1"><div id="c02-bupropion-kicker2" data-anim="pop"><span class="chip" style="background:#0E5E6F">Biasanya digunakan untuk</span></div><div id="c02-bupropion-r1" data-anim="slide"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><g stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M7 12.5l3.2 3.2L17.5 8.5"/></g></svg><span>Merawat kemurungan</span></div></div><div id="c02-bupropion-r2" data-anim="slide"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><g stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M7 12.5l3.2 3.2L17.5 8.5"/></g></svg><span>Bantu berhenti merokok</span></div></div></div><div class="page" id="c02-bupropion-page2"><div id="c02-bupropion-kicker3" data-anim="pop"><span class="chip" style="background:#E5484D">Tapi ingat</span></div><div id="c02-bupropion-t3" data-anim="slide"><div class="title">Bukan semua orang turun berat</div></div><div id="c02-bupropion-s3" data-anim="slide"><div class="sub">Bergantung pada badan masing-masing</div></div></div></div></div></div></div>
+<div id="card-c03-topiramate" class="card-host clip" data-card-id="c03-topiramate" data-start="26.2333" data-duration="17.3334" data-track-index="2" data-layout-allow-occlusion style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c03-topiramate"><div class="root"><div class="panel" id="c03-topiramate-panel"><div class="page" id="c03-topiramate-page0"><div id="c03-topiramate-kicker" data-anim="pop"><span class="chip" style="background:#0E5E6F">Ubat #2</span></div><div id="c03-topiramate-t" data-anim="pop"><div class="title xl" style="color:#0E5E6F">TOPIRAMATE</div></div><div id="c03-topiramate-s" data-anim="slide"><div class="sub">Asalnya ubat sawan</div></div><div id="c03-topiramate-r" data-anim="slide"><div class="row"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="6" fill="#6B7C85"/></svg><span>Kadang-kadang untuk masalah mood</span></div></div></div><div class="page" id="c03-topiramate-page1"><div id="c03-topiramate-kicker2" data-anim="pop"><span class="chip" style="background:#0E5E6F">Kesan pada berat badan</span></div><div id="c03-topiramate-r1" data-anim="slide"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><g stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5v11M7.5 13l4.5 4.5 4.5-4.5"/></g></svg><span>Turunkan berat badan</span></div></div><div id="c03-topiramate-r2" data-anim="slide"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><g stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M7 12.5l3.2 3.2L17.5 8.5"/></g></svg><span>Cepat rasa kenyang</span></div></div><div id="c03-topiramate-r3" data-anim="slide"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><g stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M7 12.5l3.2 3.2L17.5 8.5"/></g></svg><span>Kurang craving</span></div></div></div><div class="page" id="c03-topiramate-page2"><div id="c03-topiramate-kicker3" data-anim="pop"><span class="chip" style="background:#E5484D">Kesan sampingan</span></div><div id="c03-topiramate-t3" data-anim="slide"><div class="title">Lebih banyak sikit</div></div><div id="c03-topiramate-w3" data-anim="slide"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#E9A23B"/><g stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.8v6.4"/><circle cx="12" cy="16.9" r=".6" fill="#fff"/></g></svg><span>Senang rasa semput — dos tinggi</span></div></div></div></div></div></div></div>
+<div id="card-c04-fluoxetine" class="card-host clip" data-card-id="c04-fluoxetine" data-start="44.3667" data-duration="8.9" data-track-index="2" data-layout-allow-occlusion style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c04-fluoxetine"><div class="root"><div class="panel" id="c04-fluoxetine-panel"><div class="page" id="c04-fluoxetine-page0"><div id="c04-fluoxetine-kicker" data-anim="pop"><span class="chip" style="background:#0E5E6F">Ubat #3</span></div><div id="c04-fluoxetine-t" data-anim="pop"><div class="title xl" style="color:#0E5E6F">FLUOXETINE</div></div><div id="c04-fluoxetine-s" data-anim="slide"><div class="sub">SSRI yang paling biasa digunakan</div></div><div id="c04-fluoxetine-g" data-anim="none"><div class="grid"><span id="c04-p1" class="pill">Antidepresan</span><span id="c04-p2" class="pill">Anxiety</span></div></div></div></div></div></div></div>
+<div id="card-c05-penting" class="card-host clip" data-card-id="c05-penting" data-start="66.0667" data-duration="8.3666" data-track-index="2" data-layout-allow-occlusion style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c05-penting"><div class="root"><div class="panel" id="c05-penting-panel"><div class="page" id="c05-penting-page0"><div id="c05-penting-kicker" data-anim="pop"><span class="chip" style="background:#0E5E6F">Yang penting</span></div><div id="c05-penting-t" data-anim="slide"><div class="title">Setiap ubat, kesan berbeza <span style="color:#0E5E6F">untuk setiap orang</span></div></div></div><div class="page" id="c05-penting-page1"><div id="c05-penting-kicker2" data-anim="pop"><span class="chip" style="background:#0E5E6F">Ketiga-tiga ubat</span></div><div id="c05-penting-g" data-anim="none"><div class="steps"><span id="c05-s1" class="step">Bupropion</span><span id="c05-s2" class="step">Topiramate</span><span id="c05-s3" class="step">Fluoxetine</span></div></div><div id="c05-penting-r" data-anim="slide"><div class="row big"><svg viewBox="0 0 24 24" class="ico"><circle cx="12" cy="12" r="11" fill="#E5484D"/><g stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17.5v-11M7.5 11l4.5-4.5 4.5 4.5"/></g></svg><span>Setengah orang: berat boleh <b style="color:#E5484D">naik</b></span></div></div></div></div></div></div></div>
+<div id="card-c06-cta" class="card-host clip" data-card-id="c06-cta" data-start="76.7667" data-duration="7.4333" data-track-index="2" data-layout-allow-occlusion style="left:0;top:0;width:1080px;height:1920px;visibility:hidden;"><div class="card" data-card-id="c06-cta"><div class="root"><div class="panel" id="c06-cta-panel"><div class="page" id="c06-cta-page0"><div id="c06-cta-kicker" data-anim="pop"><span class="chip" style="background:#0E5E6F">Sentiasa</span></div><div id="c06-cta-t" data-anim="slide"><div class="title">Bincang dengan <span style="color:#0E5E6F">doktor</span></div></div><div id="c06-cta-s" data-anim="slide"><div class="sub">Rawatan paling sesuai untuk anda</div></div></div><div class="page" id="c06-cta-page1"><div id="c06-cta-t3" data-anim="pop"><div class="title xl" style="color:#0E5E6F">Ada soalan?</div></div><div id="c06-cta-s3" data-anim="slide"><div class="sub strong">Tanya di ruang komen <svg viewBox="0 0 24 24" class="arr"><path d="M12 4v15M5.5 12.5L12 19l6.5-6.5" stroke="#0E5E6F" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div><div id="c06-cta-d3" data-anim="fade"><div class="disc-note">Info pendidikan · bukan nasihat perubatan</div></div></div></div></div></div></div>
+  <div id="ins-b1-pil" class="ins" style="z-index:20"><div class="ins-in" id="b1-pil-in" style="opacity:0"><video id="b1-pil-v" class="clip" src="broll/pills.mp4" muted playsinline data-start="4.5667" data-duration="3.9666" data-track-index="7" data-layout-allow-occlusion></video><div class="vid-shade"></div><div class="ai-tag">Ilustrasi AI</div></div></div>
+<div id="ins-m1-kurva" class="ins clip" data-start="52.9333" data-duration="12.6334" data-track-index="5" style="z-index:21"><div class="ins-in" id="m1-kurva-in"><div class="mg">
+      <div class="head"><div class="mg-chip" id="m1-c">Fluoxetine &amp; berat badan</div>
+        <div class="mg-title" id="m1-t">Awal rawatan <span class="mint">vs</span><br/>jangka panjang</div></div>
+      <svg class="chart" viewBox="0 0 920 560" style="left:80px; top:600px; width:920px; height:560px">
+        <line x1="20" y1="170" x2="900" y2="170" stroke="rgba(255,248,238,.45)" stroke-width="4" stroke-dasharray="14 14" id="m1-base"/>
+        <path id="m1-curve" pathLength="100" d="M20 170 C130 170 210 390 340 400 C450 408 520 360 600 270 C690 170 790 128 900 118"
+          stroke="#5EEAD4" stroke-width="12" stroke-linecap="round" fill="none"/>
+        <circle id="m1-dot1" cx="340" cy="400" r="20" fill="#5EEAD4" stroke="#08323C" stroke-width="7"/>
+        <circle id="m1-dot2" cx="900" cy="118" r="20" fill="#E5484D" stroke="#08323C" stroke-width="7"/>
+        <line x1="20" y1="540" x2="900" y2="540" stroke="rgba(255,248,238,.35)" stroke-width="4"/>
+      </svg>
+      <div class="axis" id="m1-ax" style="left:96px; top:574px">Berat asal</div>
+      <div class="tag-dn" id="m1-l1" style="left:80px; top:1030px"><svg viewBox="0 0 24 24" class="ico lg"><circle cx="12" cy="12" r="11" fill="#0E5E6F"/><g stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5v11M7.5 13l4.5 4.5 4.5-4.5"/></g></svg><span>Awal rawatan:<br/>berat turun</span></div>
+      <div class="note" id="m1-n1" style="left:96px; top:1168px">hilang selera makan</div>
+      <div class="tag-up" id="m1-l2" style="left:560px; top:1030px"><svg viewBox="0 0 24 24" class="ico lg"><circle cx="12" cy="12" r="11" fill="#E5484D"/><g stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17.5v-11M7.5 11l4.5-4.5 4.5 4.5"/></g></svg><span>Jangka panjang:<br/>boleh naik balik</span></div>
+      <div class="stamp-lg mint-stamp" id="m1-st" style="left:300px; top:470px">PERLU MONITOR</div></div></div></div>
+<div id="ins-m2-jangan" class="ins clip" data-start="74.0667" data-duration="2.7666" data-track-index="6" style="z-index:22"><div class="ins-in" id="m2-jangan-in"><div class="mg">
+      <div class="center">
+        <div class="mg-chip red" id="m2-c">Ingat</div>
+        <div class="huge" id="m2-a">JANGAN</div>
+        <div class="mg-sub big" id="m2-b">pilih ubat sebab nak</div>
+        <div class="huge mint" id="m2-d">KURUS</div>
+        <div class="mg-sub big" id="m2-e">semata-mata</div>
+      </div></div></div></div>
+  <script src="vendor/gsap.min.js"></script>
+  <script>
+  (function () {
+    const tl = window.gsap.timeline({ paused: true });
+    // c01-hook: Hook: the topic, on screen from frame 0
+    tl.set('.card-host[data-card-id="c01-hook"]', {visibility:"visible", opacity:1}, 0.0);
+    tl.set('#c01-hook-panel', {opacity:1, y:0, scale:1}, 0);
+    tl.set('#c01-hook-panel', {height:401}, 0.0);
+    tl.set('#c01-hook-page0', {opacity:1}, 0.0);
+    tl.set('#c01-hook-kicker', {opacity:1}, 0);
+    tl.set('#c01-hook-t1', {opacity:1}, 0);
+    tl.set('#c01-hook-t2', {opacity:1}, 0);
+    tl.fromTo('#c01-hook-who', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 0.8);
+    tl.to('#c01-hook-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 4.6333);
+    tl.set('.card-host[data-card-id="c01-hook"]', {visibility:"hidden"}, 4.9333);
+    // c02-bupropion: Drug 1: bupropion
+    tl.set('.card-host[data-card-id="c02-bupropion"]', {visibility:"visible", opacity:1}, 9.3667);
+    tl.fromTo('#c02-bupropion-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 9.3667);
+    tl.set('#c02-bupropion-panel', {height:335}, 9.3667);
+    tl.set('#c02-bupropion-page0', {opacity:1}, 9.3667);
+    tl.fromTo('#c02-bupropion-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 9.4667);
+    tl.fromTo('#c02-bupropion-t', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 9.7667);
+    tl.fromTo('#c02-bupropion-s', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 11.5333);
+    tl.fromTo('#c02-bupropion-r', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 13.7667);
+    tl.to('#c02-bupropion-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 15.9);
+    tl.fromTo('#c02-bupropion-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 16.2);
+    tl.to('#c02-bupropion-panel', {height:243, duration:0.4, ease:'power2.inOut'}, 16.0);
+    tl.fromTo('#c02-bupropion-kicker2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 16.3);
+    tl.fromTo('#c02-bupropion-r1', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 16.6);
+    tl.fromTo('#c02-bupropion-r2', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 19.4);
+    tl.to('#c02-bupropion-page1', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 20.6333);
+    tl.fromTo('#c02-bupropion-page2', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 20.9);
+    tl.to('#c02-bupropion-panel', {height:251, duration:0.4, ease:'power2.inOut'}, 20.7);
+    tl.fromTo('#c02-bupropion-kicker3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 21.0);
+    tl.fromTo('#c02-bupropion-t3', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 21.3);
+    tl.fromTo('#c02-bupropion-s3', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 23.0667);
+    tl.to('#c02-bupropion-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 25.1);
+    tl.set('.card-host[data-card-id="c02-bupropion"]', {visibility:"hidden"}, 25.4);
+    // c03-topiramate: Drug 2: topiramate
+    tl.set('.card-host[data-card-id="c03-topiramate"]', {visibility:"visible", opacity:1}, 26.2333);
+    tl.fromTo('#c03-topiramate-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 26.2333);
+    tl.set('#c03-topiramate-panel', {height:328}, 26.2333);
+    tl.set('#c03-topiramate-page0', {opacity:1}, 26.2333);
+    tl.fromTo('#c03-topiramate-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 26.3333);
+    tl.fromTo('#c03-topiramate-t', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 26.6333);
+    tl.fromTo('#c03-topiramate-s', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 27.4667);
+    tl.fromTo('#c03-topiramate-r', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 29.5);
+    tl.to('#c03-topiramate-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 31.4333);
+    tl.fromTo('#c03-topiramate-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 31.7);
+    tl.to('#c03-topiramate-panel', {height:306, duration:0.4, ease:'power2.inOut'}, 31.5);
+    tl.fromTo('#c03-topiramate-kicker2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 31.8);
+    tl.fromTo('#c03-topiramate-r1', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 32.2);
+    tl.fromTo('#c03-topiramate-r2', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 34.5);
+    tl.fromTo('#c03-topiramate-r3', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 36.1);
+    tl.to('#c03-topiramate-page1', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 37.6);
+    tl.fromTo('#c03-topiramate-page2', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 37.9);
+    tl.to('#c03-topiramate-panel', {height:255, duration:0.4, ease:'power2.inOut'}, 37.7);
+    tl.fromTo('#c03-topiramate-kicker3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 38.0);
+    tl.fromTo('#c03-topiramate-t3', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 38.3);
+    tl.fromTo('#c03-topiramate-w3', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 40.6333);
+    tl.to('#c03-topiramate-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 43.2667);
+    tl.set('.card-host[data-card-id="c03-topiramate"]', {visibility:"hidden"}, 43.5667);
+    // c04-fluoxetine: Drug 3: fluoxetine
+    tl.set('.card-host[data-card-id="c04-fluoxetine"]', {visibility:"visible", opacity:1}, 44.3667);
+    tl.fromTo('#c04-fluoxetine-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 44.3667);
+    tl.set('#c04-fluoxetine-panel', {height:356}, 44.3667);
+    tl.set('#c04-fluoxetine-page0', {opacity:1}, 44.3667);
+    tl.fromTo('#c04-fluoxetine-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 44.4667);
+    tl.fromTo('#c04-fluoxetine-t', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 44.7667);
+    tl.fromTo('#c04-fluoxetine-s', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 46.9);
+    tl.fromTo('#c04-p1', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 50.0333);
+    tl.fromTo('#c04-p2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 52.1333);
+    tl.to('#c04-fluoxetine-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 52.9667);
+    tl.set('.card-host[data-card-id="c04-fluoxetine"]', {visibility:"hidden"}, 53.2667);
+    // c05-penting: Takeaway: every drug acts differently
+    tl.set('.card-host[data-card-id="c05-penting"]', {visibility:"visible", opacity:1}, 66.0667);
+    tl.fromTo('#c05-penting-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 66.0667);
+    tl.set('#c05-penting-panel', {height:253}, 66.0667);
+    tl.set('#c05-penting-page0', {opacity:1}, 66.0667);
+    tl.fromTo('#c05-penting-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 66.1667);
+    tl.fromTo('#c05-penting-t', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 66.4667);
+    tl.to('#c05-penting-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 69.0333);
+    tl.fromTo('#c05-penting-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 69.3);
+    tl.to('#c05-penting-panel', {height:259, duration:0.4, ease:'power2.inOut'}, 69.1);
+    tl.fromTo('#c05-penting-kicker2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 69.4);
+    tl.fromTo('#c05-s1', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 69.6333);
+    tl.fromTo('#c05-s2', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 69.9333);
+    tl.fromTo('#c05-s3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 70.2);
+    tl.fromTo('#c05-penting-r', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 71.7333);
+    tl.to('#c05-penting-panel', {opacity:0, y:-24, duration:0.3, ease:'power2.in'}, 74.1333);
+    tl.set('.card-host[data-card-id="c05-penting"]', {visibility:"hidden"}, 74.4333);
+    // c06-cta: CTA: talk to your doctor; questions in the comments
+    tl.set('.card-host[data-card-id="c06-cta"]', {visibility:"visible", opacity:1}, 76.7667);
+    tl.fromTo('#c06-cta-panel', {opacity:0, y:-36, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.45, ease:'power3.out'}, 76.7667);
+    tl.set('#c06-cta-panel', {height:251}, 76.7667);
+    tl.set('#c06-cta-page0', {opacity:1}, 76.7667);
+    tl.fromTo('#c06-cta-kicker', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 76.8333);
+    tl.fromTo('#c06-cta-t', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 76.8333);
+    tl.fromTo('#c06-cta-s', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 78.4333);
+    tl.to('#c06-cta-page0', {opacity:0, y:-14, duration:0.28, ease:'power2.in'}, 80.6667);
+    tl.fromTo('#c06-cta-page1', {opacity:0, y:14}, {opacity:1, y:0, duration:0.32, ease:'power3.out'}, 80.9333);
+    tl.to('#c06-cta-panel', {height:253, duration:0.4, ease:'power2.inOut'}, 80.7333);
+    tl.fromTo('#c06-cta-t3', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 80.9333);
+    tl.fromTo('#c06-cta-s3', {opacity:0, x:-44}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 81.6);
+    tl.fromTo('#c06-cta-d3', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 81.8333);
+    // insert b1-pil (video) 4.57-8.53s
+    tl.fromTo('#b1-pil-in', {opacity:0, scale:1.06}, {opacity:1, scale:1, duration:0.32, ease:'power2.out'}, 4.5667);
+    tl.to('#b1-pil-in', {opacity:0, duration:0.24, ease:'power2.in'}, 8.293);
+    tl.set('#b1-pil-in', {opacity:0}, 8.5333);
+    // insert m1-kurva (mg) 52.93-65.57s
+    tl.fromTo('#m1-kurva-in', {clipPath:'inset(100% 0% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.42, ease:'power3.inOut'}, 52.9333);
+    tl.fromTo('#m1-c', {opacity:0, scale:0.6, transformOrigin:'50% 50%'}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 53.053);
+    tl.fromTo('#m1-t', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 53.053);
+    tl.fromTo('#m1-base', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 53.223);
+    tl.fromTo('#m1-ax', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 53.273);
+    tl.fromTo('#m1-curve', {strokeDashoffset:100}, {strokeDashoffset:45, duration:2.829, ease:'power1.inOut', immediateRender:false}, 54.204);
+    tl.fromTo('#m1-dot1', {opacity:0, scale:0.6, transformOrigin:'50% 50%'}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 56.353);
+    tl.fromTo('#m1-l1', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 56.353);
+    tl.fromTo('#m1-n1', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 58.813);
+    tl.fromTo('#m1-curve', {strokeDashoffset:45}, {strokeDashoffset:0, duration:3.143, ease:'power1.inOut', immediateRender:false}, 60.196);
+    tl.fromTo('#m1-l2', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 62.378);
+    tl.fromTo('#m1-dot2', {opacity:0, scale:0.6, transformOrigin:'50% 50%'}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 62.798);
+    tl.fromTo('#m1-st', {opacity:0, scale:1.9}, {opacity:1, scale:1, duration:0.26, ease:'power4.out'}, 64.24);
+    tl.to('#m1-kurva-in', {opacity:0, duration:0.24, ease:'power2.in'}, 65.327);
+    // insert m2-jangan (mg) 74.07-76.83s
+    tl.fromTo('#m2-jangan-in', {clipPath:'inset(100% 0% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.42, ease:'power3.inOut'}, 74.0667);
+    tl.fromTo('#m2-c', {opacity:0, scale:0.6, transformOrigin:'50% 50%'}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 74.187);
+    tl.fromTo('#m2-a', {opacity:0, scale:1.9}, {opacity:1, scale:1, duration:0.26, ease:'power4.out'}, 74.187);
+    tl.fromTo('#m2-b', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 74.321);
+    tl.fromTo('#m2-d', {opacity:0, scale:1.9}, {opacity:1, scale:1, duration:0.26, ease:'power4.out'}, 75.202);
+    tl.fromTo('#m2-e', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 75.442);
+    tl.to('#m2-jangan-in', {opacity:0, duration:0.24, ease:'power2.in'}, 76.593);
+    window.__timelines = window.__timelines || {};
+    window.__timelines["talking-head-recut"] = tl;
+  })();
+  </script>
+</div>
+</body>
+</html>

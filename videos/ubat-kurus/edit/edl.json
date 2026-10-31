@@ -1,0 +1,229 @@
+{
+  "version": 1,
+  "sources": {
+    "ubat": "/home/user/tiktokvideo/videos/ubat-kurus/raw/3 Ubat Psikiatri Kuruskan Badan.mp4"
+  },
+  "ranges": [
+    {
+      "source": "ubat",
+      "start": 0.1,
+      "end": 3.175,
+      "beat": "INTRO",
+      "reason": "Assalamualaikum, saya Dr Azren. Saya merupakan doktor di Jabatan Psikiatri.",
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 10.04,
+      "end": 11.57,
+      "beat": "HOOK",
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 11.955,
+      "end": 15.815,
+      "beat": "HOOK",
+      "reason": "Kali ni saya nak cerita ubat-ubat ... penurunan berat badan. — 'Sebelum ni ... kenaikan berat badan' (I01), 'Tapi' and 'pula' cut",
+      "zoom": 1.02
+    },
+    {
+      "source": "ubat",
+      "start": 17.045,
+      "end": 19.46,
+      "beat": "BUPROPION",
+      "zoom": 1.07
+    },
+    {
+      "source": "ubat",
+      "start": 19.83,
+      "end": 24.005,
+      "beat": "BUPROPION",
+      "reason": "Ubat yang pertama adalah bupropion ... kurangkan selera makan. — 'Ok' and 'sebenarnya' cut",
+      "zoom": 1.035
+    },
+    {
+      "source": "ubat",
+      "start": 24.7,
+      "end": 29.05,
+      "beat": "BUPROPION",
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 29.19,
+      "end": 29.985,
+      "beat": "BUPROPION",
+      "reason": "Biasanya digunakan untuk merawat kemurungan dan juga bantu orang untuk berhenti merokok. — trailing 'juga' cut",
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 30.59,
+      "end": 33.52,
+      "beat": "BUPROPION",
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 33.85,
+      "end": 35.06,
+      "beat": "BUPROPION",
+      "zoom": 1.02
+    },
+    {
+      "source": "ubat",
+      "start": 35.24,
+      "end": 36.31,
+      "beat": "BUPROPION",
+      "reason": "Tapi ingat, bukan semua orang akan turun berat, bergantung pada badan masing-masing.",
+      "zoom": 1.07
+    },
+    {
+      "source": "ubat",
+      "start": 37.27,
+      "end": 39.24,
+      "beat": "TOPIRAMATE",
+      "zoom": 1.035
+    },
+    {
+      "source": "ubat",
+      "start": 39.86,
+      "end": 41.395,
+      "beat": "TOPIRAMATE",
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 41.755,
+      "end": 44.63,
+      "beat": "TOPIRAMATE",
+      "reason": "Yang kedua adalah topiramate. Ini asalnya adalah ubat sawan, tapi doktor ... mood juga. — 'sebenarnya' cut",
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 47.005,
+      "end": 52.39,
+      "beat": "TOPIRAMATE",
+      "reason": "Dia boleh turunkan berat badan ... kurang craving. — false start '* dia ada' (45.3-46.6) cut",
+      "zoom": 1.02
+    },
+    {
+      "source": "ubat",
+      "start": 52.62,
+      "end": 57.385,
+      "beat": "TOPIRAMATE",
+      "zoom": 1.07
+    },
+    {
+      "source": "ubat",
+      "start": 57.71,
+      "end": 59.21,
+      "beat": "TOPIRAMATE",
+      "reason": "Tapi kesan sampingan dia ada banyak sikit. Ada orang yang senang rasa semput ... dos yang tinggi.",
+      "zoom": 1.035
+    },
+    {
+      "source": "ubat",
+      "start": 61.58,
+      "end": 63.93,
+      "beat": "FLUOXETINE",
+      "reason": "Yang ketiga adalah fluoxetine. — take 1; retakes 64.0-88.3 ('SSRI ni', 'yang ketiga adalah fluoxetine, ini adalah SSRI yang popular, yang commonly used for', 'Ehm', 'Ni adalah SSRI yang commonly used for', 'Ehm') dropped",
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 88.54,
+      "end": 92.79,
+      "beat": "FLUOXETINE",
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 92.88,
+      "end": 94.275,
+      "beat": "FLUOXETINE",
+      "zoom": 1.02
+    },
+    {
+      "source": "ubat",
+      "start": 94.775,
+      "end": 96.26,
+      "beat": "FLUOXETINE",
+      "reason": "Fluoxetine ni adalah SSRI yang commonly and widely used for antidepressant and also untuk masalah anxiety. — clean take",
+      "zoom": 1.07
+    },
+    {
+      "source": "ubat",
+      "start": 98.75,
+      "end": 101.85,
+      "beat": "FLUOXETINE",
+      "zoom": 1.035
+    },
+    {
+      "source": "ubat",
+      "start": 102.2,
+      "end": 105.025,
+      "beat": "FLUOXETINE",
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 105.325,
+      "end": 107.455,
+      "beat": "FLUOXETINE",
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 108.155,
+      "end": 112.115,
+      "beat": "FLUOXETINE",
+      "reason": "Kadang-kadang boleh buat orang turun berat badan ... kena monitor. — 'dia', 'sebenarnya' cut",
+      "zoom": 1.02
+    },
+    {
+      "source": "ubat",
+      "start": 112.8,
+      "end": 115.115,
+      "beat": "TAKEAWAY",
+      "zoom": 1.07
+    },
+    {
+      "source": "ubat",
+      "start": 115.255,
+      "end": 121.865,
+      "beat": "TAKEAWAY",
+      "reason": "Yang penting kita kena faham ... kenaikan berat badan pada setengah orang. — 'dia' cut; 'kenaikan' is as said (both Whisper models) and reads as intended",
+      "zoom": 1.035
+    },
+    {
+      "source": "ubat",
+      "start": 122.285,
+      "end": 124.64,
+      "beat": "CTA",
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 125.02,
+      "end": 131.79,
+      "beat": "CTA",
+      "reason": "Jangan pilih ubat sebab nak kurus semata-mata ... Take care.",
+      "zoom": 1.06
+    }
+  ],
+  "grade": "subtle",
+  "zoom_focus": [
+    0.57,
+    0.47
+  ],
+  "tail_hold": 1.2,
+  "output_size": [
+    1080,
+    1920
+  ],
+  "overlays": [],
+  "total_duration_s": 84.19
+}

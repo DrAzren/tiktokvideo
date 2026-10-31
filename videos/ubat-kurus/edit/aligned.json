@@ -1,0 +1,1664 @@
+{
+  "I00": {
+    "hyp": "assalamualaikum saya doktor azrin saya merupakan doktor di jabatan psikiatri",
+    "score": 0.422,
+    "words": [
+      {
+        "text": "assalamualaikum",
+        "start": 0.141,
+        "end": 0.846,
+        "score": 0.236
+      },
+      {
+        "text": "saya",
+        "start": 0.906,
+        "end": 1.027,
+        "score": 0.256
+      },
+      {
+        "text": "doktor",
+        "start": 1.027,
+        "end": 1.248,
+        "score": 0.377
+      },
+      {
+        "text": "azrin",
+        "start": 1.268,
+        "end": 1.57,
+        "score": 0.77
+      },
+      {
+        "text": "saya",
+        "start": 1.611,
+        "end": 1.711,
+        "score": 0.257
+      },
+      {
+        "text": "merupakan",
+        "start": 1.711,
+        "end": 2.013,
+        "score": 0.645
+      },
+      {
+        "text": "doktor",
+        "start": 2.033,
+        "end": 2.255,
+        "score": 0.471
+      },
+      {
+        "text": "di",
+        "start": 2.255,
+        "end": 2.315,
+        "score": 0.026
+      },
+      {
+        "text": "jabatan",
+        "start": 2.356,
+        "end": 2.577,
+        "score": 0.514
+      },
+      {
+        "text": "psikiatri",
+        "start": 2.577,
+        "end": 2.98,
+        "score": 0.481
+      }
+    ]
+  },
+  "I01": {
+    "hyp": "sebelum ni saya pernah buat satu video explain senarai ubat ubatan yang sering dikaitkan dengan kenaikan berat badan",
+    "score": 0.872,
+    "words": [
+      {
+        "text": "sebelum",
+        "start": 3.241,
+        "end": 3.461,
+        "score": 0.997
+      },
+      {
+        "text": "ni",
+        "start": 3.481,
+        "end": 3.542,
+        "score": 0.982
+      },
+      {
+        "text": "saya",
+        "start": 3.582,
+        "end": 3.722,
+        "score": 0.498
+      },
+      {
+        "text": "pernah",
+        "start": 3.722,
+        "end": 3.943,
+        "score": 0.819
+      },
+      {
+        "text": "buat",
+        "start": 4.063,
+        "end": 4.184,
+        "score": 0.903
+      },
+      {
+        "text": "satu",
+        "start": 4.224,
+        "end": 4.424,
+        "score": 0.996
+      },
+      {
+        "text": "video",
+        "start": 4.505,
+        "end": 4.846,
+        "score": 0.973
+      },
+      {
+        "text": "explain",
+        "start": 5.427,
+        "end": 6.049,
+        "score": 0.703
+      },
+      {
+        "text": "senarai",
+        "start": 6.29,
+        "end": 6.691,
+        "score": 0.986
+      },
+      {
+        "text": "ubat",
+        "start": 6.752,
+        "end": 6.892,
+        "score": 0.73
+      },
+      {
+        "text": "ubatan",
+        "start": 6.912,
+        "end": 7.393,
+        "score": 0.956
+      },
+      {
+        "text": "yang",
+        "start": 7.454,
+        "end": 7.634,
+        "score": 0.941
+      },
+      {
+        "text": "sering",
+        "start": 7.755,
+        "end": 8.015,
+        "score": 0.972
+      },
+      {
+        "text": "dikaitkan",
+        "start": 8.056,
+        "end": 8.577,
+        "score": 0.992
+      },
+      {
+        "text": "dengan",
+        "start": 8.597,
+        "end": 8.778,
+        "score": 0.655
+      },
+      {
+        "text": "kenaikan",
+        "start": 8.798,
+        "end": 9.119,
+        "score": 0.937
+      },
+      {
+        "text": "berat",
+        "start": 9.139,
+        "end": 9.279,
+        "score": 0.749
+      },
+      {
+        "text": "badan",
+        "start": 9.279,
+        "end": 9.5,
+        "score": 0.761
+      }
+    ]
+  },
+  "I02": {
+    "hyp": "tapi kali ni saya nak cerita ubat ubat yang sering dikaitkan dengan penurunan berat badan pula",
+    "score": 0.927,
+    "words": [
+      {
+        "text": "tapi",
+        "start": 9.6,
+        "end": 9.82,
+        "score": 0.926
+      },
+      {
+        "text": "kali",
+        "start": 10.081,
+        "end": 10.261,
+        "score": 0.997
+      },
+      {
+        "text": "ni",
+        "start": 10.321,
+        "end": 10.401,
+        "score": 0.998
+      },
+      {
+        "text": "saya",
+        "start": 10.501,
+        "end": 10.642,
+        "score": 0.532
+      },
+      {
+        "text": "nak",
+        "start": 10.662,
+        "end": 10.762,
+        "score": 0.909
+      },
+      {
+        "text": "cerita",
+        "start": 11.002,
+        "end": 11.383,
+        "score": 0.892
+      },
+      {
+        "text": "ubat",
+        "start": 12.024,
+        "end": 12.204,
+        "score": 0.799
+      },
+      {
+        "text": "ubat",
+        "start": 12.264,
+        "end": 12.545,
+        "score": 0.98
+      },
+      {
+        "text": "yang",
+        "start": 12.865,
+        "end": 13.125,
+        "score": 0.967
+      },
+      {
+        "text": "sering",
+        "start": 13.286,
+        "end": 13.566,
+        "score": 0.994
+      },
+      {
+        "text": "dikaitkan",
+        "start": 13.606,
+        "end": 14.287,
+        "score": 0.993
+      },
+      {
+        "text": "dengan",
+        "start": 14.327,
+        "end": 14.648,
+        "score": 0.989
+      },
+      {
+        "text": "penurunan",
+        "start": 14.848,
+        "end": 15.309,
+        "score": 0.999
+      },
+      {
+        "text": "berat",
+        "start": 15.349,
+        "end": 15.509,
+        "score": 0.775
+      },
+      {
+        "text": "badan",
+        "start": 15.529,
+        "end": 15.769,
+        "score": 0.958
+      },
+      {
+        "text": "pula",
+        "start": 15.809,
+        "end": 15.95,
+        "score": 0.97
+      }
+    ]
+  },
+  "I03": {
+    "hyp": "ok ubat yang pertama adalah bupropion ubat ni adalah sejenis antidepressant yang boleh kurangkan selera makan sebenarnya",
+    "score": 0.879,
+    "words": [
+      {
+        "text": "ok",
+        "start": 16.791,
+        "end": 16.911,
+        "score": 1.0
+      },
+      {
+        "text": "ubat",
+        "start": 17.111,
+        "end": 17.291,
+        "score": 0.767
+      },
+      {
+        "text": "yang",
+        "start": 17.331,
+        "end": 17.431,
+        "score": 0.994
+      },
+      {
+        "text": "pertama",
+        "start": 17.431,
+        "end": 17.812,
+        "score": 0.96
+      },
+      {
+        "text": "adalah",
+        "start": 17.952,
+        "end": 18.272,
+        "score": 0.999
+      },
+      {
+        "text": "bupropion",
+        "start": 18.493,
+        "end": 19.274,
+        "score": 0.717
+      },
+      {
+        "text": "ubat",
+        "start": 19.915,
+        "end": 20.115,
+        "score": 0.753
+      },
+      {
+        "text": "ni",
+        "start": 20.155,
+        "end": 20.215,
+        "score": 0.991
+      },
+      {
+        "text": "adalah",
+        "start": 20.315,
+        "end": 20.595,
+        "score": 0.995
+      },
+      {
+        "text": "sejenis",
+        "start": 20.635,
+        "end": 21.136,
+        "score": 0.93
+      },
+      {
+        "text": "antidepressant",
+        "start": 21.296,
+        "end": 22.237,
+        "score": 0.738
+      },
+      {
+        "text": "yang",
+        "start": 22.297,
+        "end": 22.458,
+        "score": 0.999
+      },
+      {
+        "text": "boleh",
+        "start": 22.498,
+        "end": 22.758,
+        "score": 0.993
+      },
+      {
+        "text": "kurangkan",
+        "start": 22.858,
+        "end": 23.319,
+        "score": 0.995
+      },
+      {
+        "text": "selera",
+        "start": 23.379,
+        "end": 23.599,
+        "score": 0.842
+      },
+      {
+        "text": "makan",
+        "start": 23.659,
+        "end": 23.959,
+        "score": 0.997
+      },
+      {
+        "text": "sebenarnya",
+        "start": 23.98,
+        "end": 24.3,
+        "score": 0.743
+      }
+    ]
+  },
+  "I04": {
+    "hyp": "biasanya digunakan untuk merawat kemurungan dan juga bantu orang untuk berhenti merokok juga",
+    "score": 0.966,
+    "words": [
+      {
+        "text": "biasanya",
+        "start": 24.741,
+        "end": 25.141,
+        "score": 0.992
+      },
+      {
+        "text": "digunakan",
+        "start": 25.221,
+        "end": 25.722,
+        "score": 0.999
+      },
+      {
+        "text": "untuk",
+        "start": 25.863,
+        "end": 26.303,
+        "score": 0.972
+      },
+      {
+        "text": "merawat",
+        "start": 26.383,
+        "end": 26.744,
+        "score": 0.998
+      },
+      {
+        "text": "kemurungan",
+        "start": 26.824,
+        "end": 27.305,
+        "score": 0.974
+      },
+      {
+        "text": "dan",
+        "start": 27.365,
+        "end": 27.465,
+        "score": 0.947
+      },
+      {
+        "text": "juga",
+        "start": 27.485,
+        "end": 27.706,
+        "score": 1.0
+      },
+      {
+        "text": "bantu",
+        "start": 27.806,
+        "end": 28.126,
+        "score": 0.997
+      },
+      {
+        "text": "orang",
+        "start": 28.267,
+        "end": 28.587,
+        "score": 0.966
+      },
+      {
+        "text": "untuk",
+        "start": 28.647,
+        "end": 28.908,
+        "score": 0.999
+      },
+      {
+        "text": "berhenti",
+        "start": 29.309,
+        "end": 29.609,
+        "score": 0.868
+      },
+      {
+        "text": "merokok",
+        "start": 29.649,
+        "end": 29.97,
+        "score": 0.895
+      },
+      {
+        "text": "juga",
+        "start": 30.01,
+        "end": 30.15,
+        "score": 0.971
+      }
+    ]
+  },
+  "I05": {
+    "hyp": "tapi ingat bukan semua orang akan turun berat bergantung pada badan masing masing",
+    "score": 0.901,
+    "words": [
+      {
+        "text": "tapi",
+        "start": 30.632,
+        "end": 30.872,
+        "score": 1.0
+      },
+      {
+        "text": "ingat",
+        "start": 30.973,
+        "end": 31.173,
+        "score": 0.672
+      },
+      {
+        "text": "bukan",
+        "start": 31.835,
+        "end": 32.217,
+        "score": 0.998
+      },
+      {
+        "text": "semua",
+        "start": 32.297,
+        "end": 32.538,
+        "score": 0.997
+      },
+      {
+        "text": "orang",
+        "start": 32.578,
+        "end": 32.738,
+        "score": 0.948
+      },
+      {
+        "text": "akan",
+        "start": 32.778,
+        "end": 32.959,
+        "score": 0.956
+      },
+      {
+        "text": "turun",
+        "start": 32.999,
+        "end": 33.22,
+        "score": 0.998
+      },
+      {
+        "text": "berat",
+        "start": 33.26,
+        "end": 33.461,
+        "score": 0.638
+      },
+      {
+        "text": "bergantung",
+        "start": 33.922,
+        "end": 34.464,
+        "score": 0.815
+      },
+      {
+        "text": "pada",
+        "start": 34.544,
+        "end": 34.805,
+        "score": 0.79
+      },
+      {
+        "text": "badan",
+        "start": 35.286,
+        "end": 35.607,
+        "score": 0.971
+      },
+      {
+        "text": "masing",
+        "start": 35.647,
+        "end": 35.868,
+        "score": 0.995
+      },
+      {
+        "text": "masing",
+        "start": 35.888,
+        "end": 36.209,
+        "score": 0.998
+      }
+    ]
+  },
+  "I06": {
+    "hyp": "yang kedua adalah topiramid ini asalnya adalah ubat sawan sebenarnya tapi doktor kadang kadang guna untuk masalah mood juga",
+    "score": 0.837,
+    "words": [
+      {
+        "text": "yang",
+        "start": 37.361,
+        "end": 37.502,
+        "score": 0.988
+      },
+      {
+        "text": "kedua",
+        "start": 37.542,
+        "end": 37.822,
+        "score": 0.812
+      },
+      {
+        "text": "adalah",
+        "start": 37.943,
+        "end": 38.284,
+        "score": 0.999
+      },
+      {
+        "text": "topiramid",
+        "start": 38.624,
+        "end": 39.186,
+        "score": 0.919
+      },
+      {
+        "text": "ini",
+        "start": 39.908,
+        "end": 40.008,
+        "score": 0.656
+      },
+      {
+        "text": "asalnya",
+        "start": 40.088,
+        "end": 40.509,
+        "score": 0.94
+      },
+      {
+        "text": "adalah",
+        "start": 40.59,
+        "end": 40.83,
+        "score": 0.925
+      },
+      {
+        "text": "ubat",
+        "start": 40.85,
+        "end": 40.991,
+        "score": 0.732
+      },
+      {
+        "text": "sawan",
+        "start": 41.011,
+        "end": 41.332,
+        "score": 0.976
+      },
+      {
+        "text": "sebenarnya",
+        "start": 41.372,
+        "end": 41.672,
+        "score": 0.777
+      },
+      {
+        "text": "tapi",
+        "start": 41.773,
+        "end": 42.033,
+        "score": 1.0
+      },
+      {
+        "text": "doktor",
+        "start": 42.174,
+        "end": 42.474,
+        "score": 0.663
+      },
+      {
+        "text": "kadang",
+        "start": 42.495,
+        "end": 42.655,
+        "score": 0.507
+      },
+      {
+        "text": "kadang",
+        "start": 42.675,
+        "end": 42.876,
+        "score": 0.842
+      },
+      {
+        "text": "guna",
+        "start": 42.916,
+        "end": 43.176,
+        "score": 0.786
+      },
+      {
+        "text": "untuk",
+        "start": 43.297,
+        "end": 43.698,
+        "score": 0.946
+      },
+      {
+        "text": "masalah",
+        "start": 43.738,
+        "end": 44.119,
+        "score": 0.999
+      },
+      {
+        "text": "mood",
+        "start": 44.199,
+        "end": 44.339,
+        "score": 0.254
+      },
+      {
+        "text": "juga",
+        "start": 44.359,
+        "end": 44.52,
+        "score": 0.999
+      }
+    ]
+  },
+  "I07": {
+    "hyp": "* * dia boleh turunkan berat badan dan buat rasa kenyang dengan cepat dan kurang craving",
+    "score": 0.909,
+    "words": [
+      {
+        "text": "*",
+        "start": 44.6,
+        "end": 45.041,
+        "score": 1.0
+      },
+      {
+        "text": "*",
+        "start": 45.061,
+        "end": 47.043,
+        "score": 1.0
+      },
+      {
+        "text": "dia",
+        "start": 47.043,
+        "end": 47.163,
+        "score": 0.859
+      },
+      {
+        "text": "boleh",
+        "start": 47.223,
+        "end": 47.444,
+        "score": 0.987
+      },
+      {
+        "text": "turunkan",
+        "start": 47.544,
+        "end": 48.045,
+        "score": 0.99
+      },
+      {
+        "text": "berat",
+        "start": 48.085,
+        "end": 48.265,
+        "score": 0.749
+      },
+      {
+        "text": "badan",
+        "start": 48.285,
+        "end": 48.565,
+        "score": 0.996
+      },
+      {
+        "text": "dan",
+        "start": 48.826,
+        "end": 48.946,
+        "score": 0.585
+      },
+      {
+        "text": "buat",
+        "start": 49.026,
+        "end": 49.206,
+        "score": 0.999
+      },
+      {
+        "text": "rasa",
+        "start": 49.306,
+        "end": 49.607,
+        "score": 0.995
+      },
+      {
+        "text": "kenyang",
+        "start": 49.867,
+        "end": 50.307,
+        "score": 0.948
+      },
+      {
+        "text": "dengan",
+        "start": 50.327,
+        "end": 50.508,
+        "score": 0.992
+      },
+      {
+        "text": "cepat",
+        "start": 50.548,
+        "end": 50.888,
+        "score": 0.995
+      },
+      {
+        "text": "dan",
+        "start": 50.948,
+        "end": 51.109,
+        "score": 0.996
+      },
+      {
+        "text": "kurang",
+        "start": 51.469,
+        "end": 51.809,
+        "score": 0.983
+      },
+      {
+        "text": "craving",
+        "start": 51.849,
+        "end": 52.25,
+        "score": 0.573
+      }
+    ]
+  },
+  "I08": {
+    "hyp": "tapi kesan sampingan dia ada banyak sikit ada orang yang senang rasa semput sikit kalau ambil dengan dos yang tinggi",
+    "score": 0.925,
+    "words": [
+      {
+        "text": "tapi",
+        "start": 52.871,
+        "end": 53.031,
+        "score": 0.998
+      },
+      {
+        "text": "kesan",
+        "start": 53.071,
+        "end": 53.251,
+        "score": 0.919
+      },
+      {
+        "text": "sampingan",
+        "start": 53.291,
+        "end": 53.632,
+        "score": 0.872
+      },
+      {
+        "text": "dia",
+        "start": 53.652,
+        "end": 53.732,
+        "score": 0.679
+      },
+      {
+        "text": "ada",
+        "start": 53.752,
+        "end": 53.852,
+        "score": 0.916
+      },
+      {
+        "text": "banyak",
+        "start": 53.872,
+        "end": 54.113,
+        "score": 0.999
+      },
+      {
+        "text": "sikit",
+        "start": 54.153,
+        "end": 54.393,
+        "score": 0.754
+      },
+      {
+        "text": "ada",
+        "start": 54.533,
+        "end": 54.713,
+        "score": 0.999
+      },
+      {
+        "text": "orang",
+        "start": 54.894,
+        "end": 55.154,
+        "score": 0.999
+      },
+      {
+        "text": "yang",
+        "start": 55.254,
+        "end": 55.515,
+        "score": 0.998
+      },
+      {
+        "text": "senang",
+        "start": 55.715,
+        "end": 55.975,
+        "score": 0.999
+      },
+      {
+        "text": "rasa",
+        "start": 56.015,
+        "end": 56.155,
+        "score": 0.958
+      },
+      {
+        "text": "semput",
+        "start": 56.216,
+        "end": 56.536,
+        "score": 0.996
+      },
+      {
+        "text": "sikit",
+        "start": 56.576,
+        "end": 56.796,
+        "score": 0.74
+      },
+      {
+        "text": "kalau",
+        "start": 56.856,
+        "end": 57.177,
+        "score": 0.995
+      },
+      {
+        "text": "ambil",
+        "start": 57.958,
+        "end": 58.178,
+        "score": 0.795
+      },
+      {
+        "text": "dengan",
+        "start": 58.198,
+        "end": 58.399,
+        "score": 0.998
+      },
+      {
+        "text": "dos",
+        "start": 58.459,
+        "end": 58.599,
+        "score": 0.838
+      },
+      {
+        "text": "yang",
+        "start": 58.639,
+        "end": 58.759,
+        "score": 0.947
+      },
+      {
+        "text": "tinggi",
+        "start": 58.759,
+        "end": 59.019,
+        "score": 0.999
+      }
+    ]
+  },
+  "I09": {
+    "hyp": "yang ketiga adalah fluoxetine",
+    "score": 0.684,
+    "words": [
+      {
+        "text": "yang",
+        "start": 61.826,
+        "end": 61.967,
+        "score": 0.897
+      },
+      {
+        "text": "ketiga",
+        "start": 62.007,
+        "end": 62.349,
+        "score": 0.417
+      },
+      {
+        "text": "adalah",
+        "start": 62.51,
+        "end": 62.912,
+        "score": 0.83
+      },
+      {
+        "text": "fluoxetine",
+        "start": 63.033,
+        "end": 63.857,
+        "score": 0.671
+      }
+    ]
+  },
+  "I14": {
+    "hyp": "fluoxetine ni adalah ssri yang commonly and widely used for antidepressant and also * untuk masalah anxiety",
+    "score": 0.643,
+    "words": [
+      {
+        "text": "fluoxetine",
+        "start": 88.58,
+        "end": 89.181,
+        "score": 0.393
+      },
+      {
+        "text": "ni",
+        "start": 89.181,
+        "end": 89.261,
+        "score": 0.977
+      },
+      {
+        "text": "adalah",
+        "start": 89.361,
+        "end": 89.642,
+        "score": 0.944
+      },
+      {
+        "text": "ssri",
+        "start": 89.742,
+        "end": 90.282,
+        "score": 0.895
+      },
+      {
+        "text": "yang",
+        "start": 90.383,
+        "end": 90.643,
+        "score": 0.924
+      },
+      {
+        "text": "commonly",
+        "start": 90.823,
+        "end": 91.284,
+        "score": 0.574
+      },
+      {
+        "text": "and",
+        "start": 91.384,
+        "end": 91.484,
+        "score": 0.613
+      },
+      {
+        "text": "widely",
+        "start": 91.544,
+        "end": 91.884,
+        "score": 0.517
+      },
+      {
+        "text": "used",
+        "start": 92.045,
+        "end": 92.285,
+        "score": 0.497
+      },
+      {
+        "text": "for",
+        "start": 92.325,
+        "end": 92.565,
+        "score": 0.656
+      },
+      {
+        "text": "antidepressant",
+        "start": 92.966,
+        "end": 93.867,
+        "score": 0.686
+      },
+      {
+        "text": "and",
+        "start": 93.867,
+        "end": 93.947,
+        "score": 0.16
+      },
+      {
+        "text": "also",
+        "start": 93.947,
+        "end": 94.287,
+        "score": 0.403
+      },
+      {
+        "text": "*",
+        "start": 94.287,
+        "end": 94.848,
+        "score": 1.0
+      },
+      {
+        "text": "untuk",
+        "start": 94.848,
+        "end": 95.128,
+        "score": 0.998
+      },
+      {
+        "text": "masalah",
+        "start": 95.148,
+        "end": 95.529,
+        "score": 0.932
+      },
+      {
+        "text": "anxiety",
+        "start": 95.569,
+        "end": 95.989,
+        "score": 0.286
+      }
+    ]
+  },
+  "I16": {
+    "hyp": "kadang kadang boleh buat orang turun berat badan masa awal awal rawatan tu sebab ada orang dia hilang selera makan tapi untuk jangka panjang sebenarnya berat badan mungkin akan naik balik sedikit lah jadi benda ni kena monitor",
+    "score": 0.882,
+    "words": [
+      {
+        "text": "kadang",
+        "start": 98.79,
+        "end": 98.97,
+        "score": 0.652
+      },
+      {
+        "text": "kadang",
+        "start": 98.97,
+        "end": 99.251,
+        "score": 0.996
+      },
+      {
+        "text": "boleh",
+        "start": 99.291,
+        "end": 99.491,
+        "score": 0.97
+      },
+      {
+        "text": "buat",
+        "start": 99.531,
+        "end": 99.711,
+        "score": 0.999
+      },
+      {
+        "text": "orang",
+        "start": 99.851,
+        "end": 100.131,
+        "score": 0.999
+      },
+      {
+        "text": "turun",
+        "start": 100.271,
+        "end": 100.632,
+        "score": 0.997
+      },
+      {
+        "text": "berat",
+        "start": 100.972,
+        "end": 101.232,
+        "score": 0.805
+      },
+      {
+        "text": "badan",
+        "start": 101.292,
+        "end": 101.612,
+        "score": 0.832
+      },
+      {
+        "text": "masa",
+        "start": 102.253,
+        "end": 102.493,
+        "score": 0.954
+      },
+      {
+        "text": "awal",
+        "start": 102.573,
+        "end": 102.793,
+        "score": 0.748
+      },
+      {
+        "text": "awal",
+        "start": 102.793,
+        "end": 103.053,
+        "score": 0.749
+      },
+      {
+        "text": "rawatan",
+        "start": 103.133,
+        "end": 103.514,
+        "score": 0.997
+      },
+      {
+        "text": "tu",
+        "start": 103.554,
+        "end": 103.614,
+        "score": 0.994
+      },
+      {
+        "text": "sebab",
+        "start": 103.694,
+        "end": 103.974,
+        "score": 0.997
+      },
+      {
+        "text": "ada",
+        "start": 104.574,
+        "end": 104.695,
+        "score": 0.999
+      },
+      {
+        "text": "orang",
+        "start": 104.755,
+        "end": 104.975,
+        "score": 1.0
+      },
+      {
+        "text": "dia",
+        "start": 105.015,
+        "end": 105.095,
+        "score": 0.551
+      },
+      {
+        "text": "hilang",
+        "start": 105.315,
+        "end": 105.635,
+        "score": 0.975
+      },
+      {
+        "text": "selera",
+        "start": 105.655,
+        "end": 105.875,
+        "score": 0.761
+      },
+      {
+        "text": "makan",
+        "start": 105.935,
+        "end": 106.216,
+        "score": 0.995
+      },
+      {
+        "text": "tapi",
+        "start": 106.276,
+        "end": 106.476,
+        "score": 1.0
+      },
+      {
+        "text": "untuk",
+        "start": 106.536,
+        "end": 106.676,
+        "score": 0.997
+      },
+      {
+        "text": "jangka",
+        "start": 106.696,
+        "end": 106.896,
+        "score": 0.812
+      },
+      {
+        "text": "panjang",
+        "start": 106.936,
+        "end": 107.397,
+        "score": 0.99
+      },
+      {
+        "text": "sebenarnya",
+        "start": 107.437,
+        "end": 107.737,
+        "score": 0.69
+      },
+      {
+        "text": "berat",
+        "start": 108.217,
+        "end": 108.397,
+        "score": 0.799
+      },
+      {
+        "text": "badan",
+        "start": 108.437,
+        "end": 108.658,
+        "score": 0.819
+      },
+      {
+        "text": "mungkin",
+        "start": 108.698,
+        "end": 108.998,
+        "score": 0.997
+      },
+      {
+        "text": "akan",
+        "start": 109.038,
+        "end": 109.398,
+        "score": 0.857
+      },
+      {
+        "text": "naik",
+        "start": 109.598,
+        "end": 109.818,
+        "score": 0.988
+      },
+      {
+        "text": "balik",
+        "start": 109.858,
+        "end": 110.059,
+        "score": 0.996
+      },
+      {
+        "text": "sedikit",
+        "start": 110.079,
+        "end": 110.399,
+        "score": 0.926
+      },
+      {
+        "text": "lah",
+        "start": 110.419,
+        "end": 110.539,
+        "score": 0.913
+      },
+      {
+        "text": "jadi",
+        "start": 110.819,
+        "end": 111.039,
+        "score": 1.0
+      },
+      {
+        "text": "benda",
+        "start": 111.139,
+        "end": 111.319,
+        "score": 0.782
+      },
+      {
+        "text": "ni",
+        "start": 111.36,
+        "end": 111.42,
+        "score": 0.998
+      },
+      {
+        "text": "kena",
+        "start": 111.46,
+        "end": 111.62,
+        "score": 0.67
+      },
+      {
+        "text": "monitor",
+        "start": 111.64,
+        "end": 112.0,
+        "score": 0.583
+      }
+    ]
+  },
+  "I17": {
+    "hyp": "yang penting kita kena faham setiap ubat dia ada kesan yang berbeza beza untuk setiap orang mungkin ketiga tiga ubat yang saya sebut ni boleh menyebabkan kenaikan berat badan pada setengah orang",
+    "score": 0.92,
+    "words": [
+      {
+        "text": "yang",
+        "start": 112.882,
+        "end": 113.002,
+        "score": 0.978
+      },
+      {
+        "text": "penting",
+        "start": 113.022,
+        "end": 113.383,
+        "score": 0.988
+      },
+      {
+        "text": "kita",
+        "start": 113.663,
+        "end": 113.804,
+        "score": 0.994
+      },
+      {
+        "text": "kena",
+        "start": 113.824,
+        "end": 113.944,
+        "score": 0.727
+      },
+      {
+        "text": "faham",
+        "start": 113.984,
+        "end": 114.305,
+        "score": 0.99
+      },
+      {
+        "text": "setiap",
+        "start": 114.385,
+        "end": 114.746,
+        "score": 0.996
+      },
+      {
+        "text": "ubat",
+        "start": 114.826,
+        "end": 115.106,
+        "score": 0.964
+      },
+      {
+        "text": "dia",
+        "start": 115.167,
+        "end": 115.247,
+        "score": 0.695
+      },
+      {
+        "text": "ada",
+        "start": 115.287,
+        "end": 115.427,
+        "score": 0.998
+      },
+      {
+        "text": "kesan",
+        "start": 115.527,
+        "end": 115.928,
+        "score": 0.998
+      },
+      {
+        "text": "yang",
+        "start": 115.968,
+        "end": 116.048,
+        "score": 0.998
+      },
+      {
+        "text": "berbeza",
+        "start": 116.048,
+        "end": 116.309,
+        "score": 0.97
+      },
+      {
+        "text": "beza",
+        "start": 116.349,
+        "end": 116.609,
+        "score": 0.992
+      },
+      {
+        "text": "untuk",
+        "start": 116.67,
+        "end": 116.83,
+        "score": 0.999
+      },
+      {
+        "text": "setiap",
+        "start": 116.87,
+        "end": 117.07,
+        "score": 0.997
+      },
+      {
+        "text": "orang",
+        "start": 117.131,
+        "end": 117.331,
+        "score": 0.973
+      },
+      {
+        "text": "mungkin",
+        "start": 117.371,
+        "end": 117.672,
+        "score": 0.99
+      },
+      {
+        "text": "ketiga",
+        "start": 117.732,
+        "end": 117.972,
+        "score": 0.997
+      },
+      {
+        "text": "tiga",
+        "start": 118.032,
+        "end": 118.213,
+        "score": 0.998
+      },
+      {
+        "text": "ubat",
+        "start": 118.273,
+        "end": 118.473,
+        "score": 0.857
+      },
+      {
+        "text": "yang",
+        "start": 118.473,
+        "end": 118.594,
+        "score": 0.974
+      },
+      {
+        "text": "saya",
+        "start": 118.594,
+        "end": 118.714,
+        "score": 0.498
+      },
+      {
+        "text": "sebut",
+        "start": 118.734,
+        "end": 119.014,
+        "score": 0.938
+      },
+      {
+        "text": "ni",
+        "start": 119.075,
+        "end": 119.135,
+        "score": 0.967
+      },
+      {
+        "text": "boleh",
+        "start": 119.215,
+        "end": 119.415,
+        "score": 0.968
+      },
+      {
+        "text": "menyebabkan",
+        "start": 119.415,
+        "end": 119.796,
+        "score": 0.908
+      },
+      {
+        "text": "kenaikan",
+        "start": 119.836,
+        "end": 120.337,
+        "score": 0.961
+      },
+      {
+        "text": "berat",
+        "start": 120.377,
+        "end": 120.538,
+        "score": 0.766
+      },
+      {
+        "text": "badan",
+        "start": 120.558,
+        "end": 120.838,
+        "score": 0.952
+      },
+      {
+        "text": "pada",
+        "start": 120.898,
+        "end": 121.099,
+        "score": 0.999
+      },
+      {
+        "text": "setengah",
+        "start": 121.179,
+        "end": 121.54,
+        "score": 0.979
+      },
+      {
+        "text": "orang",
+        "start": 121.62,
+        "end": 121.72,
+        "score": 0.2
+      }
+    ]
+  },
+  "I18": {
+    "hyp": "jangan pilih ubat sebab nak kurus semata mata kena sentiasa berbincang dengan doktor untuk rawatan yang paling sesuai dengan anda apa apa soalan boleh tanya di ruang komen take care",
+    "score": 0.804,
+    "words": [
+      {
+        "text": "jangan",
+        "start": 122.581,
+        "end": 122.801,
+        "score": 0.968
+      },
+      {
+        "text": "pilih",
+        "start": 122.841,
+        "end": 123.081,
+        "score": 0.763
+      },
+      {
+        "text": "ubat",
+        "start": 123.141,
+        "end": 123.362,
+        "score": 0.979
+      },
+      {
+        "text": "sebab",
+        "start": 123.402,
+        "end": 123.562,
+        "score": 0.792
+      },
+      {
+        "text": "nak",
+        "start": 123.582,
+        "end": 123.682,
+        "score": 0.921
+      },
+      {
+        "text": "kurus",
+        "start": 123.722,
+        "end": 123.942,
+        "score": 0.849
+      },
+      {
+        "text": "semata",
+        "start": 123.962,
+        "end": 124.182,
+        "score": 0.899
+      },
+      {
+        "text": "mata",
+        "start": 124.222,
+        "end": 124.463,
+        "score": 0.981
+      },
+      {
+        "text": "kena",
+        "start": 125.063,
+        "end": 125.243,
+        "score": 0.988
+      },
+      {
+        "text": "sentiasa",
+        "start": 125.344,
+        "end": 125.624,
+        "score": 0.568
+      },
+      {
+        "text": "berbincang",
+        "start": 125.664,
+        "end": 126.104,
+        "score": 0.895
+      },
+      {
+        "text": "dengan",
+        "start": 126.124,
+        "end": 126.305,
+        "score": 0.931
+      },
+      {
+        "text": "doktor",
+        "start": 126.325,
+        "end": 126.705,
+        "score": 0.642
+      },
+      {
+        "text": "untuk",
+        "start": 127.065,
+        "end": 127.306,
+        "score": 0.958
+      },
+      {
+        "text": "rawatan",
+        "start": 127.346,
+        "end": 127.886,
+        "score": 0.995
+      },
+      {
+        "text": "yang",
+        "start": 128.106,
+        "end": 128.327,
+        "score": 0.988
+      },
+      {
+        "text": "paling",
+        "start": 128.487,
+        "end": 128.827,
+        "score": 0.991
+      },
+      {
+        "text": "sesuai",
+        "start": 128.847,
+        "end": 129.167,
+        "score": 0.976
+      },
+      {
+        "text": "dengan",
+        "start": 129.187,
+        "end": 129.348,
+        "score": 0.959
+      },
+      {
+        "text": "anda",
+        "start": 129.408,
+        "end": 129.568,
+        "score": 0.859
+      },
+      {
+        "text": "apa",
+        "start": 129.848,
+        "end": 129.968,
+        "score": 0.989
+      },
+      {
+        "text": "apa",
+        "start": 129.988,
+        "end": 130.068,
+        "score": 0.391
+      },
+      {
+        "text": "soalan",
+        "start": 130.088,
+        "end": 130.389,
+        "score": 0.711
+      },
+      {
+        "text": "boleh",
+        "start": 130.389,
+        "end": 130.509,
+        "score": 0.351
+      },
+      {
+        "text": "tanya",
+        "start": 130.529,
+        "end": 130.669,
+        "score": 0.642
+      },
+      {
+        "text": "di",
+        "start": 130.709,
+        "end": 130.769,
+        "score": 0.427
+      },
+      {
+        "text": "ruang",
+        "start": 130.769,
+        "end": 130.909,
+        "score": 0.557
+      },
+      {
+        "text": "komen",
+        "start": 130.929,
+        "end": 131.209,
+        "score": 0.979
+      },
+      {
+        "text": "take",
+        "start": 131.29,
+        "end": 131.43,
+        "score": 0.457
+      },
+      {
+        "text": "care",
+        "start": 131.47,
+        "end": 131.57,
+        "score": 0.255
+      }
+    ]
+  }
+}
