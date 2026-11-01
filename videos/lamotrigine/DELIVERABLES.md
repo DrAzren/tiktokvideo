@@ -91,3 +91,20 @@ Unchanged from v1: local voice polish chain, original F-major bed ducked about 2
 ≤ −1 dBTP master. Medical review notes are unchanged too: 0:19 "terutamanya dalam episod kemurungan" (maintenance
 nuance), the approved line "Ruam baru? Jumpa doktor segera.", and the spellings "Lamotrigine" and "Stevens-Johnson
 syndrome". On-screen text uses only your words (plus neutral labels such as "Jangka panjang" and "Kena ingat").
+
+## TikTok cover / thumbnail (1 Nov 2026)
+
+| File | Hook | Look |
+|---|---|---|
+| `thumb/thumb_a.png` / `.jpg` | "Ubat mood yang **UNDERRATED**" | your cutout (8.6 s, warm half-smile) with the S1 neural brain glowing behind your head |
+| `thumb/thumb_b.png` / `.jpg` | "Pernah dengar tak **pasal ubat ni?**" + "Underrated · tapi power" | your cutout (0.8 s, mid-sentence) with the S2 tablet (cut out) and a gold "?" |
+
+- Both use the 3D gold **LAMOTRIGINE** wordmark from the video, plus "Dr Fakrul Azren · Mental Health Education".
+  All text is your own words.
+- 1080×1920. Face and text sit inside the centre 3:4 crop (y 240–1680) that the TikTok profile grid shows; see
+  `thumb/grid_preview.png`.
+- The cutouts come from the local HyperFrames matting model (no credits). `thumb/refine_matte.py` fills holes, drops
+  stray fragments and removes the grey wall halo from the hair.
+- Re-render: `cd thumb && HYPERFRAMES_ROOT=~/hyperframes PUPPETEER_EXECUTABLE_PATH=~/bin/headless_shell_nosandbox node shot.cjs a b`.
+- Using it: TikTok Studio (desktop) / the web uploader → *Edit cover* → *Upload*. The phone app's cover picker only
+  takes frames from the video.

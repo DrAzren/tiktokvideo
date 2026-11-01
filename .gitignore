@@ -34,3 +34,6 @@ videos/**
 !videos/*/captions_ms.srt
 !videos/*/transcript_final.md
 !videos/*/graphics/sfx_cues.json
+!videos/*/thumb/*.html
+!videos/*/thumb/*.css
+!videos/*/thumb/*.cjs
