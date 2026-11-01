@@ -4,9 +4,18 @@
 #   scripts/setup.sh              core pipeline (cut, graphics)
 #   scripts/setup.sh --captions   + CPU torch/torchaudio (MMS forced alignment) and a built
 #                                 hyperframes checkout at ~/hyperframes (embedded-captions needs it)
+#   scripts/setup.sh --reference  + yt-dlp and openai-whisper (CPU torch) for tools/ref_video.py
+#   Flags combine: scripts/setup.sh --captions --reference
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-CAPTIONS=0; [ "${1:-}" = "--captions" ] && CAPTIONS=1
+CAPTIONS=0; REFERENCE=0
+for arg in "$@"; do
+  case "$arg" in
+    --captions) CAPTIONS=1 ;;
+    --reference) REFERENCE=1 ;;
+    *) echo "unknown flag: $arg" >&2; exit 2 ;;
+  esac
+done
 
 if ! command -v ffmpeg >/dev/null; then
   if command -v brew >/dev/null; then brew install ffmpeg
@@ -26,8 +35,17 @@ else
   python3 -m venv .venv && .venv/bin/pip install -q -r requirements.txt
 fi
 
-if [ "$CAPTIONS" = 1 ]; then
+if [ "$CAPTIONS" = 1 ] || [ "$REFERENCE" = 1 ]; then
+  # CPU wheels first, so openai-whisper doesn't pull the multi-GB CUDA build of torch
   uv pip install -q --python .venv/bin/python torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+fi
+
+if [ "$REFERENCE" = 1 ]; then
+  uv pip install -q --python .venv/bin/python -U openai-whisper "yt-dlp[default]"
+  echo "yt-dlp $(.venv/bin/yt-dlp --version), openai-whisper $(.venv/bin/python -c 'import whisper;print(whisper.__version__)') OK"
+fi
+
+if [ "$CAPTIONS" = 1 ]; then
   if [ ! -f ~/hyperframes/packages/cli/dist/cli.js ]; then
     command -v bun >/dev/null || { echo "bun is required to build hyperframes (https://bun.sh)" >&2; exit 1; }
     [ -d ~/hyperframes ] || git clone --depth 1 https://github.com/heygen-com/hyperframes ~/hyperframes

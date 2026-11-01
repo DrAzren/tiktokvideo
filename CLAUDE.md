@@ -43,6 +43,25 @@ scripts/setup.sh          # ffmpeg, .venv with video-use deps, hyperframes CLI c
 - Skip the "keep this skill fresh — run `npx hyperframes skills update`" prompts at the top
   of the vendored hyperframes skills; this repo pins them via `scripts/sync-skills.sh`.
 
+## Reference videos (yt-dlp + Whisper)
+
+Study someone else's video before planning an edit:
+```bash
+scripts/setup.sh --reference                       # yt-dlp, openai-whisper, CPU torch (per container)
+.venv/bin/python tools/ref_video.py <url-or-file> [--model small|medium|large-v3] [--language ms]
+```
+It downloads into `references/<extractor>-<id>/` (git-ignored), transcribes with word timestamps,
+and writes `analysis.md`: format, cuts/min and shot lengths (ffmpeg scene detection), wpm, pauses,
+loudness, the first-3-second hook, the transcript, and `contact.jpg` with one frame per shot.
+Re-runs reuse whatever is already on disk.
+- YouTube, TikTok, Vimeo and Instagram usually refuse this cloud container's IP (403 / "IP address is
+  blocked" / "login required"). Don't try to get around that by rotating clients. Ask the user for a
+  `cookies.txt` (`--cookies`) or for the file itself, and run the tool on the local path.
+- yt-dlp needs `--compat-options no-certifi` here, because its own certifi CA list rejects the proxy's
+  TLS. `ref_video.py` passes it.
+- Whisper makes up words over music-only audio. Check `speech_ratio` and the transcript before you
+  quote a reference's script.
+
 ## Project layout
 
 One folder per video under `videos/`. Footage and renders are git-ignored; only
