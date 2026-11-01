@@ -1,0 +1,39 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+/* TikTok cover, 1080x1920. Everything that matters sits inside the profile-grid crop (3:4, y 240-1680). */
+@font-face{font-family:"Anton";src:url("Anton.woff2") format("woff2");font-display:block}
+@font-face{font-family:"PJS";src:url("PlusJakartaSans-800.woff2") format("woff2");font-weight:800;font-display:block}
+*{box-sizing:border-box}html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#041920}
+#t{position:relative;width:1080px;height:1920px;overflow:hidden;background:#041920}
+#bg{position:absolute;inset:0;width:1080px;height:1920px;object-fit:cover;filter:blur(2px) saturate(.9) brightness(.7);transform:scale(1.06)}
+#tint{position:absolute;inset:0;background:
+  radial-gradient(80% 45% at 50% 62%,rgba(19,128,143,.55) 0%,rgba(14,94,111,0) 70%),
+  linear-gradient(180deg,rgba(4,25,32,.92) 0%,rgba(8,50,60,.72) 30%,rgba(8,50,60,.35) 55%,rgba(4,25,32,.55) 100%)}
+#glow{position:absolute;left:140px;top:700px;width:800px;height:800px;border-radius:50%;background:radial-gradient(circle,rgba(94,234,212,.32) 0%,rgba(94,234,212,0) 62%)}
+.txt{position:absolute;left:0;right:0;text-align:center;font-family:"Anton";text-transform:uppercase;line-height:.92;white-space:nowrap;
+  -webkit-text-stroke:7px rgba(0,0,0,.5);paint-order:stroke fill;text-shadow:0 10px 30px rgba(0,0,0,.6)}
+#a{top:280px;font-size:150px;color:#FFF8EE;letter-spacing:.01em}
+#b{top:420px;font-size:300px;color:#5EEAD4;letter-spacing:.005em}   /* drawn BEHIND the speaker: the hair overlaps its foot */
+#sp{position:absolute;left:0;top:150px;width:1080px;height:1920px;filter:drop-shadow(0 22px 40px rgba(0,0,0,.6))}
+#names{position:absolute;left:0;right:0;top:1494px;display:flex;justify-content:center;gap:14px}
+.n{font-family:"PJS";font-weight:800;font-size:40px;color:#08323C;background:#FFF8EE;padding:12px 24px 10px;border-radius:16px;box-shadow:0 10px 26px rgba(0,0,0,.45)}
+#doc{position:absolute;left:0;right:0;top:1584px;text-align:center}
+#doc span{display:inline-block;font-family:"PJS";font-weight:800;font-size:44px;color:#FFF8EE;background:#0E5E6F;padding:14px 30px 12px;border-radius:18px;
+  border:3px solid rgba(94,234,212,.7);box-shadow:0 12px 30px rgba(0,0,0,.5)}
+#stamp{position:absolute;left:740px;top:660px;white-space:nowrap;font-family:"PJS";font-weight:800;font-size:36px;line-height:1.05;text-align:center;color:#E5484D;background:rgba(255,248,238,.96);
+  border:7px solid #E5484D;border-radius:16px;padding:4px 20px 0;transform:rotate(-8deg);box-shadow:0 10px 30px rgba(0,0,0,.45)}
+</style></head><body><div id="t">
+<img id="bg" src="pills.jpg"><div id="tint"></div><div id="glow"></div>
+<div class="txt" id="a">3 Ubat psikiatri</div>
+<div class="txt" id="b">Buat kurus?</div>
+<img id="sp" src="speaker_clean.png">
+<div id="names"><span class="n">Bupropion</span><span class="n">Topiramate</span><span class="n">Fluoxetine</span></div>
+<div id="doc"><span>Doktor psikiatri jelaskan</span></div>
+<div id="stamp">JANGAN<br>SALAH GUNA</div>
+</div>
+<script>
+// fit each headline line to the 3:4 grid width (960 px usable)
+for (const id of ["a","b"]) { const el=document.getElementById(id); el.style.display="block";
+  const r=document.createRange(); r.selectNodeContents(el); const w=r.getBoundingClientRect().width;
+  if (w>960) el.style.fontSize=(parseFloat(getComputedStyle(el).fontSize)*960/w)+"px"; }
+</script>
+</body></html>

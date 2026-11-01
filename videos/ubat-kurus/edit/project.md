@@ -64,3 +64,13 @@ and CLAUDE.md now find either layout).
 - User review. Switch on TikTok's "AI-generated content" label (the pharmacy clip is AI).
 - Optionally swap the bed for a TikTok-library track in-app.
 - Next recording: lower the wireless-mic gain a few dB.
+
+## Session 1b — 2026-11-01: TikTok cover (`thumb/`)
+
+- 1080×1920 cover, everything readable inside the profile-grid 3:4 crop (y 240–1680; checked with
+  `cover_3x4.png`). Headline "3 UBAT PSIKIATRI / BUAT KURUS?" (Anton, cream + mint), drug-name chips,
+  "Doktor psikiatri jelaskan", red "JANGAN SALAH GUNA" stamp, so the question doesn't read as an endorsement.
+- Speaker = the 82.9 s frame of the cut (direct look, mouth closed), cut out with `hyperframes
+  remove-background`; `clean_matte.py` trims the headrest/window leaks. Background = the Seedance
+  blister-pack frame, blurred and tinted teal.
+- `node shot.cjs` (asserts fonts) → cover.png / cover.jpg / cover_3x4.png.

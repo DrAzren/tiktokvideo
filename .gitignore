@@ -31,3 +31,5 @@ videos/**
 !videos/*/graphics/measure_pages.cjs
 !videos/*/graphics/page_heights.json
 !videos/*/captions/project/transcript.json
+!videos/*/thumb/index.html
+!videos/*/thumb/shot.cjs
