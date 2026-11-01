@@ -68,7 +68,7 @@ and CLAUDE.md now find either layout).
 ## Session 1b — 2026-11-01: TikTok cover (`thumb/`)
 
 - 1080×1920 cover, everything readable inside the profile-grid 3:4 crop (y 240–1680; checked with
-  `cover_3x4.png`). Headline "3 UBAT PSIKIATRI / BUAT KURUS?" (Anton, cream + mint), drug-name chips,
+  `cover_3x4.png`). Headline "3 UBAT PSIKIATRI / BUAT KURUS?" (Anton, cream + mint), no drug names (user request),
   "Doktor psikiatri jelaskan", red "JANGAN SALAH GUNA" stamp, so the question doesn't read as an endorsement.
 - Speaker = the 82.9 s frame of the cut (direct look, mouth closed), cut out with `hyperframes
   remove-background`; `clean_matte.py` trims the headrest/window leaks. Background = the Seedance
