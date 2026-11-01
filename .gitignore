@@ -37,3 +37,4 @@ videos/**
 !videos/*/thumb/*.html
 !videos/*/thumb/*.css
 !videos/*/thumb/*.cjs
+!videos/*/youtube_description.md
