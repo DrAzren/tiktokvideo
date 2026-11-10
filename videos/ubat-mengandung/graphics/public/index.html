@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8" />
+<style>
+@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-500.woff2") format("woff2");font-weight:500;font-style:normal;font-display:block;}@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-700.woff2") format("woff2");font-weight:700;font-style:normal;font-display:block;}@font-face{font-family:"Plus Jakarta Sans";src:url("fonts/PlusJakartaSans-800.woff2") format("woff2");font-weight:800;font-style:normal;font-display:block;}
+* { box-sizing:border-box; }
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; background:#000; font-family:"Plus Jakarta Sans", sans-serif; }
+#stage { position:relative; width:1080px; height:1920px; overflow:hidden; background:#000; }
+.video-wrapper { position:absolute; left:0; top:0; width:1080px; height:1920px; overflow:hidden; }
+.video-wrapper video { width:100%; height:100%; object-fit:cover; }
+
+.card-host { position:absolute; left:0; top:0; width:1080px; height:1920px; pointer-events:none; overflow:hidden; }
+.card { position:relative; width:100%; height:100%; }
+.panel { position:absolute; left:60px; top:140px; width:960px; height:236px; display:flex; gap:28px;
+  align-items:center; background:#FFF8EE; border-radius:32px; padding:22px 32px 22px 22px; opacity:0;
+  box-shadow:0 22px 60px rgba(8,22,30,.32), 0 2px 0 rgba(255,255,255,.6) inset; font-family:'Plus Jakarta Sans', sans-serif; color:#0B1F2A; }
+.badge { width:178px; height:178px; flex:none; border-radius:28px; background:#0E5E6F; color:#fff; display:flex; align-items:baseline;
+  justify-content:center; padding-top:30px; }
+.badge.icon { align-items:center; padding:0; }
+.bn { font-weight:800; font-size:112px; line-height:1; letter-spacing:-.04em; }
+.bd { font-weight:700; font-size:34px; opacity:.75; margin-left:4px; }
+.badge-ico { width:104px; height:104px; }
+.col { flex:1; display:grid; align-self:stretch; align-items:center; }
+.page { grid-area:1/1; opacity:0; }
+.page .el + .el { margin-top:12px; }
+.page .el:has(.brand) { display:inline-block; margin:0 0 0 14px; vertical-align:middle; }
+.dname { display:inline-block; vertical-align:middle; font-weight:800; font-size:60px; line-height:1.04; letter-spacing:-.02em; }
+.dname.sm { font-size:50px; }
+.brand { display:inline-block; font-weight:800; font-size:30px; color:#0E5E6F; background:#E3F4F1; border:2px solid rgba(14,94,111,.25);
+  border-radius:14px; padding:6px 14px 5px; }
+.use { font-weight:700; font-size:36px; color:#33444C; display:flex; align-items:center; gap:14px; }
+.use.big { font-size:42px; color:#0E5E6F; }
+.ulab { font-weight:800; font-size:24px; letter-spacing:.08em; text-transform:uppercase; color:#fff; background:#6B7C85;
+  border-radius:10px; padding:5px 10px 4px; }
+.chip { display:inline-block; color:#fff; font-weight:800; font-size:26px; letter-spacing:.07em; text-transform:uppercase;
+  padding:8px 18px 7px; border-radius:999px; }
+.rrow { display:flex; align-items:center; gap:18px; font-weight:800; font-size:42px; line-height:1.08; }
+.rrow small { display:block; font-weight:700; font-size:28px; color:#5B6A72; margin-top:4px; }
+.rdisc, .disc { width:64px; height:64px; flex:none; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; }
+.ico { width:40px; height:40px; }
+.ins { position:absolute; left:0; top:0; width:1080px; height:1920px; overflow:hidden; pointer-events:none; }
+.ins-in { position:absolute; inset:0; overflow:hidden; }
+.kbv { position:absolute; left:0; top:0; width:1080px; height:1920px; object-fit:cover; transform-origin:50% 45%; }
+.cap-shade { position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.28) 0%, rgba(0,0,0,0) 16%,
+  rgba(0,0,0,0) 62%, rgba(0,0,0,.32) 70%, rgba(0,0,0,.32) 78%, rgba(0,0,0,0) 86%); }
+.ai-tag { position:absolute; left:48px; top:150px; font:700 24px 'Plus Jakarta Sans'; letter-spacing:.08em; text-transform:uppercase;
+  color:rgba(255,255,255,.92); background:rgba(0,0,0,.40); padding:7px 14px 6px; border-radius:10px; }
+.blabel { position:absolute; left:60px; top:210px; width:960px; background:#FFF8EE; border-radius:28px; padding:24px 30px;
+  box-shadow:0 20px 50px rgba(0,0,0,.35); font-family:'Plus Jakarta Sans'; color:#0B1F2A; }
+.bl-t { font-weight:800; font-size:48px; line-height:1.1; margin-top:12px; }
+.mg { position:absolute; inset:0; background:radial-gradient(120% 80% at 80% 10%, #0E5E6F 0%, #08323C 62%, #051E25 100%);
+  font-family:'Plus Jakarta Sans', sans-serif; color:#FFF8EE; }
+.mg .mint { color:#5EEAD4; }
+.head { position:absolute; left:80px; top:200px; width:920px; }
+.mg-chip { display:inline-flex; align-items:center; gap:10px; font-weight:800; font-size:30px; letter-spacing:.08em; text-transform:uppercase;
+  padding:10px 22px 9px; border-radius:999px; background:#5EEAD4; color:#08323C; }
+.mg-chip.red { background:#E5484D; color:#fff; }
+.chip-ico { width:34px; height:34px; }
+.mg-title { font-weight:800; font-size:92px; line-height:1.02; letter-spacing:-.025em; margin-top:22px; }
+.mg-title.sm { font-size:64px; }
+.mg-title.center { position:absolute; left:0; right:0; text-align:center; margin:0; font-size:104px; }
+.hookline { position:absolute; left:80px; font-weight:800; font-size:64px; color:rgba(255,248,238,.88); }
+.hookline.sm { font-size:46px; color:rgba(255,248,238,.7); }
+.hookline .big { font-size:112px; letter-spacing:-.03em; }
+.hl { color:#fff; background:linear-gradient(#E5484D,#E5484D) left 88%/100% 18px no-repeat; padding:0 6px; }
+.pills { position:absolute; left:80px; width:920px; display:flex; flex-direction:column; gap:22px; }
+.pill2 { display:flex; align-items:center; gap:24px; height:116px; padding:0 34px 0 22px; border-radius:60px; background:#FFF8EE;
+  color:#0B1F2A; font-weight:800; font-size:50px; box-shadow:0 14px 34px rgba(0,0,0,.3); width:max-content; }
+.pill2.center { position:absolute; left:50%; transform:translateX(-50%); }
+.pdisc { width:76px; height:76px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; flex:none; }
+.pdisc .ico { width:48px; height:48px; }
+.on-mint .ico g { stroke:#08323C; }
+.tile { position:absolute; width:450px; height:128px; display:flex; align-items:center; gap:20px; padding:0 24px; border-radius:24px;
+  background:#FFF8EE; color:#0B1F2A; font-weight:800; font-size:38px; box-shadow:0 12px 30px rgba(0,0,0,.28); }
+.tnum { width:64px; height:64px; flex:none; border-radius:50%; background:#0E5E6F; color:#fff; font-size:34px; display:inline-flex;
+  align-items:center; justify-content:center; }
+.bigx { position:absolute; left:0; right:0; text-align:center; }
+.stamp-lg { display:inline-block; transform:rotate(-7deg); border:9px solid #E5484D; color:#E5484D; border-radius:20px; font-weight:800;
+  font-size:84px; letter-spacing:.03em; padding:10px 30px 4px; background:rgba(255,248,238,.95); box-shadow:0 20px 60px rgba(0,0,0,.45); }
+.stamp-lg.one { font-size:66px; white-space:nowrap; padding:8px 26px 2px; }
+.bigdisc { position:absolute; left:50%; top:440px; width:300px; height:300px; margin-left:-150px; border-radius:50%; background:#0E5E6F;
+  display:flex; align-items:center; justify-content:center; box-shadow:0 0 0 22px rgba(94,234,212,.18); }
+.big-ico { width:170px; height:170px; }
+.arrow { position:absolute; left:50%; width:48px; height:90px; margin-left:-24px; }
+
+</style>
+</head>
+<body>
+<div id="stage" data-composition-id="talking-head-recut" data-start="0" data-duration="137.7" data-fps="30" data-width="1080" data-height="1920">
+  <div class="video-wrapper" id="video-wrap">
+    <video id="bg-video" class="clip" src="input-video.mp4" muted playsinline data-start="0" data-duration="137.7" data-track-index="1"></video>
+  </div>
+  <audio id="source-audio" src="input-video.mp4" data-start="0" data-duration="137.7" data-track-index="10" data-volume="1"></audio>
+  <div id="card-c-intro" class="card-host clip" data-card-id="c-intro" data-start="7.7" data-duration="2.3333" data-track-index="2"><div class="card" data-card-id="c-intro"><div class="panel" id="c-intro-panel"><div class="badge icon"><svg viewBox="0 0 48 48" class="badge-ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M13 6v11a8 8 0 0 0 16 0V6"/><path d="M21 25v5a9 9 0 0 0 18 0v-4"/><circle cx="39" cy="23" r="3.5"/></g></svg></div><div class="col"><div class="page" id="c-intro-page0"><div id="c-intro-t" class="el"><div class="dname">Dr Azren</div></div><div id="c-intro-u" class="el"><div class="use big">Doktor Psikiatri</div></div></div></div></div></div></div>
+  <div id="card-d01" class="card-host clip" data-card-id="d01" data-start="19.4667" data-duration="12.0666" data-track-index="2"><div class="card" data-card-id="d01"><div class="panel" id="d01-panel"><div class="badge"><span class="bn">1</span><span class="bd">/10</span></div><div class="col"><div class="page" id="d01-page0"><div id="d01-name" class="el"><div class="dname">Sodium Valproate</div></div><div id="d01-brand" class="el"><span class="brand">Epilim</span></div><div id="d01-use" class="el"><div class="use"><span class="ulab">Untuk</span>Sawan · Bipolar</div></div></div><div class="page" id="d01-page1"><div id="d01-rk" class="el"><span class="chip" style="background:#E5484D">Risiko kepada bayi</span></div><div id="d01-r0" class="el"><div class="rrow"><span class="rdisc" style="background:#E5484D"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M21 9a6 6 0 0 0-9 4 6 6 0 0 0-4 10 6 6 0 0 0 3 9 6 6 0 0 0 10 6z"/><path d="M27 9a6 6 0 0 1 9 4 6 6 0 0 1 4 10 6 6 0 0 1-3 9 6 6 0 0 1-10 6z"/></g></svg></span><span>Kecacatan otak &amp; sistem saraf</span></div></div></div></div></div></div></div>
+  <div id="card-d02" class="card-host clip" data-card-id="d02" data-start="31.5333" data-duration="10.8" data-track-index="2"><div class="card" data-card-id="d02"><div class="panel" id="d02-panel"><div class="badge"><span class="bn">2</span><span class="bd">/10</span></div><div class="col"><div class="page" id="d02-page0"><div id="d02-name" class="el"><div class="dname">Litium</div></div><div id="d02-use" class="el"><div class="use"><span class="ulab">Untuk</span>Bipolar</div></div></div><div class="page" id="d02-page1"><div id="d02-rk" class="el"><span class="chip" style="background:#E5484D">Risiko kepada bayi</span></div><div id="d02-r0" class="el"><div class="rrow"><span class="rdisc" style="background:#E5484D"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 40S7 30 7 18a8.5 8.5 0 0 1 17-3 8.5 8.5 0 0 1 17 3c0 12-17 22-17 22z"/><path d="M12 24h7l3-5 4 9 3-4h7"/></g></svg></span><span>Masalah jantung bayi</span></div></div></div><div class="page" id="d02-page2"><div id="d02-ok" class="el"><span class="chip" style="background:#0E5E6F">Boleh guna, tapi…</span></div><div id="d02-x" class="el"><div class="rrow"><span class="disc" style="background:#0E5E6F"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M4 24s7-12 20-12 20 12 20 12-7 12-20 12S4 24 4 24z"/><circle cx="24" cy="24" r="5.5"/></g></svg></span><span>Perlu pemantauan rapi doktor</span></div></div></div></div></div></div></div>
+  <div id="card-d03" class="card-host clip" data-card-id="d03" data-start="42.3667" data-duration="7.7" data-track-index="2"><div class="card" data-card-id="d03"><div class="panel" id="d03-panel"><div class="badge"><span class="bn">3</span><span class="bd">/10</span></div><div class="col"><div class="page" id="d03-page0"><div id="d03-name" class="el"><div class="dname">Carbamazepine</div></div><div id="d03-use" class="el"><div class="use"><span class="ulab">Untuk</span>Bipolar · Sawan</div></div></div><div class="page" id="d03-page1"><div id="d03-rk" class="el"><span class="chip" style="background:#E5484D">Risiko kepada bayi</span></div><div id="d03-r0" class="el"><div class="rrow"><span class="rdisc" style="background:#E5484D"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="16" y="5" width="16" height="7" rx="3.5"/><rect x="16" y="16" width="16" height="7" rx="3.5"/><rect x="16" y="27" width="16" height="7" rx="3.5"/><path d="M24 38v6"/></g></svg></span><span>Neural tube defect<br/><small>kecacatan saraf tunjang</small></span></div></div></div></div></div></div></div>
+  <div id="card-d04" class="card-host clip" data-card-id="d04" data-start="50.0667" data-duration="8.4333" data-track-index="2"><div class="card" data-card-id="d04"><div class="panel" id="d04-panel"><div class="badge"><span class="bn">4</span><span class="bd">/10</span></div><div class="col"><div class="page" id="d04-page0"><div id="d04-name" class="el"><div class="dname">Paroxetine</div></div><div id="d04-brand" class="el"><span class="brand">Antidepresan</span></div><div id="d04-use" class="el"><div class="use"><span class="ulab">Untuk</span>Depresi · Anxiety</div></div></div><div class="page" id="d04-page1"><div id="d04-rk" class="el"><span class="chip" style="background:#E5484D">Risiko kepada bayi</span></div><div id="d04-r0" class="el"><div class="rrow"><span class="rdisc" style="background:#E5484D"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 40S7 30 7 18a8.5 8.5 0 0 1 17-3 8.5 8.5 0 0 1 17 3c0 12-17 22-17 22z"/><path d="M12 24h7l3-5 4 9 3-4h7"/></g></svg></span><span>Kecacatan jantung bayi</span></div></div></div></div></div></div></div>
+  <div id="card-d05" class="card-host clip" data-card-id="d05" data-start="58.5333" data-duration="12.4" data-track-index="2"><div class="card" data-card-id="d05"><div class="panel" id="d05-panel"><div class="badge"><span class="bn">5</span><span class="bd">/10</span></div><div class="col"><div class="page" id="d05-page0"><div id="d05-name" class="el"><div class="dname">Alprazolam</div></div><div id="d05-brand" class="el"><span class="brand">Xanax</span></div><div id="d05-use" class="el"><div class="use"><span class="ulab">Untuk</span>Anxiety · Panic attack</div></div></div><div class="page" id="d05-page1"><div id="d05-rk" class="el"><span class="chip" style="background:#E5484D">Risiko kepada bayi</span></div><div id="d05-r0" class="el"><div class="rrow"><span class="rdisc" style="background:#E5484D"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="24" cy="15" r="8"/><path d="M21 14h.01M27 14h.01M21.5 18.5c1.5 1.3 3.5 1.3 5 0"/><path d="M11 42c0-8 6-13 13-13s13 5 13 13"/></g></svg></span><span>Bayi lemah</span></div></div></div></div></div></div></div>
+  <div id="card-d06" class="card-host clip" data-card-id="d06" data-start="70.9667" data-duration="9.2666" data-track-index="2"><div class="card" data-card-id="d06"><div class="panel" id="d06-panel"><div class="badge"><span class="bn">6</span><span class="bd">/10</span></div><div class="col"><div class="page" id="d06-page0"><div id="d06-name" class="el"><div class="dname">Diazepam</div></div><div id="d06-brand" class="el"><span class="brand">Valium</span></div><div id="d06-use" class="el"><div class="use"><span class="ulab">Untuk</span>Anxiety · Otot · Sawan</div></div></div><div class="page" id="d06-page1"><div id="d06-rk" class="el"><span class="chip" style="background:#E5484D">Risiko kepada bayi</span></div><div id="d06-r0" class="el"><div class="rrow"><span class="rdisc" style="background:#E5484D"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="24" cy="15" r="8"/><path d="M21 14h.01M27 14h.01M21.5 18.5c1.5 1.3 3.5 1.3 5 0"/><path d="M11 42c0-8 6-13 13-13s13 5 13 13"/></g></svg></span><span>Floppy baby syndrome<br/><small>bayi lembik, otot lemah</small></span></div></div></div></div></div></div></div>
+  <div id="card-d07" class="card-host clip" data-card-id="d07" data-start="80.2333" data-duration="7.0667" data-track-index="2"><div class="card" data-card-id="d07"><div class="panel" id="d07-panel"><div class="badge"><span class="bn">7</span><span class="bd">/10</span></div><div class="col"><div class="page" id="d07-page0"><div id="d07-name" class="el"><div class="dname">Clonazepam</div></div><div id="d07-use" class="el"><div class="use"><span class="ulab">Untuk</span>Anxiety · Sawan</div></div></div><div class="page" id="d07-page1"><div id="d07-rk" class="el"><span class="chip" style="background:#E5484D">Risiko kepada bayi</span></div><div id="d07-r0" class="el"><div class="rrow"><span class="rdisc" style="background:#E5484D"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M33 31A13 13 0 0 1 19 10a14 14 0 1 0 14 21z"/><path d="M31 8h7l-7 8h7"/></g></svg></span><span>Sedasi pada bayi<br/><small>bayi terlalu mengantuk</small></span></div></div></div></div></div></div></div>
+  <div id="card-d08" class="card-host clip" data-card-id="d08" data-start="87.3333" data-duration="10.4" data-track-index="2"><div class="card" data-card-id="d08"><div class="panel" id="d08-panel"><div class="badge"><span class="bn">8</span><span class="bd">/10</span></div><div class="col"><div class="page" id="d08-page0"><div id="d08-name" class="el"><div class="dname">Topiramate</div></div><div id="d08-use" class="el"><div class="use"><span class="ulab">Untuk</span>Sawan · Migrain</div></div></div><div class="page" id="d08-page1"><div id="d08-rk" class="el"><span class="chip" style="background:#E5484D">Risiko kepada bayi</span></div><div id="d08-r0" class="el"><div class="rrow"><span class="rdisc" style="background:#E5484D"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M5 24c5-7 10-9 14-6 2 1.5 3 1.5 5 0 4-3 9-1 14 6-5 8-11 11-19 11S10 32 5 24z"/><path d="M5 24h34"/><path d="M24 12v8" stroke-dasharray="2 3"/></g></svg></span><span>Bibir &amp; lelangit sumbing</span></div></div></div></div></div></div></div>
+  <div id="card-d09" class="card-host clip" data-card-id="d09" data-start="97.7667" data-duration="12.9666" data-track-index="2"><div class="card" data-card-id="d09"><div class="panel" id="d09-panel"><div class="badge"><span class="bn">9</span><span class="bd">/10</span></div><div class="col"><div class="page" id="d09-page0"><div id="d09-name" class="el"><div class="dname">Risperidone</div></div><div id="d09-use" class="el"><div class="use"><span class="ulab">Untuk</span>Skizofrenia · Bipolar · Agresif</div></div></div><div class="page" id="d09-page1"><div id="d09-rk" class="el"><span class="chip" style="background:#E5484D">Risiko kepada bayi</span></div><div id="d09-r0" class="el"><div class="rrow"><span class="rdisc" style="background:#E5484D"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 6s-12 13-12 22a12 12 0 0 0 24 0C36 19 24 6 24 6z"/><path d="M18 29a6 6 0 0 0 6 6"/></g></svg></span><span>Kesan hormon &amp; metabolik</span></div></div></div><div class="page" id="d09-page2"><div id="d09-ok" class="el"><span class="chip" style="background:#0E5E6F">Boleh guna, tapi…</span></div><div id="d09-x" class="el"><div class="rrow"><span class="disc" style="background:#0E5E6F"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M4 24s7-12 20-12 20 12 20 12-7 12-20 12S4 24 4 24z"/><circle cx="24" cy="24" r="5.5"/></g></svg></span><span>Perlu pemantauan rapi doktor</span></div></div></div></div></div></div></div>
+  <div id="card-d10" class="card-host clip" data-card-id="d10" data-start="110.7667" data-duration="10.2" data-track-index="2"><div class="card" data-card-id="d10"><div class="panel" id="d10-panel"><div class="badge"><span class="bn">10</span><span class="bd">/10</span></div><div class="col"><div class="page" id="d10-page0"><div id="d10-name" class="el"><div class="dname">Olanzapine</div></div><div id="d10-use" class="el"><div class="use"><span class="ulab">Untuk</span>Skizofrenia · Bipolar</div></div></div><div class="page" id="d10-page1"><div id="d10-rk" class="el"><span class="chip" style="background:#E5484D">Risiko kepada bayi</span></div><div id="d10-r0" class="el"><div class="rrow"><span class="rdisc" style="background:#E5484D"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M9 41h30l-4-23H13z"/><circle cx="24" cy="11" r="5"/><path d="M24 26v6"/></g></svg></span><span>Berat bayi jadi besar</span></div></div><div id="d10-r1" class="el"><div class="rrow"><span class="rdisc" style="background:#E5484D"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 6s-12 13-12 22a12 12 0 0 0 24 0C36 19 24 6 24 6z"/><path d="M18 29a6 6 0 0 0 6 6"/></g></svg></span><span>Masalah metabolik</span></div></div></div></div></div></div></div>
+  <div id="card-c-hamil" class="card-host clip" data-card-id="c-hamil" data-start="128.6333" data-duration="2.4334" data-track-index="2"><div class="card" data-card-id="c-hamil"><div class="panel" id="c-hamil-panel"><div class="badge icon"><svg viewBox="0 0 48 48" class="badge-ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="22" cy="8" r="4.5"/><path d="M19 15c-3 5-3 10 0 14l-2 14M24 15c2 2 3 5 2 7 7 1 10 6 8 11-2 4-7 5-10 3l1 7"/></g></svg></div><div class="col"><div class="page" id="c-hamil-page0"><div id="c-hamil-t" class="el"><div class="dname sm">Sedang hamil<br/>atau plan hamil?</div></div></div></div></div></div></div>
+  <div id="card-c-end" class="card-host clip" data-card-id="c-end" data-start="134.4" data-duration="3.3" data-track-index="2"><div class="card" data-card-id="c-end"><div class="panel" id="c-end-panel"><div class="badge icon"><svg viewBox="0 0 48 48" class="badge-ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M7 9h34v22H22l-9 8v-8H7z"/><path d="M15 18h18M15 24h11"/></g></svg></div><div class="col"><div class="page" id="c-end-page0"><div id="c-end-k" class="el"><span class="chip" style="background:#0E5E6F">Ada soalan?</span></div><div id="c-end-t" class="el"><div class="dname">Tanya di komen</div></div></div></div></div></div></div>
+  <div id="ins-m0-hook" class="ins clip" data-start="2.1333" data-duration="5.5334" data-track-index="5" style="z-index:20"><div class="ins-in" id="m0-hook-in"><div class="mg">
+      <div class="head"><div class="mg-chip red" id="m0-c"><svg viewBox="0 0 48 48" class="chip-ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M24 6L4 41h40z"/><path d="M24 18v11M24 35v.01"/></g></svg> Amaran</div>
+        <div class="mg-title" id="m0-t">10 Ubat Psikiatri</div></div>
+      <div class="hookline" id="m0-a" style="top:560px">Perlu <span class="mint big">berhati-hati</span></div>
+      <div class="hookline" id="m0-b" style="top:720px">atau <span class="hl big">elakkan</span></div>
+      <div class="hookline sm" id="m0-w" style="top:900px">ketika anda…</div>
+      <div class="pills" style="top:1010px">
+        <div class="pill2" id="m0-p1"><span class="pdisc on-mint" style="background:#5EEAD4"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><circle cx="22" cy="8" r="4.5"/><path d="M19 15c-3 5-3 10 0 14l-2 14M24 15c2 2 3 5 2 7 7 1 10 6 8 11-2 4-7 5-10 3l1 7"/></g></svg></span><span>Sedang hamil</span></div>
+        <div class="pill2" id="m0-p2"><span class="pdisc on-mint" style="background:#5EEAD4"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><rect x="7" y="10" width="34" height="31" rx="5"/><path d="M7 19h34M16 6v8M32 6v8M17 29l5 5 9-9"/></g></svg></span><span>Plan hamil</span></div></div></div></div></div>
+  <div id="ins-m1-recap" class="ins clip" data-start="120.9333" data-duration="3.1334" data-track-index="6" style="z-index:21"><div class="ins-in" id="m1-recap-in"><div class="mg">
+      <div class="head"><div class="mg-chip" id="m1-c">Ringkasan</div>
+        <div class="mg-title sm" id="m1-t">10 ubat yang perlu berhati-hati</div></div>
+      <div class="tile" id="m1-g0" style="left:80px; top:410px"><span class="tnum">1</span><span>Sodium Valproate</span></div><div class="tile" id="m1-g1" style="left:550px; top:410px"><span class="tnum">2</span><span>Litium</span></div><div class="tile" id="m1-g2" style="left:80px; top:556px"><span class="tnum">3</span><span>Carbamazepine</span></div><div class="tile" id="m1-g3" style="left:550px; top:556px"><span class="tnum">4</span><span>Paroxetine</span></div><div class="tile" id="m1-g4" style="left:80px; top:702px"><span class="tnum">5</span><span>Alprazolam</span></div><div class="tile" id="m1-g5" style="left:550px; top:702px"><span class="tnum">6</span><span>Diazepam</span></div><div class="tile" id="m1-g6" style="left:80px; top:848px"><span class="tnum">7</span><span>Clonazepam</span></div><div class="tile" id="m1-g7" style="left:550px; top:848px"><span class="tnum">8</span><span>Topiramate</span></div><div class="tile" id="m1-g8" style="left:80px; top:994px"><span class="tnum">9</span><span>Risperidone</span></div><div class="tile" id="m1-g9" style="left:550px; top:994px"><span class="tnum">10</span><span>Olanzapine</span></div>
+      <div class="bigx" id="m1-x" style="top:1135px"><div class="stamp-lg one">BUKAN 100% DILARANG</div></div></div></div></div>
+  <div id="ins-m2-doktor" class="ins clip" data-start="131.0" data-duration="3.5667" data-track-index="5" style="z-index:22"><div class="ins-in" id="m2-doktor-in"><div class="mg">
+      <div class="head"><div class="mg-chip" id="m2-c">Penting</div></div>
+      <div class="bigdisc" id="m2-d"><svg viewBox="0 0 48 48" class="big-ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M13 6v11a8 8 0 0 0 16 0V6"/><path d="M21 25v5a9 9 0 0 0 18 0v-4"/><circle cx="39" cy="23" r="3.5"/></g></svg></div>
+      <div class="mg-title center" id="m2-t" style="top:820px">Beritahu<br/><span class="mint">doktor anda</span></div>
+      <svg class="arrow" id="m2-a" viewBox="0 0 48 90" style="top:1090px"><path d="M24 4v76M8 64l16 18 16-18" stroke="#5EEAD4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      <div class="pill2 center" id="m2-p" style="top:1210px"><span class="pdisc" style="background:#0E5E6F"><svg viewBox="0 0 48 48" class="ico"><g stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M4 24s7-12 20-12 20 12 20 12-7 12-20 12S4 24 4 24z"/><circle cx="24" cy="24" r="5.5"/></g></svg></span><span>Pemantauan rapi</span></div></div></div></div>
+  <script src="vendor/gsap.min.js"></script>
+  <script>
+  (function () {
+    const tl = window.gsap.timeline({ paused: true });
+    // c-intro: Name tag  7.70-10.03
+    tl.fromTo('#c-intro-panel', {opacity:0, y:-30, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.42, ease:'power3.out'}, 7.7);
+    tl.fromTo('#c-intro-panel .badge', {scale:0.4, rotate:-12}, {scale:1, rotate:0, duration:0.45, ease:'back.out(2)'}, 7.75);
+    tl.set('#c-intro-page0', {opacity:1}, 7.7);
+    tl.fromTo('#c-intro-t', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 8.5);
+    tl.fromTo('#c-intro-u', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 9.2667);
+    tl.to('#c-intro-panel', {opacity:0, y:-20, duration:0.28, ease:'power2.in'}, 9.7533);
+    // d01: #1 Sodium Valproate  19.47-31.53
+    tl.fromTo('#d01-panel', {opacity:0, y:-30, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.42, ease:'power3.out'}, 19.4667);
+    tl.fromTo('#d01-panel .badge', {scale:0.4, rotate:-12}, {scale:1, rotate:0, duration:0.45, ease:'back.out(2)'}, 19.517);
+    tl.set('#d01-page0', {opacity:1}, 19.4667);
+    tl.fromTo('#d01-name', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 20.6);
+    tl.fromTo('#d01-brand', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 22.0);
+    tl.fromTo('#d01-use', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 24.1333);
+    tl.to('#d01-page0', {opacity:0, y:-16, duration:0.26, ease:'power2.in'}, 26.107);
+    tl.fromTo('#d01-page1', {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:'power3.out'}, 26.3667);
+    tl.fromTo('#d01-rk', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 26.4333);
+    tl.fromTo('#d01-r0', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 28.6);
+    tl.to('#d01-panel', {opacity:0, y:-20, duration:0.28, ease:'power2.in'}, 31.2533);
+    // d02: #2 Litium  31.53-42.33
+    tl.fromTo('#d02-panel', {opacity:0, y:-30, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.42, ease:'power3.out'}, 31.5333);
+    tl.fromTo('#d02-panel .badge', {scale:0.4, rotate:-12}, {scale:1, rotate:0, duration:0.45, ease:'back.out(2)'}, 31.583);
+    tl.set('#d02-page0', {opacity:1}, 31.5333);
+    tl.fromTo('#d02-name', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 32.2667);
+    tl.fromTo('#d02-use', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 33.5333);
+    tl.to('#d02-page0', {opacity:0, y:-16, duration:0.26, ease:'power2.in'}, 34.607);
+    tl.fromTo('#d02-page1', {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:'power3.out'}, 34.8667);
+    tl.fromTo('#d02-rk', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 34.9333);
+    tl.fromTo('#d02-r0', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 36.1333);
+    tl.to('#d02-page1', {opacity:0, y:-16, duration:0.26, ease:'power2.in'}, 37.64);
+    tl.fromTo('#d02-page2', {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:'power3.out'}, 37.9);
+    tl.fromTo('#d02-ok', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 37.9667);
+    tl.fromTo('#d02-x', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 38.1);
+    tl.to('#d02-panel', {opacity:0, y:-20, duration:0.28, ease:'power2.in'}, 42.0533);
+    // d03: #3 Carbamazepine  42.37-50.07
+    tl.fromTo('#d03-panel', {opacity:0, y:-30, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.42, ease:'power3.out'}, 42.3667);
+    tl.fromTo('#d03-panel .badge', {scale:0.4, rotate:-12}, {scale:1, rotate:0, duration:0.45, ease:'back.out(2)'}, 42.417);
+    tl.set('#d03-page0', {opacity:1}, 42.3667);
+    tl.fromTo('#d03-name', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 43.2);
+    tl.fromTo('#d03-use', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 45.2);
+    tl.to('#d03-page0', {opacity:0, y:-16, duration:0.26, ease:'power2.in'}, 47.907);
+    tl.fromTo('#d03-page1', {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:'power3.out'}, 48.1667);
+    tl.fromTo('#d03-rk', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 48.2333);
+    tl.fromTo('#d03-r0', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 48.8333);
+    tl.to('#d03-panel', {opacity:0, y:-20, duration:0.28, ease:'power2.in'}, 49.7867);
+    // d04: #4 Paroxetine  50.07-58.50
+    tl.fromTo('#d04-panel', {opacity:0, y:-30, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.42, ease:'power3.out'}, 50.0667);
+    tl.fromTo('#d04-panel .badge', {scale:0.4, rotate:-12}, {scale:1, rotate:0, duration:0.45, ease:'back.out(2)'}, 50.117);
+    tl.set('#d04-page0', {opacity:1}, 50.0667);
+    tl.fromTo('#d04-name', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 50.8667);
+    tl.fromTo('#d04-brand', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 52.6667);
+    tl.fromTo('#d04-use', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 54.4667);
+    tl.to('#d04-page0', {opacity:0, y:-16, duration:0.26, ease:'power2.in'}, 55.373);
+    tl.fromTo('#d04-page1', {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:'power3.out'}, 55.6333);
+    tl.fromTo('#d04-rk', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 55.6667);
+    tl.fromTo('#d04-r0', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 57.0333);
+    tl.to('#d04-panel', {opacity:0, y:-20, duration:0.28, ease:'power2.in'}, 58.22);
+    // d05: #5 Alprazolam  58.53-70.93
+    tl.fromTo('#d05-panel', {opacity:0, y:-30, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.42, ease:'power3.out'}, 58.5333);
+    tl.fromTo('#d05-panel .badge', {scale:0.4, rotate:-12}, {scale:1, rotate:0, duration:0.45, ease:'back.out(2)'}, 58.583);
+    tl.set('#d05-page0', {opacity:1}, 58.5333);
+    tl.fromTo('#d05-name', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 59.5333);
+    tl.fromTo('#d05-brand', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 60.7667);
+    tl.fromTo('#d05-use', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 62.9);
+    tl.to('#d05-page0', {opacity:0, y:-16, duration:0.26, ease:'power2.in'}, 65.073);
+    tl.fromTo('#d05-page1', {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:'power3.out'}, 65.3333);
+    tl.fromTo('#d05-rk', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 65.3667);
+    tl.fromTo('#d05-r0', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 66.0);
+    tl.to('#d05-panel', {opacity:0, y:-20, duration:0.28, ease:'power2.in'}, 70.6533);
+    // d06: #6 Diazepam  70.97-80.23
+    tl.fromTo('#d06-panel', {opacity:0, y:-30, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.42, ease:'power3.out'}, 70.9667);
+    tl.fromTo('#d06-panel .badge', {scale:0.4, rotate:-12}, {scale:1, rotate:0, duration:0.45, ease:'back.out(2)'}, 71.017);
+    tl.set('#d06-page0', {opacity:1}, 70.9667);
+    tl.fromTo('#d06-name', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 71.7667);
+    tl.fromTo('#d06-brand', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 72.7667);
+    tl.fromTo('#d06-use', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 74.9);
+    tl.to('#d06-page0', {opacity:0, y:-16, duration:0.26, ease:'power2.in'}, 78.04);
+    tl.fromTo('#d06-page1', {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:'power3.out'}, 78.3);
+    tl.fromTo('#d06-rk', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 78.3667);
+    tl.fromTo('#d06-r0', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 78.9);
+    tl.to('#d06-panel', {opacity:0, y:-20, duration:0.28, ease:'power2.in'}, 79.9533);
+    // d07: #7 Clonazepam  80.23-87.30
+    tl.fromTo('#d07-panel', {opacity:0, y:-30, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.42, ease:'power3.out'}, 80.2333);
+    tl.fromTo('#d07-panel .badge', {scale:0.4, rotate:-12}, {scale:1, rotate:0, duration:0.45, ease:'back.out(2)'}, 80.283);
+    tl.set('#d07-page0', {opacity:1}, 80.2333);
+    tl.fromTo('#d07-name', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 81.2);
+    tl.fromTo('#d07-use', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 83.7333);
+    tl.to('#d07-page0', {opacity:0, y:-16, duration:0.26, ease:'power2.in'}, 84.873);
+    tl.fromTo('#d07-page1', {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:'power3.out'}, 85.1333);
+    tl.fromTo('#d07-rk', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 85.2);
+    tl.fromTo('#d07-r0', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 85.9333);
+    tl.to('#d07-panel', {opacity:0, y:-20, duration:0.28, ease:'power2.in'}, 87.02);
+    // d08: #8 Topiramate  87.33-97.73
+    tl.fromTo('#d08-panel', {opacity:0, y:-30, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.42, ease:'power3.out'}, 87.3333);
+    tl.fromTo('#d08-panel .badge', {scale:0.4, rotate:-12}, {scale:1, rotate:0, duration:0.45, ease:'back.out(2)'}, 87.383);
+    tl.set('#d08-page0', {opacity:1}, 87.3333);
+    tl.fromTo('#d08-name', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 88.0333);
+    tl.fromTo('#d08-use', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 88.8);
+    tl.to('#d08-page0', {opacity:0, y:-16, duration:0.26, ease:'power2.in'}, 94.507);
+    tl.fromTo('#d08-page1', {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:'power3.out'}, 94.7667);
+    tl.fromTo('#d08-rk', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 94.8);
+    tl.fromTo('#d08-r0', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 95.4);
+    tl.to('#d08-panel', {opacity:0, y:-20, duration:0.28, ease:'power2.in'}, 97.4533);
+    // d09: #9 Risperidone  97.77-110.73
+    tl.fromTo('#d09-panel', {opacity:0, y:-30, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.42, ease:'power3.out'}, 97.7667);
+    tl.fromTo('#d09-panel .badge', {scale:0.4, rotate:-12}, {scale:1, rotate:0, duration:0.45, ease:'back.out(2)'}, 97.817);
+    tl.set('#d09-page0', {opacity:1}, 97.7667);
+    tl.fromTo('#d09-name', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 98.7667);
+    tl.fromTo('#d09-use', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 101.9333);
+    tl.to('#d09-page0', {opacity:0, y:-16, duration:0.26, ease:'power2.in'}, 104.307);
+    tl.fromTo('#d09-page1', {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:'power3.out'}, 104.5667);
+    tl.fromTo('#d09-rk', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 104.6);
+    tl.fromTo('#d09-r0', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 105.1333);
+    tl.to('#d09-page1', {opacity:0, y:-16, duration:0.26, ease:'power2.in'}, 108.507);
+    tl.fromTo('#d09-page2', {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:'power3.out'}, 108.7667);
+    tl.fromTo('#d09-ok', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 108.8333);
+    tl.fromTo('#d09-x', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 108.9333);
+    tl.to('#d09-panel', {opacity:0, y:-20, duration:0.28, ease:'power2.in'}, 110.4533);
+    // d10: #10 Olanzapine  110.77-120.97
+    tl.fromTo('#d10-panel', {opacity:0, y:-30, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.42, ease:'power3.out'}, 110.7667);
+    tl.fromTo('#d10-panel .badge', {scale:0.4, rotate:-12}, {scale:1, rotate:0, duration:0.45, ease:'back.out(2)'}, 110.817);
+    tl.set('#d10-page0', {opacity:1}, 110.7667);
+    tl.fromTo('#d10-name', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 111.6667);
+    tl.fromTo('#d10-use', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 113.5667);
+    tl.to('#d10-page0', {opacity:0, y:-16, duration:0.26, ease:'power2.in'}, 115.173);
+    tl.fromTo('#d10-page1', {opacity:0, y:16}, {opacity:1, y:0, duration:0.3, ease:'power3.out'}, 115.4333);
+    tl.fromTo('#d10-rk', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 115.5);
+    tl.fromTo('#d10-r0', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 116.2667);
+    tl.fromTo('#d10-r1', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 118.8333);
+    tl.to('#d10-panel', {opacity:0, y:-20, duration:0.28, ease:'power2.in'}, 120.6867);
+    // c-hamil: Pregnant or planning  128.63-131.07
+    tl.fromTo('#c-hamil-panel', {opacity:0, y:-30, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.42, ease:'power3.out'}, 128.6333);
+    tl.fromTo('#c-hamil-panel .badge', {scale:0.4, rotate:-12}, {scale:1, rotate:0, duration:0.45, ease:'back.out(2)'}, 128.683);
+    tl.set('#c-hamil-page0', {opacity:1}, 128.6333);
+    tl.fromTo('#c-hamil-t', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 128.6667);
+    tl.to('#c-hamil-panel', {opacity:0, y:-20, duration:0.28, ease:'power2.in'}, 130.7867);
+    // c-end: CTA: ask in the comments  134.40-137.70
+    tl.fromTo('#c-end-panel', {opacity:0, y:-30, scale:0.97}, {opacity:1, y:0, scale:1, duration:0.42, ease:'power3.out'}, 134.4);
+    tl.fromTo('#c-end-panel .badge', {scale:0.4, rotate:-12}, {scale:1, rotate:0, duration:0.45, ease:'back.out(2)'}, 134.45);
+    tl.set('#c-end-page0', {opacity:1}, 134.4);
+    tl.fromTo('#c-end-k', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 134.4667);
+    tl.fromTo('#c-end-t', {opacity:0, x:-40}, {opacity:1, x:0, duration:0.38, ease:'power3.out'}, 135.1667);
+    // insert m0-hook (mg) 2.13-7.67s
+    tl.fromTo('#m0-hook-in', {clipPath:'inset(100% 0% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.42, ease:'power3.inOut'}, 2.1333);
+    tl.fromTo('#m0-c', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 2.253);
+    tl.fromTo('#m0-t', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 2.253);
+    tl.fromTo('#m0-a', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 2.253);
+    tl.fromTo('#m0-b', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 3.952);
+    tl.fromTo('#m0-w', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 4.806);
+    tl.fromTo('#m0-p1', {opacity:0, x:90}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 5.347);
+    tl.fromTo('#m0-p2', {opacity:0, x:90}, {opacity:1, x:0, duration:0.4, ease:'power3.out'}, 6.696);
+    tl.to('#m0-hook-in', {opacity:0, duration:0.22, ease:'power2.in'}, 7.447);
+    // insert m1-recap (mg) 120.93-124.07s
+    tl.fromTo('#m1-recap-in', {clipPath:'inset(100% 0% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.42, ease:'power3.inOut'}, 120.9333);
+    tl.fromTo('#m1-c', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 121.053);
+    tl.fromTo('#m1-t', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 121.053);
+    tl.fromTo('#m1-g0', {opacity:0, y:30, scale:0.92}, {opacity:1, y:0, scale:1, duration:0.32, ease:'power3.out'}, 121.123);
+    tl.fromTo('#m1-g1', {opacity:0, y:30, scale:0.92}, {opacity:1, y:0, scale:1, duration:0.32, ease:'power3.out'}, 121.233);
+    tl.fromTo('#m1-g2', {opacity:0, y:30, scale:0.92}, {opacity:1, y:0, scale:1, duration:0.32, ease:'power3.out'}, 121.343);
+    tl.fromTo('#m1-g3', {opacity:0, y:30, scale:0.92}, {opacity:1, y:0, scale:1, duration:0.32, ease:'power3.out'}, 121.453);
+    tl.fromTo('#m1-g4', {opacity:0, y:30, scale:0.92}, {opacity:1, y:0, scale:1, duration:0.32, ease:'power3.out'}, 121.563);
+    tl.fromTo('#m1-g5', {opacity:0, y:30, scale:0.92}, {opacity:1, y:0, scale:1, duration:0.32, ease:'power3.out'}, 121.673);
+    tl.fromTo('#m1-g6', {opacity:0, y:30, scale:0.92}, {opacity:1, y:0, scale:1, duration:0.32, ease:'power3.out'}, 121.783);
+    tl.fromTo('#m1-g7', {opacity:0, y:30, scale:0.92}, {opacity:1, y:0, scale:1, duration:0.32, ease:'power3.out'}, 121.893);
+    tl.fromTo('#m1-g8', {opacity:0, y:30, scale:0.92}, {opacity:1, y:0, scale:1, duration:0.32, ease:'power3.out'}, 122.003);
+    tl.fromTo('#m1-g9', {opacity:0, y:30, scale:0.92}, {opacity:1, y:0, scale:1, duration:0.32, ease:'power3.out'}, 122.113);
+    tl.fromTo('#m1-x', {opacity:0, scale:1.9}, {opacity:1, scale:1, duration:0.26, ease:'power4.out'}, 122.903);
+    tl.to('#m1-recap-in', {opacity:0, duration:0.22, ease:'power2.in'}, 123.847);
+    // insert m2-doktor (mg) 131.00-134.57s
+    tl.fromTo('#m2-doktor-in', {clipPath:'inset(100% 0% 0% 0%)'}, {clipPath:'inset(0% 0% 0% 0%)', duration:0.42, ease:'power3.inOut'}, 131.0);
+    tl.fromTo('#m2-c', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 131.12);
+    tl.fromTo('#m2-d', {opacity:0, scale:0.6}, {opacity:1, scale:1, duration:0.34, ease:'back.out(1.8)'}, 131.12);
+    tl.fromTo('#m2-t', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 131.187);
+    tl.fromTo('#m2-a', {opacity:0}, {opacity:1, duration:0.3, ease:'power2.out'}, 132.075);
+    tl.fromTo('#m2-p', {opacity:0, y:40}, {opacity:1, y:0, duration:0.42, ease:'power3.out'}, 132.528);
+    tl.to('#m2-doktor-in', {opacity:0, duration:0.22, ease:'power2.in'}, 134.347);
+    window.__timelines = window.__timelines || {};
+    window.__timelines["talking-head-recut"] = tl;
+  })();
+  </script>
+</div>
+</body>
+</html>

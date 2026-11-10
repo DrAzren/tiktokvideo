@@ -1,0 +1,471 @@
+{
+  "version": 1,
+  "sources": {
+    "ubat": "/home/user/tiktokvideo/videos/ubat-mengandung/raw/10 Ubat Psikiatri Dilarang Untuk Mengandung.mp4"
+  },
+  "ranges": [
+    {
+      "source": "ubat",
+      "start": 14.35,
+      "end": 17.8,
+      "beat": "HOOK",
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 18.19,
+      "end": 19.47,
+      "beat": "HOOK",
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 19.62,
+      "end": 21.09,
+      "beat": "HOOK",
+      "zoom": 1.02
+    },
+    {
+      "source": "ubat",
+      "start": 21.34,
+      "end": 22.83,
+      "beat": "HOOK",
+      "reason": "sepuluh ubat psikiatri yang perlu berhati hati atau kalau boleh elakkanlah ketika anda pregnant ataupun ada plan nak pregnant",
+      "zoom": 1.07
+    },
+    {
+      "source": "ubat",
+      "start": 26.525,
+      "end": 28.86,
+      "beat": "INTRO",
+      "reason": "assalamualaikum saya doktor azren saya doktor psikiatri",
+      "zoom": 1.035
+    },
+    {
+      "source": "ubat",
+      "start": 36.71,
+      "end": 39.565,
+      "beat": "WHY",
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 39.865,
+      "end": 44.715,
+      "beat": "WHY",
+      "fade_in": 0.008,
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 44.915,
+      "end": 46.33,
+      "beat": "WHY",
+      "reason": "kalau anda tengah pregnant ataupun plan nak mengandung [sebenarnya] ada beberapa ubat psikiatri yang doktor akan sangat berhati hati kalau nak bagi sebab [dia] boleh bagi kesan dekat baby",
+      "fade_in": 0.008,
+      "zoom": 1.02
+    },
+    {
+      "source": "ubat",
+      "start": 46.63,
+      "end": 53.33,
+      "beat": "D1",
+      "reason": "ubat yang pertama adalah sodium valproate ataupun epilim selalunya digunakan dalam kes sawan ataupun bipolar * lah",
+      "zoom": 1.07
+    },
+    {
+      "source": "ubat",
+      "start": 54.345,
+      "end": 54.875,
+      "beat": "D1",
+      "fade_in": 0.008,
+      "fade_out": 0.008,
+      "zoom": 1.07
+    },
+    {
+      "source": "ubat",
+      "start": 55.195,
+      "end": 60.36,
+      "beat": "D1",
+      "reason": "ubat ni [dia] ada risiko tinggi boleh menyebabkan kecacatan otak dan juga sistem saraf bayi",
+      "fade_in": 0.008,
+      "zoom": 1.035
+    },
+    {
+      "source": "ubat",
+      "start": 60.66,
+      "end": 61.965,
+      "beat": "D2",
+      "fade_out": 0.008,
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 62.075,
+      "end": 63.656,
+      "beat": "D2",
+      "reason": "yang kedua adalah litium [ha] ni pun ubat untuk bipolar juga",
+      "fade_in": 0.008,
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 71.41,
+      "end": 71.845,
+      "beat": "D2",
+      "fade_out": 0.008,
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 72.025,
+      "end": 74.025,
+      "beat": "D2",
+      "fade_in": 0.008,
+      "fade_out": 0.008,
+      "zoom": 1.02
+    },
+    {
+      "source": "ubat",
+      "start": 74.545,
+      "end": 75.525,
+      "beat": "D2",
+      "reason": "ubat ni [dia] ada risiko untuk masalah jantung bayi [dia] boleh guna tapi",
+      "fade_in": 0.008,
+      "fade_out": 0.008,
+      "zoom": 1.07
+    },
+    {
+      "source": "ubat",
+      "start": 80.58,
+      "end": 85.02,
+      "beat": "D2",
+      "reason": "kena monitor betul betul kena ada * pemantauan yang rapi oleh doktor lah",
+      "zoom": 1.035
+    },
+    {
+      "source": "ubat",
+      "start": 88.52,
+      "end": 90.265,
+      "beat": "D3",
+      "fade_out": 0.008,
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 90.395,
+      "end": 93.89,
+      "beat": "D3",
+      "reason": "yang ketiga adalah carbamazepine [ha] ini pun ubat untuk bipolar dan kadang kadang digunakan untuk sawan juga",
+      "fade_in": 0.008,
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 98.05,
+      "end": 98.585,
+      "beat": "D3",
+      "fade_out": 0.008,
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 98.715,
+      "end": 100.67,
+      "beat": "D3",
+      "reason": "ubat ni [dia] ada risiko neural tube defect",
+      "fade_in": 0.008,
+      "zoom": 1.02
+    },
+    {
+      "source": "ubat",
+      "start": 101.065,
+      "end": 102.815,
+      "beat": "D4",
+      "fade_in": 0.008,
+      "zoom": 1.07
+    },
+    {
+      "source": "ubat",
+      "start": 102.945,
+      "end": 106.965,
+      "beat": "D4",
+      "fade_out": 0.008,
+      "zoom": 1.035
+    },
+    {
+      "source": "ubat",
+      "start": 107.6,
+      "end": 110.27,
+      "beat": "D4",
+      "reason": "yang keempat adalah paroxetine [ha] paroxetine ni adalah antidepressant yang digunakan untuk depression dan juga anxiety [ha] [dia] dikaitkan dengan risiko kecacatan jantung bayi juga",
+      "fade_in": 0.008,
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 111.13,
+      "end": 117.945,
+      "beat": "D5",
+      "fade_out": 0.008,
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 118.145,
+      "end": 118.865,
+      "beat": "D5",
+      "fade_in": 0.008,
+      "fade_out": 0.008,
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 119.395,
+      "end": 124.31,
+      "beat": "D5",
+      "reason": "yang kelima adalah alprazolam ataupun xanax selalunya digunakan dalam kes anxiety ataupun panic attack ubat ni [dia] ada risiko [*] bayi boleh jadi lemah ataupun ada withdrawal effect selepas melahirkan bayi",
+      "zoom": 1.02
+    },
+    {
+      "source": "ubat",
+      "start": 124.57,
+      "end": 127.925,
+      "beat": "D6",
+      "fade_out": 0.008,
+      "zoom": 1.07
+    },
+    {
+      "source": "ubat",
+      "start": 128.765,
+      "end": 130.065,
+      "beat": "D6",
+      "reason": "yang keenam adalah diazepam ataupun valium ubat ni [dia] [*] bantu untuk anxiety",
+      "fade_in": 0.008,
+      "fade_out": 0.008,
+      "zoom": 1.035
+    },
+    {
+      "source": "ubat",
+      "start": 133.005,
+      "end": 135.775,
+      "beat": "D6",
+      "fade_in": 0.008,
+      "fade_out": 0.008,
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 135.985,
+      "end": 137.84,
+      "beat": "D6",
+      "reason": "muscle relaxant dan juga sawan ubat ni [dia] ada risiko baby floppy syndrome",
+      "fade_in": 0.008,
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 138.2,
+      "end": 140.07,
+      "beat": "D7",
+      "zoom": 1.02
+    },
+    {
+      "source": "ubat",
+      "start": 140.22,
+      "end": 142.59,
+      "beat": "D7",
+      "zoom": 1.07
+    },
+    {
+      "source": "ubat",
+      "start": 142.91,
+      "end": 143.655,
+      "beat": "D7",
+      "fade_out": 0.008,
+      "zoom": 1.07
+    },
+    {
+      "source": "ubat",
+      "start": 144.265,
+      "end": 145.07,
+      "beat": "D7",
+      "fade_in": 0.008,
+      "zoom": 1.035
+    },
+    {
+      "source": "ubat",
+      "start": 145.46,
+      "end": 146.74,
+      "beat": "D7",
+      "reason": "yang ketujuh adalah clonazepam clonazepam ni ubat digunakan untuk anxiety ataupun sawan [dia] ada risiko sedation kepada bayi",
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 147.6,
+      "end": 151.105,
+      "beat": "D8",
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 151.775,
+      "end": 155.12,
+      "beat": "D8",
+      "reason": "yang kelapan adalah topiramate topiramate ni adalah sejenis mood stabilizer [*] dan kadang kadang digunakan dalam kes migraine juga",
+      "zoom": 1.02
+    },
+    {
+      "source": "ubat",
+      "start": 155.66,
+      "end": 156.315,
+      "beat": "D8",
+      "fade_out": 0.008,
+      "zoom": 1.02
+    },
+    {
+      "source": "ubat",
+      "start": 156.455,
+      "end": 157.81,
+      "beat": "D8",
+      "fade_in": 0.008,
+      "zoom": 1.07
+    },
+    {
+      "source": "ubat",
+      "start": 158.1,
+      "end": 159.75,
+      "beat": "D8",
+      "reason": "ubat ni [dia] ada risiko cleft lip dan juga cleft palate kepada bayi",
+      "zoom": 1.035
+    },
+    {
+      "source": "ubat",
+      "start": 160.03,
+      "end": 166.875,
+      "beat": "D9",
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 167.445,
+      "end": 170.33,
+      "beat": "D9",
+      "reason": "yang kesembilan adalah risperidone ubat ni digunakan dalam kes seperti skizofrenia bipolar ataupun aggression [dia] ada risiko hormonal dan metabolik effect kepada baby",
+      "fade_in": 0.008,
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 172.305,
+      "end": 173.865,
+      "beat": "D9",
+      "fade_in": 0.008,
+      "zoom": 1.02
+    },
+    {
+      "source": "ubat",
+      "start": 175.885,
+      "end": 177.62,
+      "beat": "D9",
+      "reason": "bukan tak boleh bagi boleh tapi [kena] [monitor] [betul] [betul] [oleh] kena ada pemantauan rapi oleh doktor",
+      "zoom": 1.07
+    },
+    {
+      "source": "ubat",
+      "start": 177.65,
+      "end": 182.365,
+      "beat": "D10",
+      "zoom": 1.035
+    },
+    {
+      "source": "ubat",
+      "start": 183.425,
+      "end": 188.885,
+      "beat": "D10",
+      "reason": "yang kesepuluh adalah olanzapine olanzapine ni ubat untuk skizofrenia dan juga bipolar lah [dia] ada risiko berat bayi jadi besar dan juga masalah metabolik side effect kepada bayi",
+      "fade_in": 0.008,
+      "fade_out": 0.008,
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 190.22,
+      "end": 190.565,
+      "beat": "CLOSE",
+      "fade_out": 0.008,
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 197.725,
+      "end": 200.425,
+      "beat": "CLOSE",
+      "fade_in": 0.008,
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 200.975,
+      "end": 201.265,
+      "beat": "CLOSE",
+      "reason": "jadi [ubat] [yang] [saya] [senarai] [ni] [bukan] [tak] [boleh] [tapi] [*] [ubat] [yang] ubat yang saya senarai ni bukanlah kata seratus peratus tak boleh [ha] tapi",
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 213.35,
+      "end": 214.63,
+      "beat": "CLOSE",
+      "zoom": 1.02
+    },
+    {
+      "source": "ubat",
+      "start": 215.21,
+      "end": 216.665,
+      "beat": "CLOSE",
+      "zoom": 1.07
+    },
+    {
+      "source": "ubat",
+      "start": 217.175,
+      "end": 221.725,
+      "beat": "CLOSE",
+      "fade_out": 0.008,
+      "zoom": 1.035
+    },
+    {
+      "source": "ubat",
+      "start": 221.965,
+      "end": 222.925,
+      "beat": "CLOSE",
+      "fade_in": 0.008,
+      "zoom": 1.0
+    },
+    {
+      "source": "ubat",
+      "start": 223.31,
+      "end": 225.15,
+      "beat": "CLOSE",
+      "reason": "kalau anda ada ambik sepuluh ubat yang saya sebut tadi [tu] dan anda ada plan nak pregnant ataupun tengah pregnant kena bagitahu [dekat] doktor supaya pemantauan rapi dapat dilakukanlah",
+      "zoom": 1.06
+    },
+    {
+      "source": "ubat",
+      "start": 225.26,
+      "end": 227.04,
+      "beat": "CTA",
+      "reason": "apa apa soalan boleh tanya di ruangan komen",
+      "zoom": 1.02
+    }
+  ],
+  "grade": "hqdn3d=1.2:1.0:3.5:3.5,unsharp=5:5:0.55:5:5:0,curves=master='0/0.015 0.25/0.245 0.5/0.535 0.78/0.81 1/0.97',eq=contrast=1.05:saturation=1.12,colorbalance=rs=0.015:bs=-0.025:rm=0.02:gm=0.0:bm=-0.025:rh=0.01:bh=-0.015,vignette=angle=PI/7:mode=forward",
+  "zoom_focus": [
+    0.5,
+    0.46
+  ],
+  "tail_hold": 1.5,
+  "overlays": [],
+  "total_duration_s": 137.66
+}

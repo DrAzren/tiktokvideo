@@ -11,7 +11,9 @@ Punch-ins: a range may carry "zoom" (e.g. 1.08); the crop is centred on the
 EDL-level "zoom_focus" [x, y] (fractions of the frame, default [0.5, 0.5]) so
 that point stays fixed. Alternating zoom across jump cuts disguises them.
 
-Optional: per-range "gain_db" (level-match a softly delivered line) and EDL-level
+Optional: per-range "fade_in"/"fade_out" seconds (default 0.03; ~0.008 where a cut lands inside
+continuous voiced speech, so the join doesn't dip to silence and read as a stutter), "gain_db"
+(level-match a softly delivered line) and EDL-level
 "tail_hold" seconds (freeze the last frame + silence so an end card can land).
 
 Loudness: two-pass loudnorm to -14 LUFS / -1 dBTP (audio-only second pass).
@@ -98,11 +100,18 @@ def main() -> None:
         s = Fraction(round(r["start"] * fps)) / fps          # frame-aligned edges
         e = Fraction(round(r["end"] * fps)) / fps
         d = float(e - s)
-        inputs += ["-ss", f"{float(s):.6f}", "-t", f"{d:.6f}", "-i", sources[r["source"]]]
-        chains.append(f"[{i}:v]{zoom_filter(r.get('zoom', 1.0), focus, width, height)}setpts=PTS-STARTPTS[v{i}]")
+        n = int(round((e - s) * fps))
+        # Seek half a frame early and trim to an exact frame / sample count. Printing -ss/-t with 6
+        # decimals rounds them, and on frame phases like k/30 = x.x6667 the window then catches one
+        # extra frame; concat pads the audio to match and every later cut lands 33 ms late.
+        half = 1 / (2 * float(fps))
+        inputs += ["-ss", f"{float(s) - half:.6f}", "-t", f"{d + 3 * half:.6f}", "-i", sources[r["source"]]]
+        chains.append(f"[{i}:v]trim=end_frame={n},{zoom_filter(r.get('zoom', 1.0), focus, width, height)}setpts=PTS-STARTPTS[v{i}]")
         gain = f"volume={r['gain_db']}dB," if r.get("gain_db") else ""
-        chains.append(f"[{i}:a]aresample=48000,{gain}asetpts=PTS-STARTPTS,"
-                      f"afade=t=in:st=0:d={FADE},afade=t=out:st={d - FADE:.6f}:d={FADE}[a{i}]")
+        fi, fo = r.get("fade_in", FADE), r.get("fade_out", FADE)  # short fades for joins inside voiced speech
+        a0, a1 = round(half * 48000), round(half * 48000) + round(d * 48000)
+        chains.append(f"[{i}:a]aresample=48000,atrim=start_sample={a0}:end_sample={a1},{gain}asetpts=PTS-STARTPTS,"
+                      f"afade=t=in:st=0:d={fi},afade=t=out:st={d - fo:.6f}:d={fo}[a{i}]")
         labels.append(f"[v{i}][a{i}]")
 
     hold = float(edl.get("tail_hold", 0) or 0)

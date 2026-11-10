@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 3,
+  "composition": {
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "durationSeconds": 137.7,
+    "layout": "portrait"
+  },
+  "cards": [
+    {
+      "id": "c-intro",
+      "intent": "Name tag",
+      "startSec": 7.7,
+      "endSec": 10.0333
+    },
+    {
+      "id": "d01",
+      "intent": "#1 Sodium Valproate",
+      "startSec": 19.4667,
+      "endSec": 31.5333
+    },
+    {
+      "id": "d02",
+      "intent": "#2 Litium",
+      "startSec": 31.5333,
+      "endSec": 42.3333
+    },
+    {
+      "id": "d03",
+      "intent": "#3 Carbamazepine",
+      "startSec": 42.3667,
+      "endSec": 50.0667
+    },
+    {
+      "id": "d04",
+      "intent": "#4 Paroxetine",
+      "startSec": 50.0667,
+      "endSec": 58.5
+    },
+    {
+      "id": "d05",
+      "intent": "#5 Alprazolam",
+      "startSec": 58.5333,
+      "endSec": 70.9333
+    },
+    {
+      "id": "d06",
+      "intent": "#6 Diazepam",
+      "startSec": 70.9667,
+      "endSec": 80.2333
+    },
+    {
+      "id": "d07",
+      "intent": "#7 Clonazepam",
+      "startSec": 80.2333,
+      "endSec": 87.3
+    },
+    {
+      "id": "d08",
+      "intent": "#8 Topiramate",
+      "startSec": 87.3333,
+      "endSec": 97.7333
+    },
+    {
+      "id": "d09",
+      "intent": "#9 Risperidone",
+      "startSec": 97.7667,
+      "endSec": 110.7333
+    },
+    {
+      "id": "d10",
+      "intent": "#10 Olanzapine",
+      "startSec": 110.7667,
+      "endSec": 120.9667
+    },
+    {
+      "id": "c-hamil",
+      "intent": "Pregnant or planning",
+      "startSec": 128.6333,
+      "endSec": 131.0667
+    },
+    {
+      "id": "c-end",
+      "intent": "CTA: ask in the comments",
+      "startSec": 134.4,
+      "endSec": 137.7
+    }
+  ],
+  "inserts": [
+    {
+      "id": "m0-hook",
+      "kind": "mg",
+      "startSec": 2.1333,
+      "endSec": 7.6667
+    },
+    {
+      "id": "m1-recap",
+      "kind": "mg",
+      "startSec": 120.9333,
+      "endSec": 124.0667
+    },
+    {
+      "id": "m2-doktor",
+      "kind": "mg",
+      "startSec": 131.0,
+      "endSec": 134.5667
+    }
+  ]
+}
