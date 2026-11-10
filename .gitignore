@@ -28,3 +28,6 @@ videos/**
 !videos/*/yt/package/captions_ms.srt
 !videos/*/yt/package/thumb/*.html
 !videos/*/yt/package/thumb/*.cjs
+!videos/*/package/thumb/*.html
+!videos/*/package/thumb/*.cjs
+!videos/*/package/description.txt
