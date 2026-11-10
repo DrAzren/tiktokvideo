@@ -95,10 +95,34 @@
       "endSec": 7.6667
     },
     {
+      "id": "b1-hamil",
+      "kind": "broll",
+      "startSec": 10.0,
+      "endSec": 14.0333
+    },
+    {
+      "id": "b2-ultrasound",
+      "kind": "broll",
+      "startSec": 16.3667,
+      "endSec": 19.2
+    },
+    {
+      "id": "b3-bayi",
+      "kind": "broll",
+      "startSec": 66.0,
+      "endSec": 70.0
+    },
+    {
       "id": "m1-recap",
       "kind": "mg",
       "startSec": 120.9333,
-      "endSec": 124.0667
+      "endSec": 124.5667
+    },
+    {
+      "id": "b4-konsultasi",
+      "kind": "broll",
+      "startSec": 124.2667,
+      "endSec": 128.2667
     },
     {
       "id": "m2-doktor",
