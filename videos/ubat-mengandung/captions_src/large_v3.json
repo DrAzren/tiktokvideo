@@ -1,0 +1,2906 @@
+[
+{
+"text": "10",
+"start": 0.0,
+"end": 0.92,
+"p": 0.758
+},
+{
+"text": "ubat",
+"start": 0.92,
+"end": 1.68,
+"p": 0.91
+},
+{
+"text": "psikiatri",
+"start": 1.68,
+"end": 2.16,
+"p": 0.944
+},
+{
+"text": "yang",
+"start": 2.16,
+"end": 2.38,
+"p": 0.994
+},
+{
+"text": "perlu",
+"start": 2.38,
+"end": 2.7,
+"p": 0.998
+},
+{
+"text": "dielakkan",
+"start": 2.7,
+"end": 3.4,
+"p": 0.982
+},
+{
+"text": "ataupun",
+"start": 3.4,
+"end": 3.8,
+"p": 0.88
+},
+{
+"text": "perlu",
+"start": 3.8,
+"end": 4.08,
+"p": 0.992
+},
+{
+"text": "berhati",
+"start": 4.08,
+"end": 4.62,
+"p": 0.998
+},
+{
+"text": "-hati",
+"start": 4.62,
+"end": 4.92,
+"p": 0.999
+},
+{
+"text": "ketika",
+"start": 4.92,
+"end": 5.38,
+"p": 0.999
+},
+{
+"text": "anda",
+"start": 5.38,
+"end": 5.54,
+"p": 0.995
+},
+{
+"text": "pregnant",
+"start": 5.54,
+"end": 5.8,
+"p": 0.893
+},
+{
+"text": "atau",
+"start": 5.8,
+"end": 6.34,
+"p": 0.906
+},
+{
+"text": "ada",
+"start": 6.34,
+"end": 6.54,
+"p": 0.922
+},
+{
+"text": "anda",
+"start": 6.54,
+"end": 6.74,
+"p": 0.694
+},
+{
+"text": "plan",
+"start": 6.74,
+"end": 7.12,
+"p": 0.992
+},
+{
+"text": "nak",
+"start": 7.12,
+"end": 7.9,
+"p": 0.995
+},
+{
+"text": "mengandung",
+"start": 7.9,
+"end": 8.5,
+"p": 0.884
+},
+{
+"text": "kalau",
+"start": 10.0,
+"end": 10.64,
+"p": 0.292
+},
+{
+"text": "anda",
+"start": 10.64,
+"end": 11.0,
+"p": 1.0
+},
+{
+"text": "tengah",
+"start": 11.0,
+"end": 11.38,
+"p": 0.999
+},
+{
+"text": "10",
+"start": 13.9,
+"end": 14.54,
+"p": 0.621
+},
+{
+"text": "ubat",
+"start": 14.54,
+"end": 15.18,
+"p": 0.997
+},
+{
+"text": "psikiatri",
+"start": 15.18,
+"end": 15.62,
+"p": 1.0
+},
+{
+"text": "yang",
+"start": 15.62,
+"end": 15.9,
+"p": 0.999
+},
+{
+"text": "perlu",
+"start": 15.9,
+"end": 16.26,
+"p": 1.0
+},
+{
+"text": "berhati",
+"start": 16.26,
+"end": 16.84,
+"p": 0.967
+},
+{
+"text": "-hati",
+"start": 16.84,
+"end": 17.12,
+"p": 1.0
+},
+{
+"text": "atau",
+"start": 17.12,
+"end": 17.52,
+"p": 0.98
+},
+{
+"text": "kalau",
+"start": 17.52,
+"end": 18.3,
+"p": 0.979
+},
+{
+"text": "boleh",
+"start": 18.3,
+"end": 18.54,
+"p": 1.0
+},
+{
+"text": "elakkanlah",
+"start": 18.54,
+"end": 19.24,
+"p": 0.93
+},
+{
+"text": "ketika",
+"start": 19.24,
+"end": 19.98,
+"p": 0.999
+},
+{
+"text": "anda",
+"start": 19.98,
+"end": 20.22,
+"p": 1.0
+},
+{
+"text": "pregnant",
+"start": 20.22,
+"end": 20.54,
+"p": 0.997
+},
+{
+"text": "ataupun",
+"start": 20.54,
+"end": 21.58,
+"p": 0.986
+},
+{
+"text": "ada",
+"start": 21.58,
+"end": 21.76,
+"p": 0.999
+},
+{
+"text": "plan",
+"start": 21.76,
+"end": 22.06,
+"p": 0.991
+},
+{
+"text": "nak",
+"start": 22.06,
+"end": 22.24,
+"p": 0.999
+},
+{
+"text": "pregnant",
+"start": 22.24,
+"end": 22.58,
+"p": 0.995
+},
+{
+"text": "Assalamualaikum,",
+"start": 22.58,
+"end": 23.66,
+"p": 0.996
+},
+{
+"text": "saya",
+"start": 23.74,
+"end": 23.9,
+"p": 0.996
+},
+{
+"text": "Dr.",
+"start": 23.9,
+"end": 24.02,
+"p": 0.928
+},
+{
+"text": "Azrin",
+"start": 24.12,
+"end": 24.36,
+"p": 0.953
+},
+{
+"text": "saya",
+"start": 24.36,
+"end": 24.58,
+"p": 0.458
+},
+{
+"text": "bukan",
+"start": 24.58,
+"end": 24.72,
+"p": 0.671
+},
+{
+"text": "doktor,",
+"start": 24.72,
+"end": 25.14,
+"p": 0.998
+},
+{
+"text": "saya",
+"start": 25.16,
+"end": 25.22,
+"p": 0.843
+},
+{
+"text": "doktor",
+"start": 25.22,
+"end": 25.36,
+"p": 0.962
+},
+{
+"text": "psikiatri",
+"start": 25.36,
+"end": 25.84,
+"p": 1.0
+},
+{
+"text": "Assalamualaikum,",
+"start": 25.84,
+"end": 26.84,
+"p": 0.942
+},
+{
+"text": "saya",
+"start": 26.94,
+"end": 27.14,
+"p": 1.0
+},
+{
+"text": "Dr.",
+"start": 27.14,
+"end": 27.26,
+"p": 0.996
+},
+{
+"text": "Azrin",
+"start": 27.36,
+"end": 27.58,
+"p": 1.0
+},
+{
+"text": "saya",
+"start": 27.58,
+"end": 27.84,
+"p": 0.634
+},
+{
+"text": "doktor",
+"start": 27.84,
+"end": 28.14,
+"p": 0.997
+},
+{
+"text": "psikiatri",
+"start": 28.14,
+"end": 28.58,
+"p": 1.0
+},
+{
+"text": "Kalau",
+"start": 33.06,
+"end": 33.84,
+"p": 0.466
+},
+{
+"text": "anda",
+"start": 33.84,
+"end": 34.28,
+"p": 0.995
+},
+{
+"text": "tengah",
+"start": 34.28,
+"end": 37.44,
+"p": 0.908
+},
+{
+"text": "pregnant",
+"start": 37.44,
+"end": 37.68,
+"p": 0.818
+},
+{
+"text": "ataupun",
+"start": 37.68,
+"end": 38.24,
+"p": 0.962
+},
+{
+"text": "plan",
+"start": 38.24,
+"end": 38.76,
+"p": 0.972
+},
+{
+"text": "nak",
+"start": 38.76,
+"end": 38.9,
+"p": 0.998
+},
+{
+"text": "mengandung",
+"start": 38.9,
+"end": 39.36,
+"p": 0.999
+},
+{
+"text": "Sebenarnya",
+"start": 39.36,
+"end": 39.74,
+"p": 0.682
+},
+{
+"text": "ada",
+"start": 39.74,
+"end": 39.88,
+"p": 0.983
+},
+{
+"text": "beberapa",
+"start": 39.88,
+"end": 40.34,
+"p": 1.0
+},
+{
+"text": "ubat",
+"start": 40.34,
+"end": 40.62,
+"p": 0.999
+},
+{
+"text": "psikiatri",
+"start": 40.62,
+"end": 41.12,
+"p": 0.819
+},
+{
+"text": "yang",
+"start": 41.12,
+"end": 41.48,
+"p": 0.977
+},
+{
+"text": "doktor",
+"start": 41.48,
+"end": 42.0,
+"p": 0.981
+},
+{
+"text": "akan",
+"start": 42.0,
+"end": 42.2,
+"p": 0.999
+},
+{
+"text": "sangat",
+"start": 42.2,
+"end": 42.78,
+"p": 0.995
+},
+{
+"text": "berhati",
+"start": 42.78,
+"end": 43.04,
+"p": 0.934
+},
+{
+"text": "-hati",
+"start": 43.04,
+"end": 43.32,
+"p": 0.999
+},
+{
+"text": "kalau",
+"start": 43.32,
+"end": 43.46,
+"p": 0.911
+},
+{
+"text": "nak",
+"start": 43.46,
+"end": 43.6,
+"p": 1.0
+},
+{
+"text": "bagi",
+"start": 43.6,
+"end": 43.94,
+"p": 1.0
+},
+{
+"text": "Sebab",
+"start": 43.94,
+"end": 44.64,
+"p": 0.979
+},
+{
+"text": "dia",
+"start": 44.64,
+"end": 44.84,
+"p": 0.957
+},
+{
+"text": "boleh",
+"start": 44.84,
+"end": 45.02,
+"p": 1.0
+},
+{
+"text": "bagi",
+"start": 45.02,
+"end": 45.22,
+"p": 0.998
+},
+{
+"text": "kesan",
+"start": 45.22,
+"end": 45.64,
+"p": 1.0
+},
+{
+"text": "dekat",
+"start": 45.64,
+"end": 45.78,
+"p": 0.985
+},
+{
+"text": "baby",
+"start": 45.78,
+"end": 46.02,
+"p": 0.647
+},
+{
+"text": "Ubat",
+"start": 46.02,
+"end": 46.84,
+"p": 0.991
+},
+{
+"text": "yang",
+"start": 46.84,
+"end": 46.96,
+"p": 1.0
+},
+{
+"text": "pertama",
+"start": 46.96,
+"end": 47.36,
+"p": 1.0
+},
+{
+"text": "adalah",
+"start": 47.36,
+"end": 47.84,
+"p": 1.0
+},
+{
+"text": "sodium",
+"start": 47.84,
+"end": 48.38,
+"p": 0.854
+},
+{
+"text": "valpoid",
+"start": 48.38,
+"end": 48.86,
+"p": 0.854
+},
+{
+"text": "ataupun",
+"start": 48.86,
+"end": 49.36,
+"p": 0.946
+},
+{
+"text": "epilim",
+"start": 49.36,
+"end": 49.84,
+"p": 0.974
+},
+{
+"text": "Selalunya",
+"start": 49.84,
+"end": 50.34,
+"p": 0.996
+},
+{
+"text": "digunakan",
+"start": 50.34,
+"end": 50.68,
+"p": 0.999
+},
+{
+"text": "dalam",
+"start": 50.68,
+"end": 50.88,
+"p": 1.0
+},
+{
+"text": "kes",
+"start": 50.88,
+"end": 51.18,
+"p": 0.991
+},
+{
+"text": "sawan",
+"start": 51.18,
+"end": 51.98,
+"p": 0.98
+},
+{
+"text": "ataupun",
+"start": 51.98,
+"end": 52.42,
+"p": 0.995
+},
+{
+"text": "bipolar",
+"start": 52.42,
+"end": 52.72,
+"p": 0.983
+},
+{
+"text": "pola",
+"start": 52.72,
+"end": 53.04,
+"p": 0.753
+},
+{
+"text": "lah.",
+"start": 53.04,
+"end": 53.18,
+"p": 0.965
+},
+{
+"text": "Ha",
+"start": 53.64,
+"end": 54.3,
+"p": 0.563
+},
+{
+"text": "ubat",
+"start": 54.3,
+"end": 54.64,
+"p": 0.691
+},
+{
+"text": "ni",
+"start": 54.64,
+"end": 54.82,
+"p": 0.986
+},
+{
+"text": "dia",
+"start": 54.82,
+"end": 55.08,
+"p": 0.998
+},
+{
+"text": "ada",
+"start": 55.08,
+"end": 55.28,
+"p": 1.0
+},
+{
+"text": "risiko",
+"start": 55.28,
+"end": 55.7,
+"p": 0.999
+},
+{
+"text": "tinggi",
+"start": 55.7,
+"end": 56.26,
+"p": 1.0
+},
+{
+"text": "boleh",
+"start": 56.26,
+"end": 56.52,
+"p": 0.989
+},
+{
+"text": "menyebabkan",
+"start": 56.52,
+"end": 57.2,
+"p": 1.0
+},
+{
+"text": "kecacatan",
+"start": 57.2,
+"end": 58.18,
+"p": 0.997
+},
+{
+"text": "otak",
+"start": 58.18,
+"end": 58.78,
+"p": 1.0
+},
+{
+"text": "dan",
+"start": 58.78,
+"end": 58.9,
+"p": 0.998
+},
+{
+"text": "juga",
+"start": 58.9,
+"end": 59.1,
+"p": 0.999
+},
+{
+"text": "sistem",
+"start": 59.1,
+"end": 59.44,
+"p": 0.999
+},
+{
+"text": "saraf",
+"start": 59.44,
+"end": 59.84,
+"p": 0.987
+},
+{
+"text": "bayi.",
+"start": 59.84,
+"end": 60.26,
+"p": 0.996
+},
+{
+"text": "Yang",
+"start": 60.26,
+"end": 60.74,
+"p": 0.999
+},
+{
+"text": "kedua",
+"start": 60.74,
+"end": 61.06,
+"p": 0.999
+},
+{
+"text": "adalah",
+"start": 61.06,
+"end": 61.24,
+"p": 1.0
+},
+{
+"text": "litium.",
+"start": 61.24,
+"end": 61.88,
+"p": 0.89
+},
+{
+"text": "Ha",
+"start": 61.94,
+"end": 62.02,
+"p": 0.978
+},
+{
+"text": "ni",
+"start": 62.02,
+"end": 62.16,
+"p": 0.928
+},
+{
+"text": "pun",
+"start": 62.16,
+"end": 62.32,
+"p": 1.0
+},
+{
+"text": "ubat",
+"start": 62.32,
+"end": 62.58,
+"p": 0.998
+},
+{
+"text": "untuk",
+"start": 62.58,
+"end": 62.72,
+"p": 0.999
+},
+{
+"text": "bipolar",
+"start": 62.72,
+"end": 62.92,
+"p": 0.914
+},
+{
+"text": "juga.",
+"start": 62.92,
+"end": 63.36,
+"p": 0.924
+},
+{
+"text": "Selalunya",
+"start": 63.54,
+"end": 64.1,
+"p": 0.985
+},
+{
+"text": "ubat",
+"start": 64.1,
+"end": 64.8,
+"p": 0.999
+},
+{
+"text": "ni",
+"start": 64.8,
+"end": 64.94,
+"p": 0.997
+},
+{
+"text": "risiko",
+"start": 64.94,
+"end": 65.38,
+"p": 0.999
+},
+{
+"text": "dia",
+"start": 65.38,
+"end": 65.54,
+"p": 1.0
+},
+{
+"text": "tinggi",
+"start": 65.54,
+"end": 65.86,
+"p": 1.0
+},
+{
+"text": "kalau",
+"start": 65.86,
+"end": 66.02,
+"p": 0.962
+},
+{
+"text": "ubat",
+"start": 66.02,
+"end": 67.66,
+"p": 0.936
+},
+{
+"text": "ni",
+"start": 67.66,
+"end": 67.82,
+"p": 0.997
+},
+{
+"text": "risiko",
+"start": 67.82,
+"end": 68.28,
+"p": 0.999
+},
+{
+"text": "ubat",
+"start": 68.28,
+"end": 71.54,
+"p": 0.926
+},
+{
+"text": "ni",
+"start": 71.54,
+"end": 71.78,
+"p": 0.993
+},
+{
+"text": "dia",
+"start": 71.78,
+"end": 71.96,
+"p": 0.995
+},
+{
+"text": "ada",
+"start": 71.96,
+"end": 72.14,
+"p": 0.999
+},
+{
+"text": "risiko",
+"start": 72.14,
+"end": 72.52,
+"p": 1.0
+},
+{
+"text": "untuk",
+"start": 72.52,
+"end": 72.9,
+"p": 0.996
+},
+{
+"text": "masalah",
+"start": 72.9,
+"end": 73.24,
+"p": 1.0
+},
+{
+"text": "jantung",
+"start": 73.24,
+"end": 73.66,
+"p": 1.0
+},
+{
+"text": "bayi.",
+"start": 73.66,
+"end": 74.02,
+"p": 0.998
+},
+{
+"text": "Dia",
+"start": 74.02,
+"end": 74.38,
+"p": 0.999
+},
+{
+"text": "boleh",
+"start": 74.38,
+"end": 74.66,
+"p": 1.0
+},
+{
+"text": "guna",
+"start": 74.66,
+"end": 75.08,
+"p": 0.996
+},
+{
+"text": "tapi",
+"start": 75.08,
+"end": 75.28,
+"p": 0.986
+},
+{
+"text": "dia",
+"start": 75.28,
+"end": 75.64,
+"p": 1.0
+},
+{
+"text": "kena",
+"start": 75.64,
+"end": 75.96,
+"p": 1.0
+},
+{
+"text": "monitor",
+"start": 75.96,
+"end": 76.3,
+"p": 0.997
+},
+{
+"text": "dengan",
+"start": 76.3,
+"end": 76.92,
+"p": 0.999
+},
+{
+"text": "tapi",
+"start": 76.92,
+"end": 78.7,
+"p": 0.534
+},
+{
+"text": "kena",
+"start": 78.7,
+"end": 81.0,
+"p": 0.999
+},
+{
+"text": "monitor",
+"start": 81.0,
+"end": 81.26,
+"p": 0.997
+},
+{
+"text": "betul",
+"start": 81.26,
+"end": 81.66,
+"p": 1.0
+},
+{
+"text": "-betul.",
+"start": 81.66,
+"end": 81.98,
+"p": 0.99
+},
+{
+"text": "Kena",
+"start": 81.98,
+"end": 82.36,
+"p": 0.998
+},
+{
+"text": "ada",
+"start": 82.36,
+"end": 82.6,
+"p": 0.996
+},
+{
+"text": "Ada",
+"start": 82.6,
+"end": 82.6,
+"p": 0.614
+},
+{
+"text": "pemantauan",
+"start": 82.6,
+"end": 83.34,
+"p": 0.899
+},
+{
+"text": "yang",
+"start": 83.34,
+"end": 83.54,
+"p": 0.997
+},
+{
+"text": "rapi",
+"start": 83.54,
+"end": 84.1,
+"p": 0.992
+},
+{
+"text": "oleh",
+"start": 84.1,
+"end": 84.22,
+"p": 0.999
+},
+{
+"text": "doktor",
+"start": 84.22,
+"end": 84.58,
+"p": 0.985
+},
+{
+"text": "lah.",
+"start": 84.58,
+"end": 84.74,
+"p": 0.865
+},
+{
+"text": "Yang",
+"start": 85.1,
+"end": 85.7,
+"p": 0.924
+},
+{
+"text": "ketiga",
+"start": 85.7,
+"end": 86.16,
+"p": 0.999
+},
+{
+"text": "adalah",
+"start": 86.16,
+"end": 86.34,
+"p": 0.996
+},
+{
+"text": "carbamazepin.",
+"start": 86.34,
+"end": 87.26,
+"p": 0.916
+},
+{
+"text": "Yang",
+"start": 88.3,
+"end": 88.6,
+"p": 0.989
+},
+{
+"text": "ketiga",
+"start": 88.6,
+"end": 89.0,
+"p": 1.0
+},
+{
+"text": "adalah",
+"start": 89.0,
+"end": 89.22,
+"p": 1.0
+},
+{
+"text": "carbamazepin.",
+"start": 89.22,
+"end": 90.2,
+"p": 1.0
+},
+{
+"text": "Ini",
+"start": 90.22,
+"end": 90.48,
+"p": 0.555
+},
+{
+"text": "pun",
+"start": 90.48,
+"end": 90.66,
+"p": 1.0
+},
+{
+"text": "ubat",
+"start": 90.66,
+"end": 91.02,
+"p": 0.998
+},
+{
+"text": "untuk",
+"start": 91.02,
+"end": 91.44,
+"p": 0.999
+},
+{
+"text": "bipolar",
+"start": 91.44,
+"end": 91.72,
+"p": 0.968
+},
+{
+"text": "dan",
+"start": 91.72,
+"end": 92.08,
+"p": 0.984
+},
+{
+"text": "kadang",
+"start": 92.08,
+"end": 92.34,
+"p": 0.932
+},
+{
+"text": "-kadang",
+"start": 92.34,
+"end": 92.42,
+"p": 0.987
+},
+{
+"text": "digunakan",
+"start": 92.42,
+"end": 92.7,
+"p": 0.999
+},
+{
+"text": "untuk",
+"start": 92.7,
+"end": 92.98,
+"p": 1.0
+},
+{
+"text": "sawan",
+"start": 92.98,
+"end": 93.46,
+"p": 0.966
+},
+{
+"text": "juga.",
+"start": 93.46,
+"end": 93.62,
+"p": 0.994
+},
+{
+"text": "Ini",
+"start": 93.86,
+"end": 94.28,
+"p": 0.806
+},
+{
+"text": "ubat",
+"start": 94.28,
+"end": 94.78,
+"p": 0.996
+},
+{
+"text": "ada",
+"start": 94.78,
+"end": 94.96,
+"p": 0.999
+},
+{
+"text": "risiko.",
+"start": 94.96,
+"end": 95.58,
+"p": 0.998
+},
+{
+"text": "Ubat",
+"start": 97.76,
+"end": 98.36,
+"p": 0.984
+},
+{
+"text": "ni",
+"start": 98.36,
+"end": 98.46,
+"p": 0.561
+},
+{
+"text": "dia",
+"start": 98.46,
+"end": 98.66,
+"p": 0.978
+},
+{
+"text": "ada",
+"start": 98.66,
+"end": 98.82,
+"p": 1.0
+},
+{
+"text": "risiko",
+"start": 98.82,
+"end": 99.28,
+"p": 1.0
+},
+{
+"text": "neural",
+"start": 99.28,
+"end": 99.66,
+"p": 0.961
+},
+{
+"text": "tube",
+"start": 99.66,
+"end": 100.04,
+"p": 0.999
+},
+{
+"text": "defect.",
+"start": 100.04,
+"end": 100.32,
+"p": 0.996
+},
+{
+"text": "Yang",
+"start": 100.62,
+"end": 101.1,
+"p": 1.0
+},
+{
+"text": "keempat",
+"start": 101.1,
+"end": 101.54,
+"p": 1.0
+},
+{
+"text": "adalah",
+"start": 101.54,
+"end": 101.76,
+"p": 1.0
+},
+{
+"text": "paroxetine.",
+"start": 101.76,
+"end": 102.56,
+"p": 0.872
+},
+{
+"text": "Paroxetine",
+"start": 102.76,
+"end": 103.36,
+"p": 0.998
+},
+{
+"text": "ni",
+"start": 103.36,
+"end": 103.46,
+"p": 0.995
+},
+{
+"text": "adalah",
+"start": 103.46,
+"end": 103.64,
+"p": 1.0
+},
+{
+"text": "antidepressant",
+"start": 103.64,
+"end": 104.58,
+"p": 0.961
+},
+{
+"text": "yang",
+"start": 104.58,
+"end": 104.9,
+"p": 0.811
+},
+{
+"text": "digunakan",
+"start": 104.9,
+"end": 105.2,
+"p": 1.0
+},
+{
+"text": "untuk",
+"start": 105.2,
+"end": 105.52,
+"p": 1.0
+},
+{
+"text": "depression",
+"start": 105.52,
+"end": 106.02,
+"p": 0.991
+},
+{
+"text": "dan",
+"start": 106.02,
+"end": 106.2,
+"p": 1.0
+},
+{
+"text": "juga",
+"start": 106.2,
+"end": 106.32,
+"p": 0.998
+},
+{
+"text": "anxiety.",
+"start": 106.32,
+"end": 106.6,
+"p": 0.998
+},
+{
+"text": "Dia",
+"start": 107.02,
+"end": 107.5,
+"p": 0.979
+},
+{
+"text": "dikaitkan",
+"start": 107.5,
+"end": 108.06,
+"p": 0.999
+},
+{
+"text": "dengan",
+"start": 108.06,
+"end": 108.24,
+"p": 1.0
+},
+{
+"text": "risiko",
+"start": 108.24,
+"end": 108.76,
+"p": 1.0
+},
+{
+"text": "kecacatan",
+"start": 108.76,
+"end": 109.24,
+"p": 0.851
+},
+{
+"text": "jantung",
+"start": 109.24,
+"end": 109.66,
+"p": 1.0
+},
+{
+"text": "bayi",
+"start": 109.66,
+"end": 109.92,
+"p": 0.996
+},
+{
+"text": "juga.",
+"start": 109.92,
+"end": 110.06,
+"p": 0.999
+},
+{
+"text": "yang",
+"start": 110.06,
+"end": 111.02,
+"p": 0.135
+},
+{
+"text": "kelima",
+"start": 111.02,
+"end": 111.66,
+"p": 0.986
+},
+{
+"text": "adalah",
+"start": 111.66,
+"end": 111.88,
+"p": 0.997
+},
+{
+"text": "Alprazolam",
+"start": 111.88,
+"end": 112.82,
+"p": 0.934
+},
+{
+"text": "ataupun",
+"start": 112.82,
+"end": 113.38,
+"p": 0.916
+},
+{
+"text": "Xanax",
+"start": 113.38,
+"end": 113.82,
+"p": 0.906
+},
+{
+"text": "selalunya",
+"start": 113.82,
+"end": 114.58,
+"p": 0.741
+},
+{
+"text": "digunakan",
+"start": 114.58,
+"end": 114.94,
+"p": 0.999
+},
+{
+"text": "dalam",
+"start": 114.94,
+"end": 115.14,
+"p": 1.0
+},
+{
+"text": "kes",
+"start": 115.14,
+"end": 115.38,
+"p": 0.816
+},
+{
+"text": "anxiety",
+"start": 115.38,
+"end": 115.78,
+"p": 0.972
+},
+{
+"text": "ataupun",
+"start": 115.78,
+"end": 116.3,
+"p": 0.984
+},
+{
+"text": "panic",
+"start": 116.3,
+"end": 116.56,
+"p": 0.995
+},
+{
+"text": "attack.",
+"start": 116.56,
+"end": 116.86,
+"p": 0.999
+},
+{
+"text": "Ubat",
+"start": 117.04,
+"end": 117.66,
+"p": 0.987
+},
+{
+"text": "ni",
+"start": 117.66,
+"end": 117.82,
+"p": 0.907
+},
+{
+"text": "dia",
+"start": 117.82,
+"end": 118.06,
+"p": 0.983
+},
+{
+"text": "ada",
+"start": 118.06,
+"end": 118.22,
+"p": 0.999
+},
+{
+"text": "risiko",
+"start": 118.22,
+"end": 118.82,
+"p": 0.974
+},
+{
+"text": "bayi",
+"start": 118.82,
+"end": 119.7,
+"p": 0.949
+},
+{
+"text": "boleh",
+"start": 119.7,
+"end": 119.88,
+"p": 1.0
+},
+{
+"text": "jadi",
+"start": 119.88,
+"end": 120.14,
+"p": 0.999
+},
+{
+"text": "lemah",
+"start": 120.14,
+"end": 120.54,
+"p": 0.999
+},
+{
+"text": "ataupun",
+"start": 120.54,
+"end": 121.12,
+"p": 0.998
+},
+{
+"text": "ada",
+"start": 121.12,
+"end": 121.44,
+"p": 0.998
+},
+{
+"text": "withdrawal",
+"start": 121.44,
+"end": 121.88,
+"p": 0.986
+},
+{
+"text": "effect",
+"start": 121.88,
+"end": 122.24,
+"p": 0.94
+},
+{
+"text": "selepas",
+"start": 122.24,
+"end": 123.0,
+"p": 0.998
+},
+{
+"text": "melahirkan",
+"start": 123.0,
+"end": 123.8,
+"p": 1.0
+},
+{
+"text": "bayi",
+"start": 123.8,
+"end": 124.2,
+"p": 0.997
+},
+{
+"text": "yang",
+"start": 124.2,
+"end": 124.62,
+"p": 0.673
+},
+{
+"text": "ke",
+"start": 124.62,
+"end": 124.8,
+"p": 0.846
+},
+{
+"text": "enam",
+"start": 124.8,
+"end": 125.0,
+"p": 0.63
+},
+{
+"text": "adalah",
+"start": 125.0,
+"end": 125.24,
+"p": 1.0
+},
+{
+"text": "Diazepam",
+"start": 125.24,
+"end": 125.92,
+"p": 0.929
+},
+{
+"text": "ataupun",
+"start": 125.92,
+"end": 126.32,
+"p": 0.998
+},
+{
+"text": "Valium.",
+"start": 126.32,
+"end": 126.72,
+"p": 0.876
+},
+{
+"text": "Ubat",
+"start": 126.88,
+"end": 127.66,
+"p": 0.998
+},
+{
+"text": "ni",
+"start": 127.66,
+"end": 127.8,
+"p": 1.0
+},
+{
+"text": "dia",
+"start": 127.8,
+"end": 128.16,
+"p": 0.999
+},
+{
+"text": "bantu",
+"start": 128.16,
+"end": 129.02,
+"p": 0.999
+},
+{
+"text": "untuk",
+"start": 129.02,
+"end": 129.26,
+"p": 1.0
+},
+{
+"text": "anxiety",
+"start": 129.26,
+"end": 129.56,
+"p": 1.0
+},
+{
+"text": "muscle",
+"start": 129.56,
+"end": 130.28,
+"p": 0.675
+},
+{
+"text": "relax",
+"start": 130.28,
+"end": 130.9,
+"p": 0.492
+},
+{
+"text": "dia",
+"start": 130.9,
+"end": 132.08,
+"p": 0.127
+},
+{
+"text": "muscle",
+"start": 132.08,
+"end": 133.06,
+"p": 0.987
+},
+{
+"text": "relaxen",
+"start": 133.06,
+"end": 133.7,
+"p": 0.614
+},
+{
+"text": "dan",
+"start": 133.7,
+"end": 133.86,
+"p": 0.998
+},
+{
+"text": "juga",
+"start": 133.86,
+"end": 134.0,
+"p": 0.987
+},
+{
+"text": "sawan.",
+"start": 134.0,
+"end": 134.5,
+"p": 0.824
+},
+{
+"text": "Ubat",
+"start": 134.72,
+"end": 135.52,
+"p": 1.0
+},
+{
+"text": "ni",
+"start": 135.52,
+"end": 135.68,
+"p": 1.0
+},
+{
+"text": "dia",
+"start": 135.68,
+"end": 135.94,
+"p": 0.998
+},
+{
+"text": "ada",
+"start": 135.94,
+"end": 136.06,
+"p": 0.998
+},
+{
+"text": "risiko",
+"start": 136.06,
+"end": 136.38,
+"p": 0.999
+},
+{
+"text": "baby",
+"start": 136.38,
+"end": 136.78,
+"p": 0.803
+},
+{
+"text": "floppy",
+"start": 136.78,
+"end": 137.24,
+"p": 0.985
+},
+{
+"text": "syndrome",
+"start": 137.24,
+"end": 137.44,
+"p": 0.984
+},
+{
+"text": "yang",
+"start": 137.44,
+"end": 138.24,
+"p": 0.93
+},
+{
+"text": "ketujuh",
+"start": 138.24,
+"end": 138.76,
+"p": 0.883
+},
+{
+"text": "adalah",
+"start": 138.76,
+"end": 138.96,
+"p": 1.0
+},
+{
+"text": "Clonazepam",
+"start": 138.96,
+"end": 139.86,
+"p": 0.899
+},
+{
+"text": "Kronosopam",
+"start": 139.86,
+"end": 140.74,
+"p": 0.647
+},
+{
+"text": "ni",
+"start": 140.74,
+"end": 140.88,
+"p": 0.775
+},
+{
+"text": "ubat",
+"start": 140.88,
+"end": 141.16,
+"p": 0.941
+},
+{
+"text": "digunakan",
+"start": 141.16,
+"end": 141.56,
+"p": 0.981
+},
+{
+"text": "untuk",
+"start": 141.56,
+"end": 141.84,
+"p": 0.994
+},
+{
+"text": "anxiety",
+"start": 141.84,
+"end": 142.12,
+"p": 0.882
+},
+{
+"text": "ataupun",
+"start": 142.12,
+"end": 143.14,
+"p": 0.918
+},
+{
+"text": "sawan",
+"start": 143.14,
+"end": 143.56,
+"p": 0.842
+},
+{
+"text": "Dia",
+"start": 143.56,
+"end": 144.12,
+"p": 0.116
+},
+{
+"text": "ada",
+"start": 144.12,
+"end": 144.3,
+"p": 0.998
+},
+{
+"text": "risiko",
+"start": 144.3,
+"end": 144.76,
+"p": 0.993
+},
+{
+"text": "sedation",
+"start": 144.76,
+"end": 145.76,
+"p": 0.995
+},
+{
+"text": "kepada",
+"start": 145.76,
+"end": 146.14,
+"p": 0.992
+},
+{
+"text": "bayi",
+"start": 146.14,
+"end": 146.64,
+"p": 0.998
+},
+{
+"text": "Yang",
+"start": 146.64,
+"end": 147.68,
+"p": 0.969
+},
+{
+"text": "ke",
+"start": 147.68,
+"end": 147.84,
+"p": 0.872
+},
+{
+"text": "-8",
+"start": 147.84,
+"end": 148.0,
+"p": 0.726
+},
+{
+"text": "adalah",
+"start": 148.0,
+"end": 148.26,
+"p": 0.991
+},
+{
+"text": "Topiramid",
+"start": 148.26,
+"end": 148.94,
+"p": 0.78
+},
+{
+"text": "Topiramid",
+"start": 148.94,
+"end": 149.54,
+"p": 0.967
+},
+{
+"text": "ni",
+"start": 149.54,
+"end": 149.6,
+"p": 0.993
+},
+{
+"text": "adalah",
+"start": 149.6,
+"end": 149.74,
+"p": 0.996
+},
+{
+"text": "jenis",
+"start": 149.74,
+"end": 150.18,
+"p": 0.856
+},
+{
+"text": "mood",
+"start": 150.18,
+"end": 150.38,
+"p": 0.832
+},
+{
+"text": "stabilizer",
+"start": 150.38,
+"end": 150.94,
+"p": 0.982
+},
+{
+"text": "dan",
+"start": 150.94,
+"end": 151.92,
+"p": 0.845
+},
+{
+"text": "kadang",
+"start": 151.92,
+"end": 153.06,
+"p": 0.958
+},
+{
+"text": "-kadang",
+"start": 153.06,
+"end": 153.18,
+"p": 0.816
+},
+{
+"text": "digunakan",
+"start": 153.18,
+"end": 153.48,
+"p": 1.0
+},
+{
+"text": "dalam",
+"start": 153.48,
+"end": 153.74,
+"p": 1.0
+},
+{
+"text": "kes",
+"start": 153.74,
+"end": 154.04,
+"p": 0.961
+},
+{
+"text": "migraine",
+"start": 154.04,
+"end": 154.56,
+"p": 0.875
+},
+{
+"text": "juga",
+"start": 154.56,
+"end": 154.78,
+"p": 0.987
+},
+{
+"text": "Ubat",
+"start": 155.46,
+"end": 156.08,
+"p": 0.997
+},
+{
+"text": "ni",
+"start": 156.08,
+"end": 156.24,
+"p": 0.998
+},
+{
+"text": "dia",
+"start": 156.24,
+"end": 156.4,
+"p": 0.953
+},
+{
+"text": "ada",
+"start": 156.4,
+"end": 156.56,
+"p": 1.0
+},
+{
+"text": "risiko",
+"start": 156.56,
+"end": 157.06,
+"p": 1.0
+},
+{
+"text": "cleft",
+"start": 157.06,
+"end": 157.32,
+"p": 0.978
+},
+{
+"text": "lip",
+"start": 157.32,
+"end": 157.64,
+"p": 0.716
+},
+{
+"text": "dan",
+"start": 157.64,
+"end": 158.2,
+"p": 0.999
+},
+{
+"text": "juga",
+"start": 158.2,
+"end": 158.44,
+"p": 0.803
+},
+{
+"text": "cleft",
+"start": 158.44,
+"end": 158.72,
+"p": 1.0
+},
+{
+"text": "palate",
+"start": 158.72,
+"end": 158.98,
+"p": 0.989
+},
+{
+"text": "kepada",
+"start": 158.98,
+"end": 159.22,
+"p": 0.999
+},
+{
+"text": "bayi",
+"start": 159.22,
+"end": 159.66,
+"p": 1.0
+},
+{
+"text": "Yang",
+"start": 159.66,
+"end": 160.14,
+"p": 0.998
+},
+{
+"text": "ke",
+"start": 160.14,
+"end": 160.3,
+"p": 1.0
+},
+{
+"text": "-9",
+"start": 160.3,
+"end": 160.56,
+"p": 1.0
+},
+{
+"text": "adalah",
+"start": 160.56,
+"end": 160.84,
+"p": 1.0
+},
+{
+"text": "Risperidone",
+"start": 160.84,
+"end": 161.72,
+"p": 0.947
+},
+{
+"text": "Ubat",
+"start": 161.72,
+"end": 162.78,
+"p": 0.998
+},
+{
+"text": "ni",
+"start": 162.78,
+"end": 162.92,
+"p": 0.999
+},
+{
+"text": "digunakan",
+"start": 162.92,
+"end": 163.28,
+"p": 1.0
+},
+{
+"text": "dalam",
+"start": 163.28,
+"end": 163.6,
+"p": 1.0
+},
+{
+"text": "kes",
+"start": 163.6,
+"end": 163.88,
+"p": 0.996
+},
+{
+"text": "seperti",
+"start": 163.88,
+"end": 164.1,
+"p": 0.739
+},
+{
+"text": "skizofrenia,",
+"start": 164.1,
+"end": 164.9,
+"p": 0.958
+},
+{
+"text": "bipolar",
+"start": 164.92,
+"end": 165.44,
+"p": 0.986
+},
+{
+"text": "ataupun",
+"start": 165.44,
+"end": 166.1,
+"p": 0.992
+},
+{
+"text": "aggression",
+"start": 166.1,
+"end": 166.44,
+"p": 0.638
+},
+{
+"text": "dia",
+"start": 166.44,
+"end": 166.96,
+"p": 0.409
+},
+{
+"text": "ada",
+"start": 166.96,
+"end": 167.5,
+"p": 0.961
+},
+{
+"text": "risiko",
+"start": 167.5,
+"end": 167.96,
+"p": 0.955
+},
+{
+"text": "hormonal",
+"start": 167.96,
+"end": 168.5,
+"p": 0.994
+},
+{
+"text": "dan",
+"start": 168.5,
+"end": 168.66,
+"p": 0.979
+},
+{
+"text": "metabolik",
+"start": 168.66,
+"end": 169.16,
+"p": 0.822
+},
+{
+"text": "efek",
+"start": 169.16,
+"end": 169.46,
+"p": 0.809
+},
+{
+"text": "kepada",
+"start": 169.46,
+"end": 169.68,
+"p": 0.88
+},
+{
+"text": "bayi",
+"start": 169.68,
+"end": 170.2,
+"p": 0.847
+},
+{
+"text": "dia",
+"start": 170.2,
+"end": 170.96,
+"p": 0.482
+},
+{
+"text": "bukan",
+"start": 170.96,
+"end": 172.38,
+"p": 0.968
+},
+{
+"text": "tak",
+"start": 172.38,
+"end": 172.6,
+"p": 0.983
+},
+{
+"text": "boleh",
+"start": 172.6,
+"end": 172.7,
+"p": 0.989
+},
+{
+"text": "bagi",
+"start": 172.7,
+"end": 173.04,
+"p": 0.988
+},
+{
+"text": "boleh",
+"start": 173.04,
+"end": 173.3,
+"p": 0.201
+},
+{
+"text": "tapi",
+"start": 173.3,
+"end": 173.58,
+"p": 0.808
+},
+{
+"text": "kena",
+"start": 173.58,
+"end": 173.94,
+"p": 0.996
+},
+{
+"text": "monitor",
+"start": 173.94,
+"end": 174.2,
+"p": 0.975
+},
+{
+"text": "betul",
+"start": 174.2,
+"end": 174.48,
+"p": 0.998
+},
+{
+"text": "-betul",
+"start": 174.48,
+"end": 174.82,
+"p": 0.992
+},
+{
+"text": "kena",
+"start": 175.4,
+"end": 175.94,
+"p": 0.696
+},
+{
+"text": "ada",
+"start": 175.94,
+"end": 176.06,
+"p": 0.994
+},
+{
+"text": "pembantauan",
+"start": 176.06,
+"end": 176.56,
+"p": 0.89
+},
+{
+"text": "rapi",
+"start": 176.56,
+"end": 176.8,
+"p": 0.988
+},
+{
+"text": "oleh",
+"start": 176.8,
+"end": 176.92,
+"p": 0.998
+},
+{
+"text": "doktor",
+"start": 176.92,
+"end": 177.26,
+"p": 0.994
+},
+{
+"text": "yang",
+"start": 177.26,
+"end": 177.72,
+"p": 0.862
+},
+{
+"text": "ke",
+"start": 177.72,
+"end": 177.86,
+"p": 0.487
+},
+{
+"text": "sepuluh",
+"start": 177.86,
+"end": 178.18,
+"p": 0.889
+},
+{
+"text": "adalah",
+"start": 178.18,
+"end": 178.4,
+"p": 0.997
+},
+{
+"text": "olanzapine",
+"start": 178.4,
+"end": 179.1,
+"p": 0.855
+},
+{
+"text": "olanzapine",
+"start": 179.1,
+"end": 179.68,
+"p": 0.931
+},
+{
+"text": "ni",
+"start": 179.68,
+"end": 179.8,
+"p": 0.934
+},
+{
+"text": "ubat",
+"start": 179.8,
+"end": 180.06,
+"p": 0.986
+},
+{
+"text": "untuk",
+"start": 180.06,
+"end": 180.34,
+"p": 0.998
+},
+{
+"text": "skizofrenia",
+"start": 180.34,
+"end": 181.04,
+"p": 0.927
+},
+{
+"text": "dan",
+"start": 181.04,
+"end": 181.14,
+"p": 0.997
+},
+{
+"text": "juga",
+"start": 181.14,
+"end": 181.34,
+"p": 0.962
+},
+{
+"text": "bipolar",
+"start": 181.34,
+"end": 181.88,
+"p": 0.934
+},
+{
+"text": "lah",
+"start": 181.88,
+"end": 182.24,
+"p": 0.23
+},
+{
+"text": "dia",
+"start": 182.24,
+"end": 183.38,
+"p": 0.988
+},
+{
+"text": "ada",
+"start": 183.38,
+"end": 183.52,
+"p": 0.999
+},
+{
+"text": "risiko",
+"start": 183.52,
+"end": 183.94,
+"p": 0.999
+},
+{
+"text": "berat",
+"start": 183.94,
+"end": 184.52,
+"p": 0.998
+},
+{
+"text": "bayi",
+"start": 184.52,
+"end": 185.04,
+"p": 0.998
+},
+{
+"text": "jadi",
+"start": 185.04,
+"end": 185.16,
+"p": 0.997
+},
+{
+"text": "besar",
+"start": 185.16,
+"end": 185.48,
+"p": 0.999
+},
+{
+"text": "dan",
+"start": 185.48,
+"end": 185.74,
+"p": 0.999
+},
+{
+"text": "juga",
+"start": 185.74,
+"end": 185.94,
+"p": 0.998
+},
+{
+"text": "masalah",
+"start": 185.94,
+"end": 186.5,
+"p": 0.999
+},
+{
+"text": "metabolik",
+"start": 186.5,
+"end": 187.26,
+"p": 0.995
+},
+{
+"text": "side",
+"start": 187.26,
+"end": 187.38,
+"p": 0.843
+},
+{
+"text": "effect",
+"start": 187.38,
+"end": 187.6,
+"p": 0.931
+},
+{
+"text": "kepada",
+"start": 187.6,
+"end": 187.84,
+"p": 0.984
+},
+{
+"text": "bayi",
+"start": 187.84,
+"end": 188.76,
+"p": 0.999
+},
+{
+"text": "tu",
+"start": 188.76,
+"end": 188.92,
+"p": 0.769
+},
+{
+"text": "jadi",
+"start": 189.68,
+"end": 190.32,
+"p": 0.991
+},
+{
+"text": "ubat",
+"start": 190.32,
+"end": 190.96,
+"p": 0.997
+},
+{
+"text": "yang",
+"start": 190.96,
+"end": 191.08,
+"p": 0.998
+},
+{
+"text": "saya",
+"start": 191.08,
+"end": 191.2,
+"p": 0.996
+},
+{
+"text": "senarai",
+"start": 191.2,
+"end": 191.56,
+"p": 0.966
+},
+{
+"text": "ni",
+"start": 191.56,
+"end": 191.74,
+"p": 0.986
+},
+{
+"text": "bukan",
+"start": 191.74,
+"end": 192.06,
+"p": 0.998
+},
+{
+"text": "tak",
+"start": 192.06,
+"end": 192.54,
+"p": 1.0
+},
+{
+"text": "boleh",
+"start": 192.54,
+"end": 192.76,
+"p": 1.0
+},
+{
+"text": "tapi",
+"start": 192.76,
+"end": 193.18,
+"p": 0.99
+},
+{
+"text": "Tapi,",
+"start": 193.18,
+"end": 193.4,
+"p": 0.47
+},
+{
+"text": "ubat",
+"start": 193.4,
+"end": 196.06,
+"p": 0.753
+},
+{
+"text": "-ubat",
+"start": 196.06,
+"end": 197.88,
+"p": 0.957
+},
+{
+"text": "yang",
+"start": 197.88,
+"end": 197.98,
+"p": 0.998
+},
+{
+"text": "saya",
+"start": 197.98,
+"end": 198.1,
+"p": 0.999
+},
+{
+"text": "senarai",
+"start": 198.1,
+"end": 198.48,
+"p": 0.996
+},
+{
+"text": "ni",
+"start": 198.48,
+"end": 198.6,
+"p": 0.64
+},
+{
+"text": "bukanlah",
+"start": 198.6,
+"end": 199.06,
+"p": 0.983
+},
+{
+"text": "kata",
+"start": 199.06,
+"end": 199.34,
+"p": 0.984
+},
+{
+"text": "100",
+"start": 199.34,
+"end": 199.58,
+"p": 0.987
+},
+{
+"text": "%",
+"start": 199.58,
+"end": 199.9,
+"p": 0.808
+},
+{
+"text": "tak",
+"start": 199.9,
+"end": 200.06,
+"p": 0.995
+},
+{
+"text": "boleh.",
+"start": 200.06,
+"end": 200.26,
+"p": 1.0
+},
+{
+"text": "Tapi,",
+"start": 200.44,
+"end": 201.08,
+"p": 0.989
+},
+{
+"text": "kena",
+"start": 201.16,
+"end": 201.54,
+"p": 0.997
+},
+{
+"text": "betul",
+"start": 201.54,
+"end": 202.12,
+"p": 1.0
+},
+{
+"text": "-betul,",
+"start": 202.12,
+"end": 202.5,
+"p": 1.0
+},
+{
+"text": "kena",
+"start": 202.5,
+"end": 203.6,
+"p": 0.892
+},
+{
+"text": "betul",
+"start": 203.6,
+"end": 203.86,
+"p": 1.0
+},
+{
+"text": "-betul,",
+"start": 203.86,
+"end": 204.28,
+"p": 1.0
+},
+{
+"text": "kena",
+"start": 204.28,
+"end": 205.7,
+"p": 0.946
+},
+{
+"text": "betul",
+"start": 205.7,
+"end": 205.96,
+"p": 1.0
+},
+{
+"text": "-betul,",
+"start": 205.96,
+"end": 206.34,
+"p": 1.0
+},
+{
+"text": "kalau",
+"start": 208.56,
+"end": 208.88,
+"p": 0.986
+},
+{
+"text": "anda",
+"start": 208.88,
+"end": 209.24,
+"p": 0.998
+},
+{
+"text": "ada",
+"start": 209.24,
+"end": 209.42,
+"p": 0.992
+},
+{
+"text": "ambil,",
+"start": 209.42,
+"end": 209.78,
+"p": 0.978
+},
+{
+"text": "kalau",
+"start": 209.98,
+"end": 211.1,
+"p": 0.996
+},
+{
+"text": "anda",
+"start": 211.1,
+"end": 211.34,
+"p": 0.994
+},
+{
+"text": "ada",
+"start": 211.34,
+"end": 211.96,
+"p": 0.998
+},
+{
+"text": "ambil,",
+"start": 211.96,
+"end": 212.36,
+"p": 0.998
+},
+{
+"text": "kalau",
+"start": 212.4,
+"end": 213.44,
+"p": 0.994
+},
+{
+"text": "anda",
+"start": 213.44,
+"end": 213.74,
+"p": 1.0
+},
+{
+"text": "ada",
+"start": 213.74,
+"end": 214.06,
+"p": 1.0
+},
+{
+"text": "ambil",
+"start": 214.06,
+"end": 214.42,
+"p": 1.0
+},
+{
+"text": "10",
+"start": 214.42,
+"end": 215.32,
+"p": 0.953
+},
+{
+"text": "ubat",
+"start": 215.32,
+"end": 215.8,
+"p": 0.999
+},
+{
+"text": "yang",
+"start": 215.8,
+"end": 215.9,
+"p": 1.0
+},
+{
+"text": "saya",
+"start": 215.9,
+"end": 216.06,
+"p": 1.0
+},
+{
+"text": "sebut",
+"start": 216.06,
+"end": 216.3,
+"p": 1.0
+},
+{
+"text": "tadi",
+"start": 216.3,
+"end": 216.5,
+"p": 1.0
+},
+{
+"text": "tu,",
+"start": 216.5,
+"end": 216.72,
+"p": 0.994
+},
+{
+"text": "dan",
+"start": 216.78,
+"end": 217.24,
+"p": 1.0
+},
+{
+"text": "anda",
+"start": 217.24,
+"end": 217.6,
+"p": 1.0
+},
+{
+"text": "ada",
+"start": 217.6,
+"end": 217.78,
+"p": 1.0
+},
+{
+"text": "plan",
+"start": 217.78,
+"end": 218.1,
+"p": 0.961
+},
+{
+"text": "nak",
+"start": 218.1,
+"end": 218.3,
+"p": 1.0
+},
+{
+"text": "pregnant",
+"start": 218.3,
+"end": 218.58,
+"p": 0.95
+},
+{
+"text": "ataupun",
+"start": 218.58,
+"end": 219.08,
+"p": 0.98
+},
+{
+"text": "tengah",
+"start": 219.08,
+"end": 219.74,
+"p": 1.0
+},
+{
+"text": "pregnant,",
+"start": 219.74,
+"end": 220.0,
+"p": 0.997
+},
+{
+"text": "kena",
+"start": 220.7,
+"end": 221.28,
+"p": 0.606
+},
+{
+"text": "bagitahu",
+"start": 221.28,
+"end": 221.72,
+"p": 0.818
+},
+{
+"text": "dekat",
+"start": 221.72,
+"end": 221.88,
+"p": 0.968
+},
+{
+"text": "doktor",
+"start": 221.88,
+"end": 222.2,
+"p": 0.816
+},
+{
+"text": "supaya",
+"start": 222.2,
+"end": 222.78,
+"p": 0.922
+},
+{
+"text": "pemantauan",
+"start": 222.78,
+"end": 223.76,
+"p": 0.856
+},
+{
+"text": "rapi",
+"start": 223.76,
+"end": 224.06,
+"p": 0.987
+},
+{
+"text": "dapat",
+"start": 224.06,
+"end": 224.2,
+"p": 0.966
+},
+{
+"text": "dilakukanlah",
+"start": 224.2,
+"end": 224.92,
+"p": 0.82
+},
+{
+"text": "apa",
+"start": 224.92,
+"end": 225.5,
+"p": 0.359
+},
+{
+"text": "-apa",
+"start": 225.5,
+"end": 225.6,
+"p": 0.686
+},
+{
+"text": "soalan",
+"start": 225.6,
+"end": 225.86,
+"p": 0.995
+},
+{
+"text": "boleh",
+"start": 225.86,
+"end": 226.02,
+"p": 0.33
+},
+{
+"text": "tanya",
+"start": 226.02,
+"end": 226.24,
+"p": 0.99
+},
+{
+"text": "diorang",
+"start": 226.24,
+"end": 226.38,
+"p": 0.689
+},
+{
+"text": "komen",
+"start": 226.38,
+"end": 226.66,
+"p": 0.966
+}
+]
