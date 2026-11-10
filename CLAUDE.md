@@ -34,7 +34,7 @@ scripts/setup.sh          # ffmpeg, .venv with video-use deps, hyperframes CLI c
   Export before any HyperFrames render/snapshot/caption script:
   ```bash
   export HYPERFRAMES_ROOT=~/hyperframes
-  export HYPERFRAMES_BROWSER_PATH=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell  # cloud container
+  export HYPERFRAMES_BROWSER_PATH=$(ls -d /opt/pw-browsers/chromium_headless_shell-*/chrome-*/*headless*shell | grep -v '\.real$' | head -1)  # cloud container (path varies by image)
   export PUPPETEER_EXECUTABLE_PATH=~/bin/headless_shell_nosandbox   # root needs --no-sandbox
   ```
 - `ELEVENLABS_API_KEY` in `.env` (repo root) enables Scribe transcription. If it's

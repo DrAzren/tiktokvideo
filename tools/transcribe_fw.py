@@ -37,8 +37,15 @@ def main() -> None:
         return
 
     model = WhisperModel(args.model, device="cpu", compute_type="int8")
+    audio = str(args.input)
+    if args.input.suffix.lower() == ".wav":
+        # decode ourselves: newer PyAV releases dropped an argument faster-whisper's decoder passes
+        import soundfile as sf
+        data, sr = sf.read(args.input, dtype="float32")
+        assert sr == 16000 and data.ndim == 1, "expected 16 kHz mono wav (ffmpeg -ac 1 -ar 16000)"
+        audio = data
     segments, info = model.transcribe(
-        str(args.input),
+        audio,
         language=args.language,
         word_timestamps=True,
         vad_filter=False,
