@@ -1,0 +1,343 @@
+{
+  "version": 1,
+  "sources": {
+    "selfdx": "/home/user/tiktokvideo/videos/self-diagnose/edit/source_cfr.mov"
+  },
+  "ranges": [
+    {
+      "source": "selfdx",
+      "start": 77.45,
+      "end": 81.905,
+      "beat": "HOOK",
+      "reason": "Dia rasa macam jantung dia nak meletup, dan dia yakin yang dia akan mati. — cold open moved from 1:17",
+      "zoom": 1.0
+    },
+    {
+      "source": "selfdx",
+      "start": 3.715,
+      "end": 5.565,
+      "beat": "STORY",
+      "reason": "Ketika saya bertugas sebagai doktor — 'Teringat satu hari tu' and 'di atas panggilan, doktor' cut",
+      "zoom": 1.06
+    },
+    {
+      "source": "selfdx",
+      "start": 6.785,
+      "end": 12.6,
+      "beat": "STORY",
+      "reason": "on-call, ada seorang remaja umur 17 tahun yang dibawa oleh kedua ibu bapanya ke Jabatan Kecemasan.",
+      "zoom": 1.02
+    },
+    {
+      "source": "selfdx",
+      "start": 12.9,
+      "end": 15.93,
+      "beat": "STORY",
+      "reason": "Dia kelihatan sangat pucat, menggigil tangan dia,",
+      "zoom": 1.07
+    },
+    {
+      "source": "selfdx",
+      "start": 16.245,
+      "end": 18.51,
+      "beat": "STORY",
+      "reason": "mengadu sesak nafas, sakit dada. — 'dan nampak dia macam crying non-stop' cut for length",
+      "zoom": 1.035
+    },
+    {
+      "source": "selfdx",
+      "start": 20.97,
+      "end": 22.612,
+      "beat": "STORY",
+      "reason": "Mak ayah dia pun nampak cemas. — their quote ('nak mati sangat-sangat') cut: it repeats the hook",
+      "zoom": 1.0
+    },
+    {
+      "source": "selfdx",
+      "start": 34.92,
+      "end": 36.65,
+      "beat": "TWIST",
+      "zoom": 1.06
+    },
+    {
+      "source": "selfdx",
+      "start": 36.75,
+      "end": 42.96,
+      "beat": "TWIST",
+      "reason": "Remaja tersebut ada beritahu ... gejala yang dialami. — 'setelah ditenangkan, saya mulakan sesi soal jawab' cut",
+      "zoom": 1.02
+    },
+    {
+      "source": "selfdx",
+      "start": 43.435,
+      "end": 45.34,
+      "beat": "TWIST",
+      "zoom": 1.07
+    },
+    {
+      "source": "selfdx",
+      "start": 45.71,
+      "end": 49.29,
+      "beat": "TWIST",
+      "reason": "Remaja itu yakin yang dia alami BPD, MDD dan ADHD.",
+      "zoom": 1.035
+    },
+    {
+      "source": "selfdx",
+      "start": 49.27,
+      "end": 52.04,
+      "beat": "TWIST",
+      "reason": "Tapi dia tak pernah jumpa doktor pun untuk dapatkan rawatan profesional. — 'Sebaliknya' cut",
+      "zoom": 1.0
+    },
+    {
+      "source": "selfdx",
+      "start": 53.23,
+      "end": 54.735,
+      "beat": "CONSEQUENCE",
+      "reason": "Dia self-diagnose sendiri",
+      "zoom": 1.06
+    },
+    {
+      "source": "selfdx",
+      "start": 55.255,
+      "end": 55.735,
+      "beat": "CONSEQUENCE",
+      "zoom": 1.06
+    },
+    {
+      "source": "selfdx",
+      "start": 55.785,
+      "end": 59.52,
+      "beat": "CONSEQUENCE",
+      "reason": "dan cari solution sendiri, termasuklah dia tak keluar rumah langsung. — 'mengelakkan diri daripada... socialise' (hesitation) cut",
+      "zoom": 1.02
+    },
+    {
+      "source": "selfdx",
+      "start": 63.28,
+      "end": 66.045,
+      "beat": "CONSEQUENCE",
+      "zoom": 1.07
+    },
+    {
+      "source": "selfdx",
+      "start": 66.695,
+      "end": 68.265,
+      "beat": "CONSEQUENCE",
+      "reason": "Dia juga ada try untuk ambil supplement yang ada jual dekat media sosial",
+      "zoom": 1.035
+    },
+    {
+      "source": "selfdx",
+      "start": 68.67,
+      "end": 68.965,
+      "beat": "CONSEQUENCE",
+      "zoom": 1.035
+    },
+    {
+      "source": "selfdx",
+      "start": 69.135,
+      "end": 70.82,
+      "beat": "CONSEQUENCE",
+      "reason": "tapi tak ada perubahan yang positif pun yang berlaku.",
+      "zoom": 1.0
+    },
+    {
+      "source": "selfdx",
+      "start": 72.28,
+      "end": 73.105,
+      "beat": "CONSEQUENCE",
+      "zoom": 1.06
+    },
+    {
+      "source": "selfdx",
+      "start": 74.785,
+      "end": 76.185,
+      "beat": "CONSEQUENCE",
+      "zoom": 1.02
+    },
+    {
+      "source": "selfdx",
+      "start": 76.185,
+      "end": 77.19,
+      "beat": "CONSEQUENCE",
+      "reason": "Jadi malam itu serangan yang dia alami itu semakin teruk. — hook line not repeated; 'itulah sebab ... hospital' cut",
+      "zoom": 1.07
+    },
+    {
+      "source": "selfdx",
+      "start": 96.325,
+      "end": 97.385,
+      "beat": "REVEAL",
+      "zoom": 1.035
+    },
+    {
+      "source": "selfdx",
+      "start": 97.385,
+      "end": 98.62,
+      "beat": "REVEAL",
+      "reason": "Selepas saya buat assessment, — 9.4s dead air and 'Jadi' cut",
+      "zoom": 1.0
+    },
+    {
+      "source": "selfdx",
+      "start": 99.34,
+      "end": 103.715,
+      "beat": "REVEAL",
+      "reason": "kita dapati yang remaja tersebut mengalami anxiety disorder yang sangat serius. — 'lah' cut",
+      "zoom": 1.06
+    },
+    {
+      "source": "selfdx",
+      "start": 110.595,
+      "end": 114.955,
+      "beat": "REVEAL",
+      "zoom": 1.02
+    },
+    {
+      "source": "selfdx",
+      "start": 115.725,
+      "end": 116.93,
+      "beat": "REVEAL",
+      "reason": "Tindakan dia yang mengasingkan diri atau bergantung kepada maklumat yang tak sahih itu burukkan lagi keadaan. — 'tapi dia tak pernah dapat bantuan' (said earlier) cut",
+      "zoom": 1.07
+    },
+    {
+      "source": "selfdx",
+      "start": 126.405,
+      "end": 127.085,
+      "beat": "POINT",
+      "zoom": 1.07
+    },
+    {
+      "source": "selfdx",
+      "start": 127.605,
+      "end": 128.645,
+      "beat": "POINT",
+      "reason": "Self-diagnose sangat bahaya untuk kita. — false start + 'Okay, point dia kat sini adalah' cut",
+      "zoom": 1.035
+    },
+    {
+      "source": "selfdx",
+      "start": 129.01,
+      "end": 133.295,
+      "beat": "POINT",
+      "reason": "Sebab baca symptom dekat internet ini tak sama dengan penilaian profesional. — failed take 'dan dia boleh menyebabkan kita salah faham lah dan dapat...' cut",
+      "zoom": 1.0
+    },
+    {
+      "source": "selfdx",
+      "start": 144.9,
+      "end": 146.64,
+      "beat": "POINT",
+      "zoom": 1.06
+    },
+    {
+      "source": "selfdx",
+      "start": 147.01,
+      "end": 148.135,
+      "beat": "POINT",
+      "zoom": 1.02
+    },
+    {
+      "source": "selfdx",
+      "start": 148.625,
+      "end": 150.535,
+      "beat": "POINT",
+      "reason": "Dia boleh menyebabkan salah faham dan rawatan yang salah dekat diri kita. — clean retake",
+      "zoom": 1.07
+    },
+    {
+      "source": "selfdx",
+      "start": 151.515,
+      "end": 153.085,
+      "beat": "TAKEAWAY",
+      "reason": "Rawatan yang awal itu penting.",
+      "zoom": 1.035
+    },
+    {
+      "source": "selfdx",
+      "start": 153.085,
+      "end": 158.485,
+      "beat": "TAKEAWAY",
+      "reason": "Kalau remaja tersebut dapat rawatan awal, dia boleh mengelakkan serangan panik yang lebih teruk.",
+      "zoom": 1.0
+    },
+    {
+      "source": "selfdx",
+      "start": 170.135,
+      "end": 170.575,
+      "beat": "TAKEAWAY",
+      "zoom": 1.0
+    },
+    {
+      "source": "selfdx",
+      "start": 171.245,
+      "end": 172.315,
+      "beat": "TAKEAWAY",
+      "reason": "Keluarga memainkan peranan yang besar. — false start at 2:44 and 'tersebut dia' cut",
+      "zoom": 1.06
+    },
+    {
+      "source": "selfdx",
+      "start": 173.57,
+      "end": 174.585,
+      "beat": "TAKEAWAY",
+      "zoom": 1.02
+    },
+    {
+      "source": "selfdx",
+      "start": 175.715,
+      "end": 178.195,
+      "beat": "TAKEAWAY",
+      "zoom": 1.07
+    },
+    {
+      "source": "selfdx",
+      "start": 178.445,
+      "end": 179.675,
+      "beat": "TAKEAWAY",
+      "reason": "Sokongan ibu bapa bawa dia datang hospital adalah langkah penting dalam proses pemulihan dia.",
+      "zoom": 1.035
+    },
+    {
+      "source": "selfdx",
+      "start": 188.795,
+      "end": 189.76,
+      "beat": "CLOSE",
+      "zoom": 1.0
+    },
+    {
+      "source": "selfdx",
+      "start": 189.78,
+      "end": 193.095,
+      "beat": "CLOSE",
+      "zoom": 1.06
+    },
+    {
+      "source": "selfdx",
+      "start": 193.37,
+      "end": 195.55,
+      "beat": "CLOSE",
+      "reason": "Jika anda atau orang terdekat mengalami gejala-gejala seperti ini, jangan takut untuk dapatkan bantuan yang sepatutnya.",
+      "zoom": 1.02
+    },
+    {
+      "source": "selfdx",
+      "start": 195.79,
+      "end": 197.955,
+      "beat": "CLOSE",
+      "reason": "Apa-apa soalan, boleh tanya di ruangan komen. Take care.",
+      "zoom": 1.07
+    }
+  ],
+  "grade": "subtle",
+  "zoom_focus": [
+    0.5,
+    0.45
+  ],
+  "tail_hold": 1.2,
+  "overlays": [],
+  "total_duration_s": 96.56
+}

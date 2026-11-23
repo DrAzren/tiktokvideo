@@ -6,3 +6,5 @@ pillow
 numpy
 soundfile
 faster-whisper      # multilingual Whisper fallback (tools/transcribe_fw.py)
+av<17               # faster-whisper 1.2.x breaks on av>=17 (metadata_errors)
+# forced alignment (CPU): uv pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
