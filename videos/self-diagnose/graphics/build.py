@@ -67,10 +67,11 @@ def anim(sel: str, kind: str, at: float, **kw) -> None:
 def card(cid: str, start: float, end: float, inner: str, height: int = 220, bare: bool = False) -> None:
     start, end = f(start), f(end)
     cls = "bare" if bare else "panel"
+    ps = 1 if bare else PS      # kinetic hook type is authored at full size (scaling it pushed it off the left edge)
     body.append(
         f'<div id="card-{cid}" class="clip card-host" data-start="{start}" data-duration="{round(end - start, 4)}" '
         f'data-track-index="2"><div class="{cls}" id="{cid}" style="height:{height}px">{inner}</div></div>')
-    tl.append(f"tl.fromTo('#{cid}',{{opacity:0,y:-36,scale:{0.97 * PS:.3f}}},{{opacity:1,y:0,scale:{PS},duration:0.42,ease:'power3.out'}},{start});")
+    tl.append(f"tl.fromTo('#{cid}',{{opacity:0,y:-36,scale:{0.97 * ps:.3f}}},{{opacity:1,y:0,scale:{ps},duration:0.42,ease:'power3.out'}},{start});")
     tl.append(f"tl.to('#{cid}',{{opacity:0,y:-22,duration:0.24,ease:'power2.in'}},{f(end - 0.27)});")
     sfx.append({"t": start, "kind": "whoosh"})
 
@@ -91,7 +92,7 @@ card("hookA", 0.0, 2.42, f'''
   <div class="kin amber a" id="hk2">NAK MELETUP</div>
   <svg class="ecg" viewBox="0 0 960 120"><path id="hkecg" d="{ECG}" fill="none" stroke="{RED}" stroke-width="7"
      stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1400" stroke-dashoffset="1400"/></svg>''', 250, bare=True)
-anim("#hk1", "pop", W[3]); anim("#hk2", "stamp", W[6], rot=-3); anim("#hkecg", "draw", W[6] + 0.15, len=1400, d=0.9)
+anim("#hk1", "pop", W[3]); anim("#hk2", "stamp", W[6], rot=-3); anim("#hkecg", "draw", W[6] + 0.05, len=1400, d=0.5)
 card("hookB", 2.45, 4.42, '''
   <div class="kin sm a" id="hk3">DIA YAKIN</div>
   <div class="kin a" id="hk4">DIA AKAN <span style="color:#E5484D">MATI</span></div>''', 250, bare=True)
