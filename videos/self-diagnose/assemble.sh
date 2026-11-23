@@ -13,6 +13,6 @@ ffmpeg -nostdin -y -loglevel error -i edit/voice_clean.wav -i audio/sfx.wav -fil
   -map "[a]" -c:a pcm_s16le audio/voice_sfx.wav
 ffmpeg -nostdin -y -loglevel error -i graphics/output.mp4 -i audio/voice_sfx.wav -map 0:v -map 1:a \
   -c:v copy -c:a aac -b:a 256k -movflags +faststart audio/premix.mp4
-"$PY" "$ROOT/tools/mix_music.py" audio/premix.mp4 audio/bed.wav -o final.mp4 --bed-lufs -22
+"$PY" "$ROOT/tools/mix_music.py" audio/premix.mp4 audio/bed.wav -o final.mp4 --bed-lufs -16
 ffprobe -v error -show_entries stream=codec_type,codec_name,width,height,r_frame_rate,duration,nb_frames -of compact final.mp4
 ffmpeg -nostdin -hide_banner -i final.mp4 -af ebur128=peak=true -f null - 2>&1 | grep -E "^\s+(I|Peak):"
